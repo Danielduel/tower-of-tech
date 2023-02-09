@@ -78,7 +78,7 @@ const allMapsPlaylist: BeatSaberPlaylist = {
     AllowDuplicates: false,
     id: "Tower of Tech",
     owner: "Danielduel",
-    syncURL: "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/ToT_-_all.bplist"
+    syncURL: "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/ToT_-_all.bplist"
   }
 }
 
