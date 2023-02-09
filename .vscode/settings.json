@@ -1,0 +1,10 @@
+{
+  "deno.enable": true,
+  "deno.lint": true,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}
