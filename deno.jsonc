@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "dev": "deno run --watch ./src/main.ts",
+    "start": "deno run -A ./src/main.ts",
+    "dev": "deno run --watch -A ./src/main.ts",
     "refreshPlaylists": "deno run -A ./src/tools/refreshPlaylists.ts",
     "migratePlaylists": "deno run -A ./src/tools/migratePlaylists.ts",
     "generate": "deno run ./src/main.ts"
