@@ -4,6 +4,7 @@
     "dev": "deno run --watch -A ./src/main.ts",
     "refreshPlaylists": "deno run -A ./src/tools/refreshPlaylists.ts",
     "migratePlaylists": "deno run -A ./src/tools/migratePlaylists.ts",
+    "generateCupOfADayPlaylist": "deno run -A ./src/tools/generateCupOfADayPlaylist.ts",
     "generate": "deno run ./src/main.ts"
   }
 }

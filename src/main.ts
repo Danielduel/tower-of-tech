@@ -3,18 +3,22 @@ import $ from "https://deno.land/x/dax@0.26.0/mod.ts";
 const options = [
   "Migrate playlists",
   "Update and migrate playlists",
+  "Generate cup of a day playlist",
 ] as const;
 const index = await $.select({
-  message: "What's your favourite colour?",
+  message: "What to do?",
   options: options as unknown as string []
 });
 
 switch (options[index]) {
-  case "Migrate playlists": 
+  case "Migrate playlists":
     await $`deno task migratePlaylists`;
     break;
   case 'Update and migrate playlists':
     await $`deno task refreshPlaylists`;
     await $`deno task migratePlaylists`;
+    break;
+  case "Generate cup of a day playlist":
+    await $`deno task generateCupOfADayPlaylist`;
     break;
 }
