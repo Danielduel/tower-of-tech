@@ -161,8 +161,8 @@
     {
       "songName": "Chimes",
       "levelAuthorName": "ZikkityZakOTA",
-      "hash": "24644DE325E351BD57BA611737F97E586E2D2B78",
-      "levelid": "custom_level_24644DE325E351BD57BA611737F97E586E2D2B78",
+      "hash": "686BF95BEE41796B5F721170C9CB542E3C8B2DA5",
+      "levelid": "custom_level_686BF95BEE41796B5F721170C9CB542E3C8B2DA5",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -199,6 +199,30 @@
       "levelAuthorName": "Spinny",
       "hash": "BBBE4BA1364B81E9FA23FA6D97C1EEF669F80756",
       "levelid": "custom_level_BBBE4BA1364B81E9FA23FA6D97C1EEF669F80756",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Sleepwalking",
+      "levelAuthorName": "vanitygirl",
+      "hash": "263B03CB6ACC75024DEF24197FF1C98B88EF809B",
+      "levelid": "custom_level_263B03CB6ACC75024DEF24197FF1C98B88EF809B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Meow",
+      "levelAuthorName": "Koreami",
+      "hash": "D978E1B616C24812F06AB906A19CDC7ABF4A1E14",
+      "levelid": "custom_level_D978E1B616C24812F06AB906A19CDC7ABF4A1E14",
       "difficulties": [
         {
           "characteristic": "Standard",

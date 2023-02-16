@@ -1,6 +1,7 @@
 import type { BeatSaberPlaylist } from "../types/BeatSaberPlaylist.d.ts";
 import { emptyCover } from "../utils/empty-cover.ts";
 import { getMapDataByKey } from "../utils/beatsaver.ts";
+import { fixPlaylistHashes } from "../utils/beatsaber-playlist.ts";
 
 const destinationPath = new URL(import.meta.resolve("../../migrated/playlists")).pathname;
 
@@ -25,6 +26,6 @@ const playlist: BeatSaberPlaylist = {
   }]
 };
 
-const playlistJSON = JSON.stringify(playlist);
+const playlistJSON = JSON.stringify(fixPlaylistHashes(playlist));
 
 Deno.writeTextFileSync(destinationPath + "/" + "ToT_-_coad.bplist", playlistJSON);
