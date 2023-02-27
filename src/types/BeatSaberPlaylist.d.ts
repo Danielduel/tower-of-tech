@@ -9,8 +9,8 @@ export type BeatSaberPlaylistSongItem = {
   hash: string;
   levelid: string;
   key?: string;
-  songName?: string;
-  levelAuthorName?: string;
+  songName: string;
+  levelAuthorName: string;
   difficulties: BeatSaberPlaylistSongItemDifficulty[];
 };
 

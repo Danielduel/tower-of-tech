@@ -1,6 +1,7 @@
 
 import type { BeatSaberPlaylist, BeatSaberPlaylistSongItem, BeatSaberPlaylistSongItemDifficulty } from "../types/BeatSaberPlaylist.d.ts";
 import { getCoverBase64 } from "../utils/cover-image.ts";
+import { stringify } from "../utils/json.ts";
 
 const sourcePath = new URL(import.meta.resolve("../../data/playlists")).pathname;
 const destinationPath = new URL(import.meta.resolve("../../migrated/playlists")).pathname;
@@ -55,5 +56,5 @@ const allMapsPlaylist: BeatSaberPlaylist = {
   }
 }
 
-const allMapsPlaylistJson = JSON.stringify(allMapsPlaylist);
+const allMapsPlaylistJson = stringify(allMapsPlaylist);
 Deno.writeTextFileSync(destinationPath + "/" + "ToT_-_all.bplist", allMapsPlaylistJson);
