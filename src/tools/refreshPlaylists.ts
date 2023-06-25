@@ -7,10 +7,12 @@ if (!dirPath) {
 }
 
 const dirListing = [...Deno.readDirSync(dirPath)]
-  .filter(item => item.isFile)
-  .filter(item => item.name.startsWith("ToT - "));
-const destinationPath = new URL(import.meta.resolve("../../data/playlists")).pathname;
+  .filter((item) => item.isFile)
+  .filter((item) => item.name.startsWith("ToT - "));
+const destinationPath =
+  new URL(import.meta.resolve("../../data/playlists")).pathname;
 
-dirListing.forEach(file => {
-  Deno.copyFileSync(dirPath + file.name, destinationPath + `/${file.name}`);
-});
+await Promise.all(dirListing.map(async (file) => {
+  console.log(`Refreshing ${file.name}`)
+  await Deno.copyFile(dirPath + file.name, destinationPath + `/${file.name}`);
+}));
