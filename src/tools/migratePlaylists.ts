@@ -53,7 +53,7 @@ Object
   });
 
 const allMaps = Object.values(playlistItems).flatMap(x => x);
-playlists.push(await migratePlaylist("*.bplist", {
+playlists.push(await migratePlaylist("ToT - *.bplist", {
   image: "",
   playlistAuthor: "Danielduel",
   playlistTitle: "ToT - *",
