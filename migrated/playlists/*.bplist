@@ -5424,6 +5424,6 @@
     "AllowDuplicates": false,
     "id": "Tower of Tech",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/*"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/*.bplist"
   }
 }
