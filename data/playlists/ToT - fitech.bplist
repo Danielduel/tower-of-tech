@@ -1,12 +1,12 @@
 {
-  "playlistTitle": "ToT - for techwannabees",
+  "playlistTitle": "ToT - fitech",
   "playlistAuthor": "Danielduel",
   "songs": [
     {
-      "songName": "HEADHUNTER",
-      "levelAuthorName": "Swifter",
-      "hash": "D737DA56C4FC032A5FC4791558A731B6968F399B",
-      "levelid": "custom_level_D737DA56C4FC032A5FC4791558A731B6968F399B",
+      "songName": "Jormngand",
+      "levelAuthorName": "Uninstaller",
+      "hash": "453694C4BB8C9AF1F27B0110149858E6F88EAC03",
+      "levelid": "custom_level_453694C4BB8C9AF1F27B0110149858E6F88EAC03",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -15,214 +15,10 @@
       ]
     },
     {
-      "songName": "Vamp it up (Too late)",
-      "levelAuthorName": "Exeiron",
-      "hash": "19D5B934C091709C8C6EC928616E91C362C89A9D",
-      "levelid": "custom_level_19D5B934C091709C8C6EC928616E91C362C89A9D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "MariannE",
-      "levelAuthorName": "Emir",
-      "hash": "A5C551BD327EC49C2F5483FDB5C1FE3DED35CD7A",
-      "levelid": "custom_level_A5C551BD327EC49C2F5483FDB5C1FE3DED35CD7A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Zebra",
-      "levelAuthorName": "Kanahebi",
-      "hash": "CA226007EB78F318676E5CEC1552566DF9F129E8",
-      "levelid": "custom_level_CA226007EB78F318676E5CEC1552566DF9F129E8",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Still Got Love",
-      "levelAuthorName": "Nebelmonster",
-      "hash": "7863F924B24542CCFE1A09095AD384B4B61316D1",
-      "levelid": "custom_level_7863F924B24542CCFE1A09095AD384B4B61316D1",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Life goes on",
-      "levelAuthorName": "Emir",
-      "hash": "9E804436B98787B1E6A9C5E0C10FD42DBEB0B18E",
-      "levelid": "custom_level_9E804436B98787B1E6A9C5E0C10FD42DBEB0B18E",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Miss You",
-      "levelAuthorName": "Voidless & Dailyy",
-      "hash": "2C30181A02ACE050CA6855F41F3B17C8E9D77A53",
-      "levelid": "custom_level_2C30181A02ACE050CA6855F41F3B17C8E9D77A53",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Home",
-      "levelAuthorName": "BigOlDumplin",
-      "hash": "21B7AEEEC9270A273467894AE1C1A21B06D145D9",
-      "levelid": "custom_level_21B7AEEEC9270A273467894AE1C1A21B06D145D9",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "No Man",
-      "levelAuthorName": "Skeelie",
-      "hash": "BA0C6AFC81F66E849CF7D094AA31C68356196A47",
-      "levelid": "custom_level_BA0C6AFC81F66E849CF7D094AA31C68356196A47",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Iridium",
-      "levelAuthorName": "Amuga",
-      "hash": "546410179DDF777E503A376E5A1AEB3F79DF4812",
-      "levelid": "custom_level_546410179DDF777E503A376E5A1AEB3F79DF4812",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Ren'ai Saiban (Love Trial)",
-      "levelAuthorName": "kizuflux",
-      "hash": "43094923A770E1AA7193480E54D4C6299032EB8B",
-      "levelid": "custom_level_43094923A770E1AA7193480E54D4C6299032EB8B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Closer",
-      "levelAuthorName": "xxZAROKxx",
-      "hash": "16D16D78C5203CF07D1056C1C9D2792E68E3AF54",
-      "levelid": "custom_level_16D16D78C5203CF07D1056C1C9D2792E68E3AF54",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Love Like Mine",
-      "levelAuthorName": "AntiLink & Ögö",
-      "hash": "BC291CF224CFA19AADFB0E3A60158F44B948D152",
-      "levelid": "custom_level_BC291CF224CFA19AADFB0E3A60158F44B948D152",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Haunt, The Cartoon Heart",
-      "levelAuthorName": "BrightKnight",
-      "hash": "BDACECBF446F0F066F4189C7FE1A81C6D3664B90",
-      "levelid": "custom_level_BDACECBF446F0F066F4189C7FE1A81C6D3664B90",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Goodbye",
-      "levelAuthorName": "Alice",
-      "hash": "7F7BE1A32E1907710874F0F961F2515FFFC2BCC2",
-      "levelid": "custom_level_7F7BE1A32E1907710874F0F961F2515FFFC2BCC2",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Lonely King",
-      "levelAuthorName": "Supercoop900YT",
-      "hash": "0BFADDA5E96382B9E3FEA0D721925EF9956D1C02",
-      "levelid": "custom_level_0BFADDA5E96382B9E3FEA0D721925EF9956D1C02",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Baby I need you",
-      "levelAuthorName": "Emir",
-      "hash": "9010CB888DB9D038800AC50391AF7821871F0A1B",
-      "levelid": "custom_level_9010CB888DB9D038800AC50391AF7821871F0A1B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Umbrella",
-      "levelAuthorName": "Fireluke Gaming",
-      "hash": "BBE717517B0EC6FA42AE9B039A9753C72BFF2E13",
-      "levelid": "custom_level_BBE717517B0EC6FA42AE9B039A9753C72BFF2E13",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Clear",
-      "levelAuthorName": "ItsVasili",
-      "hash": "CC6AC8A0464389752B173F9604A4E85E3452AF73",
-      "levelid": "custom_level_CC6AC8A0464389752B173F9604A4E85E3452AF73",
+      "songName": "Movin'",
+      "levelAuthorName": "Premiere Equipe",
+      "hash": "6333CDBEE499B889DEE520764BC0CAE569E8A4F2",
+      "levelid": "custom_level_6333CDBEE499B889DEE520764BC0CAE569E8A4F2",
       "difficulties": [
         {
           "characteristic": "Standard",

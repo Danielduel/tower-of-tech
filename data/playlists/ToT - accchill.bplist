@@ -1,5 +1,5 @@
 {
-  "playlistTitle": "ToT - accchill",
+  "playlistTitle": "ToT - AccChill",
   "playlistAuthor": "Danielduel",
   "songs": [
     {
@@ -233,8 +233,8 @@
     {
       "songName": "Living Mice",
       "levelAuthorName": "ZombiiWasTaken",
-      "hash": "63CC8EE1CED50A684529293870EBE52F34A91A85",
-      "levelid": "custom_level_63CC8EE1CED50A684529293870EBE52F34A91A85",
+      "hash": "72A7BAFC75F0D546F10F09078A8375976747AC28",
+      "levelid": "custom_level_72A7BAFC75F0D546F10F09078A8375976747AC28",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -263,6 +263,114 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Perfect",
+      "levelAuthorName": "Raelynngames",
+      "hash": "69E836BC57F50075D0E550EAA6B77F8ABD135E7E",
+      "levelid": "custom_level_69E836BC57F50075D0E550EAA6B77F8ABD135E7E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Show Yourself",
+      "levelAuthorName": "Dack",
+      "hash": "8C2B775F367F2FDAE0291AECDE56384ACDB41F59",
+      "levelid": "custom_level_8C2B775F367F2FDAE0291AECDE56384ACDB41F59",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Always",
+      "levelAuthorName": "Rail Zen",
+      "hash": "F9149B86C763E849322B9CBDB362942FCC3846A9",
+      "levelid": "custom_level_F9149B86C763E849322B9CBDB362942FCC3846A9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Pictures feat. 4s4ki",
+      "levelAuthorName": "CharlotteAulin",
+      "hash": "5B0DFEF964AE68C85E8E9CB6D186E3E1252F349D",
+      "levelid": "custom_level_5B0DFEF964AE68C85E8E9CB6D186E3E1252F349D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Noise",
+      "levelAuthorName": "unqlTango",
+      "hash": "446376C3270840A04FA55A8E97EBF31227F60DA6",
+      "levelid": "custom_level_446376C3270840A04FA55A8E97EBF31227F60DA6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "On The Rocks",
+      "levelAuthorName": "JRE_McNuggies",
+      "hash": "21DF170F56BDE75DE70A023978748EA738BE3BC2",
+      "levelid": "custom_level_21DF170F56BDE75DE70A023978748EA738BE3BC2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Can't be my friend",
+      "levelAuthorName": "BigOlDumplin",
+      "hash": "D524CA5BE602B0648EB6D4E1CE4A42A7DDB9CD92",
+      "levelid": "custom_level_D524CA5BE602B0648EB6D4E1CE4A42A7DDB9CD92",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Black Velvet",
+      "levelAuthorName": "xxZAROKxx",
+      "hash": "ADA5F380A01BAE22262FC4A3EDF869F5C4F48ACC",
+      "levelid": "custom_level_ADA5F380A01BAE22262FC4A3EDF869F5C4F48ACC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Green Greens",
+      "levelAuthorName": "Rashed",
+      "hash": "C8B4A8237C8B6EF8D1B5C25AA313267D284052F4",
+      "levelid": "custom_level_C8B4A8237C8B6EF8D1B5C25AA313267D284052F4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

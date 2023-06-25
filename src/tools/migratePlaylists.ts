@@ -8,20 +8,30 @@ const destinationPath = new URL(import.meta.resolve("../../migrated/playlists"))
 const dirListing = [...Deno.readDirSync(sourcePath)]
   .filter(item => item.isFile)
 
-const allCoverBase64 = await getCoverBase64("*");
+const migratePlaylist = async (fileName: string, playlistData?: BeatSaberPlaylist) => {
+  const playlist = playlistData
+    ? playlistData
+    : JSON.parse(Deno.readTextFileSync(sourcePath + "/" + fileName)) as BeatSaberPlaylist;
 
-const playlists = dirListing.flatMap(file => {
-  const playlistRaw = Deno.readTextFileSync(sourcePath + "/" + file.name);
-  const playlist = JSON.parse(playlistRaw) as BeatSaberPlaylist;
-  return playlist;
-});
+  const longName = fileName
+    .split(".bplist")[0];
+  const shortName = longName
+    .split("ToT - ")
+      .pop()!;
 
-const mergedMaps = playlists.flatMap((playlist) => {
-  return playlist.songs;
-});
+  return {
+    fileName,
+    longName,
+    shortName,
+    playlist,
+    coverBase64: await getCoverBase64(shortName),
+  };
+}
+
+const playlists = await Promise.all(dirListing.map(file => migratePlaylist(file.name)));
+const mergedMaps = playlists.flatMap((playlist) => playlist.playlist.songs);
 
 const playlistItems: Record<string, BeatSaberPlaylistSongItem[]> = {};
-
 mergedMaps.forEach(item => {
   if (!playlistItems[item.hash]) playlistItems[item.hash] = [];
 
@@ -43,18 +53,32 @@ Object
   });
 
 const allMaps = Object.values(playlistItems).flatMap(x => x);
-const allMapsPlaylist: BeatSaberPlaylist = {
-  image: allCoverBase64,
+playlists.push(await migratePlaylist("*", {
+  image: "",
   playlistAuthor: "Danielduel",
   playlistTitle: "ToT - *",
-  songs: allMaps,
-  customData: {
-    AllowDuplicates: false,
-    id: "Tower of Tech",
-    owner: "Danielduel",
-    syncURL: "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/ToT_-_all.bplist"
-  }
-}
+  songs: allMaps
+}))
 
-const allMapsPlaylistJson = stringify(allMapsPlaylist);
-Deno.writeTextFileSync(destinationPath + "/" + "ToT_-_all.bplist", allMapsPlaylistJson);
+await Promise.all(playlists.map(async ({
+  coverBase64,
+  fileName,
+  longName,
+  playlist,
+  shortName
+}) => {
+  const beatsaberPlaylist: BeatSaberPlaylist = {
+    image: coverBase64,
+    playlistAuthor: playlist.playlistAuthor,
+    playlistTitle: playlist.playlistTitle,
+    songs: playlist.songs,
+    customData: {
+      AllowDuplicates: false,
+      id: "Tower of Tech",
+      owner: "Danielduel",
+      syncURL: new URL(`https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/${fileName}`).href
+    }
+  };
+  const beatsaberPlaylistString = stringify(beatsaberPlaylist);
+  await Deno.writeTextFile(`${destinationPath}/${fileName}`, beatsaberPlaylistString);
+}));
