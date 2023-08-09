@@ -5,14 +5,22 @@ import { stringify } from "../utils/json.ts";
 
 const sourcePath = new URL(import.meta.resolve("../../data/playlists")).pathname;
 const destinationPath = new URL(import.meta.resolve("../../migrated/playlists")).pathname;
+const destinationPathOffline = new URL(import.meta.resolve("../../migrated/playlists-offline")).pathname;
+
+const sourcePathGuests = new URL(import.meta.resolve("../../data/guest-playlists")).pathname;
+const destinationPathGuests = new URL(import.meta.resolve("../../migrated/guest-playlists")).pathname;
+
 const dirListing = [...Deno.readDirSync(sourcePath)]
-  .filter(item => item.isFile)
+  .filter(item => item.isFile);
+const dirListingGuests = [...Deno.readDirSync(sourcePathGuests)]
+  .filter(item => item.isDirectory)
+  .map(dirName => [...Deno.readDirSync(`${sourcePathGuests}/${dirName}`)])
 
-const migratePlaylist = async (fileName: string, playlistData?: BeatSaberPlaylist) => {
-  const playlist = playlistData
-    ? playlistData
-    : JSON.parse(Deno.readTextFileSync(sourcePath + "/" + fileName)) as BeatSaberPlaylist;
+const readPlaylistFile = (path: string): BeatSaberPlaylist => {
+  return JSON.parse(Deno.readTextFileSync(path));
+}
 
+const migratePlaylist = async (fileName: string, playlist: BeatSaberPlaylist) => {
   const longName = fileName
     .split(".bplist")[0];
   const shortName = longName
@@ -28,7 +36,10 @@ const migratePlaylist = async (fileName: string, playlistData?: BeatSaberPlaylis
   };
 }
 
-const playlists = await Promise.all(dirListing.map(file => migratePlaylist(file.name)));
+const playlists = await Promise.all(dirListing.map(file => migratePlaylist(
+  file.name,
+  readPlaylistFile(`${sourcePath}/${file.name}`)
+)));
 const mergedMaps = playlists.flatMap((playlist) => playlist.playlist.songs);
 
 const playlistItems: Record<string, BeatSaberPlaylistSongItem[]> = {};
@@ -67,11 +78,14 @@ await Promise.all(playlists.map(async ({
   playlist,
   shortName
 }) => {
-  const beatsaberPlaylist: BeatSaberPlaylist = {
+  const beatsaberPlaylistOffline: BeatSaberPlaylist = {
     image: coverBase64,
     playlistAuthor: playlist.playlistAuthor,
     playlistTitle: playlist.playlistTitle,
     songs: playlist.songs,
+  };
+  const beatsaberPlaylist: BeatSaberPlaylist = {
+    ...beatsaberPlaylistOffline,
     customData: {
       AllowDuplicates: false,
       id: "Tower of Tech",
@@ -79,6 +93,8 @@ await Promise.all(playlists.map(async ({
       syncURL: new URL(`https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/${fileName}`).href
     }
   };
+  const beatsaberPlaylistOfflineString = stringify(beatsaberPlaylistOffline);
   const beatsaberPlaylistString = stringify(beatsaberPlaylist);
+  await Deno.writeTextFile(`${destinationPathOffline}/${fileName}`, beatsaberPlaylistOfflineString);
   await Deno.writeTextFile(`${destinationPath}/${fileName}`, beatsaberPlaylistString);
 }));
