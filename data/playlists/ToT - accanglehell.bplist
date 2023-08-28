@@ -1,5 +1,5 @@
 {
-  "playlistTitle": "accanglehell",
+  "playlistTitle": "ToT - AccAnglehell",
   "playlistAuthor": "Danielduel",
   "songs": [
     {
@@ -190,6 +190,138 @@
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Idol",
+      "levelAuthorName": "",
+      "hash": "4B7716C80327361C2C6B030480CB1DCC55F4B2CE",
+      "levelid": "custom_level_4B7716C80327361C2C6B030480CB1DCC55F4B2CE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Honeymoon Phase",
+      "levelAuthorName": "Zyxi & Vylet",
+      "hash": "3BBA20454D309D851B8C6E921897DEFCF119042F",
+      "levelid": "custom_level_3BBA20454D309D851B8C6E921897DEFCF119042F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "On Replay",
+      "levelAuthorName": "Gabriel & Marsh",
+      "hash": "99E5D817086DCDB0BE2A5D66DC7F0D2AD8064497",
+      "levelid": "custom_level_99E5D817086DCDB0BE2A5D66DC7F0D2AD8064497",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "FANFARE",
+      "levelAuthorName": "sofmoh",
+      "hash": "D034C6BBEA79F4083BEE2E298D05DA08EFEC2AF1",
+      "levelid": "custom_level_D034C6BBEA79F4083BEE2E298D05DA08EFEC2AF1",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Lanterns",
+      "levelAuthorName": "Ani",
+      "hash": "B0257DA58E941EDADF8A807FAC6B4DC36E37E7BA",
+      "levelid": "custom_level_B0257DA58E941EDADF8A807FAC6B4DC36E37E7BA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "CH4NGE",
+      "levelAuthorName": "Kaxle",
+      "hash": "23501EB2041153309CEE8853185E2D23D879D6C4",
+      "levelid": "custom_level_23501EB2041153309CEE8853185E2D23D879D6C4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Say So",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
+      "levelid": "custom_level_C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "After Hours",
+      "levelAuthorName": "Kansas & OneSpookyBoi",
+      "hash": "72FC110FF526FB4CA1A3BEFBBD270CFBEE5C5EF0",
+      "levelid": "custom_level_72FC110FF526FB4CA1A3BEFBBD270CFBEE5C5EF0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Masquerade",
+      "levelAuthorName": "zomman",
+      "hash": "01A8F9C016AA1E0AFE53C50FC39ADF81D9E204D8",
+      "levelid": "custom_level_01A8F9C016AA1E0AFE53C50FC39ADF81D9E204D8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Da Capo",
+      "levelAuthorName": "staryouh",
+      "hash": "4B6E6FD70E27BE69EEC1809D847B07549524CCCE",
+      "levelid": "custom_level_4B6E6FD70E27BE69EEC1809D847B07549524CCCE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Something Real",
+      "levelAuthorName": "Tpenny68 & Matgenius04",
+      "hash": "BF154472AA1839F8BA95F4227EE84D539341B33F",
+      "levelid": "custom_level_BF154472AA1839F8BA95F4227EE84D539341B33F",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]

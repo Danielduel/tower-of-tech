@@ -1,72 +1,24 @@
 {
-  "playlistTitle": "ToT - rainbow surf",
+  "playlistTitle": "ToT - AdeptTech",
   "playlistAuthor": "Danielduel",
   "songs": [
     {
-      "songName": "Cheshire's dance",
-      "levelAuthorName": "Schwank",
-      "hash": "A2B943FE75E48394352B4FD912CEE8306788D0B1",
-      "levelid": "custom_level_A2B943FE75E48394352B4FD912CEE8306788D0B1",
+      "songName": "Yoake to Hotaru",
+      "levelAuthorName": "Uninstaller",
+      "hash": "D79DCCEDA40C451637EC99878F98886DED35748A",
+      "levelid": "custom_level_D79DCCEDA40C451637EC99878F98886DED35748A",
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
+          "name": "Expert"
         }
       ]
     },
     {
-      "songName": "Desert",
-      "levelAuthorName": "Aimedhades16",
-      "hash": "D429D3F8B7E205E55212E1C7678E099B20E6A915",
-      "levelid": "custom_level_D429D3F8B7E205E55212E1C7678E099B20E6A915",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Genryuu Kaiko",
-      "levelAuthorName": "Kival Evan",
-      "hash": "81850482C22D81F6BCE34805374B44A551E67759",
-      "levelid": "custom_level_81850482C22D81F6BCE34805374B44A551E67759",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Sakura Mirage",
-      "levelAuthorName": "riisi",
-      "hash": "7C913FFDD3BB67E11E73029FDD56AF14572E5E7A",
-      "levelid": "custom_level_7C913FFDD3BB67E11E73029FDD56AF14572E5E7A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Doki-Doki",
-      "levelAuthorName": "Tseska",
-      "hash": "9A5DF73CAD280EB1DA3BA2987B26C912CB19E8C2",
-      "levelid": "custom_level_9A5DF73CAD280EB1DA3BA2987B26C912CB19E8C2",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Catastrophe Of This Miserable World",
-      "levelAuthorName": "abcbadq",
-      "hash": "D555B8705052646FE28942F0AC6CC2C86F410D4A",
-      "levelid": "custom_level_D555B8705052646FE28942F0AC6CC2C86F410D4A",
+      "songName": "Need U Now",
+      "levelAuthorName": "Kassi",
+      "hash": "578DBD039BBD576A2F122F96C97578F95C4B1536",
+      "levelid": "custom_level_578DBD039BBD576A2F122F96C97578F95C4B1536",
       "difficulties": [
         {
           "characteristic": "Standard",

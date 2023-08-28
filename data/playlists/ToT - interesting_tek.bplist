@@ -27,30 +27,6 @@
       ]
     },
     {
-      "songName": "Nightcore - Cherry Gum",
-      "levelAuthorName": "thelitlewiseowl",
-      "hash": "21D0BA54C5FE137EE9C8EC9E380AB7CD55AF0990",
-      "levelid": "custom_level_21D0BA54C5FE137EE9C8EC9E380AB7CD55AF0990",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Lost Umbrella",
-      "levelAuthorName": "Aquaflee",
-      "hash": "9EFE62397031C67BB507C1A9A10753D14FB8E685",
-      "levelid": "custom_level_9EFE62397031C67BB507C1A9A10753D14FB8E685",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "ספירות",
       "levelAuthorName": "mux",
       "hash": "64133A77D1B064396DE552D368D414BFC6896C2B",
@@ -279,18 +255,6 @@
       ]
     },
     {
-      "songName": "Forbidden Pizza!",
-      "levelAuthorName": "Dr_Marc",
-      "hash": "038169C7BEBFAA062CF13393E371F3A8AA9D31DC",
-      "levelid": "custom_level_038169C7BEBFAA062CF13393E371F3A8AA9D31DC",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "intro-duck-tion!!",
       "levelAuthorName": "okazu",
       "hash": "4B664BC6ED1AF3589A761B0C5A133588BFED500A",
@@ -435,18 +399,6 @@
       ]
     },
     {
-      "songName": "Rose",
-      "levelAuthorName": "RoadieRune, Otektarangi & Scrapper",
-      "hash": "DB2853AF792421B4334DFA2F2C25F986BE3F3B62",
-      "levelid": "custom_level_DB2853AF792421B4334DFA2F2C25F986BE3F3B62",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Secret Lair",
       "levelAuthorName": "Hiromiru",
       "hash": "C7A2C1A367E25C512FA8AE32EF9663CA82ACBA1A",
@@ -475,18 +427,6 @@
       "levelAuthorName": "Gabriel & Marsh",
       "hash": "1225D950F09ABB3149CF9CFBA00C2E4526D4D62B",
       "levelid": "custom_level_1225D950F09ABB3149CF9CFBA00C2E4526D4D62B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Idol",
-      "levelAuthorName": "",
-      "hash": "4B7716C80327361C2C6B030480CB1DCC55F4B2CE",
-      "levelid": "custom_level_4B7716C80327361C2C6B030480CB1DCC55F4B2CE",
       "difficulties": [
         {
           "characteristic": "Standard",

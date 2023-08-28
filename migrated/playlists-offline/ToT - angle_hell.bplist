@@ -231,11 +231,5 @@
         }
       ]
     }
-  ],
-  "customData": {
-    "AllowDuplicates": false,
-    "id": "Tower of Tech",
-    "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/ToT%20-%20angle_hell.bplist"
-  }
+  ]
 }

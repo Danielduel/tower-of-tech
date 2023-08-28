@@ -1,5 +1,5 @@
 {
-  "playlistTitle": "midhitech",
+  "playlistTitle": "ToT - MidHitech",
   "playlistAuthor": "Danielduel",
   "songs": [
     {
@@ -139,6 +139,114 @@
       "levelAuthorName": "uiop327",
       "hash": "3D843A690B0B906E5AC113AE7FF4200B34C54E5B",
       "levelid": "custom_level_3D843A690B0B906E5AC113AE7FF4200B34C54E5B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Turbulence",
+      "levelAuthorName": "Foxy Boi and Wizzled",
+      "hash": "9EC7E3DF47E3883D42BC5944EDCEFFF8955684AD",
+      "levelid": "custom_level_9EC7E3DF47E3883D42BC5944EDCEFFF8955684AD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "HEADHUNTER",
+      "levelAuthorName": "Swifter",
+      "hash": "D737DA56C4FC032A5FC4791558A731B6968F399B",
+      "levelid": "custom_level_D737DA56C4FC032A5FC4791558A731B6968F399B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Halo",
+      "levelAuthorName": "Joetastic & Jamman",
+      "hash": "3145C41EC609B2EAB9D2143B76CCEF1F13749B07",
+      "levelid": "custom_level_3145C41EC609B2EAB9D2143B76CCEF1F13749B07",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "5733P BOMB",
+      "levelAuthorName": "Feco",
+      "hash": "63F7352EC318872EA81000725B28A87F79CE8A28",
+      "levelid": "custom_level_63F7352EC318872EA81000725B28A87F79CE8A28",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "IZANA",
+      "levelAuthorName": "Sibs",
+      "hash": "C29529A1155E2310E61AD7E3777259DCABC2E1E7",
+      "levelid": "custom_level_C29529A1155E2310E61AD7E3777259DCABC2E1E7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Secret Lie",
+      "levelAuthorName": "GalaxyMaster",
+      "hash": "8BF5686A5AAAD3F5A31A97EA937795BD7C0B8C4F",
+      "levelid": "custom_level_8BF5686A5AAAD3F5A31A97EA937795BD7C0B8C4F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Lost Umbrella",
+      "levelAuthorName": "Aquaflee",
+      "hash": "9EFE62397031C67BB507C1A9A10753D14FB8E685",
+      "levelid": "custom_level_9EFE62397031C67BB507C1A9A10753D14FB8E685",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "OTTAMA GAZER",
+      "levelAuthorName": "Gazer",
+      "hash": "4F82CCABEDD0341817C9CBC995C2819C9919379A",
+      "levelid": "custom_level_4F82CCABEDD0341817C9CBC995C2819C9919379A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rolling Girl",
+      "levelAuthorName": "BigSlick",
+      "hash": "1CCB3AAEB9A081984776851B0298F9647EE6B8E9",
+      "levelid": "custom_level_1CCB3AAEB9A081984776851B0298F9647EE6B8E9",
       "difficulties": [
         {
           "characteristic": "Standard",

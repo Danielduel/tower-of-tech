@@ -12,9 +12,9 @@ const destinationPathGuests = new URL(import.meta.resolve("../../migrated/guest-
 
 const dirListing = [...Deno.readDirSync(sourcePath)]
   .filter(item => item.isFile);
-const dirListingGuests = [...Deno.readDirSync(sourcePathGuests)]
-  .filter(item => item.isDirectory)
-  .map(dirName => [...Deno.readDirSync(`${sourcePathGuests}/${dirName}`)])
+// const dirListingGuests = [...Deno.readDirSync(sourcePathGuests)]
+//   .filter(item => item.isDirectory)
+//   .map(dirName => [...Deno.readDirSync(`${sourcePathGuests}/${dirName}`)])
 
 const readPlaylistFile = (path: string): BeatSaberPlaylist => {
   return JSON.parse(Deno.readTextFileSync(path));

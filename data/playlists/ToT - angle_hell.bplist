@@ -3,66 +3,6 @@
   "playlistAuthor": "Danielduel",
   "songs": [
     {
-      "songName": "Rainbow Rhythm",
-      "levelAuthorName": "ani",
-      "hash": "5F35B7D3E3858029B16A9AF80163F54E9B838A62",
-      "levelid": "custom_level_5F35B7D3E3858029B16A9AF80163F54E9B838A62",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Marshall Maximizer",
-      "levelAuthorName": "CoolingCloset",
-      "hash": "6E5DC5A390D0141279A3BEB49F2D5B4CD9630457",
-      "levelid": "custom_level_6E5DC5A390D0141279A3BEB49F2D5B4CD9630457",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Technologic",
-      "levelAuthorName": "namaki_duo",
-      "hash": "84D5C213AF8F4F2FF83E5EFC6D6B9923011C0883",
-      "levelid": "custom_level_84D5C213AF8F4F2FF83E5EFC6D6B9923011C0883",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "说书人",
-      "levelAuthorName": "ani",
-      "hash": "05258A590577B92FA63581DAA939133D687C05EC",
-      "levelid": "custom_level_05258A590577B92FA63581DAA939133D687C05EC",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Dream",
-      "levelAuthorName": "ani",
-      "hash": "8314AC3130B9A50C0D3E767B23ADC00835E3B93D",
-      "levelid": "custom_level_8314AC3130B9A50C0D3E767B23ADC00835E3B93D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Titanium ft. Moew",
       "levelAuthorName": "thelitlewiseowl",
       "hash": "D75EA2DA9413EF1DC3EC0FF0D32A8CB6DD76256A",

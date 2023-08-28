@@ -1,12 +1,72 @@
 {
-  "playlistTitle": "mianglehell",
-  "playlistAuthor": "cush",
+  "playlistTitle": "ToT - MidAnglehell",
+  "playlistAuthor": "Danielduel",
   "songs": [
     {
       "songName": "On take SUN",
       "levelAuthorName": "Foxy Boi",
       "hash": "C1BEBFFA1E6D897DE207418ED775698C663C61EA",
       "levelid": "custom_level_C1BEBFFA1E6D897DE207418ED775698C663C61EA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "1:15",
+      "levelAuthorName": "Bitz, Tranch, WalkingKat & Astellic",
+      "hash": "D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
+      "levelid": "custom_level_D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "BRING IT ON!",
+      "levelAuthorName": "Astellic",
+      "hash": "80736BCCFC3E581E897192942FC677B5C3F79682",
+      "levelid": "custom_level_80736BCCFC3E581E897192942FC677B5C3F79682",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Bug",
+      "levelAuthorName": "Hades & Aalto",
+      "hash": "3A6D4A62165E9DAB9E67CE534F5BEFBB0312643B",
+      "levelid": "custom_level_3A6D4A62165E9DAB9E67CE534F5BEFBB0312643B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Switronic",
+      "levelAuthorName": "Tyrits",
+      "hash": "C58BBCB4F129AC88794BB6B294C9C8947050B009",
+      "levelid": "custom_level_C58BBCB4F129AC88794BB6B294C9C8947050B009",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Defining Future",
+      "levelAuthorName": "Foxy Boi",
+      "hash": "53AC3FA8EE7E94513DA14C7CD01593D5C61EE794",
+      "levelid": "custom_level_53AC3FA8EE7E94513DA14C7CD01593D5C61EE794",
       "difficulties": [
         {
           "characteristic": "Standard",

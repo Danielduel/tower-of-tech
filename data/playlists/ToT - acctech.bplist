@@ -39,30 +39,6 @@
       ]
     },
     {
-      "songName": "Hello World",
-      "levelAuthorName": "Fara",
-      "hash": "8D9D970FCE0C0DBF86B65F8B23736BFE155C6D05",
-      "levelid": "custom_level_8D9D970FCE0C0DBF86B65F8B23736BFE155C6D05",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "SLEEPWALK",
-      "levelAuthorName": "mux",
-      "hash": "CB97FDD4CC6E85A7F755845CFD248F1C3608B012",
-      "levelid": "custom_level_CB97FDD4CC6E85A7F755845CFD248F1C3608B012",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "disco light",
       "levelAuthorName": "Various Mappers",
       "hash": "2337E9C03A2BAF32CB6BC2E5127172B772869FFA",
@@ -71,18 +47,6 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "心という名の不可解",
-      "levelAuthorName": "staryouh",
-      "hash": "2491C65C3BA53C58128736A6A54914155AC6C57C",
-      "levelid": "custom_level_2491C65C3BA53C58128736A6A54914155AC6C57C",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -243,30 +207,6 @@
       ]
     },
     {
-      "songName": "1:15",
-      "levelAuthorName": "Bitz",
-      "hash": "F01B4241582979A9CED1D9C3D89D8924CE7B4345",
-      "levelid": "custom_level_F01B4241582979A9CED1D9C3D89D8924CE7B4345",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Candace - Nephrite of Deshret",
-      "levelAuthorName": "Cush",
-      "hash": "1926D59CC0CC17F88FAEC8884811B2DCDEC0C72A",
-      "levelid": "custom_level_1926D59CC0CC17F88FAEC8884811B2DCDEC0C72A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Fukashigi No Carte",
       "levelAuthorName": "Aimedhades16",
       "hash": "855C7330C615E37C4632A90DEC8FC912F6C672AC",
@@ -355,18 +295,6 @@
       "levelAuthorName": "Shappy",
       "hash": "D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
       "levelid": "custom_level_D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "You're Gonna Go Far, Kid",
-      "levelAuthorName": "abcbadq",
-      "hash": "B23C3DB5BD49A9EEC6103074167D7D202DE71579",
-      "levelid": "custom_level_B23C3DB5BD49A9EEC6103074167D7D202DE71579",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -867,18 +795,6 @@
       ]
     },
     {
-      "songName": "Poison",
-      "levelAuthorName": "EOP Glacier",
-      "hash": "B2D6E847D360B5D527A37B1A9953CA6E5E6DA9F1",
-      "levelid": "custom_level_B2D6E847D360B5D527A37B1A9953CA6E5E6DA9F1",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "VORACITY",
       "levelAuthorName": "Joshabi & Bitz",
       "hash": "78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
@@ -903,18 +819,6 @@
       ]
     },
     {
-      "songName": "Heroine Ikusei Keikaku",
-      "levelAuthorName": "Uragirimono",
-      "hash": "413F226DDDD41888ACBE553064733513699F755A",
-      "levelid": "custom_level_413F226DDDD41888ACBE553064733513699F755A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Ruki Roki * Lucky",
       "levelAuthorName": "Uragirimono",
       "hash": "B66FE741E1F85D7039D69D9048462A1827604DE3",
@@ -922,30 +826,6 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Empires",
-      "levelAuthorName": "RetrX",
-      "hash": "81F2147DA4B9190336E810C16F90076B53E2E045",
-      "levelid": "custom_level_81F2147DA4B9190336E810C16F90076B53E2E045",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Mr.VIRTUALIZER",
-      "levelAuthorName": "Emir",
-      "hash": "216DA2D781ECAA6183DED31E6826952AC1F76350",
-      "levelid": "custom_level_216DA2D781ECAA6183DED31E6826952AC1F76350",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]
@@ -967,18 +847,6 @@
       "levelAuthorName": "Huuzin",
       "hash": "46532224DA23DED13AA2C1B20775E0A5B2AD0488",
       "levelid": "custom_level_46532224DA23DED13AA2C1B20775E0A5B2AD0488",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Not enough",
-      "levelAuthorName": "Kanahebi",
-      "hash": "766159A035EDB39CA4B43650E1C9A15FB756FBE3",
-      "levelid": "custom_level_766159A035EDB39CA4B43650E1C9A15FB756FBE3",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1723,6 +1591,102 @@
       "levelAuthorName": "EOP Glacier",
       "hash": "7E66FA61DB6C9900BB2611B678DE847D97301412",
       "levelid": "custom_level_7E66FA61DB6C9900BB2611B678DE847D97301412",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "drive all night",
+      "levelAuthorName": "Pixelguy",
+      "hash": "E39897BC43C806589971029E41E5B42015417F3F",
+      "levelid": "custom_level_E39897BC43C806589971029E41E5B42015417F3F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "BET ON ME",
+      "levelAuthorName": "Jonas_0_0, minsiii",
+      "hash": "1617222B7285A070DA32CB5788555FCB9DF33BC8",
+      "levelid": "custom_level_1617222B7285A070DA32CB5788555FCB9DF33BC8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Turn on the Lights",
+      "levelAuthorName": "Revelate",
+      "hash": "1C881771BBE8D2528E3DAAAEA923C1D5EAE51D49",
+      "levelid": "custom_level_1C881771BBE8D2528E3DAAAEA923C1D5EAE51D49",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Odo",
+      "levelAuthorName": "Bloodcloak",
+      "hash": "9974123DA31B4BDB400ECD8FB3D716EF16525DE6",
+      "levelid": "custom_level_9974123DA31B4BDB400ECD8FB3D716EF16525DE6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Need U Now",
+      "levelAuthorName": "Kassi",
+      "hash": "578DBD039BBD576A2F122F96C97578F95C4B1536",
+      "levelid": "custom_level_578DBD039BBD576A2F122F96C97578F95C4B1536",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Life Goes On",
+      "levelAuthorName": "Joetastic",
+      "hash": "DC18E5E32F54FD6E31B4D693E0E645A0CF359AA8",
+      "levelid": "custom_level_DC18E5E32F54FD6E31B4D693E0E645A0CF359AA8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Criminal Minds",
+      "levelAuthorName": "Lekrkoekj",
+      "hash": "4765B5F4881F0EC7B5D3D922B4763FCD5A89E73A",
+      "levelid": "custom_level_4765B5F4881F0EC7B5D3D922B4763FCD5A89E73A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hiasobi ft. Hatsune Miku",
+      "levelAuthorName": "Ge2toro",
+      "hash": "771331666E914FEBF5414A230440D97E678B0A86",
+      "levelid": "custom_level_771331666E914FEBF5414A230440D97E678B0A86",
       "difficulties": [
         {
           "characteristic": "Standard",
