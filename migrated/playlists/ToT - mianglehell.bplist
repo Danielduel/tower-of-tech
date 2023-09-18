@@ -74,6 +74,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Paradichlorobenzene x Anti-chlorobenzene",
+      "levelAuthorName": "Anammelech",
+      "hash": "0FBFA061B0F1A6B34259C514569D13C42904392E",
+      "levelid": "custom_level_0FBFA061B0F1A6B34259C514569D13C42904392E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Vindication",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "B24A3F44A7E255F0FCCBDC7C012F20DDA58A7C83",
+      "levelid": "custom_level_B24A3F44A7E255F0FCCBDC7C012F20DDA58A7C83",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cha Cha Cha",
+      "levelAuthorName": "abcbadq",
+      "hash": "45002F90D4CD26891819EFEEB1887FF9A3CCB571",
+      "levelid": "custom_level_45002F90D4CD26891819EFEEB1887FF9A3CCB571",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

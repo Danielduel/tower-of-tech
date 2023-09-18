@@ -26,6 +26,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Antithesis",
+      "levelAuthorName": "EOP Glacier",
+      "hash": "E370C49C81AC28F2BF58160A03AA48355E016F89",
+      "levelid": "custom_level_E370C49C81AC28F2BF58160A03AA48355E016F89",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Friday",
+      "levelAuthorName": "Faded 99 & Z-ANESaber",
+      "hash": "E8F0E5B497A44AE3F3E0DECAD8A1871B4B8AAF56",
+      "levelid": "custom_level_E8F0E5B497A44AE3F3E0DECAD8A1871B4B8AAF56",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Falling",
+      "levelAuthorName": "nolan121405",
+      "hash": "19AF73336A1C2FE788FF3DF0D93DB6E0BEAA0640",
+      "levelid": "custom_level_19AF73336A1C2FE788FF3DF0D93DB6E0BEAA0640",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
     }
   ],
   "customData": {

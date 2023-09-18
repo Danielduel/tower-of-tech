@@ -146,6 +146,30 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "World War Rave",
+      "levelAuthorName": "Avexus & Spinvvy",
+      "hash": "7A6359747F3AD8CFC1E7B65242356347E32E62D8",
+      "levelid": "custom_level_7A6359747F3AD8CFC1E7B65242356347E32E62D8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Where Ever i Go - One Republic",
+      "levelAuthorName": "Mootachi",
+      "hash": "1952B5BD1B6AE39524370EE80CD5867A1079B490",
+      "levelid": "custom_level_1952B5BD1B6AE39524370EE80CD5867A1079B490",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
     }
   ],
   "customData": {

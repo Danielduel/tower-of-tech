@@ -326,6 +326,145 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "パスタ作ったお前",
+      "levelAuthorName": "teoG2or",
+      "hash": "2A082DB16C8BEBC2449001E38EA3A4D5D4068DAF",
+      "levelid": "custom_level_2A082DB16C8BEBC2449001E38EA3A4D5D4068DAF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "fantasy/reality",
+      "levelAuthorName": "Gabriel",
+      "hash": "C96AEC1072B2C8F188C2B2392E644E18A62B3592",
+      "levelid": "custom_level_C96AEC1072B2C8F188C2B2392E644E18A62B3592",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cure For Me",
+      "levelAuthorName": "Groovy",
+      "hash": "335FA11875891E4232E8B5C8D99790B1BC703C8B",
+      "levelid": "custom_level_335FA11875891E4232E8B5C8D99790B1BC703C8B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "KIen romance(TV size)",
+      "levelAuthorName": "esa_esa",
+      "hash": "D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
+      "levelid": "custom_level_D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cure For Me",
+      "levelAuthorName": "staryouh",
+      "hash": "2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
+      "levelid": "custom_level_2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Poison Girl",
+      "levelAuthorName": "Vegetable Mapping Team",
+      "hash": "0305681C6F69F7BBE9AF01999AD72BAFA285E382",
+      "levelid": "custom_level_0305681C6F69F7BBE9AF01999AD72BAFA285E382",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Pretty Savage",
+      "levelAuthorName": "Groovy",
+      "hash": "405D4815492B3902B67409A502FE8E146E5B20BF",
+      "levelid": "custom_level_405D4815492B3902B67409A502FE8E146E5B20BF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "待花开",
+      "levelAuthorName": "staryouh",
+      "hash": "6432BC40D83A0F89FF51B8537B04638E8D9CEFA8",
+      "levelid": "custom_level_6432BC40D83A0F89FF51B8537B04638E8D9CEFA8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Black Tortoise",
+      "levelAuthorName": "oegoe & Pleo",
+      "hash": "A58AA0BB8F69BF2286030AE7AFD134B4D51BED1B",
+      "levelid": "custom_level_A58AA0BB8F69BF2286030AE7AFD134B4D51BED1B",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "UminekoRoad",
+      "levelAuthorName": "CharlotteAulin",
+      "hash": "859D830A3BB75F98EAF80149F14238D5CD3439E9",
+      "levelid": "custom_level_859D830A3BB75F98EAF80149F14238D5CD3439E9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Divine",
+      "levelAuthorName": "PogU",
+      "hash": "819C22AD46026F0C7942ACECF97C0231E6C098A5",
+      "levelid": "custom_level_819C22AD46026F0C7942ACECF97C0231E6C098A5",
+      "difficulties": []
+    },
+    {
+      "songName": "GO! GO! MANIAC",
+      "levelAuthorName": "",
+      "hash": "9CABA47B5FC780B81E0990820B37605DA6330027",
+      "levelid": "custom_level_9CABA47B5FC780B81E0990820B37605DA6330027",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

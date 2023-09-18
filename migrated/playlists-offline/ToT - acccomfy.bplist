@@ -374,6 +374,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "stephany",
+      "levelAuthorName": "TheWildDash & Sloth",
+      "hash": "6868B641CA802561929D11E4A85EC7F37575F6AA",
+      "levelid": "custom_level_6868B641CA802561929D11E4A85EC7F37575F6AA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "転生したら可愛かった",
+      "levelAuthorName": "misterlihao",
+      "hash": "877B4B3037686A22E6B734576A3F97EBE88C9135",
+      "levelid": "custom_level_877B4B3037686A22E6B734576A3F97EBE88C9135",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Butter-Fly (TV Size)",
+      "levelAuthorName": "Joetastic",
+      "hash": "19236F99258603E0D4CCC0DE6F7E8A0A0CC21970",
+      "levelid": "custom_level_19236F99258603E0D4CCC0DE6F7E8A0A0CC21970",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

@@ -195,18 +195,6 @@
       ]
     },
     {
-      "songName": "DoReMi Goal",
-      "levelAuthorName": "Fara",
-      "hash": "5EE17B1A5EA6DA9309A3F206A5BF7BD5E3BAA382",
-      "levelid": "custom_level_5EE17B1A5EA6DA9309A3F206A5BF7BD5E3BAA382",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Fukashigi No Carte",
       "levelAuthorName": "Aimedhades16",
       "hash": "855C7330C615E37C4632A90DEC8FC912F6C672AC",
@@ -274,18 +262,6 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Maware! Setsugetsuka ",
-      "levelAuthorName": "Kanahebi",
-      "hash": "10AB9C908D3A4A6D7CAD78896A9FB98ADA71982F",
-      "levelid": "custom_level_10AB9C908D3A4A6D7CAD78896A9FB98ADA71982F",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]
@@ -1687,6 +1663,174 @@
       "levelAuthorName": "Ge2toro",
       "hash": "771331666E914FEBF5414A230440D97E678B0A86",
       "levelid": "custom_level_771331666E914FEBF5414A230440D97E678B0A86",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "You & Night & Whisky(coverd by GLIM SPANKY)",
+      "levelAuthorName": "esa_esa",
+      "hash": "F796C5EC89E8D089ADA4D2CFD6E1C491E011F64C",
+      "levelid": "custom_level_F796C5EC89E8D089ADA4D2CFD6E1C491E011F64C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "timelapse",
+      "levelAuthorName": "",
+      "hash": "6AB33F5DABCB60640C20DA6C8C840D8625466650",
+      "levelid": "custom_level_6AB33F5DABCB60640C20DA6C8C840D8625466650",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "king ki jack yaku",
+      "levelAuthorName": "Fuyakeru",
+      "hash": "84BE7216C686F31EE2E6BD0A7AA2C44A48E0F4CD",
+      "levelid": "custom_level_84BE7216C686F31EE2E6BD0A7AA2C44A48E0F4CD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "HAPPY DISTORTION DAY",
+      "levelAuthorName": "Spinvvy",
+      "hash": "D0BECFCFE1BA235D4629CC1219D3B8D6FAEACE64",
+      "levelid": "custom_level_D0BECFCFE1BA235D4629CC1219D3B8D6FAEACE64",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "p.h.",
+      "levelAuthorName": "TOFU",
+      "hash": "84BCFF4756AC66BF1746824B0B221EB1E6A4AFF2",
+      "levelid": "custom_level_84BCFF4756AC66BF1746824B0B221EB1E6A4AFF2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Alive (TV Size)",
+      "levelAuthorName": "Joetastic",
+      "hash": "EC4C8298C8F9BA33AEB551D43C046FED3BA7F912",
+      "levelid": "custom_level_EC4C8298C8F9BA33AEB551D43C046FED3BA7F912",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Es Isso",
+      "levelAuthorName": "xScaramouche & JohnnyDee",
+      "hash": "3E71158D17E9C257E3DB69F98F7C1237D9C1B8D4",
+      "levelid": "custom_level_3E71158D17E9C257E3DB69F98F7C1237D9C1B8D4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Kick It",
+      "levelAuthorName": "General Dumbass",
+      "hash": "344D246120F16BA93E2469DAE696851D75728C2D",
+      "levelid": "custom_level_344D246120F16BA93E2469DAE696851D75728C2D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "KEEP ON MOVING",
+      "levelAuthorName": "Joetastic",
+      "hash": "777DD4436BDA0BD7903000136212BCAF4EE2757E",
+      "levelid": "custom_level_777DD4436BDA0BD7903000136212BCAF4EE2757E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Iro o Ushinatta Machi",
+      "levelAuthorName": "CoolingCloset & Helloiamdaan & Nolanimations",
+      "hash": "4E19C93FF2D7E086536AEAB2F551C2E184160640",
+      "levelid": "custom_level_4E19C93FF2D7E086536AEAB2F551C2E184160640",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "Ascent",
+      "levelAuthorName": "nitronik.exe",
+      "hash": "095AAFC77C02AA022DF21FF5071D0328599D8756",
+      "levelid": "custom_level_095AAFC77C02AA022DF21FF5071D0328599D8756",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Som forleden - Lamin",
+      "levelAuthorName": "Mootachi",
+      "hash": "5398AD96E6FAFB155D06D9C39E6E0D60279788E5",
+      "levelid": "custom_level_5398AD96E6FAFB155D06D9C39E6E0D60279788E5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Unicorn",
+      "levelAuthorName": "Nebelmonster",
+      "hash": "918110A59E398D0F2C9B3D3BF863CC6B7896BB24",
+      "levelid": "custom_level_918110A59E398D0F2C9B3D3BF863CC6B7896BB24",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "House on Fire",
+      "levelAuthorName": "Fireluke Gaming",
+      "hash": "63C42FF6C7F69D8F9C94A41E3DB068EFB244C1C9",
+      "levelid": "custom_level_63C42FF6C7F69D8F9C94A41E3DB068EFB244C1C9",
       "difficulties": [
         {
           "characteristic": "Standard",

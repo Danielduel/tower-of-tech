@@ -350,6 +350,114 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "mansana",
+      "levelAuthorName": "Cobayo",
+      "hash": "59B559E5C32A848179FF26BAE68685C770AE0D39",
+      "levelid": "custom_level_59B559E5C32A848179FF26BAE68685C770AE0D39",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Kaikai Kitan (TV Size)",
+      "levelAuthorName": "Joetastic",
+      "hash": "3BF9239FCB85A172B725B16B4524006336272D65",
+      "levelid": "custom_level_3BF9239FCB85A172B725B16B4524006336272D65",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shiver",
+      "levelAuthorName": "BigOlDumplin",
+      "hash": "10E496D658E62B889A2966341A8F44B75786797F",
+      "levelid": "custom_level_10E496D658E62B889A2966341A8F44B75786797F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Sad Spring",
+      "levelAuthorName": "Slayx",
+      "hash": "EAE75C2695038233C447FCB049B5ACDFA60485F8",
+      "levelid": "custom_level_EAE75C2695038233C447FCB049B5ACDFA60485F8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Violent Purple",
+      "levelAuthorName": "RJB",
+      "hash": "994370BD21C9C3AA9B2C3099D35F99016BDD8D49",
+      "levelid": "custom_level_994370BD21C9C3AA9B2C3099D35F99016BDD8D49",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Tengaku",
+      "levelAuthorName": "abcbadq",
+      "hash": "56150FB696DFDBB2BEDE28D5DAA5471BC529E1A7",
+      "levelid": "custom_level_56150FB696DFDBB2BEDE28D5DAA5471BC529E1A7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "U.N. Owen Was Her?",
+      "levelAuthorName": "I Cant Jump Well",
+      "hash": "79B9936995E4530CA22E3A53DC52DAF69894FD65",
+      "levelid": "custom_level_79B9936995E4530CA22E3A53DC52DAF69894FD65",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "BRAZILIAN DANÇA PHONK",
+      "levelAuthorName": "Artsiio",
+      "hash": "D51E116385A557B3CA8E757A061515DA47DD1AA8",
+      "levelid": "custom_level_D51E116385A557B3CA8E757A061515DA47DD1AA8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Monster",
+      "levelAuthorName": "Timeweaver",
+      "hash": "24B1990F8F72224F7827721BA16C82BD3246E926",
+      "levelid": "custom_level_24B1990F8F72224F7827721BA16C82BD3246E926",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

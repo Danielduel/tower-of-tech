@@ -470,6 +470,210 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "House of Memories",
+      "levelAuthorName": "Cobayo",
+      "hash": "9071AACE42D68385CC6ABF3947279571485B5A5F",
+      "levelid": "custom_level_9071AACE42D68385CC6ABF3947279571485B5A5F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cherry Talk",
+      "levelAuthorName": "minsiii",
+      "hash": "6DEF462C6FEE6F6EF4046498B7BCEA4189FACACE",
+      "levelid": "custom_level_6DEF462C6FEE6F6EF4046498B7BCEA4189FACACE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "second hand embarrassment",
+      "levelAuthorName": "razy",
+      "hash": "640DBF73C08804F33D96A72E6937D4F7D804E1EF",
+      "levelid": "custom_level_640DBF73C08804F33D96A72E6937D4F7D804E1EF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shakira: Bzrp Music Sessions, Vol. 53",
+      "levelAuthorName": "Cobayo",
+      "hash": "5B449B1641F02654F844C76D9CF34E89BB81566E",
+      "levelid": "custom_level_5B449B1641F02654F844C76D9CF34E89BB81566E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Anatasama",
+      "levelAuthorName": "Emir",
+      "hash": "5E89C16A07034CE7654E30FCCD64BA9844534C67",
+      "levelid": "custom_level_5E89C16A07034CE7654E30FCCD64BA9844534C67",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Desperate",
+      "levelAuthorName": "AllPoland",
+      "hash": "C37CDE238A4C7AF0B5CEDD568AFB97042E8FEAF1",
+      "levelid": "custom_level_C37CDE238A4C7AF0B5CEDD568AFB97042E8FEAF1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "EUNOIA",
+      "levelAuthorName": "minsiii",
+      "hash": "F4283DBA05E06136E6201FD4E9FC19783922F364",
+      "levelid": "custom_level_F4283DBA05E06136E6201FD4E9FC19783922F364",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "In The Back Room",
+      "levelAuthorName": "Astellic",
+      "hash": "03A9EA334223F15D3E23B521D1D5E743EFB39A05",
+      "levelid": "custom_level_03A9EA334223F15D3E23B521D1D5E743EFB39A05",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Usagi Flap",
+      "levelAuthorName": "Spectral",
+      "hash": "E6AE1C26347EDE1630709C5D715A634AC9B69218",
+      "levelid": "custom_level_E6AE1C26347EDE1630709C5D715A634AC9B69218",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Deeper",
+      "levelAuthorName": "Ryjiku",
+      "hash": "9EFAC573C92F8558F64A82FD2B523D929AD7EBE1",
+      "levelid": "custom_level_9EFAC573C92F8558F64A82FD2B523D929AD7EBE1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Saucy",
+      "levelAuthorName": "Cobayo",
+      "hash": "E7D7D8B17BCB7F25B1A510F711F10B86BB5E8299",
+      "levelid": "custom_level_E7D7D8B17BCB7F25B1A510F711F10B86BB5E8299",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "757",
+      "levelAuthorName": "Astellic as \"fartbunny\"",
+      "hash": "BFCD1B48D1D4BF07BF82E0C6AC71DB3B2EE8C59E",
+      "levelid": "custom_level_BFCD1B48D1D4BF07BF82E0C6AC71DB3B2EE8C59E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "DoReMi Goal",
+      "levelAuthorName": "Fara",
+      "hash": "5EE17B1A5EA6DA9309A3F206A5BF7BD5E3BAA382",
+      "levelid": "custom_level_5EE17B1A5EA6DA9309A3F206A5BF7BD5E3BAA382",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Orbit",
+      "levelAuthorName": "EerieWolf",
+      "hash": "F63063A9CC8B365A68307F2201AB7739B7F692E9",
+      "levelid": "custom_level_F63063A9CC8B365A68307F2201AB7739B7F692E9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Divine",
+      "levelAuthorName": "PogU",
+      "hash": "819C22AD46026F0C7942ACECF97C0231E6C098A5",
+      "levelid": "custom_level_819C22AD46026F0C7942ACECF97C0231E6C098A5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Bye Bye Bye",
+      "levelAuthorName": "FatBeanzoop",
+      "hash": "72B048BAA623AF9390E3516466834997F007DD41",
+      "levelid": "custom_level_72B048BAA623AF9390E3516466834997F007DD41",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Go Down",
+      "levelAuthorName": "Gabriel",
+      "hash": "402FB3EE310C53B30B4CA5325B6928AFC6E71EBF",
+      "levelid": "custom_level_402FB3EE310C53B30B4CA5325B6928AFC6E71EBF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

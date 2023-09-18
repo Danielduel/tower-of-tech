@@ -74,6 +74,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Teo",
+      "levelAuthorName": "RetrX",
+      "hash": "5FB19E48F542BF6632F38457FBCA85DA2425360F",
+      "levelid": "custom_level_5FB19E48F542BF6632F38457FBCA85DA2425360F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

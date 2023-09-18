@@ -64,18 +64,6 @@
       ]
     },
     {
-      "songName": "Antithesis",
-      "levelAuthorName": "EOP Glacier",
-      "hash": "E370C49C81AC28F2BF58160A03AA48355E016F89",
-      "levelid": "custom_level_E370C49C81AC28F2BF58160A03AA48355E016F89",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "Sunflower",
       "levelAuthorName": "zzwhoops",
       "hash": "6D5863177C79AA5FFE1219F14597F1106924661C",

@@ -254,6 +254,138 @@
           "name": "Expert"
         }
       ]
+    },
+    {
+      "songName": "LVL.99",
+      "levelAuthorName": "Voidless",
+      "hash": "FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
+      "levelid": "custom_level_FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "God-ish",
+      "levelAuthorName": "muffn",
+      "hash": "95CD7AA1DDA2984E9A41E490A01B5B6088BA08EF",
+      "levelid": "custom_level_95CD7AA1DDA2984E9A41E490A01B5B6088BA08EF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Tell Me",
+      "levelAuthorName": "Cat Using A Toaster",
+      "hash": "5C5B9552C3FFA731FE9723D85EAA5415EC069946",
+      "levelid": "custom_level_5C5B9552C3FFA731FE9723D85EAA5415EC069946",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "A46",
+      "levelAuthorName": "PrimulaChiel",
+      "hash": "CEB71F685091E70120DD2592AB7488BE279F061D",
+      "levelid": "custom_level_CEB71F685091E70120DD2592AB7488BE279F061D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Turn It Up",
+      "levelAuthorName": "abcbadq",
+      "hash": "67A32C8E55EAB4EC913EEC676B0B23B45BCC9E0E",
+      "levelid": "custom_level_67A32C8E55EAB4EC913EEC676B0B23B45BCC9E0E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dream Flower",
+      "levelAuthorName": "wangyufy",
+      "hash": "5FE63FF00D316F62010C4C288168204FAC155F18",
+      "levelid": "custom_level_5FE63FF00D316F62010C4C288168204FAC155F18",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Lemming Ming",
+      "levelAuthorName": "TOFUWAVE",
+      "hash": "6EBEC238EE064D98A6871871B9A2C59E3C6313C2",
+      "levelid": "custom_level_6EBEC238EE064D98A6871871B9A2C59E3C6313C2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "SLoWMoTIoN (covered by nameless)",
+      "levelAuthorName": "Comyute",
+      "hash": "1BD0FF08D840F41688505E9C0D5BC07EEFF02987",
+      "levelid": "custom_level_1BD0FF08D840F41688505E9C0D5BC07EEFF02987",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "MENDES",
+      "levelAuthorName": "mux",
+      "hash": "A5F9FD91974CA5EF686EF5439534130A08DAC53F",
+      "levelid": "custom_level_A5F9FD91974CA5EF686EF5439534130A08DAC53F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Maware! Setsugetsuka ",
+      "levelAuthorName": "Kanahebi",
+      "hash": "10AB9C908D3A4A6D7CAD78896A9FB98ADA71982F",
+      "levelid": "custom_level_10AB9C908D3A4A6D7CAD78896A9FB98ADA71982F",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Bug",
+      "levelAuthorName": "Jabob",
+      "hash": "188A4B89A7141989DE244A40DC3FD47A7E29CEEA",
+      "levelid": "custom_level_188A4B89A7141989DE244A40DC3FD47A7E29CEEA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }
