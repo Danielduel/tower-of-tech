@@ -1,3 +1,14 @@
 .env
 NOTES
 migrated/covers/*
+# moon
+.moon/cache
+.moon/docker
+
+# local
+local.db
+local.db-shm
+local.db-wal
+raports
+maps
+log
