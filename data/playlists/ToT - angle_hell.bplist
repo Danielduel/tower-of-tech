@@ -3,74 +3,14 @@
   "playlistAuthor": "Danielduel",
   "songs": [
     {
-      "songName": "Titanium ft. Moew",
-      "levelAuthorName": "thelitlewiseowl",
-      "hash": "D75EA2DA9413EF1DC3EC0FF0D32A8CB6DD76256A",
-      "levelid": "custom_level_D75EA2DA9413EF1DC3EC0FF0D32A8CB6DD76256A",
+      "songName": "モザイクロール(Reloaded)",
+      "levelAuthorName": "MAC",
+      "hash": "DDFE09453F7FDA205EBF6FFF7597A9FE0801F0A8",
+      "levelid": "custom_level_DDFE09453F7FDA205EBF6FFF7597A9FE0801F0A8",
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Lilith",
-      "levelAuthorName": "shad",
-      "hash": "E288E3BCB890B05D2F010BC8B7B7C497C71CB575",
-      "levelid": "custom_level_E288E3BCB890B05D2F010BC8B7B7C497C71CB575",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Chain My Heart",
-      "levelAuthorName": "thelitlewiseowl",
-      "hash": "FE44B64D4F21C5A51B4073ED4CE0A27EA4580292",
-      "levelid": "custom_level_FE44B64D4F21C5A51B4073ED4CE0A27EA4580292",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Wan Churu Shiyo!",
-      "levelAuthorName": "BigSlick",
-      "hash": "450F6709FB991EBBE067FA9D875A480ADA43A011",
-      "levelid": "custom_level_450F6709FB991EBBE067FA9D875A480ADA43A011",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "666",
-      "levelAuthorName": "Bitz",
-      "hash": "02FBF6A457B68B86B95D456EEDE6767A01E2137A",
-      "levelid": "custom_level_02FBF6A457B68B86B95D456EEDE6767A01E2137A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Connected Sky",
-      "levelAuthorName": "ODC",
-      "hash": "7823523D0A2250040130D0C4F2F52B6E05D357C2",
-      "levelid": "custom_level_7823523D0A2250040130D0C4F2F52B6E05D357C2",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
+          "name": "Hard"
         }
       ]
     }

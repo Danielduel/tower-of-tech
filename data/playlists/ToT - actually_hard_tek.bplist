@@ -27,18 +27,6 @@
       ]
     },
     {
-      "songName": "DADDY",
-      "levelAuthorName": "Fvrwvrd",
-      "hash": "0F0A0E390DBC77429C201FCA7643DC28B31315DE",
-      "levelid": "custom_level_0F0A0E390DBC77429C201FCA7643DC28B31315DE",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "HOTTO DOGU",
       "levelAuthorName": "Accidental Sandwich",
       "hash": "637C505A55BACE7E47E88EF4B2AFBBF86301A1B3",
@@ -103,18 +91,6 @@
       "levelAuthorName": "Schwank",
       "hash": "CC0240E3CEF7043809393554AE6FDF504CEAF9C2",
       "levelid": "custom_level_CC0240E3CEF7043809393554AE6FDF504CEAF9C2",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Rainbow Rhythm",
-      "levelAuthorName": "ani",
-      "hash": "5F35B7D3E3858029B16A9AF80163F54E9B838A62",
-      "levelid": "custom_level_5F35B7D3E3858029B16A9AF80163F54E9B838A62",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -223,18 +199,6 @@
       "levelAuthorName": "Schwank",
       "hash": "58A4C1D70DDA27421AAEBB2AD531B12F8FC9F964",
       "levelid": "custom_level_58A4C1D70DDA27421AAEBB2AD531B12F8FC9F964",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Tokugawa Cup Noodle Kinshirei",
-      "levelAuthorName": "Ge2toro",
-      "hash": "34AA6715337177539DE30704BDBEB067D2C4AC65",
-      "levelid": "custom_level_34AA6715337177539DE30704BDBEB067D2C4AC65",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -631,6 +595,18 @@
       "levelAuthorName": "A-PlouVR",
       "hash": "82378C60C2F908896DC84A1E6C69DBC3C1CECCB1",
       "levelid": "custom_level_82378C60C2F908896DC84A1E6C69DBC3C1CECCB1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Wholeheartedly",
+      "levelAuthorName": "Emir",
+      "hash": "387D8F22D19D3043B05D7AD449158FAB38AB34ED",
+      "levelid": "custom_level_387D8F22D19D3043B05D7AD449158FAB38AB34ED",
       "difficulties": [
         {
           "characteristic": "Standard",

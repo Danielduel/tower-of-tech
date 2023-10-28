@@ -386,6 +386,258 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Dimension",
+      "levelAuthorName": "epicmoo34",
+      "hash": "2D52303AD518C8482ECB77876330C8A202597513",
+      "levelid": "custom_level_2D52303AD518C8482ECB77876330C8A202597513",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Finishing Attack",
+      "levelAuthorName": "4番目のチーム\r\n\r\n\r\n",
+      "hash": "166164B954EB611B3C593DE85354A56765E33BDF",
+      "levelid": "custom_level_166164B954EB611B3C593DE85354A56765E33BDF",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Amenohoakari",
+      "levelAuthorName": "riisi",
+      "hash": "D428B17ABAAFAA1B574B1E6AB1DA1F1B3CD4F129",
+      "levelid": "custom_level_D428B17ABAAFAA1B574B1E6AB1DA1F1B3CD4F129",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dori - Thanks for Your Patronage!",
+      "levelAuthorName": "Cush",
+      "hash": "AD07FE1A3C23F49E8E7665558A9329F70BCD17B8",
+      "levelid": "custom_level_AD07FE1A3C23F49E8E7665558A9329F70BCD17B8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Death Waltz",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
+      "levelid": "custom_level_B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Lilith",
+      "levelAuthorName": "shad",
+      "hash": "E288E3BCB890B05D2F010BC8B7B7C497C71CB575",
+      "levelid": "custom_level_E288E3BCB890B05D2F010BC8B7B7C497C71CB575",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "666",
+      "levelAuthorName": "Bitz",
+      "hash": "02FBF6A457B68B86B95D456EEDE6767A01E2137A",
+      "levelid": "custom_level_02FBF6A457B68B86B95D456EEDE6767A01E2137A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Connected Sky",
+      "levelAuthorName": "ODC",
+      "hash": "7823523D0A2250040130D0C4F2F52B6E05D357C2",
+      "levelid": "custom_level_7823523D0A2250040130D0C4F2F52B6E05D357C2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Paintbox",
+      "levelAuthorName": "Prim",
+      "hash": "936C6EF79C59F26A489E3E5BB3B37B844953D45B",
+      "levelid": "custom_level_936C6EF79C59F26A489E3E5BB3B37B844953D45B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "BOCA",
+      "levelAuthorName": "Jabob",
+      "hash": "6E68597FDAB79D1D204A017355BA2D139F2B6080",
+      "levelid": "custom_level_6E68597FDAB79D1D204A017355BA2D139F2B6080",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Scripted Connection =>",
+      "levelAuthorName": "Gazer",
+      "hash": "E7383685C23C60CBC1FFFD7F48D7A8BDFEFE264E",
+      "levelid": "custom_level_E7383685C23C60CBC1FFFD7F48D7A8BDFEFE264E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "My Wing",
+      "levelAuthorName": "oegoe",
+      "hash": "FDC72769D6CC629BA1D58F6268D61C52AB764EBF",
+      "levelid": "custom_level_FDC72769D6CC629BA1D58F6268D61C52AB764EBF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shukusei!! Loli Kami Requiem",
+      "levelAuthorName": "Darturr",
+      "hash": "30F74B7AE1F0CED8E0A3F62A881C3CEF89BCCDB9",
+      "levelid": "custom_level_30F74B7AE1F0CED8E0A3F62A881C3CEF89BCCDB9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Back 2 Back",
+      "levelAuthorName": "August & Anzu",
+      "hash": "E498BD194C7A25926A8F8A0379A2DF50DDCF316B",
+      "levelid": "custom_level_E498BD194C7A25926A8F8A0379A2DF50DDCF316B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Fleeting Lullaby",
+      "levelAuthorName": "Anammelech",
+      "hash": "1994182CD549D7CAF984F35FDC0006735FD89FE4",
+      "levelid": "custom_level_1994182CD549D7CAF984F35FDC0006735FD89FE4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "The 90's Decision",
+      "levelAuthorName": "That_Narwhal",
+      "hash": "42F218850E16F24CBCCB94DEF959889F9AB4663C",
+      "levelid": "custom_level_42F218850E16F24CBCCB94DEF959889F9AB4663C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Napalm",
+      "levelAuthorName": "DiscoBaIIerz",
+      "hash": "EB0F60D3AFCA96C6F0428A0B2A1F610F9854F083",
+      "levelid": "custom_level_EB0F60D3AFCA96C6F0428A0B2A1F610F9854F083",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Abstruse Dilemma",
+      "levelAuthorName": "yabje",
+      "hash": "59ECA282FD6D8A0FE2A962A532995F03476A902D",
+      "levelid": "custom_level_59ECA282FD6D8A0FE2A962A532995F03476A902D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "The King's Return",
+      "levelAuthorName": "yabje",
+      "hash": "70ED9B671928AD6F48C6C439A7BBBE0E8EE8E5C8",
+      "levelid": "custom_level_70ED9B671928AD6F48C6C439A7BBBE0E8EE8E5C8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Metal Sonic",
+      "levelAuthorName": "A Jhintleman",
+      "hash": "2DC3C349198E9117A425271B28611730CCFA3990",
+      "levelid": "custom_level_2DC3C349198E9117A425271B28611730CCFA3990",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "phony",
+      "levelAuthorName": "Kanahebi",
+      "hash": "07101EE78F0C1E25FDEBDD0DC2F33CE3B65D6FE9",
+      "levelid": "custom_level_07101EE78F0C1E25FDEBDD0DC2F33CE3B65D6FE9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

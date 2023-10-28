@@ -99,30 +99,6 @@
       ]
     },
     {
-      "songName": "STRUT",
-      "levelAuthorName": "WalkingKat",
-      "hash": "0B1CA5842EC84C1401E04342A41DCD26D2DBF2E7",
-      "levelid": "custom_level_0B1CA5842EC84C1401E04342A41DCD26D2DBF2E7",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "Feels Like Loneliness",
-      "levelAuthorName": "oegoe",
-      "hash": "21F9A7E8694A2CE202F1A6339516443C98D49DCF",
-      "levelid": "custom_level_21F9A7E8694A2CE202F1A6339516443C98D49DCF",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "Bremen",
       "levelAuthorName": "Emir",
       "hash": "FFB89A1760E22620006744C9F75768EE9604A158",
@@ -331,6 +307,30 @@
       "levelAuthorName": "Rashed",
       "hash": "C8B4A8237C8B6EF8D1B5C25AA313267D284052F4",
       "levelid": "custom_level_C8B4A8237C8B6EF8D1B5C25AA313267D284052F4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Mad It's My Fault",
+      "levelAuthorName": "August",
+      "hash": "C4CE1A367EFF6DDD2F7442C0DD8688ADD6FA83E2",
+      "levelid": "custom_level_C4CE1A367EFF6DDD2F7442C0DD8688ADD6FA83E2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Understand",
+      "levelAuthorName": "Faded 99",
+      "hash": "70B150BEFBC3E65194ADF39F5FB819F61EB6A206",
+      "levelid": "custom_level_70B150BEFBC3E65194ADF39F5FB819F61EB6A206",
       "difficulties": [
         {
           "characteristic": "Standard",

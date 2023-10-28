@@ -110,6 +110,114 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Francium",
+      "levelAuthorName": "BigKitten & Aimedhades16",
+      "hash": "CF659BDF455B1BF0B1B13BAA6CB327E9AF46817F",
+      "levelid": "custom_level_CF659BDF455B1BF0B1B13BAA6CB327E9AF46817F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Flower, Snow, and Drum'n'Bass",
+      "levelAuthorName": "kizuflux",
+      "hash": "90F41A55F49945D5A9C078FF2565405A91BEF5DF",
+      "levelid": "custom_level_90F41A55F49945D5A9C078FF2565405A91BEF5DF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Accelerate",
+      "levelAuthorName": "Phøenix",
+      "hash": "8985A1AB42EB33F4BBB5422C12E6EC864FEED6C4",
+      "levelid": "custom_level_8985A1AB42EB33F4BBB5422C12E6EC864FEED6C4",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Bad Habits",
+      "levelAuthorName": "Phøenix",
+      "hash": "BC800E0BB58A95C1AEA6AC4802975169E1914864",
+      "levelid": "custom_level_BC800E0BB58A95C1AEA6AC4802975169E1914864",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Sake Monster☆RaiRai!!",
+      "levelAuthorName": "Kival Evan",
+      "hash": "209E8D696A4EBD2DDCA491C2851397401409A9B6",
+      "levelid": "custom_level_209E8D696A4EBD2DDCA491C2851397401409A9B6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Unhappy Birthday",
+      "levelAuthorName": "Schwank",
+      "hash": "D14065F70F659177BD82DA8E54445F75E7CCB0DF",
+      "levelid": "custom_level_D14065F70F659177BD82DA8E54445F75E7CCB0DF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Jack Pt Boos",
+      "levelAuthorName": "amo/wangyufy/Seasonsmouse/staryouh",
+      "hash": "67C0D25FDB487FE475BBB853675936AEBC3FC34C",
+      "levelid": "custom_level_67C0D25FDB487FE475BBB853675936AEBC3FC34C",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "CRYSTAL_ACCESS",
+      "levelAuthorName": "ani",
+      "hash": "E2C000E08D14F72D9E87C0E33A023B2A7DAC28E4",
+      "levelid": "custom_level_E2C000E08D14F72D9E87C0E33A023B2A7DAC28E4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shukusei!! Loli Kami Requiem",
+      "levelAuthorName": "Uragirimono",
+      "hash": "4DE17FA6D29E6E6F4BFEC7B53F392C4FECCA972C",
+      "levelid": "custom_level_4DE17FA6D29E6E6F4BFEC7B53F392C4FECCA972C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

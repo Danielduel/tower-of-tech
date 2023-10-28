@@ -28,18 +28,6 @@
       ]
     },
     {
-      "songName": "Bad Habits",
-      "levelAuthorName": "Phøenix",
-      "hash": "BC800E0BB58A95C1AEA6AC4802975169E1914864",
-      "levelid": "custom_level_BC800E0BB58A95C1AEA6AC4802975169E1914864",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "SLIME INCIDENT",
       "levelAuthorName": "A Jhintleman & Phøenix",
       "hash": "F3BC055E767C37F3B80E197392ECADE9774455D5",

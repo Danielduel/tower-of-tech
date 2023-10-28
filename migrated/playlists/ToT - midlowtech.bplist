@@ -170,6 +170,18 @@
           "name": "Expert"
         }
       ]
+    },
+    {
+      "songName": "Seishun Complex",
+      "levelAuthorName": "Comyute",
+      "hash": "027AFD26DC08FBC807627EB35EE644126A5B1AE7",
+      "levelid": "custom_level_027AFD26DC08FBC807627EB35EE644126A5B1AE7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

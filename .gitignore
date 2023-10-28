@@ -1,3 +1,8 @@
 .env
 NOTES
 migrated/covers/*
+
+local.db
+local.db*
+log
+

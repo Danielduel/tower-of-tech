@@ -86,6 +86,66 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Desert",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "6B10AB1FE5C710A1184C79DC4732B657418E22CE",
+      "levelid": "custom_level_6B10AB1FE5C710A1184C79DC4732B657418E22CE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Fin.ArcDeaR",
+      "levelAuthorName": "Jabob",
+      "hash": "F188AB94CC0A6F2F5A81E501F12565C8BC246309",
+      "levelid": "custom_level_F188AB94CC0A6F2F5A81E501F12565C8BC246309",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "My Wing",
+      "levelAuthorName": "oegoe",
+      "hash": "FDC72769D6CC629BA1D58F6268D61C52AB764EBF",
+      "levelid": "custom_level_FDC72769D6CC629BA1D58F6268D61C52AB764EBF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "CROSSOVER",
+      "levelAuthorName": "EOP Glacier",
+      "hash": "1A10FD97A27212FF46DB5AFB868095B44B90E831",
+      "levelid": "custom_level_1A10FD97A27212FF46DB5AFB868095B44B90E831",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Ange du Blanc Pur",
+      "levelAuthorName": "BigSlick",
+      "hash": "552FC1E83FC990FFB370404BC6615AE60E8D3289",
+      "levelid": "custom_level_552FC1E83FC990FFB370404BC6615AE60E8D3289",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

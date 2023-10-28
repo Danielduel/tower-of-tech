@@ -16,18 +16,6 @@
       ]
     },
     {
-      "songName": "Fences",
-      "levelAuthorName": "Avexus",
-      "hash": "26ADFF08DCE1E813CD35255810A13A7F4D62D829",
-      "levelid": "custom_level_26ADFF08DCE1E813CD35255810A13A7F4D62D829",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Youkoso Japari Park E",
       "levelAuthorName": "edgyguns",
       "hash": "19AC54A429C069FBE7175AE4737A6C48B303AC42",

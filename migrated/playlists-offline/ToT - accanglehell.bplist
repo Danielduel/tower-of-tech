@@ -465,6 +465,114 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "God-ish -covered by Sekai-",
+      "levelAuthorName": "ani vs salami",
+      "hash": "134A2A30E8D77C49F1DBA7EC0E665197803F136C",
+      "levelid": "custom_level_134A2A30E8D77C49F1DBA7EC0E665197803F136C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Gloxinia (クミ P Remix)",
+      "levelAuthorName": "Zayta",
+      "hash": "7E0D5A7980A7F70E78CC76F7BFED52BA6A4B7327",
+      "levelid": "custom_level_7E0D5A7980A7F70E78CC76F7BFED52BA6A4B7327",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Lunes ng Umaga (monday morning)",
+      "levelAuthorName": "Cush & WinterEdge",
+      "hash": "A049FAB55D0B295E1E174D02532009F341081954",
+      "levelid": "custom_level_A049FAB55D0B295E1E174D02532009F341081954",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Titanium ft. Moew",
+      "levelAuthorName": "thelitlewiseowl",
+      "hash": "D75EA2DA9413EF1DC3EC0FF0D32A8CB6DD76256A",
+      "levelid": "custom_level_D75EA2DA9413EF1DC3EC0FF0D32A8CB6DD76256A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Wan Churu Shiyo!",
+      "levelAuthorName": "BigSlick",
+      "hash": "450F6709FB991EBBE067FA9D875A480ADA43A011",
+      "levelid": "custom_level_450F6709FB991EBBE067FA9D875A480ADA43A011",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "游山恋",
+      "levelAuthorName": "Ge2toro",
+      "hash": "40F9520FCB5CC12C44025067AFB33F6644A5CABC",
+      "levelid": "custom_level_40F9520FCB5CC12C44025067AFB33F6644A5CABC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "California Gurls",
+      "levelAuthorName": "harbgy",
+      "hash": "B3A4C35366B365549D412D434D410360E67FA15E",
+      "levelid": "custom_level_B3A4C35366B365549D412D434D410360E67FA15E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cat Rubbing",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "8A96932EF58410F6320CAEFCA6E6377DB8E0B493",
+      "levelid": "custom_level_8A96932EF58410F6320CAEFCA6E6377DB8E0B493",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "nasti",
+      "levelAuthorName": "Jabob & Frost",
+      "hash": "6CC66AC162136CCA1499BEB517BE3F677F434947",
+      "levelid": "custom_level_6CC66AC162136CCA1499BEB517BE3F677F434947",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

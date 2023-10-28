@@ -674,6 +674,186 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Pastel Rain",
+      "levelAuthorName": "ETAN",
+      "hash": "2C01774FDB9C4BCC53DF1707ADE85CEA6F043477",
+      "levelid": "custom_level_2C01774FDB9C4BCC53DF1707ADE85CEA6F043477",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Show",
+      "levelAuthorName": "Pleo",
+      "hash": "A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
+      "levelid": "custom_level_A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Venomous Snake",
+      "levelAuthorName": "Komeijisan051",
+      "hash": "407DFBF4FFD6B6A322A749F0902B8F5F4FB627B6",
+      "levelid": "custom_level_407DFBF4FFD6B6A322A749F0902B8F5F4FB627B6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Chain My Heart",
+      "levelAuthorName": "thelitlewiseowl",
+      "hash": "FE44B64D4F21C5A51B4073ED4CE0A27EA4580292",
+      "levelid": "custom_level_FE44B64D4F21C5A51B4073ED4CE0A27EA4580292",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "The Color Of Tempo",
+      "levelAuthorName": "riisi",
+      "hash": "A7B250528D9F3B04DDD16FDBA949BF8A7EEAF44E",
+      "levelid": "custom_level_A7B250528D9F3B04DDD16FDBA949BF8A7EEAF44E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Angels Don't Cry",
+      "levelAuthorName": "Nebelmonster",
+      "hash": "52A78390C2CB5066A403E3D57ABE1250849E797B",
+      "levelid": "custom_level_52A78390C2CB5066A403E3D57ABE1250849E797B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "RGB",
+      "levelAuthorName": "chikinbiskit",
+      "hash": "2BE8A86559E94B7F0332A085EBACE4AB2B56E6BD",
+      "levelid": "custom_level_2BE8A86559E94B7F0332A085EBACE4AB2B56E6BD",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Los! Los! Los!",
+      "levelAuthorName": "aruru",
+      "hash": "6213A83B5409E1F104CEFD5EED8C47F43D5673EF",
+      "levelid": "custom_level_6213A83B5409E1F104CEFD5EED8C47F43D5673EF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "ICKY",
+      "levelAuthorName": "minsiii & mansiii",
+      "hash": "5ED654A49890842D4CFDC068DE1B095C2D7D5660",
+      "levelid": "custom_level_5ED654A49890842D4CFDC068DE1B095C2D7D5660",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "sing sing red indigo",
+      "levelAuthorName": "officialMECH",
+      "hash": "7F655883B7A60AF59B6ABF092CAC6FC6DB6ABCF0",
+      "levelid": "custom_level_7F655883B7A60AF59B6ABF092CAC6FC6DB6ABCF0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "No Limit",
+      "levelAuthorName": "AYellow",
+      "hash": "DAECCC80A8CF4BCE2915EE1E645536DB0CA76D61",
+      "levelid": "custom_level_DAECCC80A8CF4BCE2915EE1E645536DB0CA76D61",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Ray Of Solar",
+      "levelAuthorName": "DaftMaple",
+      "hash": "C5E587D70C284F6F02EC44B893C58DBEDD53E24D",
+      "levelid": "custom_level_C5E587D70C284F6F02EC44B893C58DBEDD53E24D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Keep You",
+      "levelAuthorName": "DFeth",
+      "hash": "B958FF0B72A5BE3FA80B29F45B25F5645B870437",
+      "levelid": "custom_level_B958FF0B72A5BE3FA80B29F45B25F5645B870437",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Ljusa Stjarnan",
+      "levelAuthorName": "zeon",
+      "hash": "791E8120D66F68775FE5072BD7E581512A9E12A2",
+      "levelid": "custom_level_791E8120D66F68775FE5072BD7E581512A9E12A2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "How You Like That",
+      "levelAuthorName": "Schwank",
+      "hash": "7A580D76CB63E9433B957EC8E7BF83A4DF5FB656",
+      "levelid": "custom_level_7A580D76CB63E9433B957EC8E7BF83A4DF5FB656",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
     }
   ],
   "customData": {
