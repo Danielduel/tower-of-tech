@@ -1,4 +1,5 @@
-import { createPentagon } from "https://deno.land/x/pentagon@v0.1.5/mod.ts";
+import { createPentagon } from "pentagon";
+import { S3Client } from "s3_lite_client";
 import { BeatSaberPlaylist, BeatSaberPlaylistSongItem } from "./BeatSaberPlaylist.ts";
 import { BeatSaverResponseWrapper, BeatSaverMapResponseSuccess } from "./BeatSaverResponse.ts";
 
@@ -9,6 +10,17 @@ export const db = createPentagon(kv, {
   BeatSaverMapResponseSuccess,
   BeatSaberPlaylist,
   BeatSaberPlaylistSongItem
+});
+
+export const s3client = new S3Client({
+  endPoint: "localhost",
+  port: 8014,
+  useSSL: false,
+  region: "dev-region",
+  accessKey: "AKEXAMPLES3S",
+  secretKey: "SKEXAMPLES3S",
+  bucket: "dev-bucket",
+  pathStyle: true,
 });
 
 // setInterval(async () => {

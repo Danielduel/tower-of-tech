@@ -10,6 +10,7 @@ const trpcClient = trpc.createClient({
   links: [
     httpBatchLink({
       url: "/api/trpc",
+      maxURLLength: 1000 * 50,
     }),
   ],
 });

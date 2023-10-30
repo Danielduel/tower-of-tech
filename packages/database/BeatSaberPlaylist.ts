@@ -1,21 +1,21 @@
-import { TableDefinition } from "https://deno.land/x/pentagon@v0.1.4/mod.ts";
+import { TableDefinition } from "pentagon";
 import {
-  BeatSaberPlaylistSchema,
+  BeatSaberPlaylistFlatSchema,
   BeatSaberPlaylistSongItemSchema,
 } from "@/types/beatsaber-playlist.ts";
 
 export const BeatSaberPlaylistSongItem = {
   schema: BeatSaberPlaylistSongItemSchema,
-} satisfies TableDefinition;
+} satisfies TableDefinition<typeof BeatSaberPlaylistSongItemSchema.shape>;
 
 export const BeatSaberPlaylist = {
-  schema: BeatSaberPlaylistSchema,
+  schema: BeatSaberPlaylistFlatSchema,
   relations: {
     songs: [
       "BeatSaberPlaylistSongItem",
       [BeatSaberPlaylistSongItemSchema],
-      undefined!,
+      "songs",
       "hash",
     ],
   },
-} satisfies TableDefinition;
+} satisfies TableDefinition<typeof BeatSaberPlaylistFlatSchema.shape>;

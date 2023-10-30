@@ -1,13 +1,13 @@
 import { Brand, make } from "https://deno.land/x/ts_brand@0.0.1/mod.ts";
 
 export type UppercaseMapHashForLevelId = Brand<string, "UppercaseMapHashForLevelId">;
-export const makeUppercaseMapHashForLevelId = make<UppercaseMapHashForLevelId>();
+export const makeUppercaseMapHashForLevelId = (hash: string) => make<UppercaseMapHashForLevelId>()(hash.toUpperCase());
 
 export type UppercaseMapHash = Brand<string, "UppercaseMapHash">;
-export const makeUppercaseMapHash = make<UppercaseMapHash>();
+export const makeUppercaseMapHash = (hash: string) => make<UppercaseMapHash>()(hash.toUpperCase());
 
 export type LowercaseMapHash = Brand<string, "LowercaseMapHash">;
-export const makeLowercaseMapHash = make<LowercaseMapHash>();
+export const makeLowercaseMapHash = (hash: string) => make<LowercaseMapHash>()(hash.toLowerCase());
 
 export type ImageUrl = Brand<string, "ImageUrl">;
 export const makeImageUrl = make<ImageUrl>();

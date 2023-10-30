@@ -1,6 +1,6 @@
-import { z } from "https://deno.land/x/zod@v3.21.4/mod.ts";
+import { z } from "zod";
+import { TableDefinition } from "pentagon";
 import { BeatSaverMapResponseSuccessSchema, makeBeatSaverMapId } from "@/types/beatsaver.ts";
-import { TableDefinition } from "https://deno.land/x/pentagon@v0.1.4/mod.ts";
 
 export const BeatSaverResponseWrapperSchema = z.object({
   id: z.string().transform(makeBeatSaverMapId),
@@ -9,7 +9,7 @@ export const BeatSaverResponseWrapperSchema = z.object({
   removed: z.boolean(),
 });
 
-export const BeatSaverResponseWrapper: TableDefinition = {
+export const BeatSaverResponseWrapper = {
   schema: BeatSaverResponseWrapperSchema,
   relations: {
     child: [
@@ -19,11 +19,11 @@ export const BeatSaverResponseWrapper: TableDefinition = {
       "id",
     ],
   },
-};
+} satisfies TableDefinition<typeof BeatSaverResponseWrapperSchema.shape>;
 
-export const BeatSaverMapResponseSuccess: TableDefinition = {
+export const BeatSaverMapResponseSuccess = {
   schema: BeatSaverMapResponseSuccessSchema,
   relations: {
     parent: ["BeatSaverMap", BeatSaverResponseWrapperSchema, "id", "id"],
   },
-};
+} satisfies TableDefinition<typeof BeatSaverMapResponseSuccessSchema.shape>;

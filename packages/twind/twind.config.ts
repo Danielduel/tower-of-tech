@@ -6,6 +6,5 @@ export default defineConfig({
   theme: {
     // add theme styles here
   },
-  // @ts-ignore
   presets: [presetAutoprefix(), presetTailwind()],
 });

@@ -1,4 +1,4 @@
-import { z } from "https://deno.land/x/zod@v3.21.4/mod.ts";
+import { z } from "zod";
 import { Brand, make } from "https://deno.land/x/ts_brand@0.0.1/mod.ts";
 
 import { BeatSaberDifficultyNameSchema, BeatSaberDifficultyCharacteristicSchema } from "./beatsaber.ts";
@@ -103,5 +103,6 @@ export const BeatSaverMapResponseSuccessSchema = z.object({
   bookmarked: z.boolean().optional(),
 });
 
-
-export type BeatSaverMapResponse = typeof BeatSaverMapResponseSuccessSchema | typeof BeatSaverMapResponseNotFound;
+export const BeatSaverMapResponseSchema = z.union(
+  [BeatSaverMapResponseSuccessSchema, BeatSaverMapResponseNotFound]
+);

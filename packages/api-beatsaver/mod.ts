@@ -1,17 +1,11 @@
-import { z } from "https://deno.land/x/zod@v3.21.4/mod.ts";
+import { z } from "zod";
 import {
   ApiResponse,
   zodApiClient,
   zodApiResource,
 } from "https://deno.land/x/zod_api@v0.3.1/mod.ts";
-import {
-  getItem,
-  hasItem,
-  setItem,
-} from "https://deno.land/x/storage_modules@v0.0.7/deno_fs.ts";
-import chunk from "https://deno.land/x/denodash@0.1.3/src/array/chunk.ts";
 import partition from "https://deno.land/x/denodash@0.1.3/src/array/partition.ts";
-import { BeatSaverMapResponseSuccess } from "../types/beatsaver.ts";
+import { BeatSaverMapResponseSuccessSchema } from "../types/beatsaver.ts";
 import { fetcher } from "../fetcher/mod.ts";
 import { getLogger } from "../logger/mod.ts";
 import { fileExists } from "../fs/fileExists.ts";
@@ -19,7 +13,7 @@ import { LowercaseMapHash } from "../types/brands.ts";
 
 const mapByHashResponse = z.record(
   z.string().regex(/[0-9a-f,]+/),
-  z.nullable(BeatSaverMapResponseSuccess),
+  z.nullable(BeatSaverMapResponseSuccessSchema),
 );
 type MapByHashResponse = typeof mapByHashResponse._type;
 
@@ -34,7 +28,7 @@ export const BeatSaverApi = zodApiClient({
       }),
       actions: {
         get: {
-          dataSchema: BeatSaverMapResponseSuccess,
+          dataSchema: BeatSaverMapResponseSuccessSchema,
         },
       },
     }),
@@ -42,7 +36,7 @@ export const BeatSaverApi = zodApiClient({
     // up to 50 ids
     mapsByIds: zodApiResource("/maps/ids/:ids", {
       urlParamsSchema: z.object({
-        id: z.string(),
+        ids: z.string(),
       }),
       actions: {
         get: {
@@ -84,80 +78,72 @@ export const cacheMapByHashIfNotExists = async (
   }
 };
 
-const resolveItemFromCache = async (hash: LowercaseMapHash) => {
-  return [
-    hash,
-    await getItem<MapByHashResponse>(getMapHashResponseCacheKey(hash)),
-  ] as const;
-};
+// const resolveItemFromCache = async (hash: LowercaseMapHash) => {
+//   return [
+//     hash,
+//     undefined // await getItem<MapByHashResponse>(getMapHashResponseCacheKey(hash)),
+//   ] as const;
+// };
 
-const resolveBatchInner = async function* (hashArray: LowercaseMapHash[]) {
-  const itemsResolvedFromCacheMixedWithMissingItems = await Promise.all(
-    hashArray
-      .map((hash) => resolveItemFromCache(hash)),
-  );
+// const resolveBatchInner = async function* (hashArray: LowercaseMapHash[]) {
+//   const itemsResolvedFromCacheMixedWithMissingItems = await Promise.all(
+//     hashArray
+//       .map((hash) => resolveItemFromCache(hash)),
+//   );
 
-  const [itemsFromCache, unresolvedItems] = partition(
-    itemsResolvedFromCacheMixedWithMissingItems,
-    itemsResolvedFromCacheMixedWithMissingItems.map((item) =>
-      item === undefined
-    ),
-  );
+//   const [itemsFromCache, unresolvedItems] = partition(
+//     itemsResolvedFromCacheMixedWithMissingItems,
+//     itemsResolvedFromCacheMixedWithMissingItems.map((item) =>
+//       item === undefined
+//     ),
+//   );
 
-  let hash;
-  while (hash = hashArray.pop()) {
-    const data = await resolveItemFromCache(hash);
-    if (!data) {
-      yield hash;
-    }
-  }
+// };
 
-  return batch;
-};
+// const resolveBatch = async (hashArray: LowercaseMapHash[]) => {
+//   const inner = resolveBatchInner(hashArray);
+//   let hashes = [] as LowercaseMapHash[];
+//   const requestPromises = [] as Promise<ApiResponse<MapByHashResponse>>[];
 
-const resolveBatch = async (hashArray: LowercaseMapHash[]) => {
-  const inner = resolveBatchInner(hashArray);
-  let hashes = [] as LowercaseMapHash[];
-  const requestPromises = [] as Promise<ApiResponse<MapByHashResponse>>[];
+//   for await (const hash of inner) {
+//     hashes.push(hash);
 
-  for await (const hash of inner) {
-    hashes.push(hash);
-
-    if (hashes.length === 50) {
-      requestPromises.push(
-        BeatSaverApi.mapByHash.get(
-          {
-            urlParams: {
-              hash: hashes.join(","),
-            },
-          },
-        ),
-      );
-      hashes = [];
-    }
-  }
-};
+//     if (hashes.length === 50) {
+//       requestPromises.push(
+//         BeatSaverApi.mapByHash.get(
+//           {
+//             urlParams: {
+//               hash: hashes.join(","),
+//             },
+//           },
+//         ),
+//       );
+//       hashes = [];
+//     }
+//   }
+// };
 
 export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   // const uncachedHashArray = hashArray
-  const batch = await resolveBatch(hashArray);
+  // const batch = await resolveBatch(hashArray);
 
-  Object
-    .entries(batch);
+  const promises = [] as ReturnType<typeof BeatSaverApi.mapByHash.get>[];
 
-  // while (hashArray.length > 0) {
-  //   const hashQueue = hashArray.splice(0, 50);
-  //   const hashString = hashQueue.join(",");
-  //   promises.push(BeatSaverApi.mapByHash.get({
-  //     urlParams: {
-  //       hash: hashString,
-  //     },
-  //   }))
-  // }
+  while (hashArray.length > 0) {
+    const hashQueue = hashArray.splice(0, 50);
+    const hashString = hashQueue.join(",");
+    promises.push(BeatSaverApi.mapByHash.get({
+      urlParams: {
+        hash: hashString,
+      },
+    }))
+  }
 
-  // Promise.all(
-  //   hashes.split(",").map(async (hash) => {
-
-  //   }),
-  // );
+  const data = await Promise.all(promises);
+  const object = data.map(x => x.data).reduce((prev, curr) => ({ ...prev, ...curr }), {});
+  
+  try {
+    const response = mapByHashResponse.parse(object);
+    return response;
+  } catch (err) { console.error(err) }
 };

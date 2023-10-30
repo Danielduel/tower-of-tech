@@ -6,14 +6,17 @@
   "configurations": [
     {
       "request": "launch",
-      "name": "Refresh playlists",
+      "name": "Launch Program",
       "type": "node",
-      // "program": "${workspaceFolder}/main.ts",
+      "program": "${workspaceFolder}/apps/homepage/server.tsx",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "/home/daniel/.deno/bin/deno",
       "runtimeArgs": [
-        "task",
-        "refreshPlaylists",
+        "run",
+        "-A",
+        "--no-check",
+        "--unstable",
+        "--inspect-wait",
       ],
       "attachSimplePort": 9229
     }

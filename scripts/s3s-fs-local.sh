@@ -1,5 +1,5 @@
 #!/bin/bash
-DATA_DIR="./data"
+DATA_DIR="./data/s3"
 
 if [ -n "$1" ]; then
 	DATA_DIR="$1"

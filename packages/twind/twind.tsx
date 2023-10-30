@@ -14,13 +14,13 @@ export const sheet = typeof Deno === "undefined"
   ? cssom("style#__twind")
   : virtual();
 
-//@ts-ignore twind type issue
+// @ts-ignore twind type issue
 export const tw = twind(
   config,
   sheet,
 );
 
-export const TwindStyleTag = () => <style id="__twind">${stringify$(tw.target)}</style>;
+export const TwindStyleTag = () => <style id="__twind">{stringify$(tw.target)}</style>;
 
 export const tx = tx$.bind(tw);
 export const injectGlobal = injectGlobal$.bind(tw);

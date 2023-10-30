@@ -1,6 +1,6 @@
-import { z } from "https://deno.land/x/zod@v3.21.4/mod.ts";
+import { z } from "zod";
 import { BeatSaberDifficultyCharacteristicSchema, BeatSaberDifficultyNameSchema } from "./beatsaber.ts";
-import { makeUppercaseMapHashForLevelId, makeUppercaseMapHash, makePlaylistUrl, makeImageBase64 } from "./brands.ts";
+import { makeUppercaseMapHashForLevelId, makeUppercaseMapHash, makePlaylistUrl, makeImageBase64, makeLowercaseMapHash, makeImageUrl } from "./brands.ts";
 import { makeBeatSaverMapId } from "./beatsaver.ts";
 
 export const BeatSaberPlaylistSongItemDifficultySchema = z.object({
@@ -22,6 +22,24 @@ export const BeatSaberPlaylistCustomDataSchema = z.object({
   syncURL: z.string().transform(makePlaylistUrl).optional(),
   owner: z.string().optional(),
   id: z.string().optional(),
+});
+
+export const BeatSaberPlaylistFlatSchema = z.object({
+  id: z.string().describe("primary"),
+  playlistTitle: z.string(),
+  playlistAuthor: z.string(),
+  customData: BeatSaberPlaylistCustomDataSchema.optional(),
+  songs: z.array(z.string().transform(makeUppercaseMapHash)),
+  image: z.null(),
+});
+
+export const BeatSaberPlaylistWithoutIdSchema = z.object({
+  id: z.any(),
+  playlistTitle: z.string(),
+  playlistAuthor: z.string(),
+  customData: BeatSaberPlaylistCustomDataSchema.optional(),
+  songs: z.array(BeatSaberPlaylistSongItemSchema),
+  image: z.string().transform(makeImageBase64),
 });
 
 export const BeatSaberPlaylistSchema = z.object({

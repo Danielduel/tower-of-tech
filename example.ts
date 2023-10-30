@@ -1,5 +1,5 @@
 import { z } from "https://deno.land/x/zod@v3.21.4/mod.ts";
-import { createPentagon } from "https://deno.land/x/pentagon@v0.1.4/mod.ts";
+import { createPentagon } from "pentagon";
 import {
   BeatSaverMapResponse,
   BeatSaverMapResponseSuccess,
