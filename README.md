@@ -1,3 +1,21 @@
+# Develop of the website
+
+You need `Deno`
+`https://docs.deno.com/runtime/manual/getting_started/installation`
+As I am developing this, the current Deno version is 1.37.1
+
+To make it work you have to use 2 forks located in the parent folder of this project's root dir:
+
+* develop branch of https://github.com/Danielduel/pentagon
+* develop branch of https://github.com/Danielduel/ultra
+
+To run dev app - you have to run `deno task dev` or if you want to split logs from
+local s3 server and webapp - `deno task s3s-fs-local` and `deno task webapp:dev`
+
+This app uses Deno KV, so you have to run it with `unstable` flag.
+
+Good luck.
+
 # Tower of Tech
 
 This repository contains tech-related playlists and utilities used to manage them.
