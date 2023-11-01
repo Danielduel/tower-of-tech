@@ -1,0 +1,82 @@
+{
+  "playlistTitle": "EASY",
+  "playlistAuthor": "The Harsh Jellyfish",
+  "customData": {
+    "AllowDuplicates": false
+  },
+  "songs": [
+    {
+      "songName": "disco light",
+      "levelAuthorName": "Various Mappers",
+      "hash": "2337E9C03A2BAF32CB6BC2E5127172B772869FFA",
+      "levelid": "custom_level_2337E9C03A2BAF32CB6BC2E5127172B772869FFA"
+    },
+    {
+      "songName": "Who's Ready For Tomorrow",
+      "levelAuthorName": "FireStrike & Sp234",
+      "hash": "1AB7F3DD23DB9B7F3AA2B9AF3777DE79C8D20818",
+      "levelid": "custom_level_1AB7F3DD23DB9B7F3AA2B9AF3777DE79C8D20818"
+    },
+    {
+      "songName": "Rugburn",
+      "levelAuthorName": "TG90",
+      "hash": "F973A3E8EC6E929DA3CF21252C39AFBA8AD97E04",
+      "levelid": "custom_level_F973A3E8EC6E929DA3CF21252C39AFBA8AD97E04"
+    },
+    {
+      "songName": "a little peace of happiness",
+      "levelAuthorName": "ejiejidayo",
+      "hash": "F2301697224E4AA11C788BBCA6B1D653B945D109",
+      "levelid": "custom_level_F2301697224E4AA11C788BBCA6B1D653B945D109"
+    },
+    {
+      "songName": "She's Kerosene",
+      "levelAuthorName": "Andynak",
+      "hash": "0C1CCBEE630A85F390937A2B2CC52D876534DADD",
+      "levelid": "custom_level_0C1CCBEE630A85F390937A2B2CC52D876534DADD"
+    },
+    {
+      "songName": "Say So ",
+      "levelAuthorName": "PogU",
+      "hash": "0FF2CDF0318C1F1588A41EE6A629899A6BC7FE03",
+      "levelid": "custom_level_0FF2CDF0318C1F1588A41EE6A629899A6BC7FE03"
+    },
+    {
+      "songName": "loli selling ice cream song",
+      "levelAuthorName": "Idlebob",
+      "hash": "145A68E54124DCF2EC55CABCC0681367DE4F99D1",
+      "levelid": "custom_level_145A68E54124DCF2EC55CABCC0681367DE4F99D1"
+    },
+    {
+      "songName": "Boi",
+      "levelAuthorName": "Kanahebi",
+      "hash": "26BC22E684B4566D131680CC633814D486B79BD9",
+      "levelid": "custom_level_26BC22E684B4566D131680CC633814D486B79BD9"
+    },
+    {
+      "songName": "Kokoro Yohou",
+      "levelAuthorName": "Ge2toro",
+      "hash": "0EF33396F5982458142296242D4EE94AEF6451EB",
+      "levelid": "custom_level_0EF33396F5982458142296242D4EE94AEF6451EB"
+    },
+    {
+      "songName": "Cinderella",
+      "levelAuthorName": "fqrb",
+      "hash": "9D9025B7A25734C9CA8AA227B3232CC66A288DC6",
+      "levelid": "custom_level_9D9025B7A25734C9CA8AA227B3232CC66A288DC6"
+    },
+    {
+      "songName": "Holy Moly Holy Night",
+      "levelAuthorName": "Ge2toro",
+      "hash": "488B9870A8FA2B99FAB0E8B1C97B17D42D83934B",
+      "levelid": "custom_level_488B9870A8FA2B99FAB0E8B1C97B17D42D83934B"
+    },
+    {
+      "songName": "Yowanehaki",
+      "levelAuthorName": "Gabriel x Marsh",
+      "hash": "13A1B008E40284318053124031D54548A20D992A",
+      "levelid": "custom_level_13A1B008E40284318053124031D54548A20D992A"
+    }
+  ],
+  "image": ""
+}

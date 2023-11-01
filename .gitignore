@@ -6,3 +6,5 @@ local.db
 local.db*
 log
 data/s3
+
+tree

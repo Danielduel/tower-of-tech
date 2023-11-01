@@ -1,0 +1,34 @@
+{
+  "playlistTitle": "Not Tech",
+  "playlistAuthor": "The Harsh Jellyfish",
+  "customData": {
+    "AllowDuplicates": false
+  },
+  "songs": [
+    {
+      "songName": "Overdose",
+      "levelAuthorName": "mojo",
+      "hash": "0B57D3858AA60452BBC3F6303B2C0AE03750D40D",
+      "levelid": "custom_level_0B57D3858AA60452BBC3F6303B2C0AE03750D40D"
+    },
+    {
+      "songName": "Monsters",
+      "levelAuthorName": "JRE_McNuggies",
+      "hash": "67A8A7EF7D27EF3A62BC27F1A5F73B2CE639A5CB",
+      "levelid": "custom_level_67A8A7EF7D27EF3A62BC27F1A5F73B2CE639A5CB"
+    },
+    {
+      "songName": "Myths You Forgot",
+      "levelAuthorName": "nolan121405",
+      "hash": "B3574125C2C8D6E187D4B7C5D59B5BB625FD2217",
+      "levelid": "custom_level_B3574125C2C8D6E187D4B7C5D59B5BB625FD2217"
+    },
+    {
+      "songName": "KIen romance(TV size)",
+      "levelAuthorName": "esa_esa",
+      "hash": "D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
+      "levelid": "custom_level_D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD"
+    }
+  ],
+  "image": ""
+}

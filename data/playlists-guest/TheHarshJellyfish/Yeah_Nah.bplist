@@ -1,0 +1,34 @@
+{
+  "playlistTitle": "Yeah Nah",
+  "playlistAuthor": "The Harsh Jellyfish",
+  "customData": {
+    "AllowDuplicates": false
+  },
+  "songs": [
+    {
+      "songName": "LAND OF FIRE",
+      "levelAuthorName": "oegoe",
+      "hash": "E9BB1C35086C67A2F7F6930C6BB762BF2E6EC502",
+      "levelid": "custom_level_E9BB1C35086C67A2F7F6930C6BB762BF2E6EC502"
+    },
+    {
+      "songName": "VORACITY",
+      "levelAuthorName": "Joshabi & Bitz",
+      "hash": "78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
+      "levelid": "custom_level_78B222785FA5798BA4D1E9C531F0AB98A393EAF2"
+    },
+    {
+      "songName": "Yowanehaki",
+      "levelAuthorName": "Gabriel x Marsh",
+      "hash": "13A1B008E40284318053124031D54548A20D992A",
+      "levelid": "custom_level_13A1B008E40284318053124031D54548A20D992A"
+    },
+    {
+      "songName": "Zone Brrn",
+      "levelAuthorName": "winteredge",
+      "hash": "3868CBA86CDF2DDD40A7EF8078559C695D077D91",
+      "levelid": "custom_level_3868CBA86CDF2DDD40A7EF8078559C695D077D91"
+    }
+  ],
+  "image": ""
+}

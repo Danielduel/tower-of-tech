@@ -1,0 +1,46 @@
+{
+  "playlistTitle": "Just Able",
+  "playlistAuthor": "The Harsh Jellyfish",
+  "customData": {
+    "AllowDuplicates": false
+  },
+  "songs": [
+    {
+      "songName": "RGB",
+      "levelAuthorName": "Nolanimations",
+      "hash": "98EFC0DA9A276D9CE6755B260035A8A4BACE3EBF",
+      "levelid": "custom_level_98EFC0DA9A276D9CE6755B260035A8A4BACE3EBF"
+    },
+    {
+      "songName": "Cheese",
+      "levelAuthorName": "TOFU",
+      "hash": "9CF60521E1C7EB65B2B49BB5D6AAD5FF9EF5C0F9",
+      "levelid": "custom_level_9CF60521E1C7EB65B2B49BB5D6AAD5FF9EF5C0F9"
+    },
+    {
+      "songName": "EASY LOVE",
+      "levelAuthorName": "That_Narwhal",
+      "hash": "CDA84787D04A46335A5CC6C986DF999B3EB492DE",
+      "levelid": "custom_level_CDA84787D04A46335A5CC6C986DF999B3EB492DE"
+    },
+    {
+      "songName": "Aien-Jihen",
+      "levelAuthorName": "Gabriel & take_nyan",
+      "hash": "D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37",
+      "levelid": "custom_level_D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37"
+    },
+    {
+      "songName": "KIen romance(TV size)",
+      "levelAuthorName": "esa_esa",
+      "hash": "D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
+      "levelid": "custom_level_D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD"
+    },
+    {
+      "songName": "Monster",
+      "levelAuthorName": "Joshabi",
+      "hash": "8DCFE49242E87D1D3EECABA2E55EA8ACBF39DB0B",
+      "levelid": "custom_level_8DCFE49242E87D1D3EECABA2E55EA8ACBF39DB0B"
+    }
+  ],
+  "image": ""
+}

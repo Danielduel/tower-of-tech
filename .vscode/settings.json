@@ -6,5 +6,11 @@
   "javascript.validate.enable": false,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[bplist]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
   }
 }
