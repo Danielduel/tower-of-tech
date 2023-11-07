@@ -854,6 +854,78 @@
           "name": "Expert"
         }
       ]
+    },
+    {
+      "songName": "Diamond Eyes",
+      "levelAuthorName": "wangyufy&staryouth",
+      "hash": "87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
+      "levelid": "custom_level_87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Rodeo",
+      "levelAuthorName": "Xavier & Nebel",
+      "hash": "51D3C516631E5C9F9F96FA75F95B45C9826463F3",
+      "levelid": "custom_level_51D3C516631E5C9F9F96FA75F95B45C9826463F3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Roots",
+      "levelAuthorName": "Phøenix",
+      "hash": "DE3FB462C8666857EF43D38DD0C0165E910E96BA",
+      "levelid": "custom_level_DE3FB462C8666857EF43D38DD0C0165E910E96BA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Halzion",
+      "levelAuthorName": "chikinbiskit",
+      "hash": "1FD2E5B76588CEA3C3EBB7A8F0602169ED5CCABF",
+      "levelid": "custom_level_1FD2E5B76588CEA3C3EBB7A8F0602169ED5CCABF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Moshouchenggui",
+      "levelAuthorName": "seasonsmouse",
+      "hash": "89C00194C91A47DD3E400C2F46BE41DECC092135",
+      "levelid": "custom_level_89C00194C91A47DD3E400C2F46BE41DECC092135",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hymn For The Weekend",
+      "levelAuthorName": "DaftMaple & RateGyro",
+      "hash": "DA3D0B159EDAC238C12BD169C36EFC5011BB6BCC",
+      "levelid": "custom_level_DA3D0B159EDAC238C12BD169C36EFC5011BB6BCC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

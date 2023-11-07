@@ -722,6 +722,90 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Sangenshoku",
+      "levelAuthorName": "SmileEaglet",
+      "hash": "213B7DA92FBDCE398A6A6186175362448F3F4F3C",
+      "levelid": "custom_level_213B7DA92FBDCE398A6A6186175362448F3F4F3C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "神々が恋した幻想郷",
+      "levelAuthorName": "seozou",
+      "hash": "9CB8D6F05CEC14E6052947297B9EFF3774B4DC88",
+      "levelid": "custom_level_9CB8D6F05CEC14E6052947297B9EFF3774B4DC88",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Flashes (Extended)",
+      "levelAuthorName": "Saut",
+      "hash": "FE48EBE7F2F46C8A489B980D2A82201DD5D8C0F6",
+      "levelid": "custom_level_FE48EBE7F2F46C8A489B980D2A82201DD5D8C0F6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dashstar * (VIP)",
+      "levelAuthorName": "Denyah_",
+      "hash": "D011AD03E648DF07D31B27D823E417A726A09027",
+      "levelid": "custom_level_D011AD03E648DF07D31B27D823E417A726A09027",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Evil People",
+      "levelAuthorName": "BanditByTheStreet",
+      "hash": "FD5A4B515C4664A9AF6FBE07E3E351956A836335",
+      "levelid": "custom_level_FD5A4B515C4664A9AF6FBE07E3E351956A836335",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "May I help you?",
+      "levelAuthorName": "AccIsSponge",
+      "hash": "8B5161CD0D743174EB3C63F3BC1F45E5CF666A25",
+      "levelid": "custom_level_8B5161CD0D743174EB3C63F3BC1F45E5CF666A25",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "PAPAYAPA BASS",
+      "levelAuthorName": "Ruz",
+      "hash": "579793BF0C0302B0ED00DE5E6ACCE99FF947C16A",
+      "levelid": "custom_level_579793BF0C0302B0ED00DE5E6ACCE99FF947C16A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

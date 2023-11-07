@@ -146,6 +146,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Longinus",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "97F35444687C81EAA2EE5D26A720069D410594FC",
+      "levelid": "custom_level_97F35444687C81EAA2EE5D26A720069D410594FC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

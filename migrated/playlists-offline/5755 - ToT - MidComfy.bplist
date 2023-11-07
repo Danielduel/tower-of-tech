@@ -182,6 +182,30 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Sugar Loli",
+      "levelAuthorName": "Ruz",
+      "hash": "F585036504200CA0141E2ACAB45984A9FEFCD748",
+      "levelid": "custom_level_F585036504200CA0141E2ACAB45984A9FEFCD748",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "METAVERSE DO BE LIKE THIS",
+      "levelAuthorName": "x-mens",
+      "hash": "48DD32F61E990B7DBF8823DD9E07E9E6AD7BDF8D",
+      "levelid": "custom_level_48DD32F61E990B7DBF8823DD9E07E9E6AD7BDF8D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

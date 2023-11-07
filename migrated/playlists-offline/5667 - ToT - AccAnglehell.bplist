@@ -585,6 +585,54 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Helicopter",
+      "levelAuthorName": "Jabob",
+      "hash": "A86EC016DB857DCAA3243750538F8876C242DDBB",
+      "levelid": "custom_level_A86EC016DB857DCAA3243750538F8876C242DDBB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Doggy god's street",
+      "levelAuthorName": "aruru & BigSlick & Hiromiru",
+      "hash": "CCBD5F0C8C138DDCFDD8E5A672E2E3E3B6EEF011",
+      "levelid": "custom_level_CCBD5F0C8C138DDCFDD8E5A672E2E3E3B6EEF011",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "你呀你呀",
+      "levelAuthorName": "wangyufy",
+      "hash": "2E9B994039FE8C3C5D6B6E34B178457E1909CBAB",
+      "levelid": "custom_level_2E9B994039FE8C3C5D6B6E34B178457E1909CBAB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "恋ひ恋う縁",
+      "levelAuthorName": "staryouh",
+      "hash": "5FC90DD064AE84E6921140772E056D3C3FF10530",
+      "levelid": "custom_level_5FC90DD064AE84E6921140772E056D3C3FF10530",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

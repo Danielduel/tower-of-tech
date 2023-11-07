@@ -40,18 +40,6 @@
       ]
     },
     {
-      "songName": "Friday",
-      "levelAuthorName": "Faded 99 & Z-ANESaber",
-      "hash": "E8F0E5B497A44AE3F3E0DECAD8A1871B4B8AAF56",
-      "levelid": "custom_level_E8F0E5B497A44AE3F3E0DECAD8A1871B4B8AAF56",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "Falling",
       "levelAuthorName": "nolan121405",
       "hash": "19AF73336A1C2FE788FF3DF0D93DB6E0BEAA0640",
@@ -436,14 +424,182 @@
       ]
     },
     {
-      "songName": "Immortal Flame",
-      "levelAuthorName": "Jevk",
-      "hash": "B297EE62F44512EE4740E451C988473F76E39FC2",
-      "levelid": "custom_level_B297EE62F44512EE4740E451C988473F76E39FC2",
+      "songName": "ES",
+      "levelAuthorName": "Tranch",
+      "hash": "A6F761576204B0D99810A5DE9476330B7298A6EE",
+      "levelid": "custom_level_A6F761576204B0D99810A5DE9476330B7298A6EE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Cat Loving",
+      "levelAuthorName": "Gabriel & Marsh",
+      "hash": "AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
+      "levelid": "custom_level_AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Multicolored",
+      "levelAuthorName": "ThySpoon",
+      "hash": "BA3EDDD4447985AAC531491C53D7E0F76FFF8603",
+      "levelid": "custom_level_BA3EDDD4447985AAC531491C53D7E0F76FFF8603",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Fireflies",
+      "levelAuthorName": "Tranch",
+      "hash": "632CE94E33B6A1F7A175C1E9C5AA7D3E2C9F1CEF",
+      "levelid": "custom_level_632CE94E33B6A1F7A175C1E9C5AA7D3E2C9F1CEF",
       "difficulties": [
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shuki RaiRai!!!",
+      "levelAuthorName": "Emiru",
+      "hash": "7C64C13FBA53C7D12C1EFDAC906D4F65910F4921",
+      "levelid": "custom_level_7C64C13FBA53C7D12C1EFDAC906D4F65910F4921",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "One More",
+      "levelAuthorName": "DaftMaple",
+      "hash": "18F3BBB66FAC56584EC9CC266E605EFE5CAEA398",
+      "levelid": "custom_level_18F3BBB66FAC56584EC9CC266E605EFE5CAEA398",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Garakuta Doll Play",
+      "levelAuthorName": "Ge2toro",
+      "hash": "B9B64CEE3EA925761A67880DF7A5C07C6A09FB4F",
+      "levelid": "custom_level_B9B64CEE3EA925761A67880DF7A5C07C6A09FB4F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Solid Ground",
+      "levelAuthorName": "Phøenix",
+      "hash": "EA532620629CD6B2A0405B7A08CF4E80D8A688CF",
+      "levelid": "custom_level_EA532620629CD6B2A0405B7A08CF4E80D8A688CF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Radiator Springs",
+      "levelAuthorName": "Rashed",
+      "hash": "ADB309477356E429AF4D0AF019CB2FF98F6C881A",
+      "levelid": "custom_level_ADB309477356E429AF4D0AF019CB2FF98F6C881A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "HUGE W",
+      "levelAuthorName": "Joshabi",
+      "hash": "8104BC82A204BF94EC7C3D8CFB00D67980907B2F",
+      "levelid": "custom_level_8104BC82A204BF94EC7C3D8CFB00D67980907B2F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Scuffed Up Age",
+      "levelAuthorName": "CookedChili",
+      "hash": "ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
+      "levelid": "custom_level_ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Alarm",
+      "levelAuthorName": "SomeTimothy",
+      "hash": "5B331FE58C1673A4385AF6BFBAE8A479324D065D",
+      "levelid": "custom_level_5B331FE58C1673A4385AF6BFBAE8A479324D065D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Yuusha",
+      "levelAuthorName": "Emiru",
+      "hash": "77BF25F58AA565B61E68B6064EC9B7AB33E88722",
+      "levelid": "custom_level_77BF25F58AA565B61E68B6064EC9B7AB33E88722",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Scare Me",
+      "levelAuthorName": "Fatalution",
+      "hash": "A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
+      "levelid": "custom_level_A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "AIAIAI",
+      "levelAuthorName": "Jevk",
+      "hash": "48C302770659065D1C6C91BD5DE0E25E50E18EF8",
+      "levelid": "custom_level_48C302770659065D1C6C91BD5DE0E25E50E18EF8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

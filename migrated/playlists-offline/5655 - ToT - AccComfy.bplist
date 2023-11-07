@@ -398,6 +398,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "DEEP",
+      "levelAuthorName": "minsiii",
+      "hash": "DC9D8B590B7371FD612369E13456DA4601015CD1",
+      "levelid": "custom_level_DC9D8B590B7371FD612369E13456DA4601015CD1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

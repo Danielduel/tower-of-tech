@@ -650,6 +650,66 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Rogue",
+      "levelAuthorName": "pleo & winteredge",
+      "hash": "1AEB6E553033E084E5CA19A4DEC0332831BEFF15",
+      "levelid": "custom_level_1AEB6E553033E084E5CA19A4DEC0332831BEFF15",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "10pt8ion",
+      "levelAuthorName": "PnfrlEnm",
+      "hash": "1863B39EAFBA7D3AAB649AACB361FEA6A97C1A74",
+      "levelid": "custom_level_1863B39EAFBA7D3AAB649AACB361FEA6A97C1A74",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "VORACITY",
+      "levelAuthorName": "Schwank, Aimedhades16 & Jabob",
+      "hash": "24AA12B89FEFBB815B716E3A2B784E7EA2EE237E",
+      "levelid": "custom_level_24AA12B89FEFBB815B716E3A2B784E7EA2EE237E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "polyriddim",
+      "levelAuthorName": "foxenby",
+      "hash": "5170081BD4C0FA02FC5ABD8C2F68F0D8A1956B7C",
+      "levelid": "custom_level_5170081BD4C0FA02FC5ABD8C2F68F0D8A1956B7C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Be Wild",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "E20B73E0A0951EBA7D403BBC3CE3420301100C43",
+      "levelid": "custom_level_E20B73E0A0951EBA7D403BBC3CE3420301100C43",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

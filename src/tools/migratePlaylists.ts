@@ -211,6 +211,7 @@ await Promise.all([
 ]);
 
 const tempDir = "./tree/";
+await Deno.remove(tempDir, { recursive: true });
 await Deno.mkdir(tempDir, { recursive: true });
 await Promise.all(compressFiles.map(async task => {
   await Deno.mkdir(tempDir + task.archivePath, { recursive: true });

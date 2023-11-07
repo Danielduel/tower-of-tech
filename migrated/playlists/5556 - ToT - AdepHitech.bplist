@@ -62,6 +62,54 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "2 Phut Hon",
+      "levelAuthorName": "Fatalution",
+      "hash": "B4512C8922CD4482613B53696CF83AF89395DCA9",
+      "levelid": "custom_level_B4512C8922CD4482613B53696CF83AF89395DCA9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "dumb dumb",
+      "levelAuthorName": "August & RaccoonVR",
+      "hash": "1DF70EDCAA6B14FBB48B8E7F071D53EA3D4689F7",
+      "levelid": "custom_level_1DF70EDCAA6B14FBB48B8E7F071D53EA3D4689F7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Flamingo",
+      "levelAuthorName": "Sensei WU",
+      "hash": "FCD73789560A88D9EEFDB8B84501FCD903C767F4",
+      "levelid": "custom_level_FCD73789560A88D9EEFDB8B84501FCD903C767F4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Kick It",
+      "levelAuthorName": "General Dumbass",
+      "hash": "344D246120F16BA93E2469DAE696851D75728C2D",
+      "levelid": "custom_level_344D246120F16BA93E2469DAE696851D75728C2D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

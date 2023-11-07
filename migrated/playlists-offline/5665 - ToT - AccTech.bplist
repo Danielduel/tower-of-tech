@@ -1756,18 +1756,6 @@
       ]
     },
     {
-      "songName": "Kick It",
-      "levelAuthorName": "General Dumbass",
-      "hash": "344D246120F16BA93E2469DAE696851D75728C2D",
-      "levelid": "custom_level_344D246120F16BA93E2469DAE696851D75728C2D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "KEEP ON MOVING",
       "levelAuthorName": "Joetastic",
       "hash": "777DD4436BDA0BD7903000136212BCAF4EE2757E",
@@ -2052,6 +2040,66 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Run",
+      "levelAuthorName": "TetsuBeats",
+      "hash": "140E72C66BE489179D84599AA93FC77A17AFA706",
+      "levelid": "custom_level_140E72C66BE489179D84599AA93FC77A17AFA706",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Will You Go Out with Me",
+      "levelAuthorName": "eurnkung",
+      "hash": "61C0B127F0DE220B78DFF2074D92CF46F8387620",
+      "levelid": "custom_level_61C0B127F0DE220B78DFF2074D92CF46F8387620",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "KICK BACK (TV Size)",
+      "levelAuthorName": "Joetastic",
+      "hash": "1F8A3AB2686F1EAC03AD67DB3A39BA12FE008733",
+      "levelid": "custom_level_1F8A3AB2686F1EAC03AD67DB3A39BA12FE008733",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Wababa",
+      "levelAuthorName": "Nixie.Korten",
+      "hash": "91A89FA527472E46B0A186472F018874B07EDE2B",
+      "levelid": "custom_level_91A89FA527472E46B0A186472F018874B07EDE2B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shining Lights",
+      "levelAuthorName": "Gabriel",
+      "hash": "9E7448653C2230810EB803565F2FDA86518D0D56",
+      "levelid": "custom_level_9E7448653C2230810EB803565F2FDA86518D0D56",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }
