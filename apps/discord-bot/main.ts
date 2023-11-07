@@ -80,7 +80,14 @@ async function home(request: Request) {
       }
     }
   }
-
+  return json({
+    // Type 4 responds with the below message retaining the user's
+    // input at the top.
+    type: 4,
+    data: {
+      content: JSON.stringify(data),
+    },
+  });
   // We will return a bad request error as a valid Discord request
   // shouldn't reach here.
   return json({ error: "bad request" }, { status: 400 });
