@@ -1,0 +1,30 @@
+{
+  "tasks": {
+    "start": "deno run -A ./src/main.ts",
+    "refreshPlaylists": "deno run -A ./src/tools/refreshPlaylists.ts",
+    "migratePlaylists": "deno run -A ./src/tools/migratePlaylists.ts",
+    "generateCupOfADayPlaylist": "deno run -A ./src/tools/generateCupOfADayPlaylist.ts",
+    "generate": "deno run ./src/main.ts",
+
+    "dev": "deno task s3s-fs-local & deno task webapp:dev",
+
+    "s3s-fs-local": "./scripts/s3s-fs-local.sh",
+
+    "webapp:dev": "deno run -A --unstable --no-check --watch ./apps/homepage/server.tsx",
+    "webapp:test": "deno test --allow-all",
+    "webapp:build": "deno run -A ./webapp/build.ts",
+    "webapp:start": "ULTRA_MODE=production deno run -A --no-remote ./webapp/server.js"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsxdev",
+    "jsxImportSource": "react",
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
+  },
+  "fmt": {
+    "files": { "exclude": [".ultra"] }
+  },
+  "lint": {
+    "files": { "exclude": [".ultra"] }
+  },
+  "importMap": "./importMap.json"
+}
