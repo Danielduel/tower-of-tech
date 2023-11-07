@@ -9,11 +9,14 @@ import {
 // TweetNaCl is a cryptography library that we use to verify requests
 // from Discord.
 import nacl from "https://cdn.skypack.dev/tweetnacl@v1.0.3?dts";
+import { APIApplicationCommand } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
 
 // For all requests to "/" endpoint, we want to invoke home() handler.
 serve({
   "/": home,
 });
+
+const isAPIApplicationCommand = (data: any): data is APIApplicationCommand => data.type === 2;
 
 // The main logic of the Discord Slash Command is defined in this function.
 async function home(request: Request) {
@@ -41,10 +44,10 @@ async function home(request: Request) {
     );
   }
 
-  const { type = 0, data = { options: [] } } = JSON.parse(body);
+  const data = JSON.parse(body);
   // Discord performs Ping interactions to test our application.
   // Type 1 in a request implies a Ping interaction.
-  if (type === 1) {
+  if (data.type === 1) {
     return json({
       type: 1, // Type 1 in a response is a Pong interaction response type.
     });
@@ -52,16 +55,30 @@ async function home(request: Request) {
 
   // Type 2 in a request is an ApplicationCommand interaction.
   // It implies that a user has issued a command.
-  if (type === 2) {
-    const { value } = data.options.find((option) => option.name === "name");
-    return json({
-      // Type 4 responds with the below message retaining the user's
-      // input at the top.
-      type: 4,
-      data: {
-        content: `Hello, ${value}!`,
-      },
-    });
+  if (data && data.type === 2) {
+    switch (data.name) {
+      case "hello": {
+        const { value } = data.options.find((option) => option.name === "name")!;
+        return json({
+          // Type 4 responds with the below message retaining the user's
+          // input at the top.
+          type: 4,
+          data: {
+            content: `Hello, ${value}!`,
+          },
+        });
+      }
+      case "playlists": {
+        return json({
+          // Type 4 responds with the below message retaining the user's
+          // input at the top.
+          type: 4,
+          data: {
+            content: `There is the link to current playlists <https://github.com/Danielduel/tower-of-tech/releases/>!`,
+          },
+        });
+      }
+    }
   }
 
   // We will return a bad request error as a valid Discord request
