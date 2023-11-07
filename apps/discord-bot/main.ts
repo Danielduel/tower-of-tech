@@ -9,14 +9,14 @@ import {
 // TweetNaCl is a cryptography library that we use to verify requests
 // from Discord.
 import nacl from "https://cdn.skypack.dev/tweetnacl@v1.0.3?dts";
-import { APIApplicationCommand } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
+import { APIApplicationCommandInteractionDataSubcommandOption } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
 
 // For all requests to "/" endpoint, we want to invoke home() handler.
 serve({
   "/": home,
 });
 
-const isAPIApplicationCommand = (data: any): data is APIApplicationCommand => data.type === 2;
+const isAPIApplicationCommand = (data: any): data is APIApplicationCommandInteractionDataSubcommandOption => data.type === 2;
 
 // The main logic of the Discord Slash Command is defined in this function.
 async function home(request: Request) {
@@ -55,9 +55,9 @@ async function home(request: Request) {
 
   // Type 2 in a request is an ApplicationCommand interaction.
   // It implies that a user has issued a command.
-  if (data && data.type === 2) {
+  if (data && isAPIApplicationCommand(data)) {
     switch (data.name) {
-      case "hello": {
+      case "/hello": {
         const { value } = data.options.find((option) => option.name === "name")!;
         return json({
           // Type 4 responds with the below message retaining the user's
@@ -68,7 +68,7 @@ async function home(request: Request) {
           },
         });
       }
-      case "playlists": {
+      case "/playlists": {
         return json({
           // Type 4 responds with the below message retaining the user's
           // input at the top.

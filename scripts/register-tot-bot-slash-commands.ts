@@ -5,7 +5,7 @@ const {
   DISCORD_TOT_BOT_TOKEN,
 } = await load();
 
-fetch(
+await fetch(
   `https://discord.com/api/v8/applications/${DISCORD_TOT_BOT_CLIENT_ID}/commands`,
   {
     method: "POST",
@@ -26,7 +26,7 @@ fetch(
   },
 );
 
-fetch(
+await fetch(
   `https://discord.com/api/v8/applications/${DISCORD_TOT_BOT_CLIENT_ID}/commands`,
   {
     method: "POST",
@@ -36,7 +36,8 @@ fetch(
     },
     body: JSON.stringify({
       name: "playlists",
-      description: "Get url to the playlist repository"
+      description: "Get url to the playlist repository",
+      options: []
     }),
   },
 );
