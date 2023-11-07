@@ -1,0 +1,89 @@
+{
+  "playlistTitle": "えんじょいチャイニーズテック ",
+  "playlistAuthor": "JBSL_Web_System",
+  "playlistDescription": "ゆるめの譜面, ほどよい難易度, ちょっと難しめetc.のテック譜面を集めてみました.\r\nNPS少なめ&静かな曲も多いので練習の合間に遊んでみてください. \r\nﾀﾉｼｲﾖ!!",
+  "customData": {
+    "syncURL": "https://jbsl-web.herokuapp.com/download_playlist/260"
+  },
+  "image": "data:image/png;base64,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",
+  "songs": [
+    {
+      "songName": "春竹叶",
+      "levelAuthorName": "Anii",
+      "hash": "0e48500e95a0201ade1eb27c797cb0f2db4707af",
+      "difficulties": [{ "characteristic": "Standard", "name": "Easy" }]
+    },
+    {
+      "songName": "春竹叶",
+      "levelAuthorName": "Anii",
+      "hash": "0e48500e95a0201ade1eb27c797cb0f2db4707af",
+      "difficulties": [{ "characteristic": "Standard", "name": "Normal" }]
+    },
+    {
+      "songName": "妄语人间",
+      "levelAuthorName": "Anii",
+      "hash": "5d83c0990facd7c54986e96de608de99bac8b31d",
+      "difficulties": [{ "characteristic": "Standard", "name": "Expert" }]
+    },
+    {
+      "songName": "惊鹊",
+      "levelAuthorName": "Anii",
+      "hash": "cab94365d4625073a64b5111610febd01af6e6e2",
+      "difficulties": [{ "characteristic": "Standard", "name": "ExpertPlus" }]
+    },
+    {
+      "songName": "谓剑",
+      "levelAuthorName": "Anii",
+      "hash": "f3256eb34ce31eb89d439622dc1618277323927b",
+      "difficulties": [{ "characteristic": "Standard", "name": "ExpertPlus" }]
+    },
+    {
+      "songName": "说书人",
+      "levelAuthorName": "Anii",
+      "hash": "05258a590577b92fa63581daa939133d687c05ec",
+      "difficulties": [{ "characteristic": "Standard", "name": "ExpertPlus" }]
+    },
+    {
+      "songName": "三拜红尘凉 (舞蹈版)",
+      "levelAuthorName": "Cush",
+      "hash": "700e88324fb3fcc233f9a9553d7f120bfa29e938",
+      "difficulties": [{ "characteristic": "Standard", "name": "ExpertPlus" }]
+    },
+    {
+      "songName": "神的随波逐流",
+      "levelAuthorName": "staryouh",
+      "hash": "e6c86c18be8bd25eec3d12cb89ed1b583efe5bcd",
+      "difficulties": [{ "characteristic": "Standard", "name": "Expert" }]
+    },
+    {
+      "songName": "1001夜",
+      "levelAuthorName": "staryouh",
+      "hash": "9c8ec3215ab11f7de1c0e8a86e5d883870b7f13a",
+      "difficulties": [{ "characteristic": "Standard", "name": "ExpertPlus" }]
+    },
+    {
+      "songName": "春竹叶",
+      "levelAuthorName": "Anii",
+      "hash": "0e48500e95a0201ade1eb27c797cb0f2db4707af",
+      "difficulties": [{ "characteristic": "Standard", "name": "Expert" }]
+    },
+    {
+      "songName": "水叙湖风",
+      "levelAuthorName": "staryouh",
+      "hash": "f77520ef760a2c2d730ddc9d1a973511279ec1bc",
+      "difficulties": [{ "characteristic": "Standard", "name": "ExpertPlus" }]
+    },
+    {
+      "songName": "游山恋 (AI mahiro cover)",
+      "levelAuthorName": "Ge2toro",
+      "hash": "40f9520fcb5cc12c44025067afb33f6644a5cabc",
+      "difficulties": [{ "characteristic": "Standard", "name": "ExpertPlus" }]
+    },
+    {
+      "songName": "桃花笑",
+      "levelAuthorName": "Cush",
+      "hash": "eb810d9401f44069d7e1e1664bf049084df505e1",
+      "difficulties": [{ "characteristic": "Standard", "name": "ExpertPlus" }]
+    }
+  ]
+}

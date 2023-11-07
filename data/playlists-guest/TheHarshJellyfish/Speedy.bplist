@@ -1,0 +1,22 @@
+{
+  "playlistTitle": "Speedy",
+  "playlistAuthor": "The Harsh Jellyfish",
+  "customData": {
+    "AllowDuplicates": false
+  },
+  "songs": [
+    {
+      "songName": "Necromantic",
+      "levelAuthorName": "AaltopahWi",
+      "hash": "057FF06BE425C1E64ABF47BE5C5AA5E0FBB7838D",
+      "levelid": "custom_level_057FF06BE425C1E64ABF47BE5C5AA5E0FBB7838D"
+    },
+    {
+      "songName": "Watch The World Burn",
+      "levelAuthorName": "realCoda & JRE_McNuggies",
+      "hash": "D89CB4B60BF3B5F846AC3E4CD1E68F151D04B5A5",
+      "levelid": "custom_level_D89CB4B60BF3B5F846AC3E4CD1E68F151D04B5A5"
+    }
+  ],
+  "image": ""
+}
