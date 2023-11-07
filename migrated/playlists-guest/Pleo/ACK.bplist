@@ -854,6 +854,90 @@
           "name": "Expert"
         }
       ]
+    },
+    {
+      "songName": "Feel Alive",
+      "levelAuthorName": "Bitz & Frost",
+      "hash": "237C8288CEF6AECE33C41A0DA9A99461083AB118",
+      "levelid": "custom_level_237C8288CEF6AECE33C41A0DA9A99461083AB118",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Chakra",
+      "levelAuthorName": "Jabob",
+      "hash": "8E6BC0438A81C60AEEC4E9AFB937145FC9ECD947",
+      "levelid": "custom_level_8E6BC0438A81C60AEEC4E9AFB937145FC9ECD947",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Antithesis",
+      "levelAuthorName": "EOP Glacier",
+      "hash": "E370C49C81AC28F2BF58160A03AA48355E016F89",
+      "levelid": "custom_level_E370C49C81AC28F2BF58160A03AA48355E016F89",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Towel in the Air",
+      "levelAuthorName": "Tomerisnice",
+      "hash": "4C2A2CE240210D55042FF95A53D7B4D17AFC5F17",
+      "levelid": "custom_level_4C2A2CE240210D55042FF95A53D7B4D17AFC5F17",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Cold Rain",
+      "levelAuthorName": "WalkingKat",
+      "hash": "CCFC7D5932EA28F924A95ECFD63C413CD320EBB9",
+      "levelid": "custom_level_CCFC7D5932EA28F924A95ECFD63C413CD320EBB9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "MilK",
+      "levelAuthorName": "nolan121405",
+      "hash": "4DAC218A21010EF1670C967183DBC6ACA2A8B411",
+      "levelid": "custom_level_4DAC218A21010EF1670C967183DBC6ACA2A8B411",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Feed the Machine",
+      "levelAuthorName": "Chromia",
+      "hash": "03409645216F9C02B579A1F0AA4C0E0B51EEA6DB",
+      "levelid": "custom_level_03409645216F9C02B579A1F0AA4C0E0B51EEA6DB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {
