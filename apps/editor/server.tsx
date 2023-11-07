@@ -89,10 +89,6 @@ const compiler = createCompilerHandler({
   root,
 });
 
-const compilerPlaylist = createCompilerHandler({
-  root,
-}, "/packages/");
-
 const staticHandler = createStaticHandler({
   pathToRoot: import.meta.resolve("./public"),
 });

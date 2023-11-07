@@ -1,8 +1,18 @@
 import { z } from "zod";
 import { Brand, make } from "https://deno.land/x/ts_brand@0.0.1/mod.ts";
 
-import { BeatSaberDifficultyNameSchema, BeatSaberDifficultyCharacteristicSchema } from "./beatsaber.ts";
-import { makeDateString, makeImageUrl, makeLowercaseMapHash, makeMapdataUrl, makePlaylistUrl, makePreviewUrl } from "./brands.ts";
+import {
+  BeatSaberDifficultyCharacteristicSchema,
+  BeatSaberDifficultyNameSchema,
+} from "./beatsaber.ts";
+import {
+  makeDateString,
+  makeImageUrl,
+  makeLowercaseMapHash,
+  makeMapdataUrl,
+  makePlaylistUrl,
+  makePreviewUrl,
+} from "./brands.ts";
 
 export type BeatSaverUserId = Brand<number, "BeatSaverUserId">;
 export const makeBeatSaverUserId = make<BeatSaverUserId>();
@@ -38,7 +48,7 @@ export const BeatSaverMapResponseStats = z.object({
 });
 
 const BeatSaverMapResponseVersionsItemState = z.enum([
-  "Published"
+  "Published",
 ]);
 
 export const BeatSaverMapResponseVersionsItemDiffItemParitySummary = z.object({
@@ -79,10 +89,9 @@ export const BeatSaverMapResponseVersionsItem = z.object({
   previewURL: z.string().transform(makePreviewUrl),
 });
 
-export const BeatSaverMapResponseNotFound = z.object({
-  error: z.enum(["Not Found"])
+export const BeatSaverMapResponseNotFoundSchema = z.object({
+  error: z.enum(["Not Found"]),
 });
-
 
 export const BeatSaverMapResponseSuccessSchema = z.object({
   id: z.string().transform(makeBeatSaverMapId),
@@ -104,5 +113,17 @@ export const BeatSaverMapResponseSuccessSchema = z.object({
 });
 
 export const BeatSaverMapResponseSchema = z.union(
-  [BeatSaverMapResponseSuccessSchema, BeatSaverMapResponseNotFound]
+  [BeatSaverMapResponseSuccessSchema, BeatSaverMapResponseNotFoundSchema],
 );
+
+export const isBeatSaverMapResponseSuccessSchema = (
+  x: typeof BeatSaverMapResponseSchema._type,
+): x is typeof BeatSaverMapResponseSuccessSchema._type => {
+  return "versions" in x;
+};
+
+export const isBeatSaverMapResponseNotFoundSchema = (
+  x: typeof BeatSaverMapResponseSchema._type,
+): x is typeof BeatSaverMapResponseNotFoundSchema._type => {
+  return "error" in x;
+};
