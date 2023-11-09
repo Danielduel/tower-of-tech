@@ -43,8 +43,10 @@ async function home(request: Request) {
     });
   }
 
-  const response = execute(commandEvent);
-  if (response) return response;
+  if (commandEvent.type === InteractionType.ApplicationCommand) {
+    const response = execute(commandEvent);
+    if (response) return response;
+  }
 
   return json({ error: "bad request" }, { status: 400 });
 }
@@ -86,13 +88,11 @@ type CommandPlaylistsInteraction = APIApplicationCommandInteractionWrapper<
 >;
 
 function execute(commandEvent: unknown): Response | undefined {
-  const match = matchCommand(commandEvent);
-
-  if (match.is("hello", commandEvent)) {
+  if (isCommandOfType(commandEvent, "hello")) {
     return executeHello(commandEvent);
   }
 
-  if (match.is("playlists", commandEvent)) {
+  if (isCommandOfType(commandEvent, "playlists")) {
     return executePlaylists(commandEvent);
   }
 
@@ -114,13 +114,14 @@ function getCommandName(
   );
 }
 
-function matchCommand(
+function isCommandOfType<T extends keyof CommandMapping>(
   commandEvent: unknown,
-) {
-  return {
-    name: getCommandName(commandEvent) as unknown as boolean,
-    is: <T extends keyof CommandMapping>(commandName: T, _ = commandEvent): _ is CommandMapping[T] => commandName as unknown as boolean
-  };
+  nameOfCommand: T,
+): commandEvent is CommandMapping[T] {
+  return (
+    !!commandEvent && typeof commandEvent === "object" &&
+    "name" in commandEvent && commandEvent.name === nameOfCommand
+  );
 }
 
 function executeHello(commandEvent: CommandHelloInteraction) {
