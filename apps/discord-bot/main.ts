@@ -104,7 +104,7 @@ async function execute(commandEvent: unknown) {
     return executePlaylists(commandEvent);
   }
 
-  if (isCommandOfType(commandEvent, "boopTheGeek")) {
+  if (isCommandOfType(commandEvent, "boop-the-geek")) {
     return await executeBoopTheGeek(commandEvent);
   }
 
@@ -114,7 +114,7 @@ async function execute(commandEvent: unknown) {
 type CommandMapping = {
   hello: CommandHelloInteraction;
   playlists: CommandPlaylistsInteraction;
-  boopTheGeek: CommandBoopTheGeekInteraction;
+  "boop-the-geek": CommandBoopTheGeekInteraction;
 };
 
 function isCommandOfType<T extends keyof CommandMapping>(
