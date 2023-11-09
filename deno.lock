@@ -2,6 +2,7 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "npm:discord.js": "npm:discord.js@14.13.0",
       "npm:discord.js@14.12.1": "npm:discord.js@14.12.1",
       "npm:discord.js@14.13.0": "npm:discord.js@14.13.0",
       "npm:seed-color": "npm:seed-color@2.0.1"

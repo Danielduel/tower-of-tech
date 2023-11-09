@@ -41,3 +41,19 @@ await fetch(
     }),
   },
 );
+
+await fetch(
+  `https://discord.com/api/v8/applications/${DISCORD_TOT_BOT_CLIENT_ID}/commands`,
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bot ${DISCORD_TOT_BOT_TOKEN}`,
+    },
+    body: JSON.stringify({
+      name: "boopTheGeek",
+      description: "Boop the very moderatable Geek",
+      options: []
+    }),
+  },
+);

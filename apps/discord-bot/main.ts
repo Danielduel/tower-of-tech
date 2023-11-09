@@ -10,6 +10,7 @@ import {
   APIChatInputApplicationCommandInteractionData,
   InteractionType,
 } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
+import { Client, GatewayIntentBits, GuildMember, User } from "npm:discord.js";
 
 // For all requests to "/" endpoint, we want to invoke home() handler.
 serve({
@@ -44,7 +45,7 @@ async function home(request: Request) {
   }
 
   if (commandEvent.type === InteractionType.ApplicationCommand) {
-    const response = execute(commandEvent);
+    const response = await execute(commandEvent);
     if (response) return response;
   }
 
@@ -81,13 +82,20 @@ type CommandHelloInteraction = APIApplicationCommandInteractionWrapper<
     options: [APIApplicationCommandInteractionDataStringOption];
   }
 >;
+
 type CommandPlaylistsInteraction = APIApplicationCommandInteractionWrapper<
   Omit<APIChatInputApplicationCommandInteractionData, "options"> & {
     options: never;
   }
 >;
 
-function execute(commandEvent: unknown): Response | undefined {
+type CommandBoopTheGeekInteraction = APIApplicationCommandInteractionWrapper<
+  Omit<APIChatInputApplicationCommandInteractionData, "options"> & {
+    options: never;
+  }
+>;
+
+async function execute(commandEvent: unknown) {
   if (isCommandOfType(commandEvent, "hello")) {
     return executeHello(commandEvent);
   }
@@ -96,12 +104,17 @@ function execute(commandEvent: unknown): Response | undefined {
     return executePlaylists(commandEvent);
   }
 
+  if (isCommandOfType(commandEvent, "boopTheGeek")) {
+    return await executeBoopTheGeek(commandEvent);
+  }
+
   return;
 }
 
 type CommandMapping = {
   hello: CommandHelloInteraction;
   playlists: CommandPlaylistsInteraction;
+  boopTheGeek: CommandBoopTheGeekInteraction;
 };
 
 function isCommandOfType<T extends keyof CommandMapping>(
@@ -142,5 +155,21 @@ function executePlaylists(commandEvent: CommandPlaylistsInteraction) {
       content:
         `There is the link to current playlists <https://github.com/Danielduel/tower-of-tech/releases/>!`,
     },
+  });
+}
+
+async function executeBoopTheGeek(commandEvent: CommandBoopTheGeekInteraction) {
+  const guildId = "689050370840068309";
+  const userId = "954395586847719505";
+
+  const client = new Client({ intents: [GatewayIntentBits.GuildMembers] });
+  const guild = await client.guilds.fetch(guildId)
+  const user = await guild.members.fetch(userId);
+
+  return json({
+    type: 4,
+    data: {
+      content: `Boop ${user.nickname}! They are ${user.moderatable ? "moderatable" : "not moderatable"}`
+    }
   });
 }
