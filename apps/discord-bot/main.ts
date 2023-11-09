@@ -1,27 +1,22 @@
-// Sift is a small routing library that abstracts away details like starting a
-// listener on a port, and provides a simple function (serve) that has an API
-// to invoke a function for a specific path.
 import {
   json,
   serve,
   validateRequest,
 } from "https://deno.land/x/sift@0.6.0/mod.ts";
-// TweetNaCl is a cryptography library that we use to verify requests
-// from Discord.
 import nacl from "https://cdn.skypack.dev/tweetnacl@v1.0.3?dts";
-import { APIApplicationCommandInteractionDataSubcommandOption } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
+import {
+  APIApplicationCommandInteractionDataStringOption,
+  APIApplicationCommandInteractionWrapper,
+  APIChatInputApplicationCommandInteractionData,
+  InteractionType,
+} from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
 
 // For all requests to "/" endpoint, we want to invoke home() handler.
 serve({
   "/": home,
 });
 
-const isAPIApplicationCommand = (data: any): data is APIApplicationCommandInteractionDataSubcommandOption => data.type === 2;
-
-// The main logic of the Discord Slash Command is defined in this function.
 async function home(request: Request) {
-  // validateRequest() ensures that a request is of POST method and
-  // has the following headers.
   const { error } = await validateRequest(request, {
     POST: {
       headers: ["X-Signature-Ed25519", "X-Signature-Timestamp"],
@@ -31,9 +26,6 @@ async function home(request: Request) {
     return json({ error: error.message }, { status: error.status });
   }
 
-  // verifySignature() verifies if the request is coming from Discord.
-  // When the request's signature is not valid, we return a 401 and this is
-  // important as Discord sends invalid requests to test our verification.
   const { valid, body } = await verifySignature(request);
   if (!valid) {
     return json(
@@ -45,51 +37,15 @@ async function home(request: Request) {
   }
 
   const commandEvent = JSON.parse(body);
-  // Discord performs Ping interactions to test our application.
-  // Type 1 in a request implies a Ping interaction.
-  if (commandEvent.type === 1) {
+  if (commandEvent.type === InteractionType.Ping) {
     return json({
       type: 1, // Type 1 in a response is a Pong interaction response type.
     });
   }
 
-  // Type 2 in a request is an ApplicationCommand interaction.
-  // It implies that a user has issued a command.
-  if (commandEvent.type === 2) {
-    switch (commandEvent.data.name) {
-      case "hello": {
-        const { value } = commandEvent.data.options.find((option) => option.name === "name")!;
-        return json({
-          // Type 4 responds with the below message retaining the user's
-          // input at the top.
-          type: 4,
-          data: {
-            content: `Hello, ${value}!`,
-          },
-        });
-      }
-      case "playlists": {
-        return json({
-          // Type 4 responds with the below message retaining the user's
-          // input at the top.
-          type: 4,
-          data: {
-            content: `There is the link to current playlists <https://github.com/Danielduel/tower-of-tech/releases/>!`,
-          },
-        });
-      }
-    }
-  }
-  // return json({
-  //   // Type 4 responds with the below message retaining the user's
-  //   // input at the top.
-  //   type: 4,
-  //   data: {
-  //     content: JSON.stringify(data),
-  //   },
-  // });
-  // We will return a bad request error as a valid Discord request
-  // shouldn't reach here.
+  const response = execute(commandEvent);
+  if (response) return response;
+
   return json({ error: "bad request" }, { status: 400 });
 }
 
@@ -116,4 +72,79 @@ function hexToUint8Array(hex: string) {
   return new Uint8Array(
     hex.match(/.{1,2}/g)!.map((val) => parseInt(val, 16)),
   );
+}
+
+type CommandHelloInteraction = APIApplicationCommandInteractionWrapper<
+  Omit<APIChatInputApplicationCommandInteractionData, "options"> & {
+    options: [APIApplicationCommandInteractionDataStringOption];
+  }
+>;
+type CommandPlaylistsInteraction = APIApplicationCommandInteractionWrapper<
+  Omit<APIChatInputApplicationCommandInteractionData, "options"> & {
+    options: never;
+  }
+>;
+
+function execute(commandEvent: unknown): Response | undefined {
+  const match = matchCommand(commandEvent);
+
+  if (match.is("hello", commandEvent)) {
+    return executeHello(commandEvent);
+  }
+
+  if (match.is("playlists", commandEvent)) {
+    return executePlaylists(commandEvent);
+  }
+
+  return;
+}
+
+type CommandMapping = {
+  hello: CommandHelloInteraction;
+  playlists: CommandPlaylistsInteraction;
+};
+
+function getCommandName(
+  commandEvent: unknown,
+): keyof CommandMapping | null {
+  return (
+    !!commandEvent && typeof commandEvent === "object" &&
+      "name" in commandEvent && typeof commandEvent.name === "string" &&
+      commandEvent.name as keyof CommandMapping || null
+  );
+}
+
+function matchCommand(
+  commandEvent: unknown,
+) {
+  return {
+    name: getCommandName(commandEvent) as unknown as boolean,
+    is: <T extends keyof CommandMapping>(commandName: T, _ = commandEvent): _ is CommandMapping[T] => commandName as unknown as boolean
+  };
+}
+
+function executeHello(commandEvent: CommandHelloInteraction) {
+  const name = commandEvent.data.options.find((x) => x.name === "name");
+  if (!name) return;
+
+  return json({
+    // Type 4 responds with the below message retaining the user's
+    // input at the top.
+    type: 4,
+    data: {
+      content: `Hello, ${name.value}!`,
+    },
+  });
+}
+
+function executePlaylists(commandEvent: CommandPlaylistsInteraction) {
+  return json({
+    // Type 4 responds with the below message retaining the user's
+    // input at the top.
+    type: 4,
+    data: {
+      content:
+        `There is the link to current playlists <https://github.com/Danielduel/tower-of-tech/releases/>!`,
+    },
+  });
 }
