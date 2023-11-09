@@ -104,23 +104,18 @@ type CommandMapping = {
   playlists: CommandPlaylistsInteraction;
 };
 
-function getCommandName(
-  commandEvent: unknown,
-): keyof CommandMapping | null {
-  return (
-    !!commandEvent && typeof commandEvent === "object" &&
-      "name" in commandEvent && typeof commandEvent.name === "string" &&
-      commandEvent.name as keyof CommandMapping || null
-  );
-}
-
 function isCommandOfType<T extends keyof CommandMapping>(
   commandEvent: unknown,
   nameOfCommand: T,
 ): commandEvent is CommandMapping[T] {
   return (
-    !!commandEvent && typeof commandEvent === "object" &&
-    "name" in commandEvent && commandEvent.name === nameOfCommand
+    typeof commandEvent === "object" &&
+    !!commandEvent &&
+    "data" in commandEvent &&
+    !!commandEvent.data &&
+    typeof commandEvent.data === "object" &&
+    "name" in commandEvent.data && typeof commandEvent.data.name === "string" &&
+    commandEvent.data.name === nameOfCommand
   );
 }
 
