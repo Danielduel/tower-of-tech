@@ -112,6 +112,8 @@ If first 3: DM me on discord or do an issue on this repository, if the last one 
 - winter (https://www.twitch.tv/winteredge)
 - Goose (https://www.twitch.tv/goosychan)
 - DarkyFox (https://www.twitch.tv/darkyfox__)
+- i_time (https://www.twitch.tv/i_time)
+
 
 ## People who allowed me to add their playlists to the project
 - Morgolf (https://www.twitch.tv/morgolf)
