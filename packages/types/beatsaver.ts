@@ -116,6 +116,11 @@ export const BeatSaverMapResponseSchema = z.union(
   [BeatSaverMapResponseSuccessSchema, BeatSaverMapResponseNotFoundSchema],
 );
 
+export const BeatSaverMapByHashResponseSchema = z.record(
+  z.string().regex(/[0-9a-f,]+/),
+  z.nullable(BeatSaverMapResponseSuccessSchema),
+);
+
 export const isBeatSaverMapResponseSuccessSchema = (
   x: typeof BeatSaverMapResponseSchema._type,
 ): x is typeof BeatSaverMapResponseSuccessSchema._type => {

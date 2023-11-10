@@ -27,7 +27,10 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.0",
     "twind": "https://esm.sh/twind@0.16.19",
     "twind/": "https://esm.sh/twind@0.16.19/",
-    "$std/": "https://deno.land/std@0.193.0/"
+    "$std/": "https://deno.land/std@0.193.0/",
+    "zod": "https://deno.land/x/zod@v3.19.1/mod.ts",
+    "@/": "../../packages/",
+    "#/": "../../ui/"
   },
   "compilerOptions": {
     "jsx": "react-jsx",

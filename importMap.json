@@ -29,6 +29,7 @@
     "pentagon": "../pentagon/mod.ts",
     "ultra/": "../ultra/",
 
-    "@/": "./packages/"
+    "@/": "./packages/",
+    "#/": "./apps/"
   }
 }

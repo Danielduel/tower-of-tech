@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { WithMaps, WithPlaylist } from "./types.ts";
+import { WithMaps, WithPlaylist } from "../../../../ui/playlist/types.ts";
 import { tw } from "@/twind/twind.tsx";
 import { trpc } from "@/trpc/trpc.ts";
 import { MapItem } from "../../components/MapItem.tsx";

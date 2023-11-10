@@ -5,17 +5,12 @@ import {
   zodApiResource,
 } from "https://deno.land/x/zod_api@v0.3.1/mod.ts";
 import partition from "https://deno.land/x/denodash@0.1.3/src/array/partition.ts";
-import { BeatSaverMapResponseSuccessSchema } from "../types/beatsaver.ts";
+import { BeatSaverMapByHashResponse, BeatSaverMapResponseSuccessSchema } from "../types/beatsaver.ts";
 import { fetcher } from "../fetcher/mod.ts";
 import { getLogger } from "../logger/mod.ts";
 import { fileExists } from "../fs/fileExists.ts";
 import { LowercaseMapHash } from "../types/brands.ts";
 
-const mapByHashResponse = z.record(
-  z.string().regex(/[0-9a-f,]+/),
-  z.nullable(BeatSaverMapResponseSuccessSchema),
-);
-type MapByHashResponse = typeof mapByHashResponse._type;
 
 export const BeatSaverApi = zodApiClient({
   fetcher,
@@ -54,7 +49,7 @@ export const BeatSaverApi = zodApiClient({
       }),
       actions: {
         get: {
-          dataSchema: mapByHashResponse,
+          dataSchema: BeatSaverMapByHashResponse,
         },
       },
     }),
