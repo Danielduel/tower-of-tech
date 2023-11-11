@@ -6,7 +6,7 @@
     "generateCupOfADayPlaylist": "deno run -A ./src/tools/generateCupOfADayPlaylist.ts",
     "generate": "deno run ./src/main.ts",
 
-    "dev": "deno task s3s-fs-local & deno task webapp:dev",
+    "dev": "deno task s3s-fs-local & deno task webapp:dev --import-map importMap.local.json",
 
     "s3s-fs-local": "./scripts/s3s-fs-local.sh",
 

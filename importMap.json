@@ -26,10 +26,9 @@
 
     "react-helmet-async": "https://esm.sh/react-helmet-async@1.3.0?external=react",
 
-    "pentagon": "../pentagon/mod.ts",
-    "ultra/": "../ultra/",
+    "pentagon": "https://deno.land/x/danielduel_ultra_stack_pentagon@0.0.1/mod.ts",
+    "ultra/": "https://deno.land/x/danielduel_ultra_stack_ultra@0.0.5/",
 
-    "@/": "./packages/",
-    "#/": "./apps/"
+    "@/": "./packages/"
   }
 }

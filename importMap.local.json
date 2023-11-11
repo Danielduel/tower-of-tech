@@ -25,6 +25,7 @@
 
     "react-helmet-async": "https://esm.sh/react-helmet-async@1.3.0?external=react",
 
+    "pentagon": "../pentagon/mod.ts",
     "ultra/": "../ultra/",
 
     "@/": "./packages/"
