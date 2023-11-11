@@ -1,4 +1,4 @@
-import { tw } from "@/twind/twind.tsx";
+import { tw } from "@/packages/twind/twind.tsx";
 
 export default function NoPage() {
   return (

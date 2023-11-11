@@ -1,10 +1,10 @@
 import { FC, PropsWithChildren } from "react";
 import { Route, Routes } from "react-router-dom";
-import { tw } from "@/twind/twind.tsx";
-import { trpc } from "@/trpc/trpc.ts";
+import { tw } from "@/packages/twind/twind.tsx";
+import { trpc } from "@/packages/trpc/trpc.ts";
 import { WithPlaylists } from "../../../../ui/playlist/types.ts";
 import { PlaylistList } from "./PlaylistList.tsx";
-import { Link } from "@/ui/Link.tsx";
+import { Link } from "@/packages/ui/Link.tsx";
 import { PlaylistFromFile } from "./PlaylistFromFile.tsx";
 
 const PlaylistListing: FC<WithPlaylists> = ({ playlists }) => {

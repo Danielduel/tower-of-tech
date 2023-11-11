@@ -1,10 +1,11 @@
-import { initTRPC } from "@trpc/server";
 import { z } from "zod";
-import { db, s3client } from "@/database/mod.ts";
-import { makeImageBase64, makeLowercaseMapHash } from "@/types/brands.ts";
-import { fetchAndCacheHashes } from "@/api-beatsaver/mod.ts";
-import { BeatSaberPlaylistWithoutIdSchema, BeatSaberPlaylistSchema } from "@/types/beatsaber-playlist.ts";
-import { createOrUpdatePlaylist } from "@/trpc/routers/playlist.ts";
+import { initTRPC } from "@trpc/server";
+import { buckets } from "@/packages/database/buckets.ts";
+import { db, s3client } from "@/packages/database/mod.ts";
+import { fetchAndCacheHashes } from "@/packages/api-beatsaver/mod.ts";
+import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
+import { makeImageBase64, makeLowercaseMapHash } from "@/packages/types/brands.ts";
+import { BeatSaberPlaylistWithoutIdSchema, BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
 
 const t = initTRPC.create();
 
@@ -30,7 +31,7 @@ const playlist = t.router({
       }
     });
     return await Promise.all(items.map(async item => {
-      const image = await s3client.getObject(item.id, { bucketName: "playlist-cover-image"})
+      const image = await s3client.getObject(item.id, { bucketName: buckets.playlist.coverImage })
       return {
         ...item,
         id: item.id,

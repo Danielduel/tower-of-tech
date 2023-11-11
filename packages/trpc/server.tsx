@@ -3,8 +3,8 @@ import type { AnyProcedure } from "@trpc/server";
 import { observable } from "@trpc/server/observable";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { type ReactNode } from "react";
-import { queryClient } from "@/react-query/query-client.ts";
-import { useDehydrateReactQuery } from "@/react-query/useDehydrateReactQuery.tsx";
+import { queryClient } from "@/packages/react-query/query-client.ts";
+import { useDehydrateReactQuery } from "@/packages/react-query/useDehydrateReactQuery.tsx";
 import { type AppRouter, appRouter } from "./router.ts";
 import { trpc } from "./trpc.ts";
 

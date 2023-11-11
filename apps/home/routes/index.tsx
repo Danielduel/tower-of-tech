@@ -1,6 +1,6 @@
 import { ComponentChildren } from "preact";
 import { getPlaylistsForRoutes } from "../utils/getPlaylistsForRoutes.ts";
-import { playlistMapping } from "@/playlist-mapping/mod.ts";
+import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
 
 const PlaylistLink = (
   { fileName, displayName }: { fileName: string; displayName: string },

@@ -1,7 +1,7 @@
 import { FC, FormEventHandler, useState } from "react";
-import { BeatSaberPlaylistSchema, BeatSaberPlaylistWithoutIdSchema } from "@/types/beatsaber-playlist.ts";
+import { BeatSaberPlaylistSchema, BeatSaberPlaylistWithoutIdSchema } from "@/packages/types/beatsaber-playlist.ts";
 import { Playlist } from "./PlaylistItem.tsx";
-import { trpc } from "@/trpc/trpc.ts";
+import { trpc } from "@/packages/trpc/trpc.ts";
 
 export const PlaylistFromFile: FC = () => {
   const [playlists, setPlaylists] = useState<typeof BeatSaberPlaylistWithoutIdSchema._type[] | null>(null);

@@ -6,11 +6,12 @@
     "generateCupOfADayPlaylist": "deno run -A ./src/tools/generateCupOfADayPlaylist.ts",
     "generate": "deno run ./src/main.ts",
 
-    "dev": "deno task s3s-fs-local & deno task webapp:dev --import-map importMap.local.json",
+    "dev": "deno task s3s-fs-local & deno task editor:dev",
 
     "s3s-fs-local": "./scripts/s3s-fs-local.sh",
 
-    "editor:dev": "ENVIRONMENT=development deno run -A --unstable --no-check --watch ./apps/homepage/server.tsx",
+    "editor:dev": "ENVIRONMENT=development deno run -A --unstable --no-check --watch --import-map importMap.local.json ./apps/editor/server.tsx",
+    "editor:dev-withoutdev": "ULTRA_LOG_LEVEL=DEBUG deno run -A --unstable --no-check --watch ./apps/editor/server.tsx",
     "editor:test": "deno test --allow-all",
     "editor:build": "deno run -A ./webapp/build.ts",
     "editor:start": "ULTRA_MODE=production deno run -A --no-remote ./webapp/server.js"

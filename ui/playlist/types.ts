@@ -1,5 +1,5 @@
-import { BeatSaberPlaylistSchema, BeatSaberPlaylistSongItemSchema } from "@/types/beatsaber-playlist.ts";
-import { BeatSaverMapResponseSuccessSchema, BeatSaverMapByHashResponseSchema } from "@/types/beatsaver.ts";
+import { BeatSaberPlaylistSchema, BeatSaberPlaylistSongItemSchema } from "@/packages/types/beatsaber-playlist.ts";
+import { BeatSaverMapResponseSuccessSchema, BeatSaverMapByHashResponseSchema } from "@/packages/types/beatsaver.ts";
 
 export type WithMapAndBeatSaverMap = {
   map: typeof BeatSaberPlaylistSongItemSchema._type;

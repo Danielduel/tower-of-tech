@@ -29,7 +29,7 @@
     "twind/": "https://esm.sh/twind@0.16.19/",
     "$std/": "https://deno.land/std@0.193.0/",
     "zod": "https://deno.land/x/zod@v3.19.1/mod.ts",
-    "@/": "../../packages/",
+    "@/packages/": "../../packages/",
     "#/": "../../ui/"
   },
   "compilerOptions": {

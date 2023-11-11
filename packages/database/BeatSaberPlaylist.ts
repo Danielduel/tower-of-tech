@@ -2,7 +2,7 @@ import { TableDefinition } from "pentagon";
 import {
   BeatSaberPlaylistFlatSchema,
   BeatSaberPlaylistSongItemSchema,
-} from "@/types/beatsaber-playlist.ts";
+} from "@/packages/types/beatsaber-playlist.ts";
 
 export const BeatSaberPlaylistSongItem = {
   schema: BeatSaberPlaylistSongItemSchema,

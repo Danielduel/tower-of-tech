@@ -1,13 +1,14 @@
-import { BeatSaberPlaylistWithoutIdSchema } from "@/types/beatsaber-playlist.ts";
-import { db, s3client } from "@/database/mod.ts";
-import { makeUppercaseMapHash } from "@/types/brands.ts";
+import { buckets } from "@/packages/database/buckets.ts";
+import { db, s3client } from "@/packages/database/mod.ts";
+import { makeUppercaseMapHash } from "@/packages/types/brands.ts";
+import { BeatSaberPlaylistWithoutIdSchema } from "@/packages/types/beatsaber-playlist.ts";
 
 export const createOrUpdatePlaylist = async (input: typeof BeatSaberPlaylistWithoutIdSchema._type) => {
   const playlistId = input.id ?? crypto.randomUUID();
 
   try {
     await s3client.putObject(playlistId, input.image, {
-      bucketName: "playlist-cover-image"
+      bucketName: buckets.playlist.coverImage
     });
   } catch (err) { console.log(err) }
   try {

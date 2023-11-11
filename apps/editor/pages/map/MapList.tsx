@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { trpc } from "@/trpc/trpc.ts";
+import { trpc } from "@/packages/trpc/trpc.ts";
 import { MapItem } from "../../components/MapItem.tsx";
 
 export const MapList: FC = () => {

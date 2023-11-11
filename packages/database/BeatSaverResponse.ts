@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { TableDefinition } from "pentagon";
-import { BeatSaverMapResponseSuccessSchema, makeBeatSaverMapId } from "@/types/beatsaver.ts";
+import { BeatSaverMapResponseSuccessSchema, makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
 
 export const BeatSaverResponseWrapperSchema = z.object({
   id: z.string().transform(makeBeatSaverMapId),

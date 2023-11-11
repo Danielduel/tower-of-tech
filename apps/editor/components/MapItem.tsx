@@ -1,12 +1,12 @@
 import { FC, useMemo } from "react";
-import { BeatSaberPlaylistSongItemSchema } from "@/types/beatsaber-playlist.ts";
+import { BeatSaberPlaylistSongItemSchema } from "@/packages/types/beatsaber-playlist.ts";
 import {
   BeatSaverMapResponseNotFoundSchema,
   BeatSaverMapResponseSchema,
   BeatSaverMapResponseSuccessSchema,
   isBeatSaverMapResponseSuccessSchema,
-} from "@/types/beatsaver.ts";
-import { tw } from "@/twind/twind.tsx";
+} from "@/packages/types/beatsaver.ts";
+import { tw } from "@/packages/twind/twind.tsx";
 
 type MapItemProps = {
   playlistMapItem?: typeof BeatSaberPlaylistSongItemSchema._type;

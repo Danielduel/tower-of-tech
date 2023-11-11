@@ -1,5 +1,5 @@
-import { tw } from "@/twind/twind.tsx";
-import { Link } from "@/ui/Link.tsx";
+import { tw } from "@/packages/twind/twind.tsx";
+import { Link } from "@/packages/ui/Link.tsx";
 
 export default function Layout({ children }: React.PropsWithChildren) {
   return (

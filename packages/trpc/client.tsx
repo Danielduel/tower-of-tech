@@ -1,7 +1,7 @@
 import { type ReactNode } from "react";
 import { httpBatchLink } from "@trpc/client/links/httpBatchLink";
 import { Hydrate, QueryClientProvider } from "@tanstack/react-query";
-import { queryClient } from "@/react-query/query-client.ts";
+import { queryClient } from "@/packages/react-query/query-client.ts";
 import { trpc } from "./trpc.ts";
 
 declare const __REACT_QUERY_DEHYDRATED_STATE: unknown;
