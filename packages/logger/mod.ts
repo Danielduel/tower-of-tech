@@ -1,4 +1,4 @@
-import Logger from "https://deno.land/x/logger@v1.1.1/logger.ts";
+import Logger from "https://deno.land/x/logger@v1.1.3/logger.ts";
 import type { Logger as ZodApiLogger } from "https://deno.land/x/zod_api@v0.3.1/mod.ts";
 
 const sessionTimestamp = Date.now();
