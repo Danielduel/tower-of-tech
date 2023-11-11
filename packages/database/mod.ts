@@ -1,9 +1,12 @@
 import { createPentagon } from "pentagon";
 import { S3Client } from "s3_lite_client";
-import { BeatSaberPlaylist, BeatSaberPlaylistSongItem } from "./BeatSaberPlaylist.ts";
-import { BeatSaverResponseWrapper, BeatSaverMapResponseSuccess } from "./BeatSaverResponse.ts";
+import { isDevelopment } from "@/utils/envrionment.ts";
+import { BeatSaberPlaylist, BeatSaberPlaylistSongItem } from "@/database/BeatSaberPlaylist.ts";
+import { BeatSaverResponseWrapper, BeatSaverMapResponseSuccess } from "@/database/BeatSaverResponse.ts";
 
-const kv = await Deno.openKv("./local.db");
+const kv = isDevelopment()
+  ? await Deno.openKv("./local.db")
+  : await Deno.openKv();
 
 export const db = createPentagon(kv, {
   BeatSaverResponseWrapper,
@@ -22,11 +25,3 @@ export const s3client = new S3Client({
   bucket: "dev-bucket",
   pathStyle: true,
 });
-
-// setInterval(async () => {
-//   console.log("Listing")
-//   const entries = kv.list({ prefix: [] });
-//   for await (const entry of entries) {
-//     console.log(entry);
-//   }
-// }, 1000)
