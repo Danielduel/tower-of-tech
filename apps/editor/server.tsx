@@ -93,23 +93,6 @@ const staticHandler = createStaticHandler({
 });
 
 const executeHandlers = composeHandlers(
-  // {
-  //   supportsRequest: (request) => {
-  //     return request.url.includes("@/");
-  //   },
-  //   handleRequest: async (request) => {
-  //     const { pathname } = new URL(request.url);
-  //     const fileName = pathname.split("@")[1];
-  //     return new Response(
-  //       (await Deno.open(root + fileName)).readable,
-  //       {
-  //         headers: {
-  //           "Content-Type": "application/javascript",
-  //         },
-  //       },
-  //     );
-  //   },
-  // },
   {
     supportsRequest: (request) => {
       return request.url.includes("/@/");

@@ -51,18 +51,6 @@
       ]
     },
     {
-      "songName": "Who's Ready For Tomorrow",
-      "levelAuthorName": "FireStrike & Sp234",
-      "hash": "1AB7F3DD23DB9B7F3AA2B9AF3777DE79C8D20818",
-      "levelid": "custom_level_1AB7F3DD23DB9B7F3AA2B9AF3777DE79C8D20818",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Love Bon Appétit",
       "levelAuthorName": "Fuyakeru",
       "hash": "A13A0EB7C0C7471C430A65ABC92E89660B4A875F",
@@ -115,18 +103,6 @@
       "levelAuthorName": "JRE_McNuggies",
       "hash": "67A8A7EF7D27EF3A62BC27F1A5F73B2CE639A5CB",
       "levelid": "custom_level_67A8A7EF7D27EF3A62BC27F1A5F73B2CE639A5CB",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Exciter",
-      "levelAuthorName": "Skeelie",
-      "hash": "3E86DAF870FB28706C91DF792272066F3F396A2F",
-      "levelid": "custom_level_3E86DAF870FB28706C91DF792272066F3F396A2F",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -207,18 +183,6 @@
       ]
     },
     {
-      "songName": "Religion",
-      "levelAuthorName": "A Jhintleman & GojiCrafter",
-      "hash": "BC299E58DE7C56854C3485BA046834920BB81C8F",
-      "levelid": "custom_level_BC299E58DE7C56854C3485BA046834920BB81C8F",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Ren'ai Saiban (Love Trial)",
       "levelAuthorName": "kizuflux",
       "hash": "43094923A770E1AA7193480E54D4C6299032EB8B",
@@ -239,18 +203,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "a little peace of happiness",
-      "levelAuthorName": "ejiejidayo",
-      "hash": "F2301697224E4AA11C788BBCA6B1D653B945D109",
-      "levelid": "custom_level_F2301697224E4AA11C788BBCA6B1D653B945D109",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -315,18 +267,6 @@
       ]
     },
     {
-      "songName": "Closer",
-      "levelAuthorName": "xxZAROKxx",
-      "hash": "16D16D78C5203CF07D1056C1C9D2792E68E3AF54",
-      "levelid": "custom_level_16D16D78C5203CF07D1056C1C9D2792E68E3AF54",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Hoshikuzu distancia",
       "levelAuthorName": "shrado & Bitz",
       "hash": "754C2606436DAA4EE58D917A56EB23FCC12328F6",
@@ -375,34 +315,10 @@
       ]
     },
     {
-      "songName": "Berry Pop",
-      "levelAuthorName": "aruru",
-      "hash": "B6033120B4C0964C92EEF44E0FE0EBC65E079EEF",
-      "levelid": "custom_level_B6033120B4C0964C92EEF44E0FE0EBC65E079EEF",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "LAND OF FIRE",
       "levelAuthorName": "oegoe",
       "hash": "E9BB1C35086C67A2F7F6930C6BB762BF2E6EC502",
       "levelid": "custom_level_E9BB1C35086C67A2F7F6930C6BB762BF2E6EC502",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "D.A.W",
-      "levelAuthorName": "Schwank",
-      "hash": "8378E68AAE69795128DEF5413EECD1E3B3B66BD5",
-      "levelid": "custom_level_8378E68AAE69795128DEF5413EECD1E3B3B66BD5",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -439,18 +355,6 @@
       "levelAuthorName": "Alice",
       "hash": "1F4549DFE479F51E9573DBC7E348B217952F3133",
       "levelid": "custom_level_1F4549DFE479F51E9573DBC7E348B217952F3133",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Last Wind",
-      "levelAuthorName": "Kival Evan",
-      "hash": "F0DC0F52454584F716F99C0CA91892A7F897183D",
-      "levelid": "custom_level_F0DC0F52454584F716F99C0CA91892A7F897183D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -675,18 +579,6 @@
       ]
     },
     {
-      "songName": "Diabolic Swing",
-      "levelAuthorName": "Voidless",
-      "hash": "D2A2BE78DD835DEE098E794096631543E5CBE008",
-      "levelid": "custom_level_D2A2BE78DD835DEE098E794096631543E5CBE008",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Psychobilly Freakout",
       "levelAuthorName": "Joetastic",
       "hash": "E7B47F5DED6A8B405C754CB2E288284ABEF7C65A",
@@ -751,18 +643,6 @@
       "levelAuthorName": "Voidless",
       "hash": "FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
       "levelid": "custom_level_FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Barrage",
-      "levelAuthorName": "abcbadq",
-      "hash": "D935D511F47C3F10E98E3E5B08A7D39CEC3A14AA",
-      "levelid": "custom_level_D935D511F47C3F10E98E3E5B08A7D39CEC3A14AA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1035,18 +915,6 @@
       ]
     },
     {
-      "songName": "See You Again",
-      "levelAuthorName": "___",
-      "hash": "7626008C468851C195367C496D204F5DA8C927CD",
-      "levelid": "custom_level_7626008C468851C195367C496D204F5DA8C927CD",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Brittle Bones Nicky",
       "levelAuthorName": "VILLQRREALS, Epix Fusion",
       "hash": "0ED57C891ECEE164F3F1678D5C0FF2E18B24DE6B",
@@ -1123,18 +991,6 @@
       "levelAuthorName": "esa_esa",
       "hash": "D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
       "levelid": "custom_level_D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Keitai Renwa",
-      "levelAuthorName": "Ken_Monogatari",
-      "hash": "EE074EDFE8AF3A1B7E1663FE5EAF7AC3A028C3AB",
-      "levelid": "custom_level_EE074EDFE8AF3A1B7E1663FE5EAF7AC3A028C3AB",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1299,18 +1155,6 @@
       ]
     },
     {
-      "songName": "Second Heaven",
-      "levelAuthorName": "mux",
-      "hash": "E11A1A0F1D0D5D22951AF640E98CC729A8E3258C",
-      "levelid": "custom_level_E11A1A0F1D0D5D22951AF640E98CC729A8E3258C",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Ai no Supreme (TV Size)",
       "levelAuthorName": "Joetastic",
       "hash": "A15F112FFE8ABB5BAA962B678E89BC7657890183",
@@ -1383,18 +1227,6 @@
       ]
     },
     {
-      "songName": "danser",
-      "levelAuthorName": "WalkingKat",
-      "hash": "A99EDD00979528B299A35026F5E052DFD94F3609",
-      "levelid": "custom_level_A99EDD00979528B299A35026F5E052DFD94F3609",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Ifuudoudou (Pomp and Circumstance)",
       "levelAuthorName": "Joetastic",
       "hash": "52B6559BCBF987BF2D33BBE513ADC9166E3A1032",
@@ -1435,18 +1267,6 @@
       "levelAuthorName": "minsiii",
       "hash": "4716934350AA843FBC30173C3A8EBD108A19587A",
       "levelid": "custom_level_4716934350AA843FBC30173C3A8EBD108A19587A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "2002",
-      "levelAuthorName": "MadChase",
-      "hash": "CC6B0BDDD6EB662B36E4399D1B7B65504DE26D47",
-      "levelid": "custom_level_CC6B0BDDD6EB662B36E4399D1B7B65504DE26D47",
       "difficulties": [
         {
           "characteristic": "Standard",

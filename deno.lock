@@ -2,6 +2,7 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "npm:@types/node": "npm:@types/node@18.11.17",
       "npm:discord.js": "npm:discord.js@14.13.0",
       "npm:discord.js@14.12.1": "npm:discord.js@14.12.1",
       "npm:discord.js@14.13.0": "npm:discord.js@14.13.0",
@@ -204,7 +205,10 @@
     }
   },
   "redirects": {
-    "https://deno.land/x/discord_api_types/v10.ts": "https://deno.land/x/discord_api_types@0.37.62/v10.ts"
+    "https://deno.land/std/dotenv/load.ts": "https://deno.land/std@0.206.0/dotenv/load.ts",
+    "https://deno.land/x/discord_api_types/v10.ts": "https://deno.land/x/discord_api_types@0.37.62/v10.ts",
+    "https://esm.sh/v128/@types/react@~18.2/index.d.ts": "https://esm.sh/v128/@types/react@18.2.25/index.d.ts",
+    "https://esm.sh/v133/@types/react-dom@~18.2/server~.d.ts": "https://esm.sh/v133/@types/react-dom@18.2.13/server~.d.ts"
   },
   "remote": {
     "https://deno.land/std@0.176.0/_util/asserts.ts": "178dfc49a464aee693a7e285567b3d0b555dc805ff490505a8aae34f9cfb1462",
@@ -339,7 +343,13 @@
     "https://deno.land/std@0.203.0/url/join.ts": "157be552aec2d325b07c2fd9fa4643153659c044071cff8ffd62f80b4cbb792c",
     "https://deno.land/std@0.203.0/url/mod.ts": "d4e4db2f85a4a1613d824367b750f36bbd1c0ff791daae2eb74795d292c722bb",
     "https://deno.land/std@0.203.0/url/normalize.ts": "1214f4590119491e891e89cef22f5fa2825ecd51781b0e985952c460b218cba1",
+    "https://deno.land/std@0.204.0/assert/assert.ts": "9a97dad6d98c238938e7540736b826440ad8c1c1e54430ca4c4e623e585607ee",
+    "https://deno.land/std@0.204.0/assert/assertion_error.ts": "4d0bde9b374dfbcbe8ac23f54f567b77024fb67dbb1906a852d67fe050d42f56",
+    "https://deno.land/std@0.204.0/bytes/copy.ts": "939d89e302a9761dcf1d9c937c7711174ed74c59eef40a1e4569a05c9de88219",
+    "https://deno.land/std@0.204.0/io/buffer.ts": "2108faba32659e5a390bb59b1b4578ff0120b185d9310dd6fbf3b3a3d5775715",
     "https://deno.land/std@0.205.0/dotenv/mod.ts": "039468f5c87d39b69d7ca6c3d68ebca82f206ec0ff5e011d48205eea292ea5a6",
+    "https://deno.land/std@0.206.0/dotenv/load.ts": "0636983549b98f29ab75c9a22a42d9723f0a389ece5498fe971e7bb2556a12e2",
+    "https://deno.land/std@0.206.0/dotenv/mod.ts": "039468f5c87d39b69d7ca6c3d68ebca82f206ec0ff5e011d48205eea292ea5a6",
     "https://deno.land/std@0.97.0/_util/assert.ts": "2f868145a042a11d5ad0a3c748dcf580add8a0dbc0e876eaa0026303a5488f58",
     "https://deno.land/std@0.97.0/_util/os.ts": "e282950a0eaa96760c0cf11e7463e66babd15ec9157d4c9ed49cc0925686f6a7",
     "https://deno.land/std@0.97.0/encoding/base64.ts": "eecae390f1f1d1cae6f6c6d732ede5276bf4b9cd29b1d281678c054dc5cc009e",
@@ -391,6 +401,24 @@
     "https://deno.land/x/danielduel_ultra_stack_pentagon@0.0.1/src/search.ts": "67999e34a3839d9dd4d4acff66c7ce3d202a761bbf8dc8d7949e8b6f8aff70f3",
     "https://deno.land/x/danielduel_ultra_stack_pentagon@0.0.1/src/types.ts": "752cb35b54f502d697667e242ab1bd09141b4f7945bf68d26fe656a43c42ccd7",
     "https://deno.land/x/danielduel_ultra_stack_pentagon@0.0.1/src/util.ts": "a601821f1ee32209a1dd4c094ef541a6990755424f31fc490352e340b19798e9",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.1/client.ts": "36a228ff2df783603a15657b0b31f8371e2070873607d43e9f86465f8625be92",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.1/deps.ts": "8c617749014815b0d61d2ae6fc1f56b94c9d7dadf3ae80be61b63776d8f8d0f2",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.1/errors.ts": "3dd431b0e96f346104d7be6c09e1659b5c360992e6487e35bacb881f10c5a5bf",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.1/helpers.ts": "6ba450312f54873805390cc7a11e61a7886dc00633f2ed20d941606568527332",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.1/mod.ts": "4a896cad948ae36e35a5025eff92a97366059fe8e01bb109df3889666c88bd1d",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.1/object-uploader.ts": "b4bad0d771d79b2bb23b8cab0e6f7be85a2390e18957c612fd5cda11c39f55b0",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.1/signing.ts": "2ba77aac07a7c94267e83d285bbd33fdb3253dfa32b035df62479d6b224bb748",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.1/transform-chunk-sizes.ts": "cecc1167ba366d086a13c754be6ed86717d6b0b27c779c4c766621435a697045",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.1/xml-parser.ts": "de925493369718cab6f26413fbbada18eec74aa6eaf0598d77c7296f5fdfd8a9",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.2/client.ts": "2e5e8aa5b744966b453490362bdba9a4b3a21a02422b07e7fe2ceea53a90dbe6",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.2/deps.ts": "8c617749014815b0d61d2ae6fc1f56b94c9d7dadf3ae80be61b63776d8f8d0f2",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.2/errors.ts": "3dd431b0e96f346104d7be6c09e1659b5c360992e6487e35bacb881f10c5a5bf",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.2/helpers.ts": "6ba450312f54873805390cc7a11e61a7886dc00633f2ed20d941606568527332",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.2/mod.ts": "4a896cad948ae36e35a5025eff92a97366059fe8e01bb109df3889666c88bd1d",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.2/object-uploader.ts": "b4bad0d771d79b2bb23b8cab0e6f7be85a2390e18957c612fd5cda11c39f55b0",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.2/signing.ts": "2ba77aac07a7c94267e83d285bbd33fdb3253dfa32b035df62479d6b224bb748",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.2/transform-chunk-sizes.ts": "cecc1167ba366d086a13c754be6ed86717d6b0b27c779c4c766621435a697045",
+    "https://deno.land/x/danielduel_ultra_stack_s3_lite_client@0.0.2/xml-parser.ts": "de925493369718cab6f26413fbbada18eec74aa6eaf0598d77c7296f5fdfd8a9",
     "https://deno.land/x/danielduel_ultra_stack_ultra@0.0.10/hooks/asset-context.js": "8b314ac3d6b00c8431dc5f0fff6be37f7d22269676207a8d8c3bd1015aebd554",
     "https://deno.land/x/danielduel_ultra_stack_ultra@0.0.10/hooks/server-inserted-html-context.js": "4b34be942dcb7432c489dab2b9d7f5a4858c8859a2a1e876073be1e4f5324783",
     "https://deno.land/x/danielduel_ultra_stack_ultra@0.0.10/hooks/use-asset.js": "8470cd356cf7436efeadff5ba4ab70ef1431a24b5878ca172a1eec50fb99bbbe",

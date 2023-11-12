@@ -27,12 +27,12 @@ export const s3client = isDevelopment()
     pathStyle: true,
   })
 : new S3Client({
-    endPoint: "localhost",
-    port: 8014,
-    useSSL: false,
-    region: "dev-region",
-    accessKey: Deno.env.get("S3_CLIENT"),
-    secretKey: Deno.env.get("S3_SECRET"),
-    bucket: Deno.env.get("S3_BUCKET"),
+    endPoint: Deno.env.get("S3_URL")!,
+    port: 443,
+    region: "auto",
+    useSSL: true,
+    accessKey: Deno.env.get("S3_KEY_ID"),
+    secretKey: Deno.env.get("S3_SECRET_ACCESS_KEY"),
+    bucket: "dev-bucket",
     pathStyle: true,
   });
