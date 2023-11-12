@@ -2,12 +2,23 @@ import Logger from "https://deno.land/x/logger@v1.1.3/logger.ts";
 import type { Logger as ZodApiLogger } from "https://deno.land/x/zod_api@v0.3.1/mod.ts";
 
 const sessionTimestamp = Date.now();
-
+const canWriteToFs = (() => {
+  try {
+    Deno.mkdirSync("./log", { recursive: true });
+    return true;
+  }
+  catch {
+    return false;
+  }
+})();
 
 const getLogger = async (): Promise<ZodApiLogger> => {
   const logger = new Logger;
-  await logger.initFileLogger(`./log/${sessionTimestamp}`);
-  logger.disableConsole();
+
+  if (canWriteToFs) {
+    await logger.initFileLogger(`./log/${sessionTimestamp}`);
+    logger.disableConsole();
+  }
 
   return {
     debug: (d) => logger.info(d),
