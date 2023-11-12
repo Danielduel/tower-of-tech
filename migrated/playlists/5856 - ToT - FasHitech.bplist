@@ -14,6 +14,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Ashed Wings",
+      "levelAuthorName": "RetrX",
+      "hash": "85E5FF658790D0E7B9695B79B752A31211053D11",
+      "levelid": "custom_level_85E5FF658790D0E7B9695B79B752A31211053D11",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

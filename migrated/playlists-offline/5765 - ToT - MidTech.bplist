@@ -806,6 +806,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Exciter",
+      "levelAuthorName": "Skeelie",
+      "hash": "3E86DAF870FB28706C91DF792272066F3F396A2F",
+      "levelid": "custom_level_3E86DAF870FB28706C91DF792272066F3F396A2F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Last Wind",
+      "levelAuthorName": "Kival Evan",
+      "hash": "F0DC0F52454584F716F99C0CA91892A7F897183D",
+      "levelid": "custom_level_F0DC0F52454584F716F99C0CA91892A7F897183D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Diabolic Swing",
+      "levelAuthorName": "Voidless",
+      "hash": "D2A2BE78DD835DEE098E794096631543E5CBE008",
+      "levelid": "custom_level_D2A2BE78DD835DEE098E794096631543E5CBE008",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

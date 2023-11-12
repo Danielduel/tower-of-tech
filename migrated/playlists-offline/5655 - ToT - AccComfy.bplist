@@ -410,6 +410,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Final-Boss-Chan",
+      "levelAuthorName": "Darkrealm7",
+      "hash": "35A2829EE18BEA7BC8A38A32D2CAD45BED8A2B57",
+      "levelid": "custom_level_35A2829EE18BEA7BC8A38A32D2CAD45BED8A2B57",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
     }
   ]
 }

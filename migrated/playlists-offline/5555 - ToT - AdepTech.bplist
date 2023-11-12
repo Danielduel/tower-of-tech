@@ -602,6 +602,126 @@
           "name": "Expert"
         }
       ]
+    },
+    {
+      "songName": "After Hours",
+      "levelAuthorName": "General Dumbass",
+      "hash": "F91116B3C53F1B6DE2D2D631F01C8CB40E30A9E3",
+      "levelid": "custom_level_F91116B3C53F1B6DE2D2D631F01C8CB40E30A9E3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "22",
+      "levelAuthorName": "Bitz & Joshabi",
+      "hash": "034D7EEF90EE01F9AE78AC9CB3E78DFD34FD5D94",
+      "levelid": "custom_level_034D7EEF90EE01F9AE78AC9CB3E78DFD34FD5D94",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "I Don't Know Why",
+      "levelAuthorName": "General Dumbass",
+      "hash": "1CAE07B3690493E0989E57F782890688D63EC152",
+      "levelid": "custom_level_1CAE07B3690493E0989E57F782890688D63EC152",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "All We Know",
+      "levelAuthorName": "Tranch",
+      "hash": "AB15A322EF3664A4AEF6E61F15395EE250323A8F",
+      "levelid": "custom_level_AB15A322EF3664A4AEF6E61F15395EE250323A8F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Death Note",
+      "levelAuthorName": "Kassi",
+      "hash": "46583BABDADBF6D582EB90293B86C3F8850089F3",
+      "levelid": "custom_level_46583BABDADBF6D582EB90293B86C3F8850089F3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "At Doom's Gate",
+      "levelAuthorName": "JohnieCanine",
+      "hash": "B95E986FEA1395D1F398BC6B28707F2501543B47",
+      "levelid": "custom_level_B95E986FEA1395D1F398BC6B28707F2501543B47",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Shiawase No Monosashi",
+      "levelAuthorName": "ETAN",
+      "hash": "D7CB32F23041DEC272DE3DA0AC141DD8F91478CA",
+      "levelid": "custom_level_D7CB32F23041DEC272DE3DA0AC141DD8F91478CA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "LIKEY",
+      "levelAuthorName": "simplymarvellous",
+      "hash": "5C870272E2159096D453F9420A8120980A5D4D29",
+      "levelid": "custom_level_5C870272E2159096D453F9420A8120980A5D4D29",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "a little peace of happiness",
+      "levelAuthorName": "ejiejidayo",
+      "hash": "F2301697224E4AA11C788BBCA6B1D653B945D109",
+      "levelid": "custom_level_F2301697224E4AA11C788BBCA6B1D653B945D109",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "大切なもの",
+      "levelAuthorName": "misterlihao",
+      "hash": "2148FF081BD687D5282AD4C134DB630C4EC7852D",
+      "levelid": "custom_level_2148FF081BD687D5282AD4C134DB630C4EC7852D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
     }
   ]
 }

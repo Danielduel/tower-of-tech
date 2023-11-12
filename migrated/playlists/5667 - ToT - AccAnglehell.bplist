@@ -633,6 +633,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Religion",
+      "levelAuthorName": "A Jhintleman & GojiCrafter",
+      "hash": "BC299E58DE7C56854C3485BA046834920BB81C8F",
+      "levelid": "custom_level_BC299E58DE7C56854C3485BA046834920BB81C8F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Religion",
+      "levelAuthorName": "A Jhintleman & GojiCrafter",
+      "hash": "BC299E58DE7C56854C3485BA046834920BB81C8F",
+      "levelid": "custom_level_BC299E58DE7C56854C3485BA046834920BB81C8F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "D.A.W",
+      "levelAuthorName": "Schwank",
+      "hash": "8378E68AAE69795128DEF5413EECD1E3B3B66BD5",
+      "levelid": "custom_level_8378E68AAE69795128DEF5413EECD1E3B3B66BD5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

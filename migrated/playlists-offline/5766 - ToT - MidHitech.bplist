@@ -710,6 +710,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Barrage",
+      "levelAuthorName": "abcbadq",
+      "hash": "D935D511F47C3F10E98E3E5B08A7D39CEC3A14AA",
+      "levelid": "custom_level_D935D511F47C3F10E98E3E5B08A7D39CEC3A14AA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Keitai Renwa",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "EE074EDFE8AF3A1B7E1663FE5EAF7AC3A028C3AB",
+      "levelid": "custom_level_EE074EDFE8AF3A1B7E1663FE5EAF7AC3A028C3AB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "danser",
+      "levelAuthorName": "WalkingKat",
+      "hash": "A99EDD00979528B299A35026F5E052DFD94F3609",
+      "levelid": "custom_level_A99EDD00979528B299A35026F5E052DFD94F3609",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }
