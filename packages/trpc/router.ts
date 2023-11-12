@@ -6,6 +6,7 @@ import { fetchAndCacheHashes } from "@/packages/api-beatsaver/mod.ts";
 import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
 import { makeImageBase64, makeLowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaberPlaylistWithoutIdSchema, BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
+import { isReadOnly } from "@/packages/utils/envrionment.ts";
 
 const t = initTRPC.create();
 
@@ -42,7 +43,11 @@ const playlist = t.router({
   createOrUpdate: t.procedure
     .input(z.array(BeatSaberPlaylistWithoutIdSchema))
     .mutation(async ({ input }) => {
-      return await Promise.all(input.map(createOrUpdatePlaylist))
+      if (!isReadOnly()) {
+        return await Promise.all(input.map(createOrUpdatePlaylist))
+      } else {
+        throw "Editor is in read-only mode";
+      }
   }),
 });
 
