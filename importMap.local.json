@@ -28,6 +28,7 @@
 
     "pentagon": "../pentagon/mod.ts",
     "ultra/": "../ultra/",
+    "mesozoic/": "../mesozoic/",
 
     "@/": "./"
   }

@@ -7,7 +7,7 @@ import { createStaticHandler } from "ultra/lib/static/handler.ts";
 import { composeHandlers } from "ultra/lib/handler.ts";
 import { refresh } from "https://deno.land/x/refresh@1.0.0/mod.ts";
 import { serve } from "https://deno.land/std@0.176.0/http/server.ts";
-import { compile } from "https://deno.land/x/mesozoic@v1.3.10/lib/compiler.ts";
+import { compile } from "mesozoic/lib/compiler.ts";
 import { StaticRouter } from "react-router-dom/server";
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 import { appRouter } from "@/packages/trpc/router.ts";
@@ -85,7 +85,7 @@ const renderer = createRenderHandler({
 });
 
 const compiler = createCompilerHandler({
-  root: "https://deno.land/x/danielduel_ultra_stack_ultra@0.0.12",
+  root: "https://deno.land/x/danielduel_ultra_stack_ultra@0.0.13",
 });
 
 const staticHandler = createStaticHandler({
@@ -119,7 +119,6 @@ const executeHandlers = composeHandlers(
       const realPathName = pathname.split("/@")[1];
 
       const fileUrl = root + realPathName;
-      console.log(fileUrl);
       const source = await Deno.readTextFile(fileUrl);
       const result = await compile(fileUrl.toString(), source, {
         jsxImportSource: "react",
