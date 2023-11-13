@@ -16,7 +16,7 @@ function ClientApp() {
       <HelmetProvider>
         <QueryClientProvider client={queryClient}>
           <Hydrate state={__REACT_QUERY_DEHYDRATED_STATE}>
-            <TRPCClientProvider>
+            <TRPCClientProvider internal>
               <BrowserRouter>
                 <App />
               </BrowserRouter>

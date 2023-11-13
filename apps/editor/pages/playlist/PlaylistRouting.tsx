@@ -2,12 +2,12 @@ import { FC, PropsWithChildren } from "react";
 import { Route, Routes } from "react-router-dom";
 import { tw } from "@/packages/twind/twind.tsx";
 import { trpc } from "@/packages/trpc/trpc.ts";
-import { WithPlaylists } from "../../../../ui/playlist/types.ts";
+import { WithPlaylistLinks } from "../../../../ui/playlist/types.ts";
 import { PlaylistList } from "./PlaylistList.tsx";
 import { Link } from "@/packages/ui/Link.tsx";
 import { PlaylistFromFile } from "./PlaylistFromFile.tsx";
 
-const PlaylistListing: FC<WithPlaylists> = ({ playlists }) => {
+const PlaylistListing: FC<WithPlaylistLinks> = ({ playlists }) => {
   return playlists.map((playlist) => (
     <Link
       to={`/playlist/list/${playlist.id}`}
@@ -21,7 +21,7 @@ const PlaylistListing: FC<WithPlaylists> = ({ playlists }) => {
 };
 
 export const PlaylistLayout: FC<PropsWithChildren> = ({ children }) => {
-  const { data: playlists } = trpc.playlist.list.useQuery();
+  const { data: playlists } = trpc.playlist.listLinks.useQuery();
 
   return (
     <div className="sub-grid-layout">

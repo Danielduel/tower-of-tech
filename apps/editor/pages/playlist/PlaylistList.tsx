@@ -5,11 +5,11 @@ import { Playlist } from "./PlaylistItem.tsx";
 
 export const PlaylistList: FC = () => {
   const { playlistId } = useParams();
-  const { data: playlists } = trpc.playlist.list.useQuery();
+  const { data: playlist } = trpc.playlist.getById.useQuery({ id: playlistId }, { enabled: !!playlistId, staleTime: Infinity });
 
-  return playlists
-    ? playlists
-      .filter(playlist => playlistId ? playlist.id === playlistId : true)
-      .map((playlist) => <Playlist key={playlist.id} playlist={playlist} />)
-    : null;
+  if (playlist) {
+    return <Playlist key={playlist.id} playlist={playlist} />
+  }
+
+  return null;
 };

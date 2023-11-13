@@ -29,10 +29,16 @@ export const PlaylistFromFile: FC = () => {
       setPlaylists(readPlaylists);
     }
   };
-
   return (
     <div>
-      <button onClick={() => playlists && mutate(playlists)}>Publish</button>
+      <button onClick={async () => {
+        if (playlists) {
+          await Promise.all(playlists.map((playlist) => {
+            return mutate([ playlist ]);
+          }))
+          alert("Done");
+        }
+      }}>Publish</button>
       <input
         name="playlist_file"
         type="file"

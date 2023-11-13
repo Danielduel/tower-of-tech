@@ -1,22 +1,34 @@
+import "https://deno.land/std@0.206.0/dotenv/load.ts";
 import { createPentagon } from "pentagon";
 import { S3Client } from "s3_lite_client";
-import { isDevelopment } from "@/packages/utils/envrionment.ts";
-import { BeatSaberPlaylist, BeatSaberPlaylistSongItem } from "@/packages/database/BeatSaberPlaylist.ts";
-import { BeatSaverResponseWrapper, BeatSaverMapResponseSuccess } from "@/packages/database/BeatSaverResponse.ts";
+import { isDevelopment, isRemote } from "@/packages/utils/envrionment.ts";
+import {
+  BeatSaberPlaylist,
+  BeatSaberPlaylistSongItem,
+} from "@/packages/database/BeatSaberPlaylist.ts";
+import {
+  BeatSaverMapResponseSuccess,
+  BeatSaverResponseWrapper,
+} from "@/packages/database/BeatSaverResponse.ts";
 
 const kv = isDevelopment()
   ? await Deno.openKv("./local.db")
+  : isRemote()
+  ? await (async () => {
+    Deno.env.set("DENO_KV_ACCESS_TOKEN", Deno.env.get("DD_EDITOR_KV_TOKEN")!);
+    return await Deno.openKv(Deno.env.get("DD_EDITOR_KV_URL"));
+  })()
   : await Deno.openKv();
 
 export const db = createPentagon(kv, {
   BeatSaverResponseWrapper,
   BeatSaverMapResponseSuccess,
   BeatSaberPlaylist,
-  BeatSaberPlaylistSongItem
+  BeatSaberPlaylistSongItem,
 });
 
 export const s3client = isDevelopment()
-? new S3Client({
+  ? new S3Client({
     endPoint: "localhost",
     port: 8014,
     useSSL: false,
@@ -26,7 +38,7 @@ export const s3client = isDevelopment()
     bucket: "dev-bucket",
     pathStyle: true,
   })
-: new S3Client({
+  : new S3Client({
     endPoint: Deno.env.get("S3_URL")!,
     port: 443,
     region: "auto",

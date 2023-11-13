@@ -5,6 +5,7 @@ export const fetcher: Fetcher = (input, init) => {
   return retry(
     async () => {
       const response = await fetch(input, init);
+      if (response.status === 404) return response;
       if (!response.ok) throw "Retry";
       return response;
     },

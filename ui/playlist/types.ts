@@ -1,4 +1,4 @@
-import { BeatSaberPlaylistSchema, BeatSaberPlaylistSongItemSchema } from "@/packages/types/beatsaber-playlist.ts";
+import { BeatSaberPlaylistLinkSchema, BeatSaberPlaylistSchema, BeatSaberPlaylistSongItemSchema, BeatSaberPlaylistWithImageAsUrlSchema } from "@/packages/types/beatsaber-playlist.ts";
 import { BeatSaverMapResponseSuccessSchema, BeatSaverMapByHashResponseSchema } from "@/packages/types/beatsaver.ts";
 
 export type WithMapAndBeatSaverMap = {
@@ -18,6 +18,14 @@ export type WithPlaylist = {
   playlist: typeof BeatSaberPlaylistSchema._type;
 };
 
+export type WithPlaylistWithImageAsUrl = {
+  playlist: typeof BeatSaberPlaylistWithImageAsUrlSchema._type;
+};
+
 export type WithPlaylists = {
   playlists: typeof BeatSaberPlaylistSchema._type[];
+};
+
+export type WithPlaylistLinks = {
+  playlists: typeof BeatSaberPlaylistLinkSchema._type[];
 };

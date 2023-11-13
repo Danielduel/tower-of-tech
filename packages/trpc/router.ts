@@ -4,8 +4,8 @@ import { buckets } from "@/packages/database/buckets.ts";
 import { db, s3client } from "@/packages/database/mod.ts";
 import { fetchAndCacheHashes } from "@/packages/api-beatsaver/mod.ts";
 import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
-import { makeImageBase64, makeLowercaseMapHash } from "@/packages/types/brands.ts";
-import { BeatSaberPlaylistWithoutIdSchema, BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
+import { makeImageBase64, makeImageUrl, makeLowercaseMapHash } from "@/packages/types/brands.ts";
+import { BeatSaberPlaylistWithoutIdSchema, BeatSaberPlaylistSchema, BeatSaberPlaylistWithImageAsUrlSchema } from "@/packages/types/beatsaber-playlist.ts";
 import { isReadOnly } from "@/packages/utils/envrionment.ts";
 
 const t = initTRPC.create();
@@ -25,6 +25,37 @@ const map = t.router({
 });
 
 const playlist = t.router({
+  listLinks: t.procedure.query(async () => {
+    const items = await db.BeatSaberPlaylist.findMany({
+      select: {
+        id: true,
+        playlistAuthor: true,
+        playlistTitle: true,
+      }
+    });
+
+    return items;
+  }),
+  getById: t.procedure
+    .input(z.object({ id: z.string() }))
+    .query(async ({
+      input: { id }
+    }) => {
+      const item = await db.BeatSaberPlaylist.findFirst({
+        where: {
+          id
+        },
+        include: {
+          songs: true
+        }
+      });
+      if (!item) return null;
+      const imageUrl = makeImageUrl(await s3client.presignedGetObject(item.id, { bucketName: buckets.playlist.coverImage }));
+      return {
+        ...item,
+        imageUrl,
+      } satisfies typeof BeatSaberPlaylistWithImageAsUrlSchema._type;
+    }),
   list: t.procedure.query(async () => {
     const items = await db.BeatSaberPlaylist.findMany({
       include: {
@@ -32,11 +63,11 @@ const playlist = t.router({
       }
     });
     return await Promise.all(items.map(async item => {
-      const image = await s3client.getObject(item.id, { bucketName: buckets.playlist.coverImage })
+      const imageUrl = await s3client.presignedGetObject(item.id, { bucketName: buckets.playlist.coverImage })
       return {
         ...item,
         id: item.id,
-        image: makeImageBase64(await image.text()),
+        image: imageUrl,
       } satisfies typeof BeatSaberPlaylistSchema._type[];
     }));
   }),

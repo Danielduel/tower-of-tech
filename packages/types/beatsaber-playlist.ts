@@ -50,3 +50,18 @@ export const BeatSaberPlaylistSchema = z.object({
   songs: z.array(BeatSaberPlaylistSongItemSchema),
   image: z.string().transform(makeImageBase64),
 });
+
+export const BeatSaberPlaylistWithImageAsUrlSchema = z.object({
+  id: z.string().describe("primary"),
+  playlistTitle: z.string(),
+  playlistAuthor: z.string(),
+  customData: BeatSaberPlaylistCustomDataSchema.optional(),
+  songs: z.array(BeatSaberPlaylistSongItemSchema),
+  imageUrl: z.string().transform(makeImageUrl),
+});
+
+export const BeatSaberPlaylistLinkSchema = z.object({
+  id: z.string().describe("primary"),
+  playlistTitle: z.string(),
+  playlistAuthor: z.string(),
+});
