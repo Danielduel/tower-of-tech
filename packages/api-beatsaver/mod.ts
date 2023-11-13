@@ -95,7 +95,6 @@ const fetchAndCacheHashesGetCache = (hashArray: LowercaseMapHash[]) => {
 };
 
 export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
-  console.log("Requesting ", hashArray.length);
   const promises = [] as ReturnType<typeof BeatSaverApi.mapByHash.get>[];
   const partiallyResolved = await Promise.all(
     fetchAndCacheHashesGetCache(hashArray),
@@ -106,37 +105,30 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   const remainingHashArray = partiallyResolved.filter(([, data]) => !data).map((
     [lowercaseHash],
   ) => lowercaseHash);
-  console.log("Requesting remaining", remainingHashArray.length);
-  console.log(remainingHashArray)
 
   while (remainingHashArray.length > 0) {
     const hashQueue = remainingHashArray.splice(0, 50);
     const hashString = hashQueue.join(",");
-    console.log(hashString);
     promises.push(BeatSaverApi.mapByHash.get({
       urlParams: {
         hash: hashString,
       },
     }));
   }
-  console.log("Awaiting remaining", promises.length);
 
   const data = await Promise.all(promises);
   const object = data.map((x) => {
-    console.log(x);
     return x.data;
   }).reduce(
     (prev, curr) => ({ ...prev, ...curr }),
     {},
   );
-  console.log("Remaining done", remainingHashArray.length);
 
   try {
     const response = BeatSaverMapByHashResponseSchema.parse(object);
     const cacheResponse = BeatSaverMapByHashResponseSchema.parse(
       resolvedFromCache,
     );
-    console.log("Parsed done", remainingHashArray.length);
 
     Object.entries(response)
       .forEach(([lowercaseHash, data]) =>
@@ -145,7 +137,6 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
         })
       );
 
-    console.log("Responding", remainingHashArray.length);
     return { ...response, ...cacheResponse };
   } catch (err) {
     console.error(err);

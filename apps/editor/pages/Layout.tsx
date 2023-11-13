@@ -8,9 +8,6 @@ export default function Layout({ children }: React.PropsWithChildren) {
         <Link to="/playlist/list">
           Playlists
         </Link>
-        <Link to="/playlist/list">
-          Playlists
-        </Link>
         <br />
         <Link to="/map/list">
           Maps

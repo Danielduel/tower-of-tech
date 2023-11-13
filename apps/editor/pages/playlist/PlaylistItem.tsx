@@ -29,7 +29,6 @@ export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = ({ playli
       <div className={tw("text-lg text-left flex flex-row gap-4")}>
         <div>
           <img
-            content="data:image/png"
             className={tw("w-40 h-40")}
             src={imageSrc}
           />
