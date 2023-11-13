@@ -3,5 +3,5 @@ export const isDevelopment = () => {
 };
 
 export const isReadOnly = () => {
-  return Deno.env.get("TOT_ENVIRONMENT") === "development";
+  return Deno.env.get("DD_EDITOR_READONLY") === "true";
 };
