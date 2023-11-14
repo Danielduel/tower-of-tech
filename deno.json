@@ -6,13 +6,16 @@
     "generateCupOfADayPlaylist": "deno run -A ./src/tools/generateCupOfADayPlaylist.ts",
     "generate": "deno run ./src/main.ts",
 
-    "dev": "deno task s3s-fs-local & deno task editor:dev",
+    "dev": "deno task s3s-fs-local & deno task editor:dev & deno task home:dev",
+    "dev-remote": "deno task s3s-fs-local & deno task editor:dev-remote & deno task home:dev",
     "purge": "deno run -A --unstable ./purge.ts",
 
     "s3s-fs-local": "./scripts/s3s-fs-local.sh",
 
-    "editor:dev": "TOT_ENVIRONMENT=development deno run -A --unstable --no-check --watch --import-map importMap.local.json ./apps/editor/server.tsx",
-    "editor:dev-withoutdev": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=remote deno run -A --unstable --no-check --watch ./apps/editor/server.tsx",
+    "home:dev": "TOT_ENVIRONMENT=local deno run -A --unstable --no-check --watch --import-map importMap.local.json ./apps/home/server.tsx",
+
+    "editor:dev": "TOT_ENVIRONMENT=local deno run -A --unstable --no-check --watch --import-map importMap.local.json ./apps/editor/server.tsx -p 8081",
+    "editor:dev-remote": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local TOT_REMOTE=remote deno run -A --unstable --no-check --watch ./apps/editor/server.tsx -p 8081",
     "editor:test": "deno test --allow-all",
     "editor:build": "deno run -A ./webapp/build.ts",
     "editor:start": "ULTRA_MODE=production deno run -A --no-remote ./webapp/server.js"

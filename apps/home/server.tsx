@@ -19,7 +19,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/packages/react-query/query-client.ts";
 import { StrictMode } from "react";
 import { apiV1Handler } from "@/packages/api/v1/mod.ts";
-import { isLocal } from "@/packages/utils/envrionment.ts";
+import { TRPCClientProvider } from "@/packages/trpc/client.tsx";
 
 const root = Deno.cwd();
 
@@ -31,26 +31,6 @@ importMap.imports["ultra/"] = "/_ultra/";
 importMap.imports["@/"] = "/@/";
 importMap.imports["zod"] = "/_x/zod@v3.21.4/mod.ts";
 importMap.imports["https://deno.land/x/"] = "/_x/";
-// ts_brand@0.0.1/mod.ts
-
-
-// const handleRequest = async (request: Request): Promise<Response> => {
-//   const { pathname } = new URL(request.url);
-//   const filePath = pathname.replace(prefix, "./");
-//   const fileUrl = join(root, filePath);
-
-//   const source = await Deno.readTextFile(fileUrl);
-//   const result = await compile(fileUrl.toString(), source, {
-//     jsxImportSource: "react",
-//     development: true,
-//   });
-
-//   return new Response(result, {
-//     headers: {
-//       "Content-Type": "application/javascript",
-//     },
-//   });
-// };
 
 const renderer = createRenderHandler({
   root,
@@ -60,18 +40,18 @@ const renderer = createRenderHandler({
         <StrictMode>
           <HelmetProvider>
             <QueryClientProvider client={queryClient}>
-              <TRPCServerProvider>
+              <TRPCClientProvider internal={false}>
                 <StaticRouter location={new URL(request.url).pathname}>
                   <App />
                 </StaticRouter>
-              </TRPCServerProvider>
+              </TRPCClientProvider>
             </QueryClientProvider>
           </HelmetProvider>
         </StrictMode>
       </UltraServer>,
       {
         bootstrapModules: [
-          "@/apps/editor/client.tsx",
+          "@/apps/home/client.tsx",
         ],
       },
     );
@@ -87,14 +67,6 @@ const staticHandler = createStaticHandler({
 });
 
 const executeHandlers = composeHandlers(
-  {
-    supportsRequest: (request) => {
-      return request.url.includes("/api/v1/");
-    },
-    handleRequest: async (request) => {
-      return await apiV1Handler(request);
-    },
-  },
   {
     supportsRequest: (request) => {
       return request.url.includes("/@/");
@@ -146,19 +118,6 @@ const executeHandlers = composeHandlers(
       );
     },
   },
-  {
-    supportsRequest: (request) => {
-      const { pathname } = new URL(request.url);
-      return pathname.startsWith("/api/trpc");
-    },
-    handleRequest: (request) =>
-      fetchRequestHandler({
-        endpoint: "/api/trpc",
-        req: request,
-        router: appRouter,
-        createContext: () => ({}),
-      })
-  },
   renderer,
   compiler,
   staticHandler,
@@ -166,17 +125,12 @@ const executeHandlers = composeHandlers(
 
 const middleware = refresh();
 
-serve(async (request) => {
+serve((request) => {
   const refresh = middleware(request);
   if (refresh) return refresh;
 
-  const response = await executeHandlers(request);
-  if (response) {
-    response.headers.append("Access-Control-Allow-Origin", "*")
-    return response
-  };
+  const response = executeHandlers(request);
+  if (response) return response;
 
   return new Response("Not Found", { status: 404 });
-}, {
-  port: isLocal() ? 8081 : 80
 });

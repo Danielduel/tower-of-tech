@@ -1,9 +1,9 @@
-export const isDevelopment = () => {
-  return Deno.env.get("TOT_ENVIRONMENT") === "development";
+export const isLocal = () => {
+  return Deno.env.get("TOT_ENVIRONMENT") === "local";
 };
 
 export const isRemote = () => {
-  return Deno.env.get("TOT_ENVIRONMENT") === "remote";
+  return Deno.env.get("TOT_REMOTE") === "remote";
 }
 
 export const isReadOnly = () => {
