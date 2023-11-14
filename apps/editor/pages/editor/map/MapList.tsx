@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { trpc } from "@/packages/trpc/trpc.ts";
-import { MapItem } from "../../components/MapItem.tsx";
+import { MapItem } from "../../../components/MapItem.tsx";
 
 export const MapList: FC = () => {
   const { data: maps } = trpc.map.list.useQuery();

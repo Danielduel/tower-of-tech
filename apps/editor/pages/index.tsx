@@ -58,14 +58,14 @@ export default function Index() {
     <div className={tw("mx-auto bg-[#ddd] min-h-[100vh]")}>
       <div className={tw("h-96 mb-[-10rem] w-[100vw] z-[0] bg-no-repeat bg-cover bg-center flex items-end")} style={{ backgroundImage: "url('/cubes_floating.svg')"}}>
         
-      <div className={tw("z-[1] mb-[10rem] bg-[#ccc] relative rounded-t-full border-2 border-black border-b-none px-4 py-8 max-w-screen-md w-full mx-auto flex flex-col items-center justify-center")}>
+      <div className={tw("z-[1] mb-[10rem] bg-[#ccc] relative px-4 py-8 max-w-screen-md w-full mx-auto flex flex-col items-center justify-center")}>
           <h1 className={tw("text-4xl font-bold pt-10")}>Tower of Tech</h1>
           <p className={tw("mt-2")}>
             Welcome to dev version of ToT website.
           </p>
         </div>
       </div>
-      <div className={tw("z-[1] bg-[#ccc] relative border-2 border-black border-t-0 px-4 py-8 max-w-screen-md mx-auto flex flex-col items-center justify-center")}>
+      <div className={tw("z-[1] bg-[#ccc] relative px-4 py-8 max-w-screen-md mx-auto flex flex-col items-center justify-center")}>
         <SectionSection>
           <SectionTitle>Adep</SectionTitle>
           <SectionDescription>
