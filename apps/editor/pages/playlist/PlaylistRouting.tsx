@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { tw } from "@/packages/twind/twind.tsx";
 import { trpc } from "@/packages/trpc/trpc.ts";
@@ -25,15 +25,17 @@ export const PlaylistLayout: FC<PropsWithChildren> = ({ children }) => {
 
   return (
     <div className="sub-grid-layout">
-      <div className={tw("flex flex-col items-start")}>
+      <div className={tw("flex flex-col items-start max-h-[100vh] min-h-[100vh] pr-[1rem] mr-[-1rem] overflow-x-hidden overflow-y-auto")}>
         <h3 className={tw("text-md text-gray-500")}>Playlist Actions</h3>
         <Link to="/playlist/new" className={tw("text-lg p-1 hover:ring-1 text-left w-full")}>New playlist</Link>
         <Link to="/playlist/from_file" className={tw("text-lg p-1 hover:ring-1 text-left w-full")}>New/Update from file(s)</Link>
         <h3 className={tw("text-md text-gray-500 mt-2")}>Playlist List</h3>
         {playlists && <PlaylistListing playlists={playlists} />}
       </div>
-      <div>
-        { children }
+      <div className={tw("max-h-[100vh] min-h-[100vh] pr-[1rem] mr-[-1rem] overflow-x-hidden overflow-y-auto")}>
+        <Suspense fallback={<div>Loading...</div>}>
+          { children }
+        </Suspense>
       </div>
     </div>
   )

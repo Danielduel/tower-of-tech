@@ -18,6 +18,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/packages/react-query/query-client.ts";
 import { StrictMode } from "react";
+import { apiV1Handler } from "@/packages/api/v1/mod.ts";
 
 const root = Deno.cwd();
 
@@ -54,14 +55,6 @@ const renderer = createRenderHandler({
   root,
   render(request) {
     return renderToReadableStream(
-      // <UltraServer request={request} importMap={importMap}>
-      //   <TRPCServerProvider>
-      //     <StaticRouter location={new URL(request.url).pathname}>
-      //       <Shell />
-      //     </StaticRouter>
-      //   </TRPCServerProvider>
-      // </UltraServer>,
-
       <UltraServer request={request} importMap={importMap}>
         <StrictMode>
           <HelmetProvider>
@@ -93,6 +86,14 @@ const staticHandler = createStaticHandler({
 });
 
 const executeHandlers = composeHandlers(
+  {
+    supportsRequest: (request) => {
+      return request.url.includes("/api/v1/");
+    },
+    handleRequest: async (request) => {
+      return await apiV1Handler(request);
+    },
+  },
   {
     supportsRequest: (request) => {
       return request.url.includes("/@/");

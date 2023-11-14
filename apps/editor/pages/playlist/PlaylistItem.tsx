@@ -29,7 +29,7 @@ export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = ({ playli
       <div className={tw("text-lg text-left flex flex-row gap-4")}>
         <div>
           <img
-            className={tw("w-40 h-40")}
+            className={tw("w-40 h-40 min-w-[10rem] min-h-[10rem]")}
             src={imageSrc}
           />
         </div>
@@ -38,6 +38,9 @@ export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = ({ playli
           <div key="playlist-Author">Author: {playlist.playlistAuthor}</div>
           <div key="playlist-Id">Id: {playlist.id}</div>
           <div key="playlist-Maps">Maps: {playlist.songs.length}</div>
+          <a className={tw("ring-4 ring-blue p-2 float-right")} href={`/api/v1/${playlist.id}`} download>
+            Download
+          </a>
         </div>
       </div>
       <div className={tw("mt-2")}>

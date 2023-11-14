@@ -2,11 +2,11 @@ import { z } from "zod";
 import { initTRPC } from "@trpc/server";
 import { buckets } from "@/packages/database/buckets.ts";
 import { db, s3client } from "@/packages/database/mod.ts";
+import { isReadOnly } from "@/packages/utils/envrionment.ts";
 import { fetchAndCacheHashes } from "@/packages/api-beatsaver/mod.ts";
 import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
-import { makeImageBase64, makeImageUrl, makeLowercaseMapHash } from "@/packages/types/brands.ts";
+import { makeImageUrl, makeLowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaberPlaylistWithoutIdSchema, BeatSaberPlaylistSchema, BeatSaberPlaylistWithImageAsUrlSchema } from "@/packages/types/beatsaber-playlist.ts";
-import { isReadOnly } from "@/packages/utils/envrionment.ts";
 
 const t = initTRPC.create();
 
