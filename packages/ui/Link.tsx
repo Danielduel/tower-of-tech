@@ -8,7 +8,7 @@ export const Link: FC<LinkProps> = (props) => {
   const resolved = useResolvedPath(props.to);
   const match = useMatch({ path: resolved.pathname, end: true });
 
-  const className = tw("p-1 text-lg hover:ring-1 ring-neutral-500 w-full" + (match ? " underline " : " ") + props.className);
+  const className = tw(props.className + " p-1 text-lg hover:ring-1 ring-neutral-500 w-full" + (match ? " underline " : " "));
 
   return <_Link {...props} className={className} />
 }

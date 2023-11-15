@@ -1,9 +1,9 @@
 html,
 body {
   margin: 0;
-  font-family: monospace;
   background: #ddd;
   text-align: center;
+  font-family: 'Inter', sans-serif;
 }
 
 h1 {
