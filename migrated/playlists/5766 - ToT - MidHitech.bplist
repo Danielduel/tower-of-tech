@@ -746,6 +746,54 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Myosotis",
+      "levelAuthorName": "Pleo",
+      "hash": "9A3ED2F7947BE0562E0B7E48BA45DE2A973C1D4C",
+      "levelid": "custom_level_9A3ED2F7947BE0562E0B7E48BA45DE2A973C1D4C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shinjinrui",
+      "levelAuthorName": "muffn",
+      "hash": "3B61539E55B8BFB5E863C506A5792800BDF90DB8",
+      "levelid": "custom_level_3B61539E55B8BFB5E863C506A5792800BDF90DB8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Traveling Days",
+      "levelAuthorName": "Hexagonial",
+      "hash": "8A01B862E2FBA4282EE3C1F645A6B94BF46B715B",
+      "levelid": "custom_level_8A01B862E2FBA4282EE3C1F645A6B94BF46B715B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Nasty * Nasty * Spell",
+      "levelAuthorName": "risi",
+      "hash": "D5F342FF17F016D537DEE512D3DE7B23944DB62F",
+      "levelid": "custom_level_D5F342FF17F016D537DEE512D3DE7B23944DB62F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

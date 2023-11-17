@@ -158,6 +158,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Traveling Days",
+      "levelAuthorName": "Hexagonial",
+      "hash": "8A01B862E2FBA4282EE3C1F645A6B94BF46B715B",
+      "levelid": "custom_level_8A01B862E2FBA4282EE3C1F645A6B94BF46B715B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

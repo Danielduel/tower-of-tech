@@ -1,28 +1,16 @@
 {
-  "playlistTitle": "ToT - AdepComfy",
+  "playlistTitle": "FasChill",
   "playlistAuthor": "Danielduel",
   "songs": [
     {
-      "songName": "Hellcat",
-      "levelAuthorName": "CyanSnow",
-      "hash": "BDF85D5D575A992139EFF968A8348B3E6F03EEFE",
-      "levelid": "custom_level_BDF85D5D575A992139EFF968A8348B3E6F03EEFE",
+      "songName": "The Witch Hunt",
+      "levelAuthorName": "Komeijisan051",
+      "hash": "8FFFF7DB5BFF8D305E2DE73E0FA16AB11A292BD9",
+      "levelid": "custom_level_8FFFF7DB5BFF8D305E2DE73E0FA16AB11A292BD9",
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "ZOMBIE CIRCUS",
-      "levelAuthorName": "ThySpoon",
-      "hash": "7CF39845195F0079BBCB1AAC52FED8578723F88D",
-      "levelid": "custom_level_7CF39845195F0079BBCB1AAC52FED8578723F88D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
+          "name": "ExpertPlus"
         }
       ]
     }

@@ -669,6 +669,54 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "The Magic Key",
+      "levelAuthorName": "Bjorkless",
+      "hash": "70A3E115517D8EDCA97821A8C5A22842ED2E25B7",
+      "levelid": "custom_level_70A3E115517D8EDCA97821A8C5A22842ED2E25B7",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Gangnam Style",
+      "levelAuthorName": "Aquaflee",
+      "hash": "9E62A4F476675707346268B2CCFD4F792DDC56E0",
+      "levelid": "custom_level_9E62A4F476675707346268B2CCFD4F792DDC56E0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Kimi no Tamenara Shineru",
+      "levelAuthorName": "MASO",
+      "hash": "4EB31A7657B3307A074968AF5EC2371537E82789",
+      "levelid": "custom_level_4EB31A7657B3307A074968AF5EC2371537E82789",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Aishite Aishite Aishite",
+      "levelAuthorName": "August & Camical",
+      "hash": "940EB28F01E875787CD2DC4A6A91DD2C9D5E5B4A",
+      "levelid": "custom_level_940EB28F01E875787CD2DC4A6A91DD2C9D5E5B4A",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

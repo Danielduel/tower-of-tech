@@ -1922,6 +1922,54 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Study X Study (2023 Remaster)",
+      "levelAuthorName": "Joetastic & AlphaMan",
+      "hash": "9A1C81A3D319A75B98641BAA08E5A98F6F916AB0",
+      "levelid": "custom_level_9A1C81A3D319A75B98641BAA08E5A98F6F916AB0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Phony",
+      "levelAuthorName": "Joshabi & Shad",
+      "hash": "80559A7A4AC0F62F27DAF1C59DF67F305250ADFF",
+      "levelid": "custom_level_80559A7A4AC0F62F27DAF1C59DF67F305250ADFF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Touch Tone Telephone",
+      "levelAuthorName": "Z-ANESaber",
+      "hash": "08546249DA0064C179F707977A2E01A8EEB29774",
+      "levelid": "custom_level_08546249DA0064C179F707977A2E01A8EEB29774",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Losing My Religion",
+      "levelAuthorName": "GojiCrafter",
+      "hash": "CB75FFE66CA7CA134D30932DA496CA033F21FA49",
+      "levelid": "custom_level_CB75FFE66CA7CA134D30932DA496CA033F21FA49",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

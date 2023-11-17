@@ -926,6 +926,78 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "From The Start",
+      "levelAuthorName": "Chromia",
+      "hash": "9FF42C02220B971487B10E87626EA68821EEA6CA",
+      "levelid": "custom_level_9FF42C02220B971487B10E87626EA68821EEA6CA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rendezvous (TV Size)",
+      "levelAuthorName": "Joetastic & StormPacer",
+      "hash": "672597C84D932735BCE00CC0A3EEB143A184DBE9",
+      "levelid": "custom_level_672597C84D932735BCE00CC0A3EEB143A184DBE9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Every Second",
+      "levelAuthorName": "Feco",
+      "hash": "6BFD6E26C6774264396ADC8285186031D291216A",
+      "levelid": "custom_level_6BFD6E26C6774264396ADC8285186031D291216A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Mrs.Pumpkin's Funny Dream",
+      "levelAuthorName": "Emiru",
+      "hash": "04EC3397A791DE93D16C79960E047EE647D74892",
+      "levelid": "custom_level_04EC3397A791DE93D16C79960E047EE647D74892",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "omajinai",
+      "levelAuthorName": "Kanahebi",
+      "hash": "154B8239E3942203FD4785D1AF802D854CFAD829",
+      "levelid": "custom_level_154B8239E3942203FD4785D1AF802D854CFAD829",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Whisper Whisper Whisper",
+      "levelAuthorName": "shad & 段ボール",
+      "hash": "3256D770FCBC4F61CD79970024B62C402D1D3407",
+      "levelid": "custom_level_3256D770FCBC4F61CD79970024B62C402D1D3407",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

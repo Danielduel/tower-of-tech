@@ -208,18 +208,6 @@
       ]
     },
     {
-      "songName": "Luv U 4ll 0ver",
-      "levelAuthorName": "Spectral vs August",
-      "hash": "4A2822A6BE563E7E71F255A1C9D96230B4B8A8B6",
-      "levelid": "custom_level_4A2822A6BE563E7E71F255A1C9D96230B4B8A8B6",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Marshall Maximizer",
       "levelAuthorName": "CoolingCloset",
       "hash": "6E5DC5A390D0141279A3BEB49F2D5B4CD9630457",
@@ -836,6 +824,30 @@
       "levelAuthorName": "Voidless",
       "hash": "D2A2BE78DD835DEE098E794096631543E5CBE008",
       "levelid": "custom_level_D2A2BE78DD835DEE098E794096631543E5CBE008",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Drop The Fire",
+      "levelAuthorName": "iraky",
+      "hash": "BB42C7D8F2275B73D14B2E00EAF50B95E707A20D",
+      "levelid": "custom_level_BB42C7D8F2275B73D14B2E00EAF50B95E707A20D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hydra",
+      "levelAuthorName": "GooberJake",
+      "hash": "1F6209807EE8A9E87903E10EB4CE97D17BC0E8E3",
+      "levelid": "custom_level_1F6209807EE8A9E87903E10EB4CE97D17BC0E8E3",
       "difficulties": [
         {
           "characteristic": "Standard",

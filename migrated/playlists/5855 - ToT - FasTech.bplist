@@ -26,6 +26,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "PoΣΣεssion",
+      "levelAuthorName": "Spoekle",
+      "hash": "BEE687C70AECDC7E48E4043025EC4081F536BEE7",
+      "levelid": "custom_level_BEE687C70AECDC7E48E4043025EC4081F536BEE7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

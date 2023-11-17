@@ -14,6 +14,18 @@
           "name": "Hard"
         }
       ]
+    },
+    {
+      "songName": "ZOMBIE CIRCUS",
+      "levelAuthorName": "ThySpoon",
+      "hash": "7CF39845195F0079BBCB1AAC52FED8578723F88D",
+      "levelid": "custom_level_7CF39845195F0079BBCB1AAC52FED8578723F88D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
     }
   ],
   "customData": {

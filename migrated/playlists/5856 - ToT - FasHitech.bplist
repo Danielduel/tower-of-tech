@@ -26,6 +26,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "werewolf howls.",
+      "levelAuthorName": "Aquaflee",
+      "hash": "2744200D688BA9FD9477729E96CAED006C5097FA",
+      "levelid": "custom_level_2744200D688BA9FD9477729E96CAED006C5097FA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

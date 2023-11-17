@@ -206,6 +206,30 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Space Invaders",
+      "levelAuthorName": "Dirty Alex",
+      "hash": "39CDF9A93BC50764183BD175190718C3A260BB00",
+      "levelid": "custom_level_39CDF9A93BC50764183BD175190718C3A260BB00",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Luv U 4ll 0ver",
+      "levelAuthorName": "Spectral vs August",
+      "hash": "4A2822A6BE563E7E71F255A1C9D96230B4B8A8B6",
+      "levelid": "custom_level_4A2822A6BE563E7E71F255A1C9D96230B4B8A8B6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

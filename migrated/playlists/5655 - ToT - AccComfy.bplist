@@ -422,6 +422,30 @@
           "name": "Hard"
         }
       ]
+    },
+    {
+      "songName": "Konton Boogie",
+      "levelAuthorName": "Schloss",
+      "hash": "B49C1ED38886FAFEEE3B66B7A222B4E613E22818",
+      "levelid": "custom_level_B49C1ED38886FAFEEE3B66B7A222B4E613E22818",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Archangel",
+      "levelAuthorName": "SlimyBlob",
+      "hash": "14226BF0922E1AF784B0DD9316E53793CA415018",
+      "levelid": "custom_level_14226BF0922E1AF784B0DD9316E53793CA415018",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
     }
   ],
   "customData": {
