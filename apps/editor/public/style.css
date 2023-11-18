@@ -48,3 +48,47 @@ p {
   gap: 1rem;
   grid-template-columns: 20rem auto;
 }
+
+.main-gradient {
+  background: #5D4157;  /* fallback for old browsers */
+  background: radial-gradient(circle at -20% -20%, #65779caa, #101420aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.main-gradient > * {
+  z-index: 2;
+}
+
+.main-gradient::after {
+  z-index: 1;
+  position: fixed;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #5D4157;  /* fallback for old browsers */
+  background: radial-gradient(circle at -20% -20%, #65779c99, #10142099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.main-gradient::before {
+  z-index: 0;
+  position: fixed;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("/background2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.glass {
+  backdrop-filter: blur(13px) saturate(140%);
+  -webkit-backdrop-filter: blur(13px) saturate(140%);
+  background-color: #d5e3ff3a;
+  border-radius: 12px;
+  border: 0px solid rgba(255, 255, 255, 0.125);
+}

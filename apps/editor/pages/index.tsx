@@ -1,6 +1,3 @@
-import { FC, PropsWithChildren } from "react";
-import { tw } from "@/packages/twind/twind.tsx";
-import { Link } from "@/packages/ui/Link.tsx";
 import { VisualNovelContainer } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { links } from "@/apps/editor/routing.config.ts";
 

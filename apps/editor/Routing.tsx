@@ -7,6 +7,7 @@ import { EditorLayoutShell } from "./components/layouts/EditorLayout.tsx";
 import { MainLayoutShell } from "@/apps/editor/components/layouts/MainLayout.tsx";
 import { routing } from "@/apps/editor/routing.config.ts";
 import { Browse } from "./pages/home/Browse.tsx";
+import { More } from "./pages/home/More.tsx";
 import Download from "@/apps/editor/pages/home/Download.tsx";
 
 export const Routing = () => {
@@ -20,6 +21,7 @@ export const Routing = () => {
       <Route path={routing.home.root}>
         <Route path={routing.home.download} element={MainLayoutShell(Download)} />
         <Route path={routing.home.browse} element={MainLayoutShell(Browse)} />
+        <Route path={routing.home.more} element={MainLayoutShell(More)} />
       </Route>
       <Route path={routing.root} element={MainLayoutShell(Index)} />
     </Routes>
