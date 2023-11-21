@@ -2,7 +2,7 @@
 
 https://discord.com/api/oauth2/authorize?client_id=1171582001900421192&scope=applications.commands
 
-# Develop of the website
+# Development of the website
 
 You need `Deno` and `s3s-fs`
 * `s3s-fs`

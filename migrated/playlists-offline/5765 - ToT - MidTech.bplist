@@ -854,6 +854,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Packet Hero",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "47FC7ADF1D7C58B131947F7ACFCF3FC0536D12D3",
+      "levelid": "custom_level_47FC7ADF1D7C58B131947F7ACFCF3FC0536D12D3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

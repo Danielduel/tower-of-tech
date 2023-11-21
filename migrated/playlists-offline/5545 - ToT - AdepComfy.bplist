@@ -26,6 +26,18 @@
           "name": "Hard"
         }
       ]
+    },
+    {
+      "songName": "Fighting Myself",
+      "levelAuthorName": "Bytrius",
+      "hash": "2E2C73F19E4B67D9C27CA359430C68ADB7B74F7B",
+      "levelid": "custom_level_2E2C73F19E4B67D9C27CA359430C68ADB7B74F7B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
     }
   ]
 }

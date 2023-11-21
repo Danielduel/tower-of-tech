@@ -800,6 +800,30 @@
       ]
     },
     {
+      "songName": "Kaiba",
+      "levelAuthorName": "abcbadq, gbitz",
+      "hash": "9C774E44B1022DD45501BAF9C6BA87DB1961D099",
+      "levelid": "custom_level_9C774E44B1022DD45501BAF9C6BA87DB1961D099",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Pneumonoultramicroscopicsilicovolcanoconiosis",
+      "levelAuthorName": "Jabob",
+      "hash": "1F3844B8FBDFBE0262F992825D9DBD77263B6A58",
+      "levelid": "custom_level_1F3844B8FBDFBE0262F992825D9DBD77263B6A58",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "paqqin",
       "levelAuthorName": "ani",
       "hash": "308C5033314D7065C19C0A195DF96529979083DB",
@@ -3656,6 +3680,42 @@
       ]
     },
     {
+      "songName": "きゅうくらりん",
+      "levelAuthorName": "Ge2toro",
+      "hash": "186C427930CF07763EBC36068E375E2ECB55D5E4",
+      "levelid": "custom_level_186C427930CF07763EBC36068E375E2ECB55D5E4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Deep Down",
+      "levelAuthorName": "Nebelmonster",
+      "hash": "1ADCDD51D40FD851BECA74EAF9FCCCFEC4E73F8C",
+      "levelid": "custom_level_1ADCDD51D40FD851BECA74EAF9FCCCFEC4E73F8C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Faust",
+      "levelAuthorName": "calamity",
+      "hash": "AAA8E581001C1DC1ED300868E9CA6F18E2D973AF",
+      "levelid": "custom_level_AAA8E581001C1DC1ED300868E9CA6F18E2D973AF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "Pictures feat. 4s4ki",
       "levelAuthorName": "CharlotteAulin",
       "hash": "5B0DFEF964AE68C85E8E9CB6D186E3E1252F349D",
@@ -3720,18 +3780,6 @@
       "levelAuthorName": "Foxy Boi",
       "hash": "F6F32BB39F267EBA256013061D4A39A005D4D562",
       "levelid": "custom_level_F6F32BB39F267EBA256013061D4A39A005D4D562",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Pneumonoultramicroscopicsilicovolcanoconiosis",
-      "levelAuthorName": "Jabob",
-      "hash": "1F3844B8FBDFBE0262F992825D9DBD77263B6A58",
-      "levelid": "custom_level_1F3844B8FBDFBE0262F992825D9DBD77263B6A58",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -4355,6 +4403,30 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "How to Be a Heartbreaker",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "D9A477BAC5274D6CE75342AF62C5CF7CCBA161FD",
+      "levelid": "custom_level_D9A477BAC5274D6CE75342AF62C5CF7CCBA161FD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "hitomania",
+      "levelAuthorName": "Kanahebi",
+      "hash": "77B4ABED1AF10207E8ACFA49C290E02B155B4390",
+      "levelid": "custom_level_77B4ABED1AF10207E8ACFA49C290E02B155B4390",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]
@@ -5892,6 +5964,18 @@
       ]
     },
     {
+      "songName": "tiziana",
+      "levelAuthorName": "Phøenix",
+      "hash": "E417A1BBBA33A638AC1E73D8487BF2B1833DBED3",
+      "levelid": "custom_level_E417A1BBBA33A638AC1E73D8487BF2B1833DBED3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "Sakura Saku / サクラサク",
       "levelAuthorName": "namaki_mono",
       "hash": "6BAD9E03E770AEA039A4FA49F891472D54863754",
@@ -6840,6 +6924,42 @@
       ]
     },
     {
+      "songName": "T.R.Y Revolution",
+      "levelAuthorName": "okazu",
+      "hash": "71D5316C468C03358579006CE39FC9851018A432",
+      "levelid": "custom_level_71D5316C468C03358579006CE39FC9851018A432",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Crab Rave",
+      "levelAuthorName": "Phøenix",
+      "hash": "44B327B7127D1E04875AF2AFD3CF201D6BCEFD2C",
+      "levelid": "custom_level_44B327B7127D1E04875AF2AFD3CF201D6BCEFD2C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Operation☆DOTABATA",
+      "levelAuthorName": "Comyute",
+      "hash": "B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
+      "levelid": "custom_level_B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "NIGHT RUNNING (7_7 bootleg)",
       "levelAuthorName": "Hener",
       "hash": "6FD4593D810A3FA62E9ABE672C2C6C4DE34408AB",
@@ -6892,6 +7012,18 @@
       "levelAuthorName": "ThySpoon",
       "hash": "7CF39845195F0079BBCB1AAC52FED8578723F88D",
       "levelid": "custom_level_7CF39845195F0079BBCB1AAC52FED8578723F88D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Fighting Myself",
+      "levelAuthorName": "Bytrius",
+      "hash": "2E2C73F19E4B67D9C27CA359430C68ADB7B74F7B",
+      "levelid": "custom_level_2E2C73F19E4B67D9C27CA359430C68ADB7B74F7B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -8316,6 +8448,18 @@
       "levelAuthorName": "GooberJake",
       "hash": "1F6209807EE8A9E87903E10EB4CE97D17BC0E8E3",
       "levelid": "custom_level_1F6209807EE8A9E87903E10EB4CE97D17BC0E8E3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Packet Hero",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "47FC7ADF1D7C58B131947F7ACFCF3FC0536D12D3",
+      "levelid": "custom_level_47FC7ADF1D7C58B131947F7ACFCF3FC0536D12D3",
       "difficulties": [
         {
           "characteristic": "Standard",

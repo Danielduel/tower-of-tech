@@ -75,18 +75,6 @@
       ]
     },
     {
-      "songName": "Pneumonoultramicroscopicsilicovolcanoconiosis",
-      "levelAuthorName": "Jabob",
-      "hash": "1F3844B8FBDFBE0262F992825D9DBD77263B6A58",
-      "levelid": "custom_level_1F3844B8FBDFBE0262F992825D9DBD77263B6A58",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Collei - Caprice of the Leaves",
       "levelAuthorName": "Cush",
       "hash": "628AE38FFED9A3A2E71A10FF6A472BEF8F23D876",
@@ -713,6 +701,30 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "How to Be a Heartbreaker",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "D9A477BAC5274D6CE75342AF62C5CF7CCBA161FD",
+      "levelid": "custom_level_D9A477BAC5274D6CE75342AF62C5CF7CCBA161FD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "hitomania",
+      "levelAuthorName": "Kanahebi",
+      "hash": "77B4ABED1AF10207E8ACFA49C290E02B155B4390",
+      "levelid": "custom_level_77B4ABED1AF10207E8ACFA49C290E02B155B4390",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]

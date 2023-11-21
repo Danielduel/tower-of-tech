@@ -998,6 +998,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "T.R.Y Revolution",
+      "levelAuthorName": "okazu",
+      "hash": "71D5316C468C03358579006CE39FC9851018A432",
+      "levelid": "custom_level_71D5316C468C03358579006CE39FC9851018A432",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Crab Rave",
+      "levelAuthorName": "Phøenix",
+      "hash": "44B327B7127D1E04875AF2AFD3CF201D6BCEFD2C",
+      "levelid": "custom_level_44B327B7127D1E04875AF2AFD3CF201D6BCEFD2C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Operation☆DOTABATA",
+      "levelAuthorName": "Comyute",
+      "hash": "B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
+      "levelid": "custom_level_B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

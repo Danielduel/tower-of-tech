@@ -1970,6 +1970,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "きゅうくらりん",
+      "levelAuthorName": "Ge2toro",
+      "hash": "186C427930CF07763EBC36068E375E2ECB55D5E4",
+      "levelid": "custom_level_186C427930CF07763EBC36068E375E2ECB55D5E4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Deep Down",
+      "levelAuthorName": "Nebelmonster",
+      "hash": "1ADCDD51D40FD851BECA74EAF9FCCCFEC4E73F8C",
+      "levelid": "custom_level_1ADCDD51D40FD851BECA74EAF9FCCCFEC4E73F8C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Faust",
+      "levelAuthorName": "calamity",
+      "hash": "AAA8E581001C1DC1ED300868E9CA6F18E2D973AF",
+      "levelid": "custom_level_AAA8E581001C1DC1ED300868E9CA6F18E2D973AF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

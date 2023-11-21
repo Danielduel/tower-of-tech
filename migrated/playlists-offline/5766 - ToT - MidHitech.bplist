@@ -794,6 +794,30 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Kaiba",
+      "levelAuthorName": "abcbadq, gbitz",
+      "hash": "9C774E44B1022DD45501BAF9C6BA87DB1961D099",
+      "levelid": "custom_level_9C774E44B1022DD45501BAF9C6BA87DB1961D099",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Pneumonoultramicroscopicsilicovolcanoconiosis",
+      "levelAuthorName": "Jabob",
+      "hash": "1F3844B8FBDFBE0262F992825D9DBD77263B6A58",
+      "levelid": "custom_level_1F3844B8FBDFBE0262F992825D9DBD77263B6A58",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }
