@@ -1,15 +1,7 @@
 import "https://deno.land/std@0.206.0/dotenv/load.ts";
-import { createPentagon } from "pentagon";
+import { createPentagon } from "./pentagon.ts";
 import { S3Client } from "s3_lite_client";
 import { isLocal, isRemote } from "@/packages/utils/envrionment.ts";
-import {
-  BeatSaberPlaylist,
-  BeatSaberPlaylistSongItem,
-} from "@/packages/database/BeatSaberPlaylist.ts";
-import {
-  BeatSaverMapResponseSuccess,
-  BeatSaverResponseWrapper,
-} from "@/packages/database/BeatSaverResponse.ts";
 
 const kv = isLocal() && !isRemote()
   ? await Deno.openKv("./local.db")
@@ -20,12 +12,7 @@ const kv = isLocal() && !isRemote()
     })()
     : await Deno.openKv();
 
-export const db = createPentagon(kv, {
-  BeatSaverResponseWrapper,
-  BeatSaverMapResponseSuccess,
-  BeatSaberPlaylist,
-  BeatSaberPlaylistSongItem,
-});
+export const db = createPentagon(kv);
 
 export const s3client = isLocal() && !isRemote()
   ? new S3Client({

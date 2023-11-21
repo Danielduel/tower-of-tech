@@ -6,6 +6,8 @@
     "generateCupOfADayPlaylist": "deno run -A ./src/tools/generateCupOfADayPlaylist.ts",
     "generate": "deno run ./src/main.ts",
 
+    "denoflare:websocket-proxy-beatleader": "",
+
     "dev": "deno task s3s-fs-local & deno task editor:dev",
     "dev-remote": "deno task editor:dev-remote",
     "purge": "deno run -A --unstable ./purge.ts",

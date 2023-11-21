@@ -209,6 +209,7 @@
     "https://deno.land/std/io/buffer.ts": "https://deno.land/std@0.206.0/io/buffer.ts",
     "https://deno.land/std/path/mod.ts": "https://deno.land/std@0.206.0/path/mod.ts",
     "https://deno.land/x/bb64/mod.ts": "https://deno.land/x/bb64@1.1.0/mod.ts",
+    "https://deno.land/x/brotli/mod.ts": "https://deno.land/x/brotli@0.1.7/mod.ts",
     "https://deno.land/x/discord_api_types/v10.ts": "https://deno.land/x/discord_api_types@0.37.62/v10.ts",
     "https://esm.sh/v128/@types/react@~18.2/index.d.ts": "https://esm.sh/v128/@types/react@18.2.25/index.d.ts",
     "https://esm.sh/v133/@types/react-dom@~18.2/client~.d.ts": "https://esm.sh/v133/@types/react-dom@18.2.13/client~.d.ts",
