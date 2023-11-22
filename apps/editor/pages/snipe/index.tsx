@@ -64,7 +64,6 @@ const init = async () => {
 
   return Globe()
     .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-    // .arcsData(arcsData)
     .arcColor('color')
     .arcDashLength(() => 0.1)
     .arcDashGap(() => 1)
@@ -116,7 +115,7 @@ const StatusItem = (props: BeatLeaderWSAcceptedModified) => {
         <img src={avatar} />
       </div>
       <div>
-        <div>{getFlagEmoji(country)} {playerName}</div>
+        <div className={tw("text-lg")}>{getFlagEmoji(country)} {playerName}</div>
         <div>{Math.floor(accuracy * 10000) / 100}%{fullCombo ? " (FC)" : ""} {songName}
         <br />by {author}
         {mapper.length > 0 ? (<span><br />from {mapper}</span>) : null}
@@ -149,6 +148,10 @@ export const SnipeIndex = () => {
   React.useEffect(() => {
     (async () => {
       ref.current = await init();
+
+      const controls = ref.current.controls();
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = -5;
     })()
   }, []);
 
@@ -160,12 +163,19 @@ export const SnipeIndex = () => {
       if (!data) return;
 
       if (data.message === "accepted") {
-        dataRef.current.push({
+        const newData: BeatLeaderWSAcceptedModified = {
           ...data,
           skewLat: Math.random() * 4,
           skewLng: Math.random() * 4,
           timeAdded: Date.now()
-        });
+        };
+        dataRef.current.push(newData);
+
+        const globe = ref.current;
+        if (!globe) return;
+        const country = COUNTRIES.ref_country_codes.find(country => country.alpha2 === newData.data.player.country);
+        if (!country) return;
+        globe.pointOfView({ lat: country.latitude + newData.skewLat, lng: country.longitude  + newData.skewLng }, 600);
       }
 
       const now = Date.now();
@@ -175,7 +185,7 @@ export const SnipeIndex = () => {
 
   return <div>
     <div id="globeViz"></div>
-    <div className={tw("w-96 h-[calc(100vh-8rem)] z-2 absolute top-0 right-0 border-box m-16 overflow-scroll") + " glass"}>
+    <div className={tw("w-96 h-[calc(100vh-8rem)] z-2 absolute top-0 right-0 border-box m-16 overflow-scroll") + " glass scrollbar-hide"}>
       {
         dataRef.current.map((props) => <StatusItem { ...props } />)
       }
