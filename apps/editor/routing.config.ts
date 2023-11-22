@@ -10,6 +10,10 @@ export const routing = {
     browse: "browse"
   },
 
+  snipe: {
+    root: "snipe/*"
+  },
+
   editor: {
     root: "editor/*",
     playlist: {
