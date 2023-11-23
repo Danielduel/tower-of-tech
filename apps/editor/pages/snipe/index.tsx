@@ -4,6 +4,7 @@ import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaverMapId } from "@/packages/types/beatsaver.ts";
 import { GlobeInstance } from "globe.gl";
 import { COUNTRIES } from "../../components/COUNTRIES.ts";
+import { createRoot } from "react-dom/client";
 
 type BeatLeaderWSAccepted = {
   data: {
@@ -44,36 +45,6 @@ const safeParse = (data: string) => {
     return null;
   }
 };
-
-const init = async () => {
-  const Globe = (await import("globe.gl")).default;
-  // Gen random data
-  const N = 20;
-  // const arcsData = [...Array(N).keys()].map(() => ({
-  //   startLat: (Math.random() - 0.5) * 180,
-  //   startLng: (Math.random() - 0.5) * 360,
-  //   endLat: (Math.random() - 0.5) * 180,
-  //   endLng: (Math.random() - 0.5) * 360,
-  //   color: [['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)], ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]]
-  // }));
-  const ARC_REL_LEN = 0.4; // relative to whole arc
-  const FLIGHT_TIME = 1000;
-  const NUM_RINGS = 1;
-  const RINGS_MAX_R = 40; // deg
-  const RING_PROPAGATION_SPEED = 20; // deg/sec
-
-  return Globe()
-    .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-    .arcColor('color')
-    .arcDashLength(() => 0.1)
-    .arcDashGap(() => 1)
-    .arcDashAnimateTime(() => 2000)
-    .ringColor(() => t => `rgba(255,100,50,${1-t})`)
-    .ringMaxRadius(RINGS_MAX_R)
-    .ringPropagationSpeed(RING_PROPAGATION_SPEED)
-    .ringRepeatPeriod(1000000)
-  (document.getElementById('globeViz')!)
-}
 
 function getFlagEmoji(countryCode: string) {
   const codePoints = countryCode
@@ -125,6 +96,56 @@ const StatusItem = (props: BeatLeaderWSAcceptedModified) => {
   )
 }
 
+const StatusItemAsHTML = (props: BeatLeaderWSAcceptedModified) => {
+  const elem = <StatusItem {...props} />;
+  const root = document.createElement("div");
+  root.className = "glass"
+  root.setAttribute("name", "toRemove")
+  createRoot(root).render(elem);
+  return root;
+}
+
+const init = async () => {
+  const Globe = (await import("globe.gl")).default;
+  // Gen random data
+  const N = 20;
+  // const arcsData = [...Array(N).keys()].map(() => ({
+  //   startLat: (Math.random() - 0.5) * 180,
+  //   startLng: (Math.random() - 0.5) * 360,
+  //   endLat: (Math.random() - 0.5) * 180,
+  //   endLng: (Math.random() - 0.5) * 360,
+  //   color: [['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)], ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]]
+  // }));
+  const ARC_REL_LEN = 0.4; // relative to whole arc
+  const FLIGHT_TIME = 1000;
+  const NUM_RINGS = 1;
+  const RINGS_MAX_R = 5; // deg
+  const RING_PROPAGATION_SPEED = 0.8; // deg/sec
+
+  return Globe()
+    // .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
+    .globeImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+    .atmosphereColor("white")
+    .backgroundColor("black")
+    .pointOfView({ lat: 0, lng: 0, altitude: 0.9}, 1000)
+    .arcColor('color')
+    .arcDashLength(() => 0.1)
+    .arcDashGap(() => 1)
+    .arcDashAnimateTime(() => 2000)
+    // .ringColor(() => t => `rgba(255,255,255,${0.9-t})`)
+    // .ringMaxRadius(RINGS_MAX_R)
+    // .ringPropagationSpeed(RING_PROPAGATION_SPEED)
+    // .ringRepeatPeriod(-1)
+    // .ringAltitude(0.1)
+    .htmlElement((d) => StatusItemAsHTML(d))
+    .pointRadius(0.05)
+    .pointAltitude(0.5)
+    .pointsTransitionDuration(0)
+    .htmlAltitude(0.5)
+    .htmlTransitionDuration(0)
+  (document.getElementById('globeViz')!)
+}
+
 export const SnipeIndex = () => {
   const ref = React.useRef<GlobeInstance | null>(null);
   const dataRef = React.useRef<BeatLeaderWSAcceptedModified[]>([]);
@@ -137,11 +158,33 @@ export const SnipeIndex = () => {
       const globe = ref.current;
       if (!globe) return;
 
-      globe.ringsData(dataRef.current.map(x => {
+      const lenLatData = dataRef.current.map(x => {
         const country = COUNTRIES.ref_country_codes.find(country => country.alpha2 === x.data.player.country);
-        if (!country) return { lat: 0, lng: 0};
-        return { lat: country.latitude + x.skewLat, lng: country.longitude  + x.skewLng };
-      }));
+        if (!country) return { lat: 0, lng: 0, ...x };
+        return { name: "toRemove", lat: country.latitude + x.skewLat, lng: country.longitude  + x.skewLng, ...x };
+      });
+
+      const scene = globe.scene();
+      // scene.remove(scene.getObjectByName("toRemove")!);
+      // scene.clear();
+      console.log(scene.children)
+      scene.remove(scene.getObjectsByProperty("__globeObjType", "html")!);
+
+      const htmlContainer = scene.children[3].children[0].children[11];
+      const pointsContainer = scene.children[3].children[0].children[1];
+      const htmlChildren = [...htmlContainer.children];
+      const pointsChildren = [...pointsContainer.children];
+
+
+      // globe.ringsData(lenLatData);
+      globe.pointsData(lenLatData);
+      globe.htmlElementsData(lenLatData);
+      // scene.remove(htmlChildren);
+      // scene.remove(pointsChildren);
+      setTimeout(() => {
+        htmlChildren.forEach(c => c.removeFromParent());
+        pointsChildren.forEach(c => c.removeFromParent());
+      }, 500)
     }, 500)
   }, [counter])
 

@@ -10,6 +10,8 @@
     "@twind/core": "https://esm.sh/@twind/core@1.0.1",
     "@twind/preset-autoprefix": "https://esm.sh/@twind/preset-autoprefix@1.0.1",
     "@twind/preset-tailwind": "https://esm.sh/*@twind/preset-tailwind@1.0.1",
+    "@twind/preset-tailwind/": "https://esm.sh/*@twind/preset-tailwind@1.0.1/",
+    "globe.gl": "https://esm.sh/v122/globe.gl@2.32.1",
 
     "react-router-dom": "https://esm.sh/react-router-dom@6.3.0?external=react",
     "react-router-dom/server": "https://esm.sh/react-router-dom@6.3.0/server?external=react",
@@ -22,7 +24,6 @@
     "@trpc/client": "https://esm.sh/v122/*@trpc/client@10.0.0",
     "@trpc/client/": "https://esm.sh/v122/*@trpc/client@10.0.0/",
     "@trpc/react-query": "https://esm.sh/v122/*@trpc/react-query@10.0.0",
-    "globe.gl": "https://esm.sh/v122/globe.gl@2.32.1",
     "zod": "https://deno.land/x/zod@v3.21.4/mod.ts",
     "s3_lite_client": "https://deno.land/x/s3_lite_client@0.6.1/mod.ts",
 
