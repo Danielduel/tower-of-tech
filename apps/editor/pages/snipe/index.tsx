@@ -134,6 +134,7 @@ const init = async () => {
     .htmlElement((d) => StatusItemAsHTML(d))
     .pointRadius(0.05)
     .pointAltitude(0.5)
+    .pointColor(0x18181B)
     .pointsTransitionDuration(0)
     .htmlAltitude(0.5)
     .htmlTransitionDuration(0)
