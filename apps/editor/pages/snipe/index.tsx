@@ -99,7 +99,7 @@ const StatusItem = (props: BeatLeaderWSAcceptedModified) => {
 const StatusItemAsHTML = (props: BeatLeaderWSAcceptedModified) => {
   const elem = <StatusItem {...props} />;
   const root = document.createElement("div");
-  root.className = "glass"
+  root.className = tw("bg-zinc-900") + " glass"
   root.setAttribute("name", "toRemove")
   createRoot(root).render(elem);
   return root;
@@ -127,16 +127,10 @@ const init = async () => {
     .globeImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
     .atmosphereColor("white")
     .backgroundColor("black")
-    .pointOfView({ lat: 0, lng: 0, altitude: 0.9}, 1000)
     .arcColor('color')
     .arcDashLength(() => 0.1)
     .arcDashGap(() => 1)
     .arcDashAnimateTime(() => 2000)
-    // .ringColor(() => t => `rgba(255,255,255,${0.9-t})`)
-    // .ringMaxRadius(RINGS_MAX_R)
-    // .ringPropagationSpeed(RING_PROPAGATION_SPEED)
-    // .ringRepeatPeriod(-1)
-    // .ringAltitude(0.1)
     .htmlElement((d) => StatusItemAsHTML(d))
     .pointRadius(0.05)
     .pointAltitude(0.5)
@@ -165,22 +159,15 @@ export const SnipeIndex = () => {
       });
 
       const scene = globe.scene();
-      // scene.remove(scene.getObjectByName("toRemove")!);
-      // scene.clear();
-      console.log(scene.children)
-      scene.remove(scene.getObjectsByProperty("__globeObjType", "html")!);
 
       const htmlContainer = scene.children[3].children[0].children[11];
       const pointsContainer = scene.children[3].children[0].children[1];
       const htmlChildren = [...htmlContainer.children];
       const pointsChildren = [...pointsContainer.children];
 
-
-      // globe.ringsData(lenLatData);
       globe.pointsData(lenLatData);
       globe.htmlElementsData(lenLatData);
-      // scene.remove(htmlChildren);
-      // scene.remove(pointsChildren);
+
       setTimeout(() => {
         htmlChildren.forEach(c => c.removeFromParent());
         pointsChildren.forEach(c => c.removeFromParent());
@@ -218,7 +205,7 @@ export const SnipeIndex = () => {
         if (!globe) return;
         const country = COUNTRIES.ref_country_codes.find(country => country.alpha2 === newData.data.player.country);
         if (!country) return;
-        globe.pointOfView({ lat: country.latitude + newData.skewLat, lng: country.longitude  + newData.skewLng }, 600);
+        globe.pointOfView({ lat: country.latitude + newData.skewLat, lng: country.longitude  + newData.skewLng, altitude: 0.9 }, 600);
       }
 
       const now = Date.now();
