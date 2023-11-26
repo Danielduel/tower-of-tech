@@ -824,6 +824,22 @@
       ]
     },
     {
+      "songName": "VORACITY",
+      "levelAuthorName": "Joshabi & Bitz",
+      "hash": "78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
+      "levelid": "custom_level_78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
       "songName": "paqqin",
       "levelAuthorName": "ani",
       "hash": "308C5033314D7065C19C0A195DF96529979083DB",
@@ -1632,6 +1648,18 @@
       ]
     },
     {
+      "songName": "1xMISS",
+      "levelAuthorName": "risi",
+      "hash": "D1524E787E61E62E16B39123182C82F99243A93E",
+      "levelid": "custom_level_D1524E787E61E62E16B39123182C82F99243A93E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "GOODTEK",
       "levelAuthorName": "Hener",
       "hash": "5291DBA8E00BFF0F7C61EFE44A723CA70FCC5688",
@@ -2352,22 +2380,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "VORACITY",
-      "levelAuthorName": "Joshabi & Bitz",
-      "hash": "78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
-      "levelid": "custom_level_78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        },
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
         }
       ]
     },
@@ -3748,6 +3760,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     },
@@ -3760,6 +3776,10 @@
         {
           "characteristic": "Lawless",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     },
@@ -4424,6 +4444,18 @@
       "levelAuthorName": "Kanahebi",
       "hash": "77B4ABED1AF10207E8ACFA49C290E02B155B4390",
       "levelid": "custom_level_77B4ABED1AF10207E8ACFA49C290E02B155B4390",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Swervin'",
+      "levelAuthorName": "Jabob & Hener",
+      "hash": "0BCFE80EA83201B6C0C93841A380BDFD1C5D5CD7",
+      "levelid": "custom_level_0BCFE80EA83201B6C0C93841A380BDFD1C5D5CD7",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -7032,6 +7064,18 @@
       ]
     },
     {
+      "songName": "Mr. Pinstripe",
+      "levelAuthorName": "Davaayy",
+      "hash": "FDA7C569BC9C5C0A34C99609354015D44B7C8DB4",
+      "levelid": "custom_level_FDA7C569BC9C5C0A34C99609354015D44B7C8DB4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
       "songName": "Yoake to Hotaru",
       "levelAuthorName": "Uninstaller",
       "hash": "D79DCCEDA40C451637EC99878F98886DED35748A",
@@ -8468,6 +8512,18 @@
       ]
     },
     {
+      "songName": "CRIMSON POTION",
+      "levelAuthorName": "wangyufy",
+      "hash": "4499B3BA82F2826C610D5B555E43B7AF5CEFCA0E",
+      "levelid": "custom_level_4499B3BA82F2826C610D5B555E43B7AF5CEFCA0E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "Welcome To The Secret Ghostland",
       "levelAuthorName": "Ken_Monogatari",
       "hash": "BC34519B85902800F8E75D4254EFC90F34855834",
@@ -8592,6 +8648,30 @@
       "levelAuthorName": "MadChase",
       "hash": "CC6B0BDDD6EB662B36E4399D1B7B65504DE26D47",
       "levelid": "custom_level_CC6B0BDDD6EB662B36E4399D1B7B65504DE26D47",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "心の雨／可不",
+      "levelAuthorName": "wangyufy",
+      "hash": "D3B2BDF8F825B1F77F721E277698333D916D6B78",
+      "levelid": "custom_level_D3B2BDF8F825B1F77F721E277698333D916D6B78",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Before Summer",
+      "levelAuthorName": "wangyufy",
+      "hash": "353ED9190E28F3501FFA460E561506F99E274085",
+      "levelid": "custom_level_353ED9190E28F3501FFA460E561506F99E274085",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -8796,6 +8876,30 @@
       "levelAuthorName": "oermergeesh vs. ob1cb",
       "hash": "83E579921D67F782B1B7B19193EB970671F2FBA1",
       "levelid": "custom_level_83E579921D67F782B1B7B19193EB970671F2FBA1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Grain",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "E6E22C2300B4F84DF81E5548784A165E0FD1BAF3",
+      "levelid": "custom_level_E6E22C2300B4F84DF81E5548784A165E0FD1BAF3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Thermodynamix",
+      "levelAuthorName": "Tranch",
+      "hash": "C627244A9DFB07B35BC068AEC609BBA05C18C7F9",
+      "levelid": "custom_level_C627244A9DFB07B35BC068AEC609BBA05C18C7F9",
       "difficulties": [
         {
           "characteristic": "Standard",

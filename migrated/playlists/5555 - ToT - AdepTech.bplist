@@ -722,6 +722,30 @@
           "name": "Expert"
         }
       ]
+    },
+    {
+      "songName": "New Jeans",
+      "levelAuthorName": "tocxx",
+      "hash": "7C4B6A220A0B0C1EE84D22FFACDC19CDDB75487C",
+      "levelid": "custom_level_7C4B6A220A0B0C1EE84D22FFACDC19CDDB75487C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Fukashiki No Carte",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
+      "levelid": "custom_level_D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
     }
   ],
   "customData": {

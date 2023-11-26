@@ -170,6 +170,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "1xMISS",
+      "levelAuthorName": "risi",
+      "hash": "D1524E787E61E62E16B39123182C82F99243A93E",
+      "levelid": "custom_level_D1524E787E61E62E16B39123182C82F99243A93E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

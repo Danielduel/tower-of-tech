@@ -230,6 +230,30 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "心の雨／可不",
+      "levelAuthorName": "wangyufy",
+      "hash": "D3B2BDF8F825B1F77F721E277698333D916D6B78",
+      "levelid": "custom_level_D3B2BDF8F825B1F77F721E277698333D916D6B78",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Before Summer",
+      "levelAuthorName": "wangyufy",
+      "hash": "353ED9190E28F3501FFA460E561506F99E274085",
+      "levelid": "custom_level_353ED9190E28F3501FFA460E561506F99E274085",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

@@ -14,6 +14,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "你呀你呀",
+      "levelAuthorName": "wangyufy",
+      "hash": "2E9B994039FE8C3C5D6B6E34B178457E1909CBAB",
+      "levelid": "custom_level_2E9B994039FE8C3C5D6B6E34B178457E1909CBAB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

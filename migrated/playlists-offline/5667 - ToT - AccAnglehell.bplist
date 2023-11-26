@@ -729,6 +729,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Swervin'",
+      "levelAuthorName": "Jabob & Hener",
+      "hash": "0BCFE80EA83201B6C0C93841A380BDFD1C5D5CD7",
+      "levelid": "custom_level_0BCFE80EA83201B6C0C93841A380BDFD1C5D5CD7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

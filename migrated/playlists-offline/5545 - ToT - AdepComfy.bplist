@@ -38,6 +38,18 @@
           "name": "Hard"
         }
       ]
+    },
+    {
+      "songName": "Mr. Pinstripe",
+      "levelAuthorName": "Davaayy",
+      "hash": "FDA7C569BC9C5C0A34C99609354015D44B7C8DB4",
+      "levelid": "custom_level_FDA7C569BC9C5C0A34C99609354015D44B7C8DB4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
     }
   ]
 }

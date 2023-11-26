@@ -242,6 +242,30 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Grain",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "E6E22C2300B4F84DF81E5548784A165E0FD1BAF3",
+      "levelid": "custom_level_E6E22C2300B4F84DF81E5548784A165E0FD1BAF3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Thermodynamix",
+      "levelAuthorName": "Tranch",
+      "hash": "C627244A9DFB07B35BC068AEC609BBA05C18C7F9",
+      "levelid": "custom_level_C627244A9DFB07B35BC068AEC609BBA05C18C7F9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {
