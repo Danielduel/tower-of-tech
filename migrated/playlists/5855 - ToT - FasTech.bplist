@@ -38,6 +38,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "YURUSHITE",
+      "levelAuthorName": "oermergeesh",
+      "hash": "FC16B98ADA9EE9A761F3A1F34D4D61E036697756",
+      "levelid": "custom_level_FC16B98ADA9EE9A761F3A1F34D4D61E036697756",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

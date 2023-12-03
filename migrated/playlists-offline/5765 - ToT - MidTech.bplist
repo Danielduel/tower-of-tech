@@ -890,6 +890,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Cheesecake Crisis",
+      "levelAuthorName": "Ge2toro",
+      "hash": "49E870EE1BAF85FF0FE27EDDF5E5894B43EB24DA",
+      "levelid": "custom_level_49E870EE1BAF85FF0FE27EDDF5E5894B43EB24DA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Treaty of Peace between Glitch Hop and Moombahcore",
+      "levelAuthorName": "P90KILLR",
+      "hash": "556B87EB54E904EAFBA31C94683CB4F5A65C4916",
+      "levelid": "custom_level_556B87EB54E904EAFBA31C94683CB4F5A65C4916",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Venomous Snake",
+      "levelAuthorName": "Komeijisan051",
+      "hash": "407DFBF4FFD6B6A322A749F0902B8F5F4FB627B6",
+      "levelid": "custom_level_407DFBF4FFD6B6A322A749F0902B8F5F4FB627B6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

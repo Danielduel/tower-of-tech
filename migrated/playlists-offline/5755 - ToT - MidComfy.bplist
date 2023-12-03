@@ -230,6 +230,54 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Sesh The Seven Seas VIP",
+      "levelAuthorName": "Bytrius & Phøenix",
+      "hash": "AC7054A2F0E419B45F202D5FFB497CB41EC2116C",
+      "levelid": "custom_level_AC7054A2F0E419B45F202D5FFB497CB41EC2116C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Youkoso Japari Park E",
+      "levelAuthorName": "edgyguns",
+      "hash": "19AC54A429C069FBE7175AE4737A6C48B303AC42",
+      "levelid": "custom_level_19AC54A429C069FBE7175AE4737A6C48B303AC42",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Spare your enamel, she needs it more than you.",
+      "levelAuthorName": "oermergeesh",
+      "hash": "5DC85185D1A5D867604D7EC6EF16410E9BFF4FA4",
+      "levelid": "custom_level_5DC85185D1A5D867604D7EC6EF16410E9BFF4FA4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dark Chest of Wonders",
+      "levelAuthorName": "Cyrix",
+      "hash": "FA41A12CFE48A86375DBB37B1E19CA0B35E6D3E7",
+      "levelid": "custom_level_FA41A12CFE48A86375DBB37B1E19CA0B35E6D3E7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

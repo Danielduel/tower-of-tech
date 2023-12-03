@@ -830,6 +830,126 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Give to me",
+      "levelAuthorName": "IlluminatiSalad",
+      "hash": "73D8AD1E767EDB0F3D0266875DD6F0FA300CF4E8",
+      "levelid": "custom_level_73D8AD1E767EDB0F3D0266875DD6F0FA300CF4E8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "I'm a Controversy",
+      "levelAuthorName": "Monke",
+      "hash": "88049AE6A257B80DEE3F1AF82FEF9ED7628D0436",
+      "levelid": "custom_level_88049AE6A257B80DEE3F1AF82FEF9ED7628D0436",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cha Cha Cha",
+      "levelAuthorName": "Idlebob",
+      "hash": "87AE38AD4424260AD90F3C3A08CDAA27E7FE0CED",
+      "levelid": "custom_level_87AE38AD4424260AD90F3C3A08CDAA27E7FE0CED",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Lavie",
+      "levelAuthorName": "Gabriel",
+      "hash": "4A75D06F9F80EC5274826B8BC46AB4EBDBFABE2F",
+      "levelid": "custom_level_4A75D06F9F80EC5274826B8BC46AB4EBDBFABE2F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Blitz",
+      "levelAuthorName": "Kassi",
+      "hash": "94CAE2A807B0E76A65830BEF6B77F4A6C9BFB483",
+      "levelid": "custom_level_94CAE2A807B0E76A65830BEF6B77F4A6C9BFB483",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "You're Gonna Go Far, Kid",
+      "levelAuthorName": "abcbadq",
+      "hash": "B23C3DB5BD49A9EEC6103074167D7D202DE71579",
+      "levelid": "custom_level_B23C3DB5BD49A9EEC6103074167D7D202DE71579",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Empires",
+      "levelAuthorName": "RetrX",
+      "hash": "81F2147DA4B9190336E810C16F90076B53E2E045",
+      "levelid": "custom_level_81F2147DA4B9190336E810C16F90076B53E2E045",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "second hand embarrassment",
+      "levelAuthorName": "razy",
+      "hash": "640DBF73C08804F33D96A72E6937D4F7D804E1EF",
+      "levelid": "custom_level_640DBF73C08804F33D96A72E6937D4F7D804E1EF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "T.R.Y Revolution",
+      "levelAuthorName": "okazu",
+      "hash": "71D5316C468C03358579006CE39FC9851018A432",
+      "levelid": "custom_level_71D5316C468C03358579006CE39FC9851018A432",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Beastmode",
+      "levelAuthorName": "Pitatochu",
+      "hash": "DFD89097A71AA551BD7617E0E22167C25C99820A",
+      "levelid": "custom_level_DFD89097A71AA551BD7617E0E22167C25C99820A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

@@ -254,6 +254,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Usseewa",
+      "levelAuthorName": "EOP Glacier",
+      "hash": "F354FF4795EE4035B918DB57C70E55799A7A5C67",
+      "levelid": "custom_level_F354FF4795EE4035B918DB57C70E55799A7A5C67",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Phony",
+      "levelAuthorName": "Joshabi & Shad",
+      "hash": "80559A7A4AC0F62F27DAF1C59DF67F305250ADFF",
+      "levelid": "custom_level_80559A7A4AC0F62F27DAF1C59DF67F305250ADFF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Welcome to the Internet",
+      "levelAuthorName": "HypersonicSharkz & Bitz",
+      "hash": "9D1A5B08EDA550154489C6B7C652205A237F62EC",
+      "levelid": "custom_level_9D1A5B08EDA550154489C6B7C652205A237F62EC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

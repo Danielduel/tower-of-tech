@@ -50,6 +50,18 @@
           "name": "Hard"
         }
       ]
+    },
+    {
+      "songName": "Jump Up - Super Star Remix",
+      "levelAuthorName": "4orizon",
+      "hash": "A813829E5D51B8A13CB009DD3FBEFCF0D18BC684",
+      "levelid": "custom_level_A813829E5D51B8A13CB009DD3FBEFCF0D18BC684",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
     }
   ]
 }

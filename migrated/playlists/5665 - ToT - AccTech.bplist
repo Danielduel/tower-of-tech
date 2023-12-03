@@ -1994,6 +1994,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Between Two Worlds",
+      "levelAuthorName": "Acubens",
+      "hash": "597C55E661DF344EF12CE313288C7ABE21F45AF9",
+      "levelid": "custom_level_597C55E661DF344EF12CE313288C7ABE21F45AF9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

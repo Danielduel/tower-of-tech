@@ -16,18 +16,6 @@
       ]
     },
     {
-      "songName": "Youkoso Japari Park E",
-      "levelAuthorName": "edgyguns",
-      "hash": "19AC54A429C069FBE7175AE4737A6C48B303AC42",
-      "levelid": "custom_level_19AC54A429C069FBE7175AE4737A6C48B303AC42",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "handle me",
       "levelAuthorName": "GojiCrafter",
       "hash": "75CADAC9031FEF0F41F1579BA31F03EA34770B52",
@@ -44,30 +32,6 @@
       "levelAuthorName": "Emiru",
       "hash": "9FA50CD323E28090E13CDFDA294C95184C90C1F6",
       "levelid": "custom_level_9FA50CD323E28090E13CDFDA294C95184C90C1F6",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Spare your enamel, she needs it more than you.",
-      "levelAuthorName": "oermergeesh",
-      "hash": "5DC85185D1A5D867604D7EC6EF16410E9BFF4FA4",
-      "levelid": "custom_level_5DC85185D1A5D867604D7EC6EF16410E9BFF4FA4",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Dark Chest of Wonders",
-      "levelAuthorName": "Cyrix",
-      "hash": "FA41A12CFE48A86375DBB37B1E19CA0B35E6D3E7",
-      "levelid": "custom_level_FA41A12CFE48A86375DBB37B1E19CA0B35E6D3E7",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -148,18 +112,6 @@
       ]
     },
     {
-      "songName": "Welcome to the Internet",
-      "levelAuthorName": "HypersonicSharkz & Bitz",
-      "hash": "9D1A5B08EDA550154489C6B7C652205A237F62EC",
-      "levelid": "custom_level_9D1A5B08EDA550154489C6B7C652205A237F62EC",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Angels Fall",
       "levelAuthorName": "ASharpBlade",
       "hash": "E3763053A2D081206D6E105E184CDFEFA6F3C894",
@@ -188,18 +140,6 @@
       "levelAuthorName": "nitronik.exe",
       "hash": "3B70F7697A31006229D2D2DEB2027AF7808F12AD",
       "levelid": "custom_level_3B70F7697A31006229D2D2DEB2027AF7808F12AD",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Mine",
-      "levelAuthorName": "TG90",
-      "hash": "DF4E1EC7A5DF5A0B9465C55820D92D607B2755F6",
-      "levelid": "custom_level_DF4E1EC7A5DF5A0B9465C55820D92D607B2755F6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -444,6 +384,30 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Chikatto Chika Chika",
+      "levelAuthorName": "edgyguns",
+      "hash": "CD0EB104544E49825D277F19B04E876645CD60B8",
+      "levelid": "custom_level_CD0EB104544E49825D277F19B04E876645CD60B8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Unholy Heart ft. Honey Revenge & Joshua Roberts ",
+      "levelAuthorName": "mojo",
+      "hash": "29A772DA1E12330ABF4CB66E47A7F31068ED50E9",
+      "levelid": "custom_level_29A772DA1E12330ABF4CB66E47A7F31068ED50E9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

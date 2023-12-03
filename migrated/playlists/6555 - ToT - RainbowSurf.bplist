@@ -182,6 +182,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Beastmode",
+      "levelAuthorName": "Pitatochu",
+      "hash": "DFD89097A71AA551BD7617E0E22167C25C99820A",
+      "levelid": "custom_level_DFD89097A71AA551BD7617E0E22167C25C99820A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

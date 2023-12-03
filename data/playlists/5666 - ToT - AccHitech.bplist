@@ -51,18 +51,6 @@
       ]
     },
     {
-      "songName": "Cha Cha Cha",
-      "levelAuthorName": "Idlebob",
-      "hash": "87AE38AD4424260AD90F3C3A08CDAA27E7FE0CED",
-      "levelid": "custom_level_87AE38AD4424260AD90F3C3A08CDAA27E7FE0CED",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Buddy & Wilderness",
       "levelAuthorName": "okazu & Gabriel",
       "hash": "2009E2D5F79BF8513A3FE082EF5DB24B98B3CB16",
@@ -147,18 +135,6 @@
       ]
     },
     {
-      "songName": "Lavie",
-      "levelAuthorName": "Gabriel",
-      "hash": "4A75D06F9F80EC5274826B8BC46AB4EBDBFABE2F",
-      "levelid": "custom_level_4A75D06F9F80EC5274826B8BC46AB4EBDBFABE2F",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Kitsuneno Mado",
       "levelAuthorName": "Gabriel",
       "hash": "409DB485951246EDFFAD7667E950C50EE938FB6A",
@@ -183,34 +159,10 @@
       ]
     },
     {
-      "songName": "YURUSHITE",
-      "levelAuthorName": "oermergeesh",
-      "hash": "FC16B98ADA9EE9A761F3A1F34D4D61E036697756",
-      "levelid": "custom_level_FC16B98ADA9EE9A761F3A1F34D4D61E036697756",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Malagueña Salerosa",
       "levelAuthorName": "Comyute & Groovy",
       "hash": "390A48823312B1309FF3F82A288B7C88C6A06C17",
       "levelid": "custom_level_390A48823312B1309FF3F82A288B7C88C6A06C17",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Blitz",
-      "levelAuthorName": "Kassi",
-      "hash": "94CAE2A807B0E76A65830BEF6B77F4A6C9BFB483",
-      "levelid": "custom_level_94CAE2A807B0E76A65830BEF6B77F4A6C9BFB483",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -247,18 +199,6 @@
       "levelAuthorName": "Bitz",
       "hash": "F01B4241582979A9CED1D9C3D89D8924CE7B4345",
       "levelid": "custom_level_F01B4241582979A9CED1D9C3D89D8924CE7B4345",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "You're Gonna Go Far, Kid",
-      "levelAuthorName": "abcbadq",
-      "hash": "B23C3DB5BD49A9EEC6103074167D7D202DE71579",
-      "levelid": "custom_level_B23C3DB5BD49A9EEC6103074167D7D202DE71579",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -343,18 +283,6 @@
       "levelAuthorName": "P90KILLR",
       "hash": "02F2A82AA4FAF34E45534BAD247E095C70FFB941",
       "levelid": "custom_level_02F2A82AA4FAF34E45534BAD247E095C70FFB941",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Empires",
-      "levelAuthorName": "RetrX",
-      "hash": "81F2147DA4B9190336E810C16F90076B53E2E045",
-      "levelid": "custom_level_81F2147DA4B9190336E810C16F90076B53E2E045",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -487,18 +415,6 @@
       "levelAuthorName": "minsiii",
       "hash": "6DEF462C6FEE6F6EF4046498B7BCEA4189FACACE",
       "levelid": "custom_level_6DEF462C6FEE6F6EF4046498B7BCEA4189FACACE",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "second hand embarrassment",
-      "levelAuthorName": "razy",
-      "hash": "640DBF73C08804F33D96A72E6937D4F7D804E1EF",
-      "levelid": "custom_level_640DBF73C08804F33D96A72E6937D4F7D804E1EF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -691,18 +607,6 @@
       "levelAuthorName": "Pleo",
       "hash": "A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
       "levelid": "custom_level_A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Venomous Snake",
-      "levelAuthorName": "Komeijisan051",
-      "hash": "407DFBF4FFD6B6A322A749F0902B8F5F4FB627B6",
-      "levelid": "custom_level_407DFBF4FFD6B6A322A749F0902B8F5F4FB627B6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -999,18 +903,6 @@
       ]
     },
     {
-      "songName": "T.R.Y Revolution",
-      "levelAuthorName": "okazu",
-      "hash": "71D5316C468C03358579006CE39FC9851018A432",
-      "levelid": "custom_level_71D5316C468C03358579006CE39FC9851018A432",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Crab Rave",
       "levelAuthorName": "Phøenix",
       "hash": "44B327B7127D1E04875AF2AFD3CF201D6BCEFD2C",
@@ -1027,6 +919,18 @@
       "levelAuthorName": "Comyute",
       "hash": "B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
       "levelid": "custom_level_B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hungarian Dance No. 5",
+      "levelAuthorName": "Andynak",
+      "hash": "3820DD20E125EEF2F58AED9BDC9ACD2AC8E84476",
+      "levelid": "custom_level_3820DD20E125EEF2F58AED9BDC9ACD2AC8E84476",
       "difficulties": [
         {
           "characteristic": "Standard",
