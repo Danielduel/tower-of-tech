@@ -182,9 +182,13 @@ function executePlaylists(commandEvent: CommandPlaylistsInteraction) {
 // }
 
 async function executeCreateTechMultiEvent() {
+  const SECRET_KEY = Deno.env.get("DISCORD_TOT_APP_SECRET_KEY")!;
   const guildId = "689050370840068309";
 
-  const client = new Client({ intents: [ GatewayIntentBits.GuildScheduledEvents ] });
+  const client = new Client({
+    intents: [ GatewayIntentBits.GuildScheduledEvents ]
+  });
+  await client.login(SECRET_KEY)
   const guild = await client.guilds.fetch(guildId);
 
   const hourMs = 60 * 60 * 1000;
