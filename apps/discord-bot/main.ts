@@ -182,13 +182,13 @@ function executePlaylists(commandEvent: CommandPlaylistsInteraction) {
 // }
 
 async function executeCreateTechMultiEvent() {
-  const PUBLIC_KEY = Deno.env.get("DISCORD_TOT_APP_PUBLIC_KEY")!;
+  const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
   const guildId = "689050370840068309";
 
   const client = new Client({
     intents: [ GatewayIntentBits.GuildScheduledEvents ]
   });
-  await client.login(PUBLIC_KEY)
+  await client.login(DISCORD_TOT_BOT_TOKEN)
   const guild = await client.guilds.fetch(guildId);
 
   const hourMs = 60 * 60 * 1000;
