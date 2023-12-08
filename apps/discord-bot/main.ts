@@ -18,6 +18,14 @@ import {
   GuildScheduledEventManager,
   User,
 } from "npm:discord.js";
+// import {
+//   getRequiredEnv,
+//   getSessionId,
+//   handleCallback,
+//   type OAuth2ClientConfig,
+//   signIn,
+//   signOut,
+// } from "https://deno.land/x/deno_kv_oauth@v0.10.0/mod.ts";
 
 // For all requests to "/" endpoint, we want to invoke home() handler.
 serve({
@@ -182,8 +190,29 @@ function executePlaylists(commandEvent: CommandPlaylistsInteraction) {
 // }
 
 async function executeCreateTechMultiEvent() {
-  const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
+  // const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
   const guildId = "689050370840068309";
+  // DISCORD_TOT_BOT_CLIENT_ID=
+  // DISCORD_TOT_BOT_TOKEN=
+  // DISCORD_TOT_APP_PUBLIC_KEY=
+  // DISCORD_TOT_APP_SECRET_KEY
+  const clientId = Deno.env.get("DISCORD_TOT_BOT_CLIENT_ID")!;
+  const clientSecret = Deno.env.get("DISCORD_TOT_APP_SECRET_KEY")!;
+
+  const tokenResponseData = await fetch('https://discord.com/api/oauth2/token', {
+				method: 'POST',
+				body: new URLSearchParams({
+					client_id: clientId,
+					client_secret: clientSecret,
+					code,
+					grant_type: 'authorization_code',
+					redirect_uri: `http://localhost:${port}`,
+					scope: 'identify',
+				}).toString(),
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded',
+				},
+			});
 
   const client = new Client({
     intents: [ GatewayIntentBits.GuildScheduledEvents ]
@@ -227,8 +256,8 @@ async function executeCreateTechMultiEvent() {
   });
 }
 
-Deno.cron(
-  "Reschedule tech multi event",
-  "* * * * *",
-  executeCreateTechMultiEvent,
-);
+// Deno.cron(
+//   "Reschedule tech multi event",
+//   "* * * * *",
+//   executeCreateTechMultiEvent,
+// );
