@@ -10,7 +10,14 @@ import {
   APIChatInputApplicationCommandInteractionData,
   InteractionType,
 } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
-import { Client, GatewayIntentBits, GuildMember, User } from "npm:discord.js";
+import {
+  Client,
+  GatewayIntentBits,
+  GuildMember,
+  GuildScheduledEventEntityType,
+  GuildScheduledEventManager,
+  User,
+} from "npm:discord.js";
 
 // For all requests to "/" endpoint, we want to invoke home() handler.
 serve({
@@ -104,9 +111,9 @@ async function execute(commandEvent: unknown) {
     return executePlaylists(commandEvent);
   }
 
-  if (isCommandOfType(commandEvent, "boop-the-geek")) {
-    return await executeBoopTheGeek(commandEvent);
-  }
+  // if (isCommandOfType(commandEvent, "boop-the-geek")) {
+  //   return await executeBoopTheGeek(commandEvent);
+  // }
 
   return;
 }
@@ -158,18 +165,66 @@ function executePlaylists(commandEvent: CommandPlaylistsInteraction) {
   });
 }
 
-async function executeBoopTheGeek(commandEvent: CommandBoopTheGeekInteraction) {
+// async function executeBoopTheGeek(commandEvent: CommandBoopTheGeekInteraction) {
+//   const guildId = "689050370840068309";
+//   const userId = "954395586847719505";
+
+//   const client = new Client({ intents: [GatewayIntentBits.GuildMembers] });
+//   const guild = await client.guilds.fetch(guildId)
+//   const user = await guild.members.fetch(userId);
+
+//   return json({
+//     type: 4,
+//     data: {
+//       content: `Boop ${user.nickname}! They are ${user.moderatable ? "moderatable" : "not moderatable"}`
+//     }
+//   });
+// }
+
+async function executeCreateTechMultiEvent() {
   const guildId = "689050370840068309";
-  const userId = "954395586847719505";
 
-  const client = new Client({ intents: [GatewayIntentBits.GuildMembers] });
-  const guild = await client.guilds.fetch(guildId)
-  const user = await guild.members.fetch(userId);
+  const client = new Client({ intents: [ GatewayIntentBits.GuildScheduledEvents ] });
+  const guild = await client.guilds.fetch(guildId);
 
-  return json({
-    type: 4,
-    data: {
-      content: `Boop ${user.nickname}! They are ${user.moderatable ? "moderatable" : "not moderatable"}`
-    }
+  const hourMs = 60 * 60 * 1000;
+  const dayMs = 24 * hourMs;
+  const weekMs = dayMs * 7;
+  const nowMs = Date.now();
+  const lastThursday0Ms = nowMs - (nowMs % weekMs);
+  const nextThursday0Ms = lastThursday0Ms + 7 * dayMs;
+  const timezoneOffset = +(Intl
+    .DateTimeFormat(
+      [],
+      { timeZone: "Europe/Warsaw", timeZoneName: "short" },
+    )
+    .formatToParts(0)
+    .find((part) => part.type === "timeZoneName") ?? { value: "GMT+1" })
+    .value
+    .split("+")[1];
+  const timezonedNextThursday0Ms = nextThursday0Ms + timezoneOffset * hourMs;
+  const scheduledStartTime = timezonedNextThursday0Ms + 20 * hourMs;
+  const scheduledEndTime = timezonedNextThursday0Ms + 22 * hourMs;
+  console.log(new Date(scheduledStartTime));
+  console.log(new Date(scheduledEndTime));
+
+  const scheduledEvents = await guild.scheduledEvents.fetch();
+  if (scheduledEvents.size !== 0) return;
+  guild.scheduledEvents.create({
+    entityType: GuildScheduledEventEntityType.External,
+    entityMetadata: {
+      location: "Multiplayer+",
+    },
+    name: "Test",
+    description: ``,
+    scheduledStartTime,
+    scheduledEndTime,
+    privacyLevel: 2, // guild-only
   });
 }
+
+Deno.cron(
+  "Reschedule tech multi event",
+  "10 * * * *",
+  executeCreateTechMultiEvent,
+);
