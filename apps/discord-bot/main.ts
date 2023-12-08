@@ -225,6 +225,6 @@ async function executeCreateTechMultiEvent() {
 
 Deno.cron(
   "Reschedule tech multi event",
-  "10 * * * *",
+  "* * * * *",
   executeCreateTechMultiEvent,
 );
