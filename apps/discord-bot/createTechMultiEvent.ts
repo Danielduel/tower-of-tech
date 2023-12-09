@@ -82,8 +82,9 @@ export async function createTechMultiEvent() {
 
   const channel = await guild.channels.fetch(broadcastChannelId);
   if (channel?.isTextBased()) {
+    const startTimeWithoutMilis = Math.floor(eventTimes.scheduledStartTime / 1000)
     channel.send(`
-${eventTitle} in <t:${eventTimes.scheduledStartTime}:R>
+${eventTitle} in <t:${startTimeWithoutMilis}:R>
 
 <@&1111286344837247107>
 <@&1111286551494799530>
