@@ -10,6 +10,7 @@ import {
   APIChatInputApplicationCommandInteractionData,
   InteractionType,
 } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
+import { createTechMultiEvent } from "./createTechMultiEvent.ts";
 import {
   Client,
   GatewayIntentBits,
@@ -173,91 +174,9 @@ function executePlaylists(commandEvent: CommandPlaylistsInteraction) {
   });
 }
 
-// async function executeBoopTheGeek(commandEvent: CommandBoopTheGeekInteraction) {
-//   const guildId = "689050370840068309";
-//   const userId = "954395586847719505";
+Deno.cron(
+  "Reschedule tech multi event",
+  "* * * * *",
+  createTechMultiEvent,
+);
 
-//   const client = new Client({ intents: [GatewayIntentBits.GuildMembers] });
-//   const guild = await client.guilds.fetch(guildId)
-//   const user = await guild.members.fetch(userId);
-
-//   return json({
-//     type: 4,
-//     data: {
-//       content: `Boop ${user.nickname}! They are ${user.moderatable ? "moderatable" : "not moderatable"}`
-//     }
-//   });
-// }
-
-async function executeCreateTechMultiEvent() {
-  // const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
-  const guildId = "689050370840068309";
-  // DISCORD_TOT_BOT_CLIENT_ID=
-  // DISCORD_TOT_BOT_TOKEN=
-  // DISCORD_TOT_APP_PUBLIC_KEY=
-  // DISCORD_TOT_APP_SECRET_KEY
-  const clientId = Deno.env.get("DISCORD_TOT_BOT_CLIENT_ID")!;
-  const clientSecret = Deno.env.get("DISCORD_TOT_APP_SECRET_KEY")!;
-
-  const tokenResponseData = await fetch('https://discord.com/api/oauth2/token', {
-				method: 'POST',
-				body: new URLSearchParams({
-					client_id: clientId,
-					client_secret: clientSecret,
-					code,
-					grant_type: 'authorization_code',
-					redirect_uri: `http://localhost:${port}`,
-					scope: 'identify',
-				}).toString(),
-				headers: {
-					'Content-Type': 'application/x-www-form-urlencoded',
-				},
-			});
-
-  const client = new Client({
-    intents: [ GatewayIntentBits.GuildScheduledEvents ]
-  });
-  await client.login(DISCORD_TOT_BOT_TOKEN)
-  const guild = await client.guilds.fetch(guildId);
-
-  const hourMs = 60 * 60 * 1000;
-  const dayMs = 24 * hourMs;
-  const weekMs = dayMs * 7;
-  const nowMs = Date.now();
-  const lastThursday0Ms = nowMs - (nowMs % weekMs);
-  const nextThursday0Ms = lastThursday0Ms + 7 * dayMs;
-  const timezoneOffset = +(Intl
-    .DateTimeFormat(
-      [],
-      { timeZone: "Europe/Warsaw", timeZoneName: "short" },
-    )
-    .formatToParts(0)
-    .find((part) => part.type === "timeZoneName") ?? { value: "GMT+1" })
-    .value
-    .split("+")[1];
-  const timezonedNextThursday0Ms = nextThursday0Ms + timezoneOffset * hourMs;
-  const scheduledStartTime = timezonedNextThursday0Ms + 20 * hourMs;
-  const scheduledEndTime = timezonedNextThursday0Ms + 22 * hourMs;
-  console.log(new Date(scheduledStartTime));
-  console.log(new Date(scheduledEndTime));
-
-  const scheduledEvents = await guild.scheduledEvents.fetch();
-  if (scheduledEvents.size !== 0) return;
-  guild.scheduledEvents.create({
-    entityType: GuildScheduledEventEntityType.External,
-    entityMetadata: {
-      location: "Multiplayer+",
-    },
-    name: "Test",
-    description: ``,
-    scheduledStartTime,
-    scheduledEndTime,
-    privacyLevel: 2, // guild-only
-  });
-}
-
-// Deno.cron(
-//   "Reschedule tech multi event",
-//   "* * * * *",
-//   executeCreateTechMultiEvent,
-// );

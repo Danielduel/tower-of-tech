@@ -1,6 +1,6 @@
 # ToT Bot invite link
 
-https://discord.com/api/oauth2/authorize?client_id=1171582001900421192&permissions=17600775979008&scope=bot+applications.commands
+https://discord.com/api/oauth2/authorize?client_id=1171582001900421192&permissions=17600775982080&scope=bot+applications.commands
 # Development of the website
 
 You need `Deno` and `s3s-fs`
