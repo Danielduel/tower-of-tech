@@ -160,7 +160,7 @@ function executePlaylists(commandEvent: CommandPlaylistsInteraction) {
 
 Deno.cron(
   "Reschedule tech multi event",
-  "* * * * *",
+  "0 0 * * Fri",
   createTechMultiEvent,
 );
 
