@@ -11,22 +11,6 @@ import {
   InteractionType,
 } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
 import { createTechMultiEvent } from "./createTechMultiEvent.ts";
-import {
-  Client,
-  GatewayIntentBits,
-  GuildMember,
-  GuildScheduledEventEntityType,
-  GuildScheduledEventManager,
-  User,
-} from "npm:discord.js";
-// import {
-//   getRequiredEnv,
-//   getSessionId,
-//   handleCallback,
-//   type OAuth2ClientConfig,
-//   signIn,
-//   signOut,
-// } from "https://deno.land/x/deno_kv_oauth@v0.10.0/mod.ts";
 
 // For all requests to "/" endpoint, we want to invoke home() handler.
 serve({

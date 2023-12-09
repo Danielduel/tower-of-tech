@@ -4,7 +4,6 @@ import {
   GuildScheduledEventEntityType,
 } from "npm:discord.js";
 
-
 function getStartAndEndTime() {
   const hourMs = 60 * 60 * 1000;
   const dayMs = 24 * hourMs;
