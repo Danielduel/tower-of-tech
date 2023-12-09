@@ -16,18 +16,19 @@ function getStartAndEndTime() {
       [],
       { timeZone: "Europe/Warsaw", timeZoneName: "short" },
     )
-    .formatToParts(0)
+    .formatToParts(nextThursday0Ms)
     .find((part) => part.type === "timeZoneName") ?? { value: "GMT+1" })
     .value
     .split("+")[1];
-  const timezonedNextThursday0Ms = nextThursday0Ms + timezoneOffset * hourMs;
+  const timezonedNextThursday0Ms = nextThursday0Ms - timezoneOffset * hourMs;
   const scheduledStartTime = timezonedNextThursday0Ms + 20 * hourMs;
   const scheduledEndTime = timezonedNextThursday0Ms + 22 * hourMs;
+
   return {
     scheduledStartTime,
     scheduledEndTime,
   } as const;
-} 
+}
 
 const eventTitle = `Tech multi`;
 const eventDescription = `## Brief summary
