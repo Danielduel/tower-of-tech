@@ -85,7 +85,7 @@ export async function createTechMultiEvent() {
   if (channel?.isTextBased()) {
     const startTimeWithoutMilis = Math.floor(eventTimes.scheduledStartTime / 1000)
     channel.send(`
-${eventTitle} in <t:${startTimeWithoutMilis}:R>
+${eventTitle} <t:${startTimeWithoutMilis}:R>
 
 <@&1111286344837247107>
 <@&1111286551494799530>
