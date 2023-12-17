@@ -15,18 +15,6 @@
       ]
     },
     {
-      "songName": "Frustration",
-      "levelAuthorName": "Nota",
-      "hash": "86843A47DA42539E67A258588A272AF26D8D02D6",
-      "levelid": "custom_level_86843A47DA42539E67A258588A272AF26D8D02D6",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Bassdrop Freaks",
       "levelAuthorName": "Aquaflee",
       "hash": "84F2F741B1D6D897987B155ECB832375D0C8505F",
@@ -919,6 +907,114 @@
       "levelAuthorName": "Komeijisan051",
       "hash": "407DFBF4FFD6B6A322A749F0902B8F5F4FB627B6",
       "levelid": "custom_level_407DFBF4FFD6B6A322A749F0902B8F5F4FB627B6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "unravel",
+      "levelAuthorName": "EOP Glacier",
+      "hash": "DAF948BA638557628531A9D55D1906D11F5DD517",
+      "levelid": "custom_level_DAF948BA638557628531A9D55D1906D11F5DD517",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "LAND OF FIRE",
+      "levelAuthorName": "oegoe",
+      "hash": "E9BB1C35086C67A2F7F6930C6BB762BF2E6EC502",
+      "levelid": "custom_level_E9BB1C35086C67A2F7F6930C6BB762BF2E6EC502",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "EASY LOVE",
+      "levelAuthorName": "That_Narwhal",
+      "hash": "CDA84787D04A46335A5CC6C986DF999B3EB492DE",
+      "levelid": "custom_level_CDA84787D04A46335A5CC6C986DF999B3EB492DE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Crave The Bassline",
+      "levelAuthorName": "FentonVR",
+      "hash": "728129B0D73A306987D16FD8F9624317FB1976B0",
+      "levelid": "custom_level_728129B0D73A306987D16FD8F9624317FB1976B0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Chandelier",
+      "levelAuthorName": "Enduo",
+      "hash": "D913F4DF9A96FE4622D21D4740A3D33C590EAB9E",
+      "levelid": "custom_level_D913F4DF9A96FE4622D21D4740A3D33C590EAB9E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Total Ripoff",
+      "levelAuthorName": "P90KILLR",
+      "hash": "3595618E7F8DFB848E9D73A48657664A5A9AD36F",
+      "levelid": "custom_level_3595618E7F8DFB848E9D73A48657664A5A9AD36F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "I don't care about Christmas though",
+      "levelAuthorName": "chikinbiskit & DaftMaple",
+      "hash": "6AF69C7DF01841B2C5DE8937AB429263CF28178F",
+      "levelid": "custom_level_6AF69C7DF01841B2C5DE8937AB429263CF28178F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Matsuri",
+      "levelAuthorName": "NTBased & CookedChili",
+      "hash": "2B74024625160D5629001D62C372D7A1CE5DC07C",
+      "levelid": "custom_level_2B74024625160D5629001D62C372D7A1CE5DC07C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Sound of Night Wind (Phonon Theme)",
+      "levelAuthorName": "Joetastic & Z-ANESaber",
+      "hash": "FF1FBAD91D465F40FD0AAB24078A92020FFDA19B",
+      "levelid": "custom_level_FF1FBAD91D465F40FD0AAB24078A92020FFDA19B",
       "difficulties": [
         {
           "characteristic": "Standard",

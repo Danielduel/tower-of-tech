@@ -950,6 +950,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Sakura Saku / サクラサク",
+      "levelAuthorName": "namaki_mono",
+      "hash": "6BAD9E03E770AEA039A4FA49F891472D54863754",
+      "levelid": "custom_level_6BAD9E03E770AEA039A4FA49F891472D54863754",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

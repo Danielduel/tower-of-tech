@@ -1,84 +1,12 @@
 {
-  "playlistTitle": "ToT - AdepComfy",
+  "playlistTitle": "ToT - SonicTech",
   "playlistAuthor": "Danielduel",
   "songs": [
     {
-      "songName": "Hellcat",
-      "levelAuthorName": "CyanSnow",
-      "hash": "BDF85D5D575A992139EFF968A8348B3E6F03EEFE",
-      "levelid": "custom_level_BDF85D5D575A992139EFF968A8348B3E6F03EEFE",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "ZOMBIE CIRCUS",
-      "levelAuthorName": "ThySpoon",
-      "hash": "7CF39845195F0079BBCB1AAC52FED8578723F88D",
-      "levelid": "custom_level_7CF39845195F0079BBCB1AAC52FED8578723F88D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "Fighting Myself",
-      "levelAuthorName": "Bytrius",
-      "hash": "2E2C73F19E4B67D9C27CA359430C68ADB7B74F7B",
-      "levelid": "custom_level_2E2C73F19E4B67D9C27CA359430C68ADB7B74F7B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "Mr. Pinstripe",
-      "levelAuthorName": "Davaayy",
-      "hash": "FDA7C569BC9C5C0A34C99609354015D44B7C8DB4",
-      "levelid": "custom_level_FDA7C569BC9C5C0A34C99609354015D44B7C8DB4",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "Jump Up - Super Star Remix",
-      "levelAuthorName": "4orizon",
-      "hash": "A813829E5D51B8A13CB009DD3FBEFCF0D18BC684",
-      "levelid": "custom_level_A813829E5D51B8A13CB009DD3FBEFCF0D18BC684",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Myths You Forgot",
-      "levelAuthorName": "nolan121405",
-      "hash": "B3574125C2C8D6E187D4B7C5D59B5BB625FD2217",
-      "levelid": "custom_level_B3574125C2C8D6E187D4B7C5D59B5BB625FD2217",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Goofy Evanescence",
-      "levelAuthorName": "thelitlewiseowl",
-      "hash": "239FC92E63FBD94D851CCE14CE968F5360C4B185",
-      "levelid": "custom_level_239FC92E63FBD94D851CCE14CE968F5360C4B185",
+      "songName": "Diabolic Swing",
+      "levelAuthorName": "soap & blueraptor101",
+      "hash": "8E6E0C9FC7DF36561649F89C314FBA4870446835",
+      "levelid": "custom_level_8E6E0C9FC7DF36561649F89C314FBA4870446835",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -87,10 +15,10 @@
       ]
     },
     {
-      "songName": "Angels Fall",
-      "levelAuthorName": "ASharpBlade",
-      "hash": "E3763053A2D081206D6E105E184CDFEFA6F3C894",
-      "levelid": "custom_level_E3763053A2D081206D6E105E184CDFEFA6F3C894",
+      "songName": "Yggdrasil",
+      "levelAuthorName": "GalaxyMaster",
+      "hash": "6E9498F81BBF26FA47B1691557B22486A720254D",
+      "levelid": "custom_level_6E9498F81BBF26FA47B1691557B22486A720254D",
       "difficulties": [
         {
           "characteristic": "Standard",

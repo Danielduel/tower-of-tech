@@ -62,6 +62,42 @@
           "name": "Expert"
         }
       ]
+    },
+    {
+      "songName": "Myths You Forgot",
+      "levelAuthorName": "nolan121405",
+      "hash": "B3574125C2C8D6E187D4B7C5D59B5BB625FD2217",
+      "levelid": "custom_level_B3574125C2C8D6E187D4B7C5D59B5BB625FD2217",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Goofy Evanescence",
+      "levelAuthorName": "thelitlewiseowl",
+      "hash": "239FC92E63FBD94D851CCE14CE968F5360C4B185",
+      "levelid": "custom_level_239FC92E63FBD94D851CCE14CE968F5360C4B185",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Angels Fall",
+      "levelAuthorName": "ASharpBlade",
+      "hash": "E3763053A2D081206D6E105E184CDFEFA6F3C894",
+      "levelid": "custom_level_E3763053A2D081206D6E105E184CDFEFA6F3C894",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

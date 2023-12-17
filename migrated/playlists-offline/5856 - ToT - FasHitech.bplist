@@ -38,6 +38,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Frustration",
+      "levelAuthorName": "Nota",
+      "hash": "86843A47DA42539E67A258588A272AF26D8D02D6",
+      "levelid": "custom_level_86843A47DA42539E67A258588A272AF26D8D02D6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "PANIC HOLIC",
+      "levelAuthorName": "oermergeesh",
+      "hash": "4C57E8F74EF06D00BD25289977226B87F053F94B",
+      "levelid": "custom_level_4C57E8F74EF06D00BD25289977226B87F053F94B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Elemental Creation",
+      "levelAuthorName": "Habryka x okazu",
+      "hash": "D593E94B3228E90C847AA76EB0BEA42210D36554",
+      "levelid": "custom_level_D593E94B3228E90C847AA76EB0BEA42210D36554",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

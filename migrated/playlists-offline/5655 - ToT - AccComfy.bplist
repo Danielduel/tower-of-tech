@@ -112,18 +112,6 @@
       ]
     },
     {
-      "songName": "Angels Fall",
-      "levelAuthorName": "ASharpBlade",
-      "hash": "E3763053A2D081206D6E105E184CDFEFA6F3C894",
-      "levelid": "custom_level_E3763053A2D081206D6E105E184CDFEFA6F3C894",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Last Resort",
       "levelAuthorName": "Bytrius",
       "hash": "48DB559D5082D2C7D6F052C3DB3EF2A29F7347F4",
@@ -268,18 +256,6 @@
       ]
     },
     {
-      "songName": "Land of Confusion",
-      "levelAuthorName": "RateGyro & TheCzar1994",
-      "hash": "3FDAD3E199483CC1BF6DFF3BBA3BA7FAABA6EC30",
-      "levelid": "custom_level_3FDAD3E199483CC1BF6DFF3BBA3BA7FAABA6EC30",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Pica",
       "levelAuthorName": "DeeDee",
       "hash": "0117E7B024BB54AF25F8FF94FEFE986B66546572",
@@ -408,6 +384,30 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "I'm Good (Blue)",
+      "levelAuthorName": "RFColaf",
+      "hash": "E4F684F9CC7EBAF9519FB22B9F8D82367FF6086F",
+      "levelid": "custom_level_E4F684F9CC7EBAF9519FB22B9F8D82367FF6086F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Coming Home (Extended Mix)",
+      "levelAuthorName": "Joetastic",
+      "hash": "277722E7E74E58D9C35E6C259698A481EE068EA1",
+      "levelid": "custom_level_277722E7E74E58D9C35E6C259698A481EE068EA1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

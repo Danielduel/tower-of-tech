@@ -266,6 +266,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Bohemian",
+      "levelAuthorName": "Pleo",
+      "hash": "A2FBFD94E652138B2F4F9A699C25E437EBF3A203",
+      "levelid": "custom_level_A2FBFD94E652138B2F4F9A699C25E437EBF3A203",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Believe Light",
+      "levelAuthorName": "秋柔嫣姬&wangyufy",
+      "hash": "1D360CC41CCC329544D861B2D184CDA2A3D6AC90",
+      "levelid": "custom_level_1D360CC41CCC329544D861B2D184CDA2A3D6AC90",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "wild animal",
+      "levelAuthorName": "Jabob",
+      "hash": "0E735DA5012A73EC74E64C72E3542368D71F8407",
+      "levelid": "custom_level_0E735DA5012A73EC74E64C72E3542368D71F8407",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

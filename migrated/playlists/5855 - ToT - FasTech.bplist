@@ -50,6 +50,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Tempo Katana",
+      "levelAuthorName": "Nolanimations",
+      "hash": "A16C2CE4D79D47AF58DD02A52DD0B0778CB4252D",
+      "levelid": "custom_level_A16C2CE4D79D47AF58DD02A52DD0B0778CB4252D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Never Alone",
+      "levelAuthorName": "DE125",
+      "hash": "1811AD76590BC42D80A25840146F1482B77E06F3",
+      "levelid": "custom_level_1811AD76590BC42D80A25840146F1482B77E06F3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Queen of Heart",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "02609051F51376BFA2D5829860257B9E5C039385",
+      "levelid": "custom_level_02609051F51376BFA2D5829860257B9E5C039385",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

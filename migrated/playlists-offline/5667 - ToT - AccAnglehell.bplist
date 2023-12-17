@@ -741,6 +741,54 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Mainichi Kashimashi Pharmacy",
+      "levelAuthorName": "KitsuriKon",
+      "hash": "7498143A1E778017DB3BCE6D1AB523E72C17C60E",
+      "levelid": "custom_level_7498143A1E778017DB3BCE6D1AB523E72C17C60E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Numb Little Bug",
+      "levelAuthorName": "Jevk",
+      "hash": "01DEFE291DB8E813245D41781ACDEE82EE7E028A",
+      "levelid": "custom_level_01DEFE291DB8E813245D41781ACDEE82EE7E028A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Eve, Psyche & The Bluebeard's Wife",
+      "levelAuthorName": "tocxx",
+      "hash": "090D4F32B3D35610CAC354069EA9C169269E3ADC",
+      "levelid": "custom_level_090D4F32B3D35610CAC354069EA9C169269E3ADC",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dance of the Corpses",
+      "levelAuthorName": "aruru",
+      "hash": "46022AC66914546582D6AEB988063BF1AB81C285",
+      "levelid": "custom_level_46022AC66914546582D6AEB988063BF1AB81C285",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

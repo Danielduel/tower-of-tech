@@ -290,6 +290,30 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "太极",
+      "levelAuthorName": "seasonsmouse",
+      "hash": "A5CD8FF1CE90A043D66109C02639A2CFB896039A",
+      "levelid": "custom_level_A5CD8FF1CE90A043D66109C02639A2CFB896039A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Young Girl A",
+      "levelAuthorName": "PogU",
+      "hash": "71FC8D81E041BB660F28DFEBB895F9AA09BC28EC",
+      "levelid": "custom_level_71FC8D81E041BB660F28DFEBB895F9AA09BC28EC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

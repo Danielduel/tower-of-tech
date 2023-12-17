@@ -315,18 +315,6 @@
       ]
     },
     {
-      "songName": "LAND OF FIRE",
-      "levelAuthorName": "oegoe",
-      "hash": "E9BB1C35086C67A2F7F6930C6BB762BF2E6EC502",
-      "levelid": "custom_level_E9BB1C35086C67A2F7F6930C6BB762BF2E6EC502",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Transcend",
       "levelAuthorName": "SmokeyBacon",
       "hash": "EAFBBAC66DA0DF7FFEF8228A0EEE2AB32C7C1F39",
@@ -367,18 +355,6 @@
       "levelAuthorName": "Idlebob",
       "hash": "145A68E54124DCF2EC55CABCC0681367DE4F99D1",
       "levelid": "custom_level_145A68E54124DCF2EC55CABCC0681367DE4F99D1",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "EASY LOVE",
-      "levelAuthorName": "That_Narwhal",
-      "hash": "CDA84787D04A46335A5CC6C986DF999B3EB492DE",
-      "levelid": "custom_level_CDA84787D04A46335A5CC6C986DF999B3EB492DE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1203,18 +1179,6 @@
       ]
     },
     {
-      "songName": "Goofy Evanescence",
-      "levelAuthorName": "thelitlewiseowl",
-      "hash": "239FC92E63FBD94D851CCE14CE968F5360C4B185",
-      "levelid": "custom_level_239FC92E63FBD94D851CCE14CE968F5360C4B185",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Ifuudoudou (Pomp and Circumstance)",
       "levelAuthorName": "Joetastic",
       "hash": "52B6559BCBF987BF2D33BBE513ADC9166E3A1032",
@@ -1339,18 +1303,6 @@
       "levelAuthorName": "Nixie.Korten",
       "hash": "1C93BBB38BAFE3C0C2EB5F9A3AC5AA8DA1BD6ABE",
       "levelid": "custom_level_1C93BBB38BAFE3C0C2EB5F9A3AC5AA8DA1BD6ABE",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Crave The Bassline",
-      "levelAuthorName": "FentonVR",
-      "hash": "728129B0D73A306987D16FD8F9624317FB1976B0",
-      "levelid": "custom_level_728129B0D73A306987D16FD8F9624317FB1976B0",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1781,8 +1733,8 @@
     {
       "songName": "Zuru feat. HARU ",
       "levelAuthorName": "mojo",
-      "hash": "9076EAAA9AF94088D8EBC361D274F9D5D3E82197",
-      "levelid": "custom_level_9076EAAA9AF94088D8EBC361D274F9D5D3E82197",
+      "hash": "4B905BE1814D022F3069113C440994603CBBC8D7",
+      "levelid": "custom_level_4B905BE1814D022F3069113C440994603CBBC8D7",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1949,8 +1901,8 @@
     {
       "songName": "Losing My Religion",
       "levelAuthorName": "GojiCrafter",
-      "hash": "CB75FFE66CA7CA134D30932DA496CA033F21FA49",
-      "levelid": "custom_level_CB75FFE66CA7CA134D30932DA496CA033F21FA49",
+      "hash": "02175D27756185E84C1FF96CC158F95555046BE6",
+      "levelid": "custom_level_02175D27756185E84C1FF96CC158F95555046BE6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1999,6 +1951,66 @@
       "levelAuthorName": "Acubens",
       "hash": "597C55E661DF344EF12CE313288C7ABE21F45AF9",
       "levelid": "custom_level_597C55E661DF344EF12CE313288C7ABE21F45AF9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Idol",
+      "levelAuthorName": "yabje, Rusty & Andy",
+      "hash": "8EA6D40002CECB79121F126921BEE431A5A046F5",
+      "levelid": "custom_level_8EA6D40002CECB79121F126921BEE431A5A046F5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Get Ready",
+      "levelAuthorName": "Tpenny68 & The Salami Man",
+      "hash": "0CB78D57543F9BA79E4EA5FE4FE176E2538686CA",
+      "levelid": "custom_level_0CB78D57543F9BA79E4EA5FE4FE176E2538686CA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Third Sun",
+      "levelAuthorName": "Voidless",
+      "hash": "CC9C70C17E7E764217F3A50B972FBEF86CC7923A",
+      "levelid": "custom_level_CC9C70C17E7E764217F3A50B972FBEF86CC7923A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Party Evenig, HOLLOWood",
+      "levelAuthorName": "mikuri",
+      "hash": "C55D03A0024168F94DC56A359E6FA388DE700C47",
+      "levelid": "custom_level_C55D03A0024168F94DC56A359E6FA388DE700C47",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Sound 104",
+      "levelAuthorName": "Nixie.Korten",
+      "hash": "A9F80417228B6D5390B4691AE43EDF55222CEE81",
+      "levelid": "custom_level_A9F80417228B6D5390B4691AE43EDF55222CEE81",
       "difficulties": [
         {
           "characteristic": "Standard",

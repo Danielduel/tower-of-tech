@@ -4,30 +4,6 @@
   "playlistTitle": "ToT - AccHitech",
   "songs": [
     {
-      "songName": "Sakura Saku / サクラサク",
-      "levelAuthorName": "namaki_mono",
-      "hash": "6BAD9E03E770AEA039A4FA49F891472D54863754",
-      "levelid": "custom_level_6BAD9E03E770AEA039A4FA49F891472D54863754",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Eve, Psyche & The Bluebeard's Wife",
-      "levelAuthorName": "tocxx",
-      "hash": "090D4F32B3D35610CAC354069EA9C169269E3ADC",
-      "levelid": "custom_level_090D4F32B3D35610CAC354069EA9C169269E3ADC",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Melancholy",
       "levelAuthorName": "exhaustedallthetime",
       "hash": "F694742CCB25F2FD35262DD4663024B141BD0C24",
@@ -932,6 +908,30 @@
       "levelAuthorName": "Andynak",
       "hash": "3820DD20E125EEF2F58AED9BDC9ACD2AC8E84476",
       "levelid": "custom_level_3820DD20E125EEF2F58AED9BDC9ACD2AC8E84476",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Party Evenig, HOLLOWood",
+      "levelAuthorName": "mikuri",
+      "hash": "C55D03A0024168F94DC56A359E6FA388DE700C47",
+      "levelid": "custom_level_C55D03A0024168F94DC56A359E6FA388DE700C47",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Temptation",
+      "levelAuthorName": "Fainted",
+      "hash": "4E4E1F66767FDBF19A4905D7D319B1955AE4B192",
+      "levelid": "custom_level_4E4E1F66767FDBF19A4905D7D319B1955AE4B192",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -278,6 +278,54 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Fur Elise",
+      "levelAuthorName": "Elecast",
+      "hash": "AE40FF915DDE0281B9165B6A1B33496A27A3762B",
+      "levelid": "custom_level_AE40FF915DDE0281B9165B6A1B33496A27A3762B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Arcana Eden",
+      "levelAuthorName": "yabje & Mr_bjo",
+      "hash": "C6ADDDC6EA5AF21E691D28A7D3ABB6F825864116",
+      "levelid": "custom_level_C6ADDDC6EA5AF21E691D28A7D3ABB6F825864116",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "WONDER $LOT 777",
+      "levelAuthorName": "ThyYeet",
+      "hash": "4A83EC2EAF1CEC26BA816C48826B17AFF1322045",
+      "levelid": "custom_level_4A83EC2EAF1CEC26BA816C48826B17AFF1322045",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Tenkaranbu",
+      "levelAuthorName": "himazinnnn",
+      "hash": "4D8E8038A08C4099DA912CB07A167482E05F217B",
+      "levelid": "custom_level_4D8E8038A08C4099DA912CB07A167482E05F217B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

@@ -830,6 +830,66 @@
           "name": "Normal"
         }
       ]
+    },
+    {
+      "songName": "Deertracks",
+      "levelAuthorName": "AllPoland & Phøenix",
+      "hash": "63757612F82E0906C290323A373E4874E5176958",
+      "levelid": "custom_level_63757612F82E0906C290323A373E4874E5176958",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "My Head & My Heart",
+      "levelAuthorName": "Faded 99",
+      "hash": "7B337085DAD8E0D4B5DD7F0F88F44EA9D5D2D42A",
+      "levelid": "custom_level_7B337085DAD8E0D4B5DD7F0F88F44EA9D5D2D42A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "p.h.",
+      "levelAuthorName": "TOFU",
+      "hash": "84BCFF4756AC66BF1746824B0B221EB1E6A4AFF2",
+      "levelid": "custom_level_84BCFF4756AC66BF1746824B0B221EB1E6A4AFF2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Cold-Blooded",
+      "levelAuthorName": "ben208, Phøenix",
+      "hash": "A57F26985FE0BB67F571146705E929BCBF02EC02",
+      "levelid": "custom_level_A57F26985FE0BB67F571146705E929BCBF02EC02",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Land of Confusion",
+      "levelAuthorName": "RateGyro & TheCzar1994",
+      "hash": "3FDAD3E199483CC1BF6DFF3BBA3BA7FAABA6EC30",
+      "levelid": "custom_level_3FDAD3E199483CC1BF6DFF3BBA3BA7FAABA6EC30",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {
