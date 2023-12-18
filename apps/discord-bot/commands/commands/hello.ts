@@ -53,7 +53,10 @@ export async function executeHello(commandEvent: CommandHelloInteraction) {
   ], async (client) => {
     const guild = await client.guilds.fetch("689050370840068309");
     const channel = await guild.channels.fetch("1186318031907979314");
-    if (!channel?.isTextBased()) return;
+    if (!channel?.isTextBased()) {
+      console.log("Channel is not text based");
+      return;
+    }
 
     const messages = await channel.messages.fetch({
       limit: 100,
