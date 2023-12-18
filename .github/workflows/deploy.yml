@@ -3,7 +3,7 @@ name: Deploy
 on: push
 
 jobs:
-  discord-bot/deploy:
+  discord-bot_deploy:
     runs-on: ubuntu-latest
 
     permissions:
@@ -20,7 +20,7 @@ jobs:
           project: danielduel-tot-bot
           entrypoint: apps/discord-bot/main.ts
 
-  editor/deploy:
+  editor_deploy:
     runs-on: ubuntu-latest
 
     permissions:
@@ -37,7 +37,7 @@ jobs:
           project: tower-of-tech-editor
           entrypoint: apps/editor/server.tsx
 
-  discord-bot/register-commands:
+  discord-bot_register-commands:
     runs-on: ubuntu-latest
 
     permissions:
