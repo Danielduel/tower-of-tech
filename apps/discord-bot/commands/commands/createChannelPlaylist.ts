@@ -30,12 +30,14 @@ export async function executeCreateChannelPlaylist(
     ))).filter((x) =>
       !!x
     );
-    return respondWithMessage(`I would create a playlist of:
+    const response = `I would create a playlist of:
     ${
       messagesWithResolved.map((x) => `
     ${x?.beatSaverData?.versions[0].hash}
     (${x?.beatSaverData?.name} mapped by ${x?.beatSaverData?.uploader.name})`).join("\n")
     }
-    `);
+    `
+    console.log(response);
+    return respondWithMessage(response);
   });
 }
