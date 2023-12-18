@@ -57,7 +57,6 @@ export async function executeHello(commandEvent: CommandHelloInteraction) {
       console.log("Channel is not text based");
       return;
     }
-    return respondWithMessage(`I would create a playlist of: ...`);
 
     const messages = await channel.messages.fetch({
       limit: 100,
