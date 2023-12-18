@@ -43,6 +43,7 @@ const filterAndTransformMessage = async (message: Message) => {
 };
 
 export async function executeHello(commandEvent: CommandHelloInteraction) {
+  console.log(commandEvent);
   if (commandEvent.user?.id !== "221718279423655937") {
     console.log("Invalid caller id ", commandEvent.user?.id);
     return;
