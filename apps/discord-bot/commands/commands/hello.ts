@@ -43,7 +43,10 @@ const filterAndTransformMessage = async (message: Message) => {
 };
 
 export async function executeHello(commandEvent: CommandHelloInteraction) {
-  if (commandEvent.user?.id !== "221718279423655937") return;
+  if (commandEvent.user?.id !== "221718279423655937") {
+    console.log("Invalid caller id ", commandEvent.user?.id);
+    return;
+  }
   await useClient([
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMessages,
