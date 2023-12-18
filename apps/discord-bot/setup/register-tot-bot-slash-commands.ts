@@ -21,6 +21,8 @@ const registerCommand = async (body: any) => {
   }
 
   console.error(response);
+
+  throw "Register command error";
 };
 
 try {
@@ -31,7 +33,7 @@ try {
   });
 
   await registerCommand({
-    name: "createChannelPlaylist",
+    name: "createchannelplaylist",
     description: "(admin) Get debug output of what would be crated from given channel",
     options: [],
   });
