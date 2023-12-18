@@ -10,9 +10,9 @@ type CommandMapping = {
   createchannelplaylist: CommandEmptyInteraction;
 };
 
-export function router(commandEvent: unknown) {
+export async function router(commandEvent: unknown) {
   if (isCommandOfType(commandEvent, "createchannelplaylist")) {
-    return executeCreateChannelPlaylist(commandEvent);
+    return await executeCreateChannelPlaylist(commandEvent);
   }
 
   if (isCommandOfType(commandEvent, "playlists")) {
