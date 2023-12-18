@@ -1,64 +1,14 @@
-import { z } from "zod";
-import {
-  ApiResponse,
-  zodApiClient,
-  zodApiResource,
-} from "https://deno.land/x/zod_api@v0.3.1/mod.ts";
-import partition from "https://deno.land/x/denodash@0.1.3/src/array/partition.ts";
 import {
   BeatSaverMapByHashResponseSchema,
-  BeatSaverMapResponseSuccessSchema,
 } from "../types/beatsaver.ts";
 import { fetcher } from "../fetcher/mod.ts";
-import { getLogger } from "../logger/mod.ts";
 import { fileExists } from "../fs/fileExists.ts";
 import { LowercaseMapHash } from "../types/brands.ts";
 import { s3client } from "@/packages/database/mod.ts";
 import { buckets } from "@/packages/database/buckets.ts";
+import { BeatSaverApi } from "./api.ts";
 
-export const BeatSaverApi = zodApiClient({
-  fetcher,
-  baseUrl: "https://api.beatsaver.com/",
-  logger: await getLogger(),
-  resources: {
-    mapById: zodApiResource("/maps/id/:id", {
-      urlParamsSchema: z.object({
-        id: z.string(),
-      }),
-      actions: {
-        get: {
-          dataSchema: BeatSaverMapResponseSuccessSchema,
-        },
-      },
-    }),
-
-    // up to 50 ids
-    mapsByIds: zodApiResource("/maps/ids/:ids", {
-      urlParamsSchema: z.object({
-        ids: z.string(),
-      }),
-      actions: {
-        get: {
-          dataSchema: z.object({
-            id: z.string().regex(/[0-9a-fA-F,]+/),
-          }),
-        },
-      },
-    }),
-
-    // up to 50 hashes
-    mapByHash: zodApiResource("/maps/hash/:hash", {
-      urlParamsSchema: z.object({
-        hash: z.string().regex(/[0-9a-f,]+/),
-      }),
-      actions: {
-        get: {
-          dataSchema: BeatSaverMapByHashResponseSchema,
-        },
-      },
-    }),
-  },
-});
+export { BeatSaverApi };
 
 const getMapHashResponseCacheKey = (
   hash: LowercaseMapHash,

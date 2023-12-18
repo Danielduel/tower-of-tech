@@ -12,6 +12,8 @@
     "dev-remote": "deno task editor:dev-remote",
     "purge": "deno run -A --unstable ./purge.ts",
 
+    "discord:trigger:hello": "deno run -A --env ./apps/discord-bot/commands/commands/hello.ts",
+
     "s3s-fs-local": "./scripts/s3s-fs-local.sh",
 
     "editor:dev": "TOT_ENVIRONMENT=local deno run -A --unstable --no-check --watch --import-map importMap.local.json ./apps/editor/server.tsx -p 8081",
