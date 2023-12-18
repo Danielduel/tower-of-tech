@@ -47,7 +47,7 @@ export async function executeHello(commandEvent: CommandHelloInteraction) {
     console.log("Invalid caller id ", commandEvent.member?.user?.id);
     return;
   }
-  await useClient([
+  return await useClient([
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMessages,
   ], async (client) => {

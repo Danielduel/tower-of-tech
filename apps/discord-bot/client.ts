@@ -25,6 +25,7 @@ export async function useClient(
   callback: (client: Client) => void,
 ) {
   const client = await createClient(intents);
-  await callback(client);
+  const result = await callback(client);
   await destroyClient(client);
+  return result;
 }
