@@ -28,7 +28,7 @@ export async function executeCreateChannelPlaylist(
     const messagesWithResolved = (await Promise.all(messages.map((m) =>
       findAndResolveUrlsToBeatSaverData(m.content)
     ))).filter((x) =>
-      !!x
+      !!x.beatSaverData
     );
     const response = `I would create a playlist of:
     ${
@@ -37,7 +37,7 @@ export async function executeCreateChannelPlaylist(
     (${x?.beatSaverData?.name} mapped by ${x?.beatSaverData?.uploader.name})`).join("\n")
     }
     `
-    console.log(response);
+    // console.log(response);
     return respondWithMessage(response);
   });
 }
