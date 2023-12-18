@@ -1,0 +1,26 @@
+name: Deploy - apps/discord-bot
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write # This is required to allow the GitHub Action to authenticate with Deno Deploy.
+      contents: read
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Register discord commands
+        env:
+          DISCORD_TOT_BOT_CLIENT_ID: ${{ secrets.DISCORD_TOT_BOT_CLIENT_ID }}
+          DISCORD_TOT_BOT_TOKEN: ${{ secrets.DISCORD_TOT_BOT_TOKEN }}
+        run: |
+          deno run --env -A apps/discord-bot/setup/register-tot-bot-slash-commands.ts

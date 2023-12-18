@@ -1,11 +1,30 @@
-import { executeHello } from "./commands/hello.ts";
-import { executePlaylists } from "./commands/playlists.ts";
-import { CommandHelloInteraction, CommandPlaylistsInteraction } from "@/apps/discord-bot/commands/types.ts";
+
+import { executePing } from "@/apps/discord-bot/commands/commands/ping.ts";
+import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
+import { executeCreateChannelPlaylist } from "@/apps/discord-bot/commands/commands/createChannelPlaylist.ts";
+import { executePlaylists } from "@/apps/discord-bot/commands/commands/playlists.ts";
 
 type CommandMapping = {
-  hello: CommandHelloInteraction;
-  playlists: CommandPlaylistsInteraction;
+  ping: CommandEmptyInteraction;
+  playlists: CommandEmptyInteraction;
+  createChannelPlaylist: CommandEmptyInteraction;
 };
+
+export function router(commandEvent: unknown) {
+  if (isCommandOfType(commandEvent, "createChannelPlaylist")) {
+    return executeCreateChannelPlaylist(commandEvent);
+  }
+
+  if (isCommandOfType(commandEvent, "playlists")) {
+    return executePlaylists();
+  }
+
+  if (isCommandOfType(commandEvent, "ping")) {
+    return executePing();
+  }
+
+  return;
+}
 
 function isCommandOfType<T extends keyof CommandMapping>(
   commandEvent: unknown,
@@ -20,16 +39,4 @@ function isCommandOfType<T extends keyof CommandMapping>(
     "name" in commandEvent.data && typeof commandEvent.data.name === "string" &&
     commandEvent.data.name === nameOfCommand
   );
-}
-
-export async function router(commandEvent: unknown) {
-  if (isCommandOfType(commandEvent, "hello")) {
-    return executeHello(commandEvent);
-  }
-
-  if (isCommandOfType(commandEvent, "playlists")) {
-    return executePlaylists(commandEvent);
-  }
-
-  return;
 }

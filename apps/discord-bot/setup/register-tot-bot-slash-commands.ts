@@ -1,9 +1,5 @@
-import { load } from "https://deno.land/std@0.205.0/dotenv/mod.ts";
-
-const {
-  DISCORD_TOT_BOT_CLIENT_ID,
-  DISCORD_TOT_BOT_TOKEN,
-} = await load();
+const DISCORD_TOT_BOT_CLIENT_ID = Deno.env.get("DISCORD_TOT_BOT_CLIENT_ID");
+const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN");
 
 const registerCommand = async (body: any) => {
   const data = await fetch(
@@ -24,30 +20,31 @@ const registerCommand = async (body: any) => {
     return;
   }
 
-  console.error(response)
+  console.error(response);
 };
 
 try {
   await registerCommand({
-    name: "hello",
+    name: "ping",
     description: "Test command / Test if bot is alive",
-    options: [{
-      name: "name",
-      description: "The name of the person",
-      type: 3,
-      required: true,
-    }],
-  });
-
-  await registerCommand({
-    name: "playlists",
-    description: "Get url to the playlist repository",
     options: [],
   });
 
   await registerCommand({
-    name: "boop-the-geek",
-    description: "Boop the very moderatable Geek",
+    name: "createChannelPlaylist",
+    description: "(admin) Get debug output of what would be crated from given channel",
+    options: [],
+  });
+  /*
+  name: "name",
+  description: "The name of the person",
+  type: 3,
+  required: true,
+  */
+
+  await registerCommand({
+    name: "playlists",
+    description: "Get url to the playlist repository",
     options: [],
   });
 } catch (_) {
