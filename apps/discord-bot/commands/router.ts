@@ -7,11 +7,11 @@ import { executePlaylists } from "@/apps/discord-bot/commands/commands/playlists
 type CommandMapping = {
   ping: CommandEmptyInteraction;
   playlists: CommandEmptyInteraction;
-  createChannelPlaylist: CommandEmptyInteraction;
+  createchannelplaylist: CommandEmptyInteraction;
 };
 
 export function router(commandEvent: unknown) {
-  if (isCommandOfType(commandEvent, "createChannelPlaylist")) {
+  if (isCommandOfType(commandEvent, "createchannelplaylist")) {
     return executeCreateChannelPlaylist(commandEvent);
   }
 
