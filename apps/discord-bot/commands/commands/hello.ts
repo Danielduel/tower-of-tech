@@ -70,7 +70,7 @@ export async function executeHello(commandEvent: CommandHelloInteraction) {
       messagesWithResolved.map((x) => `
     ${x?.resolved?.versions[0].hash}
     (${x?.resolved?.name} mapped by ${x?.resolved?.uploader.name})
-    \n`)
+    \n`).join("\n")
     }
     `);
   });
