@@ -31,6 +31,7 @@ export async function router(commandEvent: unknown) {
   let parsed, main, group, verb, subjectValue, switchValue;
   try {
     parsed = commandSchema.parse(commandEvent);
+    console.log(JSON.stringify(parsed));
     [main, group, verb, subjectValue] = parsedToPath(parsed);
 
     switch (main) {
