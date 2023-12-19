@@ -25,10 +25,10 @@ function parsedToPath(parsed: typeof commandSchema._type) {
 }
 
 export async function router(commandEvent: unknown) {
-  let parsed = null;
+  let parsed, main, group, subject, subjectValue;
   try {
     parsed = commandSchema.parse(commandEvent);
-    const [main, group, subject, subjectValue] = parsedToPath(parsed);
+    [main, group, subject, subjectValue] = parsedToPath(parsed);
 
     switch (main) {
       case "admin":
@@ -62,13 +62,14 @@ export async function router(commandEvent: unknown) {
     }
   } catch (error) {
     if (parsed) {
-      console.log("404 Command not found", error);
-      console.log(parsed);
       console.log(commandEvent);
+      console.log(main, group, subject, subjectValue);
+      console.log(parsed);
+      console.log("404 Command not found", error);
       return respondWithMessage("404 Command not found", true);
     }
-    console.log("400 Command invalid", error);
     console.log(commandEvent);
+    console.log("400 Command invalid", error);
     return respondWithMessage("400 Command invalid", true);
   }
 }
