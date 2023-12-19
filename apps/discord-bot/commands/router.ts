@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { executePing } from "@/apps/discord-bot/commands/commands/ping.ts";
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
-import { executeCreateChannelPlaylist } from "@/apps/discord-bot/commands/commands/createChannelPlaylist.ts";
+import { adminChannelGetPlaylist } from "./commands/adminChannelGetPlaylist.ts";
 import { executePlaylists } from "@/apps/discord-bot/commands/commands/playlists.ts";
 import {
   adminCommandRouting,
@@ -41,7 +41,7 @@ export async function router(commandEvent: unknown) {
               case "get":
                 switch (subjectValue) {
                   case adminCommandRouting.get.subject.get_playlist_debug_data:
-                    return await executeCreateChannelPlaylist(
+                    return await adminChannelGetPlaylist(
                       commandEvent as AdminCommandRoutingGet,
                     );
                   default:

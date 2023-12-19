@@ -5,7 +5,7 @@ import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/
 import { AdminCommandRoutingGet } from "@/apps/discord-bot/commands/definitions.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 
-export async function executeCreateChannelPlaylist(
+export async function adminChannelGetPlaylist(
   commandEvent: AdminCommandRoutingGet,
 ) {
   const guildId = commandEvent.guild_id;
@@ -43,6 +43,9 @@ export async function executeCreateChannelPlaylist(
     (${x?.beatSaverData?.name} mapped by ${x?.beatSaverData?.uploader.name})`)
         .join("\n")
     }
+
+    And it would be available here:
+    https://danielduel-tot-bot.deno.dev/api/playlist/guild/${guildId}/channel/${channelId}
     `;
     // console.log(response);
     return respondWithMessage(response);
