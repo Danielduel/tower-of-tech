@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { initTRPC } from "@trpc/server";
-import { buckets } from "@/packages/database/buckets.ts";
-import { db, s3client } from "@/packages/database/mod.ts";
+import { buckets } from "../database-editor/buckets.ts";
+import { dbEditor, s3clientEditor } from "../database-editor/mod.ts";
 import { isReadOnly } from "@/packages/utils/envrionment.ts";
 import { fetchAndCacheHashes } from "@/packages/api-beatsaver/mod.ts";
 import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
@@ -19,14 +19,14 @@ const map = t.router({
       return await fetchAndCacheHashes(hashes);
     }),
   list: t.procedure.query(async () => {
-    const items = await db.BeatSaberPlaylistSongItem.findMany({});
+    const items = await dbEditor.BeatSaberPlaylistSongItem.findMany({});
     return items;
   }),
 });
 
 const playlist = t.router({
   listLinks: t.procedure.query(async () => {
-    const items = await db.BeatSaberPlaylist.findMany({
+    const items = await dbEditor.BeatSaberPlaylist.findMany({
       select: {
         id: true,
         playlistAuthor: true,
@@ -41,7 +41,7 @@ const playlist = t.router({
     .query(async ({
       input: { id }
     }) => {
-      const item = await db.BeatSaberPlaylist.findFirst({
+      const item = await dbEditor.BeatSaberPlaylist.findFirst({
         where: {
           id
         },
@@ -50,20 +50,20 @@ const playlist = t.router({
         }
       });
       if (!item) return null;
-      const imageUrl = makeImageUrl(await s3client.presignedGetObject(item.id, { bucketName: buckets.playlist.coverImage }));
+      const imageUrl = makeImageUrl(await s3clientEditor.presignedGetObject(item.id, { bucketName: buckets.playlist.coverImage }));
       return {
         ...item,
         imageUrl,
       } satisfies typeof BeatSaberPlaylistWithImageAsUrlSchema._type;
     }),
   list: t.procedure.query(async () => {
-    const items = await db.BeatSaberPlaylist.findMany({
+    const items = await dbEditor.BeatSaberPlaylist.findMany({
       include: {
         songs: true
       }
     });
     return await Promise.all(items.map(async item => {
-      const imageUrl = await s3client.presignedGetObject(item.id, { bucketName: buckets.playlist.coverImage })
+      const imageUrl = await s3clientEditor.presignedGetObject(item.id, { bucketName: buckets.playlist.coverImage })
       return {
         ...item,
         id: item.id,

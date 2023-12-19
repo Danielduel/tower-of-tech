@@ -1,11 +1,9 @@
-import {
-  BeatSaverMapByHashResponseSchema,
-} from "../types/beatsaver.ts";
+import { BeatSaverMapByHashResponseSchema } from "../types/beatsaver.ts";
 import { fetcher } from "../fetcher/mod.ts";
 import { fileExists } from "../fs/fileExists.ts";
 import { LowercaseMapHash } from "../types/brands.ts";
-import { s3client } from "@/packages/database/mod.ts";
-import { buckets } from "@/packages/database/buckets.ts";
+import { s3clientEditor } from "../database-editor/mod.ts";
+import { buckets } from "../database-editor/buckets.ts";
 import { BeatSaverApi } from "./api.ts";
 
 export { BeatSaverApi };
@@ -29,11 +27,11 @@ export const cacheMapByHashIfNotExists = async (
 
 const fetchAndCacheHashesGetCache = (hashArray: LowercaseMapHash[]) => {
   return hashArray.map(async (lowercaseHash) => {
-    const exists = await s3client.exists(lowercaseHash, {
+    const exists = await s3clientEditor.exists(lowercaseHash, {
       bucketName: buckets.beatSaver.mapByHash,
     });
     if (exists) {
-      const response = await s3client.getObject(lowercaseHash, {
+      const response = await s3clientEditor.getObject(lowercaseHash, {
         bucketName: buckets.beatSaver.mapByHash,
       });
       const data = await response.json();
@@ -82,7 +80,7 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
 
     Object.entries(response)
       .forEach(([lowercaseHash, data]) =>
-        s3client.putObject(lowercaseHash, JSON.stringify(data), {
+        s3clientEditor.putObject(lowercaseHash, JSON.stringify(data), {
           bucketName: buckets.beatSaver.mapByHash,
         })
       );

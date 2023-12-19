@@ -1,33 +1,3 @@
-# ToT Bot invite link
-
-https://discord.com/api/oauth2/authorize?client_id=1171582001900421192&permissions=17600776047616&scope=bot+applications.commands
-
-# Development of the website
-
-You need `Deno` and `s3s-fs`
-* `s3s-fs`
-  I suggest getting cargo
-  `https://doc.rust-lang.org/cargo/getting-started/installation.html`
-  and installing it by `cargo install s3s-fs --features binary`
-* `Deno`
-  `https://docs.deno.com/runtime/manual/getting_started/installation`
-  As I am developing this, the current Deno version is 1.37.1
-  (you can use cargo to install deno too, `cargo install deno --locked`)
-
-To make it work you have to use 2 forks located in the parent folder of this project's root dir:
-
-* develop branch of https://github.com/Danielduel/pentagon
-* develop branch of https://github.com/Danielduel/ultra
-
-(you don't have to build those forks or anything, they work by the touch of deno's magic)
-
-To run dev app - you have to run `deno task dev` or if you want to split logs from
-local s3 server and webapp - `deno task s3s-fs-local` and `deno task webapp:dev`
-
-This app uses Deno KV, so you have to run it with `unstable` flag.
-
-Good luck.
-
 # Tower of Tech
 
 This repository contains tech-related playlists and utilities used to manage them.
@@ -117,3 +87,33 @@ If first 3: DM me on discord or do an issue on this repository, if the last one 
 
 ## People who allowed me to add their playlists to the project
 - Morgolf (https://www.twitch.tv/morgolf)
+
+# ToT Bot invite link
+
+https://discord.com/api/oauth2/authorize?client_id=1171582001900421192&permissions=17600776047616&scope=bot+applications.commands
+
+# Development of the website
+
+You need `Deno` and `s3s-fs`
+* `s3s-fs`
+  I suggest getting cargo
+  `https://doc.rust-lang.org/cargo/getting-started/installation.html`
+  and installing it by `cargo install s3s-fs --features binary`
+* `Deno`
+  `https://docs.deno.com/runtime/manual/getting_started/installation`
+  As I am developing this, the current Deno version is 1.37.1
+  (you can use cargo to install deno too, `cargo install deno --locked`)
+
+To make it work you have to use 2 forks located in the parent folder of this project's root dir:
+
+* develop branch of https://github.com/Danielduel/pentagon
+* develop branch of https://github.com/Danielduel/ultra
+
+(you don't have to build those forks or anything, they work by the touch of deno's magic)
+
+To run dev app - you have to run `deno task dev` or if you want to split logs from
+local s3 server and webapp - `deno task s3s-fs-local` and `deno task webapp:dev`
+
+This app uses Deno KV, so you have to run it with `unstable` flag.
+
+Good luck.

@@ -12,9 +12,9 @@ const kv = isLocal() && !isRemote()
     })()
     : await Deno.openKv();
 
-export const db = createPentagon(kv);
+export const dbEditor = createPentagon(kv);
 
-export const s3client = isLocal() && !isRemote()
+export const s3clientEditor = isLocal() && !isRemote()
   ? new S3Client({
     endPoint: "localhost",
     port: 8014,
