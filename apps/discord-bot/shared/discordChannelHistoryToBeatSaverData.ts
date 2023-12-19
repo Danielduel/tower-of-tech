@@ -9,9 +9,11 @@ export async function discordChannelHistoryToBeatSaverData (client: Client, guil
     return;
   }
 
-  const messages = await channel.messages.fetch({
+  const messages = (await channel.messages.fetch({
     limit: 100,
-  });
+  }))
+    .filter(x => x.author.id !== "232630070206922754")
+  
   const messagesWithResolved = (await Promise.all(messages.map((m) =>
     findAndResolveUrlsToBeatSaverData(m.content)
   ))).filter((x) =>
