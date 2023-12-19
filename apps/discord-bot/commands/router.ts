@@ -60,7 +60,7 @@ export async function router(commandEvent: unknown) {
           default:
             throw "Routing problem admin";
         }
-      case "playlists":
+      case "playlist":
         return executePlaylists();
       case "ping":
         return executePing();
