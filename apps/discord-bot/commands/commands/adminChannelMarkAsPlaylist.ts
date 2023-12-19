@@ -9,8 +9,8 @@ export async function adminChannelMarkAsPlaylist(
 ) {
   const value = z.boolean().parse(switchValue);
 
-  const guildId = commandEvent.channel.id;
-  const channelId = commandEvent.guild_id;
+  const guildId = commandEvent.guild_id;
+  const channelId = commandEvent.channel.id;
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 

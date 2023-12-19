@@ -8,8 +8,8 @@ import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 export async function executeCreateChannelPlaylist(
   commandEvent: AdminCommandRoutingGet,
 ) {
-  const guildId = commandEvent.channel.id;
-  const channelId = commandEvent.guild_id;
+  const guildId = commandEvent.guild_id;
+  const channelId = commandEvent.channel.id;
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
   const discordChannelData = await dbDiscordBot.DiscordChannel.findFirst({
