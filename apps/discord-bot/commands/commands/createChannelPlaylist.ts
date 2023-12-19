@@ -1,12 +1,12 @@
 import { GatewayIntentBits } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
-import { findAndResolveUrlsToBeatSaverData } from "@/packages/community/findAndResolveUrlsToBeatSaverData.ts";
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
 import { useClient } from "@/apps/discord-bot/client.ts";
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
+import { AdminCommandRoutingGet } from "@/apps/discord-bot/commands/definitions.ts";
 
 export async function executeCreateChannelPlaylist(
-  commandEvent: CommandEmptyInteraction,
+  commandEvent: AdminCommandRoutingGet,
 ) {
   const guildId = "689050370840068309";
   const channelId = "1186318031907979314";

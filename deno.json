@@ -12,7 +12,7 @@
     "dev-remote": "deno task editor:dev-remote",
     "purge": "deno run -A --unstable ./purge.ts",
 
-    "discord:trigger:hello": "deno run -A --env ./apps/discord-bot/commands/commands/hello.ts",
+    "discord-bot:register": "deno run -A --env ./apps/discord-bot/setup/register-tot-bot-slash-commands.ts",
 
     "s3s-fs-local": "./scripts/s3s-fs-local.sh",
 

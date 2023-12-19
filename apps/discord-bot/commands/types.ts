@@ -1,17 +1,20 @@
 import {
   APIApplicationCommandInteractionWrapper,
   APIChatInputApplicationCommandInteractionData,
+  APIApplicationCommandInteractionDataStringOption,
+  APIInteractionDataOptionBase,
+  ApplicationCommandOptionType
 } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
 
-// export type CommandHelloInteraction = APIApplicationCommandInteractionWrapper<
-//   Omit<APIChatInputApplicationCommandInteractionData, "options"> & {
-//     options: [APIApplicationCommandInteractionDataStringOption];
-//   }
-// >;
+export type CommandInteraction<Options extends APIApplicationCommandInteractionDataStringOption[]> = APIApplicationCommandInteractionWrapper<
+  Omit<APIChatInputApplicationCommandInteractionData, "options"> & {
+    options: Options;
+  }
+>;
 
-export type CommandEmptyInteraction =
-  APIApplicationCommandInteractionWrapper<
-    Omit<APIChatInputApplicationCommandInteractionData, "options"> & {
-      options: never;
-    }
-  >;
+export type DefinedStringOption<Name extends string, D> = APIApplicationCommandInteractionDataStringOption & {
+  name: Name;
+  value: D;
+}
+
+export type CommandEmptyInteraction = CommandInteraction<never>;

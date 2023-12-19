@@ -3,15 +3,17 @@ import { executePing } from "@/apps/discord-bot/commands/commands/ping.ts";
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
 import { executeCreateChannelPlaylist } from "@/apps/discord-bot/commands/commands/createChannelPlaylist.ts";
 import { executePlaylists } from "@/apps/discord-bot/commands/commands/playlists.ts";
+import { AdminCommandRoutingGet, AdminCommandRoutingMark } from "@/apps/discord-bot/commands/definitions.ts";
 
 type CommandMapping = {
-  ping: CommandEmptyInteraction;
-  playlists: CommandEmptyInteraction;
-  createchannelplaylist: CommandEmptyInteraction;
+  "ping": CommandEmptyInteraction;
+  "playlists": CommandEmptyInteraction;
+  "admin get": AdminCommandRoutingGet;
+  "admin mark": AdminCommandRoutingMark;
 };
 
 export async function router(commandEvent: unknown) {
-  if (isCommandOfType(commandEvent, "createchannelplaylist")) {
+  if (isCommandOfType(commandEvent, "admin get")) {
     return await executeCreateChannelPlaylist(commandEvent);
   }
 
