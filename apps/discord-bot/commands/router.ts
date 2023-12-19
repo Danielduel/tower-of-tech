@@ -10,6 +10,7 @@ import {
 } from "@/apps/discord-bot/commands/definitions.ts";
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { adminChannelMarkAsPlaylist } from "@/apps/discord-bot/commands/commands/adminChannelMarkAsPlaylist.ts";
+import { adminChannelRegister } from "@/apps/discord-bot/commands/commands/adminChannelRegister.ts";
 
 type CommandMapping = {
   "ping": CommandEmptyInteraction;
@@ -37,6 +38,8 @@ export async function router(commandEvent: unknown) {
         switch (group) {
           case "channel": {
             switch (verb) {
+              case "register":
+                return await adminChannelRegister(commandEvent as CommandEmptyInteraction);
               case "get":
                 switch (subjectValue) {
                   case adminCommandRouting.get.subject.get_playlist_debug_data:

@@ -33,6 +33,11 @@ export const adminCommand = new SlashCommandBuilder()
       .setDescription("Use channel management commands")
       .addSubcommand((sc) =>
         sc
+          .setName("register")
+          .setDescription("Expose this channel to the bot")
+      )
+      .addSubcommand((sc) =>
+        sc
           .setName("get")
           .setDescription("Get data from this channel")
           .addStringOption((o) =>
