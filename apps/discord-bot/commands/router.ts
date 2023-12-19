@@ -76,13 +76,13 @@ export async function router(commandEvent: unknown) {
 const commandSchemaOptionLeaf = z.object({
   name: z.string(),
   type: z.number(),
-  value: z.string(),
+  value: z.string().optional(),
 });
 const commandSchemaOptionBranch = z.object({
   name: z.string(),
   options: z.optional(z.array(commandSchemaOptionLeaf)),
   type: z.number(),
-  value: z.string(),
+  value: z.string().optional(),
 });
 const commandSchemaInner = z.object({
   name: z.string(),
