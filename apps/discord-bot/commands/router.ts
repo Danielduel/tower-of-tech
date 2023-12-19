@@ -12,11 +12,6 @@ import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { adminChannelMarkAsPlaylist } from "@/apps/discord-bot/commands/commands/adminChannelMarkAsPlaylist.ts";
 import { adminChannelRegister } from "@/apps/discord-bot/commands/commands/adminChannelRegister.ts";
 
-type CommandMapping = {
-  "ping": CommandEmptyInteraction;
-  "playlists": CommandEmptyInteraction;
-};
-
 function parsedToPath(parsed: typeof commandSchema._type) {
   return [
     parsed.data.name,
@@ -31,8 +26,8 @@ export async function router(commandEvent: unknown) {
   let parsed, main, group, verb, subjectValue, switchValue;
   try {
     parsed = commandSchema.parse(commandEvent);
-    console.log(JSON.stringify(parsed));
-    [main, group, verb, subjectValue] = parsedToPath(parsed);
+    // console.log(JSON.stringify(parsed));
+    [main, group, verb, subjectValue, switchValue] = parsedToPath(parsed);
 
     switch (main) {
       case "admin":
@@ -40,7 +35,9 @@ export async function router(commandEvent: unknown) {
           case "channel": {
             switch (verb) {
               case "register":
-                return await adminChannelRegister(commandEvent as CommandEmptyInteraction);
+                return await adminChannelRegister(
+                  commandEvent as CommandEmptyInteraction,
+                );
               case "get":
                 switch (subjectValue) {
                   case adminCommandRouting.get.subject.get_playlist_debug_data:
@@ -55,7 +52,10 @@ export async function router(commandEvent: unknown) {
                   case adminCommandRouting.mark.subject
                     .mark_as_playlist_channel:
                     // return await executeCreateChannelPlaylist(commandEvent as AdminCommandRoutingMark);
-                    return await adminChannelMarkAsPlaylist(commandEvent as AdminCommandRoutingMark, switchValue)
+                    return await adminChannelMarkAsPlaylist(
+                      commandEvent as AdminCommandRoutingMark,
+                      switchValue as boolean,
+                    );
                   default:
                     throw "Routing problem admin channel mark";
                 }
