@@ -48,6 +48,9 @@ export async function globalPlaylist(request: Request) {
       playlistTitle: "ToT - Discord playlist",
       songs: messagesWithResolvedToSongs(messagesWithResolved),
       image: "",
+      customData: {
+        syncURL: "https://danielduel-tot-bot.deno.dev/api/globalPlaylist"
+      }
     };
 
     return json(responsePlaylist);
