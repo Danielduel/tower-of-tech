@@ -3,10 +3,13 @@ import { findAndResolveUrlsToBeatSaverData } from "@/packages/community/findAndR
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
 import { useClient } from "@/apps/discord-bot/client.ts";
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
+import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
 
 export async function executeCreateChannelPlaylist(
   commandEvent: CommandEmptyInteraction,
 ) {
+  const guildId = "689050370840068309";
+  const channelId = "1186318031907979314";
   if (commandEvent.member?.user?.id !== "221718279423655937") {
     console.log("Invalid caller id ", commandEvent.member?.user?.id);
     return;
@@ -15,28 +18,21 @@ export async function executeCreateChannelPlaylist(
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMessages,
   ], async (client) => {
-    const guild = await client.guilds.fetch("689050370840068309");
-    const channel = await guild.channels.fetch("1186318031907979314");
-    if (!channel?.isTextBased()) {
-      console.log("Channel is not text based");
-      return;
-    }
-
-    const messages = await channel.messages.fetch({
-      limit: 100,
-    });
-    const messagesWithResolved = (await Promise.all(messages.map((m) =>
-      findAndResolveUrlsToBeatSaverData(m.content)
-    ))).filter((x) =>
-      !!x.beatSaverData
+    const messagesWithResolved = await discordChannelHistoryToBeatSaverData(
+      client,
+      guildId,
+      channelId,
     );
+    if (!messagesWithResolved) return;
+
     const response = `I would create a playlist of:
     ${
       messagesWithResolved.map((x) => `
     ${x?.beatSaverData?.versions[0].hash}
-    (${x?.beatSaverData?.name} mapped by ${x?.beatSaverData?.uploader.name})`).join("\n")
+    (${x?.beatSaverData?.name} mapped by ${x?.beatSaverData?.uploader.name})`)
+        .join("\n")
     }
-    `
+    `;
     // console.log(response);
     return respondWithMessage(response);
   });

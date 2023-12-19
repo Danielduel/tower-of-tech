@@ -20,12 +20,12 @@ async function destroyClient(client: Client) {
   await client.removeAllListeners();
 }
 
-export async function useClient(
+export async function useClient<T>(
   intents: BitFieldResolvable<GatewayIntentsString, number>,
-  callback: (client: Client) => void,
+  callback: (client: Client) => T,
 ) {
   const client = await createClient(intents);
   const result = await callback(client);
-  await destroyClient(client);
+  destroyClient(client);
   return result;
 }
