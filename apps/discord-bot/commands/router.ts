@@ -1,8 +1,10 @@
+import { z } from "zod";
 import { executePing } from "@/apps/discord-bot/commands/commands/ping.ts";
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
 import { executeCreateChannelPlaylist } from "@/apps/discord-bot/commands/commands/createChannelPlaylist.ts";
 import { executePlaylists } from "@/apps/discord-bot/commands/commands/playlists.ts";
 import {
+  adminCommandRouting,
   AdminCommandRoutingGet,
   AdminCommandRoutingMark,
 } from "@/apps/discord-bot/commands/definitions.ts";
@@ -11,57 +13,101 @@ import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 type CommandMapping = {
   "ping": CommandEmptyInteraction;
   "playlists": CommandEmptyInteraction;
-  "admin get": AdminCommandRoutingGet;
-  "admin mark": AdminCommandRoutingMark;
 };
 
+function parsedToPath(parsed: typeof commandSchema._type) {
+  return [
+    parsed.data.name,
+    parsed.data.options?.at(0)?.name,
+    parsed.data.options?.at(0)?.options?.at(0)?.name,
+    parsed.data.options?.at(0)?.options?.at(0)?.value,
+  ] as const;
+}
+
 export async function router(commandEvent: unknown) {
-  if (isCommandOfType(commandEvent, "admin get")) {
-    return await executeCreateChannelPlaylist(commandEvent);
-  }
+  let parsed = null;
+  try {
+    parsed = commandSchema.parse(commandEvent);
+    const [main, group, subject, subjectValue] = parsedToPath(parsed);
 
-  if (isCommandOfType(commandEvent, "playlists")) {
-    return executePlaylists();
-  }
-
-  if (isCommandOfType(commandEvent, "ping")) {
-    return executePing();
-  }
-
-  if (isCommandValid(commandEvent)) {
-    console.log(commandEvent.data.name);
-    console.log(commandEvent.data.options);
-    return respondWithMessage("404 Command not found", true);
-  } else {
+    switch (main) {
+      case "admin":
+        switch (group) {
+          case "get":
+            switch (subjectValue) {
+              case adminCommandRouting.get.subject.get_playlist_debug_data:
+                return await executeCreateChannelPlaylist(
+                  commandEvent as AdminCommandRoutingGet,
+                );
+              default:
+                throw "Routing problem admin get";
+            }
+          case "mark":
+            switch (subjectValue) {
+              case adminCommandRouting.mark.subject.mark_as_playlist_channel:
+                // return await executeCreateChannelPlaylist(commandEvent as AdminCommandRoutingMark);
+                throw "Unimplemented";
+              default:
+                throw "Routing problem admin mark";
+            }
+          default:
+            throw "Routing problem admin";
+        }
+      case "playlists":
+        return executePlaylists();
+      case "ping":
+        return executePing();
+      default:
+        throw "Routing problem";
+    }
+  } catch (error) {
+    if (parsed) {
+      console.log("404 Command not found", error);
+      console.log(parsed);
+      console.log(commandEvent);
+      return respondWithMessage("404 Command not found", true);
+    }
+    console.log("400 Command invalid", error);
     console.log(commandEvent);
     return respondWithMessage("400 Command invalid", true);
   }
 }
 
+const commandSchemaOptionLeaf = z.object({
+  name: z.string(),
+  type: z.number(),
+  value: z.string(),
+});
+const commandSchemaOptionBranch = z.object({
+  name: z.string(),
+  options: z.nullable(z.array(commandSchemaOptionLeaf)),
+  type: z.number(),
+  value: z.string(),
+});
+const commandSchemaInner = z.object({
+  name: z.string(),
+  options: z.nullable(z.array(
+    commandSchemaOptionBranch,
+  )),
+  type: z.number(),
+});
+const commandSchema = z.object({
+  data: commandSchemaInner,
+});
+
 function isCommandOfType<T extends keyof CommandMapping>(
   commandEvent: unknown,
+  path: string,
   nameOfCommand: T,
 ): commandEvent is CommandMapping[T] {
-  return (
-    typeof commandEvent === "object" &&
-    !!commandEvent &&
-    "data" in commandEvent &&
-    !!commandEvent.data &&
-    typeof commandEvent.data === "object" &&
-    "name" in commandEvent.data && typeof commandEvent.data.name === "string" &&
-    commandEvent.data.name === nameOfCommand
-  );
-}
-
-function isCommandValid<T extends keyof CommandMapping>(
-  commandEvent: unknown
-): commandEvent is CommandEmptyInteraction {
-  return (
-    typeof commandEvent === "object" &&
-    !!commandEvent &&
-    "data" in commandEvent &&
-    !!commandEvent.data &&
-    typeof commandEvent.data === "object" &&
-    "name" in commandEvent.data && typeof commandEvent.data.name === "string"
-  );
+  try {
+    const parsed = commandSchema.parse(commandEvent);
+    parsed.data.name;
+    return (
+      parsed.data.name === nameOfCommand
+    );
+  } catch (parseError) {
+    console.log("isCommandOfType", parseError);
+    return false;
+  }
 }
