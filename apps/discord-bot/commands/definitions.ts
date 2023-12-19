@@ -66,5 +66,10 @@ export const adminCommand = new SlashCommandBuilder()
                 },
               )
           )
+          .addBooleanOption((o) =>
+            o
+              .setName("switch")
+              .setDescription("Should be enabled?")
+          )
       )
   );

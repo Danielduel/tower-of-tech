@@ -1,15 +1,26 @@
 import { GatewayIntentBits } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
-import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
 import { useClient } from "@/apps/discord-bot/client.ts";
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
 import { AdminCommandRoutingGet } from "@/apps/discord-bot/commands/definitions.ts";
+import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 
 export async function executeCreateChannelPlaylist(
   commandEvent: AdminCommandRoutingGet,
 ) {
-  const guildId = "689050370840068309";
-  const channelId = "1186318031907979314";
+  const guildId = commandEvent.channel.id;
+  const channelId = commandEvent.guild_id;
+  if (!guildId) return respondWithMessage("Invalid guild id", true);
+  if (!channelId) return respondWithMessage("Invalid channel id", true);
+  const discordChannelData = await dbDiscordBot.DiscordChannel.findFirst({
+    where: {
+      channelId
+    }
+  });
+  if (!discordChannelData) return respondWithMessage("This channel is not registered", true);
+  if (discordChannelData.guildId !== guildId) return respondWithMessage("Channel-Guild mismatch error", true);
+  if (!discordChannelData.markedAsPlaylist) return respondWithMessage("This channel doesn't support being a playlist", true);
+
   if (commandEvent.member?.user?.id !== "221718279423655937") {
     console.log("Invalid caller id ", commandEvent.member?.user?.id);
     return;

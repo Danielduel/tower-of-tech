@@ -9,6 +9,7 @@ import {
   AdminCommandRoutingMark,
 } from "@/apps/discord-bot/commands/definitions.ts";
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
+import { adminChannelMarkAsPlaylist } from "@/apps/discord-bot/commands/commands/adminChannelMarkAsPlaylist.ts";
 
 type CommandMapping = {
   "ping": CommandEmptyInteraction;
@@ -21,11 +22,12 @@ function parsedToPath(parsed: typeof commandSchema._type) {
     parsed.data.options?.at(0)?.name,
     parsed.data.options?.at(0)?.options?.at(0)?.name,
     parsed.data.options?.at(0)?.options?.at(0)?.options?.at(0)?.value,
+    parsed.data.options?.at(0)?.options?.at(0)?.options?.at(1)?.value,
   ] as const;
 }
 
 export async function router(commandEvent: unknown) {
-  let parsed, main, group, verb, subjectValue;
+  let parsed, main, group, verb, subjectValue, switchValue;
   try {
     parsed = commandSchema.parse(commandEvent);
     [main, group, verb, subjectValue] = parsedToPath(parsed);
@@ -49,7 +51,7 @@ export async function router(commandEvent: unknown) {
                   case adminCommandRouting.mark.subject
                     .mark_as_playlist_channel:
                     // return await executeCreateChannelPlaylist(commandEvent as AdminCommandRoutingMark);
-                    throw "Unimplemented";
+                    return await adminChannelMarkAsPlaylist(commandEvent as AdminCommandRoutingMark, switchValue)
                   default:
                     throw "Routing problem admin channel mark";
                 }
@@ -85,14 +87,14 @@ type CommandSchemaOptionType = {
   name: string;
   options?: CommandSchemaOptionType[];
   type: number;
-  value?: string;
+  value?: string | boolean;
 };
 const commandSchemaOption: z.ZodType<CommandSchemaOptionType> = z.lazy(() =>
   z.object({
     name: z.string(),
     options: z.optional(z.array(commandSchemaOption)),
     type: z.number(),
-    value: z.string().optional(),
+    value: z.union([z.boolean(), z.string()]).optional(),
   })
 );
 const commandSchemaInner = z.object({

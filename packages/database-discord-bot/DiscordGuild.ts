@@ -1,17 +1,18 @@
-// import { TableDefinition } from "pentagon";
-// import {
-//   BeatSaberPlaylistFlatSchema,
-//   BeatSaberPlaylistSongItemSchema,
-// } from "@/packages/types/beatsaber-playlist.ts";
+import { TableDefinition } from "pentagon";
+import { DiscordChannelSchema, DiscordGuildFlatSchema } from "@/packages/types/discord-guild.ts";
 
-// export const DiscordGuild = {
-//   schema: BeatSaberPlaylistFlatSchema,
-//   relations: {
-//     songs: [
-//       "BeatSaberPlaylistSongItem",
-//       [BeatSaberPlaylistSongItemSchema],
-//       "songs",
-//       "hash",
-//     ],
-//   },
-// } satisfies TableDefinition<typeof BeatSaberPlaylistFlatSchema.shape>;
+export const DiscordChannel = {
+  schema: DiscordChannelSchema,
+} satisfies TableDefinition<typeof DiscordChannelSchema.shape>;
+
+export const DiscordGuild = {
+  schema: DiscordGuildFlatSchema,
+  relations: {
+    channels: [
+      "DiscordChannel",
+      [DiscordChannelSchema],
+      "channels",
+      "channelId",
+    ],
+  },
+} satisfies TableDefinition<typeof DiscordGuildFlatSchema.shape>;
