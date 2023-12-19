@@ -80,13 +80,13 @@ const commandSchemaOptionLeaf = z.object({
 });
 const commandSchemaOptionBranch = z.object({
   name: z.string(),
-  options: z.nullable(z.array(commandSchemaOptionLeaf)),
+  options: z.optional(z.array(commandSchemaOptionLeaf)),
   type: z.number(),
   value: z.string(),
 });
 const commandSchemaInner = z.object({
   name: z.string(),
-  options: z.nullable(z.array(
+  options: z.optional(z.array(
     commandSchemaOptionBranch,
   )),
   type: z.number(),

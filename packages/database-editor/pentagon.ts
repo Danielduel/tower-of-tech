@@ -2,11 +2,11 @@ import { createPentagon as _createPentagon } from "pentagon";
 import {
   BeatSaberPlaylist,
   BeatSaberPlaylistSongItem,
-} from "@/packages/database/BeatSaberPlaylist.ts";
+} from "./BeatSaberPlaylist.ts";
 import {
   BeatSaverMapResponseSuccess,
   BeatSaverResponseWrapper,
-} from "@/packages/database/BeatSaverResponse.ts";
+} from "./BeatSaverResponse.ts";
 
 export const createPentagon = (kv: Deno.Kv) => {
   return _createPentagon(kv, {
