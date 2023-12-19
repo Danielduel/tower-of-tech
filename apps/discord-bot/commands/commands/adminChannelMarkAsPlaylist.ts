@@ -25,12 +25,6 @@ export async function adminChannelMarkAsPlaylist(
   if (discordChannelData.guildId !== guildId) {
     return respondWithMessage("Channel-Guild mismatch error", true);
   }
-  if (!discordChannelData.markedAsPlaylist) {
-    return respondWithMessage(
-      "This channel doesn't support being a playlist",
-      true,
-    );
-  }
 
   if (commandEvent.member?.user?.id !== "221718279423655937") {
     console.log("Invalid caller id ", commandEvent.member?.user?.id);
