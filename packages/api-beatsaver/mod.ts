@@ -83,7 +83,7 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   ) => lowercaseHash);
 
   while (remainingHashArray.length > 0) {
-    const hashQueue = remainingHashArray.splice(0, 50);
+    const hashQueue = remainingHashArray.splice(0, 20);
     const hashString = hashQueue.join(",");
     promises.push(BeatSaverApi.mapByHash.get({
       urlParams: {

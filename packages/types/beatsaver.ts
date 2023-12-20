@@ -4,7 +4,7 @@ import { Brand, make } from "https://deno.land/x/ts_brand@0.0.1/mod.ts";
 import {
   BeatSaberDifficultyCharacteristicSchema,
   BeatSaberDifficultyNameSchema,
-} from "./beatsaber.ts";
+} from "@/packages/types/beatsaber.ts";
 import {
   makeDateString,
   makeImageUrl,
@@ -12,7 +12,7 @@ import {
   makeMapdataUrl,
   makePlaylistUrl,
   makePreviewUrl,
-} from "./brands.ts";
+} from "@/packages/types/brands.ts";
 
 export type BeatSaverUserId = Brand<number, "BeatSaverUserId">;
 export const makeBeatSaverUserId = make<BeatSaverUserId>();
