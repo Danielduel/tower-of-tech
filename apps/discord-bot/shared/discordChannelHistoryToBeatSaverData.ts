@@ -1,4 +1,4 @@
-import type { Client, TextBasedChannel } from "npm:discord.js";
+import { Client, TextBasedChannel } from "npm:discord.js";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { fetchAndCacheFromResolvables } from "@/packages/api-beatsaver/mod.ts";
 import { useClient } from "@/apps/discord-bot/client.ts";
@@ -54,8 +54,6 @@ export async function discordChannelHistoryToBeatSaverData(
   const client = createClient(false);
   
   const resolved = await client.map.fromBeatSaverResolvables.query({ beatSaverResolvables });
-  console.log(resolved)
-  console.log(beatSaverResolvables)
 
   return resolved;
 }

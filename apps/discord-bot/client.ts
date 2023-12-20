@@ -7,9 +7,8 @@ import {
 async function createClient(
   intents: BitFieldResolvable<GatewayIntentsString, number>,
 ) {
-  const ImportClient = await import("npm:discord.js");
 
-  const client = new ImportClient.Client({
+  const client = new Client({
     intents,
   });
   const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
