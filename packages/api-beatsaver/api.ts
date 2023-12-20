@@ -5,6 +5,7 @@ import {
 } from "https://deno.land/x/zod_api@v0.3.1/mod.ts";
 import {
   BeatSaverMapByHashResponseSchema,
+  BeatSaverMapByIdResponseSchema,
   BeatSaverMapResponseSuccessSchema,
 } from "../types/beatsaver.ts";
 import { fetcher } from "../fetcher/mod.ts";
@@ -33,9 +34,7 @@ export const BeatSaverApi = zodApiClient({
       }),
       actions: {
         get: {
-          dataSchema: z.object({
-            id: z.string().regex(/[0-9a-fA-F,]+/),
-          }),
+          dataSchema: BeatSaverMapByIdResponseSchema,
         },
       },
     }),
