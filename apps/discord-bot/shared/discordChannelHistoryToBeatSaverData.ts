@@ -1,4 +1,4 @@
-import { Client, TextBasedChannel } from "npm:discord.js";
+import { Client, TextBasedChannel } from "npm:discord.js/";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { fetchAndCacheFromResolvables } from "@/packages/api-beatsaver/mod.ts";
 

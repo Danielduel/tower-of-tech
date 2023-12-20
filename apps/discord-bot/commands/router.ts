@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { executePing } from "@/apps/discord-bot/commands/commands/ping.ts";
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
-import { adminChannelGetPlaylist } from "./commands/adminChannelGetPlaylist.ts";
+import { adminChannelGetPlaylist } from "@/apps/discord-bot/commands/commands/adminChannelGetPlaylist.ts";
 import { executePlaylists } from "@/apps/discord-bot/commands/commands/playlists.ts";
 import {
   adminCommandRouting,

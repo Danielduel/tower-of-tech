@@ -2,8 +2,6 @@ import {
   APIApplicationCommandInteractionWrapper,
   APIChatInputApplicationCommandInteractionData,
   APIApplicationCommandInteractionDataStringOption,
-  APIInteractionDataOptionBase,
-  ApplicationCommandOptionType
 } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
 
 export type CommandInteraction<Options extends APIApplicationCommandInteractionDataStringOption[]> = APIApplicationCommandInteractionWrapper<
