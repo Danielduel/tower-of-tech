@@ -16,6 +16,7 @@ const inter = setInterval(() => {
 }, 4)
 
 const data = await discordChannelHistoryToBeatSaverData("689050370840068309", "916959192428986418");
+console.log(data);
 // const data = await fetchAndCacheFromResolvables(resolvables);
 
 clearInterval(inter);

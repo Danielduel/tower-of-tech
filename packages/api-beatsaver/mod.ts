@@ -191,5 +191,8 @@ export const fetchAndCacheFromResolvables = async (
   resolvables: BeatSaverResolvable[],
 ) => {
   const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
-  return [Object.values(resolved.fromHashes ?? {}), Object.values(resolved.fromIds ?? {})]
+  return [
+    ...Object.values(resolved.fromHashes ?? {}),
+    ...Object.values(resolved.fromIds ?? {})
+  ];
 };
