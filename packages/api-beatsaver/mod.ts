@@ -82,7 +82,7 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
     [lowercaseHash],
   ) => lowercaseHash);
 
-  console.log("Memory usage: ", Deno.memoryUsage);
+  console.log("Memory usage: ", Deno.memoryUsage());
 
   while (remainingHashArray.length > 0) {
     console.log("Memory usage: ", Deno.memoryUsage());
