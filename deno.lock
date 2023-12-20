@@ -2,6 +2,8 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "npm:@discordjs/core": "npm:@discordjs/core@1.1.1",
+      "npm:@types/node": "npm:@types/node@18.16.19",
       "npm:discord.js": "npm:discord.js@14.14.1",
       "npm:seed-color": "npm:seed-color@2.0.1"
     },
@@ -25,6 +27,17 @@
       "@discordjs/collection@2.0.0": {
         "integrity": "sha512-YTWIXLrf5FsrLMycpMM9Q6vnZoR/lN2AWX23/Cuo8uOOtS8eHB2dyQaaGnaF8aZPYnttf2bkLMcXn/j6JUOi3w==",
         "dependencies": {}
+      },
+      "@discordjs/core@1.1.1": {
+        "integrity": "sha512-3tDqc6KCAtE0CxNl5300uPzFnNsY/GAmJhc6oGutbl/la+4mRv5zVb4N68cmcaeD2Il/ySH4zIc00sq+cyhtUA==",
+        "dependencies": {
+          "@discordjs/rest": "@discordjs/rest@2.2.0",
+          "@discordjs/util": "@discordjs/util@1.0.2",
+          "@discordjs/ws": "@discordjs/ws@1.0.2",
+          "@sapphire/snowflake": "@sapphire/snowflake@3.5.1",
+          "@vladfrangu/async_event_emitter": "@vladfrangu/async_event_emitter@2.2.4",
+          "discord-api-types": "discord-api-types@0.37.61"
+        }
       },
       "@discordjs/formatters@0.3.3": {
         "integrity": "sha512-wTcI1Q5cps1eSGhl6+6AzzZkBBlVrBdc9IUhJbijRgVjCNIIIZPgqnUj3ntFODsHrdbGU8BEG9XmDQmgEEYn3w==",
@@ -633,6 +646,20 @@
     "https://deno.land/x/zod_api@v0.3.1/src/client.ts": "65e60c66737832592e498b0ef5edfd57981dff4f5df76f7524b4a0b38bb5fbe9",
     "https://deno.land/x/zod_api@v0.3.1/src/types.ts": "fe4e727c095e2cb8d436e0c2af76e965a747690b912a6b0054617e53fa40f807",
     "https://deno.land/x/zod_api@v0.3.1/src/utils/status_codes.ts": "2a63d50435f09bc75a2189f4e462e28b7c34e42ae1d6998847400c12ea2f69e4",
+    "https://deno.land/x/zod_api@v0.7.6/mod.ts": "2f015d899b26691a53731a5b6456ef7720c531b3a9a00bdf09ac20516e801948",
+    "https://deno.land/x/zod_api@v0.7.6/src/auth/ApiKeyAuth.ts": "52f9adec94109ce8cbdf751b73d509ac54ab68e5d516bece77e2e110224370af",
+    "https://deno.land/x/zod_api@v0.7.6/src/auth/BasicAuth.ts": "83704243af2f86d5d9a65629afc1e278a6cc9dedd18c17df0e55d38b9b2031ec",
+    "https://deno.land/x/zod_api@v0.7.6/src/auth/BearerTokenAuth.ts": "f6e206773ac9da28d721c4bff30aab6398c12607211ac1ae7fd3ace4873970fd",
+    "https://deno.land/x/zod_api@v0.7.6/src/client.ts": "fa9ac66566f8b9a3076af82bb43260b28cef248a5993964cc3e78b18e99ed933",
+    "https://deno.land/x/zod_api@v0.7.6/src/config.ts": "079d4247b347f0d98e39637a647022d941498e76b42d96e19d12241fe105c829",
+    "https://deno.land/x/zod_api@v0.7.6/src/errors.ts": "1c40b7d6f8ee261abc4157517d2fd0609cf82f314b8a04fe43495d2eae6bff02",
+    "https://deno.land/x/zod_api@v0.7.6/src/resource.ts": "d0bfee19e656858f27ad71039d09f4623beb1f3ad880382a1947964bb5889d99",
+    "https://deno.land/x/zod_api@v0.7.6/src/throttle/FixedThrottle.ts": "057f4c3e7eac827beda21b190d29efd5d8df9df405dc98eb4c1becf79583435a",
+    "https://deno.land/x/zod_api@v0.7.6/src/types.ts": "c54273968cdea2771b63c8ef1e80983ac1752085b4acc98923810bfd9fcc827b",
+    "https://deno.land/x/zod_api@v0.7.6/src/utils/request.ts": "127f248efad45c76fd417e25987b20af32e584472996abfec9a83bc855201c3d",
+    "https://deno.land/x/zod_api@v0.7.6/src/utils/request_params.ts": "78b6194079ab753b5a5ce12679ef76c0c11d9e0f0a15e15f0f3b98f5bff35b7c",
+    "https://deno.land/x/zod_api@v0.7.6/src/utils/sleep.ts": "b39c0c6a2a35aa86365bdc1a5b67e42b81e6d3ddfdee522c74c80e9e1c161699",
+    "https://deno.land/x/zod_api@v0.7.6/src/utils/status_codes.ts": "fdffb9e5dd1ee769b206ca787a9a5e7b3885c4cdeaf3d9c31ea2a5cf7cc9a60e",
     "https://denopkg.com/chiefbiiko/base64@master/base.ts": "47dc8d68f07dc91524bdd6db36eccbe59cf4d935b5fc09f27357a3944bb3ff7b",
     "https://denopkg.com/chiefbiiko/base64@master/mod.ts": "1cbdc4ba7229d3c6d1763fecdb9d46844777c7e153abb6dabea8b0dd01448db4",
     "https://esm.sh/*@twind/preset-tailwind@1.0.1": "575b14cc6bd917a417a7c56211bedd735e20bcf123cc44eb5e6e8c4923231352",
@@ -761,6 +788,7 @@
     "https://esm.sh/v135/scheduler@0.23.0/denonext/scheduler.development.mjs": "b6c8f513ecc4afb69b0c5c78a7674bb1c78f7e003946c6c8c655778d81d775db",
     "https://esm.sh/v135/shallowequal@1.1.0/X-ZS9yZWFjdA/denonext/shallowequal.mjs": "3a621141e773a2b5504d531378148a7cb8c202bf4ee64cb2a80f887b9932e735",
     "https://esm.sh/v135/style-vendorizer@2.2.3/denonext/style-vendorizer.mjs": "121455e7b04b631ef6463ce63cdcd29febd74d88c37713c774ceca8a1561c83d",
-    "https://esm.sh/v135/use-sync-external-store@1.2.0/X-ZS9yZWFjdA/denonext/shim.js": "37e3c7d40c8197daac8a39b77b97e026fcbc5ee3cc80c48a9057473631dcb247"
+    "https://esm.sh/v135/use-sync-external-store@1.2.0/X-ZS9yZWFjdA/denonext/shim.js": "37e3c7d40c8197daac8a39b77b97e026fcbc5ee3cc80c48a9057473631dcb247",
+    "https://raw.githubusercontent.com/discordjs/discord.js/main/packages/discord.js/src/client/Client.js": "309298d4dfc3b563c2f85d15fa8f50975961f7c3b01a4a16f9e2bf7c53104cd5"
   }
 }

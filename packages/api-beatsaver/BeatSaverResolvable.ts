@@ -2,6 +2,7 @@ import { urlRegex } from "@/packages/utils/regex.ts";
 import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaverMapId, makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
+import { z } from "zod";
 
 export type BeatSaverResolvableHashKind = {
   kind: "hash";

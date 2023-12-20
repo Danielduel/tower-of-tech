@@ -75,9 +75,9 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   const partiallyResolved = await Promise.all(
     fetchAndCacheHashesGetCache(hashArray),
   );
-  const resolvedFromCache = Object.fromEntries(
+  const resolvedFromCache = BeatSaverMapByHashResponseSchema.parseAsync(Object.fromEntries(
     partiallyResolved.filter(([, data]) => !!data),
-  );
+  ));
   const remainingHashArray = partiallyResolved.filter(([, data]) => !data).map((
     [lowercaseHash],
   ) => lowercaseHash);
@@ -92,7 +92,7 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
     }));
   }
   const data = await Promise.all(promises);
-  const object = data.map((x) => {
+  const response = data.map((x) => {
     return x.data;
   }).reduce(
     (prev, curr) => ({ ...prev, ...curr }),
@@ -100,19 +100,18 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   );
 
   try {
-    const response = BeatSaverMapByHashResponseSchema.parse(object);
-    const cacheResponse = BeatSaverMapByHashResponseSchema.parse(
-      resolvedFromCache,
-    );
+    // const response = BeatSaverMapByHashResponseSchema.parse(object);
 
-    Object.entries(response)
-      .forEach(([lowercaseHash, data]) =>
-        s3clientEditor.putObject(lowercaseHash, JSON.stringify(data), {
-          bucketName: buckets.beatSaver.mapByHash,
-        })
-      );
+    if (response) {
+      Object.entries(response)
+        .forEach(([lowercaseHash, data]) =>
+          s3clientEditor.putObject(lowercaseHash, JSON.stringify(data), {
+            bucketName: buckets.beatSaver.mapByHash,
+          })
+        );
+    }
 
-    return { ...response, ...cacheResponse };
+    return { ...response, ...(await resolvedFromCache) };
   } catch (err) {
     console.error(err);
   }
@@ -158,7 +157,6 @@ export const fetchAndCacheFromResolvablesRaw = async (
   } = splitBeatSaverResolvables(resolvables);
 
   const hashesFromIdResolvables = await idsToHashesCache(idResolvables.map((x) => x.data));
-  console.log("fetch 0")
 
   const hashesArrayFromResolvables = hashResolvables.map((x) => x.data);
   const hashesFromCache = hashesFromIdResolvables
@@ -167,14 +165,11 @@ export const fetchAndCacheFromResolvablesRaw = async (
   const hashesArray = [...hashesFromCache, ...hashesArrayFromResolvables];
   const responseFromHashes = await fetchAndCacheHashes(hashesArray);
 
-  console.log("fetch 1")
-
   const idsArray = hashesFromIdResolvables
     .filter((x) => x.status === "fetch")
     .map((x) => x.id);
   const responseFromIds = await batchFetchIds(idsArray);
 
-  console.log("fetch 2")
   if (responseFromIds) {
     await dbEditor.BeatSaverIdToHashCache.upsertMany({
       data: Object.entries(responseFromIds).map(([id, x]) => ({
@@ -186,7 +181,6 @@ export const fetchAndCacheFromResolvablesRaw = async (
     });
   }
 
-  console.log("fetch 3")
   return {
     fromHashes: responseFromHashes,
     fromIds: responseFromIds,
@@ -196,8 +190,6 @@ export const fetchAndCacheFromResolvablesRaw = async (
 export const fetchAndCacheFromResolvables = async (
   resolvables: BeatSaverResolvable[],
 ) => {
-  console.log("1")
   const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
-  console.log("post 1")
-  return Object.values(resolved.fromHashes ?? {}).concat(Object.values(resolved.fromIds ?? {}))
+  return [Object.values(resolved.fromHashes ?? {}), Object.values(resolved.fromIds ?? {})]
 };

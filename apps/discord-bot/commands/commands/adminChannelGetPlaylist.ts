@@ -34,29 +34,23 @@ export async function adminChannelGetPlaylist(
     console.log("Invalid caller id ", commandEvent.member?.user?.id);
     return;
   }
-  return await useClient([
-    GatewayIntentBits.MessageContent,
-    GatewayIntentBits.GuildMessages,
-  ], async (client) => {
-    const data = await discordChannelHistoryToBeatSaverData(
-      client,
-      guildId,
-      channelId,
-    );
-    if (!data) return;
+  const data = await discordChannelHistoryToBeatSaverData(
+    guildId,
+    channelId,
+  );
+  if (!data) return;
 
-    const response = `I would create a playlist of:
+  const response = `I would create a playlist of:
     ${
-      data.map((x) => `
+    data.map((x) => `
     ${x?.versions[0].hash}
     (${x?.name} mapped by ${x?.uploader.name})`)
-        .join("\n")
-    }
+      .join("\n")
+  }
 
     And it would be available here:
     https://danielduel-tot-bot.deno.dev/api/playlist/guild/${guildId}/channel/${channelId}
     `;
-    // console.log(response);
-    return respondWithMessage(response);
-  });
+  // console.log(response);
+  return respondWithMessage(response);
 }

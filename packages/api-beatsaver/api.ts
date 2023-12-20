@@ -1,8 +1,8 @@
 import { z } from "zod";
 import {
-  zodApiClient,
-  zodApiResource,
-} from "https://deno.land/x/zod_api@v0.3.1/mod.ts";
+  client,
+  resource,
+} from "https://deno.land/x/zod_api@v0.7.6/mod.ts";
 import {
   BeatSaverMapByHashResponseSchema,
   BeatSaverMapByIdResponseSchema,
@@ -11,12 +11,12 @@ import {
 import { fetcher } from "../fetcher/mod.ts";
 import { getLogger } from "../logger/mod.ts";
 
-export const BeatSaverApi = zodApiClient({
+export const BeatSaverApi = client({
   fetcher,
   baseUrl: "https://api.beatsaver.com/",
   logger: await getLogger(),
   resources: {
-    mapById: zodApiResource("/maps/id/:id", {
+    mapById: resource("/maps/id/:id", {
       urlParamsSchema: z.object({
         id: z.string(),
       }),
@@ -28,7 +28,7 @@ export const BeatSaverApi = zodApiClient({
     }),
 
     // up to 50 ids
-    mapsByIds: zodApiResource("/maps/ids/:ids", {
+    mapsByIds: resource("/maps/ids/:ids", {
       urlParamsSchema: z.object({
         ids: z.string(),
       }),
@@ -40,7 +40,7 @@ export const BeatSaverApi = zodApiClient({
     }),
 
     // up to 50 hashes
-    mapByHash: zodApiResource("/maps/hash/:hash", {
+    mapByHash: resource("/maps/hash/:hash", {
       urlParamsSchema: z.object({
         hash: z.string().regex(/[0-9a-f,]+/),
       }),

@@ -3,10 +3,11 @@ import { initTRPC } from "@trpc/server";
 import { buckets } from "../database-editor/buckets.ts";
 import { dbEditor, s3clientEditor } from "../database-editor/mod.ts";
 import { isReadOnly } from "@/packages/utils/envrionment.ts";
-import { fetchAndCacheHashes } from "@/packages/api-beatsaver/mod.ts";
+import { fetchAndCacheFromResolvables, fetchAndCacheHashes } from "@/packages/api-beatsaver/mod.ts";
 import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
 import { makeImageUrl, makeLowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaberPlaylistWithoutIdSchema, BeatSaberPlaylistSchema, BeatSaberPlaylistWithImageAsUrlSchema } from "@/packages/types/beatsaber-playlist.ts";
+import { BeatSaverResolvableSchema } from "@/packages/api-beatsaver/BeatSaverResolvableSchema.ts";
 
 const t = initTRPC.create();
 
@@ -22,6 +23,11 @@ const map = t.router({
     const items = await dbEditor.BeatSaberPlaylistSongItem.findMany({});
     return items;
   }),
+  fromBeatSaverResolvables: t.procedure
+    .input(z.object({ beatSaverResolvables: z.array(BeatSaverResolvableSchema) }))
+    .query(async ({ input: { beatSaverResolvables }}) => {
+      return await fetchAndCacheFromResolvables(beatSaverResolvables)
+    })
 });
 
 const playlist = t.router({

@@ -33,7 +33,7 @@ const beatSaverResolvedToSongs = (
         key: data.id ?? "",
       };
     })
-    .filter(filterNulls)
+    .filter(filterNulls);
 };
 
 export async function playlistFromGuildChannel(
@@ -59,28 +59,22 @@ export async function playlistFromGuildChannel(
     return json("Channel-Guild mismatch error");
   }
 
-  return await useClient([
-    GatewayIntentBits.MessageContent,
-    GatewayIntentBits.GuildMessages,
-  ], async (client) => {
-    const data = await discordChannelHistoryToBeatSaverData(
-      client,
-      guildId,
-      channelId,
-    );
-    if (!data) return json({});
+  const data = await discordChannelHistoryToBeatSaverData(
+    guildId,
+    channelId,
+  );
+  if (!data) return json({});
 
-    const responsePlaylist: BeatSaberPlaylist = {
-      playlistAuthor: "Discord ToT bot",
-      playlistTitle: "ToT - Discord playlist",
-      songs: beatSaverResolvedToSongs(data),
-      image: "",
-      customData: {
-        syncURL:
-          `https://danielduel-tot-bot.deno.dev/api/playlist/guild/${guildId}/channel/${channelId}`,
-      },
-    };
+  const responsePlaylist: BeatSaberPlaylist = {
+    playlistAuthor: "Discord ToT bot",
+    playlistTitle: "ToT - Discord playlist",
+    songs: beatSaverResolvedToSongs(data),
+    image: "",
+    customData: {
+      syncURL:
+        `https://danielduel-tot-bot.deno.dev/api/playlist/guild/${guildId}/channel/${channelId}`,
+    },
+  };
 
-    return json(responsePlaylist);
-  });
+  return json(responsePlaylist);
 }

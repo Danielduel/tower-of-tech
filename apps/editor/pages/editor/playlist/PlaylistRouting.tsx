@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { tw } from "@/packages/twind/twind.tsx";
-import { trpc } from "@/packages/trpc/trpc.ts";
+import { trpc } from "../../../../../packages/trpc/trpc-react.ts";
 import { WithPlaylistLinks } from "@/packages/ui/playlist/types.ts";
 import { PlaylistList } from "./PlaylistList.tsx";
 import { Link } from "@/packages/ui/Link.tsx";

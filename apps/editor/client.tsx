@@ -3,7 +3,7 @@ import { HelmetProvider } from "react-helmet-async";
 
 import UltraClient, { hydrate } from "ultra/lib/react/client.js";
 
-import { TRPCClientProvider } from "@/packages/trpc/client.tsx";
+import { TRPCClientProvider } from "@/packages/trpc/ClientProvider.tsx";
 import { queryClient } from "@/packages/react-query/query-client.ts";
 import { Hydrate, QueryClientProvider } from "@tanstack/react-query";
 

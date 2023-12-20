@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren } from "react";
 import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
 import { tw } from "@/packages/twind/twind.tsx";
-import { trpc } from "@/packages/trpc/trpc.ts";
+import { trpc } from "@/packages/trpc/trpc-react.ts";
 
 const PlaylistLink = (
   { displayName }: { displayName: string },

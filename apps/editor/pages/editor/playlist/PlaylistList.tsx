@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useParams } from "react-router-dom";
-import { trpc } from "@/packages/trpc/trpc.ts";
+import { trpc } from "../../../../../packages/trpc/trpc-react.ts";
 import { Playlist } from "./PlaylistItem.tsx";
 
 export const PlaylistList: FC = () => {

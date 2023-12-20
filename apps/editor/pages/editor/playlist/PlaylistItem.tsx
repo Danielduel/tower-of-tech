@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { WithMaps, WithPlaylist, WithPlaylistWithImageAsUrl } from "@/packages/ui/playlist/types.ts";
 import { tw } from "@/packages/twind/twind.tsx";
-import { trpc } from "@/packages/trpc/trpc.ts";
+import { trpc } from "../../../../../packages/trpc/trpc-react.ts";
 import { MapItem } from "../../../components/MapItem.tsx";
 
 const PlaylistMaps: FC<WithMaps> = ({ maps }) => {

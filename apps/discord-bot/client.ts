@@ -1,13 +1,15 @@
 import {
-  BitFieldResolvable,
   Client,
+  BitFieldResolvable,
   GatewayIntentsString,
 } from "npm:discord.js";
 
 async function createClient(
   intents: BitFieldResolvable<GatewayIntentsString, number>,
 ) {
-  const client = new Client({
+  const ImportClient = await import("npm:discord.js");
+
+  const client = new ImportClient.Client({
     intents,
   });
   const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
@@ -23,9 +25,9 @@ async function destroyClient(client: Client) {
 export async function useClient<T>(
   intents: BitFieldResolvable<GatewayIntentsString, number>,
   callback: (client: Client) => T,
-) {
+) { 
   const client = await createClient(intents);
   const result = await callback(client);
-  await destroyClient(client);
+  destroyClient(client);
   return result;
 }
