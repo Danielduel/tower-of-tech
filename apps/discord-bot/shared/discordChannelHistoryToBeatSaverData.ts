@@ -16,7 +16,7 @@ export async function discordChannelHistoryToBeatSaverData (client: Client, guil
     .map((m) => findBeatSaverResolvables(m.content))
     .flatMap(x => x.resolvables)
   
-  const resolved = fetchAndCacheFromResolvables(beatSaverResolvables);
+  const resolved = await fetchAndCacheFromResolvables(beatSaverResolvables);
 
   console.log("5")
   return resolved;
