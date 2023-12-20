@@ -18,5 +18,6 @@ export async function discordChannelHistoryToBeatSaverData (client: Client, guil
   
   const resolved = fetchAndCacheFromResolvables(beatSaverResolvables);
 
+  console.log("5")
   return resolved;
 };

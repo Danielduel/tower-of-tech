@@ -167,11 +167,14 @@ export const fetchAndCacheFromResolvablesRaw = async (
   const hashesArray = hashesFromCache.concat(hashesArrayFromResolvables);
   const responseFromHashes = await fetchAndCacheHashes(hashesArray);
 
+  console.log("1")
+
   const idsArray = hashesFromIdResolvables
     .filter((x) => x.status === "fetch")
     .map((x) => x.id);
   const responseFromIds = await batchFetchIds(idsArray);
 
+  console.log("2")
   if (responseFromIds) {
     await dbEditor.BeatSaverIdToHashCache.upsertMany({
       data: Object.entries(responseFromIds).map(([id, x]) => ({
@@ -183,6 +186,7 @@ export const fetchAndCacheFromResolvablesRaw = async (
     });
   }
 
+  console.log("3")
   return {
     fromHashes: responseFromHashes,
     fromIds: responseFromIds,
@@ -193,5 +197,6 @@ export const fetchAndCacheFromResolvables = async (
   resolvables: BeatSaverResolvable[],
 ) => {
   const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
+  console.log("4")
   return Object.values(resolved.fromHashes ?? {}).concat(Object.values(resolved.fromIds ?? {}))
 };
