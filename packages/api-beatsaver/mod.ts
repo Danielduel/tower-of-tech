@@ -41,16 +41,20 @@ type IdsToHashesCacheType = {
 };
 
 const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
-  return await Promise.all(idArray.map(async (id): Promise<IdsToHashesCacheType> => {
-    const idToHashCacheItem = await dbEditor.BeatSaverIdToHashCache.findFirst({
-      where: { id },
-    });
+  return await Promise.all(
+    idArray.map(async (id): Promise<IdsToHashesCacheType> => {
+      const idToHashCacheItem = await dbEditor.BeatSaverIdToHashCache.findFirst(
+        {
+          where: { id },
+        },
+      );
 
-    if (!idToHashCacheItem) return { id, status: "fetch" };
-    if (!idToHashCacheItem.available) return { id, status: "error" };
-    if (!idToHashCacheItem.hash) return { id, status: "error" };
-    return { id, status: "ok", data: idToHashCacheItem };
-  }));
+      if (!idToHashCacheItem) return { id, status: "fetch" };
+      if (!idToHashCacheItem.available) return { id, status: "error" };
+      if (!idToHashCacheItem.hash) return { id, status: "error" };
+      return { id, status: "ok", data: idToHashCacheItem };
+    }),
+  );
 };
 
 const fetchAndCacheHashesGetCache = (hashArray: LowercaseMapHash[]) => {
@@ -75,14 +79,17 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   const partiallyResolved = await Promise.all(
     fetchAndCacheHashesGetCache(hashArray),
   );
-  const resolvedFromCache = BeatSaverMapByHashResponseSchema.parseAsync(Object.fromEntries(
-    partiallyResolved.filter(([, data]) => !!data),
-  ));
-  const remainingHashArray = partiallyResolved.filter(([, data]) => !data).map((
-    [lowercaseHash],
-  ) => lowercaseHash);
+  const resolvedFromCache = BeatSaverMapByHashResponseSchema.parseAsync(
+    Object.fromEntries(
+      partiallyResolved.filter(([, data]) => !!data),
+    ),
+  );
+  const remainingHashArray = partiallyResolved
+    .filter(([, data]) => !data)
+    .map(([lowercaseHash]) => lowercaseHash);
 
   while (remainingHashArray.length > 0) {
+    console.log("batch")
     const hashQueue = remainingHashArray.splice(0, 50);
     const hashString = hashQueue.join(",");
     promises.push(BeatSaverApi.mapByHash.get({
@@ -91,13 +98,16 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
       },
     }));
   }
+  console.log("batch wait")
   const data = await Promise.all(promises);
-  const response = data.map((x) => {
-    return x.data;
-  }).reduce(
-    (prev, curr) => ({ ...prev, ...curr }),
-    {},
-  );
+  console.log("batch done")
+  const response = data
+    .map((x) => x.data)
+    .reduce(
+      (prev, curr) => ({ ...prev, ...curr }),
+      {},
+    );
+  console.log("batch reduced")
 
   try {
     // const response = BeatSaverMapByHashResponseSchema.parse(object);
@@ -156,14 +166,16 @@ export const fetchAndCacheFromResolvablesRaw = async (
     idResolvables,
   } = splitBeatSaverResolvables(resolvables);
 
-  const hashesFromIdResolvables = await idsToHashesCache(idResolvables.map((x) => x.data));
+  const hashesFromIdResolvables = await idsToHashesCache(
+    idResolvables.map((x) => x.data),
+  );
 
   const hashesArrayFromResolvables = hashResolvables.map((x) => x.data);
   const hashesFromCache = hashesFromIdResolvables
     .filter((x) => x.status === "ok")
     .map((x) => x.data!.hash!);
   const hashesArray = [...hashesFromCache, ...hashesArrayFromResolvables];
-  const responseFromHashes = await fetchAndCacheHashes(hashesArray);
+  const responseFromHashesP = fetchAndCacheHashes(hashesArray);
 
   const idsArray = hashesFromIdResolvables
     .filter((x) => x.status === "fetch")
@@ -182,7 +194,7 @@ export const fetchAndCacheFromResolvablesRaw = async (
   }
 
   return {
-    fromHashes: responseFromHashes,
+    fromHashes: await responseFromHashesP,
     fromIds: responseFromIds,
   };
 };
@@ -193,6 +205,6 @@ export const fetchAndCacheFromResolvables = async (
   const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
   return [
     ...Object.values(resolved.fromHashes ?? {}),
-    ...Object.values(resolved.fromIds ?? {})
+    ...Object.values(resolved.fromIds ?? {}),
   ];
 };
