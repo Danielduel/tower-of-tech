@@ -46,7 +46,7 @@ export const BeatSaverApi = zodApiClient({
       }),
       actions: {
         get: {
-          dataSchema: BeatSaverMapByHashResponseSchema,
+          dataSchema: z.any(),
         },
       },
     }),

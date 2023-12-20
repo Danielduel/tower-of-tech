@@ -82,11 +82,8 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
     [lowercaseHash],
   ) => lowercaseHash);
 
-  console.log("Memory usage: ", Deno.memoryUsage());
-
   while (remainingHashArray.length > 0) {
-    console.log("Memory usage: ", Deno.memoryUsage());
-    const hashQueue = remainingHashArray.splice(0, 20);
+    const hashQueue = remainingHashArray.splice(0, 50);
     const hashString = hashQueue.join(",");
     promises.push(BeatSaverApi.mapByHash.get({
       urlParams: {
@@ -94,10 +91,6 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
       },
     }));
   }
-
-  const interval = setInterval(() => {
-    console.log("Memory usage: ", Deno.memoryUsage());
-  }, 100);
   const data = await Promise.all(promises);
   const object = data.map((x) => {
     return x.data;
@@ -119,7 +112,6 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
         })
       );
 
-    clearInterval(interval);
     return { ...response, ...cacheResponse };
   } catch (err) {
     console.error(err);
