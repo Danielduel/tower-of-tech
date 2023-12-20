@@ -18,7 +18,7 @@ export type BeatSaverUserId = Brand<number, "BeatSaverUserId">;
 export const makeBeatSaverUserId = make<BeatSaverUserId>();
 
 export type BeatSaverMapId = Brand<string, "BeatSaverMapId">;
-export const makeBeatSaverMapId = make<BeatSaverMapId>();
+export const makeBeatSaverMapId = (id: string) => make<BeatSaverMapId>()(id.toLowerCase());
 
 export const BeatSaverMapResponseUploader = z.object({
   id: z.number().transform(makeBeatSaverUserId),
