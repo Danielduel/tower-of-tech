@@ -1,6 +1,10 @@
 import { z } from "zod";
 import { TableDefinition } from "pentagon";
-import { BeatSaverMapResponseSuccessSchema, makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
+import {
+  BeatSaverIdToHashCacheSchema,
+  BeatSaverMapResponseSuccessSchema,
+  makeBeatSaverMapId,
+} from "@/packages/types/beatsaver.ts";
 
 export const BeatSaverResponseWrapperSchema = z.object({
   id: z.string().transform(makeBeatSaverMapId),
@@ -8,6 +12,10 @@ export const BeatSaverResponseWrapperSchema = z.object({
   available: z.boolean(),
   removed: z.boolean(),
 });
+
+export const BeatSaverIdToHashCache = {
+  schema: BeatSaverIdToHashCacheSchema,
+} satisfies TableDefinition<typeof BeatSaverIdToHashCacheSchema.shape>;
 
 export const BeatSaverResponseWrapper = {
   schema: BeatSaverResponseWrapperSchema,

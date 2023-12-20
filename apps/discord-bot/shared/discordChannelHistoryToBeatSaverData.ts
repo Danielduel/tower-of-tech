@@ -1,5 +1,6 @@
 import { Client } from "npm:discord.js";
-import { findAndResolveUrlsToBeatSaverData } from "@/packages/community/findAndResolveUrlsToBeatSaverData.ts";
+import { findBeatSaverResolvables } from "../../../packages/api-beatsaver/BeatSaverResolvable.ts";
+import { fetchAndCacheFromResolvables } from "@/packages/api-beatsaver/mod.ts";
 
 export async function discordChannelHistoryToBeatSaverData (client: Client, guildId: string, channelId: string) {
   const guild = await client.guilds.fetch(guildId);
@@ -9,16 +10,14 @@ export async function discordChannelHistoryToBeatSaverData (client: Client, guil
     return;
   }
 
-  const messages = (await channel.messages.fetch({
-    limit: 100,
-  }))
-    .filter(x => x.author.id !== "232630070206922754")
-  
-  const messagesWithResolved = (await Promise.all(messages.map((m) =>
-    findAndResolveUrlsToBeatSaverData(m.content)
-  ))).filter((x) =>
-    !!x.beatSaverData
-  );
+  const messages = await channel.messages.fetch({ limit: 100 });
 
-  return messagesWithResolved;
+  const beatSaverResolvables = messages
+    .map((m) => findBeatSaverResolvables(m.content))
+    .filter((x) => !!x.url)
+    .flatMap(x => x.resolvables)
+  
+  const resolved = fetchAndCacheFromResolvables(beatSaverResolvables);
+
+  return resolved;
 };

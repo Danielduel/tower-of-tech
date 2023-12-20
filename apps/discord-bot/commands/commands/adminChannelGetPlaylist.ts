@@ -14,12 +14,21 @@ export async function adminChannelGetPlaylist(
   if (!channelId) return respondWithMessage("Invalid channel id", true);
   const discordChannelData = await dbDiscordBot.DiscordChannel.findFirst({
     where: {
-      channelId
-    }
+      channelId,
+    },
   });
-  if (!discordChannelData) return respondWithMessage("This channel is not registered", true);
-  if (discordChannelData.guildId !== guildId) return respondWithMessage("Channel-Guild mismatch error", true);
-  if (!discordChannelData.markedAsPlaylist) return respondWithMessage("This channel doesn't support being a playlist", true);
+  if (!discordChannelData) {
+    return respondWithMessage("This channel is not registered", true);
+  }
+  if (discordChannelData.guildId !== guildId) {
+    return respondWithMessage("Channel-Guild mismatch error", true);
+  }
+  if (!discordChannelData.markedAsPlaylist) {
+    return respondWithMessage(
+      "This channel doesn't support being a playlist",
+      true,
+    );
+  }
 
   if (commandEvent.member?.user?.id !== "221718279423655937") {
     console.log("Invalid caller id ", commandEvent.member?.user?.id);
@@ -29,18 +38,18 @@ export async function adminChannelGetPlaylist(
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMessages,
   ], async (client) => {
-    const messagesWithResolved = await discordChannelHistoryToBeatSaverData(
+    const data = await discordChannelHistoryToBeatSaverData(
       client,
       guildId,
       channelId,
     );
-    if (!messagesWithResolved) return;
+    if (!data) return;
 
     const response = `I would create a playlist of:
     ${
-      messagesWithResolved.map((x) => `
-    ${x?.beatSaverData?.versions[0].hash}
-    (${x?.beatSaverData?.name} mapped by ${x?.beatSaverData?.uploader.name})`)
+      data.map((x) => `
+    ${x?.versions[0].hash}
+    (${x?.name} mapped by ${x?.uploader.name})`)
         .join("\n")
     }
 

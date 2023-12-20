@@ -1,5 +1,5 @@
-import { registerCronJobs } from "./cron/mod.ts";
-import { registerServeHttp } from "./serveHttp.ts";
+import { registerCronJobs } from "@/apps/discord-bot/cron/mod.ts";
+import { registerServeHttp } from "@/apps/discord-bot/serveHttp.ts";
 
 registerCronJobs();
 registerServeHttp();

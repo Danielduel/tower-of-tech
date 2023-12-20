@@ -12,25 +12,28 @@ import {
 } from "@/src/types/BeatSaberPlaylist.d.ts";
 import { BeatSaverMapResponseSuccessSchema } from "@/packages/types/beatsaver.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
+import { filterNulls } from "@/packages/utils/filter.ts";
 
-const messagesWithResolvedToSongs = (
-  arr: {
-    beatSaverData:
-      | typeof BeatSaverMapResponseSuccessSchema._type
-      | null
-      | undefined;
-  }[],
+const beatSaverResolvedToSongs = (
+  arr: (
+    | typeof BeatSaverMapResponseSuccessSchema._type
+    | null
+    | undefined
+  )[],
 ): BeatSaberPlaylistSongItem[] => {
-  return arr.map((data) => {
-    return {
-      difficulties: [],
-      hash: data.beatSaverData?.versions[0].hash ?? "",
-      levelAuthorName: data.beatSaverData?.uploader.name ?? "",
-      levelid: `custom_level_${data.beatSaverData?.versions[0].hash}`,
-      songName: data.beatSaverData?.name ?? "",
-      key: data.beatSaverData?.id ?? "",
-    };
-  });
+  return arr
+    .flatMap((data) => {
+      if (!data) return null;
+      return {
+        difficulties: [],
+        hash: data.versions[0].hash ?? "",
+        levelAuthorName: data.uploader.name ?? "",
+        levelid: `custom_level_${data.versions[0].hash}`,
+        songName: data.name ?? "",
+        key: data.id ?? "",
+      };
+    })
+    .filter(filterNulls)
 };
 
 export async function playlistFromGuildChannel(
@@ -60,20 +63,21 @@ export async function playlistFromGuildChannel(
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMessages,
   ], async (client) => {
-    const messagesWithResolved = await discordChannelHistoryToBeatSaverData(
+    const data = await discordChannelHistoryToBeatSaverData(
       client,
       guildId,
       channelId,
     );
-    if (!messagesWithResolved) return json({});
+    if (!data) return json({});
 
     const responsePlaylist: BeatSaberPlaylist = {
       playlistAuthor: "Discord ToT bot",
       playlistTitle: "ToT - Discord playlist",
-      songs: messagesWithResolvedToSongs(messagesWithResolved),
+      songs: beatSaverResolvedToSongs(data),
       image: "",
       customData: {
-        syncURL: `https://danielduel-tot-bot.deno.dev/api/playlist/guild/${guildId}/channel/${channelId}`,
+        syncURL:
+          `https://danielduel-tot-bot.deno.dev/api/playlist/guild/${guildId}/channel/${channelId}`,
       },
     };
 

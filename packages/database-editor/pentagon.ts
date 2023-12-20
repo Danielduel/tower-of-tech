@@ -2,11 +2,12 @@ import { createPentagon as _createPentagon } from "pentagon";
 import {
   BeatSaberPlaylist,
   BeatSaberPlaylistSongItem,
-} from "./BeatSaberPlaylist.ts";
+} from "@/packages/database-editor/BeatSaberPlaylist.ts";
 import {
+  BeatSaverIdToHashCache,
   BeatSaverMapResponseSuccess,
   BeatSaverResponseWrapper,
-} from "./BeatSaverResponse.ts";
+} from "@/packages/database-editor/BeatSaverResponse.ts";
 
 export const createPentagon = (kv: Deno.Kv) => {
   return _createPentagon(kv, {
@@ -14,5 +15,6 @@ export const createPentagon = (kv: Deno.Kv) => {
     BeatSaverMapResponseSuccess,
     BeatSaberPlaylist,
     BeatSaberPlaylistSongItem,
+    BeatSaverIdToHashCache,
   });
 };

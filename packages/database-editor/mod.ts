@@ -1,11 +1,11 @@
 import "https://deno.land/std@0.206.0/dotenv/load.ts";
 import { createPentagon } from "./pentagon.ts";
 import { S3Client } from "s3_lite_client";
-import { isLocal, isRemote } from "@/packages/utils/envrionment.ts";
+import { isLocal, isDbEditorRemote } from "@/packages/utils/envrionment.ts";
 
-const kv = isLocal() && !isRemote()
+const kv = isLocal() && !isDbEditorRemote()
   ? await Deno.openKv("./local.db")
-  : isRemote()
+  : isDbEditorRemote()
     ? await (async () => {
       Deno.env.set("DENO_KV_ACCESS_TOKEN", Deno.env.get("DD_EDITOR_KV_TOKEN")!);
       return await Deno.openKv(Deno.env.get("DD_EDITOR_KV_URL"));
@@ -14,7 +14,7 @@ const kv = isLocal() && !isRemote()
 
 export const dbEditor = createPentagon(kv);
 
-export const s3clientEditor = isLocal() && !isRemote()
+export const s3clientEditor = isLocal() && !isDbEditorRemote()
   ? new S3Client({
     endPoint: "localhost",
     port: 8014,

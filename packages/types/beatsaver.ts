@@ -112,11 +112,23 @@ export const BeatSaverMapResponseSuccessSchema = z.object({
   bookmarked: z.boolean().optional(),
 });
 
+export const BeatSaverIdToHashCacheSchema = z.object({
+  id: z.string().transform(makeBeatSaverMapId).describe("primary"),
+  hash: z.string().transform(makeLowercaseMapHash).optional(),
+  available: z.boolean(),
+  outdated: z.boolean(),
+});
+
 export const BeatSaverMapResponseSchema = z.union(
   [BeatSaverMapResponseSuccessSchema, BeatSaverMapResponseNotFoundSchema],
 );
 
 export const BeatSaverMapByHashResponseSchema = z.record(
+  z.string().regex(/[0-9a-f,]+/),
+  z.nullable(BeatSaverMapResponseSuccessSchema),
+);
+
+export const BeatSaverMapByIdResponseSchema = z.record(
   z.string().regex(/[0-9a-f,]+/),
   z.nullable(BeatSaverMapResponseSuccessSchema),
 );
