@@ -14,7 +14,6 @@ export async function discordChannelHistoryToBeatSaverData (client: Client, guil
 
   const beatSaverResolvables = messages
     .map((m) => findBeatSaverResolvables(m.content))
-    .filter((x) => !!x.url)
     .flatMap(x => x.resolvables)
   
   const resolved = fetchAndCacheFromResolvables(beatSaverResolvables);

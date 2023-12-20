@@ -36,7 +36,7 @@ export const findBeatSaverResolvables = (raw: string) => {
   const matches = raw.match(urlRegex);
   if (!matches) return {
     raw,
-    url: null,
+    urls: null,
     resolvables: []
   };
 

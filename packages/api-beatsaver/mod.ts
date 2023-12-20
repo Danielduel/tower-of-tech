@@ -40,8 +40,8 @@ type IdsToHashesCacheType = {
   data?: typeof BeatSaverIdToHashCacheSchema._type;
 };
 
-const idsToHashesCache = (idArray: BeatSaverMapId[]) => {
-  return idArray.map(async (id): Promise<IdsToHashesCacheType> => {
+const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
+  return await Promise.all(idArray.map(async (id): Promise<IdsToHashesCacheType> => {
     const idToHashCacheItem = await dbEditor.BeatSaverIdToHashCache.findFirst({
       where: { id },
     });
@@ -50,7 +50,7 @@ const idsToHashesCache = (idArray: BeatSaverMapId[]) => {
     if (!idToHashCacheItem.available) return { id, status: "error" };
     if (!idToHashCacheItem.hash) return { id, status: "error" };
     return { id, status: "ok", data: idToHashCacheItem };
-  });
+  }));
 };
 
 const fetchAndCacheHashesGetCache = (hashArray: LowercaseMapHash[]) => {
@@ -158,9 +158,7 @@ export const fetchAndCacheFromResolvablesRaw = async (
     idResolvables,
   } = splitBeatSaverResolvables(resolvables);
 
-  const hashesFromIdResolvables = await Promise.all(
-    idsToHashesCache(idResolvables.map((x) => x.data)),
-  );
+  const hashesFromIdResolvables = await idsToHashesCache(idResolvables.map((x) => x.data));
 
   const hashesArrayFromResolvables = hashResolvables.map((x) => x.data);
   const hashesFromCache = hashesFromIdResolvables

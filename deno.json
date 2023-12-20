@@ -12,6 +12,7 @@
     "dev-remote": "deno task editor:dev-remote",
     "purge": "deno run -A --unstable ./purge.ts",
 
+    "discord-bot:trigger": "TOT_ENVIRONMENT=local deno run -A --unstable --env ./apps/discord-bot/setup/trigger.ts",
     "discord-bot:register": "deno run -A --env ./apps/discord-bot/setup/register-commands.ts",
     "discord-bot:register-raw": "deno run -A ./apps/discord-bot/setup/register-commands.ts",
 

@@ -17,7 +17,7 @@ async function createClient(
 
 async function destroyClient(client: Client) {
   await client.destroy();
-  await client.removeAllListeners();
+  client.removeAllListeners();
 }
 
 export async function useClient<T>(
@@ -26,6 +26,6 @@ export async function useClient<T>(
 ) {
   const client = await createClient(intents);
   const result = await callback(client);
-  destroyClient(client);
+  await destroyClient(client);
   return result;
 }
