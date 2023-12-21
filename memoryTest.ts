@@ -33,5 +33,5 @@ import { GatewayIntentBits } from "npm:discord.js";
 
 await useClient([GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildScheduledEvents], async (client) => {
   const guild = await client.guilds.fetch("689050370840068309");
-  console.log(await getReminderJoke(guild));
+  console.log("Joke ", await getReminderJoke(guild));
 });

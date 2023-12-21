@@ -2,7 +2,7 @@ import OpenAI from "npm:openai@4";
 import { Guild, GatewayIntentBits } from "npm:discord.js";
 import { useClient } from "@/apps/discord-bot/client.ts";
 import { broadcastChannelId, getLongPingReminderMessage, getShortPingReminderMessage, guildId, reminderJokeGptPrompt } from "@/apps/discord-bot/cron/tech-multi/constants.ts";
-import { getStartAndEndTime } from "@/apps/discord-bot/cron/tech-multi/utils.ts";
+import { getStartAndEndTimeToday } from "@/apps/discord-bot/cron/tech-multi/utils.ts";
 
 export async function getReminderJoke (guild: Guild) {
   const openai = new OpenAI({
@@ -18,7 +18,7 @@ export async function getReminderJoke (guild: Guild) {
     messages: [{ role: "user", content: reminderJokeGptPrompt(participantsNames) }],
   });
 
-  return completion.choices[0].message.content;
+  return completion.choices[0].message.content?.slice(1, -1);
 }
 
 export async function longReminder() {
@@ -31,7 +31,7 @@ export async function longReminder() {
 
     const joke = await getReminderJoke(guild);
 
-    const eventTimes = getStartAndEndTime();
+    const eventTimes = getStartAndEndTimeToday();
     const startTimeWithoutMilis = Math.floor(
       eventTimes.scheduledStartTime / 1000,
     );
@@ -50,7 +50,7 @@ export async function shortReminder() {
 
     const joke = await getReminderJoke(guild);
 
-    const eventTimes = getStartAndEndTime();
+    const eventTimes = getStartAndEndTimeToday();
     const startTimeWithoutMilis = Math.floor(
       eventTimes.scheduledStartTime / 1000,
     );
