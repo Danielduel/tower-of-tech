@@ -10,6 +10,12 @@ export async function adminChannelRegister(
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
+  if (commandEvent.member?.user?.id !== "221718279423655937") {
+    console.log("Invalid caller id ", commandEvent.member?.user?.id);
+    return;
+  }
+  console.log(`Registering channel ${channelId} from guild ${guildId}`);
+
   const discordChannelData = await dbDiscordBot.DiscordChannel.findFirst({
     where: {
       channelId,
@@ -23,13 +29,6 @@ export async function adminChannelRegister(
   if (discordChannelData) {
     return respondWithMessage("This channel is already registered", true);
   }
-
-  if (commandEvent.member?.user?.id !== "221718279423655937") {
-    console.log("Invalid caller id ", commandEvent.member?.user?.id);
-    return;
-  }
-
-  console.log(`Registering channel ${channelId} from guild ${guildId}`);
 
   await dbDiscordBot.DiscordChannel.create({
     data: {
