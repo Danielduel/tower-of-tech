@@ -77,7 +77,7 @@ const fetchAndCacheHashesGetCache = (hashArray: LowercaseMapHash[]) => {
 
 export const fetchHashes = async (hashArray: LowercaseMapHash[]) => {
   const promises = [] as ReturnType<typeof BeatSaverApi.mapByHash.get>[];
-  const remainingHashArray = hashArray;
+  const remainingHashArray = [...hashArray];
 
   while (remainingHashArray.length > 0) {
     const hashQueue = remainingHashArray.splice(0, 50);
