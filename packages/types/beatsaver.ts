@@ -123,14 +123,10 @@ export const BeatSaverMapResponseSchema = z.union(
   [BeatSaverMapResponseSuccessSchema, BeatSaverMapResponseNotFoundSchema],
 );
 
-export const BeatSaverMapByHashSingleResponseSchema = z.nullable(BeatSaverMapResponseSuccessSchema);
-
 export const BeatSaverMapByHashResponseSchema = z.record(
   z.string().regex(/[0-9a-f,]+/),
-  BeatSaverMapByHashSingleResponseSchema,
+  z.nullable(BeatSaverMapResponseSuccessSchema),
 );
-
-export const _BeatSaverMapByHashResponseSchema = z.union([BeatSaverMapByHashResponseSchema, BeatSaverMapByHashSingleResponseSchema])
 
 export const BeatSaverMapByIdResponseSchema = z.record(
   z.string().regex(/[0-9a-f,]+/),

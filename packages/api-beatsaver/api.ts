@@ -6,7 +6,6 @@ import {
 import {
   BeatSaverMapByIdResponseSchema,
   BeatSaverMapResponseSuccessSchema,
-  _BeatSaverMapByHashResponseSchema,
 } from "../types/beatsaver.ts";
 import { fetcher } from "../fetcher/mod.ts";
 import { getLogger } from "../logger/mod.ts";
@@ -46,7 +45,7 @@ export const BeatSaverApi = client({
       }),
       actions: {
         get: {
-          dataSchema: _BeatSaverMapByHashResponseSchema,
+          dataSchema: BeatSaverMapResponseSuccessSchema,
         },
       },
     }),
