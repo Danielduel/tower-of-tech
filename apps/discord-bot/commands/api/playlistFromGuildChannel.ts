@@ -53,7 +53,7 @@ export async function playlistFromGuildChannel(
     },
   });
   if (!discordChannelData) {
-    return json("This channel is not registered");
+    return json("This channel is not registered (missing config data)");
   }
   if (discordChannelData.guildId !== guildId) {
     return json("Channel-Guild mismatch error");

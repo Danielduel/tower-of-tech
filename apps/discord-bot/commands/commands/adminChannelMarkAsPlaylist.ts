@@ -20,7 +20,7 @@ export async function adminChannelMarkAsPlaylist(
     },
   });
   if (!discordChannelData) {
-    return respondWithMessage("This channel is not registered", true);
+    return respondWithMessage("This channel is not registered (missing config data)", true);
   }
   if (discordChannelData.guildId !== guildId) {
     return respondWithMessage("Channel-Guild mismatch error", true);

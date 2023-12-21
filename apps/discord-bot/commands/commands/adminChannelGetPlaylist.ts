@@ -1,5 +1,3 @@
-import { GatewayIntentBits } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
-import { useClient } from "@/apps/discord-bot/client.ts";
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
 import { AdminCommandRoutingGet } from "@/apps/discord-bot/commands/definitions.ts";
@@ -18,7 +16,7 @@ export async function adminChannelGetPlaylist(
     },
   });
   if (!discordChannelData) {
-    return respondWithMessage("This channel is not registered", true);
+    return respondWithMessage("This channel is not registered (missing config data)", true);
   }
   if (discordChannelData.guildId !== guildId) {
     return respondWithMessage("Channel-Guild mismatch error", true);

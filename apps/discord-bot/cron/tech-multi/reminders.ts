@@ -21,7 +21,7 @@ export async function getReminderJoke (guild: Guild) {
   return completion.choices[0].message.content?.slice(1, -1);
 }
 
-export async function longReminder() {
+export async function techMultiLongReminder() {
   await useClient([GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildScheduledEvents], async (client) => {
     const guild = await client.guilds.fetch(guildId);
     const channel = await guild.channels.fetch(broadcastChannelId);
@@ -40,7 +40,7 @@ export async function longReminder() {
   });
 }
 
-export async function shortReminder() {
+export async function techMultiShortReminder() {
   await useClient([GatewayIntentBits.GuildMessages], async (client) => {
     const guild = await client.guilds.fetch(guildId);
     const channel = await guild.channels.fetch(broadcastChannelId);

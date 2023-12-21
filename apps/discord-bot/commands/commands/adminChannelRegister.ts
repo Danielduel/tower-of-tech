@@ -29,6 +29,8 @@ export async function adminChannelRegister(
     return;
   }
 
+  console.log(`Registering channel ${channelId} from guild ${guildId}`);
+
   await dbDiscordBot.DiscordChannel.create({
     data: {
       channelId,
