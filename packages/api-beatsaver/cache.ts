@@ -27,10 +27,15 @@ const CacheRequestSchema = z.object({
 
 export const scheduleCache = async (hashes: LowercaseMapHash[]) => {
   console.log("Queueing ", hashes.length)
-  await kv.enqueue({
-    for: watcherName,
-    body: hashes,
-  });
+  const remainingHashes = [...hashes];
+
+  while (remainingHashes.length > 0) {
+    const items = remainingHashes.splice(0, 2);
+    await kv.enqueue({
+      for: watcherName,
+      body: items,
+    });
+  }
 };
 
 export const runWorker = () => {

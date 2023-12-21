@@ -97,7 +97,7 @@ export const fetchHashes = async (hashArray: LowercaseMapHash[]) => {
     );
 
   return response;
-}
+};
 
 export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   const partiallyResolved = await Promise.all(
@@ -111,9 +111,9 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   const remainingHashArray = partiallyResolved
     .filter(([, data]) => !data)
     .map(([lowercaseHash]) => lowercaseHash);
-  
+
   const response = await fetchHashes(remainingHashArray);
-  await Promise.all(remainingHashArray.map(x => scheduleCache([x])));
+  await scheduleCache(remainingHashArray);
 
   try {
     const awaitedCache = await resolvedFromCache;
