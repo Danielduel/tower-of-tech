@@ -37,6 +37,9 @@ export const runWorker = () => {
     try {
       const parsed = CacheRequestSchema.parse(msg);
 
+      console.log(parsed);
+      console.log(msg);
+
       const filteredHashes = (await Promise.all(
         parsed.body
           .map(async (lowercaseHash) => {
