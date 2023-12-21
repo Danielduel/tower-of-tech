@@ -31,3 +31,13 @@ ${eventTitle} <t:${startTimeWithoutMilis}:R>
 
 https://discord.gg/EnY69jk2cg?event=${eventId}
 `;
+export const getShortPingReminderMessage = (startTimeWithoutMilis: number) => `
+🔋 Doublecheck if everything is charged 👀
+
+${eventTitle} <t:${startTimeWithoutMilis}:R>
+`;
+export const getLongPingReminderMessage = (startTimeWithoutMilis: number) => `
+🪫 Today 🎉
+
+${eventTitle} <t:${startTimeWithoutMilis}:R>
+`;

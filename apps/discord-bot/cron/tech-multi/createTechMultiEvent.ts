@@ -43,7 +43,7 @@ export async function createTechMultiEvent() {
       const startTimeWithoutMilis = Math.floor(
         eventTimes.scheduledStartTime / 1000,
       );
-      channel.send(
+      await channel.send(
         getEventNotificationMessage(startTimeWithoutMilis, scheduledEvent.id),
       );
     }
