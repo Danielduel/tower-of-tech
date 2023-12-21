@@ -16,7 +16,7 @@ import {
 import { z } from "zod";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
-import { BeatSaverApi } from "@/packages/api-beatsaver/mod.ts";
+import { BeatSaverApi, fetchHashes } from "@/packages/api-beatsaver/mod.ts";
 
 const watcherName = "api-beatsaver-cache-worker";
 
@@ -63,7 +63,10 @@ export const runWorker = () => {
       
       console.log(`Caching ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`);
 
-      const response = await BeatSaverApi.mapByHash.get({ urlParams: { hash: filteredHashes[0] }});
+      let response = await fetchHashes(filteredHashes);
+      if ("id" in response) {
+        response = { [filteredHashes[0]]: response };
+      }
 
       if (!response) return;
 

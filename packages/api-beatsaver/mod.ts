@@ -112,7 +112,10 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
     .filter(([, data]) => !data)
     .map(([lowercaseHash]) => lowercaseHash);
 
-  const response = await fetchHashes(remainingHashArray);
+  let response = await fetchHashes(remainingHashArray);
+  if ("id" in response) {
+    response = { [remainingHashArray[0]]: response };
+  }
   await scheduleCache(remainingHashArray);
 
   try {
