@@ -57,8 +57,10 @@ export async function discordChannelToBeatSaverData(
 
     if (!channel) return;
 
+    const guildDetails = await guild.fetch();
+
     return {
-      guildName: guild.name,
+      guildName: guildDetails.name,
       channelName: channel.name,
       resolvables: await discordChannelHistoryToBeatSaverResolvables(channel)
     };

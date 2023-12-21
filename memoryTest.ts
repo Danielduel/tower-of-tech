@@ -1,5 +1,8 @@
 // // // import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
 
+import { GatewayIntentBits } from "npm:discord.js";
+import { useClient } from "@/apps/discord-bot/client.ts";
+
 // import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 // import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
 
@@ -35,7 +38,7 @@
 // //   console.log("Joke ", await getReminderJoke(guild));
 // // });
 
-// const guildId = "689050370840068309";
+const guildId = "689050370840068309";
 // const channelId = "1176658722563567759";
 
 // const discordChannelData = await dbDiscordBot.DiscordChannel.findFirst({
@@ -62,3 +65,13 @@
 // );
 
 // console.log(data);
+
+const data = await useClient([
+  GatewayIntentBits.MessageContent,
+  GatewayIntentBits.GuildMessages,
+  GatewayIntentBits.Guilds,
+], async (client) => {
+  const guild = await (await client.guilds.fetch(guildId)).fetch();
+  console.log(guild);
+  console.log(guild.name)
+});
