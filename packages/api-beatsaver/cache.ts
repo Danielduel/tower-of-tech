@@ -70,9 +70,11 @@ export const runWorker = () => {
 
       if (!response) return;
 
-      await s3clientEditor.putObject(filteredHashes[0], JSON.stringify(response), {
-        bucketName: buckets.beatSaver.mapByHash,
-      })
+      await Promise.all(Object.entries(response).map(async ([hash, data]) => {
+        await s3clientEditor.putObject(hash, JSON.stringify(data), {
+          bucketName: buckets.beatSaver.mapByHash,
+        })
+      }))
       
       console.log(`Cached ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`);
     } catch (_) {
