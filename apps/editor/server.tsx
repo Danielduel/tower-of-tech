@@ -20,6 +20,7 @@ import { queryClient } from "@/packages/react-query/query-client.ts";
 import { StrictMode } from "react";
 import { apiV1Handler } from "@/packages/api/v1/mod.ts";
 import { isLocal } from "@/packages/utils/envrionment.ts";
+import { runWorker } from "@/packages/api-beatsaver/cache.ts";
 
 const root = Deno.cwd();
 
@@ -165,6 +166,8 @@ const executeHandlers = composeHandlers(
 );
 
 const middleware = refresh();
+
+runWorker();
 
 serve(async (request) => {
   const refresh = middleware(request);

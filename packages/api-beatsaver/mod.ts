@@ -14,6 +14,7 @@ import {
   BeatSaverResolvable,
   splitBeatSaverResolvables,
 } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
+import { scheduleCache } from "@/packages/api-beatsaver/cache.ts";
 
 export { BeatSaverApi };
 
@@ -74,8 +75,31 @@ const fetchAndCacheHashesGetCache = (hashArray: LowercaseMapHash[]) => {
   });
 };
 
-export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
+export const fetchHashes = async (hashArray: LowercaseMapHash[]) => {
   const promises = [] as ReturnType<typeof BeatSaverApi.mapByHash.get>[];
+  const remainingHashArray = hashArray;
+
+  while (remainingHashArray.length > 0) {
+    const hashQueue = remainingHashArray.splice(0, 50);
+    const hashString = hashQueue.join(",");
+    promises.push(BeatSaverApi.mapByHash.get({
+      urlParams: {
+        hash: hashString,
+      },
+    }));
+  }
+  const data = await Promise.all(promises);
+  const response = data
+    .map((x) => x.data)
+    .reduce(
+      (prev, curr) => ({ ...prev, ...curr }),
+      {},
+    );
+
+  return response;
+}
+
+export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   const partiallyResolved = await Promise.all(
     fetchAndCacheHashesGetCache(hashArray),
   );
@@ -87,43 +111,12 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   const remainingHashArray = partiallyResolved
     .filter(([, data]) => !data)
     .map(([lowercaseHash]) => lowercaseHash);
-
-  while (remainingHashArray.length > 0) {
-    console.log("batch")
-    const hashQueue = remainingHashArray.splice(0, 50);
-    const hashString = hashQueue.join(",");
-    promises.push(BeatSaverApi.mapByHash.get({
-      urlParams: {
-        hash: hashString,
-      },
-    }));
-  }
-  console.log("batch wait")
-  const data = await Promise.all(promises);
-  console.log("batch done")
-  const response = data
-    .map((x) => x.data)
-    .reduce(
-      (prev, curr) => ({ ...prev, ...curr }),
-      {},
-    );
-  console.log("batch reduced")
+  
+  const response = await fetchHashes(remainingHashArray);
+  await scheduleCache(remainingHashArray);
 
   try {
-    // const response = BeatSaverMapByHashResponseSchema.parse(object);
-
-    if (response) {
-      await Promise.all(Object.entries(response)
-        .map(([lowercaseHash, data]) =>
-          s3clientEditor.putObject(lowercaseHash, JSON.stringify(data), {
-            bucketName: buckets.beatSaver.mapByHash,
-          })
-        ));
-    }
-    console.log("batch cached")
-
     const awaitedCache = await resolvedFromCache;
-    console.log("batch cache awaited")
     return { ...response, ...awaitedCache };
   } catch (err) {
     console.error(err);
