@@ -26,7 +26,7 @@ const CacheRequestSchema = z.object({
 });
 
 export const scheduleCache = async (hashes: LowercaseMapHash[]) => {
-  console.log("Queueing ", hashes)
+  console.log("Queueing ", hashes.length)
   await kv.enqueue({
     for: watcherName,
     body: hashes,
@@ -37,9 +37,6 @@ export const runWorker = () => {
   kv.listenQueue(async (msg: unknown) => {
     try {
       const parsed = CacheRequestSchema.parse(msg);
-
-      console.log(parsed);
-      console.log(msg);
 
       const filteredHashes = (await Promise.all(
         parsed.body
@@ -54,6 +51,8 @@ export const runWorker = () => {
           }),
       ))
         .filter(filterNulls);
+      
+      console.log(`Caching ${filteredHashes.length} items to ${buckets.beatSaver.mapByHash}`);
 
       const response = await fetchHashes(filteredHashes);
 

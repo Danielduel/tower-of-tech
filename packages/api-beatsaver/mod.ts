@@ -113,7 +113,7 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
     .map(([lowercaseHash]) => lowercaseHash);
   
   const response = await fetchHashes(remainingHashArray);
-  await scheduleCache(remainingHashArray);
+  await Promise.all(remainingHashArray.map(x => scheduleCache([x])));
 
   try {
     const awaitedCache = await resolvedFromCache;
