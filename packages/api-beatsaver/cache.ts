@@ -61,7 +61,7 @@ export const runWorker = () => {
       ))
         .filter(filterNulls);
       
-      console.log(`Caching ${filteredHashes.length} items to ${buckets.beatSaver.mapByHash}`);
+      console.log(`Caching ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`);
 
       const response = await BeatSaverApi.mapByHashSingle.get({ urlParams: { hash: filteredHashes[0] }});
 
@@ -71,7 +71,7 @@ export const runWorker = () => {
         bucketName: buckets.beatSaver.mapByHash,
       })
       
-      console.log(`Cached ${filteredHashes[0]} items to ${buckets.beatSaver.mapByHash}`);
+      console.log(`Cached ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`);
     } catch (_) {
       // expected
     }
