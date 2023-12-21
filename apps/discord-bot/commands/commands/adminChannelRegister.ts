@@ -7,6 +7,11 @@ export async function adminChannelRegister(
 ) {
   const guildId = commandEvent.guild_id;
   const channelId = commandEvent.channel.id;
+
+  console.log(commandEvent);
+  console.log(commandEvent.channel);
+  console.log(commandEvent.channel_id);
+  
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
