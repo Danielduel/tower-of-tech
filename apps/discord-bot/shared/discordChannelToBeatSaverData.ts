@@ -1,4 +1,4 @@
-import { Channel, Client, TextBasedChannel, ThreadOnlyChannel } from "npm:discord.js";
+import { Channel, TextBasedChannel, ThreadOnlyChannel } from "npm:discord.js";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { useClient } from "@/apps/discord-bot/client.ts";
 import { GatewayIntentBits } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
@@ -50,6 +50,7 @@ export async function discordChannelToBeatSaverData(
   const data = await useClient([
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.Guilds
   ], async (client) => {
     const guild = await client.guilds.fetch(guildId);
     const channel = await guild.channels.fetch(channelId);
