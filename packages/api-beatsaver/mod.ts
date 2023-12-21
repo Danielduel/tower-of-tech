@@ -120,8 +120,11 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
           })
         );
     }
+    console.log("batch cached")
 
-    return { ...response, ...(await resolvedFromCache) };
+    const awaitedCache = await resolvedFromCache;
+    console.log("batch cache awaited")
+    return { ...response, ...awaitedCache };
   } catch (err) {
     console.error(err);
   }
