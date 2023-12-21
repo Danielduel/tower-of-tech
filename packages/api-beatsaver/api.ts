@@ -4,9 +4,9 @@ import {
   resource,
 } from "https://deno.land/x/zod_api@v0.7.6/mod.ts";
 import {
-  BeatSaverMapByHashResponseSchema,
   BeatSaverMapByIdResponseSchema,
   BeatSaverMapResponseSuccessSchema,
+  _BeatSaverMapByHashResponseSchema,
 } from "../types/beatsaver.ts";
 import { fetcher } from "../fetcher/mod.ts";
 import { getLogger } from "../logger/mod.ts";
@@ -46,18 +46,7 @@ export const BeatSaverApi = client({
       }),
       actions: {
         get: {
-          dataSchema: BeatSaverMapByHashResponseSchema,
-        },
-      },
-    }),
-
-    mapByHashSingle: resource("/maps/hash/:hash", {
-      urlParamsSchema: z.object({
-        hash: z.string().regex(/[0-9a-f,]+/),
-      }),
-      actions: {
-        get: {
-          dataSchema: z.nullable(BeatSaverMapResponseSuccessSchema),
+          dataSchema: _BeatSaverMapByHashResponseSchema,
         },
       },
     }),

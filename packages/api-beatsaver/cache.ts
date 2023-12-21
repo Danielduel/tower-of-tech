@@ -63,7 +63,7 @@ export const runWorker = () => {
       
       console.log(`Caching ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`);
 
-      const response = await BeatSaverApi.mapByHashSingle.get({ urlParams: { hash: filteredHashes[0] }});
+      const response = await BeatSaverApi.mapByHash.get({ urlParams: { hash: filteredHashes[0] }});
 
       if (!response) return;
 
