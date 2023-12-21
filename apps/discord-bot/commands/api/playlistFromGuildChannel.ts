@@ -1,4 +1,4 @@
-import { discordChannelToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
+import { discordChannelToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelToBeatSaverData.ts";
 import {
   ConnInfo,
   json,

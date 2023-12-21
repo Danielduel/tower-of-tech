@@ -1,5 +1,5 @@
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
-import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
+import { discordChannelToBeatSaverData } from "../../shared/discordChannelToBeatSaverData.ts";
 import { AdminCommandRoutingGet } from "@/apps/discord-bot/commands/definitions.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
@@ -44,7 +44,7 @@ export async function adminChannelGetPlaylist(
     console.log("Invalid caller id ", commandEvent.member?.user?.id);
     return;
   }
-  const data = await discordChannelHistoryToBeatSaverData(
+  const data = await discordChannelToBeatSaverData(
     guildId,
     channelId,
   );
@@ -52,7 +52,7 @@ export async function adminChannelGetPlaylist(
 
   const response = `I would create a playlist of:
     ${
-    data.map((x) => `
+    data.resolved.map((x) => `
     ${x?.versions[0].hash}
     (${x?.name} mapped by ${x?.uploader.name})`)
       .join("\n")
