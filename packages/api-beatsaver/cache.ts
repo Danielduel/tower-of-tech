@@ -55,14 +55,14 @@ export const runWorker = () => {
 
       if (!response) return;
 
-      await Promise.all(Object.entries(response)
+      const cached = await Promise.all(Object.entries(response)
         .map(([lowercaseHash, data]) =>
           s3clientEditor.putObject(lowercaseHash, JSON.stringify(data), {
             bucketName: buckets.beatSaver.mapByHash,
           })
         ));
       
-      console.log("Cached: ", Object.keys(response));
+      console.log(`Cached ${cached.length} items to ${buckets.beatSaver.mapByHash}`);
     } catch (_) {
       // expected
     }
