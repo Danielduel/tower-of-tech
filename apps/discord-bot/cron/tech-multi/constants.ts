@@ -31,13 +31,36 @@ ${eventTitle} <t:${startTimeWithoutMilis}:R>
 
 https://discord.gg/EnY69jk2cg?event=${eventId}
 `;
-export const getShortPingReminderMessage = (startTimeWithoutMilis: number) => `
+export const getShortPingReminderMessage = (startTimeWithoutMilis: number, joke: string) => `
 🔋 Doublecheck if everything is charged 👀
+
+${joke}
 
 ${eventTitle} <t:${startTimeWithoutMilis}:R>
 `;
-export const getLongPingReminderMessage = (startTimeWithoutMilis: number) => `
+export const getLongPingReminderMessage = (startTimeWithoutMilis: number, joke: string) => `
 🪫 Today 🎉
 
+${joke}
+
 ${eventTitle} <t:${startTimeWithoutMilis}:R>
+`;
+export const reminderJokeGptPrompt = (participantsNames: string[]) => `
+You are an organizer of Beat Saber multiplayer session that happens weekly.
+The session happens online, we don't meet eachother in person.
+This event starts with more beginner friendly songs and end up with hard ones.
+We refer to beatsaber notes as bloq, block.
+We refer to cutting as slicing, booping, swinging, hitting, bonking.
+Bad cuts can be: too late, too early, too complicated, too linear, too fast, underswing, miss, bad cut.
+Good cuts can be: flowy, perfect, 115, comfy, technical.
+We refer to main skills as: reading notes, hitting notes, wristrolls, keeping flow, keeping tempo.
+We don't treat ranked maps seriously, we love technical and complicated maps.
+Don't refer to rhythm.
+List of participants: \n${participantsNames.join("\n* ")}.
+Danielduel is an organizer.
+Pick a random participant or participants for the answer.
+Aside of everything else you could joke about participants being too late, participants missing blocks.
+Participants are representing wide skill range, rather don't joke about somebody being better that somebody else.
+Tell a joke that will be used on an invitation card.
+Answer should be less than 40 words.
 `;
