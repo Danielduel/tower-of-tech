@@ -2,14 +2,26 @@ import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
 import { AdminCommandRoutingGet } from "@/apps/discord-bot/commands/definitions.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
+import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
 
 export async function adminChannelGetPlaylist(
   commandEvent: AdminCommandRoutingGet,
 ) {
-  const guildId = commandEvent.guild_id;
-  const channelId = commandEvent.channel.id;
+  const channelPointer = getChannelPointer(commandEvent.channel);
+
+  if (!channelPointer) {
+    console.log(`Unsupported channel type ${commandEvent.channel.type}`);
+    return respondWithMessage("Unsupported channel type", true);
+  }
+
+  const {
+    guildId,
+    channelId
+  } = channelPointer;
+
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
+
   const discordChannelData = await dbDiscordBot.DiscordChannel.findFirst({
     where: {
       channelId,

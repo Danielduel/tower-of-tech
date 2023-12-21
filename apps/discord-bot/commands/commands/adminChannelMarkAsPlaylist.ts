@@ -2,6 +2,7 @@ import { AdminCommandRoutingMark } from "@/apps/discord-bot/commands/definitions
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 import { z } from "zod";
+import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
 
 export async function adminChannelMarkAsPlaylist(
   commandEvent: AdminCommandRoutingMark,
@@ -9,8 +10,18 @@ export async function adminChannelMarkAsPlaylist(
 ) {
   const value = z.boolean().parse(switchValue);
 
-  const guildId = commandEvent.guild_id;
-  const channelId = commandEvent.channel.id;
+  const channelPointer = getChannelPointer(commandEvent.channel);
+
+  if (!channelPointer) {
+    console.log(`Unsupported channel type ${commandEvent.channel.type}`);
+    return respondWithMessage("Unsupported channel type", true);
+  }
+
+  const {
+    guildId,
+    channelId
+  } = channelPointer;
+
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 

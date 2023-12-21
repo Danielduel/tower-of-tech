@@ -1,17 +1,23 @@
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
+import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
 
 export async function adminChannelRegister(
   commandEvent: CommandEmptyInteraction,
 ) {
-  const guildId = commandEvent.guild_id;
-  const channelId = commandEvent.channel.id;
+  const channelPointer = getChannelPointer(commandEvent.channel);
 
-  console.log(commandEvent);
-  console.log(commandEvent.channel);
-  console.log(commandEvent.channel_id);
-  
+  if (!channelPointer) {
+    console.log(`Unsupported channel type ${commandEvent.channel.type}`);
+    return respondWithMessage("Unsupported channel type", true);
+  }
+
+  const {
+    guildId,
+    channelId
+  } = channelPointer;
+
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
