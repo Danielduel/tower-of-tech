@@ -1,6 +1,4 @@
-import { GatewayIntentBits } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
-import { useClient } from "@/apps/discord-bot/client.ts";
-import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
+import { discordChannelToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
 import {
   ConnInfo,
   json,
@@ -59,7 +57,7 @@ export async function playlistFromGuildChannel(
     return json("Channel-Guild mismatch error");
   }
 
-  const data = await discordChannelHistoryToBeatSaverData(
+  const data = await discordChannelToBeatSaverData(
     guildId,
     channelId,
   );
@@ -67,8 +65,8 @@ export async function playlistFromGuildChannel(
 
   const responsePlaylist: BeatSaberPlaylist = {
     playlistAuthor: "Discord ToT bot",
-    playlistTitle: "ToT - Discord playlist",
-    songs: beatSaverResolvedToSongs(data),
+    playlistTitle: `${data.channelName} (${data.guildName}) - ToT Bot`,
+    songs: beatSaverResolvedToSongs(data.resolved),
     image: "",
     customData: {
       syncURL:

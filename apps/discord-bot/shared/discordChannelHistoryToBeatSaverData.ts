@@ -1,4 +1,4 @@
-import { Client, TextBasedChannel, ThreadOnlyChannel } from "npm:discord.js";
+import { Channel, Client, TextBasedChannel, ThreadOnlyChannel } from "npm:discord.js";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { useClient } from "@/apps/discord-bot/client.ts";
 import { GatewayIntentBits } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
@@ -24,12 +24,8 @@ const textChannelToResolvables = async (channel: TextBasedChannel) => {
 };
 
 export async function discordChannelHistoryToBeatSaverResolvables(
-  client: Client,
-  guildId: string,
-  channelId: string,
+  channel: Channel,
 ) {
-  const guild = await client.guilds.fetch(guildId);
-  const channel = await guild.channels.fetch(channelId);
   if (!channel) {
     console.log("Channel doesn't exist");
     return;
@@ -47,26 +43,36 @@ export async function discordChannelHistoryToBeatSaverResolvables(
   return;
 }
 
-export async function discordChannelHistoryToBeatSaverData(
+export async function discordChannelToBeatSaverData(
   guildId: string,
   channelId: string,
 ) {
-  const beatSaverResolvables = await useClient([
+  const data = await useClient([
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMessages,
   ], async (client) => {
-    return await discordChannelHistoryToBeatSaverResolvables(
-      client,
-      guildId,
-      channelId,
-    );
+    const guild = await client.guilds.fetch(guildId);
+    const channel = await guild.channels.fetch(channelId);
+
+    if (!channel) return;
+
+    return {
+      guildName: guild.name,
+      channelName: channel.name,
+      resolvables: await discordChannelHistoryToBeatSaverResolvables(channel)
+    };
   });
   
-  if (!beatSaverResolvables) return null;
+  if (!data) return null;
+  if (!data.resolvables) return null;
 
   const client = createClient(false);
   
-  const resolved = await client.map.fromBeatSaverResolvables.query({ beatSaverResolvables });
+  const resolved = await client.map.fromBeatSaverResolvables.query({ beatSaverResolvables: data.resolvables });
 
-  return resolved;
+  return {
+    guildName: data.guildName,
+    channelName: data.channelName,
+    resolved
+  };
 }
