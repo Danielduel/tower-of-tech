@@ -36,12 +36,16 @@ export const getShortPingReminderMessage = (startTimeWithoutMilis: number, joke:
 
 ${joke}
 
+<@&1169696864111689910>
+
 ${eventTitle} <t:${startTimeWithoutMilis}:R>
 `;
 export const getLongPingReminderMessage = (startTimeWithoutMilis: number, joke: string) => `
 🪫 Today 🎉
 
 ${joke}
+
+<@&1169696932638236777>
 
 ${eventTitle} <t:${startTimeWithoutMilis}:R>
 `;

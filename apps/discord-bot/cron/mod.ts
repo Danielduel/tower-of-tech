@@ -15,7 +15,7 @@ export function registerCronJobs () {
   );
 
   Deno.cron(
-    "Tech multi event - ping long reminder",
+    "Tech multi event - ping short reminder",
     "0 17 * * Thu",
     shortReminder
   );
