@@ -50,5 +50,16 @@ export const BeatSaverApi = client({
         },
       },
     }),
+
+    mapByHashSingle: resource("/maps/hash/:hash", {
+      urlParamsSchema: z.object({
+        hash: z.string().regex(/[0-9a-f,]+/),
+      }),
+      actions: {
+        get: {
+          dataSchema: z.nullable(BeatSaverMapResponseSuccessSchema),
+        },
+      },
+    }),
   },
 });
