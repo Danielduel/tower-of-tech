@@ -112,14 +112,14 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   try {
     // const response = BeatSaverMapByHashResponseSchema.parse(object);
 
-    // if (response) {
-    //   Object.entries(response)
-    //     .forEach(([lowercaseHash, data]) =>
-    //       s3clientEditor.putObject(lowercaseHash, JSON.stringify(data), {
-    //         bucketName: buckets.beatSaver.mapByHash,
-    //       })
-    //     );
-    // }
+    if (response) {
+      await Promise.all(Object.entries(response)
+        .map(([lowercaseHash, data]) =>
+          s3clientEditor.putObject(lowercaseHash, JSON.stringify(data), {
+            bucketName: buckets.beatSaver.mapByHash,
+          })
+        ));
+    }
     console.log("batch cached")
 
     const awaitedCache = await resolvedFromCache;
