@@ -29,12 +29,16 @@ export const scheduleCache = async (hashes: LowercaseMapHash[]) => {
   console.log("Queueing ", hashes.length)
   const remainingHashes = [...hashes];
 
+  let delayS = 1;
   while (remainingHashes.length > 0) {
     const items = remainingHashes.splice(0, 2);
     await kv.enqueue({
       for: watcherName,
       body: items,
+    }, {
+      delay: delayS * 1000
     });
+    delayS++;
   }
 };
 
