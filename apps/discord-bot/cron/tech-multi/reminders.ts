@@ -3,6 +3,7 @@ import { Guild, GatewayIntentBits } from "npm:discord.js";
 import { useClient } from "@/apps/discord-bot/client.ts";
 import { broadcastChannelId, getLongPingReminderMessage, getShortPingReminderMessage, guildId, jokeChannelId, reminderJokeGptPrompt } from "@/apps/discord-bot/cron/tech-multi/constants.ts";
 import { getStartAndEndTimeToday } from "@/apps/discord-bot/cron/tech-multi/utils.ts";
+import { handleFail, reportFail } from "@/packages/utils/handleFail.ts";
 
 export async function getReminderJoke (guild: Guild) {
   const openai = new OpenAI({
@@ -71,12 +72,17 @@ export async function techMultiJoke() {
 
     if (!joke) return;
 
-    const message = await channel.send(joke);
-    await Promise.all([
-      message.react(":clown:"),
-      message.react(":boop:"),
-      message.react(":thinking:"),
-      message.react(":snickers:")
-    ]);
+    await handleFail({
+      throwableFunction: async () => {
+        const message = await channel.send(joke);
+        await Promise.all([
+          message.react(":clown:"),
+          message.react(":boop:"),
+          message.react(":thinking:"),
+          message.react(":snickers:")
+        ]);
+      },
+      handleCatch: reportFail
+    });
   });
 }
