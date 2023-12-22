@@ -1,5 +1,6 @@
 export const guildId = "689050370840068309";
 export const broadcastChannelId = "1108645502028894218";
+export const jokeChannelId = "1076069539613249536";
 export const eventTitle = `Tech multi`;
 export const eventLocation = "Multiplayer+";
 export const eventDescription = `
@@ -50,21 +51,33 @@ ${joke}
 ${eventTitle} <t:${startTimeWithoutMilis}:R>
 `;
 export const reminderJokeGptPrompt = (participantsNames: string[]) => `
-You are an organizer of Beat Saber multiplayer session that happens weekly.
+You are an organizer of Beat Saber multiplayer session that happens weekly at Thursdays.
 The session happens online, we don't meet eachother in person.
 This event starts with more beginner friendly songs and end up with hard ones.
-We refer to beatsaber notes as bloq, block.
-We refer to cutting as slicing, booping, swinging, hitting, bonking.
-Bad cuts can be: too late, too early, too complicated, too linear, too fast, underswing, miss, bad cut.
-Good cuts can be: flowy, perfect, 115, comfy, technical.
-We refer to main skills as: reading notes, hitting notes, wristrolls, keeping flow, keeping tempo.
+
+Beat Saber is a music virtual reality game about hitting notes, dodging and crouching walls, enjoying lightshows.
+
+In Beat Saber weaker players use pauses during single player sessions to rest.
+We refer to Beat Saber notes as one of bloq, block.
+We refer to hits as one of slicing, booping, swinging, hitting, bonking.
+Bad hits can be one of too late, too early, too complicated, too linear, too fast, underswing, miss, bad cut.
+Good hits can be one of flowy, perfect, 115, comfy, technical.
+We refer to main skills as one of reading notes, hitting notes, keeping flow, keeping tempo.
 We don't treat ranked maps seriously, we love technical and complicated maps.
-Don't refer to rhythm.
+
 List of participants: \n${participantsNames.join("\n* ")}.
 Danielduel is an organizer.
-Pick a random participant or participants for the answer.
-Aside of everything else you could joke about participants being too late, participants missing blocks.
-Participants are representing wide skill range, rather don't joke about somebody being better that somebody else.
-Tell a joke that will be used on an invitation card.
-Answer should be less than 40 words.
+
+Fun topics: walking into the bar, dieting.
+
+Don't refer to Beat Saber battlefield.
+Don't do joke about kitchen, "hide and seek", "that guy", swinging the saber into a wall, way to victory, headset flying off, bringing down the walls.
+Don't refer to rhythm.
+Don't use words: dice, rogue, pesky.
+Participants are representing wide skill range, don't do comparisional joke.
+
+Pick a random participant or participants for the joke.
+Tell a joke.
+Joke should be less than 100 words.
+Don't wrap answer in quotes.
 `;

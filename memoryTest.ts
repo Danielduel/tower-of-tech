@@ -2,6 +2,7 @@
 
 import { GatewayIntentBits } from "npm:discord.js";
 import { useClient } from "@/apps/discord-bot/client.ts";
+import { getReminderJoke } from "@/apps/discord-bot/cron/tech-multi/reminders.ts";
 
 // import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 // import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
@@ -33,45 +34,7 @@ import { useClient } from "@/apps/discord-bot/client.ts";
 // // console.log("memMax ", memMax);
 // // // 
 
-// // await useClient([GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildScheduledEvents], async (client) => {
-// //   const guild = await client.guilds.fetch("689050370840068309");
-// //   console.log("Joke ", await getReminderJoke(guild));
-// // });
-
-const guildId = "689050370840068309";
-// const channelId = "1176658722563567759";
-
-// const discordChannelData = await dbDiscordBot.DiscordChannel.findFirst({
-//   where: {
-//     channelId,
-//   },
-// });
-// if (!discordChannelData) {
-//   console.log("This channel is not registered (missing config data)", true);
-// }
-// if (discordChannelData.guildId !== guildId) {
-//   console.log("Channel-Guild mismatch error", true);
-// }
-// if (!discordChannelData.markedAsPlaylist) {
-//   console.log(
-//     "This channel doesn't support being a playlist",
-//     true,
-//   );
-// }
-
-// const data = await discordChannelHistoryToBeatSaverData(
-//   guildId,
-//   channelId,
-// );
-
-// console.log(data);
-
-const data = await useClient([
-  GatewayIntentBits.MessageContent,
-  GatewayIntentBits.GuildMessages,
-  GatewayIntentBits.Guilds,
-], async (client) => {
-  const guild = await (await client.guilds.fetch(guildId)).fetch();
-  console.log(guild);
-  console.log(guild.name)
+await useClient([GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildScheduledEvents], async (client) => {
+  const guild = await client.guilds.fetch("689050370840068309");
+  console.log("Joke ", await getReminderJoke(guild));
 });

@@ -1,5 +1,5 @@
 import { createTechMultiEvent } from "./tech-multi/createTechMultiEvent.ts";
-import { techMultiLongReminder, techMultiShortReminder } from "@/apps/discord-bot/cron/tech-multi/reminders.ts";
+import { techMultiJoke, techMultiLongReminder, techMultiShortReminder } from "@/apps/discord-bot/cron/tech-multi/reminders.ts";
 
 export function registerCronJobs () {
   Deno.cron(
@@ -18,5 +18,11 @@ export function registerCronJobs () {
     "Tech multi event - ping short reminder",
     "0 17 * * Thu",
     techMultiShortReminder
+  );
+
+  Deno.cron(
+    "Tech multi event - daily joke",
+    "0 7 * * *",
+    techMultiJoke
   );
 };

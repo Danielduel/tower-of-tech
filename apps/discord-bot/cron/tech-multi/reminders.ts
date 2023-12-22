@@ -1,7 +1,7 @@
 import OpenAI from "npm:openai@4";
 import { Guild, GatewayIntentBits } from "npm:discord.js";
 import { useClient } from "@/apps/discord-bot/client.ts";
-import { broadcastChannelId, getLongPingReminderMessage, getShortPingReminderMessage, guildId, reminderJokeGptPrompt } from "@/apps/discord-bot/cron/tech-multi/constants.ts";
+import { broadcastChannelId, getLongPingReminderMessage, getShortPingReminderMessage, guildId, jokeChannelId, reminderJokeGptPrompt } from "@/apps/discord-bot/cron/tech-multi/constants.ts";
 import { getStartAndEndTimeToday } from "@/apps/discord-bot/cron/tech-multi/utils.ts";
 
 export async function getReminderJoke (guild: Guild) {
@@ -18,7 +18,7 @@ export async function getReminderJoke (guild: Guild) {
     messages: [{ role: "user", content: reminderJokeGptPrompt(participantsNames) }],
   });
 
-  return completion.choices[0].message.content?.slice(1, -1);
+  return completion.choices[0].message.content;
 }
 
 export async function techMultiLongReminder() {
@@ -56,5 +56,27 @@ export async function techMultiShortReminder() {
     );
 
     await channel.send(getShortPingReminderMessage(startTimeWithoutMilis, joke ?? ""));
+  });
+}
+
+export async function techMultiJoke() {
+  await useClient([GatewayIntentBits.GuildMessages], async (client) => {
+    const guild = await client.guilds.fetch(guildId);
+    const channel = await guild.channels.fetch(jokeChannelId);
+
+    if (!channel) return;
+    if (!channel.isTextBased()) return;
+
+    const joke = await getReminderJoke(guild);
+
+    if (!joke) return;
+
+    const message = await channel.send(joke);
+    await Promise.all([
+      message.react(":clown:"),
+      message.react(":boop:"),
+      message.react(":thinking:"),
+      message.react(":snickers:")
+    ]);
   });
 }
