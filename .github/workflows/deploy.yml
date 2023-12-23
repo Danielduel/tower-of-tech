@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
+      id-token: write
       contents: read
 
     steps:
@@ -14,8 +15,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Deploy to Deno Deploy
-        env:
-          DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
         uses: denoland/deployctl@v1
         with:
           project: danielduel-tot-bot
@@ -40,11 +39,15 @@ jobs:
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
-        env:
-          DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
         with:
           project: tower-of-tech-editor
           entrypoint: apps/editor/server.tsx
+          exclude: |
+            data
+            migrated
+            assets
+            public
+            scripts
 
   discord-bot_register-commands:
     runs-on: ubuntu-latest
