@@ -2,7 +2,7 @@
 
 import { GatewayIntentBits } from "npm:discord.js";
 import { useClient } from "@/apps/discord-bot/client.ts";
-import { getReminderJoke } from "@/apps/discord-bot/cron/tech-multi/reminders.ts";
+import { getInvitation, getReminderJoke, getShortElevatorPitch, getTechMultiGptPrompt } from "@/apps/discord-bot/cron/tech-multi/reminders.ts";
 
 // import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 // import { discordChannelHistoryToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelHistoryToBeatSaverData.ts";
@@ -36,5 +36,5 @@ import { getReminderJoke } from "@/apps/discord-bot/cron/tech-multi/reminders.ts
 
 await useClient([GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildScheduledEvents], async (client) => {
   const guild = await client.guilds.fetch("689050370840068309");
-  console.log("Joke ", await getReminderJoke(guild));
+  console.log(await getShortElevatorPitch(guild));
 });
