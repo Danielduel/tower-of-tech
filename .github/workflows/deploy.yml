@@ -16,11 +16,16 @@ jobs:
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
-        env:
-          DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
         with:
+          token: ${{ secrets.DENO_DEPLOY_TOKEN }}
           project: danielduel-tot-bot
           entrypoint: apps/discord-bot/main.ts
+          exclude: |
+            data
+            migrated
+            assets
+            public
+            scripts
 
   editor_deploy:
     runs-on: ubuntu-latest
