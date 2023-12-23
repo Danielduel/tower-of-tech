@@ -16,6 +16,8 @@ jobs:
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
+        env:
+          DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
         with:
           project: danielduel-tot-bot
           entrypoint: apps/discord-bot/main.ts
@@ -33,6 +35,8 @@ jobs:
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
+        env:
+          DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
         with:
           project: tower-of-tech-editor
           entrypoint: apps/editor/server.tsx
