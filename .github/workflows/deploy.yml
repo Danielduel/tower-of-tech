@@ -5,21 +5,15 @@ on: push
 jobs:
   discord-bot_deploy:
     runs-on: ubuntu-latest
-
-    permissions:
-      id-token: write # This is required to allow the GitHub Action to authenticate with Deno Deploy.
-      contents: read
-
     steps:
       - name: Clone repository
         uses: actions/checkout@v3
 
       - name: Deploy to Deno Deploy
-        uses: denoland/deployctl@v1
         env:
           DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
+        uses: denoland/deployctl@v1
         with:
-          token: ${{ secrets.DENO_DEPLOY_TOKEN }}
           project: danielduel-tot-bot
           entrypoint: apps/discord-bot/main.ts
           exclude: |
