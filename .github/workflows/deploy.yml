@@ -16,6 +16,8 @@ jobs:
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
+        env:
+          DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
         with:
           token: ${{ secrets.DENO_DEPLOY_TOKEN }}
           project: danielduel-tot-bot
