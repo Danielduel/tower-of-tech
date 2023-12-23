@@ -13,6 +13,14 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v3
+        sparse-checkout: |
+          apps
+          packages
+          src
+          deno.json
+          deno.lock
+          importMap.json
+          importMap.local.json
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
@@ -36,6 +44,14 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v3
+        sparse-checkout: |
+          apps
+          packages
+          src
+          deno.json
+          deno.lock
+          importMap.json
+          importMap.local.json
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
