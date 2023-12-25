@@ -24,6 +24,11 @@ export {
   useState,
   useSyncExternalStore,
   useTransition,
+  isValidElement,
+  startTransition,
+  cloneElement,
+  memo,
+  lazy
 } from "https://esm.sh/react@18.2.0?dev";
 export type {
   FC,
