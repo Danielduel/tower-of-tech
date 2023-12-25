@@ -1,6 +1,6 @@
-import { FC, forwardRef, PropsWithChildren, useState } from "react";
+import { forwardRef, PropsWithChildren } from "react";
 import { tw } from "@/packages/twind/twind.tsx";
-import { LinkProps } from "https://esm.sh/react-router-dom@6.3.0?external=react";
+import { LinkProps } from "react-router-dom"
 import { Link } from "@/packages/ui/Link.tsx";
 
 type VisualNovelContainerProps = PropsWithChildren & {
@@ -10,7 +10,7 @@ type VisualNovelContainerProps = PropsWithChildren & {
 
 const VisualNovelAction = (props: LinkProps) => {
   return (
-    <div className={tw("border-r-4 border-gray mt-5")}>
+    <div className={tw("border-r-4 border-white mt-5")}>
       <Link {...props} className={tw("p-4 !text-2xl")} />
     </div>
   );
@@ -30,10 +30,10 @@ export const VisualNovelContainer = forwardRef<
           "box-border text-2xl text-slate-200 max-w-prose w-full p-6 text-left",
         ) + " glass"}
       >
-        <div>
+        <div key="title">
           {title?.length ? <div className={tw("text-lg")}>{title}</div> : null}
         </div>
-        <div>
+        <div key="content">
           {children}
         </div>
       </div>
@@ -42,7 +42,7 @@ export const VisualNovelContainer = forwardRef<
           "w-full text-right text-2xl text-slate-200 max-w-prose flex flex-col gap-4",
         )}
       >
-        {links.map((linkProps) => <VisualNovelAction {...linkProps} />)}
+        {links.map((linkProps) => <VisualNovelAction key={linkProps.to} {...linkProps} />)}
       </div>
     </div>
   );

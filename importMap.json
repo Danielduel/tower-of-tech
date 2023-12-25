@@ -1,7 +1,5 @@
 {
   "imports": {
-    "react": "https://esm.sh/react@18.2.0?dev",
-    "react/": "https://esm.sh/react@18.2.0/",
     "react/jsx-dev-runtime": "https://esm.sh/react@18.2.0/jsx-dev-runtime",
     "react-dom": "https://esm.sh/react-dom@18.2.0",
     "react-dom/server": "https://esm.sh/react-dom@18.2.0/server?dev",
@@ -33,6 +31,7 @@
     "ultra/": "https://deno.land/x/danielduel_ultra_stack_ultra@0.0.13/",
     "mesozoic/": "https://deno.land/x/danielduel_ultra_stack_mesozoic@0.0.2/",
 
-    "@/": "./"
+    "@/": "./",
+    "react": "./packages/react/mod.ts"
   }
 }

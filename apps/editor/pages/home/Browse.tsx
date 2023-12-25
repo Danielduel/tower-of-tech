@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren } from "react";
 import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
 import { tw } from "@/packages/twind/twind.tsx";
-import { trpc } from "../../../../packages/trpc/trpc-react.ts";
+import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { VisualNovelContainer } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 
 const PlaylistLink = (
