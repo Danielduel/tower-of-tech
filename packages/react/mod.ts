@@ -1,3 +1,3 @@
 // @deno-types="npm:@types/react"
-export { Suspense, forwardRef } from "https://esm.sh/react@18.2.0?dev";
-export type { FC, PropsWithChildren } from "https://esm.sh/react@18.2.0?dev";
+export { StrictMode, Suspense, forwardRef, useMemo, useState, useRef, useEffect } from "https://esm.sh/react@18.2.0?dev";
+export type { FC, PropsWithChildren, Ref, PropsWithRef } from "https://esm.sh/react@18.2.0?dev";

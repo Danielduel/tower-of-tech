@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef, useEffect, useState } from "react";
 import { tw } from "@/packages/twind/twind.tsx";
 import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaverMapId } from "@/packages/types/beatsaver.ts";
@@ -142,11 +142,11 @@ const init = async () => {
 }
 
 export const SnipeIndex = () => {
-  const ref = React.useRef<GlobeInstance | null>(null);
-  const dataRef = React.useRef<BeatLeaderWSAcceptedModified[]>([]);
-  const [counter, setCounter] = React.useState(0);
+  const ref = useRef<GlobeInstance | null>(null);
+  const dataRef = useRef<BeatLeaderWSAcceptedModified[]>([]);
+  const [counter, setCounter] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setCounter(counter + 1);
       
@@ -176,7 +176,7 @@ export const SnipeIndex = () => {
     }, 500)
   }, [counter])
 
-  React.useEffect(() => {
+  useEffect(() => {
     (async () => {
       ref.current = await init();
 
@@ -186,7 +186,7 @@ export const SnipeIndex = () => {
     })()
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const client = new WebSocket("wss://api.beatleader.xyz/general");
     
     client.onmessage = (message) => {
