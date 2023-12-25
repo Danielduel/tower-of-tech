@@ -29,6 +29,10 @@ export {
   cloneElement,
   memo,
   lazy,
+  Component,
+  Profiler,
+  version,
+  PureComponent,
 } from "https://esm.sh/react@18.2.0?dev";
 import React from "https://esm.sh/react@18.2.0?dev"
 export default React;
