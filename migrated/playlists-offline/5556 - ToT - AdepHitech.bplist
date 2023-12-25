@@ -314,6 +314,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "El Dorado",
+      "levelAuthorName": "MadChase",
+      "hash": "1D1328084340233CB9A8B5E934261252E1002949",
+      "levelid": "custom_level_1D1328084340233CB9A8B5E934261252E1002949",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cure For Me",
+      "levelAuthorName": "Groovy",
+      "hash": "F2BC50524C9117959598902AF6B64CC6B70DEEDC",
+      "levelid": "custom_level_F2BC50524C9117959598902AF6B64CC6B70DEEDC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Take Me To Safety",
+      "levelAuthorName": "Nebelmonster & Lekrkoekj",
+      "hash": "A040D6ED9ACD99E6DCF0F915A4A12BC7784475DC",
+      "levelid": "custom_level_A040D6ED9ACD99E6DCF0F915A4A12BC7784475DC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

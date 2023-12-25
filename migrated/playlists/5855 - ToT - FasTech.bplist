@@ -86,6 +86,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Lorelei",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "793B1560FDD5CC236518253226882B365A59AB67",
+      "levelid": "custom_level_793B1560FDD5CC236518253226882B365A59AB67",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

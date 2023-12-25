@@ -326,6 +326,30 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Rise - Nightcore",
+      "levelAuthorName": "Monteblanco",
+      "hash": "282880FAB621A513278A0380D17724E382D1373B",
+      "levelid": "custom_level_282880FAB621A513278A0380D17724E382D1373B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "JACK PT BOSS",
+      "levelAuthorName": "yabje & wangyufy",
+      "hash": "42316237F21F65B8569ABBA3289B320AD7C79E6E",
+      "levelid": "custom_level_42316237F21F65B8569ABBA3289B320AD7C79E6E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

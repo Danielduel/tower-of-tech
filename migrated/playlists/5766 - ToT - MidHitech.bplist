@@ -962,6 +962,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Spacetime",
+      "levelAuthorName": "Avexus & Rxerti",
+      "hash": "ECB1B0D6CE417553E9C290EEF672426F27C98E9A",
+      "levelid": "custom_level_ECB1B0D6CE417553E9C290EEF672426F27C98E9A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Metamorphosis",
+      "levelAuthorName": "Kanahebi",
+      "hash": "520C7E2799A4649E68D193A75ED1EBCA1C86CD7B",
+      "levelid": "custom_level_520C7E2799A4649E68D193A75ED1EBCA1C86CD7B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hiasobi",
+      "levelAuthorName": "yabje",
+      "hash": "7593DDF21C0A4B56E14BB3843780B11769549305",
+      "levelid": "custom_level_7593DDF21C0A4B56E14BB3843780B11769549305",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

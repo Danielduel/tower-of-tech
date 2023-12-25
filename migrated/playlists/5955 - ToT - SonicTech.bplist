@@ -26,6 +26,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Parallel Universe Shifter",
+      "levelAuthorName": "Excess10n and Cyanite",
+      "hash": "9A6DE4F6D5F5AFDB23AF8A3ACE5E5235C2668623",
+      "levelid": "custom_level_9A6DE4F6D5F5AFDB23AF8A3ACE5E5235C2668623",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

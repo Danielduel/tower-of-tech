@@ -890,6 +890,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "One Chance",
+      "levelAuthorName": "Avexus & Rxerti",
+      "hash": "5AF153C07D76737D4125EC045D64A18C68B31AB7",
+      "levelid": "custom_level_5AF153C07D76737D4125EC045D64A18C68B31AB7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Stranger",
+      "levelAuthorName": "Kassi, Oegoe & August",
+      "hash": "08582F5EB338E4F9813757A3B3F8E7724A1178B1",
+      "levelid": "custom_level_08582F5EB338E4F9813757A3B3F8E7724A1178B1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Coin",
+      "levelAuthorName": "accuwucy",
+      "hash": "BF6D3F57EA986763325B570B5DFBACC3752C39A8",
+      "levelid": "custom_level_BF6D3F57EA986763325B570B5DFBACC3752C39A8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
     }
   ],
   "customData": {

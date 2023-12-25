@@ -410,6 +410,42 @@
           "name": "Expert"
         }
       ]
+    },
+    {
+      "songName": "だいしきゅーだいしゅき",
+      "levelAuthorName": "まぐろちゃん",
+      "hash": "E53F894301EA45EF032F4B5E2F38376E63165499",
+      "levelid": "custom_level_E53F894301EA45EF032F4B5E2F38376E63165499",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Neon Grave",
+      "levelAuthorName": "Royal",
+      "hash": "6684628C1DBCD0BEFF0A70F69B4859A714FC2082",
+      "levelid": "custom_level_6684628C1DBCD0BEFF0A70F69B4859A714FC2082",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "sans.",
+      "levelAuthorName": "Souk",
+      "hash": "1B0E538ED914F54F00374AF0A876DEA67D366114",
+      "levelid": "custom_level_1B0E538ED914F54F00374AF0A876DEA67D366114",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
     }
   ]
 }

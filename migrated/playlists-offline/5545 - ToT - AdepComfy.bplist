@@ -98,6 +98,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "What You Know",
+      "levelAuthorName": "Taddus",
+      "hash": "53D2AECF5458DA7A3F8F753BEFE964071027BC52",
+      "levelid": "custom_level_53D2AECF5458DA7A3F8F753BEFE964071027BC52",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
     }
   ]
 }

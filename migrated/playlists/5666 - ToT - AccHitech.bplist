@@ -938,6 +938,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "MONSTER",
+      "levelAuthorName": "mansiii",
+      "hash": "30EC33FB61AA3C500C16C3ACE22588DF2444A5F5",
+      "levelid": "custom_level_30EC33FB61AA3C500C16C3ACE22588DF2444A5F5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

@@ -40,18 +40,6 @@
       ]
     },
     {
-      "songName": "disco light",
-      "levelAuthorName": "Various Mappers",
-      "hash": "2337E9C03A2BAF32CB6BC2E5127172B772869FFA",
-      "levelid": "custom_level_2337E9C03A2BAF32CB6BC2E5127172B772869FFA",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "Love Bon Appétit",
       "levelAuthorName": "Fuyakeru",
       "hash": "A13A0EB7C0C7471C430A65ABC92E89660B4A875F",
@@ -388,18 +376,6 @@
       ]
     },
     {
-      "songName": "Shirogane",
-      "levelAuthorName": "abcbadq",
-      "hash": "C2C6BBC9EE5426E34695F40DB89262884332E337",
-      "levelid": "custom_level_C2C6BBC9EE5426E34695F40DB89262884332E337",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "dashstar*",
       "levelAuthorName": "Spinvertigoo",
       "hash": "9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
@@ -726,20 +702,8 @@
     {
       "songName": "(Not) A Devil",
       "levelAuthorName": "Skeelie & Alice",
-      "hash": "2A3FA12A0DB8C331825F1ABF9A19E6323145A853",
-      "levelid": "custom_level_2A3FA12A0DB8C331825F1ABF9A19E6323145A853",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Hating Girl",
-      "levelAuthorName": "Aalto & TOFU",
-      "hash": "DA93FD0EB6BD521718DBE9660D4BD78D8C379F19",
-      "levelid": "custom_level_DA93FD0EB6BD521718DBE9660D4BD78D8C379F19",
+      "hash": "988485B5EB4A9BCBE76076FDC884B801AE5D474C",
+      "levelid": "custom_level_988485B5EB4A9BCBE76076FDC884B801AE5D474C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2015,6 +1979,42 @@
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Trash Talkin'",
+      "levelAuthorName": "ben208",
+      "hash": "CC3D18B84C1E7DBBDE7548C07853B2121C984728",
+      "levelid": "custom_level_CC3D18B84C1E7DBBDE7548C07853B2121C984728",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Inertia",
+      "levelAuthorName": "Lekrkoekj, Mario101, Scorefam",
+      "hash": "23B6A0C95ACCEE6B20A20CF7940259843AF51E45",
+      "levelid": "custom_level_23B6A0C95ACCEE6B20A20CF7940259843AF51E45",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "G4L (2.0 re-up)",
+      "levelAuthorName": "Enduo",
+      "hash": "1F795700996652D294C6D7074E562B55FCD4B515",
+      "levelid": "custom_level_1F795700996652D294C6D7074E562B55FCD4B515",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]

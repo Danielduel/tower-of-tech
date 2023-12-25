@@ -1022,6 +1022,42 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Shirogane",
+      "levelAuthorName": "abcbadq",
+      "hash": "C2C6BBC9EE5426E34695F40DB89262884332E337",
+      "levelid": "custom_level_C2C6BBC9EE5426E34695F40DB89262884332E337",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hating Girl",
+      "levelAuthorName": "Aalto & TOFU",
+      "hash": "DA93FD0EB6BD521718DBE9660D4BD78D8C379F19",
+      "levelid": "custom_level_DA93FD0EB6BD521718DBE9660D4BD78D8C379F19",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Be a flower",
+      "levelAuthorName": "Emiru",
+      "hash": "2E3C4724A691CA3BBFD1956FED061E744A5FFC4B",
+      "levelid": "custom_level_2E3C4724A691CA3BBFD1956FED061E744A5FFC4B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

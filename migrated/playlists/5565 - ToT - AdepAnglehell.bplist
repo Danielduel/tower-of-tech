@@ -26,6 +26,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "disco light",
+      "levelAuthorName": "Various Mappers",
+      "hash": "2337E9C03A2BAF32CB6BC2E5127172B772869FFA",
+      "levelid": "custom_level_2337E9C03A2BAF32CB6BC2E5127172B772869FFA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
     }
   ],
   "customData": {

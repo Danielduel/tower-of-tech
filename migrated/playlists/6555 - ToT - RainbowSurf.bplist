@@ -194,6 +194,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Sputnik-3",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "D223458DCD341F95FF74CBC9EA53C86F12A25867",
+      "levelid": "custom_level_D223458DCD341F95FF74CBC9EA53C86F12A25867",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ],
   "customData": {

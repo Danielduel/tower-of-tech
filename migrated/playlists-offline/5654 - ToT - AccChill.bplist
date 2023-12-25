@@ -338,6 +338,18 @@
           "name": "Expert"
         }
       ]
+    },
+    {
+      "songName": "Moudoku ga Osou",
+      "levelAuthorName": "Tootie",
+      "hash": "58EB1C803030D10EE71E91D4FE6C966B09AC341C",
+      "levelid": "custom_level_58EB1C803030D10EE71E91D4FE6C966B09AC341C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }

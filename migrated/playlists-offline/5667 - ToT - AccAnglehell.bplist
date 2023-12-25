@@ -789,6 +789,18 @@
           "name": "ExpertPlus"
         }
       ]
+    },
+    {
+      "songName": "Black out",
+      "levelAuthorName": "Pleo",
+      "hash": "03C90D0B6E9CC2E64A3D8780396CB730E20E5597",
+      "levelid": "custom_level_03C90D0B6E9CC2E64A3D8780396CB730E20E5597",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
     }
   ]
 }
