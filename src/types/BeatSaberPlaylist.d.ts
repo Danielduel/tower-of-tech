@@ -22,6 +22,7 @@ export type BeatSaberPlaylistCustomData = {
 }
 
 export type BeatSaberPlaylist = {
+  id: string;
   playlistTitle: string;
   playlistAuthor: string;
   customData?: BeatSaberPlaylistCustomData;

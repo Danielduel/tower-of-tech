@@ -6,6 +6,10 @@ import type {
 } from "../types/BeatSaberPlaylist.d.ts";
 import { getCoverBase64 } from "../utils/cover-image.ts";
 import { stringify } from "../utils/json.ts";
+import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
+
+const coverPath =
+  new URL(import.meta.resolve("../../migrated/covers")).pathname;
 
 const sourcePath =
   new URL(import.meta.resolve("../../data/playlists")).pathname;
@@ -23,6 +27,7 @@ const destinationPathOfflineGuests =
     .pathname;
 
 await Promise.all([
+  Deno.mkdir(coverPath, { recursive: true }),
   Deno.mkdir(destinationPath, { recursive: true }),
   Deno.mkdir(destinationPathOffline, { recursive: true }),
   Deno.mkdir(destinationPathGuests, { recursive: true }),
@@ -107,9 +112,11 @@ Object
     playlistItems[key] = [{ ...arr[0], difficulties }];
   });
 
+const hardcodedMergedPlaylistId = "c73e5bf9-bb91-450c-913a-4b52d504444b";
 const allMaps = Object.values(playlistItems).flatMap((x) => x);
 playlists.push(
   await migratePlaylist("ToT - *.bplist", {
+    id: hardcodedMergedPlaylistId,
     image: "",
     playlistAuthor: "Danielduel",
     playlistTitle: "ToT - *",
@@ -133,6 +140,7 @@ await Promise.all([
     shortName,
   }) => {
     const beatsaberPlaylistOffline: BeatSaberPlaylist = {
+      id: playlist.id ?? ulid(),
       image: coverBase64,
       playlistAuthor: playlist.playlistAuthor,
       playlistTitle: playlist.playlistTitle,
@@ -174,6 +182,7 @@ await Promise.all([
     shortName,
   }) => {
     const beatsaberPlaylistOffline: BeatSaberPlaylist = {
+      id: playlist.id ?? ulid(),
       image: coverBase64,
       playlistAuthor: playlist.playlistAuthor,
       playlistTitle: playlist.playlistTitle,

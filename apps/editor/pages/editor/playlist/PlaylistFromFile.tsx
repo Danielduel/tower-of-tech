@@ -23,7 +23,6 @@ export const PlaylistFromFile: FC = () => {
         });
         const object = JSON.parse(content as string);
         const playlist = await BeatSaberPlaylistWithoutIdSchema.parseAsync(object);
-        playlist.id = playlist.id ?? crypto.randomUUID();
         return playlist;
       }));
       setPlaylists(readPlaylists);
