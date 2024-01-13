@@ -1,31 +1,30 @@
 import { FC, PropsWithChildren } from "react";
 import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
-import { tw } from "@/packages/twind/twind.tsx";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 
 const PlaylistLink = (
   { displayName }: { displayName: string },
 ) => {
   return (
-    <div className={tw("flex items-center pl-8 border-2 h-12 border-transparent hover:border-black")}>
+    <div className="flex items-center pl-8 border-2 h-12 border-transparent hover:border-black">
       {displayName}
-      <a className={tw("flex items-center ml-auto px-5 h-full ring-blue-500 hover:ring-2")}>Details</a>
-      <a className={tw("flex items-center px-5 h-full ring-blue-500 hover:ring-2")}>Download</a>
+      <a className="flex items-center ml-auto px-5 h-full ring-blue-500 hover:ring-2">Details</a>
+      <a className="flex items-center px-5 h-full ring-blue-500 hover:ring-2">Download</a>
     </div>
   );
 };
 
 const SectionSection: FC<PropsWithChildren> = ({ children }) => (
-  <section className={tw("min-w-full mt-3")}>{children}</section>
+  <section className="min-w-full mt-3">{children}</section>
 );
 const SectionTitle: FC<PropsWithChildren> = ({ children }) => (
-  <span className={tw("text-4xl font-bold m-r-auto border-t-1 ml-[-1px] border-l-1 p-10 pt-1 pl-1 border-black text-left")}>{children}</span>
+  <span className="text-4xl font-bold m-r-auto border-t-1 ml-[-1px] border-l-1 p-10 pt-1 pl-1 border-black text-left">{children}</span>
 );
 const SectionDescription: FC<PropsWithChildren> = ({ children }) => (
-  <div className={tw("text-2xl ml-4 mt-2 text-[#333] text-left")}>{children}</div>
+  <div className="text-2xl ml-4 mt-2 text-[#333] text-left">{children}</div>
 );
 const SectionMapping: FC<PropsWithChildren> = ({ children }) => (
-  <div className={tw("text-xl mt-2 text-[#333]")}>{children}</div>
+  <div className="text-xl mt-2 text-[#333]">{children}</div>
 );
 
 export default function Index() {
@@ -55,17 +54,17 @@ export default function Index() {
   ];
 
   return (
-    <div className={tw("mx-auto bg-[#ddd] min-h-[100vh]")}>
-      <div className={tw("h-96 mb-[-10rem] w-[100vw] z-[0] bg-no-repeat bg-cover bg-center flex items-end")} style={{ backgroundImage: "url('/cubes_floating.svg')"}}>
+    <div className="mx-auto bg-[#ddd] min-h-[100vh]">
+      <div className="h-96 mb-[-10rem] w-[100vw] z-[0] bg-no-repeat bg-cover bg-center flex items-end" style={{ backgroundImage: "url('/cubes_floating.svg')"}}>
         
-      <div className={tw("z-[1] mb-[10rem] bg-[#ccc] relative px-4 py-8 max-w-screen-md w-full mx-auto flex flex-col items-center justify-center")}>
-          <h1 className={tw("text-4xl font-bold pt-10")}>Tower of Tech</h1>
-          <p className={tw("mt-2")}>
+      <div className="z-[1] mb-[10rem] bg-[#ccc] relative px-4 py-8 max-w-screen-md w-full mx-auto flex flex-col items-center justify-center">
+          <h1 className="text-4xl font-bold pt-10">Tower of Tech</h1>
+          <p className="mt-2">
             Welcome to dev version of ToT website.
           </p>
         </div>
       </div>
-      <div className={tw("z-[1] bg-[#ccc] relative px-4 py-8 max-w-screen-md mx-auto flex flex-col items-center justify-center")}>
+      <div className="z-[1] bg-[#ccc] relative px-4 py-8 max-w-screen-md mx-auto flex flex-col items-center justify-center">
         <SectionSection>
           <SectionTitle>Adep</SectionTitle>
           <SectionDescription>

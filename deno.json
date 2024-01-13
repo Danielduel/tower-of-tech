@@ -30,10 +30,10 @@
     "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
   },
   "fmt": {
-    "files": { "exclude": [".ultra"] }
+    "exclude": [".ultra"]
   },
   "lint": {
-    "files": { "exclude": [".ultra"] }
+    "exclude": [".ultra"]
   },
   "importMap": "./importMap.json"
 }

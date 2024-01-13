@@ -1,5 +1,4 @@
 import { useRef, useEffect, useState } from "react";
-import { tw } from "@/packages/twind/twind.tsx";
 import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaverMapId } from "@/packages/types/beatsaver.ts";
 import { GlobeInstance } from "globe.gl";
@@ -81,12 +80,12 @@ const StatusItem = (props: BeatLeaderWSAcceptedModified) => {
     }
   } = props;
   return (
-    <div className={tw("w-full text-white flex p-4 text-left")}>
-      <div className={tw("w-16 h-16 rounded-lg border-0 border-black overflow-hidden mr-4")}>
+    <div className="w-full text-white flex p-4 text-left">
+      <div className="w-16 h-16 rounded-lg border-0 border-black overflow-hidden mr-4">
         <img src={avatar} />
       </div>
       <div>
-        <div className={tw("text-lg")}>{getFlagEmoji(country)} {playerName}</div>
+        <div className="text-lg">{getFlagEmoji(country)} {playerName}</div>
         <div>{Math.floor(accuracy * 10000) / 100}%{fullCombo ? " (FC)" : ""} {songName}
         <br />by {author}
         {mapper.length > 0 ? (<span><br />from {mapper}</span>) : null}
@@ -99,7 +98,7 @@ const StatusItem = (props: BeatLeaderWSAcceptedModified) => {
 const StatusItemAsHTML = (props: BeatLeaderWSAcceptedModified) => {
   const elem = <StatusItem {...props} />;
   const root = document.createElement("div");
-  root.className = tw("bg-zinc-900") + " glass"
+  root.className = "bg-zinc-900 glass"
   root.setAttribute("name", "toRemove")
   createRoot(root).render(elem);
   return root;
@@ -216,7 +215,7 @@ export const SnipeIndex = () => {
 
   return <div>
     <div id="globeViz"></div>
-    <div className={tw("w-96 h-[calc(100vh-8rem)] z-2 absolute top-0 right-0 border-box m-16 overflow-scroll") + " glass scrollbar-hide"}>
+    <div className="w-96 h-[calc(100vh-8rem)] z-2 absolute top-0 right-0 border-box m-16 overflow-scroll glass scrollbar-hide">
       {
         dataRef.current.map((props) => <StatusItem { ...props } />)
       }

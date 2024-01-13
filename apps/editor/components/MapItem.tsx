@@ -6,7 +6,6 @@ import {
   BeatSaverMapResponseSuccessSchema,
   isBeatSaverMapResponseSuccessSchema,
 } from "@/packages/types/beatsaver.ts";
-import { tw } from "@/packages/twind/twind.tsx";
 
 type MapItemProps = {
   playlistMapItem?: typeof BeatSaberPlaylistSongItemSchema._type;
@@ -64,7 +63,7 @@ const useBeatSaverMatch = (props: MapItemProps) => {
   );
 };
 
-const coverStyle = tw("w-32 h-32 min-w-[8rem] min-h-[8rem]");
+const coverStyle = "w-32 h-32 min-w-[8rem] min-h-[8rem]";
 export const MapItem: FC<MapItemProps> = ({
   playlistMapItem,
   beatSaverMapItem,
@@ -76,7 +75,7 @@ export const MapItem: FC<MapItemProps> = ({
   return (
     <div
       key={playlistMapItem.hash}
-      className={tw("text-left flex flex-row gap-4 mt-2 text-lg w-prose")}
+      className="text-left flex flex-row gap-4 mt-2 text-lg w-prose"
     >
       <div>
         <Field

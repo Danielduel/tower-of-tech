@@ -7,7 +7,8 @@ export const routing = {
     more: "more",
     download: "download",
     about: "about",
-    browse: "browse"
+    browse: "browse",
+    playlistInstallGuide: "playlist-install-guide",
   },
 
   snipe: {
@@ -29,19 +30,20 @@ export const routing = {
 export const links = {
   home: {
     root: "/",
+    playlistInstallGuide: "/home/playlist-install-guide",
     download: "/home/download",
     more: "/home/more",
     about: "/home/about",
-    browse: "/home/browse"
+    browse: "/home/browse",
   },
   
   editor: {
     playlist: {
-      list: "/editor/playlist/list"
+      list: "/editor/playlist/list",
     },
     map: {
-      list: "/editor/map/list"
-    }
+      list: "/editor/map/list",
+    },
   }
 };
 

@@ -6,7 +6,6 @@ import { ImportMapScript } from "ultra/lib/react/client.js";
 import { Routing } from "./Routing.tsx";
 import { dehydrate } from "@tanstack/react-query";
 import { queryClient } from "@/packages/react-query/query-client.ts";
-import { TwindStyleTag, tw } from "@/packages/twind/twind.tsx";
 
 const logError = (error: Error, info: { componentStack: string }) => {
   console.log(error, info);
@@ -24,6 +23,7 @@ export default function App() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" /> 
+        <script src="https://cdn.tailwindcss.com"></script>
         <ImportMapScript />
         <script
           dangerouslySetInnerHTML={{
@@ -41,7 +41,6 @@ export default function App() {
             <Routing />
           </Suspense>
         </ErrorBoundary>
-        <TwindStyleTag />
       </body>
     </html>
   );

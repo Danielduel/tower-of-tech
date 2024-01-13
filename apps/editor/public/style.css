@@ -56,7 +56,7 @@ p {
 .main-gradient > * {
   z-index: 2;
 }
-
+/* 
 .main-gradient::after {
   z-index: 1;
   position: fixed;
@@ -66,8 +66,8 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #5D4157;  /* fallback for old browsers */
-  background: radial-gradient(circle at -20% -20%, #65779c99, #10142099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #5D4157;
+  background: radial-gradient(circle at -20% -20%, #65779c99, #10142099);
 
 }
 .main-gradient::before {
@@ -83,6 +83,37 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+*/
+.main-gradient::after {
+  z-index: 1;
+  position: fixed;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #5D4157;
+  background: radial-gradient(circle at -20% -20%, #5b87cf99, rgba(24, 62, 114, 0.6));
+}
+
+.main-gradient::before {
+  z-index: 0;
+  position: fixed;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+i {
+  color: rgb(185, 225, 255);
 }
 
 .glass {

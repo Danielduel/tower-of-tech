@@ -4,7 +4,7 @@ import { links } from "@/apps/editor/routing.config.ts";
 export const More = () => {
   return (
     <VisualNovelContainer
-      title="System"
+      title=""
       links={
         [
           {

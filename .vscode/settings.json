@@ -2,6 +2,7 @@
   "deno.enable": true,
   "deno.lint": true,
   "deno.unstable": true,
+  "deno.enablePaths": ["."],
   "editor.defaultFormatter": "denoland.vscode-deno",
   "typescript.validate.enable": false,
   "javascript.validate.enable": false,

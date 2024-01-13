@@ -1,6 +1,5 @@
 import { FC, PropsWithChildren } from "react";
 import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
-import { tw } from "@/packages/twind/twind.tsx";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { VisualNovelContainer } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 
@@ -8,25 +7,25 @@ const PlaylistLink = (
   { displayName }: { displayName: string },
 ) => {
   return (
-    <div className={tw("flex items-center pl-8 border-2 h-12 border-transparent hover:border-black")}>
+    <div className="flex items-center pl-8 border-2 h-12 border-transparent hover:border-black">
       {displayName}
-      <a className={tw("flex items-center ml-auto px-5 h-full ring-blue-500 hover:ring-2")}>Details</a>
-      <a className={tw("flex items-center px-5 h-full ring-blue-500 hover:ring-2")}>Download</a>
+      <a className="flex items-center ml-auto px-5 h-full ring-blue-500 hover:ring-2">Details</a>
+      <a className="flex items-center px-5 h-full ring-blue-500 hover:ring-2">Download</a>
     </div>
   );
 };
 
 const SectionSection: FC<PropsWithChildren> = ({ children }) => (
-  <section className={tw("min-w-full mt-3")}>{children}</section>
+  <section className="min-w-full mt-3">{children}</section>
 );
 const SectionTitle: FC<PropsWithChildren> = ({ children }) => (
-  <span className={tw("text-4xl font-bold m-r-auto border-t-1 ml-[-1px] border-l-1 p-10 pt-1 pl-1 border-black text-left")}>{children}</span>
+  <span className="text-4xl font-bold m-r-auto border-t-1 ml-[-1px] border-l-1 p-10 pt-1 pl-1 border-black text-left">{children}</span>
 );
 const SectionDescription: FC<PropsWithChildren> = ({ children }) => (
-  <div className={tw("text-2xl ml-4 mt-2 text-left")}>{children}</div>
+  <div className="text-2xl ml-4 mt-2 text-left">{children}</div>
 );
 const SectionMapping: FC<PropsWithChildren> = ({ children }) => (
-  <div className={tw("text-xl mt-2")}>{children}</div>
+  <div className="text-xl mt-2">{children}</div>
 );
 
 export const Browse = () => {
@@ -57,9 +56,9 @@ export const Browse = () => {
 
   return (
     <VisualNovelContainer links={[]}>
-      <div className={tw("mx-auto min-h-[100vh]")}>
+      <div className="mx-auto min-h-[100vh]">
 
-        <div className={tw("z-[1] relative px-4 py-8 max-w-screen-md mx-auto flex flex-col items-center justify-center")}>
+        <div className="z-[1] relative px-4 py-8 max-w-screen-md mx-auto flex flex-col items-center justify-center">
           <SectionSection>
             <SectionTitle>Adep</SectionTitle>
             <SectionDescription>

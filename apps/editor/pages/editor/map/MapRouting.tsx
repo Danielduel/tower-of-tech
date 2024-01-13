@@ -1,12 +1,11 @@
 import { FC, PropsWithChildren } from "react";
 import { Route, Routes } from "react-router-dom";
-import { tw } from "@/packages/twind/twind.tsx";
 import { MapList } from "./MapList.tsx";
 
 export const MapLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className="sub-grid-layout">
-      <div className={tw("flex flex-col items-start")}>
+      <div className="flex flex-col items-start">
       </div>
       <div>
         { children }

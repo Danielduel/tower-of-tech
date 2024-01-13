@@ -32,26 +32,6 @@ importMap.imports["ultra/"] = "/_ultra/";
 importMap.imports["@/"] = "/@/";
 importMap.imports["zod"] = "/_x/zod@v3.21.4/mod.ts";
 importMap.imports["https://deno.land/x/"] = "/_x/";
-// ts_brand@0.0.1/mod.ts
-
-
-// const handleRequest = async (request: Request): Promise<Response> => {
-//   const { pathname } = new URL(request.url);
-//   const filePath = pathname.replace(prefix, "./");
-//   const fileUrl = join(root, filePath);
-
-//   const source = await Deno.readTextFile(fileUrl);
-//   const result = await compile(fileUrl.toString(), source, {
-//     jsxImportSource: "react",
-//     development: true,
-//   });
-
-//   return new Response(result, {
-//     headers: {
-//       "Content-Type": "application/javascript",
-//     },
-//   });
-// };
 
 const renderer = createRenderHandler({
   root,
@@ -103,6 +83,33 @@ const executeHandlers = composeHandlers(
     handleRequest: async (request) => {
       const { pathname } = new URL(request.url);
       const realPathName = pathname.split("/@")[1];
+
+      const fileUrl = root + realPathName;
+      const source = await Deno.readTextFile(fileUrl);
+      const result = await compile(fileUrl.toString(), source, {
+        jsxImportSource: "react",
+        development: true,
+        minify: false,
+      });
+
+      return new Response(
+        result,
+        {
+          headers: {
+            "Content-Type": "application/javascript",
+          },
+        },
+      );
+    },
+  },
+  {
+    supportsRequest: (request) => {
+      return request.url.includes("///");
+    },
+    handleRequest: async (request) => {
+      const { pathname } = new URL(request.url);
+      const realPathName = "/" + pathname.split("///")[1];
+      console.log(realPathName)
 
       const fileUrl = root + realPathName;
       const source = await Deno.readTextFile(fileUrl);
