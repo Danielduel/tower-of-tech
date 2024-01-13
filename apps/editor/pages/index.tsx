@@ -16,11 +16,13 @@ export default function Index() {
         you, those playlists cover skillset between{" "}
         <i>I've passed my first Expert map!</i> and{" "}
         <i>Hey, do you have 14nps angle tech for me?</i>.
+
+        <a className="animate-bounce border-4 p-20 bg-red-400 text-4xl" href="bsplaylist://playlist/https://danielduel-tot-bot.deno.dev/api/playlist/guild/689050370840068309/channel/1176658722563567759">This button PLEO</a>
       </VisualNovelBody>
       <VisualNovelActions>
         <VisualNovelAnchor
           download
-          children="Just give me the those playlists!"
+          children="I know what to do, just give me the those playlists!"
           href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
         />
         <VisualNovelLink to={links.home.playlistInstallGuide} children="How to use those playlists?" />
