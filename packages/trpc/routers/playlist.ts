@@ -20,13 +20,11 @@ export const createOrUpdatePlaylist = async (input: typeof BeatSaberPlaylistWith
     await dbEditor.BeatSaberPlaylistSongItem.addMany(input.songs)
   } catch (err) { console.log(err) }
   try {
-    const a = await dbEditor.BeatSaberPlaylist.add({
+    return await dbEditor.BeatSaberPlaylist.add({
       ...input,
       image: null,
       id: playlistId,
       songs: input.songs.map(x => makeUppercaseMapHash(x.hash))
     });
-
-    return a;
   } catch (err) { console.error(err) }
 }

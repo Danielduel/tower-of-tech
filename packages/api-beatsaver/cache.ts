@@ -26,6 +26,8 @@ const CacheRequestSchema = z.object({
 });
 
 export const scheduleCache = async (hashes: LowercaseMapHash[]) => {
+  if (hashes.length === 0) return;
+
   console.log("Queueing ", hashes.length)
   const remainingHashes = [...hashes];
   console.log(remainingHashes);

@@ -1,6 +1,6 @@
 import "https://deno.land/std@0.206.0/dotenv/load.ts";
 import { S3Client } from "s3_lite_client";
-import { isLocal, isDbEditorRemote } from "@/packages/utils/envrionment.ts";
+import { isDbEditorRemote, isLocal } from "@/packages/utils/envrionment.ts";
 import {
   BeatSaberPlaylist,
   BeatSaberPlaylistSongItem,
@@ -18,8 +18,8 @@ export const kv = isDbEditorRemote()
     return await Deno.openKv(Deno.env.get("DD_EDITOR_KV_URL"));
   })()
   : isLocal()
-    ? await Deno.openKv("./local.db")
-    : await Deno.openKv();
+  ? await Deno.openKv("./local.db")
+  : await Deno.openKv();
 
 export const dbEditor = kvdex(kv, {
   BeatSaverResponseWrapper,
