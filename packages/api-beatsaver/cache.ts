@@ -16,7 +16,7 @@ import {
 import { z } from "zod";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
-import { BeatSaverApi, fetchHashes } from "@/packages/api-beatsaver/mod.ts";
+import { fetchHashes } from "@/packages/api-beatsaver/mod.ts";
 
 const watcherName = "api-beatsaver-cache-worker";
 
@@ -28,10 +28,12 @@ const CacheRequestSchema = z.object({
 export const scheduleCache = async (hashes: LowercaseMapHash[]) => {
   console.log("Queueing ", hashes.length)
   const remainingHashes = [...hashes];
+  console.log(remainingHashes);
 
   let delayS = 1;
   while (remainingHashes.length > 0) {
     const items = remainingHashes.splice(0, 1);
+    console.log(`Enqueue ${items}`)
     await kv.enqueue({
       for: watcherName,
       body: items,
@@ -64,6 +66,9 @@ export const runWorker = () => {
       console.log(`Caching ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`);
 
       let response = await fetchHashes(filteredHashes);
+      if ("error" in response) {
+        return;
+      }
       if ("id" in response) {
         response = { [filteredHashes[0]]: response };
       }
@@ -78,6 +83,7 @@ export const runWorker = () => {
       
       console.log(`Cached ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`);
     } catch (_) {
+      return;
       // expected
     }
   });

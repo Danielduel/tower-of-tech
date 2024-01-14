@@ -116,7 +116,10 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   if ("id" in response) {
     response = { [remainingHashArray[0]]: response };
   }
-  await scheduleCache(remainingHashArray);
+
+  try {
+    await scheduleCache(remainingHashArray);
+  } catch (err) { /* expected */ }
 
   try {
     const awaitedCache = await resolvedFromCache;
@@ -202,6 +205,7 @@ export const fetchAndCacheFromResolvables = async (
   resolvables: BeatSaverResolvable[],
 ) => {
   const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
+
   return [
     ...Object.values(resolved.fromHashes ?? {}),
     ...Object.values(resolved.fromIds ?? {}),

@@ -35,7 +35,6 @@ export const PlaylistFromFile: FC = () => {
           await Promise.all(playlists.map((playlist) => {
             return mutate([ playlist ]);
           }))
-          alert("Done");
         }
       }}>Publish</button>
       <input

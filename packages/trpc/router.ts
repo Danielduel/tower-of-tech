@@ -5,7 +5,7 @@ import { dbEditor, s3clientEditor } from "../database-editor/mod.ts";
 import { isReadOnly } from "@/packages/utils/envrionment.ts";
 import {
   fetchAndCacheFromResolvables,
-  fetchAndCacheHashes,
+  fetchAndCacheFromResolvablesRaw,
 } from "@/packages/api-beatsaver/mod.ts";
 import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
 import {
@@ -28,12 +28,12 @@ const map = t.router({
       hashes: z.array(z.string().transform(makeLowercaseMapHash)),
     }))
     .query(async ({ input: { hashes } }) => {
-      return await fetchAndCacheFromResolvables(
+      return (await fetchAndCacheFromResolvablesRaw(
         (hashes as LowercaseMapHash[]).map((hash) => ({
           kind: "hash",
           data: hash,
         })),
-      );
+      )).fromHashes;
     }),
   list: t.procedure.query(async () => {
     const items = await dbEditor.BeatSaberPlaylistSongItem.findMany({});
