@@ -172,7 +172,9 @@ const executeHandlers = composeHandlers(
   staticHandler,
 );
 
-const middleware = refresh();
+const middleware = refresh({
+  paths: ["./apps", "./packages" ]
+});
 
 runWorker();
 

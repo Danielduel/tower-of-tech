@@ -6,9 +6,10 @@ import {
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import type { LinkProps } from "react-router-dom";
 import { links } from "@/apps/editor/routing.config.ts";
-import { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren, useMemo, useState } from "react";
 import { Image } from "@/apps/editor/components/Image.tsx";
 import { Link } from "@/packages/ui/Link.tsx";
+import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
 
 type InstallStepsT = {
   downloading: boolean;
@@ -121,10 +122,12 @@ const StepLink: FC<LinkProps> = (props) => {
 };
 
 export const OneClickAnchor = ({ href, name }: { href: string, name: string }) => {
+  const [visited, setVisited] = useState(false);
   return (
     <a
-      className="hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2"
+      className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2 " + (visited ? "opacity-50" : "")}
       href={`bsplaylist://playlist/${href}`}
+      onClick={() => setVisited(true)}
     >
       {name}
     </a>
@@ -132,27 +135,19 @@ export const OneClickAnchor = ({ href, name }: { href: string, name: string }) =
 }
 
 export const PlaylistInstallGuideModAssistant = () => {
+  const playlistArray = useMemo(() => Object.values(playlistMapping), []);
   return (
     <Step firstStep>
       Have fun clicking those
-      <br />
-      <small>
-        Feel free to dm me on Discord or Matrix if you would like me to describe
-        your method here
-      </small>
       <Divider />
-      <StepLink
-        to={links.home.playlistInstallGuide.pcvrSteam}
-        children="I want to use ModAssistant's OneClick™"
-      />
-      <StepLink
-        to={""}
-        children="I pick the manual way"
-      />
-      <StepLink
-        to={""}
-        children="Take me back"
-      />
+      {
+        playlistArray.map(x => (
+          <OneClickAnchor
+            name={x.displayName}
+            href={x.apiDownloadPath}
+          />
+        ))
+      }
     </Step>
   );
 };
@@ -170,7 +165,7 @@ export const PlaylistInstallGuidePCVRSteam = () => {
       </small>
       <Divider />
       <StepLink
-        to={links.home.playlistInstallGuide.pcvrSteam}
+        to={links.home.playlistInstallGuide.modAssistant}
         children="I want to use ModAssistant's OneClick™"
       />
       <StepLink
