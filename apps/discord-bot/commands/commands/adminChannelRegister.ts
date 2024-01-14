@@ -2,6 +2,7 @@ import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
 import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
+import l from "https://esm.sh/v135/@twind/preset-tailwind@1.0.1/X-ZS8q/denonext/preset-tailwind.mjs";
 
 export async function adminChannelRegister(
   commandEvent: CommandEmptyInteraction,
@@ -27,45 +28,32 @@ export async function adminChannelRegister(
   }
   console.log(`Registering channel ${channelId} from guild ${guildId}`);
 
-  const discordChannelData = await dbDiscordBot.DiscordChannel.findFirst({
-    where: {
-      channelId,
-    },
-  });
-  const discordGuildData = await dbDiscordBot.DiscordGuild.findFirst({
-    where: {
-      guildId,
-    },
-  });
+  const discordChannelData = await dbDiscordBot.DiscordChannel
+    .findByPrimaryIndex("channelId", channelId)
+    .then(x => x?.flat());
+  const discordGuildData = await dbDiscordBot.DiscordGuild
+    .findByPrimaryIndex("guildId", guildId)
+    .then(x => x?.flat());
   if (discordChannelData) {
     return respondWithMessage("This channel is already registered", true);
   }
 
-  await dbDiscordBot.DiscordChannel.create({
-    data: {
-      channelId,
-      guildId,
-      addedBy: commandEvent.member?.user?.id,
-      markedAsPlaylist: false,
-    },
+  await dbDiscordBot.DiscordChannel.add({
+    channelId,
+    guildId,
+    addedBy: commandEvent.member?.user?.id,
+    markedAsPlaylist: false,
   });
 
   if (!discordGuildData) {
-    await dbDiscordBot.DiscordGuild.create({
-      data: {
-        guildId,
-        addedBy: commandEvent.member?.user?.id,
-        channels: [ channelId ]
-      },
+    await dbDiscordBot.DiscordGuild.add({
+      guildId,
+      addedBy: commandEvent.member?.user?.id,
+      channels: [ channelId ]
     });
   } else {
-    await dbDiscordBot.DiscordGuild.update({
-      data: {
-        channels: [ ...discordGuildData.channels, channelId ]
-      },
-      where: {
-        guildId
-      }
+    await dbDiscordBot.DiscordGuild.updateByPrimaryIndex("guildId", guildId, {
+      channels: [ ...discordGuildData.channels, channelId ]
     });
   }
 
@@ -75,4 +63,4 @@ export async function adminChannelRegister(
       : "This channel is now registered and added to a new guild",
     true,
   );
-}
+};

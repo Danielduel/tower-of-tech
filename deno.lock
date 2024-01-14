@@ -381,6 +381,8 @@
   },
   "redirects": {
     "https://deno.land/x/deno_kv_oauth/mod.ts": "https://deno.land/x/deno_kv_oauth@v0.10.0/mod.ts",
+    "https://deno.land/x/kvdex/mod.ts": "https://deno.land/x/kvdex@v0.31.0/mod.ts",
+    "https://deno.land/x/zod/mod.ts": "https://deno.land/x/zod@v3.22.4/mod.ts",
     "https://esm.sh/v128/@types/react@~18.2/jsx-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-runtime~.d.ts"
   },
   "remote": {

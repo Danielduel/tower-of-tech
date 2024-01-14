@@ -25,11 +25,9 @@ export async function adminChannelMarkAsPlaylist(
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
-  const discordChannelData = await dbDiscordBot.DiscordChannel.findFirst({
-    where: {
-      channelId,
-    },
-  });
+  const discordChannelData = await dbDiscordBot.DiscordChannel
+    .findByPrimaryIndex("channelId", channelId)
+    .then(x => x?.flat());
   if (!discordChannelData) {
     return respondWithMessage("This channel is not registered (missing config data)", true);
   }
@@ -42,16 +40,12 @@ export async function adminChannelMarkAsPlaylist(
     return;
   }
 
-  await dbDiscordBot.DiscordChannel.update({
-    data: {
-      markedAsPlaylist: value,
-    },
-    where: {
-      channelId,
-    },
-  });
+  await dbDiscordBot.DiscordChannel
+    .updateByPrimaryIndex("channelId", channelId, {
+      markedAsPlaylist: value
+    });
 
-  return respondWithMessage(
+    return respondWithMessage(
     value
       ? "This channel is now available as a playlist"
       : "This channel is no longer available as a playlist",

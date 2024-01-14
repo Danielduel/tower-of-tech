@@ -29,6 +29,7 @@
 
     "react-helmet-async": "https://esm.sh/react-helmet-async@1.3.0?external=react",
 
+    "kvdex/": "https://deno.land/x/kvdex@v0.31.0/",
     "pentagon": "../pentagon/mod.ts",
     "ultra/": "../ultra/",
     "mesozoic/": "../mesozoic/",
