@@ -1,6 +1,9 @@
 {
   "playlistTitle": "ToT - AdepComfy",
   "playlistAuthor": "Danielduel",
+  "customData": {
+    "id": "01HK8XCHRH8RDXEEP9F4211NVG"
+  },
   "songs": [
     {
       "songName": "Hellcat",
@@ -239,6 +242,54 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Atomic Dog",
+      "levelAuthorName": "DeeDee",
+      "hash": "3D64EC40B89E748CEB1B3C278E431D8BD47B0F11",
+      "levelid": "custom_level_3D64EC40B89E748CEB1B3C278E431D8BD47B0F11",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Meltdown",
+      "levelAuthorName": "Bytrius",
+      "hash": "9662D5D1F48FE47EFF6050F90A2EE121D10478C9",
+      "levelid": "custom_level_9662D5D1F48FE47EFF6050F90A2EE121D10478C9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "¡MAS CRAZY!",
+      "levelAuthorName": "Frost",
+      "hash": "67CA412EFBF24E3D4A71237937234523D0663A6C",
+      "levelid": "custom_level_67CA412EFBF24E3D4A71237937234523D0663A6C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Unaffected",
+      "levelAuthorName": "Kassi",
+      "hash": "E640E2FF7EFABA0298D29ADD4EC842F03136495D",
+      "levelid": "custom_level_E640E2FF7EFABA0298D29ADD4EC842F03136495D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

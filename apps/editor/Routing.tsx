@@ -10,7 +10,7 @@ import { Browse } from "./pages/home/Browse.tsx";
 import { More } from "./pages/home/More.tsx";
 import Download from "@/apps/editor/pages/home/Download.tsx";
 import { SnipeIndex } from "@/apps/editor/pages/snipe/index.tsx";
-import { PlaylistInstallGuide } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
+import { PlaylistInstallGuidePlatform, PlaylistInstallGuidePCVRSteam } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
 
 export const Routing = () => {
   return (
@@ -21,10 +21,14 @@ export const Routing = () => {
         <Route path={routing.globalNoPage} element={EditorLayoutShell(NoPage)} />
       </Route>
       <Route path={routing.home.root}>
-        <Route path={routing.home.playlistInstallGuide} element={MainLayoutShell(PlaylistInstallGuide)} />
         <Route path={routing.home.download} element={MainLayoutShell(Download)} />
         <Route path={routing.home.browse} element={MainLayoutShell(Browse)} />
         <Route path={routing.home.more} element={MainLayoutShell(More)} />
+        <Route path={routing.home.playlistInstallGuide.root}>
+          <Route path={routing.home.playlistInstallGuide.modAssistant} element={MainLayoutShell(PlaylistInstallGuidePCVRSteam)} />
+          <Route path={routing.home.playlistInstallGuide.pcvrSteam} element={MainLayoutShell(PlaylistInstallGuidePCVRSteam)} />
+          <Route index element={MainLayoutShell(PlaylistInstallGuidePlatform)} />
+        </Route>
       </Route>
       <Route path={routing.snipe.root}>
         <Route path={routing.globalNoPage} element={<SnipeIndex />} />

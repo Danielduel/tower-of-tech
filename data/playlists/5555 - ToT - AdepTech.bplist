@@ -1,6 +1,9 @@
 {
   "playlistTitle": "ToT - AdepTech",
   "playlistAuthor": "Danielduel",
+  "customData": {
+    "id": "01HK8XCHRJMANCHBSA0CVA354H"
+  },
   "songs": [
     {
       "songName": "Need U Now",
@@ -275,18 +278,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Meltdown",
-      "levelAuthorName": "Bytrius",
-      "hash": "9662D5D1F48FE47EFF6050F90A2EE121D10478C9",
-      "levelid": "custom_level_9662D5D1F48FE47EFF6050F90A2EE121D10478C9",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
         }
       ]
     },
@@ -959,6 +950,42 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "ゆるるユニバース",
+      "levelAuthorName": "misterlihao",
+      "hash": "51DC8C5650CF17B4E8C1175F6ADD148458D5D901",
+      "levelid": "custom_level_51DC8C5650CF17B4E8C1175F6ADD148458D5D901",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Flamingo",
+      "levelAuthorName": "Sensei WU",
+      "hash": "FCD73789560A88D9EEFDB8B84501FCD903C767F4",
+      "levelid": "custom_level_FCD73789560A88D9EEFDB8B84501FCD903C767F4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "I'm So Good At Being Alone",
+      "levelAuthorName": "Chromia & Ögö",
+      "hash": "C93256C83B09632CF1E43B03EF24200DEA1549FE",
+      "levelid": "custom_level_C93256C83B09632CF1E43B03EF24200DEA1549FE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

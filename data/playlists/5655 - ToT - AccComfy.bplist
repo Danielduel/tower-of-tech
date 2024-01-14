@@ -1,6 +1,9 @@
 {
   "playlistTitle": "ToT - AccComfy",
   "playlistAuthor": "Danielduel",
+  "customData": {
+    "id": "01HK8XCHR9VPKXQ898F7TPWVFM"
+  },
   "songs": [
     {
       "songName": "Green Greens",
@@ -19,18 +22,6 @@
       "levelAuthorName": "GojiCrafter",
       "hash": "75CADAC9031FEF0F41F1579BA31F03EA34770B52",
       "levelid": "custom_level_75CADAC9031FEF0F41F1579BA31F03EA34770B52",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Strong wind Allback",
-      "levelAuthorName": "Emiru",
-      "hash": "9FA50CD323E28090E13CDFDA294C95184C90C1F6",
-      "levelid": "custom_level_9FA50CD323E28090E13CDFDA294C95184C90C1F6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -483,18 +474,6 @@
       ]
     },
     {
-      "songName": "Tic! Tac! Toe! (DJMAX)",
-      "levelAuthorName": "Remie & Emiru",
-      "hash": "F7409F66E6148EDF57CB8CF4D305822E2CD53381",
-      "levelid": "custom_level_F7409F66E6148EDF57CB8CF4D305822E2CD53381",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "dreamy night",
       "levelAuthorName": "PnfrlEnm",
       "hash": "57CB43066393571B8E4EA357F5E420C8E1BB1CD9",
@@ -523,6 +502,66 @@
       "levelAuthorName": "Kassi",
       "hash": "AFD2DAE3FE91AA22F3F54AB6C658698F03506CCC",
       "levelid": "custom_level_AFD2DAE3FE91AA22F3F54AB6C658698F03506CCC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "1990something",
+      "levelAuthorName": "Xenothas",
+      "hash": "ABED492C429C244C5CA986E6B230692E732CC274",
+      "levelid": "custom_level_ABED492C429C244C5CA986E6B230692E732CC274",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Hadaka no Yuusha (TV Size)",
+      "levelAuthorName": "Latest",
+      "hash": "B876610CEE6E3235AF2DA6A3F2BB6F3110CD0809",
+      "levelid": "custom_level_B876610CEE6E3235AF2DA6A3F2BB6F3110CD0809",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hellcat",
+      "levelAuthorName": "CyanSnow",
+      "hash": "BDF85D5D575A992139EFF968A8348B3E6F03EEFE",
+      "levelid": "custom_level_BDF85D5D575A992139EFF968A8348B3E6F03EEFE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "moonlight",
+      "levelAuthorName": "LiamSimpsRyuu",
+      "hash": "4DC77741A8CD150539F388556BF6134C4BBE4139",
+      "levelid": "custom_level_4DC77741A8CD150539F388556BF6134C4BBE4139",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Happy Place",
+      "levelAuthorName": "Melon",
+      "hash": "671F348CC8E7A21737186BB6F57801FE7B943F3B",
+      "levelid": "custom_level_671F348CC8E7A21737186BB6F57801FE7B943F3B",
       "difficulties": [
         {
           "characteristic": "Standard",

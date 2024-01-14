@@ -1,6 +1,9 @@
 {
   "playlistTitle": "ToT - MidTech",
   "playlistAuthor": "Danielduel",
+  "customData": {
+    "id": "01HK8XCHRK0NSY3PNTPPBJ0X1F"
+  },
   "songs": [
     {
       "songName": "Raindrop",
@@ -1123,6 +1126,18 @@
       "levelAuthorName": "Trisha",
       "hash": "51B1D4D884B1388806D24D5B02A44F97D2FAFCEC",
       "levelid": "custom_level_51B1D4D884B1388806D24D5B02A44F97D2FAFCEC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Siren",
+      "levelAuthorName": "Spectral",
+      "hash": "56FACB651D8B41BBC0DBEF5560B475AC9CC1AEC7",
+      "levelid": "custom_level_56FACB651D8B41BBC0DBEF5560B475AC9CC1AEC7",
       "difficulties": [
         {
           "characteristic": "Standard",

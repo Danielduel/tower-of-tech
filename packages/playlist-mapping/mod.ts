@@ -1,13 +1,35 @@
 export const playlistMapping: Record<string, {
   displayName: string,
+  apiDownloadPath: string,
   speedCategory: "Adep" | "Acc" | "Mid" | "Fas" | "Other" | "Legacy",
-  techCategory: "Chill" | "Comfy" | "Tech" | "HiTech" | "Anglehell" | "Other" | "Legacy"
+  techCategory: "Chill" | "Comfy" | "Tech" | "Hitech" | "Anglehell" | "Tempo" | "Other" | "Legacy"
 }> = {
+  "ToT - AdepComfy": {
+    displayName: "AdepComfy",
+    speedCategory: "Adep",
+    techCategory: "Comfy"
+  },
+  "ToT - AdepTech": {
+    displayName: "AdepTech",
+    speedCategory: "Adep",
+    techCategory: "Tech"
+  },
   "ToT - AdepHitech": {
     displayName: "AdepHitech",
     speedCategory: "Adep",
-    techCategory: "HiTech"
+    techCategory: "Hitech"
   },
+  "ToT - AdepAnglehell": {
+    displayName: "AdepHitech",
+    speedCategory: "Adep",
+    techCategory: "Anglehell"
+  },
+  "ToT - AdepTempo": {
+    displayName: "AdepHitech",
+    speedCategory: "Adep",
+    techCategory: "Tempo"
+  },
+
   "ToT - MidHitech": {
     displayName: "MidHiTech",
     speedCategory: "Mid",
@@ -57,11 +79,6 @@ export const playlistMapping: Record<string, {
     displayName: "FasHitech",
     speedCategory: "Fas",
     techCategory: "HiTech"
-  },
-  "ToT - AdepTech": {
-    displayName: "AdepTech",
-    speedCategory: "Adep",
-    techCategory: "Tech"
   },
   "ToT - MidTech": {
     displayName: "MidTech",

@@ -1,6 +1,9 @@
 {
   "playlistTitle": "ToT - AccAnglehell",
   "playlistAuthor": "Danielduel",
+  "customData": {
+    "id": "01HK8XCHQCFJCC8B6BJNY2F0A1"
+  },
   "songs": [
     {
       "songName": "Pictures feat. 4s4ki",
@@ -243,18 +246,6 @@
       ]
     },
     {
-      "songName": "Say So",
-      "levelAuthorName": "Ken_Monogatari",
-      "hash": "C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
-      "levelid": "custom_level_C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "After Hours",
       "levelAuthorName": "Kansas & OneSpookyBoi",
       "hash": "72FC110FF526FB4CA1A3BEFBBD270CFBEE5C5EF0",
@@ -343,18 +334,6 @@
       "levelAuthorName": "esa_esa",
       "hash": "D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
       "levelid": "custom_level_D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Cure For Me",
-      "levelAuthorName": "staryouh",
-      "hash": "2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
-      "levelid": "custom_level_2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -494,18 +473,6 @@
       "levelAuthorName": "BigSlick",
       "hash": "450F6709FB991EBBE067FA9D875A480ADA43A011",
       "levelid": "custom_level_450F6709FB991EBBE067FA9D875A480ADA43A011",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "游山恋",
-      "levelAuthorName": "Ge2toro",
-      "hash": "40F9520FCB5CC12C44025067AFB33F6644A5CABC",
-      "levelid": "custom_level_40F9520FCB5CC12C44025067AFB33F6644A5CABC",
       "difficulties": [
         {
           "characteristic": "Standard",

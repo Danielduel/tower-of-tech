@@ -1,6 +1,9 @@
 {
   "playlistTitle": "ToT - AccTech",
   "playlistAuthor": "Danielduel",
+  "customData": {
+    "id": "01HK8XCHQ6KFWB4MRA796Q0245"
+  },
   "songs": [
     {
       "songName": "Mainframe",
@@ -2035,6 +2038,78 @@
       "levelAuthorName": "Ken_Monogatari",
       "hash": "D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
       "levelid": "custom_level_D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Tic! Tac! Toe! (DJMAX)",
+      "levelAuthorName": "Remie & Emiru",
+      "hash": "F7409F66E6148EDF57CB8CF4D305822E2CD53381",
+      "levelid": "custom_level_F7409F66E6148EDF57CB8CF4D305822E2CD53381",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Strong wind Allback",
+      "levelAuthorName": "Emiru",
+      "hash": "9FA50CD323E28090E13CDFDA294C95184C90C1F6",
+      "levelid": "custom_level_9FA50CD323E28090E13CDFDA294C95184C90C1F6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "This Is The Life",
+      "levelAuthorName": "Dantsu",
+      "hash": "4CF63EC64F73626ECAECE92FC6D48CF144BCA574",
+      "levelid": "custom_level_4CF63EC64F73626ECAECE92FC6D48CF144BCA574",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Haru",
+      "levelAuthorName": "Comyute & CookedChili",
+      "hash": "427EA5E28D898FA8D0822CFD043887D5A092D0A2",
+      "levelid": "custom_level_427EA5E28D898FA8D0822CFD043887D5A092D0A2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Say What",
+      "levelAuthorName": "Nixie.Korten",
+      "hash": "55163810B6AB350ABDCD9520E9958F2C4836A308",
+      "levelid": "custom_level_55163810B6AB350ABDCD9520E9958F2C4836A308",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "PSYCHOGENESIS",
+      "levelAuthorName": "Joetastic",
+      "hash": "871A781F66EAA2B8E1CF223FEEB6969A871D668D",
+      "levelid": "custom_level_871A781F66EAA2B8E1CF223FEEB6969A871D668D",
       "difficulties": [
         {
           "characteristic": "Standard",

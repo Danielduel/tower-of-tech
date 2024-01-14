@@ -1,96 +1,45 @@
 import {
   VisualNovelActions,
   VisualNovelBody,
-  VisualNovelButton,
   VisualNovelContainer,
   VisualNovelLink,
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+import type { LinkProps } from "react-router-dom";
 import { links } from "@/apps/editor/routing.config.ts";
-import { useMemo, useState } from "react";
+import { FC, PropsWithChildren } from "react";
 import { Image } from "@/apps/editor/components/Image.tsx";
+import { Link } from "@/packages/ui/Link.tsx";
 
 type InstallStepsT = {
   downloading: boolean;
   installation_steam: boolean;
+  installation_steam_modassistant: boolean;
   installation_steam_manual_folder: boolean;
   installation_steam_manual_extract: boolean;
   installation_steam_mods: boolean;
   installation_oculus: boolean;
   installation_oculus_standalone: boolean;
 };
-// bsplaylist://playlist/https://danielduel-tot-bot.deno.dev/api/playlist/guild/689050370840068309/channel/1176658722563567759
+// https://danielduel-tot-bot.deno.dev/api/playlist/guild/689050370840068309/channel/1176658722563567759
 
 const Divider = () => <div className="h-6 block" />;
 
 const getInstallSteps = (setStep: (s: keyof InstallStepsT) => void) => ({
-  downloading: (
-    <>
-      First, you will need the archive:
-      <a
-        download
-        className="border px-4 py-1 box-content h-8 ml-2"
-        href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
-      >
-        Get the playlist archive
-      </a>
-      <Divider />
-      Got it? Great! Now you have to tell me what do you play Beat Saber
-      on.<br />
-      You play Beat Saber on:
-      <Divider />
-      <button
-        className="border block px-4 py-1 box-content h-8 ml-2 mb-2"
-        onClick={() => setStep("installation_steam")}
-      >
-        PCVR Steam
-      </button>
-      <button
-        className="border block px-4 py-1 box-content h-8 ml-2 mb-2 opacity-30"
-        onClick={() => setStep("installation_steam")}
-      >
-        PCVR Meta store (Oculus store)
-      </button>
-      <button
-        className="border block px-4 py-1 box-content h-8 ml-2 mb-2 opacity-30"
-        onClick={() => setStep("installation_steam")}
-      >
-        Standalone (you don't have the headset plugged into the PC)
-      </button>
-      <a
-        className="border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2"
-        href="https://store.steampowered.com/valveindex"
-      >
-        PlayStation VR
-      </a>
-    </>
-  ),
-  installation_steam: (
-    <>
-      Before you begin: There are few easy options how to make playlists appear
-      in the game. If you have a tool or manager that you prefer - feel free to use it,
-      extract contents of the archive and use your prefered method.
-      <br />
-      <small>
-        Feel free to dm me on Discord or Matrix if you would like me to describe
-        your method here
-      </small>
-      <Divider />
-      <button
-        className="border block px-4 py-1 box-content h-8 ml-2 mb-2"
-        onClick={() => setStep("installation_steam_manual_folder")}
-      >
-        I pick the manual way
-      </button>
-      <button
-        className="border block px-4 py-1 box-content h-8 ml-2 mb-2"
-        onClick={() => setStep("downloading")}
-      >
-        Take me back
-      </button>
-    </>
-  ),
+  installation_steam_modassistant: <>
+    ModAssistant is by far the easiest way to install
+  
+  </>,
   installation_steam_manual_folder: (
     <>
+    First, you will need the archive:
+    <a
+      download
+      className="border px-4 py-1 box-content h-8 ml-2"
+      href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
+    >
+      Get the playlist archive
+    </a>
+
       Move the archive to Beat Saber's folder.<br />
       Go to Beat Saber's folder (or go to Steam, right click Beat Saber, Manage,
       Browse local files). Place downloaded <i>ToT.zip</i>{" "}
@@ -142,24 +91,18 @@ const getInstallSteps = (setStep: (s: keyof InstallStepsT) => void) => ({
   installation_oculus: <></>,
   installation_oculus_standalone: <></>,
   installation_steam_mods: <></>,
-} satisfies Record<keyof InstallStepsT, unknown>);
+});
 
-export function PlaylistInstallGuide() {
-  const [step, setStep] = useState<keyof InstallStepsT>("downloading");
-  const installSteps = useMemo(() => getInstallSteps(setStep), [setStep]);
-  const installationPrompt = installSteps[step];
-
+const Step: FC<PropsWithChildren & { firstStep?: boolean }> = ({ children, firstStep }) => {
   return (
     <VisualNovelContainer>
       <VisualNovelBody>
-        {installationPrompt}
+        {children}
       </VisualNovelBody>
       <VisualNovelActions>
-        {step != "downloading" && (
-          <VisualNovelButton
-            onClick={() => {
-              setStep("downloading");
-            }}
+        {!firstStep && (
+          <VisualNovelLink
+            href={links.home.playlistInstallGuide.root}
             children="Go to beginning"
           />
         )}
@@ -167,5 +110,104 @@ export function PlaylistInstallGuide() {
         <VisualNovelLink to={links.home.root} children="Go back" />
       </VisualNovelActions>
     </VisualNovelContainer>
-  );
+  )
 }
+
+const StepLink: FC<LinkProps> = (props) => {
+  return <Link
+    {...props}
+    className="border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline"
+  />
+};
+
+export const OneClickAnchor = ({ href, name }: { href: string, name: string }) => {
+  return (
+    <a
+      className="hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2"
+      href={`bsplaylist://playlist/${href}`}
+    >
+      {name}
+    </a>
+  )
+}
+
+export const PlaylistInstallGuideModAssistant = () => {
+  return (
+    <Step firstStep>
+      Have fun clicking those
+      <br />
+      <small>
+        Feel free to dm me on Discord or Matrix if you would like me to describe
+        your method here
+      </small>
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteam}
+        children="I want to use ModAssistant's OneClick™"
+      />
+      <StepLink
+        to={""}
+        children="I pick the manual way"
+      />
+      <StepLink
+        to={""}
+        children="Take me back"
+      />
+    </Step>
+  );
+};
+
+export const PlaylistInstallGuidePCVRSteam = () => {
+  return (
+    <Step firstStep>
+      There are few easy options to make playlists appear in the game.
+      If you have a tool or manager that you prefer - feel free to use it,
+      extract contents of the archive and use your prefered method.
+      <br />
+      <small>
+        Feel free to dm me on Discord or Matrix if you would like me to describe
+        your method here
+      </small>
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteam}
+        children="I want to use ModAssistant's OneClick™"
+      />
+      <StepLink
+        to={""}
+        children="I pick the manual way"
+      />
+      <StepLink
+        to={""}
+        children="Take me back"
+      />
+    </Step>
+  );
+};
+
+export const PlaylistInstallGuidePlatform = () => {
+  return (
+    <Step firstStep>
+      You play Beat Saber on:
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteam}
+        children="PCVR Steam"
+      />
+      <StepLink
+        to={""}
+        children="PCVR Meta store (Oculus store)"
+      />
+      <StepLink
+        to={""}
+        children="Standalone (you don't have the headset plugged into the PC)"
+      />
+      <a
+        className="hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2"
+        href="https://store.steampowered.com/valveindex"
+      >
+        PlayStation VR
+      </a>
+    </Step>
+  );
+};

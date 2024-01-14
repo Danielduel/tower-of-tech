@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { BeatSaberDifficultyCharacteristicSchema, BeatSaberDifficultyNameSchema } from "./beatsaber.ts";
-import { makeUppercaseMapHashForLevelId, makeUppercaseMapHash, makePlaylistUrl, makeImageBase64, makeLowercaseMapHash, makeImageUrl } from "./brands.ts";
+import { makeUppercaseMapHashForLevelId, makeUppercaseMapHash, makePlaylistUrl, makeImageBase64, makeImageUrl } from "./brands.ts";
 import { makeBeatSaverMapId } from "./beatsaver.ts";
 
 export const BeatSaberPlaylistSongItemDifficultySchema = z.object({

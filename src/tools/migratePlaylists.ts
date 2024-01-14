@@ -116,11 +116,13 @@ const hardcodedMergedPlaylistId = "c73e5bf9-bb91-450c-913a-4b52d504444b";
 const allMaps = Object.values(playlistItems).flatMap((x) => x);
 playlists.push(
   await migratePlaylist("ToT - *.bplist", {
-    id: hardcodedMergedPlaylistId,
     image: "",
     playlistAuthor: "Danielduel",
     playlistTitle: "ToT - *",
     songs: allMaps,
+    customData: {
+      id: hardcodedMergedPlaylistId
+    }
   }, "/"),
 );
 
@@ -139,18 +141,23 @@ await Promise.all([
     playlist,
     shortName,
   }) => {
+    if (playlist?.customData?.id?.includes(" ")) {
+      delete playlist?.customData?.id;
+    }
     const beatsaberPlaylistOffline: BeatSaberPlaylist = {
-      id: playlist.id ?? ulid(),
       image: coverBase64,
       playlistAuthor: playlist.playlistAuthor,
       playlistTitle: playlist.playlistTitle,
       songs: playlist.songs,
+      customData: {
+        id: playlist?.customData?.id ?? ulid()
+      }
     };
     const beatsaberPlaylist: BeatSaberPlaylist = {
       ...beatsaberPlaylistOffline,
       customData: {
         AllowDuplicates: false,
-        id: "Tower of Tech",
+        id: beatsaberPlaylistOffline.customData?.id,
         owner: "Danielduel",
         syncURL:
           new URL(
@@ -181,18 +188,24 @@ await Promise.all([
     playlist,
     shortName,
   }) => {
+    if (playlist?.customData?.id?.includes(" ")) {
+      delete playlist?.customData?.id;
+    }
+
     const beatsaberPlaylistOffline: BeatSaberPlaylist = {
-      id: playlist.id ?? ulid(),
       image: coverBase64,
       playlistAuthor: playlist.playlistAuthor,
       playlistTitle: playlist.playlistTitle,
       songs: playlist.songs,
+      customData: {
+        id: playlist?.customData?.id ?? ulid()
+      }
     };
     const beatsaberPlaylist: BeatSaberPlaylist = {
       ...beatsaberPlaylistOffline,
       customData: {
         AllowDuplicates: false,
-        id: "Tower of Tech - guest",
+        id: beatsaberPlaylistOffline.customData?.id,
         owner: "Danielduel",
         syncURL:
           new URL(

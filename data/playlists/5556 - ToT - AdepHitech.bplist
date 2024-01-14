@@ -1,6 +1,9 @@
 {
   "playlistTitle": "ToT - AdepHitech",
   "playlistAuthor": "Danielduel",
+  "customData": {
+    "id": "01HK8XCHRNPHBZSJMKFWBPKD32"
+  },
   "songs": [
     {
       "songName": "VORACITY",
@@ -83,18 +86,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Flamingo",
-      "levelAuthorName": "Sensei WU",
-      "hash": "FCD73789560A88D9EEFDB8B84501FCD903C767F4",
-      "levelid": "custom_level_FCD73789560A88D9EEFDB8B84501FCD903C767F4",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -347,6 +338,30 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Orbit",
+      "levelAuthorName": "EerieWolf",
+      "hash": "F63063A9CC8B365A68307F2201AB7739B7F692E9",
+      "levelid": "custom_level_F63063A9CC8B365A68307F2201AB7739B7F692E9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Netsuai Frozen",
+      "levelAuthorName": "Alice",
+      "hash": "249E8BCE352A3571EBE84740BAFC7D1DADF7DAEA",
+      "levelid": "custom_level_249E8BCE352A3571EBE84740BAFC7D1DADF7DAEA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

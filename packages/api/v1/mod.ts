@@ -5,7 +5,7 @@ import { makeImageBase64 } from "@/packages/types/brands.ts";
 
 export const apiV1Handler = async (request: Request) => {
   const { pathname } = new URL(request.url);
-  const playlistId = pathname.split("/api/v1/")[1];
+  const playlistId = pathname.split("/api/v1/playlist/get/")[1];
 
   const item = await dbEditor.BeatSaberPlaylist.findFirst({
     where: {

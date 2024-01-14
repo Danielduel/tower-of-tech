@@ -1,39 +1,39 @@
 {
-  "playlistTitle": "ToT - SonicTech",
+  "playlistTitle": "ToT - AdepTempo",
   "playlistAuthor": "Danielduel",
   "songs": [
     {
-      "songName": "Diabolic Swing",
-      "levelAuthorName": "soap & blueraptor101",
-      "hash": "8E6E0C9FC7DF36561649F89C314FBA4870446835",
-      "levelid": "custom_level_8E6E0C9FC7DF36561649F89C314FBA4870446835",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Yggdrasil",
-      "levelAuthorName": "GalaxyMaster",
-      "hash": "6E9498F81BBF26FA47B1691557B22486A720254D",
-      "levelid": "custom_level_6E9498F81BBF26FA47B1691557B22486A720254D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Parallel Universe Shifter",
-      "levelAuthorName": "Excess10n and Cyanite",
-      "hash": "815A09C2B7A45C26705C8AA3A3B031BA8BD79110",
-      "levelid": "custom_level_815A09C2B7A45C26705C8AA3A3B031BA8BD79110",
+      "songName": "Say So",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
+      "levelid": "custom_level_C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cure For Me",
+      "levelAuthorName": "staryouh",
+      "hash": "2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
+      "levelid": "custom_level_2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "游山恋",
+      "levelAuthorName": "Ge2toro",
+      "hash": "40F9520FCB5CC12C44025067AFB33F6644A5CABC",
+      "levelid": "custom_level_40F9520FCB5CC12C44025067AFB33F6644A5CABC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]

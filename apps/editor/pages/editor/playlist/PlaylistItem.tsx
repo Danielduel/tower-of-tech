@@ -37,7 +37,7 @@ export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = ({ playli
           <div key="playlist-Author">Author: {playlist.playlistAuthor}</div>
           <div key="playlist-Id">Id: {playlist.id}</div>
           <div key="playlist-Maps">Maps: {playlist.songs.length}</div>
-          <a className="ring-4 ring-blue p-2 float-right" href={`/api/v1/${playlist.id}`} download>
+          <a className="ring-4 ring-blue p-2 float-right" href={`/api/v1/playlist/get/${playlist.id}`} download>
             Download
           </a>
         </div>
