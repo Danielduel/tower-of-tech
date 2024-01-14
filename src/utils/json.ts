@@ -13,8 +13,7 @@ const playlistKeyStructure: (keyof BeatSaberPlaylist)[] = [
   "playlistAuthor",
   "customData",
   "songs",
-  "image"
-  // "image" is unnecessary
+  "image",
 ];
 
 export const stringifyPlaylist = (value: BeatSaberPlaylist) => {
