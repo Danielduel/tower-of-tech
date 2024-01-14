@@ -2,7 +2,6 @@ import { z } from "zod";
 import { makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
 import { BeatSaberDifficultyCharacteristicSchema, BeatSaberDifficultyNameSchema } from "@/packages/types/beatsaber.ts";
 import { makeUppercaseMapHashForLevelId, makeUppercaseMapHash, makePlaylistUrl, makeImageBase64, makeImageUrl } from "@/packages/types/brands.ts";
-import { KvIdSchema } from "kvdex/ext/zod.ts";
 
 export const BeatSaberPlaylistSongItemDifficultySchema = z.object({
   characteristic: BeatSaberDifficultyCharacteristicSchema,
@@ -23,15 +22,6 @@ export const BeatSaberPlaylistCustomDataSchema = z.object({
   syncURL: z.string().transform(makePlaylistUrl).optional(),
   owner: z.string().optional(),
   id: z.string().optional(),
-});
-
-export const BeatSaberPlaylistFlatSchema = z.object({
-  id: z.string(),
-  playlistTitle: z.string(),
-  playlistAuthor: z.string(),
-  customData: BeatSaberPlaylistCustomDataSchema.optional(),
-  songs: z.array(KvIdSchema),
-  image: z.null(),
 });
 
 export const BeatSaberPlaylistWithoutIdSchema = z.object({

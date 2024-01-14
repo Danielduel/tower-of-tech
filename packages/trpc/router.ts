@@ -36,7 +36,10 @@ const map = t.router({
       )).fromHashes;
     }),
   list: t.procedure.query(async () => {
-    const items = await dbEditor.BeatSaberPlaylistSongItem.getMany();
+    const items = await dbEditor.BeatSaberPlaylistSongItem
+      .getMany()
+      .then(x => x.result)
+      .then(x => x.map(y => y.flat()));
     return items;
   }),
   fromBeatSaverResolvables: t.procedure
@@ -50,7 +53,10 @@ const map = t.router({
 
 const playlist = t.router({
   listLinks: t.procedure.query(async () => {
-    const items = await dbEditor.BeatSaberPlaylist.getMany();
+    const items = await dbEditor.BeatSaberPlaylist
+      .getMany()
+      .then(x => x.result)
+      .then(x => x.map(y => y.flat()));
     return items;
   }),
   getById: t.procedure

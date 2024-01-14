@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { collection } from "kvdex/mod.ts";
 import { zodModel } from "kvdex/ext/zod.ts";
-import { TableDefinition } from "pentagon";
 import {
   BeatSaverIdToHashCacheSchema,
   BeatSaverMapResponseSuccessSchema,
