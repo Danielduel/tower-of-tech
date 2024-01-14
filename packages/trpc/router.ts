@@ -14,11 +14,11 @@ import {
   makeLowercaseMapHash,
 } from "@/packages/types/brands.ts";
 import {
-  BeatSaberPlaylistSchema,
   BeatSaberPlaylistWithImageAsUrlSchema,
   BeatSaberPlaylistWithoutIdSchema,
 } from "@/packages/types/beatsaber-playlist.ts";
 import { BeatSaverResolvableSchema } from "@/packages/api-beatsaver/BeatSaverResolvableSchema.ts";
+import { fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem } from "@/packages/database-editor/utils.ts";
 
 const t = initTRPC.create();
 
@@ -36,7 +36,7 @@ const map = t.router({
       )).fromHashes;
     }),
   list: t.procedure.query(async () => {
-    const items = await dbEditor.BeatSaberPlaylistSongItem.findMany({});
+    const items = await dbEditor.BeatSaberPlaylistSongItem.getMany();
     return items;
   }),
   fromBeatSaverResolvables: t.procedure
@@ -50,14 +50,7 @@ const map = t.router({
 
 const playlist = t.router({
   listLinks: t.procedure.query(async () => {
-    const items = await dbEditor.BeatSaberPlaylist.findMany({
-      select: {
-        id: true,
-        playlistAuthor: true,
-        playlistTitle: true,
-      },
-    });
-
+    const items = await dbEditor.BeatSaberPlaylist.getMany();
     return items;
   }),
   getById: t.procedure
@@ -65,15 +58,9 @@ const playlist = t.router({
     .query(async ({
       input: { id },
     }) => {
-      const item = await dbEditor.BeatSaberPlaylist.findFirst({
-        where: {
-          id,
-        },
-        include: {
-          songs: true,
-        },
-      });
+      const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(id);
       if (!item) return null;
+
       const imageUrl = makeImageUrl(
         await s3clientEditor.presignedGetObject(item.id, {
           bucketName: buckets.playlist.coverImage,
@@ -84,23 +71,6 @@ const playlist = t.router({
         imageUrl,
       } satisfies typeof BeatSaberPlaylistWithImageAsUrlSchema._type;
     }),
-  list: t.procedure.query(async () => {
-    const items = await dbEditor.BeatSaberPlaylist.findMany({
-      include: {
-        songs: true,
-      },
-    });
-    return await Promise.all(items.map(async (item) => {
-      const imageUrl = await s3clientEditor.presignedGetObject(item.id, {
-        bucketName: buckets.playlist.coverImage,
-      });
-      return {
-        ...item,
-        id: item.id,
-        image: imageUrl,
-      } satisfies typeof BeatSaberPlaylistSchema._type[];
-    }));
-  }),
   createOrUpdate: t.procedure
     .input(z.array(BeatSaberPlaylistWithoutIdSchema))
     .mutation(async ({ input }) => {

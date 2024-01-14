@@ -17,16 +17,14 @@ export const createOrUpdatePlaylist = async (input: typeof BeatSaberPlaylistWith
     });
   } catch (err) { console.log(err) }
   try {
-    await dbEditor.BeatSaberPlaylistSongItem.upsertMany({ data: input.songs })
+    await dbEditor.BeatSaberPlaylistSongItem.addMany(input.songs)
   } catch (err) { console.log(err) }
   try {
-    const a = await dbEditor.BeatSaberPlaylist.create({
-      data: {
-        ...input,
-        image: null,
-        id: playlistId,
-        songs: input.songs.map(x => makeUppercaseMapHash(x.hash))
-      }
+    const a = await dbEditor.BeatSaberPlaylist.add({
+      ...input,
+      image: null,
+      id: playlistId,
+      songs: input.songs.map(x => makeUppercaseMapHash(x.hash))
     });
 
     return a;

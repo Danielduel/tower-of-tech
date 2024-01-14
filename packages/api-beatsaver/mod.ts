@@ -44,11 +44,9 @@ type IdsToHashesCacheType = {
 const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
   return await Promise.all(
     idArray.map(async (id): Promise<IdsToHashesCacheType> => {
-      const idToHashCacheItem = await dbEditor.BeatSaverIdToHashCache.findFirst(
-        {
-          where: { id },
-        },
-      );
+      const idToHashCacheItem = await dbEditor.BeatSaverIdToHashCache
+        .findByPrimaryIndex("id", id)
+        .then(x => x?.flat());
 
       if (!idToHashCacheItem) return { id, status: "fetch" };
       if (!idToHashCacheItem.available) return { id, status: "error" };
@@ -185,14 +183,14 @@ export const fetchAndCacheFromResolvablesRaw = async (
   const responseFromIds = await batchFetchIds(idsArray);
 
   if (responseFromIds) {
-    await dbEditor.BeatSaverIdToHashCache.upsertMany({
-      data: Object.entries(responseFromIds).map(([id, x]) => ({
+    await dbEditor.BeatSaverIdToHashCache.addMany(
+      Object.entries(responseFromIds).map(([id, x]) => ({
         id,
         hash: x?.versions[0].hash,
         available: !!x,
         outdated: false,
       })),
-    });
+    );
   }
 
   return {

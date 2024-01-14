@@ -1,7 +1,16 @@
 import "https://deno.land/std@0.206.0/dotenv/load.ts";
-import { createPentagon } from "./pentagon.ts";
 import { S3Client } from "s3_lite_client";
 import { isLocal, isDbEditorRemote } from "@/packages/utils/envrionment.ts";
+import {
+  BeatSaberPlaylist,
+  BeatSaberPlaylistSongItem,
+} from "@/packages/database-editor/BeatSaberPlaylist.ts";
+import {
+  BeatSaverIdToHashCache,
+  BeatSaverMapResponseSuccess,
+  BeatSaverResponseWrapper,
+} from "@/packages/database-editor/BeatSaverResponse.ts";
+import { kvdex } from "kvdex/mod.ts";
 
 export const kv = isDbEditorRemote()
   ? await (async () => {
@@ -12,7 +21,13 @@ export const kv = isDbEditorRemote()
     ? await Deno.openKv("./local.db")
     : await Deno.openKv();
 
-export const dbEditor = createPentagon(kv);
+export const dbEditor = kvdex(kv, {
+  BeatSaverResponseWrapper,
+  BeatSaverMapResponseSuccess,
+  BeatSaberPlaylist,
+  BeatSaberPlaylistSongItem,
+  BeatSaverIdToHashCache,
+});
 
 export const s3clientEditor = isLocal() && !isDbEditorRemote()
   ? new S3Client({

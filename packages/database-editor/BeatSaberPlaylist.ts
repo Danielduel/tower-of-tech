@@ -1,21 +1,27 @@
-import { TableDefinition } from "pentagon";
+import { collection } from "kvdex/mod.ts";
+import { zodModel } from "kvdex/ext/zod.ts";
 import {
   BeatSaberPlaylistFlatSchema,
   BeatSaberPlaylistSongItemSchema,
 } from "@/packages/types/beatsaber-playlist.ts";
 
-export const BeatSaberPlaylistSongItem = {
-  schema: BeatSaberPlaylistSongItemSchema,
-} satisfies TableDefinition<typeof BeatSaberPlaylistSongItemSchema.shape>;
-
-export const BeatSaberPlaylist = {
-  schema: BeatSaberPlaylistFlatSchema,
-  relations: {
-    songs: [
-      "BeatSaberPlaylistSongItem",
-      [BeatSaberPlaylistSongItemSchema],
-      "songs",
-      "hash",
-    ],
+export const BeatSaberPlaylistSongItem = collection(
+  zodModel(BeatSaberPlaylistSongItemSchema),
+  {
+    history: true,
+    indices: {
+      hash: "primary",
+      key: "secondary",
+    },
   },
-} satisfies TableDefinition<typeof BeatSaberPlaylistFlatSchema.shape>;
+);
+
+export const BeatSaberPlaylist = collection(
+  zodModel(BeatSaberPlaylistFlatSchema),
+  {
+    history: true,
+    indices: {
+      id: "primary",
+    },
+  },
+);

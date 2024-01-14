@@ -1,7 +1,8 @@
 import { z } from "zod";
-import { BeatSaberDifficultyCharacteristicSchema, BeatSaberDifficultyNameSchema } from "./beatsaber.ts";
-import { makeUppercaseMapHashForLevelId, makeUppercaseMapHash, makePlaylistUrl, makeImageBase64, makeImageUrl } from "./brands.ts";
-import { makeBeatSaverMapId } from "./beatsaver.ts";
+import { makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
+import { BeatSaberDifficultyCharacteristicSchema, BeatSaberDifficultyNameSchema } from "@/packages/types/beatsaber.ts";
+import { makeUppercaseMapHashForLevelId, makeUppercaseMapHash, makePlaylistUrl, makeImageBase64, makeImageUrl } from "@/packages/types/brands.ts";
+import { KvIdSchema } from "kvdex/ext/zod.ts";
 
 export const BeatSaberPlaylistSongItemDifficultySchema = z.object({
   characteristic: BeatSaberDifficultyCharacteristicSchema,
@@ -9,7 +10,7 @@ export const BeatSaberPlaylistSongItemDifficultySchema = z.object({
 });
 
 export const BeatSaberPlaylistSongItemSchema = z.object({
-  hash: z.string().transform(makeUppercaseMapHash).describe("primary"),
+  hash: z.string().transform(makeUppercaseMapHash),
   levelid: z.string().transform(makeUppercaseMapHashForLevelId),
   key: z.string().transform(makeBeatSaverMapId).optional(),
   songName: z.string(),
@@ -25,11 +26,11 @@ export const BeatSaberPlaylistCustomDataSchema = z.object({
 });
 
 export const BeatSaberPlaylistFlatSchema = z.object({
-  id: z.string().describe("primary"),
+  id: z.string(),
   playlistTitle: z.string(),
   playlistAuthor: z.string(),
   customData: BeatSaberPlaylistCustomDataSchema.optional(),
-  songs: z.array(z.string().transform(makeUppercaseMapHash)),
+  songs: z.array(KvIdSchema),
   image: z.null(),
 });
 

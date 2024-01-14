@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { collection } from "kvdex/mod.ts";
+import { zodModel } from "kvdex/ext/zod.ts";
 import { TableDefinition } from "pentagon";
 import {
   BeatSaverIdToHashCacheSchema,
@@ -13,25 +15,33 @@ export const BeatSaverResponseWrapperSchema = z.object({
   removed: z.boolean(),
 });
 
-export const BeatSaverIdToHashCache = {
-  schema: BeatSaverIdToHashCacheSchema,
-} satisfies TableDefinition<typeof BeatSaverIdToHashCacheSchema.shape>;
-
-export const BeatSaverResponseWrapper = {
-  schema: BeatSaverResponseWrapperSchema,
-  relations: {
-    child: [
-      "BeatSaverMapResponseSuccess",
-      BeatSaverMapResponseSuccessSchema,
-      "id",
-      "id",
-    ],
+export const BeatSaverIdToHashCache = collection(
+  zodModel(BeatSaverIdToHashCacheSchema),
+  {
+    history: true,
+    indices: {
+      id: "primary",
+      hash: "secondary",
+    },
   },
-} satisfies TableDefinition<typeof BeatSaverResponseWrapperSchema.shape>;
+);
 
-export const BeatSaverMapResponseSuccess = {
-  schema: BeatSaverMapResponseSuccessSchema,
-  relations: {
-    parent: ["BeatSaverMap", BeatSaverResponseWrapperSchema, "id", "id"],
+export const BeatSaverResponseWrapper = collection(
+  zodModel(BeatSaverResponseWrapperSchema),
+  {
+    history: true,
+    indices: {
+      id: "primary",
+    },
   },
-} satisfies TableDefinition<typeof BeatSaverMapResponseSuccessSchema.shape>;
+);
+
+export const BeatSaverMapResponseSuccess = collection(
+  zodModel(BeatSaverMapResponseSuccessSchema),
+  {
+    history: true,
+    indices: {
+      id: "primary",
+    },
+  },
+);
