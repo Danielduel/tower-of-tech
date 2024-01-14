@@ -10,7 +10,6 @@
 
     "dev": "deno task s3s-fs-local & deno task editor:dev",
     "dev-remote": "deno task editor:dev-remote",
-    "purge": "deno run -A --unstable ./purge.ts",
 
     "discord-bot:trigger": "TOT_ENVIRONMENT=local deno run -A --unstable --env ./apps/discord-bot/setup/trigger.ts",
     "discord-bot:register": "deno run -A --env ./apps/discord-bot/setup/register-commands.ts",
@@ -22,7 +21,8 @@
     "editor:dev-remote": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable --no-check --watch ./apps/editor/server.tsx -p 8081",
     "editor:test": "deno test --allow-all",
     "editor:build": "deno run -A ./webapp/build.ts",
-    "editor:start": "ULTRA_MODE=production deno run -A --no-remote ./webapp/server.js"
+    "editor:start": "ULTRA_MODE=production deno run -A --no-remote ./webapp/server.js",
+    "editor:purge": "deno run -A --unstable ./purge.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsxdev",

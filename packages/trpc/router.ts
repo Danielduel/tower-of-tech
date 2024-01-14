@@ -3,10 +3,21 @@ import { initTRPC } from "@trpc/server";
 import { buckets } from "../database-editor/buckets.ts";
 import { dbEditor, s3clientEditor } from "../database-editor/mod.ts";
 import { isReadOnly } from "@/packages/utils/envrionment.ts";
-import { fetchAndCacheFromResolvables, fetchAndCacheHashes } from "@/packages/api-beatsaver/mod.ts";
+import {
+  fetchAndCacheFromResolvables,
+  fetchAndCacheHashes,
+} from "@/packages/api-beatsaver/mod.ts";
 import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
-import { makeImageUrl, makeLowercaseMapHash } from "@/packages/types/brands.ts";
-import { BeatSaberPlaylistWithoutIdSchema, BeatSaberPlaylistSchema, BeatSaberPlaylistWithImageAsUrlSchema } from "@/packages/types/beatsaber-playlist.ts";
+import {
+  LowercaseMapHash,
+  makeImageUrl,
+  makeLowercaseMapHash,
+} from "@/packages/types/brands.ts";
+import {
+  BeatSaberPlaylistSchema,
+  BeatSaberPlaylistWithImageAsUrlSchema,
+  BeatSaberPlaylistWithoutIdSchema,
+} from "@/packages/types/beatsaber-playlist.ts";
 import { BeatSaverResolvableSchema } from "@/packages/api-beatsaver/BeatSaverResolvableSchema.ts";
 
 const t = initTRPC.create();
@@ -16,18 +27,25 @@ const map = t.router({
     .input(z.object({
       hashes: z.array(z.string().transform(makeLowercaseMapHash)),
     }))
-    .query(async ({ input: { hashes }}) => {
-      return await fetchAndCacheHashes(hashes);
+    .query(async ({ input: { hashes } }) => {
+      return await fetchAndCacheFromResolvables(
+        (hashes as LowercaseMapHash[]).map((hash) => ({
+          kind: "hash",
+          data: hash,
+        })),
+      );
     }),
   list: t.procedure.query(async () => {
     const items = await dbEditor.BeatSaberPlaylistSongItem.findMany({});
     return items;
   }),
   fromBeatSaverResolvables: t.procedure
-    .input(z.object({ beatSaverResolvables: z.array(BeatSaverResolvableSchema) }))
-    .query(async ({ input: { beatSaverResolvables }}) => {
-      return await fetchAndCacheFromResolvables(beatSaverResolvables)
-    })
+    .input(
+      z.object({ beatSaverResolvables: z.array(BeatSaverResolvableSchema) }),
+    )
+    .query(async ({ input: { beatSaverResolvables } }) => {
+      return await fetchAndCacheFromResolvables(beatSaverResolvables);
+    }),
 });
 
 const playlist = t.router({
@@ -37,7 +55,7 @@ const playlist = t.router({
         id: true,
         playlistAuthor: true,
         playlistTitle: true,
-      }
+      },
     });
 
     return items;
@@ -45,18 +63,22 @@ const playlist = t.router({
   getById: t.procedure
     .input(z.object({ id: z.string() }))
     .query(async ({
-      input: { id }
+      input: { id },
     }) => {
       const item = await dbEditor.BeatSaberPlaylist.findFirst({
         where: {
-          id
+          id,
         },
         include: {
-          songs: true
-        }
+          songs: true,
+        },
       });
       if (!item) return null;
-      const imageUrl = makeImageUrl(await s3clientEditor.presignedGetObject(item.id, { bucketName: buckets.playlist.coverImage }));
+      const imageUrl = makeImageUrl(
+        await s3clientEditor.presignedGetObject(item.id, {
+          bucketName: buckets.playlist.coverImage,
+        }),
+      );
       return {
         ...item,
         imageUrl,
@@ -65,11 +87,13 @@ const playlist = t.router({
   list: t.procedure.query(async () => {
     const items = await dbEditor.BeatSaberPlaylist.findMany({
       include: {
-        songs: true
-      }
+        songs: true,
+      },
     });
-    return await Promise.all(items.map(async item => {
-      const imageUrl = await s3clientEditor.presignedGetObject(item.id, { bucketName: buckets.playlist.coverImage })
+    return await Promise.all(items.map(async (item) => {
+      const imageUrl = await s3clientEditor.presignedGetObject(item.id, {
+        bucketName: buckets.playlist.coverImage,
+      });
       return {
         ...item,
         id: item.id,
@@ -81,11 +105,11 @@ const playlist = t.router({
     .input(z.array(BeatSaberPlaylistWithoutIdSchema))
     .mutation(async ({ input }) => {
       if (!isReadOnly()) {
-        return await Promise.all(input.map(createOrUpdatePlaylist))
+        return await Promise.all(input.map(createOrUpdatePlaylist));
       } else {
         throw "Editor is in read-only mode";
       }
-  }),
+    }),
 });
 
 export const appRouter = t.router({
