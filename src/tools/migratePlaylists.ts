@@ -4,8 +4,8 @@ import type {
   BeatSaberPlaylistSongItem,
   BeatSaberPlaylistSongItemDifficulty,
 } from "../types/BeatSaberPlaylist.d.ts";
-import { getCoverBase64 } from "../utils/cover-image.ts";
-import { stringify } from "../utils/json.ts";
+import { getCoverBase64 } from "@/src/utils/cover-image.ts";
+import { stringifyPlaylist } from "@/src/utils/json.ts";
 import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
 
 const coverPath =
@@ -165,8 +165,8 @@ await Promise.all([
           ).href,
       },
     };
-    const beatsaberPlaylistOfflineString = stringify(beatsaberPlaylistOffline);
-    const beatsaberPlaylistString = stringify(beatsaberPlaylist);
+    const beatsaberPlaylistOfflineString = stringifyPlaylist(beatsaberPlaylistOffline);
+    const beatsaberPlaylistString = stringifyPlaylist(beatsaberPlaylist);
     await Deno.writeTextFile(
       `${destinationPathOffline}${path}${fileName}`,
       beatsaberPlaylistOfflineString,
@@ -213,8 +213,8 @@ await Promise.all([
           ).href,
       },
     };
-    const beatsaberPlaylistOfflineString = stringify(beatsaberPlaylistOffline);
-    const beatsaberPlaylistString = stringify(beatsaberPlaylist);
+    const beatsaberPlaylistOfflineString = stringifyPlaylist(beatsaberPlaylistOffline);
+    const beatsaberPlaylistString = stringifyPlaylist(beatsaberPlaylist);
     await Deno.mkdir(destinationPathOfflineGuests + path, { recursive: true });
     await Deno.mkdir(destinationPathGuests + path, { recursive: true });
     await Deno.writeTextFile(
