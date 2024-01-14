@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { WithMaps, WithPlaylist, WithPlaylistWithImageAsUrl } from "@/packages/ui/playlist/types.ts";
-import { trpc } from "../../../../../packages/trpc/trpc-react.ts";
-import { MapItem } from "../../../components/MapItem.tsx";
+import { trpc } from "@/packages/trpc/trpc-react.ts";
+import { MapItem } from "@/apps/editor/components/MapItem.tsx";
 
 const PlaylistMaps: FC<WithMaps> = ({ maps }) => {
   const hashes = maps.flatMap((map) => map.hash.toString());

@@ -1,9 +1,9 @@
 import { useRef, useEffect, useState } from "react";
+import { createRoot } from "react-dom/client";
 import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaverMapId } from "@/packages/types/beatsaver.ts";
 import { GlobeInstance } from "globe.gl";
-import { COUNTRIES } from "../../components/COUNTRIES.ts";
-import { createRoot } from "react-dom/client";
+import { COUNTRIES } from "@/apps/editor/components/COUNTRIES.ts";
 
 type BeatLeaderWSAccepted = {
   data: {

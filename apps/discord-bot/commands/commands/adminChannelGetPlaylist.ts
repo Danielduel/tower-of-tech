@@ -1,5 +1,5 @@
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
-import { discordChannelToBeatSaverData } from "../../shared/discordChannelToBeatSaverData.ts";
+import { discordChannelToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelToBeatSaverData.ts";
 import { AdminCommandRoutingGet } from "@/apps/discord-bot/commands/definitions.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";

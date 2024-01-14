@@ -1,7 +1,7 @@
 import { decode, Image, TextLayout } from "https://deno.land/x/imagescript@1.2.15/mod.ts";
 import { fromUint8Array } from "https://denopkg.com/chiefbiiko/base64@master/mod.ts";
-import seedColor from "npm:seed-color";
 import { Color } from "https://deno.land/x/color@v0.3.0/mod.ts";
+import seedColor from "npm:seed-color";
 
 const fromAssets = (pathInAssets: string) => new URL(import.meta.resolve(`../../assets/${pathInAssets}`)).pathname;
 

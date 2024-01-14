@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren } from "react";
 import { Route, Routes } from "react-router-dom";
-import { MapList } from "./MapList.tsx";
+import { MapList } from "@/apps/editor/pages/editor/map/MapList.tsx";
 
 export const MapLayout: FC<PropsWithChildren> = ({ children }) => {
   return (

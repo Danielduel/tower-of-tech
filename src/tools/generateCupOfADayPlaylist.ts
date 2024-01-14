@@ -1,7 +1,7 @@
 import type { BeatSaberPlaylist } from "../types/BeatSaberPlaylist.d.ts";
-import { getMapDataByKey } from "../utils/beatsaver.ts";
-import { fixPlaylistHashes } from "../utils/beatsaber-playlist.ts";
-import { stringify } from "../utils/json.ts";
+import { getMapDataByKey } from "@/src/utils/beatsaver.ts";
+import { fixPlaylistHashes } from "@/src/utils/beatsaber-playlist.ts";
+import { stringify } from "@/src/utils/json.ts";
 
 const destinationPath = new URL(import.meta.resolve("../../migrated/playlists")).pathname;
 

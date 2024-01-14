@@ -1,10 +1,10 @@
 import { FC, PropsWithChildren, Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
-import { trpc } from "../../../../../packages/trpc/trpc-react.ts";
-import { WithPlaylistLinks } from "@/packages/ui/playlist/types.ts";
-import { PlaylistList } from "./PlaylistList.tsx";
 import { Link } from "@/packages/ui/Link.tsx";
-import { PlaylistFromFile } from "./PlaylistFromFile.tsx";
+import { Route, Routes } from "react-router-dom";
+import { trpc } from "@/packages/trpc/trpc-react.ts";
+import { WithPlaylistLinks } from "@/packages/ui/playlist/types.ts";
+import { PlaylistList } from "@/apps/editor/pages/editor/playlist/PlaylistList.tsx";
+import { PlaylistFromFile } from "@/apps/editor/pages/editor/playlist/PlaylistFromFile.tsx";
 
 const PlaylistListing: FC<WithPlaylistLinks> = ({ playlists }) => {
   return playlists.map((playlist) => (

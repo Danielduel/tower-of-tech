@@ -1,5 +1,5 @@
-import { dbEditor, s3clientEditor } from "../../database-editor/mod.ts";
-import { buckets } from "../../database-editor/buckets.ts";
+import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
+import { buckets } from "@/packages/database-editor/buckets.ts";
 import { BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
 import { makeImageBase64 } from "@/packages/types/brands.ts";
 

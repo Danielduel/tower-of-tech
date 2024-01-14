@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useParams } from "react-router-dom";
-import { trpc } from "../../../../../packages/trpc/trpc-react.ts";
-import { Playlist } from "./PlaylistItem.tsx";
+import { Playlist } from "@/apps/editor/pages/editor/playlist/PlaylistItem.tsx";
+import { trpc } from "@/packages/trpc/trpc-react.ts";
 
 export const PlaylistList: FC = () => {
   const { playlistId } = useParams();
