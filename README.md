@@ -67,7 +67,6 @@ You need `Deno` and `s3s-fs`
 
 To make it work you have to use 2 forks located in the parent folder of this project's root dir:
 
-* develop branch of https://github.com/Danielduel/pentagon
 * develop branch of https://github.com/Danielduel/ultra
 
 (you don't have to build those forks or anything, they work by the touch of deno's magic)
