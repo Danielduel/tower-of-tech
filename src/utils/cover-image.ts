@@ -39,6 +39,7 @@ const getPlaylistColorOverride = (playlistName: string) => {
       // faster than superfast will be #d8dee9
 
       // ToT Misc:
+      case playlistName.startsWith("Stamina"):
       case playlistName.startsWith("Rainbow"): return "#b48ead";
       default: return null;
     }
@@ -54,12 +55,12 @@ const getPlaylistCover = (playlistName: string) => {
     case playlistName.endsWith("Comfy"): return fromAssets("detail/comfy.png");
     case playlistName.endsWith("Tech"): return fromAssets("detail/tech.png");
     case playlistName.endsWith("Hitech"): return fromAssets("detail/hitech.png");
-    case playlistName.endsWith("Anglehell"): return fromAssets("detail/anglehell.png");
-    case playlistName.endsWith("Tempo"): return fromAssets("detail/tempo.png");
+    case playlistName.endsWith("Anglehell"): return fromAssets("detail/anglehell-2.png");
+    case playlistName.endsWith("Tempo"): return fromAssets("detail/tempo-2.png");
 
     // ToT Misc:
     case playlistName.endsWith("Surf"): return fromAssets("detail/surf.png");
-    default: return fromAssets("cover.jpg");
+    default: return fromAssets("detail/default.png");
   }
 }
 
@@ -72,7 +73,7 @@ const shouldApplyPlaylistCoverEffect = (playlistName: string) => {
     case playlistName.endsWith("Tempo"):
       return true;
     default:
-      return false;
+      return true;
   }
 }
 
