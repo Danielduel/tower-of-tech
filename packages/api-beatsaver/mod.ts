@@ -3,13 +3,13 @@ import {
   BeatSaverMapByHashResponseSchema,
   BeatSaverMapByIdResponseSchema,
   BeatSaverMapId,
-} from "../types/beatsaver.ts";
-import { fetcher } from "../fetcher/mod.ts";
-import { fileExists } from "../fs/fileExists.ts";
-import { LowercaseMapHash } from "../types/brands.ts";
-import { dbEditor, s3clientEditor } from "../database-editor/mod.ts";
-import { buckets } from "../database-editor/buckets.ts";
-import { BeatSaverApi } from "./api.ts";
+} from "@/packages/types/beatsaver.ts";
+import { fetcher } from "@/packages/fetcher/mod.ts";
+import { fileExists } from "@/packages/fs/fileExists.ts";
+import { LowercaseMapHash } from "@/packages/types/brands.ts";
+import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
+import { buckets } from "@/packages/database-editor/buckets.ts";
+import { BeatSaverApi } from "@/packages/api-beatsaver/api.ts";
 import {
   BeatSaverResolvable,
   splitBeatSaverResolvables,
@@ -45,8 +45,8 @@ const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
   return await Promise.all(
     idArray.map(async (id): Promise<IdsToHashesCacheType> => {
       const idToHashCacheItem = await dbEditor.BeatSaverIdToHashCache
-        .findByPrimaryIndex("id", id)
-        .then(x => x?.flat());
+        .find(id)
+        .then((x) => x?.flat());
 
       if (!idToHashCacheItem) return { id, status: "fetch" };
       if (!idToHashCacheItem.available) return { id, status: "error" };

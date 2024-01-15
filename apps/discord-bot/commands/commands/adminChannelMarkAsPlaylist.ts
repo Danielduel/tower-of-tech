@@ -1,7 +1,7 @@
+import { z } from "zod";
 import { AdminCommandRoutingMark } from "@/apps/discord-bot/commands/definitions.ts";
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
-import { z } from "zod";
 import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
 
 export async function adminChannelMarkAsPlaylist(
@@ -19,17 +19,20 @@ export async function adminChannelMarkAsPlaylist(
 
   const {
     guildId,
-    channelId
+    channelId,
   } = channelPointer;
 
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
   const discordChannelData = await dbDiscordBot.DiscordChannel
-    .findByPrimaryIndex("channelId", channelId)
-    .then(x => x?.flat());
+    .find(channelId)
+    .then((x) => x?.flat());
   if (!discordChannelData) {
-    return respondWithMessage("This channel is not registered (missing config data)", true);
+    return respondWithMessage(
+      "This channel is not registered (missing config data)",
+      true,
+    );
   }
   if (discordChannelData.guildId !== guildId) {
     return respondWithMessage("Channel-Guild mismatch error", true);
@@ -41,11 +44,11 @@ export async function adminChannelMarkAsPlaylist(
   }
 
   await dbDiscordBot.DiscordChannel
-    .updateByPrimaryIndex("channelId", channelId, {
-      markedAsPlaylist: value
+    .update(channelId, {
+      markedAsPlaylist: value,
     });
 
-    return respondWithMessage(
+  return respondWithMessage(
     value
       ? "This channel is now available as a playlist"
       : "This channel is no longer available as a playlist",

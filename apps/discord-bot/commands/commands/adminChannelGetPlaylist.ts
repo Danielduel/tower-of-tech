@@ -16,17 +16,20 @@ export async function adminChannelGetPlaylist(
 
   const {
     guildId,
-    channelId
+    channelId,
   } = channelPointer;
 
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
   const discordChannelData = await dbDiscordBot.DiscordChannel
-    .findByPrimaryIndex("channelId", channelId)
-    .then(x => x?.flat());
+    .find(channelId)
+    .then((x) => x?.flat());
   if (!discordChannelData) {
-    return respondWithMessage("This channel is not registered (missing config data)", true);
+    return respondWithMessage(
+      "This channel is not registered (missing config data)",
+      true,
+    );
   }
   if (discordChannelData.guildId !== guildId) {
     return respondWithMessage("Channel-Guild mismatch error", true);

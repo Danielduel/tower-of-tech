@@ -17,10 +17,10 @@ export const BeatSaverResponseWrapperSchema = z.object({
 export const BeatSaverIdToHashCache = collection(
   zodModel(BeatSaverIdToHashCacheSchema),
   {
+    idGenerator: (item) => item.id,
     history: true,
     indices: {
-      id: "primary",
-      hash: "secondary",
+      hash: "primary",
     },
   },
 );
@@ -28,19 +28,15 @@ export const BeatSaverIdToHashCache = collection(
 export const BeatSaverResponseWrapper = collection(
   zodModel(BeatSaverResponseWrapperSchema),
   {
+    idGenerator: (item) => item.id,
     history: true,
-    indices: {
-      id: "primary",
-    },
   },
 );
 
 export const BeatSaverMapResponseSuccess = collection(
   zodModel(BeatSaverMapResponseSuccessSchema),
   {
+    idGenerator: (item) => item.id,
     history: true,
-    indices: {
-      id: "primary",
-    },
   },
 );

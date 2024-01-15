@@ -46,7 +46,7 @@ export async function playlistFromGuildChannel(
   if (!channelId) return json("Invalid channel id");
 
   const discordChannelData = await dbDiscordBot.DiscordChannel
-    .findByPrimaryIndex("channelId", channelId)
+    .find(channelId)
     .then(x => x?.flat())
   if (!discordChannelData) {
     return json("This channel is not registered (missing config data)");

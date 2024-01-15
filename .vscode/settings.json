@@ -3,6 +3,8 @@
   "deno.lint": true,
   "deno.unstable": true,
   "deno.enablePaths": ["."],
+  "deno.cacheOnSave": true,
+  "editor.formatOnSave": true,
   "editor.defaultFormatter": "denoland.vscode-deno",
   "typescript.validate.enable": false,
   "javascript.validate.enable": false,

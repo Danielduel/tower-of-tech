@@ -1,11 +1,20 @@
 import { z } from "zod";
 import { makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
-import { BeatSaberDifficultyCharacteristicSchema, BeatSaberDifficultyNameSchema } from "@/packages/types/beatsaber.ts";
-import { makeUppercaseMapHashForLevelId, makeUppercaseMapHash, makePlaylistUrl, makeImageBase64, makeImageUrl } from "@/packages/types/brands.ts";
+import {
+  BeatSaberDifficultyCharacteristicSchema,
+  BeatSaberDifficultyNameSchema,
+} from "@/packages/types/beatsaber.ts";
+import {
+  makeImageBase64,
+  makeImageUrl,
+  makePlaylistUrl,
+  makeUppercaseMapHash,
+  makeUppercaseMapHashForLevelId,
+} from "@/packages/types/brands.ts";
 
 export const BeatSaberPlaylistSongItemDifficultySchema = z.object({
   characteristic: BeatSaberDifficultyCharacteristicSchema,
-  name: BeatSaberDifficultyNameSchema
+  name: BeatSaberDifficultyNameSchema,
 });
 
 export const BeatSaberPlaylistSongItemSchema = z.object({
@@ -14,7 +23,7 @@ export const BeatSaberPlaylistSongItemSchema = z.object({
   key: z.string().transform(makeBeatSaverMapId).optional(),
   songName: z.string(),
   levelAuthorName: z.string(),
-  difficulties: z.array(BeatSaberPlaylistSongItemDifficultySchema)
+  difficulties: z.array(BeatSaberPlaylistSongItemDifficultySchema),
 });
 
 export const BeatSaberPlaylistCustomDataSchema = z.object({
@@ -49,6 +58,15 @@ export const BeatSaberPlaylistWithImageAsUrlSchema = z.object({
   customData: BeatSaberPlaylistCustomDataSchema.optional(),
   songs: z.array(BeatSaberPlaylistSongItemSchema),
   imageUrl: z.string().transform(makeImageUrl),
+});
+
+export const BeatSaberPlaylistFlatSchema = z.object({
+  id: z.string(),
+  playlistTitle: z.string(),
+  playlistAuthor: z.string(),
+  customData: BeatSaberPlaylistCustomDataSchema.optional(),
+  songs: z.array(z.string().transform(makeUppercaseMapHash)),
+  image: z.null(),
 });
 
 export const BeatSaberPlaylistLinkSchema = z.object({

@@ -2,7 +2,6 @@ import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
 import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
-import l from "https://esm.sh/v135/@twind/preset-tailwind@1.0.1/X-ZS8q/denonext/preset-tailwind.mjs";
 
 export async function adminChannelRegister(
   commandEvent: CommandEmptyInteraction,
@@ -16,7 +15,7 @@ export async function adminChannelRegister(
 
   const {
     guildId,
-    channelId
+    channelId,
   } = channelPointer;
 
   if (!guildId) return respondWithMessage("Invalid guild id", true);
@@ -29,11 +28,11 @@ export async function adminChannelRegister(
   console.log(`Registering channel ${channelId} from guild ${guildId}`);
 
   const discordChannelData = await dbDiscordBot.DiscordChannel
-    .findByPrimaryIndex("channelId", channelId)
-    .then(x => x?.flat());
+    .find(channelId)
+    .then((x) => x?.flat());
   const discordGuildData = await dbDiscordBot.DiscordGuild
-    .findByPrimaryIndex("guildId", guildId)
-    .then(x => x?.flat());
+    .find(guildId)
+    .then((x) => x?.flat());
   if (discordChannelData) {
     return respondWithMessage("This channel is already registered", true);
   }
@@ -49,11 +48,11 @@ export async function adminChannelRegister(
     await dbDiscordBot.DiscordGuild.add({
       guildId,
       addedBy: commandEvent.member?.user?.id,
-      channels: [ channelId ]
+      channels: [channelId],
     });
   } else {
-    await dbDiscordBot.DiscordGuild.updateByPrimaryIndex("guildId", guildId, {
-      channels: [ ...discordGuildData.channels, channelId ]
+    await dbDiscordBot.DiscordGuild.update(guildId, {
+      channels: [...discordGuildData.channels, channelId],
     });
   }
 
@@ -63,4 +62,4 @@ export async function adminChannelRegister(
       : "This channel is now registered and added to a new guild",
     true,
   );
-};
+}
