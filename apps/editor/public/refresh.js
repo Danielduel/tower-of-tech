@@ -1,4 +1,10 @@
 ((l) => {
+  if (!l.origin.startsWith("http://localhost:")) {
+    console.info("[refresh] disabling refresh");
+    return;
+  }
+  console.info("[refresh] enabling refresh");
+
   let w, i;
 
   function d(m) {

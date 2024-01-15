@@ -21,82 +21,11 @@ type InstallStepsT = {
   installation_oculus: boolean;
   installation_oculus_standalone: boolean;
 };
-// https://danielduel-tot-bot.deno.dev/api/playlist/guild/689050370840068309/channel/1176658722563567759
 
 const Divider = () => <div className="h-6 block" />;
 
-const getInstallSteps = (setStep: (s: keyof InstallStepsT) => void) => ({
-  installation_steam_modassistant: (
-    <>
-      ModAssistant is by far the easiest way to install
-    </>
-  ),
-  installation_steam_manual_folder: (
-    <>
-      First, you will need the archive:
-      <a
-        download
-        className="border px-4 py-1 box-content h-8 ml-2"
-        href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
-      >
-        Get the playlist archive
-      </a>
-
-      Move the archive to Beat Saber's folder.<br />
-      Go to Beat Saber's folder (or go to Steam, right click Beat Saber, Manage,
-      Browse local files). Place downloaded <i>ToT.zip</i>{" "}
-      in the main Beat Saber folder:<br />
-      <Image
-        className="rounded-xl mx-auto"
-        src="/playlist-installation-guide/tot-in-folder.png"
-      />
-      Right click it, extract here. You should have <i>Playlist</i> folder with
-      {" "}
-      <i>ToT</i> and <i>ToT Guest</i> which contain a lot of <i>.bplist</i>{" "}
-      files. You can open Beat Saber and check if your Playlists are in the
-      game.
-      <br />
-      <br />
-      Run the game, pick the community tab in solo mode (this hand with a
-      musical note icon):
-      <Image
-        className="rounded-xl mx-auto"
-        src="/playlist-installation-guide/custom-levels-tab.png"
-      />
-      And on the right you should see playlists:
-      <Image
-        className="rounded-xl mx-auto"
-        src="/playlist-installation-guide/playlists-compact.png"
-      />
-      If you hover over the list on the right - ToT playlists should look like
-      so (I use a lot of playlists and I had to scroll):
-      <Image
-        className="rounded-xl mx-auto"
-        src="/playlist-installation-guide/playlists-expanded.png"
-      />
-      <div className="h-6 block" />
-      <button
-        className="border block px-4 py-1 box-content h-8 ml-2 mb-2"
-        onClick={() => setStep("installation_steam_mods")}
-      >
-        I can see playlists, yay!
-      </button>
-      <button
-        className="border px-4 py-1 box-content h-8 ml-2 mb-2"
-        onClick={() => setStep("installation_steam_mods")}
-      >
-        I can't see playlists
-      </button>
-    </>
-  ),
-  installation_steam_manual_extract: <></>,
-  installation_oculus: <></>,
-  installation_oculus_standalone: <></>,
-  installation_steam_mods: <></>,
-});
-
-const Step: FC<PropsWithChildren & { firstStep?: boolean }> = (
-  { children, firstStep },
+const Step: FC<PropsWithChildren> = (
+  { children },
 ) => {
   return (
     <VisualNovelContainer>
@@ -104,12 +33,6 @@ const Step: FC<PropsWithChildren & { firstStep?: boolean }> = (
         {children}
       </VisualNovelBody>
       <VisualNovelActions>
-        {!firstStep && (
-          <VisualNovelLink
-            href={links.home.playlistInstallGuide.root}
-            children="Go to beginning"
-          />
-        )}
         <VisualNovelLink to={links.home.more} children="Tell me more" />
         <VisualNovelLink to={links.home.root} children="Go back" />
       </VisualNovelActions>
@@ -134,7 +57,7 @@ export const OneClickAnchor = (
     <a
       className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2 " +
         (visited ? "opacity-50" : "")}
-      href={`bsplaylist://playlist/${location.origin}${href}`}
+      href={`bsplaylist://playlist/${location.origin}${href}.bplist`}
       onClick={() => setVisited(true)}
     >
       {name}
@@ -145,7 +68,7 @@ export const OneClickAnchor = (
 export const PlaylistInstallGuideModAssistant = () => {
   const playlistArray = useMemo(() => Object.values(playlistMapping), []);
   return (
-    <Step firstStep>
+    <Step>
       Have fun clicking those
       <Divider />
       {playlistArray.map((x) => (
@@ -158,16 +81,146 @@ export const PlaylistInstallGuideModAssistant = () => {
   );
 };
 
-export const PlaylistInstallGuidePCVRSteam = () => {
+export const PlaylistInstallGuidePCVRSteamManualDownload = () => {
+  const [downloaded, setDownloaded] = useState(false);
+
   return (
-    <Step firstStep>
-      There are few easy options to make playlists appear in the game. If you
-      have a tool or manager that you prefer - feel free to use it, extract
-      contents of the archive and use your prefered method.
+    <Step>
+      First, you will need the archive:
+      <a
+        download
+        onClick={() => setDownloaded(true)}
+        className="border px-4 py-1 box-content h-8 ml-4"
+        href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
+      >
+        Download playlist archive
+      </a>
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteamManualLocateFolder}
+        children={downloaded ? "Got it!" : "I already have this"}
+      />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteam}
+        children="Take me back"
+      />
+    </Step>
+  );
+};
+
+export const PlaylistInstallGuidePCVRSteamManualLocateFolder = () => {
+  return (
+    <Step>
+      Go to Beat Saber's folder
       <br />
       <small>
-        Feel free to dm me on Discord or Matrix if you would like me to describe
-        your method here
+        (or go to Steam, right click Beat Saber, Manage, Browse local files)
+      </small>
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteamManualMoveAndExtract}
+        children="Done!"
+      />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteamManualDownload}
+        children="Take me back"
+      />
+    </Step>
+  );
+};
+
+export const PlaylistInstallGuidePCVRSteamManualMoveAndExtract = () => {
+  return (
+    <Step>
+      Move the archive to Beat Saber's folder.<br />
+      Place downloaded <i>ToT.zip</i> in the main Beat Saber folder:<br />
+      <Image
+        className="rounded-xl mx-auto"
+        src="/playlist-installation-guide/tot-in-folder.png"
+      />
+      Right click it, extract here. You should have <i>Playlist</i> folder with
+      {" "}
+      <i>ToT</i> and <i>ToT Guest</i> which contain a lot of <i>.bplist</i>{" "}
+      files. You can open Beat Saber and check if your Playlists are in the
+      game.
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide
+          .pcvrSteamManualPostInstallationCheck}
+        children="Done, how to check if it works?"
+      />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteamManualLocateFolder}
+        children="Take me back"
+      />
+    </Step>
+  );
+};
+
+export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck = () => {
+  return (
+    <Step>
+      Run the game
+      <br />
+      <small>
+        (if you don't want to start VR - you can add "fpfc" to launch flags to
+        Beat Saber in steam so you don't have to get into VR)
+      </small>
+      <Divider />
+
+      Pick the community tab in solo mode
+      <br />
+      <small>
+        (this hand with a musical note icon)
+      </small>
+      <Divider />
+      <Image
+        className="rounded-xl mx-auto"
+        src="/playlist-installation-guide/custom-levels-tab.png"
+      />
+      <Divider />
+
+      On the right you should see playlists
+      <Image
+        className="rounded-xl mx-auto"
+        src="/playlist-installation-guide/playlists-compact.png"
+      />
+      <Divider />
+
+      You can expand playlist list by hovering over it
+      <br />
+      <small>
+        (depending on how many playlists do you have - you might need to scroll
+        down)
+      </small>
+      <Divider />
+      <Image
+        className="rounded-xl mx-auto"
+        src="/playlist-installation-guide/playlists-expanded.png"
+      />
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteamManualMoveAndExtract}
+        children="I can see playlists, yay!"
+      />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteamManualDownload}
+        children="I can't see playlists, help"
+      />
+    </Step>
+  );
+};
+
+export const PlaylistInstallGuidePCVRSteam = () => {
+  return (
+    <Step>
+      There are few easy options to make playlists appear in the game. If you
+      have a tool or manager that you prefer - use it, extract contents of the
+      archive and use your prefered method.
+      <br />
+      <small>
+        (feel free to dm me on Discord or Matrix if you would like me to
+        describe your method here)
       </small>
       <Divider />
       <StepLink
@@ -175,11 +228,11 @@ export const PlaylistInstallGuidePCVRSteam = () => {
         children="I want to use ModAssistant's OneClick™"
       />
       <StepLink
-        to={""}
+        to={links.home.playlistInstallGuide.pcvrSteamManualDownload}
         children="I pick the manual way"
       />
       <StepLink
-        to={""}
+        to={links.home.playlistInstallGuide.askAboutPlatform}
         children="Take me back"
       />
     </Step>
@@ -188,8 +241,8 @@ export const PlaylistInstallGuidePCVRSteam = () => {
 
 export const PlaylistInstallGuidePlatform = () => {
   return (
-    <Step firstStep>
-      You play Beat Saber on:
+    <Step>
+      You play Beat Saber on...
       <Divider />
       <StepLink
         to={links.home.playlistInstallGuide.pcvrSteam}

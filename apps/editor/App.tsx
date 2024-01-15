@@ -21,17 +21,25 @@ export default function App() {
         <link rel="shortcut icon" href={useAsset("/favicon.ico")} />
         <link rel="stylesheet" href={useAsset("/style.css")} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+          rel="stylesheet"
+        />
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="/refresh.js"></script>
         <ImportMapScript />
         <script
           dangerouslySetInnerHTML={{
             __html: "window.__REACT_QUERY_DEHYDRATED_STATE = " +
-            JSON.stringify(dehydrate(queryClient))
+              JSON.stringify(dehydrate(queryClient)),
           }}
-        ></script>
+        >
+        </script>
       </head>
       <body>
         <ErrorBoundary
@@ -45,4 +53,4 @@ export default function App() {
       </body>
     </html>
   );
-};
+}
