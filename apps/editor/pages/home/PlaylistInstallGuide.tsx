@@ -134,7 +134,7 @@ export const OneClickAnchor = (
     <a
       className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2 " +
         (visited ? "opacity-50" : "")}
-      href={`bsplaylist://playlist/${href}`}
+      href={`bsplaylist://playlist/${location.origin}${href}`}
       onClick={() => setVisited(true)}
     >
       {name}
