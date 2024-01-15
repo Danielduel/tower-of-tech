@@ -20,10 +20,13 @@ export default function Index() {
       <VisualNovelActions>
         <VisualNovelAnchor
           download
-          children="I know what to do, just give me the those playlists!"
+          children="I know what to do, just give me those playlists!"
           href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
         />
-        <VisualNovelLink to={links.home.playlistInstallGuide.root} children="How to install those playlists?" />
+        <VisualNovelLink
+          to={links.home.playlistInstallGuide.root}
+          children="How to install those playlists?"
+        />
         <VisualNovelLink to={links.home.more} children="Tell me more" />
       </VisualNovelActions>
     </VisualNovelContainer>

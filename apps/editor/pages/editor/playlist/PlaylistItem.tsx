@@ -1,11 +1,17 @@
 import { FC } from "react";
-import { WithMaps, WithPlaylist, WithPlaylistWithImageAsUrl } from "@/packages/ui/playlist/types.ts";
+import {
+  WithMaps,
+  WithPlaylist,
+  WithPlaylistWithImageAsUrl,
+} from "@/packages/ui/playlist/types.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { MapItem } from "@/apps/editor/components/MapItem.tsx";
 
 const PlaylistMaps: FC<WithMaps> = ({ maps }) => {
   const hashes = maps.flatMap((map) => map.hash.toString());
-  const { data: resolved } = trpc.map.resolve.useQuery({ hashes }, { staleTime: Infinity });
+  const { data: resolved } = trpc.map.resolve.useQuery({ hashes }, {
+    staleTime: Infinity,
+  });
 
   return (
     <div className="pl-2 border-l-1 border-black">
@@ -20,8 +26,12 @@ const PlaylistMaps: FC<WithMaps> = ({ maps }) => {
   );
 };
 
-export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = ({ playlist }) => {
-  const imageSrc = "imageUrl" in playlist ? playlist.imageUrl : "data:image/png;" + playlist.image;
+export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = (
+  { playlist },
+) => {
+  const imageSrc = "imageUrl" in playlist
+    ? playlist.imageUrl
+    : "data:image/png;" + playlist.image;
 
   return (
     <div key={`playlist-${playlist.id}`} className="mb-4">
@@ -37,7 +47,11 @@ export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = ({ playli
           <div key="playlist-Author">Author: {playlist.playlistAuthor}</div>
           <div key="playlist-Id">Id: {playlist.id}</div>
           <div key="playlist-Maps">Maps: {playlist.songs.length}</div>
-          <a className="ring-4 ring-blue p-2 float-right" href={`/api/v1/playlist/get/${playlist.id}`} download>
+          <a
+            className="ring-4 ring-blue p-2 float-right"
+            href={`/api/v1/playlist/get/${playlist.id}`}
+            download
+          >
             Download
           </a>
         </div>

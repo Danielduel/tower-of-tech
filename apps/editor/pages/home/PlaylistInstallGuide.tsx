@@ -26,20 +26,21 @@ type InstallStepsT = {
 const Divider = () => <div className="h-6 block" />;
 
 const getInstallSteps = (setStep: (s: keyof InstallStepsT) => void) => ({
-  installation_steam_modassistant: <>
-    ModAssistant is by far the easiest way to install
-  
-  </>,
+  installation_steam_modassistant: (
+    <>
+      ModAssistant is by far the easiest way to install
+    </>
+  ),
   installation_steam_manual_folder: (
     <>
-    First, you will need the archive:
-    <a
-      download
-      className="border px-4 py-1 box-content h-8 ml-2"
-      href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
-    >
-      Get the playlist archive
-    </a>
+      First, you will need the archive:
+      <a
+        download
+        className="border px-4 py-1 box-content h-8 ml-2"
+        href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
+      >
+        Get the playlist archive
+      </a>
 
       Move the archive to Beat Saber's folder.<br />
       Go to Beat Saber's folder (or go to Steam, right click Beat Saber, Manage,
@@ -94,7 +95,9 @@ const getInstallSteps = (setStep: (s: keyof InstallStepsT) => void) => ({
   installation_steam_mods: <></>,
 });
 
-const Step: FC<PropsWithChildren & { firstStep?: boolean }> = ({ children, firstStep }) => {
+const Step: FC<PropsWithChildren & { firstStep?: boolean }> = (
+  { children, firstStep },
+) => {
   return (
     <VisualNovelContainer>
       <VisualNovelBody>
@@ -111,28 +114,33 @@ const Step: FC<PropsWithChildren & { firstStep?: boolean }> = ({ children, first
         <VisualNovelLink to={links.home.root} children="Go back" />
       </VisualNovelActions>
     </VisualNovelContainer>
-  )
-}
-
-const StepLink: FC<LinkProps> = (props) => {
-  return <Link
-    {...props}
-    className="border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline"
-  />
+  );
 };
 
-export const OneClickAnchor = ({ href, name }: { href: string, name: string }) => {
+const StepLink: FC<LinkProps> = (props) => {
+  return (
+    <Link
+      {...props}
+      className={`border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline ${props.className}`}
+    />
+  );
+};
+
+export const OneClickAnchor = (
+  { href, name }: { href: string; name: string },
+) => {
   const [visited, setVisited] = useState(false);
   return (
     <a
-      className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2 " + (visited ? "opacity-50" : "")}
+      className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2 " +
+        (visited ? "opacity-50" : "")}
       href={`bsplaylist://playlist/${href}`}
       onClick={() => setVisited(true)}
     >
       {name}
     </a>
-  )
-}
+  );
+};
 
 export const PlaylistInstallGuideModAssistant = () => {
   const playlistArray = useMemo(() => Object.values(playlistMapping), []);
@@ -140,14 +148,12 @@ export const PlaylistInstallGuideModAssistant = () => {
     <Step firstStep>
       Have fun clicking those
       <Divider />
-      {
-        playlistArray.map(x => (
-          <OneClickAnchor
-            name={x.displayName}
-            href={x.apiDownloadPath}
-          />
-        ))
-      }
+      {playlistArray.map((x) => (
+        <OneClickAnchor
+          name={x.displayName}
+          href={x.apiDownloadPath}
+        />
+      ))}
     </Step>
   );
 };
@@ -155,9 +161,9 @@ export const PlaylistInstallGuideModAssistant = () => {
 export const PlaylistInstallGuidePCVRSteam = () => {
   return (
     <Step firstStep>
-      There are few easy options to make playlists appear in the game.
-      If you have a tool or manager that you prefer - feel free to use it,
-      extract contents of the archive and use your prefered method.
+      There are few easy options to make playlists appear in the game. If you
+      have a tool or manager that you prefer - feel free to use it, extract
+      contents of the archive and use your prefered method.
       <br />
       <small>
         Feel free to dm me on Discord or Matrix if you would like me to describe
@@ -189,14 +195,17 @@ export const PlaylistInstallGuidePlatform = () => {
         to={links.home.playlistInstallGuide.pcvrSteam}
         children="PCVR Steam"
       />
-      <StepLink
+      {
+        /* <StepLink
         to={""}
         children="PCVR Meta store (Oculus store)"
       />
       <StepLink
         to={""}
+        className="opacity-50 hover:ring-transparent cursor-default"
         children="Standalone (you don't have the headset plugged into the PC)"
-      />
+      /> */
+      }
       <a
         className="hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2"
         href="https://store.steampowered.com/valveindex"
