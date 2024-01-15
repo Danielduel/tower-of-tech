@@ -47,7 +47,7 @@ export async function playlistFromGuildChannel(
 
   const discordChannelData = await dbDiscordBot.DiscordChannel
     .find(channelId)
-    .then(x => x?.flat())
+    .then((x) => x?.flat());
   if (!discordChannelData) {
     return json("This channel is not registered (missing config data)");
   }

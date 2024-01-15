@@ -30,34 +30,10 @@
       ]
     },
     {
-      "songName": "临川浮梦",
-      "levelAuthorName": "staryouh",
-      "hash": "2977591D67AA099A0E53AF6EECAF3A27C4F6D499",
-      "levelid": "custom_level_2977591D67AA099A0E53AF6EECAF3A27C4F6D499",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "恋ひ恋う縁",
       "levelAuthorName": "staryouh",
       "hash": "5FC90DD064AE84E6921140772E056D3C3FF10530",
       "levelid": "custom_level_5FC90DD064AE84E6921140772E056D3C3FF10530",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Cure For Me",
-      "levelAuthorName": "staryouh",
-      "hash": "2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
-      "levelid": "custom_level_2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -205,6 +181,18 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "ELecTric woNderLAnD",
+      "levelAuthorName": "Cush",
+      "hash": "2DD438EDFE593B7861B5442F6582FF7F87B2221F",
+      "levelid": "custom_level_2DD438EDFE593B7861B5442F6582FF7F87B2221F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]
