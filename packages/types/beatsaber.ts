@@ -6,7 +6,8 @@ export const BeatSaberDifficultyCharacteristicSchema = z.enum([
   "OneSaber",
   "Lightshow",
   "NoArrows",
-  "360Degree"
+  "360Degree",
+  "90Degree",
 ])
 
 export const BeatSaberDifficultyNameSchema = z.enum([
@@ -14,5 +15,5 @@ export const BeatSaberDifficultyNameSchema = z.enum([
   "Expert",
   "Hard",
   "Normal",
-  "Easy"
+  "Easy",
 ]);

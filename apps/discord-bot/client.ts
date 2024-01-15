@@ -7,7 +7,6 @@ import {
 async function createClient(
   intents: BitFieldResolvable<GatewayIntentsString, number>,
 ) {
-
   const client = new Client({
     intents,
   });
