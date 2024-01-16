@@ -138,7 +138,7 @@ export const PlaylistInstallGuidePCVRSteamManualMoveAndExtract = () => {
         className="rounded-xl mx-auto"
         src="/playlist-installation-guide/tot-in-folder.png"
       />
-      Right click it, extract here. You should have <i>Playlist</i> folder with
+      Right click it, extract here. You should have <i>Playlists</i> folder with
       {" "}
       <i>ToT</i> and <i>ToT Guest</i> which contain a lot of <i>.bplist</i>{" "}
       files. You can open Beat Saber and check if your Playlists are in the
