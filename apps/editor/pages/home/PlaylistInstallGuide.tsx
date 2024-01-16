@@ -40,6 +40,8 @@ const Step: FC<PropsWithChildren> = (
   );
 };
 
+const downloadUrl = "";
+
 const StepLink: FC<LinkProps> = (props) => {
   return (
     <Link
@@ -211,18 +213,40 @@ export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck = () => {
   );
 };
 
+export const PlaylistInstallGuideCustom = () => {
+  return (
+    <Step>
+      Get the archive:
+      <a
+        download
+        className="border px-4 py-1 box-content h-8 ml-4"
+        href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
+      >
+        Download playlist archive
+      </a>
+      <Divider />
+
+      Extract contents of the archive and use your prefered method.<br />
+      You should have <i>Playlists</i> folder with <i>ToT</i> and{" "}
+      <i>ToT Guest</i> which contain a lot of <i>.bplist</i> files.
+      <br />
+      <small>
+        (feel invited to dm me on Discord or Matrix if you would like me to
+        describe your method here)
+      </small>
+    </Step>
+  );
+};
+
 export const PlaylistInstallGuidePCVRSteam = () => {
   return (
     <Step>
-      There are few easy options to make playlists appear in the game. If you
-      have a tool or manager that you prefer - use it, extract contents of the
-      archive and use your prefered method.
-      <br />
-      <small>
-        (feel free to dm me on Discord or Matrix if you would like me to
-        describe your method here)
-      </small>
+      Pick your preffered method
       <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide.custom}
+        children="I want to use a tool, which is not described here"
+      />
       <StepLink
         to={links.home.playlistInstallGuide.modAssistant}
         children="I want to use ModAssistant's OneClick™"

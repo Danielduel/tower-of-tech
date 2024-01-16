@@ -12,6 +12,7 @@ export const routing = {
       root: "playlist-install-guide/",
       askAboutPlatform: "ask-about-platform",
       modAssistant: "mod-assistant",
+      custom: "custom",
       pcvrSteam: "pcvr-steam",
       pcvrSteamManualDownload: "pcvr-steam-manual-download",
       pcvrSteamManualLocateFolder: "pcvr-steam-manual-locate-folder",
@@ -43,6 +44,7 @@ export const links = {
       root: "/home/playlist-install-guide/",
       askAboutPlatform: "/home/playlist-install-guide/ask-about-platform",
       modAssistant: "/home/playlist-install-guide/mod-assistant",
+      custom: "/home/playlist-install-guide/custom",
       pcvrSteam: "/home/playlist-install-guide/pcvr-steam",
       pcvrSteamManualDownload:
         "/home/playlist-install-guide/pcvr-steam-manual-download",

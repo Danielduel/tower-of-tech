@@ -11,6 +11,7 @@ import { More } from "@/apps/editor/pages/home/More.tsx";
 import Download from "@/apps/editor/pages/home/Download.tsx";
 import { SnipeIndex } from "@/apps/editor/pages/snipe/index.tsx";
 import {
+  PlaylistInstallGuideCustom,
   PlaylistInstallGuideModAssistant,
   PlaylistInstallGuidePCVRSteam,
   PlaylistInstallGuidePlatform,
@@ -50,6 +51,10 @@ export const Routing = () => {
             element={MainLayoutShell(PlaylistInstallGuideModAssistant)}
           />
           <Route
+            path={routing.home.playlistInstallGuide.custom}
+            element={MainLayoutShell(PlaylistInstallGuideCustom)}
+          />
+          <Route
             path={routing.home.playlistInstallGuide.pcvrSteam}
             element={MainLayoutShell(PlaylistInstallGuidePCVRSteam)}
           />
@@ -79,7 +84,10 @@ export const Routing = () => {
               PlaylistInstallGuidePCVRSteamManualMoveAndExtract,
             )}
           />
-
+          <Route
+            path={routing.home.playlistInstallGuide.askAboutPlatform}
+            element={MainLayoutShell(PlaylistInstallGuidePlatform)}
+          />
           <Route
             index
             element={MainLayoutShell(PlaylistInstallGuidePlatform)}

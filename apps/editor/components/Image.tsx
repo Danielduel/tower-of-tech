@@ -7,13 +7,19 @@ export const Image = (props: ImgHTMLAttributes<HTMLImageElement>) => {
   useEffect(() => {
     imageData.current.onload = () => {
       setLoaded(true);
-    }
+    };
     imageData.current.src = props.src!;
   }, [imageData.current, setLoaded]);
 
   if (!loaded) {
-    return <div className={props.className + " animate-[spin_2s_linear_infinite] border-blue-300 border-4 blur-sm h-10 w-10 rounded"}></div>
+    return (
+      <div
+        className={props.className +
+          " animate-[spin_2s_linear_infinite] border-blue-300 border-4 blur-sm h-10 w-10 rounded"}
+      >
+      </div>
+    );
   }
 
-  return <img {...props} />
+  return <img {...props} />;
 };
