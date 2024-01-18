@@ -12,13 +12,16 @@ export const routing = {
       root: "playlist-install-guide/",
       askAboutPlatform: "ask-about-platform",
       modAssistant: "mod-assistant",
-      custom: "custom",
       pcvrSteam: "pcvr-steam",
+      pcvrSteamCustom: "pcvr-steam-custom",
       pcvrSteamManualDownload: "pcvr-steam-manual-download",
       pcvrSteamManualLocateFolder: "pcvr-steam-manual-locate-folder",
       pcvrSteamManualMoveAndExtract: "pcvr-steam-manual-move-and-extract",
+      pcvrSteamManualInstallMods: "pcvr-steam-manual-install-mods",
       pcvrSteamManualPostInstallationCheck:
         "pcvr-steam-manual-post-installation-check",
+      pcvrSteamManualPostInstallationCongratulations:
+        "pcvr-steam-manual-post-installation-congratulations",
     },
   },
 
@@ -44,7 +47,7 @@ export const links = {
       root: "/home/playlist-install-guide/",
       askAboutPlatform: "/home/playlist-install-guide/ask-about-platform",
       modAssistant: "/home/playlist-install-guide/mod-assistant",
-      custom: "/home/playlist-install-guide/custom",
+      pcvrSteamCustom: "/home/playlist-install-guide/pcvr-steam-custom",
       pcvrSteam: "/home/playlist-install-guide/pcvr-steam",
       pcvrSteamManualDownload:
         "/home/playlist-install-guide/pcvr-steam-manual-download",
@@ -52,8 +55,12 @@ export const links = {
         "/home/playlist-install-guide/pcvr-steam-manual-locate-folder",
       pcvrSteamManualMoveAndExtract:
         "/home/playlist-install-guide/pcvr-steam-manual-move-and-extract",
+      pcvrSteamManualInstallMods:
+        "/home/playlist-install-guide/pcvr-steam-manual-install-mods",
       pcvrSteamManualPostInstallationCheck:
         "/home/playlist-install-guide/pcvr-steam-manual-post-installation-check",
+      pcvrSteamManualPostInstallationCongratulations:
+        "/home/playlist-install-guide/pcvr-steam-manual-post-installation-congratulations",
     },
     download: "/home/download",
     more: "/home/more",

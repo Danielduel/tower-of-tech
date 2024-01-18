@@ -14,12 +14,15 @@ import {
   PlaylistInstallGuideCustom,
   PlaylistInstallGuideModAssistant,
   PlaylistInstallGuidePCVRSteam,
+  PlaylistInstallGuidePCVRSteamManualInstallMods,
   PlaylistInstallGuidePlatform,
 } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
 import { PlaylistInstallGuidePCVRSteamManualDownload } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
 import { PlaylistInstallGuidePCVRSteamManualLocateFolder } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
 import { PlaylistInstallGuidePCVRSteamManualMoveAndExtract } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
 import { PlaylistInstallGuidePCVRSteamManualPostInstallationCheck } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
+import { PlaylistInstallGuidePCVRSteamCustom } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
+import { PlaylistInstallGuidePCVRPostInstallationCongratulations } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
 
 export const Routing = () => {
   return (
@@ -51,8 +54,8 @@ export const Routing = () => {
             element={MainLayoutShell(PlaylistInstallGuideModAssistant)}
           />
           <Route
-            path={routing.home.playlistInstallGuide.custom}
-            element={MainLayoutShell(PlaylistInstallGuideCustom)}
+            path={routing.home.playlistInstallGuide.pcvrSteamCustom}
+            element={MainLayoutShell(PlaylistInstallGuidePCVRSteamCustom)}
           />
           <Route
             path={routing.home.playlistInstallGuide.pcvrSteam}
@@ -82,6 +85,20 @@ export const Routing = () => {
               .pcvrSteamManualMoveAndExtract}
             element={MainLayoutShell(
               PlaylistInstallGuidePCVRSteamManualMoveAndExtract,
+            )}
+          />
+          <Route
+            path={routing.home.playlistInstallGuide
+              .pcvrSteamManualInstallMods}
+            element={MainLayoutShell(
+              PlaylistInstallGuidePCVRSteamManualInstallMods,
+            )}
+          />
+          <Route
+            path={routing.home.playlistInstallGuide
+              .pcvrSteamManualPostInstallationCongratulations}
+            element={MainLayoutShell(
+              PlaylistInstallGuidePCVRPostInstallationCongratulations,
             )}
           />
           <Route

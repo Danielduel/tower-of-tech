@@ -11,6 +11,7 @@ import { Image } from "@/apps/editor/components/Image.tsx";
 import { Link } from "@/packages/ui/Link.tsx";
 import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
+import { AnchorHTMLAttributes } from "npm:@types/react";
 
 type InstallStepsT = {
   downloading: boolean;
@@ -41,7 +42,22 @@ const Step: FC<PropsWithChildren> = (
   );
 };
 
-const downloadUrl = "";
+const StepExplanation: FC<PropsWithChildren> = ({ children }) => {
+  return (
+    <div className="text-lg border-l-2 text-cyan-50 pl-5 mt-2">{children}</div>
+  );
+};
+
+const StepInlineATag: FC<AnchorHTMLAttributes<HTMLAnchorElement>> = (
+  props,
+) => {
+  return (
+    <a
+      className="border px-4 py-1 box-content h-8 ml-4 mr-1"
+      {...props}
+    />
+  );
+};
 
 const StepLink: FC<LinkProps> = (props) => {
   return (
@@ -80,6 +96,11 @@ export const PlaylistInstallGuideModAssistant = () => {
           href={x.apiDownloadPath}
         />
       ))}
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteam}
+        children="Take me back"
+      />
     </Step>
   );
 };
@@ -90,14 +111,14 @@ export const PlaylistInstallGuidePCVRSteamManualDownload = () => {
   return (
     <Step>
       First, you will need the archive:
-      <a
+      <StepInlineATag
         download
         onClick={() => setDownloaded(true)}
         className="border px-4 py-1 box-content h-8 ml-4"
         href={latestPlaylistReleaseUrl}
       >
         Download playlist archive
-      </a>
+      </StepInlineATag>
       <Divider />
       <StepLink
         to={links.home.playlistInstallGuide.pcvrSteamManualLocateFolder}
@@ -115,10 +136,12 @@ export const PlaylistInstallGuidePCVRSteamManualLocateFolder = () => {
   return (
     <Step>
       Go to Beat Saber's folder
-      <br />
-      <small>
-        (or go to Steam, right click Beat Saber, Manage, Browse local files)
-      </small>
+      <StepExplanation>
+        Open <i>Steam</i>, select <i>Library</i>, right click <i>Beat Saber</i>
+        {" "}
+        in the library list, select <i>Manage</i> in the dropdown, click{" "}
+        <i>Browse local files</i> option
+      </StepExplanation>
       <Divider />
       <StepLink
         to={links.home.playlistInstallGuide.pcvrSteamManualMoveAndExtract}
@@ -135,17 +158,21 @@ export const PlaylistInstallGuidePCVRSteamManualLocateFolder = () => {
 export const PlaylistInstallGuidePCVRSteamManualMoveAndExtract = () => {
   return (
     <Step>
-      Move the archive to Beat Saber's folder.<br />
-      Place downloaded <i>ToT.zip</i> in the main Beat Saber folder:<br />
+      Move the downloaded <i>ToT.zip</i>{" "}
+      to the main Beat Saber folder and extract it<br />
+      <StepExplanation>
+        Move <i>ToT.zip</i> archive from <i>Downloads</i> to your{" "}
+        <i>Beat Saber folder</i>. Right click the ToT.zip, depending on your
+        system you should have an option to{" "}
+        <i>
+          extract the archive here
+        </i>.
+      </StepExplanation>
+      <Divider />
       <Image
         className="rounded-xl mx-auto"
         src="/playlist-installation-guide/tot-in-folder.png"
       />
-      Right click it, extract here. You should have <i>Playlists</i> folder with
-      {" "}
-      <i>ToT</i> and <i>ToT Guest</i> which contain a lot of <i>.bplist</i>{" "}
-      files. You can open Beat Saber and check if your Playlists are in the
-      game.
       <Divider />
       <StepLink
         to={links.home.playlistInstallGuide
@@ -160,22 +187,61 @@ export const PlaylistInstallGuidePCVRSteamManualMoveAndExtract = () => {
   );
 };
 
+// You should have <i>Playlists</i> folder with{" "}
+//         <i>ToT</i> and <i>ToT Guest</i> which contain a lot of <i>.bplist</i>
+//         {" "}
+//         files. You can open Beat Saber and check if your Playlists are in the
+//         game
+
+export const PlaylistInstallGuidePCVRPostInstallationCongratulations = () => {
+  return (
+    <Step>
+      Congratulations!
+      <Divider />
+      Those playlists are contantly growing, there are 2 kinds of updates
+      <Divider />
+      Release updates happening every month or two
+      <StepExplanation>
+        Those updates are modifying how playlists work and add/remove playlists
+        and to use those updates - you have to reinstall playlists
+      </StepExplanation>
+      <Divider />
+      Incremental updates happening few times a week
+      <StepExplanation>
+        Those updates are modifying the content of playlists and you can fetch
+        those via in-game sync button
+      </StepExplanation>
+      <Divider />
+      <StepLink
+        to={"#"}
+        className="opacity-50 hover:ring-transparent cursor-default"
+        children="I have a lot of playlists now, how to manage this"
+      />
+      <StepLink
+        to={"#"}
+        className="opacity-50 hover:ring-transparent cursor-default"
+        children="Tell me which playlist does what"
+      />
+    </Step>
+  );
+};
 export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck = () => {
   return (
     <Step>
       Run the game
       <br />
-      <small>
-        (if you don't want to start VR - you can add "fpfc" to launch flags to
-        Beat Saber in steam so you don't have to get into VR)
-      </small>
+      <StepExplanation>
+        Optional<br />
+        If you don't want to start VR - you can add "fpfc" to launch flags to
+        Beat Saber in steam so you don't have to get into VR
+      </StepExplanation>
       <Divider />
 
       Pick the community tab in solo mode
       <br />
-      <small>
-        (this hand with a musical note icon)
-      </small>
+      <StepExplanation>
+        Second from the left - it is this hand with a musical note icon
+      </StepExplanation>
       <Divider />
       <Image
         className="rounded-xl mx-auto"
@@ -184,6 +250,7 @@ export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck = () => {
       <Divider />
 
       On the right you should see playlists
+      <Divider />
       <Image
         className="rounded-xl mx-auto"
         src="/playlist-installation-guide/playlists-compact.png"
@@ -192,10 +259,10 @@ export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck = () => {
 
       You can expand playlist list by hovering over it
       <br />
-      <small>
-        (depending on how many playlists do you have - you might need to scroll
-        down)
-      </small>
+      <StepExplanation>
+        You might have to scroll down depending on how many playlists do you
+        have
+      </StepExplanation>
       <Divider />
       <Image
         className="rounded-xl mx-auto"
@@ -203,38 +270,78 @@ export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck = () => {
       />
       <Divider />
       <StepLink
-        to={links.home.playlistInstallGuide.pcvrSteamManualMoveAndExtract}
+        to={links.home.playlistInstallGuide
+          .pcvrSteamManualPostInstallationCongratulations}
         children="I can see playlists, yay!"
       />
       <StepLink
-        to={links.home.playlistInstallGuide.pcvrSteamManualDownload}
+        to={links.home.playlistInstallGuide.pcvrSteamManualInstallMods}
         children="I can't see playlists, help"
       />
     </Step>
   );
 };
 
-export const PlaylistInstallGuideCustom = () => {
+export const PlaylistInstallGuidePCVRSteamManualInstallMods = () => {
+  return (
+    <Step>
+      Close the game<br />
+      If you did everything correctly, but you can't see playlist in game most
+      likely you are missing <i>PlaylistManger</i> mod.
+      <Divider />
+      You can get it via
+      <StepInlineATag
+        target="_blank"
+        href="https://github.com/Assistant/ModAssistant/releases/tag/v1.1.32"
+      >
+        ModAssistant
+      </StepInlineATag>,
+      <StepInlineATag target="_blank" href="https://beatmods.com/#/mods">
+        BeatMods
+      </StepInlineATag>,
+      <StepInlineATag
+        target="_blank"
+        href="https://github.com/rithik-b/PlaylistManager#download"
+      >
+        Playlist Manager GitHub
+      </StepInlineATag>
+      <Divider />
+      You should see playlists after the installation
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide
+          .pcvrSteamManualPostInstallationCheck}
+        children="Show me how to check it again"
+      />
+    </Step>
+  );
+};
+
+export const PlaylistInstallGuidePCVRSteamCustom = () => {
   return (
     <Step>
       Get the archive:
-      <a
+      <StepInlineATag
         download
-        className="border px-4 py-1 box-content h-8 ml-4"
         href={latestPlaylistReleaseUrl}
-      >
-        Download playlist archive
-      </a>
+        children="Download playlist archive"
+      />
       <Divider />
 
       Extract contents of the archive and use your prefered method.<br />
       You should have <i>Playlists</i> folder with <i>ToT</i> and{" "}
       <i>ToT Guest</i> which contain a lot of <i>.bplist</i> files.
       <br />
-      <small>
-        (feel invited to dm me on Discord or Matrix if you would like me to
-        describe your method here)
-      </small>
+      <StepExplanation>
+        I would like to know what community uses to install this project, feel
+        invited to contact me via Matrix or Discord so I can include a new
+        installation method
+      </StepExplanation>
+      <Divider />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteam}
+        children="Take me back"
+      />
     </Step>
   );
 };
@@ -245,16 +352,16 @@ export const PlaylistInstallGuidePCVRSteam = () => {
       Pick your preffered method
       <Divider />
       <StepLink
-        to={links.home.playlistInstallGuide.custom}
-        children="I want to use a tool, which is not described here"
-      />
-      <StepLink
         to={links.home.playlistInstallGuide.modAssistant}
         children="I want to use ModAssistant's OneClick™"
       />
       <StepLink
         to={links.home.playlistInstallGuide.pcvrSteamManualDownload}
         children="I pick the manual way"
+      />
+      <StepLink
+        to={links.home.playlistInstallGuide.pcvrSteamCustom}
+        children="I want to use a tool, which is not described here"
       />
       <StepLink
         to={links.home.playlistInstallGuide.askAboutPlatform}
@@ -273,17 +380,16 @@ export const PlaylistInstallGuidePlatform = () => {
         to={links.home.playlistInstallGuide.pcvrSteam}
         children="PCVR Steam"
       />
-      {
-        /* <StepLink
+      <StepLink
         to={""}
-        children="PCVR Meta store (Oculus store)"
+        className="opacity-50 hover:ring-transparent cursor-default"
+        children="PCVR Meta store"
       />
       <StepLink
         to={""}
         className="opacity-50 hover:ring-transparent cursor-default"
         children="Standalone (you don't have the headset plugged into the PC)"
-      /> */
-      }
+      />
       <a
         className="hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2"
         href="https://store.steampowered.com/valveindex"
