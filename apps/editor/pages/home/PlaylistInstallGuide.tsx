@@ -10,6 +10,7 @@ import { FC, PropsWithChildren, useMemo, useState } from "react";
 import { Image } from "@/apps/editor/components/Image.tsx";
 import { Link } from "@/packages/ui/Link.tsx";
 import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
+import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 
 type InstallStepsT = {
   downloading: boolean;
@@ -93,7 +94,7 @@ export const PlaylistInstallGuidePCVRSteamManualDownload = () => {
         download
         onClick={() => setDownloaded(true)}
         className="border px-4 py-1 box-content h-8 ml-4"
-        href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
+        href={latestPlaylistReleaseUrl}
       >
         Download playlist archive
       </a>
@@ -220,7 +221,7 @@ export const PlaylistInstallGuideCustom = () => {
       <a
         download
         className="border px-4 py-1 box-content h-8 ml-4"
-        href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
+        href={latestPlaylistReleaseUrl}
       >
         Download playlist archive
       </a>
