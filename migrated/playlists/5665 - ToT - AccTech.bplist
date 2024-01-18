@@ -129,18 +129,6 @@
       ]
     },
     {
-      "songName": "Starships",
-      "levelAuthorName": "okazu",
-      "hash": "84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
-      "levelid": "custom_level_84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Reverie",
       "levelAuthorName": "Econdsay eamtay",
       "hash": "1B93BA69CC4278155D14F05AB58E4B812700C019",
@@ -157,18 +145,6 @@
       "levelAuthorName": "Nolanimations",
       "hash": "98EFC0DA9A276D9CE6755B260035A8A4BACE3EBF",
       "levelid": "custom_level_98EFC0DA9A276D9CE6755B260035A8A4BACE3EBF",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Fukashigi No Carte",
-      "levelAuthorName": "Aimedhades16",
-      "hash": "855C7330C615E37C4632A90DEC8FC912F6C672AC",
-      "levelid": "custom_level_855C7330C615E37C4632A90DEC8FC912F6C672AC",
       "difficulties": [
         {
           "characteristic": "Standard",

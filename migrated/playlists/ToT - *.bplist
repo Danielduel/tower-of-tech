@@ -1005,6 +1005,30 @@
       ]
     },
     {
+      "songName": "The Feeling",
+      "levelAuthorName": "deadpacity",
+      "hash": "B1EB6AD0E8F3A25ED8C140A177EA8FF8DFDAD38D",
+      "levelid": "custom_level_B1EB6AD0E8F3A25ED8C140A177EA8FF8DFDAD38D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "BS//Recall",
+      "levelAuthorName": "Bitz & Joshabi",
+      "hash": "0392A5FA095F236A8AEAB96DF7CA43F2A7C2E448",
+      "levelid": "custom_level_0392A5FA095F236A8AEAB96DF7CA43F2A7C2E448",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "paqqin",
       "levelAuthorName": "ani",
       "hash": "308C5033314D7065C19C0A195DF96529979083DB",
@@ -2097,18 +2121,6 @@
       ]
     },
     {
-      "songName": "Starships",
-      "levelAuthorName": "okazu",
-      "hash": "84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
-      "levelid": "custom_level_84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Reverie",
       "levelAuthorName": "Econdsay eamtay",
       "hash": "1B93BA69CC4278155D14F05AB58E4B812700C019",
@@ -2129,22 +2141,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Fukashigi No Carte",
-      "levelAuthorName": "Aimedhades16",
-      "hash": "855C7330C615E37C4632A90DEC8FC912F6C672AC",
-      "levelid": "custom_level_855C7330C615E37C4632A90DEC8FC912F6C672AC",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        },
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -4957,6 +4953,18 @@
       ]
     },
     {
+      "songName": "Ninja Re Bang Bang",
+      "levelAuthorName": "Tseska",
+      "hash": "6F25DD042DF76B2314699AC2A4171A5B7F3BFE2C",
+      "levelid": "custom_level_6F25DD042DF76B2314699AC2A4171A5B7F3BFE2C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "GHOST",
       "levelAuthorName": "GojiCringer",
       "hash": "836135A28EB86ECF758A540DCFC8BFC42FB7055D",
@@ -5772,6 +5780,18 @@
       "songName": "Final-Boss-Chan",
       "levelAuthorName": "",
       "levelid": "FinalBossChan",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "XTREME ",
+      "levelAuthorName": "BLACK_VOID-1001",
+      "hash": "D932AE6960E57724C68DFF8BD87CB2920C1AA73C",
+      "levelid": "custom_level_D932AE6960E57724C68DFF8BD87CB2920C1AA73C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -7472,6 +7492,46 @@
       "levelAuthorName": "mux",
       "hash": "870034DDB1D2C3D55A7E181049090067ACAACDCC",
       "levelid": "custom_level_870034DDB1D2C3D55A7E181049090067ACAACDCC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Starships",
+      "levelAuthorName": "okazu",
+      "hash": "84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
+      "levelid": "custom_level_84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Fukashigi No Carte",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "855C7330C615E37C4632A90DEC8FC912F6C672AC",
+      "levelid": "custom_level_855C7330C615E37C4632A90DEC8FC912F6C672AC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Oblivion",
+      "levelAuthorName": "Matgenius04",
+      "hash": "12EE4BBC5A214100B2EF69CCFFDD57BA5C3C44EF",
+      "levelid": "custom_level_12EE4BBC5A214100B2EF69CCFFDD57BA5C3C44EF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -10564,6 +10624,18 @@
       ]
     },
     {
+      "songName": "Odo",
+      "levelAuthorName": "Potassium 737",
+      "hash": "116A74978CA980A7711B42F728306ED48D166A05",
+      "levelid": "custom_level_116A74978CA980A7711B42F728306ED48D166A05",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "paradox",
       "levelAuthorName": "Various Mappers",
       "hash": "45E8D6CBBCD4A86308D2BED4B51F927E40517AEC",
@@ -11468,6 +11540,18 @@
       "levelAuthorName": "muffn & SpiritusNoctis",
       "hash": "3F9FC40DA181ED1ADBD7BFF06E21D891D8A6BFB2",
       "levelid": "custom_level_3F9FC40DA181ED1ADBD7BFF06E21D891D8A6BFB2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Oshama Scramble!",
+      "levelAuthorName": "Gabriel",
+      "hash": "768FADBB23982E0AC4230A4B4C2B89D262027F68",
+      "levelid": "custom_level_768FADBB23982E0AC4230A4B4C2B89D262027F68",
       "difficulties": [
         {
           "characteristic": "Standard",
