@@ -5,7 +5,6 @@ import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 export default function Download() {
   return (
     <VisualNovelContainer
-      title="System"
       links={[
         {
           to: links.home.more,

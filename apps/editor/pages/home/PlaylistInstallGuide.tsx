@@ -1,107 +1,35 @@
-import {
-  VisualNovelActions,
-  VisualNovelBody,
-  VisualNovelContainer,
-  VisualNovelLink,
-} from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import type { LinkProps } from "react-router-dom";
+import { useMemo, useState } from "react";
 import { links } from "@/apps/editor/routing.config.ts";
-import { FC, PropsWithChildren, useMemo, useState } from "react";
 import { Image } from "@/apps/editor/components/Image.tsx";
-import { Link } from "@/packages/ui/Link.tsx";
 import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
-import { AnchorHTMLAttributes } from "npm:@types/react";
-
-type InstallStepsT = {
-  downloading: boolean;
-  installation_steam: boolean;
-  installation_steam_modassistant: boolean;
-  installation_steam_manual_folder: boolean;
-  installation_steam_manual_extract: boolean;
-  installation_steam_mods: boolean;
-  installation_oculus: boolean;
-  installation_oculus_standalone: boolean;
-};
-
-const Divider = () => <div className="h-6 block" />;
-
-const Step: FC<PropsWithChildren> = (
-  { children },
-) => {
-  return (
-    <VisualNovelContainer>
-      <VisualNovelBody>
-        {children}
-      </VisualNovelBody>
-      <VisualNovelActions>
-        <VisualNovelLink to={links.home.more} children="Tell me more" />
-        <VisualNovelLink to={links.home.root} children="Go back" />
-      </VisualNovelActions>
-    </VisualNovelContainer>
-  );
-};
-
-const StepExplanation: FC<PropsWithChildren> = ({ children }) => {
-  return (
-    <div className="text-lg border-l-2 text-cyan-50 pl-5 mt-2">{children}</div>
-  );
-};
-
-const StepInlineATag: FC<AnchorHTMLAttributes<HTMLAnchorElement>> = (
-  props,
-) => {
-  return (
-    <a
-      className="border px-4 py-1 box-content h-8 ml-4 mr-1"
-      {...props}
-    />
-  );
-};
-
-const StepLink: FC<LinkProps> = (props) => {
-  return (
-    <Link
-      {...props}
-      className={`border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline ${props.className}`}
-    />
-  );
-};
-
-export const OneClickAnchor = (
-  { href, name }: { href: string; name: string },
-) => {
-  const [visited, setVisited] = useState(false);
-  return (
-    <a
-      className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2 " +
-        (visited ? "opacity-50" : "")}
-      href={`bsplaylist://playlist/${location.origin}${href}`}
-      onClick={() => setVisited(true)}
-    >
-      {name}
-    </a>
-  );
-};
+import {
+  VisualNovelDivider,
+  VisualNovelOneClickAnchor,
+  VisualNovelStep,
+  VisualNovelStepExplanation,
+  VisualNovelStepInlineATag,
+  VisualNovelStepLink,
+} from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 
 export const PlaylistInstallGuideModAssistant = () => {
   const playlistArray = useMemo(() => Object.values(playlistMapping), []);
   return (
-    <Step>
+    <VisualNovelStep>
       Have fun clicking those
-      <Divider />
+      <VisualNovelDivider />
       {playlistArray.map((x) => (
-        <OneClickAnchor
+        <VisualNovelOneClickAnchor
           name={x.displayName}
           href={x.apiDownloadPath}
         />
       ))}
-      <Divider />
-      <StepLink
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteam}
         children="Take me back"
       />
-    </Step>
+    </VisualNovelStep>
   );
 };
 
@@ -109,81 +37,81 @@ export const PlaylistInstallGuidePCVRSteamManualDownload = () => {
   const [downloaded, setDownloaded] = useState(false);
 
   return (
-    <Step>
+    <VisualNovelStep>
       First, you will need the archive:
-      <StepInlineATag
+      <VisualNovelStepInlineATag
         download
         onClick={() => setDownloaded(true)}
         className="border px-4 py-1 box-content h-8 ml-4"
         href={latestPlaylistReleaseUrl}
       >
         Download playlist archive
-      </StepInlineATag>
-      <Divider />
-      <StepLink
+      </VisualNovelStepInlineATag>
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteamManualLocateFolder}
         children={downloaded ? "Got it!" : "I already have this"}
       />
-      <StepLink
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteam}
         children="Take me back"
       />
-    </Step>
+    </VisualNovelStep>
   );
 };
 
 export const PlaylistInstallGuidePCVRSteamManualLocateFolder = () => {
   return (
-    <Step>
+    <VisualNovelStep>
       Go to Beat Saber's folder
-      <StepExplanation>
+      <VisualNovelStepExplanation>
         Open <i>Steam</i>, select <i>Library</i>, right click <i>Beat Saber</i>
         {" "}
         in the library list, select <i>Manage</i> in the dropdown, click{" "}
         <i>Browse local files</i> option
-      </StepExplanation>
-      <Divider />
-      <StepLink
+      </VisualNovelStepExplanation>
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteamManualMoveAndExtract}
         children="Done!"
       />
-      <StepLink
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteamManualDownload}
         children="Take me back"
       />
-    </Step>
+    </VisualNovelStep>
   );
 };
 
 export const PlaylistInstallGuidePCVRSteamManualMoveAndExtract = () => {
   return (
-    <Step>
+    <VisualNovelStep>
       Move the downloaded <i>ToT.zip</i>{" "}
       to the main Beat Saber folder and extract it<br />
-      <StepExplanation>
+      <VisualNovelStepExplanation>
         Move <i>ToT.zip</i> archive from <i>Downloads</i> to your{" "}
         <i>Beat Saber folder</i>. Right click the ToT.zip, depending on your
         system you should have an option to{" "}
         <i>
           extract the archive here
         </i>.
-      </StepExplanation>
-      <Divider />
+      </VisualNovelStepExplanation>
+      VisualNovel
       <Image
         className="rounded-xl mx-auto"
         src="/playlist-installation-guide/tot-in-folder.png"
       />
-      <Divider />
-      <StepLink
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide
           .pcvrSteamManualPostInstallationCheck}
         children="Done, how to check if it works?"
       />
-      <StepLink
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteamManualLocateFolder}
         children="Take me back"
       />
-    </Step>
+    </VisualNovelStep>
   );
 };
 
@@ -195,197 +123,202 @@ export const PlaylistInstallGuidePCVRSteamManualMoveAndExtract = () => {
 
 export const PlaylistInstallGuidePCVRPostInstallationCongratulations = () => {
   return (
-    <Step>
+    <VisualNovelStep>
       Congratulations!
-      <Divider />
+      <VisualNovelDivider />
       Those playlists are contantly growing, there are 2 kinds of updates
-      <Divider />
+      <VisualNovelDivider />
       Release updates happening every month or two
-      <StepExplanation>
+      <VisualNovelStepExplanation>
         Those updates are modifying how playlists work and add/remove playlists
         and to use those updates - you have to reinstall playlists
-      </StepExplanation>
-      <Divider />
+      </VisualNovelStepExplanation>
+      <VisualNovelDivider />
       Incremental updates happening few times a week
-      <StepExplanation>
+      <VisualNovelStepExplanation>
         Those updates are modifying the content of playlists and you can fetch
         those via in-game sync button
-      </StepExplanation>
-      <Divider />
-      <StepLink
+      </VisualNovelStepExplanation>
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={"#"}
         className="opacity-50 hover:ring-transparent cursor-default"
         children="I have a lot of playlists now, how to manage this"
       />
-      <StepLink
+      <VisualNovelStepLink
         to={"#"}
         className="opacity-50 hover:ring-transparent cursor-default"
         children="Tell me which playlist does what"
       />
-    </Step>
+    </VisualNovelStep>
   );
 };
+
 export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck = () => {
   return (
-    <Step>
+    <VisualNovelStep>
       Run the game
       <br />
-      <StepExplanation>
+      <VisualNovelStepExplanation>
         Optional<br />
         If you don't want to start VR - you can add "fpfc" to launch flags to
-        Beat Saber in steam so you don't have to get into VR
-      </StepExplanation>
-      <Divider />
+        Beat Saber in steam so you don't have to get into VR (remember to remove
+        it afterwards)
+      </VisualNovelStepExplanation>
+      <VisualNovelDivider />
 
       Pick the community tab in solo mode
       <br />
-      <StepExplanation>
+      <VisualNovelStepExplanation>
         Second from the left - it is this hand with a musical note icon
-      </StepExplanation>
-      <Divider />
+      </VisualNovelStepExplanation>
+      <VisualNovelDivider />
       <Image
         className="rounded-xl mx-auto"
         src="/playlist-installation-guide/custom-levels-tab.png"
       />
-      <Divider />
+      <VisualNovelDivider />
 
       On the right you should see playlists
-      <Divider />
+      <VisualNovelDivider />
       <Image
         className="rounded-xl mx-auto"
         src="/playlist-installation-guide/playlists-compact.png"
       />
-      <Divider />
+      <VisualNovelDivider />
 
       You can expand playlist list by hovering over it
       <br />
-      <StepExplanation>
+      <VisualNovelStepExplanation>
         You might have to scroll down depending on how many playlists do you
         have
-      </StepExplanation>
-      <Divider />
+      </VisualNovelStepExplanation>
+      <VisualNovelDivider />
       <Image
         className="rounded-xl mx-auto"
         src="/playlist-installation-guide/playlists-expanded.png"
       />
-      <Divider />
-      <StepLink
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide
           .pcvrSteamManualPostInstallationCongratulations}
         children="I can see playlists, yay!"
       />
-      <StepLink
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteamManualInstallMods}
         children="I can't see playlists, help"
       />
-    </Step>
+    </VisualNovelStep>
   );
 };
 
 export const PlaylistInstallGuidePCVRSteamManualInstallMods = () => {
   return (
-    <Step>
+    <VisualNovelStep>
       Close the game<br />
       If you did everything correctly, but you can't see playlist in game most
       likely you are missing <i>PlaylistManger</i> mod.
-      <Divider />
+      <VisualNovelDivider />
       You can get it via
-      <StepInlineATag
+      <VisualNovelStepInlineATag
         target="_blank"
         href="https://github.com/Assistant/ModAssistant/releases/tag/v1.1.32"
       >
         ModAssistant
-      </StepInlineATag>,
-      <StepInlineATag target="_blank" href="https://beatmods.com/#/mods">
+      </VisualNovelStepInlineATag>,
+      <VisualNovelStepInlineATag
+        target="_blank"
+        href="https://beatmods.com/#/mods"
+      >
         BeatMods
-      </StepInlineATag>,
-      <StepInlineATag
+      </VisualNovelStepInlineATag>,
+      <VisualNovelStepInlineATag
         target="_blank"
         href="https://github.com/rithik-b/PlaylistManager#download"
       >
         Playlist Manager GitHub
-      </StepInlineATag>
-      <Divider />
+      </VisualNovelStepInlineATag>
+      <VisualNovelDivider />
       You should see playlists after the installation
-      <Divider />
-      <StepLink
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide
           .pcvrSteamManualPostInstallationCheck}
         children="Show me how to check it again"
       />
-    </Step>
+    </VisualNovelStep>
   );
 };
 
 export const PlaylistInstallGuidePCVRSteamCustom = () => {
   return (
-    <Step>
+    <VisualNovelStep>
       Get the archive:
-      <StepInlineATag
+      <VisualNovelStepInlineATag
         download
         href={latestPlaylistReleaseUrl}
         children="Download playlist archive"
       />
-      <Divider />
+      <VisualNovelDivider />
 
       Extract contents of the archive and use your prefered method.<br />
       You should have <i>Playlists</i> folder with <i>ToT</i> and{" "}
       <i>ToT Guest</i> which contain a lot of <i>.bplist</i> files.
       <br />
-      <StepExplanation>
+      <VisualNovelStepExplanation>
         I would like to know what community uses to install this project, feel
         invited to contact me via Matrix or Discord so I can include a new
         installation method
-      </StepExplanation>
-      <Divider />
-      <StepLink
+      </VisualNovelStepExplanation>
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteam}
         children="Take me back"
       />
-    </Step>
+    </VisualNovelStep>
   );
 };
 
 export const PlaylistInstallGuidePCVRSteam = () => {
   return (
-    <Step>
+    <VisualNovelStep>
       Pick your preffered method
-      <Divider />
-      <StepLink
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.modAssistant}
         children="I want to use ModAssistant's OneClick™"
       />
-      <StepLink
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteamManualDownload}
         children="I pick the manual way"
       />
-      <StepLink
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteamCustom}
         children="I want to use a tool, which is not described here"
       />
-      <StepLink
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.askAboutPlatform}
         children="Take me back"
       />
-    </Step>
+    </VisualNovelStep>
   );
 };
 
 export const PlaylistInstallGuidePlatform = () => {
   return (
-    <Step>
+    <VisualNovelStep>
       You play Beat Saber on...
-      <Divider />
-      <StepLink
+      <VisualNovelDivider />
+      <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteam}
         children="PCVR Steam"
       />
-      <StepLink
+      <VisualNovelStepLink
         to={""}
         className="opacity-50 hover:ring-transparent cursor-default"
         children="PCVR Meta store"
       />
-      <StepLink
+      <VisualNovelStepLink
         to={""}
         className="opacity-50 hover:ring-transparent cursor-default"
         children="Standalone (you don't have the headset plugged into the PC)"
@@ -396,6 +329,6 @@ export const PlaylistInstallGuidePlatform = () => {
       >
         PlayStation VR
       </a>
-    </Step>
+    </VisualNovelStep>
   );
 };

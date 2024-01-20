@@ -1,7 +1,8 @@
-import { forwardRef, PropsWithChildren } from "react";
+import { forwardRef, PropsWithChildren, useState } from "react";
 import { LinkProps } from "react-router-dom";
 import { Link } from "@/packages/ui/Link.tsx";
 import { AnchorHTMLAttributes, FC, HtmlHTMLAttributes } from "npm:@types/react";
+import { links } from "@/apps/editor/routing.config.ts";
 
 export const VisualNovelLink = (props: LinkProps) => {
   return (
@@ -85,3 +86,67 @@ export const VisualNovelContainerLoading = forwardRef<HTMLDivElement>(
     );
   },
 );
+
+export const VisualNovelDivider = () => <div className="h-6 block" />;
+
+export const VisualNovelStep: FC<PropsWithChildren> = (
+  { children },
+) => {
+  return (
+    <VisualNovelContainer>
+      <VisualNovelBody>
+        {children}
+      </VisualNovelBody>
+      <VisualNovelActions>
+        <VisualNovelLink to={links.home.more} children="Tell me more" />
+        <VisualNovelLink to={links.home.root} children="Go back" />
+      </VisualNovelActions>
+    </VisualNovelContainer>
+  );
+};
+
+export const VisualNovelStepExplanation: FC<PropsWithChildren> = (
+  { children },
+) => {
+  return (
+    <div className="text-lg border-l-2 text-cyan-50 pl-5 mt-2">{children}</div>
+  );
+};
+
+export const VisualNovelStepInlineATag: FC<
+  AnchorHTMLAttributes<HTMLAnchorElement>
+> = (
+  props,
+) => {
+  return (
+    <a
+      className="border px-4 py-1 box-content h-8 ml-4 mr-1"
+      {...props}
+    />
+  );
+};
+
+export const VisualNovelStepLink: FC<LinkProps> = (props) => {
+  return (
+    <Link
+      {...props}
+      className={`border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline ${props.className}`}
+    />
+  );
+};
+
+export const VisualNovelOneClickAnchor = (
+  { href, name }: { href: string; name: string },
+) => {
+  const [visited, setVisited] = useState(false);
+  return (
+    <a
+      className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2 " +
+        (visited ? "opacity-50" : "")}
+      href={`bsplaylist://playlist/${location.origin}${href}`}
+      onClick={() => setVisited(true)}
+    >
+      {name}
+    </a>
+  );
+};
