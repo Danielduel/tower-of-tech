@@ -104,7 +104,6 @@ export const PlaylistInstallGuidePCVRSteamManualMoveAndExtract = () => {
           extract the archive here
         </i>.
       </VisualNovelStepExplanation>
-      VisualNovel
       <Image
         className="rounded-xl mx-auto"
         src="/playlist-installation-guide/tot-in-folder.png"
