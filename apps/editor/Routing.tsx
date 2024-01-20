@@ -11,7 +11,6 @@ import { More } from "@/apps/editor/pages/home/More.tsx";
 import Download from "@/apps/editor/pages/home/Download.tsx";
 import { SnipeIndex } from "@/apps/editor/pages/snipe/index.tsx";
 import {
-  PlaylistInstallGuideCustom,
   PlaylistInstallGuideModAssistant,
   PlaylistInstallGuidePCVRSteam,
   PlaylistInstallGuidePCVRSteamManualInstallMods,

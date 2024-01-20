@@ -4,22 +4,7 @@ import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 
 export default function Download() {
   return (
-    <VisualNovelContainer
-      links={[
-        {
-          to: links.home.more,
-          children: "Do you have an installation guide?",
-        },
-        {
-          to: links.home.more,
-          children: "Tell me more",
-        },
-        {
-          to: links.home.about,
-          children: "Who are you?",
-        },
-      ]}
-    >
+    <VisualNovelContainer>
       Here they are
       <a
         download
