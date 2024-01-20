@@ -1,7 +1,10 @@
 import { useMemo, useState } from "react";
 import { links } from "@/apps/editor/routing.config.ts";
 import { Image } from "@/apps/editor/components/Image.tsx";
-import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
+import {
+  getPlaylistUrlFromPlaylistId,
+  playlistMapping,
+} from "@/packages/playlist-mapping/mod.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 import {
   VisualNovelDivider,
@@ -16,12 +19,17 @@ export const PlaylistInstallGuideModAssistant = () => {
   const playlistArray = useMemo(() => Object.values(playlistMapping), []);
   return (
     <VisualNovelStep>
-      Have fun clicking those
+      Click on playlist names underneath to trigger the ModAssistant's
+      installation
+      <VisualNovelStepExplanation>
+        This method sometimes causes ModAssistant to fail parsing the playlist.
+        If it is a case for you, I suggest picking other installation method
+      </VisualNovelStepExplanation>
       <VisualNovelDivider />
       {playlistArray.map((x) => (
         <VisualNovelOneClickAnchor
           name={x.displayName}
-          href={x.apiDownloadPath}
+          href={getPlaylistUrlFromPlaylistId(x.playlistId)}
         />
       ))}
       <VisualNovelDivider />
