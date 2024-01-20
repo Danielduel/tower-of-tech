@@ -1,3 +1,5 @@
+import { playlistInstallationGuideUrl } from "@/packages/utils/constants.ts";
+
 export const guildId = "689050370840068309";
 export const broadcastChannelId = "1108645502028894218";
 export const jokeChannelId = "1076069539613249536";
@@ -15,7 +17,7 @@ We will top that all off with maps that most of us prefer to see only via thick 
 We use a mod called Multiplayer+ which is available for PCVR and standalone Quest users.
 Usefull links:
 * [More on joining](https://posts.dduel.dev/danielduel/tech-multi)
-* [Playlists used for most of maps during this multi](https://github.com/Danielduel/tower-of-tech/releases/)
+* [Playlists used for most of maps during this multi, with an installation guide](${playlistInstallationGuideUrl})
 
 ## Inviting, Sharing, Streaming
 
@@ -23,7 +25,10 @@ Everybody is very welcome to invite others, share, create own voice chat groups,
 create own subcommunities and listen to the main voice chat that is hosted on Danielduel's discord server.
 For safety reasons not everybody is allowed to speak on the main voice chat by default.
 `;
-export const getEventNotificationMessage = (startTimeWithoutMilis: number, eventId: string) => `
+export const getEventNotificationMessage = (
+  startTimeWithoutMilis: number,
+  eventId: string,
+) => `
 ${eventTitle} <t:${startTimeWithoutMilis}:R>
 
 <@&1111286344837247107>
@@ -32,7 +37,10 @@ ${eventTitle} <t:${startTimeWithoutMilis}:R>
 
 https://discord.gg/EnY69jk2cg?event=${eventId}
 `;
-export const getShortPingReminderMessage = (startTimeWithoutMilis: number, joke: string) => `
+export const getShortPingReminderMessage = (
+  startTimeWithoutMilis: number,
+  joke: string,
+) => `
 🔋 Doublecheck if everything is charged 👀
 
 ${joke}
@@ -41,7 +49,10 @@ ${joke}
 
 ${eventTitle} <t:${startTimeWithoutMilis}:R>
 `;
-export const getLongPingReminderMessage = (startTimeWithoutMilis: number, joke: string) => `
+export const getLongPingReminderMessage = (
+  startTimeWithoutMilis: number,
+  joke: string,
+) => `
 🪫 Today 🎉
 
 ${joke}
@@ -50,7 +61,11 @@ ${joke}
 
 ${eventTitle} <t:${startTimeWithoutMilis}:R>
 `;
-export const techMultiGptPrompt = (taskDefinition: string, wordLength: number, participantsNames: string[]) => `
+export const techMultiGptPrompt = (
+  taskDefinition: string,
+  wordLength: number,
+  participantsNames: string[],
+) => `
 You are an organizer of Beat Saber multiplayer session that happens weekly at Thursdays.
 The session happens online, we don't meet eachother in person.
 This event starts with more beginner friendly songs and end up with hard ones.

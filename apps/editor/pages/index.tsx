@@ -6,6 +6,7 @@ import {
   VisualNovelLink,
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { links } from "@/apps/editor/routing.config.ts";
+import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 
 export default function Index() {
   return (
@@ -21,7 +22,7 @@ export default function Index() {
         <VisualNovelAnchor
           download
           children="I know what to do, just give me those playlists!"
-          href="https://github.com/Danielduel/tower-of-tech/releases/download/0.0.9/ToT.zip"
+          href={latestPlaylistReleaseUrl}
         />
         <VisualNovelLink
           to={links.home.playlistInstallGuide.root}
