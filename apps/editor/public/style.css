@@ -56,35 +56,7 @@ p {
 .main-gradient > * {
   z-index: 2;
 }
-/* 
-.main-gradient::after {
-  z-index: 1;
-  position: fixed;
-  display: block;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #5D4157;
-  background: radial-gradient(circle at -20% -20%, #65779c99, #10142099);
 
-}
-.main-gradient::before {
-  z-index: 0;
-  position: fixed;
-  display: block;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url("/background3.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-*/
 .main-gradient::after {
   z-index: 1;
   position: fixed;
@@ -93,7 +65,7 @@ p {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   background: #5D4157;
   background: radial-gradient(circle at -20% -20%, #5b87cf99, rgba(24, 62, 114, 0.6));
 }
@@ -107,6 +79,7 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
+  height: 100svh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
