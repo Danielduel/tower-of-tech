@@ -65,7 +65,7 @@ p {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100svh;
+  height: 100lvh;
   background: #5D4157;
   background: radial-gradient(circle at -20% -20%, #5b87cf99, rgba(24, 62, 114, 0.6));
 }
@@ -79,7 +79,7 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  height: 100svh;
+  height: 100lvh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
