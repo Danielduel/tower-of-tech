@@ -5,6 +5,7 @@ export const routing = {
   home: {
     root: "home/*",
     more: "more",
+    history: "history",
     download: "download",
     about: "about",
     browse: "browse",
@@ -64,6 +65,7 @@ export const links = {
     },
     download: "/home/download",
     more: "/home/more",
+    history: "/home/history",
     about: "/home/about",
     browse: "/home/browse",
   },

@@ -22,6 +22,7 @@ import { PlaylistInstallGuidePCVRSteamManualMoveAndExtract } from "@/apps/editor
 import { PlaylistInstallGuidePCVRSteamManualPostInstallationCheck } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
 import { PlaylistInstallGuidePCVRSteamCustom } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
 import { PlaylistInstallGuidePCVRPostInstallationCongratulations } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
+import { History } from "@/apps/editor/pages/home/History.tsx";
 
 export const Routing = () => {
   return (
@@ -47,6 +48,7 @@ export const Routing = () => {
         />
         <Route path={routing.home.browse} element={MainLayoutShell(Browse)} />
         <Route path={routing.home.more} element={MainLayoutShell(More)} />
+        <Route path={routing.home.history} element={MainLayoutShell(History)} />
         <Route path={routing.home.playlistInstallGuide.root}>
           <Route
             path={routing.home.playlistInstallGuide.modAssistant}
