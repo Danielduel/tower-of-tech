@@ -98,8 +98,7 @@ export const VisualNovelStep: FC<PropsWithChildren> = (
         {children}
       </VisualNovelBody>
       <VisualNovelActions>
-        <VisualNovelLink to={links.home.more} children="Tell me more" />
-        <VisualNovelLink to={links.home.root} children="Go back" />
+        <VisualNovelLink to={links.home.root} children="Return to start" />
       </VisualNovelActions>
     </VisualNovelContainer>
   );
