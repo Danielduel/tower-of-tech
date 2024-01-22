@@ -135,18 +135,20 @@ export const VisualNovelStepLink: FC<LinkProps> = (props) => {
   );
 };
 
-export const VisualNovelOneClickAnchor = (
-  { href, name }: { href: string; name: string },
+export const VisualNovelOneClickAnchor: FC<
+  PropsWithChildren & { href: string }
+> = (
+  { href, children },
 ) => {
   const [visited, setVisited] = useState(false);
   return (
     <a
-      className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2 " +
+      className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-2 box-content ml-2 mb-2 " +
         (visited ? "opacity-50" : "")}
       href={`bsplaylist://playlist/${location.origin}${href}`}
       onClick={() => setVisited(true)}
     >
-      {name}
+      {children}
     </a>
   );
 };

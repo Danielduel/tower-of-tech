@@ -4,20 +4,31 @@ import {
   PlaylistId,
 } from "@/packages/types/brands.ts";
 
-export const playlistMapping: Record<string, {
+export type ToTPlaylistMappingItemSpeed =
+  | "Adep"
+  | "Acc"
+  | "Mid"
+  | "Fas"
+  | "Sonic"
+  | "Other"
+  | "Legacy";
+export type ToTPlaylistMappingItemTech =
+  | "Chill"
+  | "Comfy"
+  | "Tech"
+  | "Hitech"
+  | "Anglehell"
+  | "Tempo"
+  | "Other"
+  | "Legacy";
+export type ToTPlaylistMappingItem = {
   displayName: string;
   playlistId: PlaylistId;
-  speedCategory: "Adep" | "Acc" | "Mid" | "Fas" | "Sonic" | "Other" | "Legacy";
-  techCategory:
-    | "Chill"
-    | "Comfy"
-    | "Tech"
-    | "Hitech"
-    | "Anglehell"
-    | "Tempo"
-    | "Other"
-    | "Legacy";
-}> = {
+  speedCategory: ToTPlaylistMappingItemSpeed;
+  techCategory: ToTPlaylistMappingItemTech;
+};
+
+export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
   "ToT - AdepComfy": {
     displayName: "AdepComfy",
     playlistId: makePlaylistId("01HK8XCHRH8RDXEEP9F4211NVG"),

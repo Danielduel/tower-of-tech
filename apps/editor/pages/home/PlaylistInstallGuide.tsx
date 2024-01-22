@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { FC, useMemo, useState } from "react";
 import { links } from "@/apps/editor/routing.config.ts";
 import { Image } from "@/apps/editor/components/Image.tsx";
 import {
@@ -14,9 +14,79 @@ import {
   VisualNovelStepInlineATag,
   VisualNovelStepLink,
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+import { ToTPlaylistMappingItem } from "@/packages/playlist-mapping/mod.ts";
+import { ToTPlaylistMappingItemSpeed } from "@/packages/playlist-mapping/mod.ts";
+import { ToTPlaylistMappingItemTech } from "@/packages/playlist-mapping/mod.ts";
+
+const getToTPlaylistSpeedCategory = (
+  speedCategory: ToTPlaylistMappingItemSpeed,
+) => {
+  switch (speedCategory) {
+    case "Adep":
+      return "Slower";
+    case "Acc":
+      return "Average";
+    case "Mid":
+      return "Faster";
+    case "Fas":
+      return "Very fast";
+    case "Sonic":
+      return "Insane";
+  }
+};
+
+const getToTPlaylistTechCategory = (
+  speedCategory: ToTPlaylistMappingItemTech,
+) => {
+  switch (speedCategory) {
+    case "Comfy":
+      return "Easy";
+    case "Tech":
+      return "Normal";
+    case "Hitech":
+      return "Hard";
+    case "Anglehell":
+      return "Expert";
+    case "Tempo":
+      return "Insane";
+  }
+};
+
+export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
+  displayName,
+  playlistId,
+  speedCategory,
+  techCategory,
+}) => {
+  return (
+    <div>
+      {displayName}
+      <div className="text-sm">
+        Speed rating: {getToTPlaylistSpeedCategory(speedCategory)}
+      </div>
+      <div className="text-sm">
+        Complexity rating: {getToTPlaylistTechCategory(techCategory)}
+      </div>
+    </div>
+  );
+};
+
+export const ToTPlaylistList = () => {
+  const playlistArray = useMemo(() => Object.values(playlistMapping), []);
+  return (
+    <div>
+      {playlistArray.map((x) => (
+        <VisualNovelOneClickAnchor
+          href={getPlaylistUrlFromPlaylistId(x.playlistId)}
+        >
+          <ToTPlaylistItem {...x} />
+        </VisualNovelOneClickAnchor>
+      ))}
+    </div>
+  );
+};
 
 export const PlaylistInstallGuideModAssistant = () => {
-  const playlistArray = useMemo(() => Object.values(playlistMapping), []);
   return (
     <VisualNovelStep>
       Click on playlist names underneath to trigger the ModAssistant's
@@ -26,12 +96,7 @@ export const PlaylistInstallGuideModAssistant = () => {
         If it is a case for you, I suggest picking other installation method
       </VisualNovelStepExplanation>
       <VisualNovelDivider />
-      {playlistArray.map((x) => (
-        <VisualNovelOneClickAnchor
-          name={x.displayName}
-          href={getPlaylistUrlFromPlaylistId(x.playlistId)}
-        />
-      ))}
+      <ToTPlaylistList />
       <VisualNovelDivider />
       <VisualNovelStepLink
         to={links.home.playlistInstallGuide.pcvrSteam}
@@ -121,12 +186,6 @@ export const PlaylistInstallGuidePCVRSteamManualMoveAndExtract = () => {
     </VisualNovelStep>
   );
 };
-
-// You should have <i>Playlists</i> folder with{" "}
-//         <i>ToT</i> and <i>ToT Guest</i> which contain a lot of <i>.bplist</i>
-//         {" "}
-//         files. You can open Beat Saber and check if your Playlists are in the
-//         game
 
 export const PlaylistInstallGuidePCVRPostInstallationCongratulations = () => {
   return (
