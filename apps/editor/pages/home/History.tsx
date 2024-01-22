@@ -1,3 +1,4 @@
+import { VisualNovelStepExplanation } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { VisualNovelDivider } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import {
   VisualNovelStep,
@@ -11,23 +12,29 @@ export const History = () => {
       The easiest way to understand this project will be reading this overview
       how it originated and it is closely related with how I've developed as a
       player.
+      <VisualNovelStepExplanation>
+        Treat years as very rough estimates, a storytelling, I am not sure about
+        most of them.
+      </VisualNovelStepExplanation>
       <VisualNovelDivider />
       I've started playing BeatSaber on 29th May of 2018.
       <br />
       At first I was bottomstream player and complex streams were my favorite.
       <br />
       In the world of linear streams, tech came to me as something very
-      refreshing. I was superinspired to learn this new thing (somewhere in
-      2019).
+      refreshing. I was superinspired to learn this new thing (late 2020).
+      <VisualNovelStepExplanation>
+        Tech began sometime in 2019, I was quite late to discover how fun it is.
+      </VisualNovelStepExplanation>
       <VisualNovelDivider />
-      I've started collecting maps around 2020-2021 to keep those maps that I
-      found fun, and those that seemed impossible, but looked extremely cool.
+      I've started collecting maps to keep those maps that I found fun, and
+      those that seemed impossible, but looked extremely cool.
       <VisualNovelDivider />
       Later, I've started passing those maps that I thought will be impossible
       and I was moving them into split categories.
       <VisualNovelDivider />
       Time passed, I became progressively better, so I wanted to compete with
-      much better players that weren't specialising in tech (late 2020). This
+      much better players that weren't specialising in tech (early 2021). This
       has shown me one thing - no matter how well do you understand the flow, if
       somebody is fast and accurate - they can negate most of complexity and
       still get a better score with mistakes than your full combo run.
