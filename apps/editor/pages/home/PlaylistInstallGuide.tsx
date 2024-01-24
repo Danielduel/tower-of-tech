@@ -92,6 +92,11 @@ export const PlaylistInstallGuideModAssistant = () => {
       Click on playlist names underneath to trigger the ModAssistant's
       installation
       <VisualNovelStepExplanation>
+        The downside of this method is that you will have all of those playlist
+        in the main playlist folder which could make it hard to navigate when
+        you have many playlists already
+      </VisualNovelStepExplanation>
+      <VisualNovelStepExplanation>
         This method sometimes causes ModAssistant to fail parsing the playlist.
         If it is a case for you, I suggest picking other installation method
       </VisualNovelStepExplanation>
@@ -327,7 +332,7 @@ export const PlaylistInstallGuidePCVRSteamCustom = () => {
       />
       <VisualNovelDivider />
 
-      Extract contents of the archive and use your prefered method.<br />
+      Extract contents of the archive and use your preferred method.<br />
       You should have <i>Playlists</i> folder with <i>ToT</i> and{" "}
       <i>ToT Guest</i> which contain a lot of <i>.bplist</i> files.
       <br />
@@ -348,7 +353,7 @@ export const PlaylistInstallGuidePCVRSteamCustom = () => {
 export const PlaylistInstallGuidePCVRSteam = () => {
   return (
     <VisualNovelStep>
-      Pick your preffered method
+      Pick your preferred method
       <VisualNovelDivider />
       <VisualNovelStepLink
         to={links.home.playlistInstallGuide.modAssistant}
