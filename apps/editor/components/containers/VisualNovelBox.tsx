@@ -1,7 +1,12 @@
 import { forwardRef, PropsWithChildren, useState } from "react";
 import { LinkProps } from "react-router-dom";
 import { Link } from "@/packages/ui/Link.tsx";
-import { AnchorHTMLAttributes, FC, HtmlHTMLAttributes } from "npm:@types/react";
+import {
+  AnchorHTMLAttributes,
+  FC,
+  ForwardRefRenderFunction,
+  HtmlHTMLAttributes,
+} from "npm:@types/react";
 import { links } from "@/apps/editor/routing.config.ts";
 
 export const VisualNovelLink = (props: LinkProps) => {
@@ -89,11 +94,15 @@ export const VisualNovelContainerLoading = forwardRef<HTMLDivElement>(
 
 export const VisualNovelDivider = () => <div className="h-6 block" />;
 
-export const VisualNovelStep: FC<PropsWithChildren> = (
+export const VisualNovelStep = forwardRef<
+  HTMLDivElement,
+  PropsWithChildren
+>((
   { children },
+  ref,
 ) => {
   return (
-    <VisualNovelContainer>
+    <VisualNovelContainer ref={ref}>
       <VisualNovelBody>
         {children}
       </VisualNovelBody>
@@ -102,7 +111,7 @@ export const VisualNovelStep: FC<PropsWithChildren> = (
       </VisualNovelActions>
     </VisualNovelContainer>
   );
-};
+});
 
 export const VisualNovelStepExplanation: FC<PropsWithChildren> = (
   { children },

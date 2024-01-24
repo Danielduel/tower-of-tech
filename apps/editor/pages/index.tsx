@@ -7,10 +7,11 @@ import {
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { links } from "@/apps/editor/routing.config.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
+import { forwardRef } from "react";
 
-export default function Index() {
+const Index = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <VisualNovelContainer>
+    <VisualNovelContainer ref={ref}>
       <VisualNovelBody>
         Tower of Tech, the Beat Saber project which answers the question of{" "}
         <i>Where is the fun part of Beat Saber?</i>. I have a few playlists for
@@ -32,4 +33,5 @@ export default function Index() {
       </VisualNovelActions>
     </VisualNovelContainer>
   );
-}
+});
+export default Index;

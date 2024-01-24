@@ -3,10 +3,11 @@ import { VisualNovelDivider } from "@/apps/editor/components/containers/VisualNo
 import {
   VisualNovelStep,
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+import { forwardRef } from "react";
 
-export const History = () => {
+export const History = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <VisualNovelStep>
+    <VisualNovelStep ref={ref}>
       Hi,
       <br />
       The easiest way to understand this project will be reading this overview
@@ -72,4 +73,4 @@ export const History = () => {
       because it was just too simple).
     </VisualNovelStep>
   );
-};
+});

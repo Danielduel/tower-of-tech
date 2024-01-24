@@ -5,10 +5,11 @@ import {
   VisualNovelStep,
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { links } from "@/apps/editor/routing.config.ts";
+import { forwardRef } from "react";
 
-export const More = () => {
+export const More = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <VisualNovelStep>
+    <VisualNovelStep ref={ref}>
       Each playlist name can be divided into 2 parts - perceived speed and
       complexity.
       <VisualNovelDivider />
@@ -70,4 +71,4 @@ export const More = () => {
       />
     </VisualNovelStep>
   );
-};
+});
