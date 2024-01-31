@@ -72,7 +72,7 @@ export const VisualNovelContainer = forwardRef<
     >
       <div className="min-h-[30vh] mb-4 relative wobble">
         <div className="relative h-[30vh] w-[30vh]"></div>
-        <div className="absolute top-[5vh] left-[5vh] h-[20vh] w-[20vh] border-[5px] rounded-[2vh] blur">
+        <div className="absolute top-[5vh] left-[5vh] h-[20vh] w-[20vh] border-[5px] rounded-[2vh] blur wobble-blur">
         </div>
         <div className="absolute top-[5vh] left-[5vh] h-[20vh] w-[20vh] border-[5px] rounded-[2vh]">
         </div>

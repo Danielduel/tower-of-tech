@@ -1,7 +1,7 @@
 export default function NoPage() {
   return (
-    <div className="bg-blue-500">
+    <div>
       404, are you lost?
     </div>
   );
-};
+}

@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  background: #ddd;
+  background: #000;
   text-align: center;
   font-family: 'Inter', sans-serif;
 }
@@ -54,6 +54,12 @@ p {
   background: #5D4157;  /* fallback for old browsers */
   background: radial-gradient(circle at -20% -20%, #65779c, #101420); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: radial-gradient(circle at -20% -20%, #6d94d3, rgb(14, 59, 121));
+}
+
+.editor-gradient {
+  z-index: -1;
+  background: #abb96d;  /* fallback for old browsers */
+  background: radial-gradient(circle at -20% -20%, #F3904F, #3B4371);
 }
 
 /* .main-gradient::after {
@@ -140,10 +146,30 @@ i {
   transform: rotateZ(4deg);
 }
 
-.slide-enter .wobble{
+.slide-enter .wobble {
   transform: rotateZ(4deg);
 }
 
 .slide-enter.slide-enter-active .wobble {
   transform: rotateZ(0deg);
+}
+
+
+.wobble-blur {
+  transition: border-width 200ms ease-out;
+}
+
+.slide-exit .wobble-blur {
+  border-width: 5px;
+}
+.slide-exit-active .wobble-blur {
+  border-width: 10px;
+}
+
+.slide-enter .wobble-blur {
+  border-width: 10px;
+}
+
+.slide-enter.slide-enter-active .wobble-blur {
+  border-width: 5px;
 }

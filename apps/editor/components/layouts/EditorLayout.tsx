@@ -26,8 +26,10 @@ export function EditorLayout({ children }: React.PropsWithChildren) {
 
 export const EditorLayoutShell = (Component: FC) => {
   return (
-    <EditorLayout>
-      <Component />
-    </EditorLayout>
+    <div className="editor-gradient">
+      <EditorLayout>
+        <Component />
+      </EditorLayout>
+    </div>
   );
 };

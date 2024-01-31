@@ -25,20 +25,30 @@ export const PlaylistLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className="sub-grid-layout">
       <div className="flex flex-col items-start max-h-[100vh] min-h-[100vh] pr-[1rem] mr-[-1rem] overflow-x-hidden overflow-y-auto">
-        <h3 className="text-md text-gray-500">Playlist Actions</h3>
-        <Link to="/editor/playlist/new" className="text-lg p-1 hover:ring-1 text-left w-full">New playlist</Link>
-        <Link to="/editor/playlist/from_file" className="text-lg p-1 hover:ring-1 text-left w-full">New/Update from file(s)</Link>
-        <h3 className="text-md text-gray-500 mt-2">Playlist List</h3>
+        <h3 className="text-md text-slate-600">Playlist Actions</h3>
+        <Link
+          to="/editor/playlist/new"
+          className="text-lg p-1 hover:ring-1 text-left w-full"
+        >
+          New playlist
+        </Link>
+        <Link
+          to="/editor/playlist/from_file"
+          className="text-lg p-1 hover:ring-1 text-left w-full"
+        >
+          New/Update from file(s)
+        </Link>
+        <h3 className="text-md text-slate-600 mt-2">Playlist List</h3>
         {playlists && <PlaylistListing playlists={playlists} />}
       </div>
       <div className="max-h-[100vh] min-h-[100vh] pr-[1rem] mr-[-1rem] overflow-x-hidden overflow-y-auto">
         <Suspense fallback={<div>Loading...</div>}>
-          { children }
+          {children}
         </Suspense>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const PlaylistRouting = () => {
   return (
@@ -46,9 +56,9 @@ export const PlaylistRouting = () => {
       <Routes>
         <Route path="new" element="new" />
         <Route path="from_file" element={<PlaylistFromFile />} />
-        <Route path="list" element={<PlaylistList  />} />
+        <Route path="list" element={<PlaylistList />} />
         <Route path="list/:playlistId" element={<PlaylistList />} />
       </Routes>
     </PlaylistLayout>
-  )
+  );
 };
