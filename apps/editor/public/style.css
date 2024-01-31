@@ -107,24 +107,24 @@ i {
   scrollbar-width: none;  /* Firefox */
 }
 
-.slide-enter,
-.slide-exit {
+.slide-enter .page,
+.slide-exit .page {
   transition: transform 100ms ease-out;
 }
 
-.slide-exit {
+.slide-exit .page {
   transform: translateY(0px);
 }
 
-.slide-exit-active {
+.slide-exit-active .page {
   transform: translateY(7px);
 }
 
-.slide-enter {
+.slide-enter .page {
   transform: translateY(7px);
 }
 
-.slide-enter.slide-enter-active {
+.slide-enter.slide-enter-active .page {
   transform: translateY(0px);
 }
 

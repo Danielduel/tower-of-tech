@@ -41,7 +41,7 @@ export default function App() {
         >
         </script>
       </head>
-      <body className="main-gradient">
+      <body>
         <ErrorBoundary
           fallback={<div>Something went wrong</div>}
           onError={logError}

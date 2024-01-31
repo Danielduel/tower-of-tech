@@ -46,6 +46,7 @@ export const Routing = () => {
               element={EditorLayoutShell(NoPage)}
             />
           </Route>
+
           <Route path={routing.home.root}>
             <Route
               path={routing.home.download}
@@ -83,11 +84,14 @@ export const Routing = () => {
               <Route
                 path={routing.home.playlistInstallGuide.pcvrSteam}
                 element={
-                  <MainLayoutShell Component={PlaylistInstallGuidePCVRSteam} />
+                  <MainLayoutShell
+                    Component={PlaylistInstallGuidePCVRSteam}
+                  />
                 }
               />
               <Route
-                path={routing.home.playlistInstallGuide.pcvrSteamManualDownload}
+                path={routing.home.playlistInstallGuide
+                  .pcvrSteamManualDownload}
                 element={
                   <MainLayoutShell
                     Component={PlaylistInstallGuidePCVRSteamManualDownload}

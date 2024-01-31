@@ -10,7 +10,7 @@ export function MainLayout(
   return (
     <div
       style={style}
-      className="z-10 min-w-min min-h-screen text-white"
+      className="z-10 min-w-min min-h-screen text-white page"
     >
       <div className="container mx-auto">
         {children}
@@ -25,12 +25,14 @@ export const MainLayoutShell: FC<{ Component: FC<WithMainContainerRef> }> = (
   const nodeRef = useRef<HTMLDivElement>(null);
 
   return (
-    <MainLayout>
-      <Suspense
-        fallback={<VisualNovelContainerLoading ref={nodeRef} />}
-      >
-        <Component ref={nodeRef} />
-      </Suspense>
-    </MainLayout>
+    <div className="main-gradient">
+      <MainLayout>
+        <Suspense
+          fallback={<VisualNovelContainerLoading ref={nodeRef} />}
+        >
+          <Component ref={nodeRef} />
+        </Suspense>
+      </MainLayout>
+    </div>
   );
 };
