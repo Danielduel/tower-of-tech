@@ -6,18 +6,6 @@
   },
   "songs": [
     {
-      "songName": "Raindrop",
-      "levelAuthorName": "GojiCrafter",
-      "hash": "6CD691417BC2B085AAFFE0E450504E9F11CC93C3",
-      "levelid": "custom_level_6CD691417BC2B085AAFFE0E450504E9F11CC93C3",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Bassdrop Freaks",
       "levelAuthorName": "Aquaflee",
       "hash": "84F2F741B1D6D897987B155ECB832375D0C8505F",
@@ -1150,6 +1138,102 @@
       "levelAuthorName": "Cat Using A Toaster",
       "hash": "03984A893DEB3378E39E06055C83105995CA4682",
       "levelid": "custom_level_03984A893DEB3378E39E06055C83105995CA4682",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hole Dwelling",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "2803A704567DBFDDB88FC80E61B5E97D3248DF49",
+      "levelid": "custom_level_2803A704567DBFDDB88FC80E61B5E97D3248DF49",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Los! Los! Los!",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "F3BD378DFE91F4371B976493C95936878D65448E",
+      "levelid": "custom_level_F3BD378DFE91F4371B976493C95936878D65448E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Knock it Out!",
+      "levelAuthorName": "Enduo",
+      "hash": "BD97A390FF4421F38462201459CC0E0ADC3973AD",
+      "levelid": "custom_level_BD97A390FF4421F38462201459CC0E0ADC3973AD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "DEVILGIRL",
+      "levelAuthorName": "Jabob",
+      "hash": "276C0DFC3BF875B6593D0FFD819696C4AE928211",
+      "levelid": "custom_level_276C0DFC3BF875B6593D0FFD819696C4AE928211",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Necromantic",
+      "levelAuthorName": "AaltopahWi",
+      "hash": "057FF06BE425C1E64ABF47BE5C5AA5E0FBB7838D",
+      "levelid": "custom_level_057FF06BE425C1E64ABF47BE5C5AA5E0FBB7838D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "19-2000",
+      "levelAuthorName": "Emir & Z-ANESaber",
+      "hash": "A10BF4AF5BC27045E0F8292FCE01AB21E0EC145B",
+      "levelid": "custom_level_A10BF4AF5BC27045E0F8292FCE01AB21E0EC145B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "(Not) A Devil",
+      "levelAuthorName": "Skeelie & Alice",
+      "hash": "988485B5EB4A9BCBE76076FDC884B801AE5D474C",
+      "levelid": "custom_level_988485B5EB4A9BCBE76076FDC884B801AE5D474C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "SUPER SEX DELIVERY - ROAD TO SEXISTENCE 100% Glitchless NoCheat Speedrun",
+      "levelAuthorName": "Bitz",
+      "hash": "B0390B8887D13F09AFC8DE90BECAFE9D2BA4FBA3",
+      "levelid": "custom_level_B0390B8887D13F09AFC8DE90BECAFE9D2BA4FBA3",
       "difficulties": [
         {
           "characteristic": "Standard",

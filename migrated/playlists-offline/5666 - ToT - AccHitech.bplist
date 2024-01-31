@@ -176,8 +176,8 @@
     {
       "songName": "1:15",
       "levelAuthorName": "Bitz",
-      "hash": "F01B4241582979A9CED1D9C3D89D8924CE7B4345",
-      "levelid": "custom_level_F01B4241582979A9CED1D9C3D89D8924CE7B4345",
+      "hash": "D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
+      "levelid": "custom_level_D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1090,6 +1090,102 @@
       "levelAuthorName": "Matgenius04",
       "hash": "12EE4BBC5A214100B2EF69CCFFDD57BA5C3C44EF",
       "levelid": "custom_level_12EE4BBC5A214100B2EF69CCFFDD57BA5C3C44EF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Jester",
+      "levelAuthorName": "Nebelmonster",
+      "hash": "60B1996C4E10031857FCA9D2DA28D22CD630EB5D",
+      "levelid": "custom_level_60B1996C4E10031857FCA9D2DA28D22CD630EB5D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "オセロ(Othello)",
+      "levelAuthorName": "wangyufy",
+      "hash": "29EB1EC7A3AC0DBA1720835196F05AD91B425F4B",
+      "levelid": "custom_level_29EB1EC7A3AC0DBA1720835196F05AD91B425F4B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Out Of Style",
+      "levelAuthorName": "Kassi",
+      "hash": "76A8483D3FE0881EDD8BE0C118EBB29C9CF4D4B9",
+      "levelid": "custom_level_76A8483D3FE0881EDD8BE0C118EBB29C9CF4D4B9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "LVL.99",
+      "levelAuthorName": "Voidless",
+      "hash": "FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
+      "levelid": "custom_level_FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Love War",
+      "levelAuthorName": "minsiii",
+      "hash": "92F640C1130FA32BBC61CD121A289C3E79762806",
+      "levelid": "custom_level_92F640C1130FA32BBC61CD121A289C3E79762806",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cat Loving",
+      "levelAuthorName": "Gabriel & Marsh",
+      "hash": "AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
+      "levelid": "custom_level_AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Happier",
+      "levelAuthorName": "VrQuacky",
+      "hash": "74A97D3E1C26A9D7BB74B7E3118EEE6E5E054164",
+      "levelid": "custom_level_74A97D3E1C26A9D7BB74B7E3118EEE6E5E054164",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Grand Escape",
+      "levelAuthorName": "BigOlDumplin",
+      "hash": "94859BE4D098603036820A8745B6899785335817",
+      "levelid": "custom_level_94859BE4D098603036820A8745B6899785335817",
       "difficulties": [
         {
           "characteristic": "Standard",
