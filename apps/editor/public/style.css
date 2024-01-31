@@ -50,14 +50,13 @@ p {
 }
 
 .main-gradient {
+  z-index: -1;
   background: #5D4157;  /* fallback for old browsers */
-  background: radial-gradient(circle at -20% -20%, #65779caa, #101420aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.main-gradient > * {
-  z-index: 2;
+  background: radial-gradient(circle at -20% -20%, #65779c, #101420); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: radial-gradient(circle at -20% -20%, #6d94d3, rgb(14, 59, 121));
 }
 
-.main-gradient::after {
+/* .main-gradient::after {
   z-index: 1;
   position: fixed;
   display: block;
@@ -83,7 +82,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
+} */
 
 i {
   color: rgb(185, 225, 255);
@@ -106,4 +105,45 @@ i {
 .scrollbar-hide {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.slide-enter,
+.slide-exit {
+  transition: transform 100ms ease-out;
+}
+
+.slide-exit {
+  transform: translateY(0px);
+}
+
+.slide-exit-active {
+  transform: translateY(7px);
+}
+
+.slide-enter {
+  transform: translateY(7px);
+}
+
+.slide-enter.slide-enter-active {
+  transform: translateY(0px);
+}
+
+
+.wobble {
+  transition: transform 200ms ease-out;
+}
+
+.slide-exit .wobble {
+  transform: rotateZ(0deg);
+}
+.slide-exit-active .wobble {
+  transform: rotateZ(4deg);
+}
+
+.slide-enter .wobble{
+  transform: rotateZ(4deg);
+}
+
+.slide-enter.slide-enter-active .wobble {
+  transform: rotateZ(0deg);
 }

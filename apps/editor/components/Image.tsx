@@ -16,6 +16,10 @@ export const Image = (props: ImgHTMLAttributes<HTMLImageElement>) => {
       <div
         className={props.className +
           " animate-[spin_2s_linear_infinite] border-blue-300 border-4 blur-sm h-10 w-10 rounded"}
+        style={{
+          width: props.width + "px",
+          height: props.height + "px",
+        }}
       >
       </div>
     );

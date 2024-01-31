@@ -186,6 +186,8 @@ export const PlaylistInstallGuidePCVRSteamManualMoveAndExtract = forwardRef<
       <Image
         className="rounded-xl mx-auto"
         src="/playlist-installation-guide/tot-in-folder.png"
+        width={391}
+        height={339}
       />
       <VisualNovelDivider />
       <VisualNovelStepLink
@@ -258,6 +260,8 @@ export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck =
         <Image
           className="rounded-xl mx-auto"
           src="/playlist-installation-guide/custom-levels-tab.png"
+          width={269}
+          height={182}
         />
         <VisualNovelDivider />
 
@@ -266,6 +270,8 @@ export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck =
         <Image
           className="rounded-xl mx-auto"
           src="/playlist-installation-guide/playlists-compact.png"
+          width={712}
+          height={179}
         />
         <VisualNovelDivider />
 
@@ -279,6 +285,8 @@ export const PlaylistInstallGuidePCVRSteamManualPostInstallationCheck =
         <Image
           className="rounded-xl mx-auto"
           src="/playlist-installation-guide/playlists-expanded.png"
+          width={584}
+          height={339}
         />
         <VisualNovelDivider />
         <VisualNovelStepLink
