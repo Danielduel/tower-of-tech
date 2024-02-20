@@ -213,18 +213,6 @@
       ]
     },
     {
-      "songName": "The Rain",
-      "levelAuthorName": "jafdy",
-      "hash": "B5FF79432F4C54AC16C005094902FC20D6FAC074",
-      "levelid": "custom_level_B5FF79432F4C54AC16C005094902FC20D6FAC074",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "HEYYEYAAEYAAAEYAEYAA",
       "levelAuthorName": "HickeyChan",
       "hash": "46C14FA620414DF212161C75F072788752972904",
@@ -1041,14 +1029,170 @@
       ]
     },
     {
-      "songName": "Let Go",
-      "levelAuthorName": "BigOlDumplin",
-      "hash": "D7D9270D2A55E1D873B90750BA4EBEA678A54041",
-      "levelid": "custom_level_D7D9270D2A55E1D873B90750BA4EBEA678A54041",
+      "songName": "DASH",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "61864AF955C570FB24DB89BB2A0FDF8CC1AD0C96",
+      "levelid": "custom_level_61864AF955C570FB24DB89BB2A0FDF8CC1AD0C96",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Lux Aeterna",
+      "levelAuthorName": "Joetastic & Tpenny68",
+      "hash": "735E9C608CF0E8C9F4FE08282847D117AE717B09",
+      "levelid": "custom_level_735E9C608CF0E8C9F4FE08282847D117AE717B09",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "every word",
+      "levelAuthorName": "Kassi",
+      "hash": "3E1F5888ACB119601D60111213C91A817EAC39B8",
+      "levelid": "custom_level_3E1F5888ACB119601D60111213C91A817EAC39B8",
       "difficulties": [
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "I Miss the Misery",
+      "levelAuthorName": "DNQ",
+      "hash": "CEAA1AB444A8CFA9C388D1590423150C6E76F134",
+      "levelid": "custom_level_CEAA1AB444A8CFA9C388D1590423150C6E76F134",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Cinderella",
+      "levelAuthorName": "TOFU",
+      "hash": "0C613E9EE92BFAB6D055594178CADB80FBC9A254",
+      "levelid": "custom_level_0C613E9EE92BFAB6D055594178CADB80FBC9A254",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Feel Alive",
+      "levelAuthorName": "Bitz & Frost",
+      "hash": "237C8288CEF6AECE33C41A0DA9A99461083AB118",
+      "levelid": "custom_level_237C8288CEF6AECE33C41A0DA9A99461083AB118",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "golden hour",
+      "levelAuthorName": "JohnieCanine",
+      "hash": "4320D715D856805460D32936E9690533C450C824",
+      "levelid": "custom_level_4320D715D856805460D32936E9690533C450C824",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "恭喜发财(gong xi fa cai)",
+      "levelAuthorName": "秋柔&泡面&阿魔&歪卡&老王&鼠鼠&提油吸",
+      "hash": "5B091BFE25D2E42503DF8DD5304E1DCDCBB75B57",
+      "levelid": "custom_level_5B091BFE25D2E42503DF8DD5304E1DCDCBB75B57",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Paradise",
+      "levelAuthorName": "RateGyro",
+      "hash": "5BB6A279FD2C6BF20495F42B6E4395A45F9C197C",
+      "levelid": "custom_level_5BB6A279FD2C6BF20495F42B6E4395A45F9C197C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Shutdown!",
+      "levelAuthorName": "okazu",
+      "hash": "9C7693FD0731E63163DE5FD8BF6B305BC7946A39",
+      "levelid": "custom_level_9C7693FD0731E63163DE5FD8BF6B305BC7946A39",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Halo",
+      "levelAuthorName": "Joetastic & Jamman",
+      "hash": "3145C41EC609B2EAB9D2143B76CCEF1F13749B07",
+      "levelid": "custom_level_3145C41EC609B2EAB9D2143B76CCEF1F13749B07",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Dance Hall",
+      "levelAuthorName": "mikuri",
+      "hash": "B0E8C05765848187263EAABDF17F664BD42C904A",
+      "levelid": "custom_level_B0E8C05765848187263EAABDF17F664BD42C904A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Black Winged Variation",
+      "levelAuthorName": "rinka_michibiki",
+      "hash": "71770ADA166E51E0AE6748BCAE5228327374811A",
+      "levelid": "custom_level_71770ADA166E51E0AE6748BCAE5228327374811A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Come Alive",
+      "levelAuthorName": "Fatalution",
+      "hash": "3BBDB41216A9A39F61502FD17D473F5A2012209B",
+      "levelid": "custom_level_3BBDB41216A9A39F61502FD17D473F5A2012209B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     }
