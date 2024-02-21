@@ -147,11 +147,23 @@ export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
     techCategory: "Anglehell",
   },
 
+  "ToT - SonicComfy": {
+    displayName: "SonicComfy",
+    playlistId: makePlaylistId("01HM7KRS01RR2YY4PSBN4F7VE5"),
+    speedCategory: "Sonic",
+    techCategory: "Comfy",
+  },
   "ToT - SonicTech": {
     displayName: "SonicTech",
     playlistId: makePlaylistId("01HM4203SGVE0M1ZBPQ89F42K7"),
     speedCategory: "Sonic",
     techCategory: "Tech",
+  },
+  "ToT - SonicHitech": {
+    displayName: "SonicHitech",
+    playlistId: makePlaylistId("01HM7KRRZGV8Q5F7FXDK9FDGYG"),
+    speedCategory: "Sonic",
+    techCategory: "Hitech",
   },
   // "ToT - RainbowSurf": {
   //   displayName: "RainbowSurf",
