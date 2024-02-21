@@ -1,3 +1,5 @@
+import { PlaylistId } from "@/packages/types/brands.ts";
+
 export const routing = {
   root: "*",
   globalNoPage: "*",
@@ -9,6 +11,10 @@ export const routing = {
     download: "download",
     about: "about",
     browse: "browse",
+    playlist: {
+      root: "playlist/",
+      details: ":playlistId/details",
+    },
     playlistInstallGuide: {
       root: "playlist-install-guide/",
       askAboutPlatform: "ask-about-platform",
@@ -44,6 +50,10 @@ export const routing = {
 export const links = {
   home: {
     root: "/",
+    playlist: {
+      details: (playlistId: PlaylistId) =>
+        `/home/playlist/${playlistId}/details`,
+    },
     playlistInstallGuide: {
       root: "/home/playlist-install-guide/",
       askAboutPlatform: "/home/playlist-install-guide/ask-about-platform",

@@ -8,7 +8,7 @@ import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { MapItem } from "@/apps/editor/components/MapItem.tsx";
 import { Image } from "@/apps/editor/components/Image.tsx";
 
-const PlaylistMaps: FC<WithMaps> = ({ maps }) => {
+export const PlaylistMaps: FC<WithMaps> = ({ maps }) => {
   const hashes = maps.flatMap((map) => map.hash.toString());
   const { data: resolved } = trpc.map.resolve.useQuery({ hashes }, {
     staleTime: Infinity,

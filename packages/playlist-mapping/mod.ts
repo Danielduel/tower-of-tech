@@ -49,13 +49,13 @@ export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
   },
   "ToT - AdepAnglehell": {
     displayName: "AdepAnglehell",
-    playlistId: makePlaylistId("01HM2VT1NN91NZM8C9AKVMC574"),
+    playlistId: makePlaylistId("01HM4203RYZX1QKGFSX53GTJ1A"),
     speedCategory: "Adep",
     techCategory: "Anglehell",
   },
   "ToT - AdepTempo": {
     displayName: "AdepTempo",
-    playlistId: makePlaylistId("01HM2VT1P090DFVWHNYP2X2A6A"),
+    playlistId: makePlaylistId("01HM4203S9ZDF4C4SR1CF25JPN"),
     speedCategory: "Adep",
     techCategory: "Tempo",
   },
@@ -93,7 +93,7 @@ export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
 
   "ToT - MidComfy": {
     displayName: "MidComfy",
-    playlistId: makePlaylistId("01HM2VT1PXDYZ99YB41JX42H44"),
+    playlistId: makePlaylistId("01HM4203SPHDAP94MS02S49JC6"),
     speedCategory: "Mid",
     techCategory: "Comfy",
   },
@@ -111,32 +111,38 @@ export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
   },
   "ToT - MidAnglehell": {
     displayName: "MidAnglehell",
-    playlistId: makePlaylistId("01HM2VT1P9T6CRAWW84SDP3P3E"),
+    playlistId: makePlaylistId("01HM4203SHXNGDMWZVY685MDVR"),
     speedCategory: "Mid",
     techCategory: "Anglehell",
+  },
+  "ToT - MidTempo": {
+    displayName: "MidTempo",
+    playlistId: makePlaylistId("01HM7KRRZ7H0XFCNX8D9WY5ATP"),
+    speedCategory: "Mid",
+    techCategory: "Tempo",
   },
 
   "ToT - FasComfy": {
     displayName: "FasComfy",
-    playlistId: makePlaylistId("01HM2VT1NF4D6YKP6SX56WXQF7"),
+    playlistId: makePlaylistId("01HM4203RT18K3SZ4VEJ79E12G"),
     speedCategory: "Fas",
     techCategory: "Comfy",
   },
   "ToT - FasTech": {
     displayName: "FasTech",
-    playlistId: makePlaylistId("01HM2VT1NEQ9VTN356P6XWE0MB"),
+    playlistId: makePlaylistId("01HM4203RR9TZ2KAYG3BQ4ZJRV"),
     speedCategory: "Fas",
     techCategory: "Tech",
   },
   "ToT - FasHitech": {
     displayName: "FasHitech",
-    playlistId: makePlaylistId("01HM2VT1NTZCH4M2ZKBM934ZRS"),
+    playlistId: makePlaylistId("01HM4203S214YAVEJ6NWWE3KF0"),
     speedCategory: "Fas",
     techCategory: "Hitech",
   },
   "ToT - FasAnglehell": {
     displayName: "FasAnglehell",
-    playlistId: makePlaylistId("01HM2VT1PYMM0P2AQ8HM5RM4W2"),
+    playlistId: makePlaylistId("01HM4203SQNWEVXQ5KPVXY8QHJ"),
     speedCategory: "Fas",
     techCategory: "Anglehell",
   },

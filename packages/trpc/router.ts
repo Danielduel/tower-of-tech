@@ -38,8 +38,8 @@ const map = t.router({
   list: t.procedure.query(async () => {
     const items = await dbEditor.BeatSaberPlaylistSongItem
       .getMany()
-      .then(x => x.result)
-      .then(x => x.map(y => y.flat()));
+      .then((x) => x.result)
+      .then((x) => x.map((y) => y.flat()));
     return items;
   }),
   fromBeatSaverResolvables: t.procedure
@@ -55,8 +55,8 @@ const playlist = t.router({
   listLinks: t.procedure.query(async () => {
     const items = await dbEditor.BeatSaberPlaylist
       .getMany()
-      .then(x => x.result)
-      .then(x => x.map(y => y.flat()));
+      .then((x) => x.result)
+      .then((x) => x.map((y) => y.flat()));
     return items;
   }),
   getById: t.procedure
@@ -64,7 +64,9 @@ const playlist = t.router({
     .query(async ({
       input: { id },
     }) => {
-      const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(id);
+      const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(
+        id,
+      );
       if (!item) return null;
 
       const imageUrl = makeImageUrl(

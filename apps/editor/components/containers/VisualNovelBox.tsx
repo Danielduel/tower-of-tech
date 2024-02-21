@@ -8,6 +8,7 @@ import {
   HtmlHTMLAttributes,
 } from "npm:@types/react";
 import { links } from "@/apps/editor/routing.config.ts";
+import { Image } from "@/apps/editor/components/Image.tsx";
 
 export const VisualNovelLink = (props: LinkProps) => {
   return (
@@ -63,19 +64,33 @@ export const VisualNovelBody: FC<PropsWithChildren> = ({ children }) => {
 
 export const VisualNovelContainer = forwardRef<
   HTMLDivElement,
-  PropsWithChildren
->(({ children }, ref) => {
+  PropsWithChildren<{
+    imageUrl?: string;
+    row?: boolean;
+    header?: PropsWithChildren["children"];
+  }>
+>(({ children, imageUrl, row, header }, ref) => {
   return (
     <div
-      className="w-full flex flex-col items-center justify-center"
+      className={`w-full flex justify-center ${
+        row ? "flex-row items-start" : "flex-col items-center"
+      }`}
       ref={ref}
     >
-      <div className="min-h-[30vh] mb-4 relative wobble">
-        <div className="relative h-[30vh] w-[30vh]"></div>
-        <div className="absolute top-[5vh] left-[5vh] h-[20vh] w-[20vh] border-[5px] rounded-[2vh] blur wobble-blur">
+      <div
+        className={`min-h-[20vh] mb-4 relative wobble ${
+          row ? "sticky top-5" : ""
+        }`}
+      >
+        <div className="relative h-[20vh] w-[20vh]"></div>
+        <div className="absolute top-0 h-[20vh] w-[20vh] border-[5px] rounded-[2vh] blur wobble-blur">
         </div>
-        <div className="absolute top-[5vh] left-[5vh] h-[20vh] w-[20vh] border-[5px] rounded-[2vh]">
+        <div className="absolute top-0 h-[20vh] w-[20vh] border-[5px] rounded-[2vh]">
+          {imageUrl && (
+            <Image className="h-full w-full rounded-[2vh]" src={imageUrl} />
+          )}
         </div>
+        {header}
       </div>
       {children}
     </div>
@@ -151,7 +166,7 @@ export const VisualNovelOneClickAnchor: FC<
   const [visited, setVisited] = useState(false);
   return (
     <a
-      className={"hover:ring-1 ring-white border min-w-0 inline-block px-4 py-2 box-content ml-2 mb-2 " +
+      className={"hover:ring-1 ring-white border min-w-0 inline-block pr-4 box-content ml-2 mb-2 " +
         (visited ? "opacity-50" : "")}
       href={`bsplaylist://playlist/${location.origin}${href}`}
       onClick={() => setVisited(true)}
