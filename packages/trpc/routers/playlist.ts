@@ -5,26 +5,62 @@ import { makeUppercaseMapHash } from "@/packages/types/brands.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { BeatSaberPlaylistWithoutIdSchema } from "@/packages/types/beatsaber-playlist.ts";
 
-export const createOrUpdatePlaylist = async (input: typeof BeatSaberPlaylistWithoutIdSchema._type) => {
+export const createOrUpdatePlaylist = async (
+  input: typeof BeatSaberPlaylistWithoutIdSchema._type,
+) => {
   const playlistId = input.id ?? input?.customData?.id ?? ulid();
 
   try {
-    await s3clientEditor.putObject(playlistId, decode64(input.image.split(",")[1]), {
-      bucketName: buckets.playlist.coverImage,
-      metadata: {
-        "Content-Type": "image/png",
-      }
-    });
-  } catch (err) { console.log(err) }
+    console.log(`Upload cover image for ${playlistId} (start)`);
+    await s3clientEditor.putObject(
+      playlistId,
+      decode64(input.image.split(",")[1]),
+      {
+        bucketName: buckets.playlist.coverImage,
+        metadata: {
+          "Content-Type": "image/png",
+        },
+      },
+    );
+    console.log(`Upload cover image for ${playlistId} (finish)`);
+  } catch (err) {
+    console.log(err);
+  }
   try {
-    await dbEditor.BeatSaberPlaylistSongItem.addMany(input.songs)
-  } catch (err) { console.log(err) }
+    console.log(
+      `Adding songs (${input.songs.length}) for ${playlistId} (start)`,
+    );
+    await dbEditor.BeatSaberPlaylistSongItem.addMany(input.songs);
+    console.log(
+      `Adding songs (${input.songs.length}) for ${playlistId} (finish)`,
+    );
+  } catch (err) {
+    console.log(err);
+  }
   try {
-    return await dbEditor.BeatSaberPlaylist.add({
-      ...input,
-      image: null,
+    console.log(`Adding playlist ${playlistId}`);
+    return await dbEditor.BeatSaberPlaylist.upsert({
       id: playlistId,
-      songs: input.songs.map(x => makeUppercaseMapHash(x.hash))
+      set: {
+        ...input,
+        image: null,
+        id: playlistId,
+        songs: [
+          ...new Set(input.songs.map((x) => makeUppercaseMapHash(x.hash))),
+        ],
+      },
+      update: {
+        ...input,
+        image: null,
+        id: playlistId,
+        songs: [
+          ...new Set(input.songs.map((x) => makeUppercaseMapHash(x.hash))),
+        ],
+      },
+    }, {
+      strategy: "replace",
     });
-  } catch (err) { console.error(err) }
-}
+  } catch (err) {
+    console.error(err);
+  }
+};
