@@ -21,7 +21,6 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
       </VisualNovelBody>
       <VisualNovelActions>
         <VisualNovelLink
-          download
           children="Let me browse"
           to={links.home.browse}
         />
