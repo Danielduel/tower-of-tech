@@ -31,6 +31,19 @@ export const VisualNovelButton = (
   );
 };
 
+export const VisualNovelButtonMedium = (
+  props: HtmlHTMLAttributes<HTMLDivElement>,
+) => {
+  return (
+    <div className="border-r-4 border-white mt-2 h-5">
+      <div
+        {...props}
+        className="cursor-pointer select-none box-border inline hover:ring-1 ring-white p-2"
+      />
+    </div>
+  );
+};
+
 export const VisualNovelAnchor = (
   props: AnchorHTMLAttributes<HTMLAnchorElement>,
 ) => {

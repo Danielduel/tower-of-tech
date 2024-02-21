@@ -11,6 +11,7 @@ import {
   isBeatSaverMapResponseSuccessSchema,
 } from "@/packages/types/beatsaver.ts";
 import { Image } from "@/apps/editor/components/Image.tsx";
+import { VisualNovelButtonMedium } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 
 type MapItemProps = {
   playlistMapItem?: typeof BeatSaberPlaylistSongItemSchema._type;
@@ -173,12 +174,12 @@ export const MapItem: FC<MapItemProps> = ({
         <Field
           Fallback={() => null}
           Success={({ beatSaver: { id } }) => (
-            <button
-              className="ring-4 ring-blue p-2"
+            <VisualNovelButtonMedium
               onClick={() => navigator.clipboard.writeText(`!bsr ${id}`)}
+              className="text-sm"
             >
-              Copy as bsr
-            </button>
+              Copy !bsr
+            </VisualNovelButtonMedium>
           )}
         />
       </div>
