@@ -1,7 +1,5 @@
 import { VisualNovelContainer } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { links } from "@/apps/editor/routing.config.ts";
-import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
-import { FC, forwardRef, useEffect } from "react";
+import { forwardRef } from "react";
 import { useParams } from "react-router-dom";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { PlaylistMaps } from "@/apps/editor/pages/editor/playlist/PlaylistItem.tsx";
