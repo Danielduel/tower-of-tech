@@ -78,7 +78,9 @@ export const VisualNovelContainer = forwardRef<
       ref={ref}
     >
       <div
-        className={`min-h-[20vh] mb-4 relative wobble ${row ? "sticky" : ""}`}
+        className={`min-h-[20vh] mb-4 relative wobble ${
+          row ? "sticky top-5" : ""
+        }`}
       >
         <div className="relative h-[20vh] w-[20vh]"></div>
         <div className="absolute top-0 h-[20vh] w-[20vh] border-[5px] rounded-[2vh] blur wobble-blur">

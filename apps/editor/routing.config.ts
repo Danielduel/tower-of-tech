@@ -1,4 +1,5 @@
 import { PlaylistId } from "@/packages/types/brands.ts";
+import { getPlaylistUrlFromPlaylistId } from "@/packages/playlist-mapping/mod.ts";
 
 export const routing = {
   root: "*",
@@ -86,6 +87,19 @@ export const links = {
     },
     map: {
       list: "/editor/map/list",
+    },
+  },
+
+  api: {
+    v1: {
+      playlist: {
+        oneClick: (playlistId: PlaylistId) =>
+          `bsplaylist://playlist/${location.origin}${
+            getPlaylistUrlFromPlaylistId(playlistId)
+          }`,
+        download: (playlistId: PlaylistId) =>
+          `${location.origin}/api/v1/playlist/get/${playlistId}`,
+      },
     },
   },
 };

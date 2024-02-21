@@ -7,6 +7,7 @@ import {
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { MapItem } from "@/apps/editor/components/MapItem.tsx";
 import { Image } from "@/apps/editor/components/Image.tsx";
+import { links } from "@/apps/editor/routing.config.ts";
 
 export const PlaylistMaps: FC<WithMaps> = ({ maps }) => {
   const hashes = maps.flatMap((map) => map.hash.toString());
@@ -72,7 +73,7 @@ export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = (
           </div>
           <a
             className="ring-4 ring-blue p-2 float-right"
-            href={`/api/v1/playlist/get/${playlist.id}`}
+            href={links.api.v1.playlist.download(playlist.id)}
             download
           >
             Download
