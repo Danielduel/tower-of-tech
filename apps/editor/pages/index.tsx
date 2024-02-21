@@ -20,14 +20,10 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
         <i>Hey, do you have 14nps angle tech for me?</i>.
       </VisualNovelBody>
       <VisualNovelActions>
-        <VisualNovelAnchor
-          download
-          children="I know what to do, just give me those playlists!"
-          href={latestPlaylistReleaseUrl}
-        />
         <VisualNovelLink
-          to={links.home.playlistInstallGuide.root}
-          children="How to install those playlists?"
+          download
+          children="Let me browse"
+          to={links.home.browse}
         />
         <VisualNovelLink to={links.home.more} children="Tell me more" />
       </VisualNovelActions>

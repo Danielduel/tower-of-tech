@@ -72,15 +72,13 @@ export const VisualNovelContainer = forwardRef<
 >(({ children, imageUrl, row, header }, ref) => {
   return (
     <div
-      className={`w-full flex justify-center ${
+      className={`w-full my-5 flex justify-center ${
         row ? "flex-row items-start" : "flex-col items-center"
       }`}
       ref={ref}
     >
       <div
-        className={`min-h-[20vh] mb-4 relative wobble ${
-          row ? "sticky top-5" : ""
-        }`}
+        className={`min-h-[20vh] mb-4 relative wobble ${row ? "sticky" : ""}`}
       >
         <div className="relative h-[20vh] w-[20vh]"></div>
         <div className="absolute top-0 h-[20vh] w-[20vh] border-[5px] rounded-[2vh] blur wobble-blur">
@@ -122,6 +120,13 @@ export const VisualNovelStep = forwardRef<
         {children}
       </VisualNovelBody>
       <VisualNovelActions>
+        {location.pathname.includes(links.home.browse) &&
+          (
+            <VisualNovelLink
+              to={links.home.playlistInstallGuide.root}
+              children="How to install those playlists?"
+            />
+          )}
         <VisualNovelLink to={links.home.root} children="Return to start" />
       </VisualNovelActions>
     </VisualNovelContainer>
@@ -166,7 +171,7 @@ export const VisualNovelOneClickAnchor: FC<
   const [visited, setVisited] = useState(false);
   return (
     <a
-      className={"hover:ring-1 ring-white border min-w-0 inline-block pr-4 box-content ml-2 mb-2 " +
+      className={"hover:ring-1 ring-white border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline " +
         (visited ? "opacity-50" : "")}
       href={`bsplaylist://playlist/${location.origin}${href}`}
       onClick={() => setVisited(true)}

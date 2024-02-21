@@ -29,7 +29,7 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
         </div>
       }
     >
-      <div className="ml-3 mt-5">
+      <div className="ml-3">
         {data?.songs && <PlaylistMaps maps={data.songs} />}
       </div>
     </VisualNovelContainer>

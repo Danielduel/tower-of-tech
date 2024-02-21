@@ -18,7 +18,6 @@ import { ToTPlaylistMappingItem } from "@/packages/playlist-mapping/mod.ts";
 import { ToTPlaylistMappingItemSpeed } from "@/packages/playlist-mapping/mod.ts";
 import { ToTPlaylistMappingItemTech } from "@/packages/playlist-mapping/mod.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
-import { VisualNovelButton } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 
 const getToTPlaylistSpeedCategory = (
   speedCategory: ToTPlaylistMappingItemSpeed,
@@ -63,32 +62,41 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
   const { data } = trpc.playlist.getById.useQuery({ id: playlistId });
 
   return (
-    <div className="flex">
-      <div>
-        <Image
-          className="w-40 h-40 mr-3"
-          height={160}
-          width={160}
-          src={data?.imageUrl}
-        />
-      </div>
-      <div className="py-2 flex flex-col w-64">
-        <div className="text-2xl">
-          {displayName}
+    <div className="hover:ring-1 ring-[#FFF9] border min-w-0 inline-block pr-4 box-content ml-2 mb-2">
+      <div className="flex">
+        <div>
+          <Image
+            className="w-40 h-40 mr-3"
+            height={160}
+            width={160}
+            src={data?.imageUrl}
+          />
         </div>
-        <div className="text-xl">
-          Speed: {getToTPlaylistSpeedCategory(speedCategory)}
-        </div>
-        <div className="text-xl">
-          Complexity: {getToTPlaylistTechCategory(techCategory)}
-        </div>
-        <div className="text-xl">
-          Items: {data?.songs.length}
-        </div>
-        <div className="text-xl ml-auto mt-auto">
-          <VisualNovelStepLink to={links.home.playlist.details(data?.id)}>
-            Browse
-          </VisualNovelStepLink>
+        <div className="py-2 flex flex-col w-64">
+          <div className="text-2xl">
+            {displayName}
+          </div>
+          <div className="text-xl">
+            Speed: {getToTPlaylistSpeedCategory(speedCategory)}
+          </div>
+          <div className="text-xl">
+            Complexity: {getToTPlaylistTechCategory(techCategory)}
+          </div>
+          <div className="text-xl">
+            Items: {data?.songs.length}
+          </div>
+          <div className="text-xl ml-auto mt-auto text-right">
+            <VisualNovelStepLink to={links.home.playlist.details(data?.id)}>
+              Details
+            </VisualNovelStepLink>
+          </div>
+          <div className="text-xl ml-auto mt-auto text-right">
+            <VisualNovelOneClickAnchor
+              href={getPlaylistUrlFromPlaylistId(playlistId)}
+            >
+              One click
+            </VisualNovelOneClickAnchor>
+          </div>
         </div>
       </div>
     </div>
@@ -98,15 +106,9 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
 export const ToTPlaylistList = () => {
   const playlistArray = useMemo(() => Object.values(playlistMapping), []);
   return (
-    <div>
-      {playlistArray.map((x) => (
-        <VisualNovelOneClickAnchor
-          href={getPlaylistUrlFromPlaylistId(x.playlistId)}
-        >
-          <ToTPlaylistItem {...x} />
-        </VisualNovelOneClickAnchor>
-      ))}
-    </div>
+    <>
+      {playlistArray.map((x) => <ToTPlaylistItem {...x} />)}
+    </>
   );
 };
 
@@ -127,7 +129,9 @@ export const PlaylistInstallGuideModAssistant = forwardRef<HTMLDivElement>(
           installation method
         </VisualNovelStepExplanation>
         <VisualNovelDivider />
-        <ToTPlaylistList />
+        <div>
+          <ToTPlaylistList />
+        </div>
         <VisualNovelDivider />
         <VisualNovelStepLink
           to={links.home.playlistInstallGuide.pcvrSteam}
