@@ -151,8 +151,8 @@ export const MapItem: FC<MapItemProps> = ({
         <div>
           <Field
             Fallback={() => null}
-            Unknown={({ playlistMapItem: { difficulties } }) =>
-              JSON.stringify(difficulties)}
+            Unknown={({ playlistMapItem: { difficulties } }) => null}
+            NotFound={() => null}
             Success={(
               {
                 playlistMapItem: { difficulties: selectedDifficulties },

@@ -1,12 +1,7 @@
 import { forwardRef, PropsWithChildren, useState } from "react";
 import { LinkProps } from "react-router-dom";
 import { Link } from "@/packages/ui/Link.tsx";
-import {
-  AnchorHTMLAttributes,
-  FC,
-  ForwardRefRenderFunction,
-  HtmlHTMLAttributes,
-} from "npm:@types/react";
+import { AnchorHTMLAttributes, FC, HtmlHTMLAttributes } from "npm:@types/react";
 import { links } from "@/apps/editor/routing.config.ts";
 import { Image } from "@/apps/editor/components/Image.tsx";
 
