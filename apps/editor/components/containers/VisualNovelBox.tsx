@@ -90,7 +90,7 @@ export const VisualNovelContainer = forwardRef<
           row ? "sticky top-5" : ""
         }`}
       >
-        <div className="relative h-[20vh] w-[20vh] max-w-[25vh] max-h-[25vh] ml-auto">
+        <div className="relative h-[20vh] w-[20vh] max-w-[25vw] max-h-[25vw] ml-auto">
           <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh] blur wobble-blur">
           </div>
           <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh]">
