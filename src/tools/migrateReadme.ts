@@ -58,9 +58,9 @@ A playlist name should contain prefix and "tech" suffix.
           if (!playlist) return ``;
           return [
             mdImg(`./migrated/covers/${mappingValue.displayName}.png`),
+            playlist.playlist.playlistTitle,
             getToTPlaylistSpeedCategory(mappingValue.speedCategory),
             getToTPlaylistTechCategory(mappingValue.techCategory),
-            playlist.playlist.playlistTitle,
             playlist.playlist.songs.length,
             mkActions(mappingValue.playlistId),
           ];
