@@ -12,7 +12,7 @@ import { playlistInstallationGuideUrl } from "@/packages/utils/constants.ts";
 
 const markdown = new Markdown();
 const mdImg = (src: string) =>
-  `<img src="${src}" height="50px" width="50px" />`;
+  `<img style="border-radius: 0.25rem;" src="${src}" height="50px" width="50px" />`;
 const mkActions = (playlistId: PlaylistId) =>
   `[Details](${
     links.home.playlist.details(playlistId, playlistInstallationGuideUrl)
