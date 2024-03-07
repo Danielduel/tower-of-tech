@@ -1295,8 +1295,8 @@
     {
       "songName": "Bling-Bang-Bang-Born",
       "levelAuthorName": "Jabob",
-      "hash": "7B7AB576C81D0D2D967487CF5B5D57605CF0B548",
-      "levelid": "custom_level_7B7AB576C81D0D2D967487CF5B5D57605CF0B548",
+      "hash": "6A7B9D38CD057A189F3223104CF05FC0DACE0CCA",
+      "levelid": "custom_level_6A7B9D38CD057A189F3223104CF05FC0DACE0CCA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1357,6 +1357,18 @@
       "levelAuthorName": "RoadieRune",
       "hash": "C9AF00CA69D58F576367812BEBFC1A76DCCAD8F0",
       "levelid": "custom_level_C9AF00CA69D58F576367812BEBFC1A76DCCAD8F0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rumble",
+      "levelAuthorName": "PogU",
+      "hash": "D3930DF0BA24E1014DDD42D3CB288B712D590D59",
+      "levelid": "custom_level_D3930DF0BA24E1014DDD42D3CB288B712D590D59",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -693,18 +693,6 @@
       ]
     },
     {
-      "songName": "Keep You",
-      "levelAuthorName": "DFeth",
-      "hash": "B958FF0B72A5BE3FA80B29F45B25F5645B870437",
-      "levelid": "custom_level_B958FF0B72A5BE3FA80B29F45B25F5645B870437",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Ljusa Stjarnan",
       "levelAuthorName": "zeon",
       "hash": "791E8120D66F68775FE5072BD7E581512A9E12A2",
@@ -1393,6 +1381,30 @@
       "levelAuthorName": "Serephor & BanditByTheStreet",
       "hash": "736D893CA10815B229383C80834E682C0498690D",
       "levelid": "custom_level_736D893CA10815B229383C80834E682C0498690D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "When We're Human",
+      "levelAuthorName": "JRE_McNuggies",
+      "hash": "5E211B3B7854A4E480E795F7C6A68DA2E076AD0A",
+      "levelid": "custom_level_5E211B3B7854A4E480E795F7C6A68DA2E076AD0A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Someone Special",
+      "levelAuthorName": "harbgy",
+      "hash": "5428511B991CD8CCC3F0BD3460C905A5546A99B6",
+      "levelid": "custom_level_5428511B991CD8CCC3F0BD3460C905A5546A99B6",
       "difficulties": [
         {
           "characteristic": "Standard",

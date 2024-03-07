@@ -1233,18 +1233,6 @@
       ]
     },
     {
-      "songName": "You & Night & Whisky(coverd by GLIM SPANKY)",
-      "levelAuthorName": "esa_esa",
-      "hash": "F796C5EC89E8D089ADA4D2CFD6E1C491E011F64C",
-      "levelid": "custom_level_F796C5EC89E8D089ADA4D2CFD6E1C491E011F64C",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "timelapse",
       "levelAuthorName": "",
       "hash": "6AB33F5DABCB60640C20DA6C8C840D8625466650",
@@ -2297,6 +2285,30 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "CLASSY",
+      "levelAuthorName": "eurnkung",
+      "hash": "E707DB95257361DEB1D2199529CA2A64BFAB6CB4",
+      "levelid": "custom_level_E707DB95257361DEB1D2199529CA2A64BFAB6CB4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "On The Floor",
+      "levelAuthorName": "Aquaflee",
+      "hash": "169774DC0E5F830C354B521BECDBA80256BE4AD6",
+      "levelid": "custom_level_169774DC0E5F830C354B521BECDBA80256BE4AD6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }
