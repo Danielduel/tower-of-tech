@@ -39,7 +39,7 @@ A playlist name should contain prefix and "tech" suffix.
     "*",
   )
   .paragraph(`There are and will be "guest" playlists - f.e. Morgolf's.`)
-  .header(`Current playlist stats`, 3)
+  .header(`Installation and current state`, 3)
   .paragraph(
     `GitHub doesn't like the OneClick url, go to Details or [to this list](${playlistInstallationGuideUrl}${links.home.browse}) if you like this way more`,
   )

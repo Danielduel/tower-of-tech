@@ -14,7 +14,7 @@ A playlist name should contain prefix and "tech" suffix.
 
 There are and will be "guest" playlists - f.e. Morgolf's.
 
-### Current playlist stats
+### Installation and current state
 
 GitHub doesn't like the OneClick url, go to Details or [to this list](https://tower-of-tech-editor.deno.dev/home/browse) if you like this way more
 
