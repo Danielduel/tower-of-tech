@@ -242,3 +242,5 @@ await Promise.all(compressFiles.map(async (task) => {
   await Deno.remove(tempDir + task.archivePath, { recursive: true });
   await Deno.copyFile(task.localPath, tempDir + task.archivePath);
 }));
+
+export { playlists };

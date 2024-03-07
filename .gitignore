@@ -1,6 +1,5 @@
 .env
 NOTES
-migrated/covers/*
 
 # local
 local.db

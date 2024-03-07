@@ -2,8 +2,12 @@ import {
   ListTypes,
   Markdown,
 } from "https://deno.land/x/deno_markdown@v0.2/mod.ts";
+import { playlists } from "@/src/tools/migratePlaylists.ts";
+import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
 
 const markdown = new Markdown();
+const mdImg = (src: string) =>
+  `<img src="${src}" height="50px" width="50px" />`;
 
 await markdown
   .header(`Tower of Tech`, 1)
@@ -12,8 +16,8 @@ await markdown
   )
   .header(`Playlists`, 2)
   .paragraph(`
-    The final (planned, can be changed) state of playlist served by this repository should be like this:
-    A playlist name should contain prefix and "tech" suffix.
+The final (planned, can be changed) state of playlist served by this repository should be like this:
+A playlist name should contain prefix and "tech" suffix.
   `)
   .list(
     [
@@ -23,9 +27,26 @@ await markdown
     ListTypes.UnOrdered,
     "*",
   )
-  .paragraph(`
-    There are and will be "guest" playlists - f.e. Morgolf's.
-  `)
+  .paragraph(`There are and will be "guest" playlists - f.e. Morgolf's.`)
+  .header(`Current playlist stats`, 3)
+  .table(
+    [
+      ["", "Name", "Items"],
+      ...Object
+        .entries(playlistMapping)
+        .map(([mappingKey, mappingValue]) => {
+          const playlist = playlists.find((x) =>
+            x.playlist.customData!.id === mappingValue.playlistId
+          );
+          if (!playlist) return ``;
+          return [
+            mdImg(`./migrated/covers/${mappingValue.displayName}.png`),
+            playlist.playlist.playlistTitle,
+            playlist.playlist.songs.length,
+          ];
+        }),
+    ],
+  )
   .header(`Contributing`, 2)
   .paragraph(`Do you have a great...`)
   .list(
