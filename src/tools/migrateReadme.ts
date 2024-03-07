@@ -16,8 +16,6 @@ const mdImg = (src: string) =>
 const mkActions = (playlistId: PlaylistId) =>
   `[Details](${
     links.home.playlist.details(playlistId, playlistInstallationGuideUrl)
-  }) [OneClick](${
-    links.api.v1.playlist.oneClick(playlistId, playlistInstallationGuideUrl)
   }) [Raw](${
     links.api.v1.playlist.download(playlistId, playlistInstallationGuideUrl)
   })`;
@@ -42,6 +40,12 @@ A playlist name should contain prefix and "tech" suffix.
   )
   .paragraph(`There are and will be "guest" playlists - f.e. Morgolf's.`)
   .header(`Current playlist stats`, 3)
+  .paragraph(
+    `GitHub doesn't like the OneClick url, go to Details or [to this list](${playlistInstallationGuideUrl}${links.home.browse}) if you like this way more`,
+  )
+  .paragraph(
+    `If you need help with installing playlists, you can head to [installation guide](${playlistInstallationGuideUrl}${links.home.playlistInstallGuide.root})`,
+  )
   .table(
     [
       ["", "Name", "Pacing", "Complexity", "Items", ""],
