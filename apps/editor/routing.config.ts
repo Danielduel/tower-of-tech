@@ -52,8 +52,8 @@ export const links = {
   home: {
     root: "/",
     playlist: {
-      details: (playlistId: PlaylistId) =>
-        `/home/playlist/${playlistId}/details`,
+      details: (playlistId: PlaylistId, origin = "") =>
+        `${origin}/home/playlist/${playlistId}/details`,
     },
     playlistInstallGuide: {
       root: "/home/playlist-install-guide/",
@@ -93,12 +93,12 @@ export const links = {
   api: {
     v1: {
       playlist: {
-        oneClick: (playlistId: PlaylistId) =>
-          `bsplaylist://playlist/${location.origin}${
+        oneClick: (playlistId: PlaylistId, origin: string = location.origin) =>
+          `bsplaylist://playlist/${origin}${
             getPlaylistUrlFromPlaylistId(playlistId)
           }`,
-        download: (playlistId: PlaylistId) =>
-          `${location.origin}/api/v1/playlist/get/${playlistId}`,
+        download: (playlistId: PlaylistId, origin: string = location.origin) =>
+          `${origin}/api/v1/playlist/get/${playlistId}`,
       },
     },
   },

@@ -3,6 +3,7 @@ import { links } from "@/apps/editor/routing.config.ts";
 import { Image } from "@/apps/editor/components/Image.tsx";
 import {
   getPlaylistUrlFromPlaylistId,
+  getToTPlaylistSpeedCategory,
   playlistMapping,
 } from "@/packages/playlist-mapping/mod.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
@@ -15,43 +16,8 @@ import {
   VisualNovelStepLink,
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { ToTPlaylistMappingItem } from "@/packages/playlist-mapping/mod.ts";
-import { ToTPlaylistMappingItemSpeed } from "@/packages/playlist-mapping/mod.ts";
-import { ToTPlaylistMappingItemTech } from "@/packages/playlist-mapping/mod.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
-
-const getToTPlaylistSpeedCategory = (
-  speedCategory: ToTPlaylistMappingItemSpeed,
-) => {
-  switch (speedCategory) {
-    case "Adep":
-      return "Slower";
-    case "Acc":
-      return "Average";
-    case "Mid":
-      return "Faster";
-    case "Fas":
-      return "Very fast";
-    case "Sonic":
-      return "Insane";
-  }
-};
-
-const getToTPlaylistTechCategory = (
-  speedCategory: ToTPlaylistMappingItemTech,
-) => {
-  switch (speedCategory) {
-    case "Comfy":
-      return "Easy";
-    case "Tech":
-      return "Normal";
-    case "Hitech":
-      return "Hard";
-    case "Anglehell":
-      return "Expert";
-    case "Tempo":
-      return "Insane";
-  }
-};
+import { getToTPlaylistTechCategory } from "@/packages/playlist-mapping/mod.ts";
 
 export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
   displayName,

@@ -219,3 +219,37 @@ export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
 export const getPlaylistUrlFromPlaylistId = (
   playlistId: PlaylistId,
 ) => makePlaylistUrl(`/api/v1/playlist/get/${playlistId}`);
+
+export const getToTPlaylistSpeedCategory = (
+  speedCategory: ToTPlaylistMappingItemSpeed,
+) => {
+  switch (speedCategory) {
+    case "Adep":
+      return "Slower";
+    case "Acc":
+      return "Average";
+    case "Mid":
+      return "Faster";
+    case "Fas":
+      return "Very fast";
+    case "Sonic":
+      return "Insane";
+  }
+};
+
+export const getToTPlaylistTechCategory = (
+  speedCategory: ToTPlaylistMappingItemTech,
+) => {
+  switch (speedCategory) {
+    case "Comfy":
+      return "Easy";
+    case "Tech":
+      return "Normal";
+    case "Hitech":
+      return "Hard";
+    case "Anglehell":
+      return "Expert";
+    case "Tempo":
+      return "Insane";
+  }
+};

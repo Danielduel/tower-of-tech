@@ -4,10 +4,23 @@ import {
 } from "https://deno.land/x/deno_markdown@v0.2/mod.ts";
 import { playlists } from "@/src/tools/migratePlaylists.ts";
 import { playlistMapping } from "@/packages/playlist-mapping/mod.ts";
+import { getToTPlaylistSpeedCategory } from "@/packages/playlist-mapping/mod.ts";
+import { getToTPlaylistTechCategory } from "@/packages/playlist-mapping/mod.ts";
+import { PlaylistId } from "@/packages/types/brands.ts";
+import { links } from "@/apps/editor/routing.config.ts";
+import { playlistInstallationGuideUrl } from "@/packages/utils/constants.ts";
 
 const markdown = new Markdown();
 const mdImg = (src: string) =>
   `<img src="${src}" height="50px" width="50px" />`;
+const mkActions = (playlistId: PlaylistId) =>
+  `[Details](${
+    links.home.playlist.details(playlistId, playlistInstallationGuideUrl)
+  }) [OneClick](${
+    links.api.v1.playlist.oneClick(playlistId, playlistInstallationGuideUrl)
+  }) [Raw](${
+    links.api.v1.playlist.download(playlistId, playlistInstallationGuideUrl)
+  })`;
 
 await markdown
   .header(`Tower of Tech`, 1)
@@ -31,7 +44,7 @@ A playlist name should contain prefix and "tech" suffix.
   .header(`Current playlist stats`, 3)
   .table(
     [
-      ["", "Name", "Items"],
+      ["", "Name", "Pacing", "Complexity", "Items", ""],
       ...Object
         .entries(playlistMapping)
         .map(([mappingKey, mappingValue]) => {
@@ -41,8 +54,11 @@ A playlist name should contain prefix and "tech" suffix.
           if (!playlist) return ``;
           return [
             mdImg(`./migrated/covers/${mappingValue.displayName}.png`),
+            getToTPlaylistSpeedCategory(mappingValue.speedCategory),
+            getToTPlaylistTechCategory(mappingValue.techCategory),
             playlist.playlist.playlistTitle,
             playlist.playlist.songs.length,
+            mkActions(mappingValue.playlistId),
           ];
         }),
     ],
