@@ -1,10 +1,11 @@
 export type BeatSaberDifficultyCharacteristic =
-  "Standard" |
-  "Lawless";
+  | "Standard"
+  | "Legacy"
+  | "Lawless";
 
 export type BeatSaberDifficultyName =
-  "ExpertPlus" |
-  "Expert" |
-  "Hard" |
-  "Normal" |
-  "Easy";
+  | "ExpertPlus"
+  | "Expert"
+  | "Hard"
+  | "Normal"
+  | "Easy";
