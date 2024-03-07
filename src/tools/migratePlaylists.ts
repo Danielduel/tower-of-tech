@@ -121,8 +121,8 @@ playlists.push(
     playlistTitle: "ToT - *",
     songs: allMaps,
     customData: {
-      id: hardcodedMergedPlaylistId
-    }
+      id: hardcodedMergedPlaylistId,
+    },
   }, "/"),
 );
 
@@ -150,8 +150,8 @@ await Promise.all([
       playlistTitle: playlist.playlistTitle,
       songs: playlist.songs,
       customData: {
-        id: playlist?.customData?.id ?? ulid()
-      }
+        id: playlist?.customData?.id ?? ulid(),
+      },
     };
     const beatsaberPlaylist: BeatSaberPlaylist = {
       ...beatsaberPlaylistOffline,
@@ -159,13 +159,14 @@ await Promise.all([
         AllowDuplicates: false,
         id: beatsaberPlaylistOffline.customData?.id,
         owner: "Danielduel",
-        syncURL:
-          new URL(
-            `https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists${path}${fileName}`,
-          ).href,
+        syncURL: new URL(
+          `https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists${path}${fileName}`,
+        ).href,
       },
     };
-    const beatsaberPlaylistOfflineString = stringifyPlaylist(beatsaberPlaylistOffline);
+    const beatsaberPlaylistOfflineString = stringifyPlaylist(
+      beatsaberPlaylistOffline,
+    );
     const beatsaberPlaylistString = stringifyPlaylist(beatsaberPlaylist);
     await Deno.writeTextFile(
       `${destinationPathOffline}${path}${fileName}`,
@@ -198,8 +199,8 @@ await Promise.all([
       playlistTitle: playlist.playlistTitle,
       songs: playlist.songs,
       customData: {
-        id: playlist?.customData?.id ?? ulid()
-      }
+        id: playlist?.customData?.id ?? ulid(),
+      },
     };
     const beatsaberPlaylist: BeatSaberPlaylist = {
       ...beatsaberPlaylistOffline,
@@ -207,13 +208,14 @@ await Promise.all([
         AllowDuplicates: false,
         id: beatsaberPlaylistOffline.customData?.id,
         owner: "Danielduel",
-        syncURL:
-          new URL(
-            `https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists-guest${path}${fileName}`,
-          ).href,
+        syncURL: new URL(
+          `https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists-guest${path}${fileName}`,
+        ).href,
       },
     };
-    const beatsaberPlaylistOfflineString = stringifyPlaylist(beatsaberPlaylistOffline);
+    const beatsaberPlaylistOfflineString = stringifyPlaylist(
+      beatsaberPlaylistOffline,
+    );
     const beatsaberPlaylistString = stringifyPlaylist(beatsaberPlaylist);
     await Deno.mkdir(destinationPathOfflineGuests + path, { recursive: true });
     await Deno.mkdir(destinationPathGuests + path, { recursive: true });
@@ -235,13 +237,8 @@ await Promise.all([
 const tempDir = "./tree/";
 await Deno.remove(tempDir, { recursive: true });
 await Deno.mkdir(tempDir, { recursive: true });
-await Promise.all(compressFiles.map(async task => {
+await Promise.all(compressFiles.map(async (task) => {
   await Deno.mkdir(tempDir + task.archivePath, { recursive: true });
   await Deno.remove(tempDir + task.archivePath, { recursive: true });
   await Deno.copyFile(task.localPath, tempDir + task.archivePath);
-}))
-
-// compress(
-//   compressFiles,
-//   "archive.zip",
-// );
+}));
