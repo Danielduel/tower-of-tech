@@ -218,7 +218,7 @@ export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
 };
 export const getPlaylistUrlFromPlaylistId = (
   playlistId: PlaylistId,
-) => makePlaylistUrl(`/api/v1/playlist/get/${playlistId}`);
+) => makePlaylistUrl(`/api/v1/playlist/get/${playlistId}.bplist`);
 
 export const getToTPlaylistSpeedCategory = (
   speedCategory: ToTPlaylistMappingItemSpeed,
