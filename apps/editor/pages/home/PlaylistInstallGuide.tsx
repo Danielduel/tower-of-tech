@@ -203,7 +203,7 @@ export const PlaylistInstallGuidePCVRPostInstallationCongratulations =
       <VisualNovelStep ref={ref}>
         Congratulations!
         <VisualNovelDivider />
-        Those playlists are contantly growing, there are 2 kinds of updates
+        Those playlists are constantly growing, there are 2 kinds of updates
         <VisualNovelDivider />
         Release updates happening every month or two
         <VisualNovelStepExplanation>

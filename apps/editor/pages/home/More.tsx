@@ -48,8 +48,8 @@ export const More = forwardRef<HTMLDivElement>((_, ref) => {
       harder to read combinations.<br />
       <br />
       <i>Anglehell</i>{" "}
-      contantly rotates blocks, it is heavier form of Hitech in the way that you
-      have to pay attention to things like an ocassional sidecut inside a
+      constantly rotates blocks, it is heavier form of Hitech in the way that
+      you have to pay attention to things like an ocassional sidecut inside a
       bottomstream or koji patterns.<br />
       <br />
       <i>Tempo</i>{" "}

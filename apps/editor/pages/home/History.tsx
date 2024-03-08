@@ -32,7 +32,7 @@ export const History = forwardRef<HTMLDivElement>((_, ref) => {
       those that seemed impossible, but looked extremely cool.
       <VisualNovelDivider />
       Later, I've started passing those maps that I thought will be impossible
-      and I was moving them into split categories.
+      and I was splitting them into categories.
       <VisualNovelDivider />
       Time passed, I became progressively better, so I wanted to compete with
       much better players that weren't specialising in tech (early 2021). This
