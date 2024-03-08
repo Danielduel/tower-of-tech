@@ -20,6 +20,8 @@ GitHub doesn't like the OneClick url, go to Details or [to this list](https://to
 
 If you need help with installing playlists, you can head to [installation guide](https://tower-of-tech-editor.deno.dev/home/playlist-install-guide/)
 
+Zip containing all playlists can be found [here](https://github.com/Danielduel/tower-of-tech/releases/download/0.0.12/ToT.zip)
+
 |                                                                              | Name                | Pacing    | Complexity | Items |                                                                                                                                                                                               |
 | ---------------------------------------------------------------------------- | ------------------- | --------- | ---------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="./migrated/covers/AdepComfy.png" height="50px" width="50px" />     | ToT - AdepComfy     | Slower    | Easy       | 46    | [Details](https://tower-of-tech-editor.deno.dev/home/playlist/01HK8XCHRH8RDXEEP9F4211NVG/details) [Raw](https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHRH8RDXEEP9F4211NVG) |

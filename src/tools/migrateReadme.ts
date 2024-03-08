@@ -9,6 +9,7 @@ import { getToTPlaylistTechCategory } from "@/packages/playlist-mapping/mod.ts";
 import { PlaylistId } from "@/packages/types/brands.ts";
 import { links } from "@/apps/editor/routing.config.ts";
 import { playlistInstallationGuideUrl } from "@/packages/utils/constants.ts";
+import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 
 const markdown = new Markdown();
 const mdImg = (src: string) =>
@@ -45,6 +46,9 @@ A playlist name should contain prefix and "tech" suffix.
   )
   .paragraph(
     `If you need help with installing playlists, you can head to [installation guide](${playlistInstallationGuideUrl}${links.home.playlistInstallGuide.root})`,
+  )
+  .paragraph(
+    `Zip containing all playlists can be found [here](${latestPlaylistReleaseUrl})`,
   )
   .table(
     [
