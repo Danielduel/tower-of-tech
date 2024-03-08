@@ -125,17 +125,21 @@ export const VisualNovelStep = forwardRef<
   { children },
   ref,
 ) => {
+  const isOutsideOfPlaylistTutorial = !location.pathname.startsWith(
+    links.home.playlistInstallGuide.root,
+  );
+
   return (
     <VisualNovelContainer ref={ref}>
       <VisualNovelBody>
         {children}
       </VisualNovelBody>
       <VisualNovelActions>
-        {location.pathname.includes(links.home.browse) &&
+        {isOutsideOfPlaylistTutorial &&
           (
             <VisualNovelLink
               to={links.home.playlistInstallGuide.root}
-              children="How to install those playlists?"
+              children="I want those playlists"
             />
           )}
         <VisualNovelLink to={links.home.root} children="Return to start" />
