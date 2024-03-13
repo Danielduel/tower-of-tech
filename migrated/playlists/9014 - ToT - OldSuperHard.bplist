@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203R64HPQS93GMTA5S5KE",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/9014%20-%20ToT%20-%20OldSuperHard.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203R64HPQS93GMTA5S5KE"
   },
   "songs": [
     {

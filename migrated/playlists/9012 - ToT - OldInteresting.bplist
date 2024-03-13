@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RP7V6WM09Y0KMR3PV2",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/9012%20-%20ToT%20-%20OldInteresting.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203RP7V6WM09Y0KMR3PV2"
   },
   "songs": [
     {

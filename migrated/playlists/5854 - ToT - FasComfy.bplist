@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RT18K3SZ4VEJ79E12G",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5854%20-%20ToT%20-%20FasComfy.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203RT18K3SZ4VEJ79E12G"
   },
   "songs": [
     {
@@ -65,6 +65,18 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Friendly Gigant Fire",
+      "levelAuthorName": "oegoe & yabje",
+      "hash": "DF656E2EB55F45FB30648A23315FFFF0392968A8",
+      "levelid": "custom_level_DF656E2EB55F45FB30648A23315FFFF0392968A8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

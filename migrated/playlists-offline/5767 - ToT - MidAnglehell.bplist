@@ -222,18 +222,6 @@
       ]
     },
     {
-      "songName": "Diamond Eyes",
-      "levelAuthorName": "wangyufy&staryouth",
-      "hash": "87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
-      "levelid": "custom_level_87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Deity Mode",
       "levelAuthorName": "oermergeesh vs. ob1cb",
       "hash": "83E579921D67F782B1B7B19193EB970671F2FBA1",
@@ -442,6 +430,18 @@
       "levelAuthorName": "Jabob",
       "hash": "32977108712D563C3BB224D5F57277A25B303B07",
       "levelid": "custom_level_32977108712D563C3BB224D5F57277A25B303B07",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "0ptimi2er",
+      "levelAuthorName": "Animp0str",
+      "hash": "E409BB1A946D2BB968AED7AA4C5AC12919F24186",
+      "levelid": "custom_level_E409BB1A946D2BB968AED7AA4C5AC12919F24186",
       "difficulties": [
         {
           "characteristic": "Standard",

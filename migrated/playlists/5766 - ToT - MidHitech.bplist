@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHPPDM9XD77EGJCVTA81",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5766%20-%20ToT%20-%20MidHitech.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHPPDM9XD77EGJCVTA81"
   },
   "songs": [
     {
@@ -1177,6 +1177,18 @@
       "levelAuthorName": "Hener & Harper",
       "hash": "C6C9AD7EB5B07E95CFAD176AF29D8AA33147F90E",
       "levelid": "custom_level_C6C9AD7EB5B07E95CFAD176AF29D8AA33147F90E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Heroine Ikusei Keikaku",
+      "levelAuthorName": "Uragirimono",
+      "hash": "413F226DDDD41888ACBE553064733513699F755A",
+      "levelid": "custom_level_413F226DDDD41888ACBE553064733513699F755A",
       "difficulties": [
         {
           "characteristic": "Standard",

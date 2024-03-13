@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203S9ZDF4C4SR1CF25JPN",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5566%20-%20ToT%20-%20AdepTempo.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203S9ZDF4C4SR1CF25JPN"
   },
   "songs": [
     {
@@ -109,6 +109,18 @@
       "levelAuthorName": "Cush",
       "hash": "8A4C5D3A08F4A7484DBF4D7EABCA26BA16E08818",
       "levelid": "custom_level_8A4C5D3A08F4A7484DBF4D7EABCA26BA16E08818",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Ice Cream Machine",
+      "levelAuthorName": "PogU",
+      "hash": "A52927FBB4F182C0ED45302A25D48F4188F4328D",
+      "levelid": "custom_level_A52927FBB4F182C0ED45302A25D48F4188F4328D",
       "difficulties": [
         {
           "characteristic": "Standard",

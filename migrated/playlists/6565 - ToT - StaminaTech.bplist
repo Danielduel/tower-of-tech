@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RBETNKZP3DVN25DKBK",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/6565%20-%20ToT%20-%20StaminaTech.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203RBETNKZP3DVN25DKBK"
   },
   "songs": [
     {

@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHRK0NSY3PNTPPBJ0X1F",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5765%20-%20ToT%20-%20MidTech.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHRK0NSY3PNTPPBJ0X1F"
   },
   "songs": [
     {
@@ -1369,6 +1369,42 @@
       "levelAuthorName": "PogU",
       "hash": "D3930DF0BA24E1014DDD42D3CB288B712D590D59",
       "levelid": "custom_level_D3930DF0BA24E1014DDD42D3CB288B712D590D59",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Gleodream\n",
+      "levelAuthorName": "ViSi & SL4SH",
+      "hash": "65F3BCA7F4F289CFE14278A72B604CD6A78EBA00",
+      "levelid": "custom_level_65F3BCA7F4F289CFE14278A72B604CD6A78EBA00",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "RAPEENA",
+      "levelAuthorName": "KultainenAnkka",
+      "hash": "A709AFB45D143A5542F1942EE202EE7C97FE3A25",
+      "levelid": "custom_level_A709AFB45D143A5542F1942EE202EE7C97FE3A25",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Spooky Beat II",
+      "levelAuthorName": "Ilovehotdads67",
+      "hash": "C37130ABB18621EECA66B5B365829FF403205CEA",
+      "levelid": "custom_level_C37130ABB18621EECA66B5B365829FF403205CEA",
       "difficulties": [
         {
           "characteristic": "Standard",

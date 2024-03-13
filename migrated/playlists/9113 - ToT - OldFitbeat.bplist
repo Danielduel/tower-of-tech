@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RVSCT40M7SH369YV8T",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/9113%20-%20ToT%20-%20OldFitbeat.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203RVSCT40M7SH369YV8T"
   },
   "songs": [
     {

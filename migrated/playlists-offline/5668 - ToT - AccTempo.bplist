@@ -42,18 +42,6 @@
       ]
     },
     {
-      "songName": "YoiYoi Kokon",
-      "levelAuthorName": "staryouh",
-      "hash": "621E2BEE72B926B126AB18E75DCE5B7B2AF4A5C3",
-      "levelid": "custom_level_621E2BEE72B926B126AB18E75DCE5B7B2AF4A5C3",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Hype",
       "levelAuthorName": "staryouh",
       "hash": "55D7F9CC8BA1D47C738BA7F44A7B4EEF46963AAA",
@@ -70,18 +58,6 @@
       "levelAuthorName": "ani",
       "hash": "8314AC3130B9A50C0D3E767B23ADC00835E3B93D",
       "levelid": "custom_level_8314AC3130B9A50C0D3E767B23ADC00835E3B93D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "0ptimi2er",
-      "levelAuthorName": "Animp0str",
-      "hash": "E409BB1A946D2BB968AED7AA4C5AC12919F24186",
-      "levelid": "custom_level_E409BB1A946D2BB968AED7AA4C5AC12919F24186",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -118,18 +94,6 @@
       "levelAuthorName": "seasonsmouse",
       "hash": "A5CD8FF1CE90A043D66109C02639A2CFB896039A",
       "levelid": "custom_level_A5CD8FF1CE90A043D66109C02639A2CFB896039A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Diamond Eyes",
-      "levelAuthorName": "wangyufy&staryouth",
-      "hash": "87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
-      "levelid": "custom_level_87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
       "difficulties": [
         {
           "characteristic": "Standard",

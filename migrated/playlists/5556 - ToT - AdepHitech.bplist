@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHRNPHBZSJMKFWBPKD32",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5556%20-%20ToT%20-%20AdepHitech.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHRNPHBZSJMKFWBPKD32"
   },
   "songs": [
     {
@@ -613,6 +613,42 @@
       "levelAuthorName": "srode",
       "hash": "1D9A2D0D1780AFDDECA8EEEF91E4A96C66CAFADE",
       "levelid": "custom_level_1D9A2D0D1780AFDDECA8EEEF91E4A96C66CAFADE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "BAD SAD AND MAD",
+      "levelAuthorName": "Bellus",
+      "hash": "E46DB38CBD83B3B593016608AAF69A1EDAB0FDBC",
+      "levelid": "custom_level_E46DB38CBD83B3B593016608AAF69A1EDAB0FDBC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "PRESENT",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "331842C338121D0DA83CCBA4B22402E8A2E2160F",
+      "levelid": "custom_level_331842C338121D0DA83CCBA4B22402E8A2E2160F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Heart Afire",
+      "levelAuthorName": "Joshabi",
+      "hash": "6F79CC971C41C56428C3213586C27F471F80FEBD",
+      "levelid": "custom_level_6F79CC971C41C56428C3213586C27F471F80FEBD",
       "difficulties": [
         {
           "characteristic": "Standard",

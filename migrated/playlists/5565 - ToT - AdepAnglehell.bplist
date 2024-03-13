@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RYZX1QKGFSX53GTJ1A",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5565%20-%20ToT%20-%20AdepAnglehell.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203RYZX1QKGFSX53GTJ1A"
   },
   "songs": [
     {
@@ -109,6 +109,30 @@
       "levelAuthorName": "zSkull162",
       "hash": "E9AE299CAA41A3DF89BC5CA8045B35BEDACFD4DB",
       "levelid": "custom_level_E9AE299CAA41A3DF89BC5CA8045B35BEDACFD4DB",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Bongo Bong",
+      "levelAuthorName": "Schnapq",
+      "hash": "0E7BF5EDB2C83630B58F6D5B1197D75A1A788E96",
+      "levelid": "custom_level_0E7BF5EDB2C83630B58F6D5B1197D75A1A788E96",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Round and Around",
+      "levelAuthorName": "August",
+      "hash": "3C9E8C081757AECA1421AC39749E6205728A59DE",
+      "levelid": "custom_level_3C9E8C081757AECA1421AC39749E6205728A59DE",
       "difficulties": [
         {
           "characteristic": "Lawless",

@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHRH8RDXEEP9F4211NVG",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5545%20-%20ToT%20-%20AdepComfy.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHRH8RDXEEP9F4211NVG"
   },
   "songs": [
     {
@@ -553,6 +553,30 @@
       "levelAuthorName": "Uragirimono",
       "hash": "D16F8016CE73433B9C7DE127F655745C058237A9",
       "levelid": "custom_level_D16F8016CE73433B9C7DE127F655745C058237A9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "ES",
+      "levelAuthorName": "Tranch",
+      "hash": "A6F761576204B0D99810A5DE9476330B7298A6EE",
+      "levelid": "custom_level_A6F761576204B0D99810A5DE9476330B7298A6EE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "One More",
+      "levelAuthorName": "DaftMaple",
+      "hash": "18F3BBB66FAC56584EC9CC266E605EFE5CAEA398",
+      "levelid": "custom_level_18F3BBB66FAC56584EC9CC266E605EFE5CAEA398",
       "difficulties": [
         {
           "characteristic": "Standard",

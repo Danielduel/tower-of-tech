@@ -390,18 +390,6 @@
       ]
     },
     {
-      "songName": "ES",
-      "levelAuthorName": "Tranch",
-      "hash": "A6F761576204B0D99810A5DE9476330B7298A6EE",
-      "levelid": "custom_level_A6F761576204B0D99810A5DE9476330B7298A6EE",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "Cat Loving",
       "levelAuthorName": "Gabriel & Marsh",
       "hash": "AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
@@ -430,18 +418,6 @@
       "levelAuthorName": "Emiru",
       "hash": "7C64C13FBA53C7D12C1EFDAC906D4F65910F4921",
       "levelid": "custom_level_7C64C13FBA53C7D12C1EFDAC906D4F65910F4921",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "One More",
-      "levelAuthorName": "DaftMaple",
-      "hash": "18F3BBB66FAC56584EC9CC266E605EFE5CAEA398",
-      "levelid": "custom_level_18F3BBB66FAC56584EC9CC266E605EFE5CAEA398",
       "difficulties": [
         {
           "characteristic": "Standard",

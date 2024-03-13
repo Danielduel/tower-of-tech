@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203S214YAVEJ6NWWE3KF0",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5856%20-%20ToT%20-%20FasHitech.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203S214YAVEJ6NWWE3KF0"
   },
   "songs": [
     {
@@ -97,6 +97,18 @@
       "levelAuthorName": "vOid vs v0rt3x",
       "hash": "3B4A88104DAD9BE2D5C95A23ED8539CC72FDC237",
       "levelid": "custom_level_3B4A88104DAD9BE2D5C95A23ED8539CC72FDC237",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Paper Bouquet",
+      "levelAuthorName": "ViSi & SL4SH",
+      "hash": "6D5B3419F2BA4B95D79E5422B1FCF568D3B80461",
+      "levelid": "custom_level_6D5B3419F2BA4B95D79E5422B1FCF568D3B80461",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHRDHER45YMZ7XDS0RZ6",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5666%20-%20ToT%20-%20AccHitech.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHRDHER45YMZ7XDS0RZ6"
   },
   "songs": [
     {
@@ -141,18 +141,6 @@
       ]
     },
     {
-      "songName": "Malagueña Salerosa",
-      "levelAuthorName": "Comyute & Groovy",
-      "hash": "390A48823312B1309FF3F82A288B7C88C6A06C17",
-      "levelid": "custom_level_390A48823312B1309FF3F82A288B7C88C6A06C17",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Shoujyo S",
       "levelAuthorName": "Pleo",
       "hash": "44C10D1C8854CAD24E53214AD8FA171B9609FD32",
@@ -217,30 +205,6 @@
       "levelAuthorName": "kizuflux",
       "hash": "70782128090BC9D7C7287237B3AD21F0EA8B454D",
       "levelid": "custom_level_70782128090BC9D7C7287237B3AD21F0EA8B454D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Heroine Ikusei Keikaku",
-      "levelAuthorName": "Uragirimono",
-      "hash": "413F226DDDD41888ACBE553064733513699F755A",
-      "levelid": "custom_level_413F226DDDD41888ACBE553064733513699F755A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "PRESENT",
-      "levelAuthorName": "Jonas_0_0",
-      "hash": "2E6DA493E588C064C2DDA37C8A924A7B3809E012",
-      "levelid": "custom_level_2E6DA493E588C064C2DDA37C8A924A7B3809E012",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1405,6 +1369,18 @@
       "levelAuthorName": "harbgy",
       "hash": "5428511B991CD8CCC3F0BD3460C905A5546A99B6",
       "levelid": "custom_level_5428511B991CD8CCC3F0BD3460C905A5546A99B6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Great Vengeance",
+      "levelAuthorName": "XAce1337manX",
+      "hash": "4401994DB519BF7C140E9DE8317FF7421C126B33",
+      "levelid": "custom_level_4401994DB519BF7C140E9DE8317FF7421C126B33",
       "difficulties": [
         {
           "characteristic": "Standard",

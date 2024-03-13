@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RR9TZ2KAYG3BQ4ZJRV",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5855%20-%20ToT%20-%20FasTech.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203RR9TZ2KAYG3BQ4ZJRV"
   },
   "songs": [
     {
@@ -180,6 +180,18 @@
       "levelAuthorName": "Aquaflee, Floatyoats & Tranch",
       "hash": "19AB6915E7B41BE1944C0CA5BF41591138E1BB38",
       "levelid": "custom_level_19AB6915E7B41BE1944C0CA5BF41591138E1BB38",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "deathwish",
+      "levelAuthorName": "Ilovehotdads67",
+      "hash": "4E93645244C86218366DA51CCA53F970676E1F16",
+      "levelid": "custom_level_4E93645244C86218366DA51CCA53F970676E1F16",
       "difficulties": [
         {
           "characteristic": "Standard",

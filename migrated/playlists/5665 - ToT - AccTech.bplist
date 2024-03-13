@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHQ6KFWB4MRA796Q0245",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5665%20-%20ToT%20-%20AccTech.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHQ6KFWB4MRA796Q0245"
   },
   "songs": [
     {

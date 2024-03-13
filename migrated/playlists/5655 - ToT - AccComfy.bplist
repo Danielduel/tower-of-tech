@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHR9VPKXQ898F7TPWVFM",
     "owner": "Danielduel",
-    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5655%20-%20ToT%20-%20AccComfy.bplist"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHR9VPKXQ898F7TPWVFM"
   },
   "songs": [
     {
@@ -856,6 +856,30 @@
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Scuffed Up Age",
+      "levelAuthorName": "CookedChili",
+      "hash": "ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
+      "levelid": "custom_level_ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Woman",
+      "levelAuthorName": "Lekrkoekj & Johnny Silverhams",
+      "hash": "2EC30CD6769CF47AA71E7D6846E382F792CE2AAE",
+      "levelid": "custom_level_2EC30CD6769CF47AA71E7D6846E382F792CE2AAE",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]
