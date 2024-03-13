@@ -28,6 +28,8 @@ export const apiV1Handler = async (request: Request) => {
     {
       headers: {
         "Content-Type": "text/bplist",
+        "Content-Disposition":
+          `attachment; filename="${data.playlistTitle} by ${data.playlistAuthor}.bplist"`,
       },
     },
   );

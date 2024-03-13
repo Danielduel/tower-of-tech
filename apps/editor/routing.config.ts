@@ -98,7 +98,7 @@ export const links = {
             getPlaylistUrlFromPlaylistId(playlistId)
           }`,
         download: (playlistId: PlaylistId, origin: string = location.origin) =>
-          `${origin}/api/v1/playlist/get/${playlistId}.bplist`,
+          `${origin}/api/v1/playlist/get/${playlistId}`,
       },
     },
   },
