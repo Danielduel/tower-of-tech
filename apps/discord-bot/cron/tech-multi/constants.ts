@@ -1,4 +1,4 @@
-import { playlistInstallationGuideUrl } from "@/packages/utils/constants.ts";
+import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
 export const guildId = "689050370840068309";
 export const broadcastChannelId = "1108645502028894218";
@@ -17,7 +17,7 @@ We will top that all off with maps that most of us prefer to see only via thick 
 We use a mod called Multiplayer+ which is available for PCVR and standalone Quest users.
 Usefull links:
 * [More on joining](https://posts.dduel.dev/danielduel/tech-multi)
-* [Playlists used for most of maps during this multi, with an installation guide](${playlistInstallationGuideUrl})
+* [Playlists used for most of maps during this multi, with an installation guide](${towerOfTechWebsiteOrigin})
 
 ## Inviting, Sharing, Streaming
 

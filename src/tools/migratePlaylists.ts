@@ -7,6 +7,9 @@ import type {
 import { getCoverBase64 } from "@/src/utils/cover-image.ts";
 import { stringifyPlaylist } from "@/src/utils/json.ts";
 import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
+import { links } from "@/apps/editor/routing.config.ts";
+import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
+import { makePlaylistId } from "@/packages/types/brands.ts";
 
 const coverPath =
   new URL(import.meta.resolve("../../migrated/covers")).pathname;
@@ -144,7 +147,7 @@ await Promise.all([
     if (playlist?.customData?.id?.includes(" ")) {
       delete playlist?.customData?.id;
     }
-    const beatsaberPlaylistOffline: BeatSaberPlaylist = {
+    const beatsaberPlaylistOffline = {
       image: coverBase64,
       playlistAuthor: playlist.playlistAuthor,
       playlistTitle: playlist.playlistTitle,
@@ -152,15 +155,19 @@ await Promise.all([
       customData: {
         id: playlist?.customData?.id ?? ulid(),
       },
-    };
+    } satisfies BeatSaberPlaylist;
     const beatsaberPlaylist: BeatSaberPlaylist = {
       ...beatsaberPlaylistOffline,
       customData: {
         AllowDuplicates: false,
         id: beatsaberPlaylistOffline.customData?.id,
         owner: "Danielduel",
+        // `https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists${path}${fileName}`
         syncURL: new URL(
-          `https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists${path}${fileName}`,
+          links.api.v1.playlist.download(
+            makePlaylistId(beatsaberPlaylistOffline.customData.id),
+            towerOfTechWebsiteOrigin,
+          ),
         ).href,
       },
     };

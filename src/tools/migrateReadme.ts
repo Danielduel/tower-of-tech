@@ -8,7 +8,7 @@ import { getToTPlaylistSpeedCategory } from "@/packages/playlist-mapping/mod.ts"
 import { getToTPlaylistTechCategory } from "@/packages/playlist-mapping/mod.ts";
 import { PlaylistId } from "@/packages/types/brands.ts";
 import { links } from "@/apps/editor/routing.config.ts";
-import { playlistInstallationGuideUrl } from "@/packages/utils/constants.ts";
+import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 
 const markdown = new Markdown();
@@ -16,9 +16,9 @@ const mdImg = (src: string) =>
   `<img src="${src}" height="50px" width="50px" />`;
 const mkActions = (playlistId: PlaylistId) =>
   `[Details](${
-    links.home.playlist.details(playlistId, playlistInstallationGuideUrl)
+    links.home.playlist.details(playlistId, towerOfTechWebsiteOrigin)
   }) [Raw](${
-    links.api.v1.playlist.download(playlistId, playlistInstallationGuideUrl)
+    links.api.v1.playlist.download(playlistId, towerOfTechWebsiteOrigin)
   })`;
 
 await markdown
@@ -42,10 +42,10 @@ A playlist name should contain prefix and "tech" suffix.
   .paragraph(`There are and will be "guest" playlists - f.e. Morgolf's.`)
   .header(`Installation and current state`, 3)
   .paragraph(
-    `GitHub doesn't like the OneClick url, go to Details or [to this list](${playlistInstallationGuideUrl}${links.home.browse}) if you like this way more`,
+    `GitHub doesn't like the OneClick url, go to Details or [to this list](${towerOfTechWebsiteOrigin}${links.home.browse}) if you like this way more`,
   )
   .paragraph(
-    `If you need help with installing playlists, you can head to [installation guide](${playlistInstallationGuideUrl}${links.home.playlistInstallGuide.root})`,
+    `If you need help with installing playlists, you can head to [installation guide](${towerOfTechWebsiteOrigin}${links.home.playlistInstallGuide.root})`,
   )
   .paragraph(
     `Zip containing all playlists can be found [here](${latestPlaylistReleaseUrl})`,
