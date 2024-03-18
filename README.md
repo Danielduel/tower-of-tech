@@ -20,7 +20,7 @@ GitHub doesn't like the OneClick url, go to Details or [to this list](https://to
 
 If you need help with installing playlists, you can head to [installation guide](https://tower-of-tech-editor.deno.dev/home/playlist-install-guide/)
 
-Zip containing all playlists can be found [here](https://github.com/Danielduel/tower-of-tech/releases/download/0.0.12/ToT.zip)
+Zip containing all playlists can be found [here](https://github.com/Danielduel/tower-of-tech/releases/download/0.0.13/ToT.zip)
 
 |                                                                              | Name                | Pacing    | Complexity | Items |                                                                                                                                                                                               |
 | ---------------------------------------------------------------------------- | ------------------- | --------- | ---------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
