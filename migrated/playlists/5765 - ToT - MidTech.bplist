@@ -1161,18 +1161,6 @@
       ]
     },
     {
-      "songName": "Los! Los! Los!",
-      "levelAuthorName": "CoolingCloset",
-      "hash": "F3BD378DFE91F4371B976493C95936878D65448E",
-      "levelid": "custom_level_F3BD378DFE91F4371B976493C95936878D65448E",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Knock it Out!",
       "levelAuthorName": "Enduo",
       "hash": "BD97A390FF4421F38462201459CC0E0ADC3973AD",
@@ -1405,6 +1393,18 @@
       "levelAuthorName": "Ilovehotdads67",
       "hash": "C37130ABB18621EECA66B5B365829FF403205CEA",
       "levelid": "custom_level_C37130ABB18621EECA66B5B365829FF403205CEA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "You're Gonna Go Far, Kid",
+      "levelAuthorName": "abcbadq",
+      "hash": "C40B2D2AEF71EA07709BA99CC6246029F61C767C",
+      "levelid": "custom_level_C40B2D2AEF71EA07709BA99CC6246029F61C767C",
       "difficulties": [
         {
           "characteristic": "Standard",

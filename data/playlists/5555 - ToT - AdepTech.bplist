@@ -176,8 +176,8 @@
     {
       "songName": "REKKA RESONANCE",
       "levelAuthorName": "Marsh",
-      "hash": "B55E64F6CD69781BD48BB77E4874AAA01785C1C8",
-      "levelid": "custom_level_B55E64F6CD69781BD48BB77E4874AAA01785C1C8",
+      "hash": "178E68A392835D6EF8762692AB059BC17433AC54",
+      "levelid": "custom_level_178E68A392835D6EF8762692AB059BC17433AC54",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1190,6 +1190,18 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "REKKA RESONANCE",
+      "levelAuthorName": "Marsh",
+      "hash": "178E68A392835D6EF8762692AB059BC17433AC54",
+      "levelid": "custom_level_178E68A392835D6EF8762692AB059BC17433AC54",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     }

@@ -114,18 +114,6 @@
       ]
     },
     {
-      "songName": "Prestige And Vestige",
-      "levelAuthorName": "staryouh",
-      "hash": "01C30BD1764A924A99A3ECF068109E83328C94DC",
-      "levelid": "custom_level_01C30BD1764A924A99A3ECF068109E83328C94DC",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "茶鸣拾贰律",
       "levelAuthorName": "Eckimlon",
       "hash": "4FC44027C6E4B960AE0D473EC260AAD597C11FCE",

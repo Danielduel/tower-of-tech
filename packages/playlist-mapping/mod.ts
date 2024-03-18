@@ -146,6 +146,12 @@ export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
     speedCategory: "Fas",
     techCategory: "Anglehell",
   },
+  "ToT - FasTempo": {
+    displayName: "FasTempo",
+    playlistId: makePlaylistId("01HS9TYNFZB2XES1K56E8FT6CR"),
+    speedCategory: "Fas",
+    techCategory: "Tempo",
+  },
 
   "ToT - SonicComfy": {
     displayName: "SonicComfy",

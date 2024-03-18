@@ -659,8 +659,8 @@
     {
       "songName": "Ljusa Stjarnan",
       "levelAuthorName": "zeon",
-      "hash": "791E8120D66F68775FE5072BD7E581512A9E12A2",
-      "levelid": "custom_level_791E8120D66F68775FE5072BD7E581512A9E12A2",
+      "hash": "23BB19374AA675634BB285C3546EF1E33EC1E1EA",
+      "levelid": "custom_level_23BB19374AA675634BB285C3546EF1E33EC1E1EA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1381,6 +1381,18 @@
       "levelAuthorName": "XAce1337manX",
       "hash": "4401994DB519BF7C140E9DE8317FF7421C126B33",
       "levelid": "custom_level_4401994DB519BF7C140E9DE8317FF7421C126B33",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "わたしたちのクエスト",
+      "levelAuthorName": "wangyufy",
+      "hash": "8324F3D2A20CF113159D0A401BC1C9302B1745B6",
+      "levelid": "custom_level_8324F3D2A20CF113159D0A401BC1C9302B1745B6",
       "difficulties": [
         {
           "characteristic": "Standard",

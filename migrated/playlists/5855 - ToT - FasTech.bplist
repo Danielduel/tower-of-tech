@@ -117,17 +117,6 @@
       ]
     },
     {
-      "songName": "Final-Boss-Chan",
-      "levelAuthorName": "",
-      "levelid": "FinalBossChan",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "XTREME ",
       "levelAuthorName": "BLACK_VOID-1001",
       "hash": "D932AE6960E57724C68DFF8BD87CB2920C1AA73C",

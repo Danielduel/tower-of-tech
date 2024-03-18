@@ -23,8 +23,8 @@
     {
       "songName": "Ljusa Stjarnan",
       "levelAuthorName": "zeon",
-      "hash": "791E8120D66F68775FE5072BD7E581512A9E12A2",
-      "levelid": "custom_level_791E8120D66F68775FE5072BD7E581512A9E12A2",
+      "hash": "23BB19374AA675634BB285C3546EF1E33EC1E1EA",
+      "levelid": "custom_level_23BB19374AA675634BB285C3546EF1E33EC1E1EA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -563,8 +563,8 @@
     {
       "songName": "Good Things Fall Apart",
       "levelAuthorName": "sploob",
-      "hash": "FD3E4C5BE6B0975757DB12A26E39B64C5E7FF3A3",
-      "levelid": "custom_level_FD3E4C5BE6B0975757DB12A26E39B64C5E7FF3A3",
+      "hash": "6158636039D9052CB5E7BFD62553A290E30ED0B2",
+      "levelid": "custom_level_6158636039D9052CB5E7BFD62553A290E30ED0B2",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -653,6 +653,18 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Ljusa Stjärnan",
+      "levelAuthorName": "zeon",
+      "hash": "23BB19374AA675634BB285C3546EF1E33EC1E1EA",
+      "levelid": "custom_level_23BB19374AA675634BB285C3546EF1E33EC1E1EA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     }

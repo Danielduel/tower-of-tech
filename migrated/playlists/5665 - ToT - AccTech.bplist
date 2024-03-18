@@ -213,18 +213,6 @@
       ]
     },
     {
-      "songName": "String Theocracy",
-      "levelAuthorName": "kizuflux",
-      "hash": "6D6FCF4C4BA2DD68531D5483EB83B72FC23A5E35",
-      "levelid": "custom_level_6D6FCF4C4BA2DD68531D5483EB83B72FC23A5E35",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Cheese",
       "levelAuthorName": "TOFU",
       "hash": "9CF60521E1C7EB65B2B49BB5D6AAD5FF9EF5C0F9",
@@ -2305,6 +2293,18 @@
       "levelAuthorName": "Aquaflee",
       "hash": "169774DC0E5F830C354B521BECDBA80256BE4AD6",
       "levelid": "custom_level_169774DC0E5F830C354B521BECDBA80256BE4AD6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Witches",
+      "levelAuthorName": "Kassi",
+      "hash": "18BA37E6120AB981C44B78DC1ACB4515C579CA91",
+      "levelid": "custom_level_18BA37E6120AB981C44B78DC1ACB4515C579CA91",
       "difficulties": [
         {
           "characteristic": "Standard",
