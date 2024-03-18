@@ -1,5 +1,13 @@
 import { PlaylistId } from "@/packages/types/brands.ts";
 import { getPlaylistUrlFromPlaylistId } from "@/packages/playlist-mapping/mod.ts";
+import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
+
+const defaultOrigin = (() => {
+  if (location) {
+    return location.origin;
+  }
+  return towerOfTechWebsiteOrigin;
+})();
 
 export const routing = {
   root: "*",
@@ -52,7 +60,7 @@ export const links = {
   home: {
     root: "/",
     playlist: {
-      details: (playlistId: PlaylistId, origin = "") =>
+      details: (playlistId: PlaylistId, origin = defaultOrigin) =>
         `${origin}/home/playlist/${playlistId}/details`,
     },
     playlistInstallGuide: {
@@ -93,11 +101,11 @@ export const links = {
   api: {
     v1: {
       playlist: {
-        oneClick: (playlistId: PlaylistId, origin: string = location.origin) =>
+        oneClick: (playlistId: PlaylistId, origin: string = defaultOrigin) =>
           `bsplaylist://playlist/${origin}${
             getPlaylistUrlFromPlaylistId(playlistId)
           }`,
-        download: (playlistId: PlaylistId, origin: string = location.origin) =>
+        download: (playlistId: PlaylistId, origin: string = defaultOrigin) =>
           `${origin}/api/v1/playlist/get/${playlistId}`,
       },
     },
