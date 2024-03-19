@@ -3,10 +3,8 @@ import { getPlaylistUrlFromPlaylistId } from "@/packages/playlist-mapping/mod.ts
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
 const defaultOrigin = (() => {
-  if (document) {
-    if (location) {
-      return location.origin;
-    }
+  if ("location" in globalThis) {
+    return location.origin;
   }
   return towerOfTechWebsiteOrigin;
 })();
