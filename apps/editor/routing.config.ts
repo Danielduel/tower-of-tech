@@ -1,13 +1,7 @@
 import { PlaylistId } from "@/packages/types/brands.ts";
 import { getPlaylistUrlFromPlaylistId } from "@/packages/playlist-mapping/mod.ts";
-import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
-const defaultOrigin = (() => {
-  if ("location" in globalThis) {
-    return location.origin;
-  }
-  return towerOfTechWebsiteOrigin;
-})();
+const defaultOrigin = "";
 
 export const routing = {
   root: "*",
