@@ -1,7 +1,17 @@
+import { makePlaylistId } from "@/packages/types/brands.ts";
+
 export const playlistIdWithFileExtensionToPlaylistId = (
   playlistIdWithFileExtension: string,
 ) => {
-  return playlistIdWithFileExtension
+  const playlistId = playlistIdWithFileExtension
     .split(".bplist")[0]
     .split(".json")[0];
+
+  if (playlistId && playlistId.length === 26) {
+    return makePlaylistId(playlistId);
+  }
+
+  console.warn(`${playlistId} doesn't look like a playlistId`);
+
+  return makePlaylistId(playlistId);
 };
