@@ -171,57 +171,8 @@ export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
     speedCategory: "Sonic",
     techCategory: "Hitech",
   },
-  // "ToT - RainbowSurf": {
-  //   displayName: "RainbowSurf",
-  //   speedCategory: "Other",
-  //   techCategory: "Other"
-  // },
-  // "ToT - StaminaTech": {
-  //   displayName: "StaminaTech",
-  //   speedCategory: "Other",
-  //   techCategory: "Other"
-  // },
-  // "ToT - *": {
-  //   displayName: "All from ToT",
-  //   speedCategory: "Other",
-  //   techCategory: "Other"
-  // },
-  // "ToT - OldHard": {
-  //   displayName: "Legacy - Hard",
-  //   speedCategory: "Legacy",
-  //   techCategory: "Legacy"
-  // },
-  // "ToT - OldSuperHard": {
-  //   displayName: "Legacy - SuperHard",
-  //   speedCategory: "Legacy",
-  //   techCategory: "Legacy"
-  // },
-  // "ToT - OldPractice": {
-  //   displayName: "Legacy - OldPractice",
-  //   speedCategory: "Legacy",
-  //   techCategory: "Legacy"
-  // },
-  // "ToT - OldVeryHard": {
-  //   displayName: "Legacy - VeryHard",
-  //   speedCategory: "Legacy",
-  //   techCategory: "Legacy"
-  // },
-  // "ToT - OldTek": {
-  //   displayName: "Legacy - Tek",
-  //   speedCategory: "Legacy",
-  //   techCategory: "Legacy"
-  // },
-  // "ToT - OldInteresting": {
-  //   displayName: "Legacy - Interesting",
-  //   speedCategory: "Legacy",
-  //   techCategory: "Legacy"
-  // },
-  // "ToT - OldFitbeat": {
-  //   displayName: "Legacy - Fitbeat",
-  //   speedCategory: "Legacy",
-  //   techCategory: "Legacy"
-  // },
 };
+
 export const getPlaylistUrlFromPlaylistId = (
   playlistId: PlaylistId,
 ) => makePlaylistUrl(`/api/v1/playlist/get/${playlistId}.bplist`);

@@ -390,6 +390,7 @@
     "https://deno.land/x/deno_kv_oauth/mod.ts": "https://deno.land/x/deno_kv_oauth@v0.10.0/mod.ts",
     "https://deno.land/x/deno_markdown/mod.ts": "https://deno.land/x/deno_markdown@v0.2/mod.ts",
     "https://deno.land/x/kvdex/mod.ts": "https://deno.land/x/kvdex@v0.31.0/mod.ts",
+    "https://deno.land/x/rutt/mod.ts": "https://deno.land/x/rutt@0.2.0/mod.ts",
     "https://deno.land/x/zod/mod.ts": "https://deno.land/x/zod@v3.22.4/mod.ts",
     "https://esm.sh/v128/@types/react@~18.2/index.d.ts": "https://esm.sh/v128/@types/react@18.2.38/index.d.ts",
     "https://esm.sh/v128/@types/react@~18.2/jsx-dev-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-dev-runtime~.d.ts",
@@ -752,6 +753,7 @@
     "https://deno.land/x/dotenv@v3.2.2/util.ts": "693730877b13f8ead2b79b2aa31e2a0652862f7dc0c5f6d2f313f4d39c7b7670",
     "https://deno.land/x/hono@v3.2.7/client/client.ts": "7a819af2aa9aabc746add4d01715fa37f83676fdf1b63fba1bbcd655b2d066a5",
     "https://deno.land/x/hono@v3.2.7/client/index.ts": "3ff4cf246f3543f827a85a2c84d66a025ac350ee927613629bda47e854bfb7ba",
+    "https://deno.land/x/hono@v3.2.7/client/types.ts": "256a282e327fc46578de12097f22f6c295343a90c5670ae377b7967cf1622c66",
     "https://deno.land/x/hono@v3.2.7/client/utils.ts": "9f9825a3f96e0e332fa91f4cd1cfffe2ef9da796c58904941c8405e3f18bda07",
     "https://deno.land/x/hono@v3.2.7/compose.ts": "e55ed7be2134f363ff3c8e8e2f520ff682c6a11a47d7189100ed69704ce10b9e",
     "https://deno.land/x/hono@v3.2.7/context.ts": "a9d2dba3528df1a804d78630f867a8aaee2ebc8b498c5c781eeb057539dedb20",
@@ -779,7 +781,9 @@
     "https://deno.land/x/hono@v3.2.7/utils/body.ts": "67627aaac6ea8d3d2f2ffcb0aabccfe0c854ee11eaecd36dfcc2f012005337f7",
     "https://deno.land/x/hono@v3.2.7/utils/cookie.ts": "ff2f948c27fb8867fc990b1b6b182dfbe4c263c60a94cd33aefa77af5cdb1655",
     "https://deno.land/x/hono@v3.2.7/utils/filepath.ts": "5f708bb6a2f0b8e83a3333868ac86abdfba15e52b46acb5e13018fa2138f0826",
+    "https://deno.land/x/hono@v3.2.7/utils/http-status.ts": "e0c4343ea7717c314dc600131e16b636c29d61cfdaf9df93b267258d1729d1a0",
     "https://deno.land/x/hono@v3.2.7/utils/mime.ts": "e17bdbac85b97c3d223c48874c2abe867e0720461e9f7e0c340141c080b9c6d6",
+    "https://deno.land/x/hono@v3.2.7/utils/types.ts": "634ee00ae271302b2decf73edb91d843feb9fc7bfd43ea643d1b14861914577d",
     "https://deno.land/x/hono@v3.2.7/utils/url.ts": "40a4192da0a655a124c95063e0ab3924432805fcf45a3ffc8e4458029d609bbc",
     "https://deno.land/x/hono@v3.2.7/validator/index.ts": "6c986e8b91dcf857ecc8164a506ae8eea8665792a4ff7215471df669c632ae7c",
     "https://deno.land/x/hono@v3.2.7/validator/validator.ts": "e52183ddf8cefc3cfe2788802fe6ce766df8ac904df485107b01cbcca167dbad",
@@ -1059,6 +1063,7 @@
     "https://esm.sh/v135/shallowequal@1.1.0/X-ZS9yZWFjdA/denonext/shallowequal.mjs": "3a621141e773a2b5504d531378148a7cb8c202bf4ee64cb2a80f887b9932e735",
     "https://esm.sh/v135/style-vendorizer@2.2.3/denonext/style-vendorizer.mjs": "121455e7b04b631ef6463ce63cdcd29febd74d88c37713c774ceca8a1561c83d",
     "https://esm.sh/v135/use-sync-external-store@1.2.0/X-ZS9yZWFjdA/denonext/shim.js": "37e3c7d40c8197daac8a39b77b97e026fcbc5ee3cc80c48a9057473631dcb247",
+    "https://raw.githubusercontent.com/Danielduel/rutt/cc92a9ea0f94514f48e583aae01bbaa00fc76397/mod.ts": "29ee4c9b9a407dead8a992f64ab37ce21287fe83c64be84e4bd82cd60bfccd88",
     "https://raw.githubusercontent.com/discordjs/discord.js/main/packages/discord.js/src/client/Client.js": "309298d4dfc3b563c2f85d15fa8f50975961f7c3b01a4a16f9e2bf7c53104cd5"
   }
 }

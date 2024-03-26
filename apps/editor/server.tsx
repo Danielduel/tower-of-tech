@@ -6,7 +6,6 @@ import { readImportMap } from "ultra/lib/utils/import-map.ts";
 import { createStaticHandler } from "ultra/lib/static/handler.ts";
 import { composeHandlers } from "ultra/lib/handler.ts";
 import { refresh } from "https://deno.land/x/refresh@1.0.0/mod.ts";
-import { serve } from "https://deno.land/std@0.176.0/http/server.ts";
 import { compile } from "mesozoic/lib/compiler.ts";
 import { StaticRouter } from "react-router-dom/server";
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
@@ -110,7 +109,7 @@ const executeHandlers = composeHandlers(
     handleRequest: async (request) => {
       const { pathname } = new URL(request.url);
       const realPathName = "/" + pathname.split("///")[1];
-      console.log(realPathName)
+      console.log(realPathName);
 
       const fileUrl = root + realPathName;
       const source = await Deno.readTextFile(fileUrl);
@@ -137,7 +136,7 @@ const executeHandlers = composeHandlers(
     handleRequest: async (request) => {
       const { pathname } = new URL(request.url);
       const realPathName = pathname.split("/_x/")[1];
-      const fullPathName = `https://deno.land/x/${realPathName}`
+      const fullPathName = `https://deno.land/x/${realPathName}`;
       const content = await fetch(fullPathName);
       const result = await compile(fullPathName, await content.text(), {
         jsxImportSource: "react",
@@ -166,7 +165,7 @@ const executeHandlers = composeHandlers(
         req: request,
         router: appRouter,
         createContext: () => ({}),
-      })
+      }),
   },
   renderer,
   compiler,
@@ -174,22 +173,20 @@ const executeHandlers = composeHandlers(
 );
 
 const middleware = refresh({
-  paths: ["./apps", "./packages" ]
+  paths: ["./apps", "./packages"],
 });
 
 runWorker();
 
-serve(async (request) => {
+Deno.serve({ port: isLocal() ? 8081 : 80 }, async (request, ctx) => {
   const refresh = middleware(request);
   if (refresh) return refresh;
 
   const response = await executeHandlers(request);
   if (response) {
-    response.headers.append("Access-Control-Allow-Origin", "*")
-    return response
-  };
+    response.headers.append("Access-Control-Allow-Origin", "*");
+    return response;
+  }
 
   return new Response("Not Found", { status: 404 });
-}, {
-  port: isLocal() ? 8081 : 80
 });
