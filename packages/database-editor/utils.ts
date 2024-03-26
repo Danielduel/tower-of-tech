@@ -1,3 +1,4 @@
+import { fromUint8Array } from "https://denopkg.com/chiefbiiko/base64@master/mod.ts";
 import { BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
@@ -6,6 +7,17 @@ import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId, PlaylistId } from "@/packages/types/brands.ts";
 import { links } from "@/apps/editor/routing.config.ts";
 import { makePlaylistUrl } from "@/packages/types/brands.ts";
+
+export const getImage = async (playlistId: PlaylistId) => {
+  const imageBody = await s3clientEditor.getObject(playlistId, {
+    bucketName: buckets.playlist.coverImage,
+  })
+    .then((x) => x.arrayBuffer())
+    .then((x) => new Uint8Array(x))
+    .then((x) => fromUint8Array(x));
+
+  return makeImageBase64(imageBody);
+};
 
 export const playlistIdToCustomData = (playlistId: PlaylistId) => {
   return {
@@ -63,12 +75,9 @@ export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage =
     );
     if (!item) return null;
 
-    const image = await s3clientEditor.getObject(item.id, {
-      bucketName: buckets.playlist.coverImage,
-    });
     const data = {
       ...item,
-      image: makeImageBase64("base64," + await image.text()),
+      image: await getImage(playlistId),
     } satisfies typeof BeatSaberPlaylistSchema._type;
 
     return data;
