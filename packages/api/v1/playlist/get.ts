@@ -40,6 +40,9 @@ export const apiV1HandlerGetPlaylistByIdDownload: HandlerForRoute<
       playlistId,
     );
   if (!data) return new Response("404", { status: 404 });
+  const sortString = typeof data.customData.sort !== "undefined"
+    ? `${data.customData.sort} - `
+    : "";
 
   return new Response(
     JSON.stringify(data),
@@ -47,7 +50,7 @@ export const apiV1HandlerGetPlaylistByIdDownload: HandlerForRoute<
       headers: {
         "Content-Type": "text/bplist",
         "Content-Disposition":
-          `attachment; filename="${data.playlistTitle} by ${data.playlistAuthor}.bplist"`,
+          `attachment; filename="${sortString}${data.playlistTitle} by ${data.playlistAuthor}.bplist"`,
       },
     },
   );
