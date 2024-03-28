@@ -61,12 +61,12 @@ const playlist = t.router({
     return items;
   }),
   getById: t.procedure
-    .input(z.object({ id: z.string() }))
+    .input(z.object({ id: z.string().transform(makePlaylistId) }))
     .query(async ({
       input: { id },
     }) => {
       const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(
-        makePlaylistId(id),
+        id,
       );
       if (!item) return null;
 
