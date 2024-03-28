@@ -1,14 +1,11 @@
 import { z } from "zod";
-import {
-  client,
-  resource,
-} from "https://deno.land/x/zod_api@v0.7.6/mod.ts";
+import { client, resource } from "zod_api";
 import {
   BeatSaverMapByIdResponseSchema,
   BeatSaverMapResponseSuccessSchema,
-} from "../types/beatsaver.ts";
-import { fetcher } from "../fetcher/mod.ts";
-import { getLogger } from "../logger/mod.ts";
+} from "@/packages/types/beatsaver.ts";
+import { fetcher } from "@/packages/fetcher/mod.ts";
+import { getLogger } from "@/packages/logger/mod.ts";
 
 export const BeatSaverApi = client({
   fetcher,

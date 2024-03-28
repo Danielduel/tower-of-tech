@@ -21,6 +21,8 @@
     "@trpc/client/": "https://esm.sh/v122/*@trpc/client@10.0.0/",
     "@trpc/react-query": "https://esm.sh/v122/*@trpc/react-query@10.0.0",
     "zod": "https://deno.land/x/zod@v3.22.4/mod.ts",
+    "zod_api": "https://deno.land/x/zod_api@v0.7.6/mod.ts",
+    "zod_api/": "https://deno.land/x/zod_api@v0.7.6/",
     "s3_lite_client": "https://deno.land/x/s3_lite_client@0.6.1/mod.ts",
 
     "react-helmet-async": "https://esm.sh/react-helmet-async@1.3.0?external=react",

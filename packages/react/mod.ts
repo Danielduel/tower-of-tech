@@ -1,12 +1,20 @@
 // @deno-types="npm:@types/react"
 export {
   Children,
+  cloneElement,
+  Component,
   createContext,
   createElement,
   createFactory,
   createRef,
   forwardRef,
   Fragment,
+  isValidElement,
+  lazy,
+  memo,
+  Profiler,
+  PureComponent,
+  startTransition,
   StrictMode,
   Suspense,
   useCallback,
@@ -24,21 +32,14 @@ export {
   useState,
   useSyncExternalStore,
   useTransition,
-  isValidElement,
-  startTransition,
-  cloneElement,
-  memo,
-  lazy,
-  Component,
-  Profiler,
   version,
-  PureComponent,
 } from "https://esm.sh/react@18.2.0?dev";
-import React from "https://esm.sh/react@18.2.0?dev"
+import React from "https://esm.sh/react@18.2.0?dev";
 export default React;
 export type {
   FC,
   PropsWithChildren,
   PropsWithRef,
+  ReactNode,
   Ref,
 } from "https://esm.sh/react@18.2.0?dev";

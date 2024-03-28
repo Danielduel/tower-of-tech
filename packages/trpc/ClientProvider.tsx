@@ -1,8 +1,8 @@
 import { type ReactNode } from "react";
-import { trpc } from "./trpc-react.ts";
+import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { Hydrate, QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/packages/react-query/query-client.ts";
-import { createTrpcClient } from "./client.ts";
+import { createTrpcClient } from "@/packages/trpc/client.ts";
 
 const __REACT_QUERY_DEHYDRATED_STATE: unknown = {};
 
@@ -13,9 +13,10 @@ export function TRPCClientProvider(
   return (
     <trpc.Provider client={trpcClient} queryClient={queryClient}>
       <QueryClientProvider client={queryClient}>
-        <Hydrate state={__REACT_QUERY_DEHYDRATED_STATE ?? {}}>{children}</Hydrate>
+        <Hydrate state={__REACT_QUERY_DEHYDRATED_STATE ?? {}}>
+          {children}
+        </Hydrate>
       </QueryClientProvider>
     </trpc.Provider>
   );
 }
-1

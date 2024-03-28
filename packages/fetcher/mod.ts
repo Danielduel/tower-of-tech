@@ -1,5 +1,5 @@
 import { retry } from "https://deno.land/std@0.177.0/async/retry.ts";
-import { Fetcher } from "https://deno.land/x/zod_api@v0.7.6/src/types.ts";
+import { Fetcher } from "zod_api/src/types.ts";
 
 export const fetcher: Fetcher = (input, init) => {
   return retry(
@@ -14,6 +14,6 @@ export const fetcher: Fetcher = (input, init) => {
       minTimeout: 1000,
       maxTimeout: 60000,
       multiplier: 2,
-    }
+    },
   );
 };
