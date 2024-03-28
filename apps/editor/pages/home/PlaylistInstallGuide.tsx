@@ -60,8 +60,16 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
             <VisualNovelOneClickAnchor
               href={getPlaylistUrlFromPlaylistId(playlistId)}
             >
-              One click
+              OneClick
             </VisualNovelOneClickAnchor>
+          </div>
+          <div className="text-xl ml-auto mt-auto text-right">
+            <VisualNovelStepLink
+              download
+              to={links.api.v1.playlist.download(data?.id)}
+            >
+              Download
+            </VisualNovelStepLink>
           </div>
         </div>
       </div>
