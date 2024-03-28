@@ -8,6 +8,7 @@ import {
 } from "@/packages/playlist-mapping/mod.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 import {
+  VisualNovelATag,
   VisualNovelDivider,
   VisualNovelOneClickAnchor,
   VisualNovelStep,
@@ -28,17 +29,17 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
   const { data } = trpc.playlist.getById.useQuery({ id: playlistId });
 
   return (
-    <div className="hover:ring-1 ring-[#FFF9] border min-w-0 inline-block pr-4 box-content ml-2 mb-2">
-      <div className="flex">
+    <div className="hover:ring-1 ring-[#FFF9] border min-w-0 inline-block relative pr-4 box-content w-full">
+      <div className="flex w-full">
         <div>
           <Image
-            className="w-40 h-40 mr-3"
+            className="w-40 min-w-40 h-40 min-h-40 mr-3"
             height={160}
             width={160}
             src={data?.imageUrl}
           />
         </div>
-        <div className="py-2 flex flex-col w-64">
+        <div className="py-2 flex flex-col w-full min-w-64">
           <div className="text-2xl">
             {displayName}
           </div>
@@ -51,6 +52,8 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
           <div className="text-xl">
             Items: {data?.songs.length}
           </div>
+        </div>
+        <div className="py-2 flex flex-col">
           <div className="text-xl ml-auto mt-auto text-right">
             <VisualNovelStepLink to={links.home.playlist.details(data?.id)}>
               Details
@@ -64,12 +67,12 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
             </VisualNovelOneClickAnchor>
           </div>
           <div className="text-xl ml-auto mt-auto text-right">
-            <VisualNovelStepLink
+            <VisualNovelATag
               download
-              to={links.api.v1.playlist.download(data?.id)}
+              href={links.api.v1.playlist.download(data?.id)}
             >
               Download
-            </VisualNovelStepLink>
+            </VisualNovelATag>
           </div>
         </div>
       </div>
@@ -80,9 +83,9 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
 export const ToTPlaylistList = () => {
   const playlistArray = useMemo(() => Object.values(playlistMapping), []);
   return (
-    <>
+    <div className="w-full flex flex-row flex-wrap">
       {playlistArray.map((x) => <ToTPlaylistItem {...x} />)}
-    </>
+    </div>
   );
 };
 

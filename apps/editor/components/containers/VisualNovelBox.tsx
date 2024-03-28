@@ -178,6 +178,25 @@ export const VisualNovelStepLink: FC<LinkProps> = (props) => {
   );
 };
 
+export const VisualNovelATag: FC<
+  PropsWithChildren & { href: string; download: boolean }
+> = (
+  { href, children, download },
+) => {
+  const [visited, setVisited] = useState(false);
+  return (
+    <a
+      className={"hover:ring-1 ring-white border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline " +
+        (visited ? "opacity-50" : "")}
+      href={href}
+      download={download}
+      onClick={() => setVisited(true)}
+    >
+      {children}
+    </a>
+  );
+};
+
 export const VisualNovelOneClickAnchor: FC<
   PropsWithChildren & { href: string }
 > = (
