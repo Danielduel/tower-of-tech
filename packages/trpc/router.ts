@@ -12,6 +12,7 @@ import {
   LowercaseMapHash,
   makeImageUrl,
   makeLowercaseMapHash,
+  makePlaylistId,
 } from "@/packages/types/brands.ts";
 import {
   BeatSaberPlaylistWithImageAsUrlSchema,
@@ -65,7 +66,7 @@ const playlist = t.router({
       input: { id },
     }) => {
       const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(
-        id,
+        makePlaylistId(id),
       );
       if (!item) return null;
 
