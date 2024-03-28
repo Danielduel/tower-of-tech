@@ -9,6 +9,7 @@ import { VisualNovelAnchor } from "@/apps/editor/components/containers/VisualNov
 import { VisualNovelOneClickAnchor } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { links } from "@/apps/editor/routing.config.ts";
 import { makePlaylistId } from "@/packages/types/brands.ts";
+import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
 export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
   const { playlistId } = useParams();
@@ -39,9 +40,12 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
 
           {playlistId && (
             <VisualNovelAnchor
-              href={links.api.v1.playlist.oneClick(brandedPlaylistId)}
+              href={links.api.v1.playlist.oneClick(
+                brandedPlaylistId,
+                towerOfTechWebsiteOrigin,
+              )}
             >
-              One Click
+              OneClick
             </VisualNovelAnchor>
           )}
           <VisualNovelAnchor
