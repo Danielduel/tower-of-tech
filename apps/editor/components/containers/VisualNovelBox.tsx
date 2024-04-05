@@ -207,7 +207,7 @@ export const VisualNovelOneClickAnchor: FC<
     <a
       className={"hover:ring-1 ring-white border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline " +
         (visited ? "opacity-50" : "")}
-      href={`bsplaylist://playlist/${location?.origin}${href}`}
+      href={href}
       onClick={() => setVisited(true)}
     >
       {children}

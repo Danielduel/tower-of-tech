@@ -1,5 +1,4 @@
 import { PlaylistId } from "@/packages/types/brands.ts";
-import { getPlaylistUrlFromPlaylistId } from "@/packages/playlist-mapping/mod.ts";
 
 const defaultOrigin = "";
 
@@ -95,14 +94,18 @@ export const links = {
   api: {
     v1: {
       playlist: {
-        oneClick: (playlistId: PlaylistId, origin: string = defaultOrigin) =>
-          `bsplaylist://playlist/${origin}${
-            getPlaylistUrlFromPlaylistId(playlistId)
-          }`,
-        download: (playlistId: PlaylistId, origin: string = defaultOrigin) =>
-          `${origin}/api/v1/playlist/get/${playlistId}/download`,
-        raw: (playlistId: PlaylistId, origin: string = defaultOrigin) =>
+        data: (playlistId: PlaylistId, origin: string = defaultOrigin) =>
           `${origin}/api/v1/playlist/get/${playlistId}`,
+        download: (playlistId: PlaylistId, origin: string = defaultOrigin) =>
+          `${links.api.v1.playlist.data(playlistId, origin)}/download`,
+        oneClick: (
+          playlistId: PlaylistId,
+          playlistName: string,
+          origin: string,
+        ) =>
+          `bsplaylist://playlist/${
+            links.api.v1.playlist.data(playlistId, origin)
+          }/oneclick/${encodeURI(playlistName)}`,
       },
     },
   },

@@ -2,11 +2,15 @@ import { FC, forwardRef, useMemo, useState } from "react";
 import { links } from "@/apps/editor/routing.config.ts";
 import { Image } from "@/apps/editor/components/Image.tsx";
 import {
-  getPlaylistUrlFromPlaylistId,
   getToTPlaylistSpeedCategory,
+  getToTPlaylistTechCategory,
   playlistMapping,
-} from "@/packages/playlist-mapping/mod.ts";
-import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
+  ToTPlaylistMappingItem,
+} from "@/packages/playlist/mod.ts";
+import {
+  latestPlaylistReleaseUrl,
+  towerOfTechWebsiteOrigin,
+} from "@/packages/utils/constants.ts";
 import {
   VisualNovelATag,
   VisualNovelDivider,
@@ -16,9 +20,8 @@ import {
   VisualNovelStepInlineATag,
   VisualNovelStepLink,
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { ToTPlaylistMappingItem } from "@/packages/playlist-mapping/mod.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
-import { getToTPlaylistTechCategory } from "@/packages/playlist-mapping/mod.ts";
+import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
 
 export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
   displayName,
@@ -28,6 +31,8 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
 }) => {
   const { data } = trpc.playlist.getById.useQuery({ id: playlistId });
 
+  if (!data) return "Loading...";
+
   return (
     <div className="hover:ring-1 ring-[#FFF9] border min-w-0 inline-block relative pr-4 box-content w-full">
       <div className="flex w-full">
@@ -36,7 +41,7 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
             className="w-40 min-w-40 h-40 min-h-40 mr-3"
             height={160}
             width={160}
-            src={data?.imageUrl}
+            src={data.imageUrl}
           />
         </div>
         <div className="py-2 flex flex-col w-full min-w-64">
@@ -50,7 +55,7 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
             Complexity: {getToTPlaylistTechCategory(techCategory)}
           </div>
           <div className="text-xl">
-            Items: {data?.songs.length}
+            Items: {data.songs.length}
           </div>
         </div>
         <div className="py-2 flex flex-col">
@@ -61,7 +66,11 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
           </div>
           <div className="text-xl ml-auto mt-auto text-right">
             <VisualNovelOneClickAnchor
-              href={getPlaylistUrlFromPlaylistId(playlistId)}
+              href={links.api.v1.playlist.oneClick(
+                playlistId,
+                getPlaylistFileNameFromPlaylist(data),
+                towerOfTechWebsiteOrigin,
+              )}
             >
               OneClick
             </VisualNovelOneClickAnchor>
@@ -69,7 +78,7 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
           <div className="text-xl ml-auto mt-auto text-right">
             <VisualNovelATag
               download
-              href={links.api.v1.playlist.download(data?.id)}
+              href={links.api.v1.playlist.download(data.id)}
             >
               Download
             </VisualNovelATag>

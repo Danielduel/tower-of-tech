@@ -6,22 +6,25 @@ import { PlaylistMaps } from "@/apps/editor/pages/editor/playlist/PlaylistItem.t
 import { VisualNovelDivider } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { VisualNovelLink } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { VisualNovelAnchor } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { VisualNovelOneClickAnchor } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { links } from "@/apps/editor/routing.config.ts";
 import { makePlaylistId } from "@/packages/types/brands.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
+import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
 
 export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
   const { playlistId } = useParams();
-  const { data } = trpc.playlist.getById.useQuery({ id: playlistId });
+  const { data } = trpc.playlist.getById.useQuery({ id: playlistId! }, {
+    enabled: !!playlistId,
+  });
 
   if (!playlistId) return null;
+  if (!data) return "Loading...";
 
   const brandedPlaylistId = makePlaylistId(playlistId);
 
   return (
     <VisualNovelContainer
-      imageUrl={data?.imageUrl}
+      imageUrl={data.imageUrl}
       ref={ref}
       row
       header={
@@ -33,7 +36,7 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
             {data?.playlistAuthor}
           </div>
           <div className="text-xl">
-            Items: {data?.songs.length}
+            Items: {data.songs.length}
           </div>
 
           <VisualNovelDivider />
@@ -42,6 +45,7 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
             <VisualNovelAnchor
               href={links.api.v1.playlist.oneClick(
                 brandedPlaylistId,
+                getPlaylistFileNameFromPlaylist(data),
                 towerOfTechWebsiteOrigin,
               )}
             >
@@ -61,7 +65,7 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
       }
     >
       <div className="ml-3">
-        {data?.songs && <PlaylistMaps maps={data.songs} />}
+        {data.songs && <PlaylistMaps maps={data.songs} />}
       </div>
     </VisualNovelContainer>
   );

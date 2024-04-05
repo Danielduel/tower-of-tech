@@ -1,4 +1,8 @@
 import {
+  apiV1HandlerGetPlaylistByIdOneClick,
+  apiV1HandlerGetPlaylistByIdOneClickRoute,
+} from "@/packages/api/v1/playlist/get.ts";
+import {
   apiV1HandlerGetPlaylistById,
   apiV1HandlerGetPlaylistByIdDownload,
   apiV1HandlerGetPlaylistByIdDownloadRoute,
@@ -10,6 +14,8 @@ const route = router({
   [apiV1HandlerGetPlaylistByIdRoute]: apiV1HandlerGetPlaylistById,
   [apiV1HandlerGetPlaylistByIdDownloadRoute]:
     apiV1HandlerGetPlaylistByIdDownload,
+  [apiV1HandlerGetPlaylistByIdOneClickRoute]:
+    apiV1HandlerGetPlaylistByIdOneClick,
 });
 
 export const apiV1Handler = async (request: Request) => {

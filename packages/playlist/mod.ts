@@ -1,8 +1,4 @@
-import {
-  makePlaylistId,
-  makePlaylistUrl,
-  PlaylistId,
-} from "@/packages/types/brands.ts";
+import { makePlaylistId, PlaylistId } from "@/packages/types/brands.ts";
 
 export type ToTPlaylistMappingItemSpeed =
   | "Adep"
@@ -172,10 +168,6 @@ export const playlistMapping: Record<string, ToTPlaylistMappingItem> = {
     techCategory: "Hitech",
   },
 };
-
-export const getPlaylistUrlFromPlaylistId = (
-  playlistId: PlaylistId,
-) => makePlaylistUrl(`/api/v1/playlist/get/${playlistId}.bplist`);
 
 export const getToTPlaylistSpeedCategory = (
   speedCategory: ToTPlaylistMappingItemSpeed,

@@ -24,7 +24,7 @@ export const playlistIdToCustomData = (playlistId: PlaylistId) => {
     customData: {
       syncURL: makePlaylistUrl(
         new URL(
-          links.api.v1.playlist.raw(
+          links.api.v1.playlist.data(
             makePlaylistId(playlistId),
             towerOfTechWebsiteOrigin,
           ),

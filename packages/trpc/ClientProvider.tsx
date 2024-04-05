@@ -1,4 +1,4 @@
-import { type ReactNode } from "react";
+import type { ReactNode } from "react";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { Hydrate, QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/packages/react-query/query-client.ts";
