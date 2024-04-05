@@ -9,7 +9,9 @@ import { MapItem } from "@/apps/editor/components/MapItem.tsx";
 import { Image } from "@/apps/editor/components/Image.tsx";
 import { links } from "@/apps/editor/routing.config.ts";
 
-export const PlaylistMaps: FC<WithMaps> = ({ maps }) => {
+export const PlaylistMaps: FC<WithMaps & { prependKey: string }> = (
+  { maps, prependKey },
+) => {
   const hashes = maps.flatMap((map) => map.hash.toString());
   const { data: resolved } = trpc.map.resolve.useQuery({ hashes }, {
     staleTime: Infinity,
@@ -19,7 +21,7 @@ export const PlaylistMaps: FC<WithMaps> = ({ maps }) => {
     <div className="mx-1 border-l-1 border-black">
       {maps.map((map) => (
         <MapItem
-          key={map.hash}
+          key={`${prependKey}-${map.hash}`}
           playlistMapItem={map}
           beatSaverMapItem={resolved && resolved[map.hash.toLowerCase()]}
         />
@@ -28,8 +30,10 @@ export const PlaylistMaps: FC<WithMaps> = ({ maps }) => {
   );
 };
 
-export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = (
-  { playlist },
+export const Playlist: FC<
+  (WithPlaylist | WithPlaylistWithImageAsUrl) & { prependKey: string }
+> = (
+  { playlist, prependKey },
 ) => {
   const imageSrc = "imageUrl" in playlist
     ? playlist.imageUrl
@@ -81,7 +85,7 @@ export const Playlist: FC<WithPlaylist | WithPlaylistWithImageAsUrl> = (
         </div>
       </div>
       <div className="mt-2">
-        <PlaylistMaps maps={playlist.songs} />
+        <PlaylistMaps prependKey={prependKey} maps={playlist.songs} />
       </div>
     </div>
   );

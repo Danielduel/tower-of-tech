@@ -5,10 +5,19 @@ import { trpc } from "@/packages/trpc/trpc-react.ts";
 
 export const PlaylistList: FC = () => {
   const { playlistId } = useParams();
-  const { data: playlist } = trpc.playlist.getById.useQuery({ id: playlistId }, { enabled: !!playlistId, staleTime: Infinity });
+  const { data: playlist } = trpc.playlist.getById.useQuery(
+    { id: playlistId },
+    { enabled: !!playlistId, staleTime: Infinity },
+  );
 
   if (playlist) {
-    return <Playlist key={playlist.id} playlist={playlist} />
+    return (
+      <Playlist
+        prependKey={playlist.id}
+        key={playlist.id}
+        playlist={playlist}
+      />
+    );
   }
 
   return null;

@@ -68,7 +68,8 @@ export const PlaylistFromFile: FC = () => {
       {playlists &&
         playlists.map((playlist) => (
           <Playlist
-            key={playlist.id}
+            key={playlist.customData?.id}
+            prependKey={playlist.customData?.id}
             playlist={playlist as typeof BeatSaberPlaylistSchema._type}
           />
         ))}
