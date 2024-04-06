@@ -1,5 +1,5 @@
 import { HandlerForRoute } from "@/packages/api/v1/types.ts";
-import { playlistIdWithFileExtensionToPlaylistId } from "@/packages/api/v1/playlist/util.ts";
+import { getPlaylistIdFromPlaylistIdWithExtension } from "@/packages/playlist/getPlaylistIdFromPlaylistIdWithExtension.ts";
 import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
 import { fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage } from "@/packages/database-editor/utils.ts";
 
@@ -13,7 +13,7 @@ export const apiV1HandlerGetPlaylistByIdOneClickRoute =
 export const apiV1HandlerGetPlaylistById: HandlerForRoute<
   typeof apiV1HandlerGetPlaylistByIdRoute
 > = async (req, ctx, { playlistIdWithFileExtension }) => {
-  const playlistId = playlistIdWithFileExtensionToPlaylistId(
+  const playlistId = getPlaylistIdFromPlaylistIdWithExtension(
     playlistIdWithFileExtension,
   );
   const data =
@@ -35,7 +35,7 @@ export const apiV1HandlerGetPlaylistById: HandlerForRoute<
 export const apiV1HandlerGetPlaylistByIdDownload: HandlerForRoute<
   typeof apiV1HandlerGetPlaylistByIdDownloadRoute
 > = async (req, ctx, { playlistIdWithFileExtension }) => {
-  const playlistId = playlistIdWithFileExtensionToPlaylistId(
+  const playlistId = getPlaylistIdFromPlaylistIdWithExtension(
     playlistIdWithFileExtension,
   );
   const data =
@@ -59,7 +59,7 @@ export const apiV1HandlerGetPlaylistByIdDownload: HandlerForRoute<
 export const apiV1HandlerGetPlaylistByIdOneClick: HandlerForRoute<
   typeof apiV1HandlerGetPlaylistByIdOneClickRoute
 > = async (req, ctx, { playlistIdWithFileExtension }) => {
-  const playlistId = playlistIdWithFileExtensionToPlaylistId(
+  const playlistId = getPlaylistIdFromPlaylistIdWithExtension(
     playlistIdWithFileExtension,
   );
   const data =

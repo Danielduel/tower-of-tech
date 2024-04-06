@@ -1,6 +1,6 @@
 import { makePlaylistId } from "@/packages/types/brands.ts";
 
-export const playlistIdWithFileExtensionToPlaylistId = (
+export const getPlaylistIdFromPlaylistIdWithExtension = (
   playlistIdWithFileExtension: string,
 ) => {
   const playlistId = playlistIdWithFileExtension
