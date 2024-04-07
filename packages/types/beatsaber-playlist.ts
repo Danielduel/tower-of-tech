@@ -30,7 +30,10 @@ export const BeatSaberPlaylistSongItemSchema = z.object({
 export const BeatSaberPlaylistCustomDataSchema = z.object({
   AllowDuplicates: z.boolean().optional(),
   syncURL: z.string().transform(makePlaylistUrl).optional(),
-  sort: z.number().optional(),
+  sort: z.number().min(0, "Sort has to be higherequal 0").max(
+    12312312312124124,
+    "Sort has to be lowerequal 12312312312124124",
+  ).optional(),
   owner: z.string().optional(),
   id: z.string().optional(),
 });
