@@ -104,6 +104,7 @@ const Difficulties: FC<
 
   return availableDifficulties.map((d) => (
     <Difficulty
+      key={`${d.characteristic} - ${d.name}`}
       difficulty={d}
       selected={selectedDifficulties.some((s) => difficultyEquals(s, d))}
     />
