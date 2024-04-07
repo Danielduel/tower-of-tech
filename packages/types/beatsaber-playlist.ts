@@ -33,7 +33,7 @@ export const BeatSaberPlaylistCustomDataSchema = z.object({
   sort: z.number().min(0, "Sort has to be higherequal 0").max(
     12312312312124124,
     "Sort has to be lowerequal 12312312312124124",
-  ).optional(),
+  ).int("Sort has to be an integer").optional(),
   owner: z.string().optional(),
   id: z.string().optional(),
 });
