@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHR9VPKXQ898F7TPWVFM",
     "owner": "Danielduel",
-    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHR9VPKXQ898F7TPWVFM"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHR9VPKXQ898F7TPWVFM/download"
   },
   "songs": [
     {
@@ -881,6 +881,54 @@
         {
           "characteristic": "Lawless",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "4AM",
+      "levelAuthorName": "xxZAROKxx",
+      "hash": "F23AA16AB721C90D5602852A619D78AA7990879A",
+      "levelid": "custom_level_F23AA16AB721C90D5602852A619D78AA7990879A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "GAO-GAO-GAA!",
+      "levelAuthorName": "susang",
+      "hash": "53109EBDFCD2E1B506F81C4E20C7D0C5FACEABB1",
+      "levelid": "custom_level_53109EBDFCD2E1B506F81C4E20C7D0C5FACEABB1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Spring Thief",
+      "levelAuthorName": "AntiLink & TG90",
+      "hash": "7FCB2AE0881C36611F53C32F0D9BC3A1AA0E9BED",
+      "levelid": "custom_level_7FCB2AE0881C36611F53C32F0D9BC3A1AA0E9BED",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Where Ever i Go - One Republic",
+      "levelAuthorName": "Mootachi",
+      "hash": "1952B5BD1B6AE39524370EE80CD5867A1079B490",
+      "levelid": "custom_level_1952B5BD1B6AE39524370EE80CD5867A1079B490",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

@@ -378,18 +378,6 @@
       ]
     },
     {
-      "songName": "Death Waltz",
-      "levelAuthorName": "Aimedhades16",
-      "hash": "B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
-      "levelid": "custom_level_B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Lilith",
       "levelAuthorName": "shad",
       "hash": "E288E3BCB890B05D2F010BC8B7B7C497C71CB575",
@@ -1222,6 +1210,78 @@
       "levelAuthorName": "CoolingCloset",
       "hash": "F3BD378DFE91F4371B976493C95936878D65448E",
       "levelid": "custom_level_F3BD378DFE91F4371B976493C95936878D65448E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "¡MAS CRAZY!",
+      "levelAuthorName": "Jabob vs. Hener",
+      "hash": "3C5216A30AE8C175CC4B5A90D1A82D09EE36EEC3",
+      "levelid": "custom_level_3C5216A30AE8C175CC4B5A90D1A82D09EE36EEC3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "ASTRO+NYAUT",
+      "levelAuthorName": "Gazer",
+      "hash": "7FBB0F39888A388D4E3EC5E8E26232159A7CF3A8",
+      "levelid": "custom_level_7FBB0F39888A388D4E3EC5E8E26232159A7CF3A8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Never Really Over",
+      "levelAuthorName": "Jabob",
+      "hash": "E5D0515604B10EA6BD7F7F29FB1E2C3C473519DF",
+      "levelid": "custom_level_E5D0515604B10EA6BD7F7F29FB1E2C3C473519DF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Duallel Spirit",
+      "levelAuthorName": "Baguette",
+      "hash": "A1B01FFAD9F5F20975CBC0D4FB89EB9D576A2DA6",
+      "levelid": "custom_level_A1B01FFAD9F5F20975CBC0D4FB89EB9D576A2DA6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Any%",
+      "levelAuthorName": "BigOlDumplin",
+      "hash": "5FEAC61AD18A98BB064D8833FCF4A62353D5C9A9",
+      "levelid": "custom_level_5FEAC61AD18A98BB064D8833FCF4A62353D5C9A9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "The Plum Blossom Deity",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "B93088AC1698D8ABF08C2D8C6075D5F409A72FEA",
+      "levelid": "custom_level_B93088AC1698D8ABF08C2D8C6075D5F409A72FEA",
       "difficulties": [
         {
           "characteristic": "Standard",

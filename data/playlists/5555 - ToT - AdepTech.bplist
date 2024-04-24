@@ -2,7 +2,8 @@
   "playlistTitle": "ToT - AdepTech",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHRJMANCHBSA0CVA354H"
+    "id": "01HK8XCHRJMANCHBSA0CVA354H",
+    "sort": 5555
   },
   "songs": [
     {
@@ -762,18 +763,6 @@
       ]
     },
     {
-      "songName": "Deertracks",
-      "levelAuthorName": "AllPoland & Phøenix",
-      "hash": "63757612F82E0906C290323A373E4874E5176958",
-      "levelid": "custom_level_63757612F82E0906C290323A373E4874E5176958",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "My Head & My Heart",
       "levelAuthorName": "Faded 99",
       "hash": "7B337085DAD8E0D4B5DD7F0F88F44EA9D5D2D42A",
@@ -794,18 +783,6 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "Cold-Blooded",
-      "levelAuthorName": "ben208, Phøenix",
-      "hash": "A57F26985FE0BB67F571146705E929BCBF02EC02",
-      "levelid": "custom_level_A57F26985FE0BB67F571146705E929BCBF02EC02",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -1202,6 +1179,54 @@
         {
           "characteristic": "Standard",
           "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Kill Shot",
+      "levelAuthorName": "srode",
+      "hash": "A0E285DB078C927FF0A4EBFE69D3972E23827E71",
+      "levelid": "custom_level_A0E285DB078C927FF0A4EBFE69D3972E23827E71",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Aimai Cyborg",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "F0E0CF23D7FBA413C1F35478DA694CB04E7E1768",
+      "levelid": "custom_level_F0E0CF23D7FBA413C1F35478DA694CB04E7E1768",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Magnetic",
+      "levelAuthorName": "minsiii, Jonas_0_0",
+      "hash": "6093201FF6C19A184D52228B8403C7C2D6A5AC4E",
+      "levelid": "custom_level_6093201FF6C19A184D52228B8403C7C2D6A5AC4E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Mr. Vampire",
+      "levelAuthorName": "srode, Jonas_0_0",
+      "hash": "5289D710242E56075468D1635C74384BB6B4852F",
+      "levelid": "custom_level_5289D710242E56075468D1635C74384BB6B4852F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

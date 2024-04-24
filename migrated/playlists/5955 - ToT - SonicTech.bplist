@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203SGVE0M1ZBPQ89F42K7",
     "owner": "Danielduel",
-    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203SGVE0M1ZBPQ89F42K7"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203SGVE0M1ZBPQ89F42K7/download"
   },
   "songs": [
     {
@@ -61,6 +61,18 @@
       "levelAuthorName": "Uragirimono & Comyute",
       "hash": "32A30609820C5746AF4AE120F72DC51A3CBB277B",
       "levelid": "custom_level_32A30609820C5746AF4AE120F72DC51A3CBB277B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Death Waltz",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
+      "levelid": "custom_level_B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
       "difficulties": [
         {
           "characteristic": "Standard",

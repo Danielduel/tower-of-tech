@@ -186,30 +186,6 @@
       ]
     },
     {
-      "songName": "Honeymoon Phase",
-      "levelAuthorName": "Zyxi & Vylet",
-      "hash": "3BBA20454D309D851B8C6E921897DEFCF119042F",
-      "levelid": "custom_level_3BBA20454D309D851B8C6E921897DEFCF119042F",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "On Replay",
-      "levelAuthorName": "Gabriel & Marsh",
-      "hash": "99E5D817086DCDB0BE2A5D66DC7F0D2AD8064497",
-      "levelid": "custom_level_99E5D817086DCDB0BE2A5D66DC7F0D2AD8064497",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "FANFARE",
       "levelAuthorName": "sofmoh",
       "hash": "D034C6BBEA79F4083BEE2E298D05DA08EFEC2AF1",
@@ -306,22 +282,10 @@
       ]
     },
     {
-      "songName": "fantasy/reality",
-      "levelAuthorName": "Gabriel",
-      "hash": "C96AEC1072B2C8F188C2B2392E644E18A62B3592",
-      "levelid": "custom_level_C96AEC1072B2C8F188C2B2392E644E18A62B3592",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Cure For Me",
       "levelAuthorName": "Groovy",
-      "hash": "335FA11875891E4232E8B5C8D99790B1BC703C8B",
-      "levelid": "custom_level_335FA11875891E4232E8B5C8D99790B1BC703C8B",
+      "hash": "EA7B13580B437D88F06747A27EC8727D563548E4",
+      "levelid": "custom_level_EA7B13580B437D88F06747A27EC8727D563548E4",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -449,12 +413,7 @@
       "levelAuthorName": "Cush & WinterEdge",
       "hash": "A049FAB55D0B295E1E174D02532009F341081954",
       "levelid": "custom_level_A049FAB55D0B295E1E174D02532009F341081954",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
+      "difficulties": []
     },
     {
       "songName": "Titanium ft. Moew",
@@ -497,12 +456,7 @@
       "levelAuthorName": "CoolingCloset",
       "hash": "8A96932EF58410F6320CAEFCA6E6377DB8E0B493",
       "levelid": "custom_level_8A96932EF58410F6320CAEFCA6E6377DB8E0B493",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
+      "difficulties": []
     },
     {
       "songName": "nasti",
@@ -665,18 +619,6 @@
       "levelAuthorName": "CoolingCloset",
       "hash": "D9A477BAC5274D6CE75342AF62C5CF7CCBA161FD",
       "levelid": "custom_level_D9A477BAC5274D6CE75342AF62C5CF7CCBA161FD",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "hitomania",
-      "levelAuthorName": "Kanahebi",
-      "hash": "77B4ABED1AF10207E8ACFA49C290E02B155B4390",
-      "levelid": "custom_level_77B4ABED1AF10207E8ACFA49C290E02B155B4390",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1073,6 +1015,78 @@
       "levelAuthorName": "jalaxyweswhalscarappytrollerq",
       "hash": "BCDF934683BA5EA9CC9303D49FEDC078ACA383A6",
       "levelid": "custom_level_BCDF934683BA5EA9CC9303D49FEDC078ACA383A6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Da Xi (大喜)",
+      "levelAuthorName": "Cush",
+      "hash": "5362E6D951DD58A9BA68E3183091F67537537DDF",
+      "levelid": "custom_level_5362E6D951DD58A9BA68E3183091F67537537DDF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "LYCANTHROPY",
+      "levelAuthorName": "Doogle",
+      "hash": "1F4C0C5C2B29BD72FC89936F1C1808D4312EECC1",
+      "levelid": "custom_level_1F4C0C5C2B29BD72FC89936F1C1808D4312EECC1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Loveit?",
+      "levelAuthorName": "suisuichu",
+      "hash": "9D98FB6D28366010688EC1F2D47EB734F0EF2432",
+      "levelid": "custom_level_9D98FB6D28366010688EC1F2D47EB734F0EF2432",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Airhead",
+      "levelAuthorName": "kizuflux",
+      "hash": "41DF90FF901F8D2DFEE80D6F95CC3087EEF12E35",
+      "levelid": "custom_level_41DF90FF901F8D2DFEE80D6F95CC3087EEF12E35",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Starships",
+      "levelAuthorName": "okazu",
+      "hash": "84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
+      "levelid": "custom_level_84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "THE SIXTH SENSE",
+      "levelAuthorName": "Marsh & Ani",
+      "hash": "C4E39D34A2CAFEB1DDE5141106099F47DB6D7A06",
+      "levelid": "custom_level_C4E39D34A2CAFEB1DDE5141106099F47DB6D7A06",
       "difficulties": [
         {
           "characteristic": "Standard",

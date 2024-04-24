@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RYZX1QKGFSX53GTJ1A",
     "owner": "Danielduel",
-    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203RYZX1QKGFSX53GTJ1A"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203RYZX1QKGFSX53GTJ1A/download"
   },
   "songs": [
     {
@@ -136,6 +136,42 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Sweet Dreams feat.Rica",
+      "levelAuthorName": "CharlotteAulin",
+      "hash": "B5C42193C42B1D865A9C834BADB070666C5D32EE",
+      "levelid": "custom_level_B5C42193C42B1D865A9C834BADB070666C5D32EE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Lunes ng Umaga (monday morning)",
+      "levelAuthorName": "Cush & WinterEdge",
+      "hash": "A049FAB55D0B295E1E174D02532009F341081954",
+      "levelid": "custom_level_A049FAB55D0B295E1E174D02532009F341081954",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Honeymoon Phase",
+      "levelAuthorName": "Zyxi & Vylet",
+      "hash": "3BBA20454D309D851B8C6E921897DEFCF119042F",
+      "levelid": "custom_level_3BBA20454D309D851B8C6E921897DEFCF119042F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]

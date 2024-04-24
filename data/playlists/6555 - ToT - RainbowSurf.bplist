@@ -2,7 +2,8 @@
   "playlistTitle": "ToT - RainbowSurf",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HM4203RA2Q1R212DYYZW0VE4"
+    "id": "01HM4203RA2Q1R212DYYZW0VE4",
+    "sort": 6555
   },
   "songs": [
     {
@@ -286,6 +287,30 @@
       "levelAuthorName": "BlAck_vOid-1001 ",
       "hash": "DFC07E66C80B7B3BED793524F0FE144673AD775F",
       "levelid": "custom_level_DFC07E66C80B7B3BED793524F0FE144673AD775F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "U-0",
+      "levelAuthorName": "namaki_duo",
+      "hash": "32533884692A564469EB2227EC96F2327D1FB9F4",
+      "levelid": "custom_level_32533884692A564469EB2227EC96F2327D1FB9F4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dancing on the Street",
+      "levelAuthorName": "StevenBTW",
+      "hash": "A082256704086CB85659AFA869C2F991D101BC34",
+      "levelid": "custom_level_A082256704086CB85659AFA869C2F991D101BC34",
       "difficulties": [
         {
           "characteristic": "Standard",

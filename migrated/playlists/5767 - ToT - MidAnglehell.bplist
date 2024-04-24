@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203SHXNGDMWZVY685MDVR",
     "owner": "Danielduel",
-    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203SHXNGDMWZVY685MDVR"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203SHXNGDMWZVY685MDVR/download"
   },
   "songs": [
     {
@@ -445,6 +445,66 @@
       "levelAuthorName": "Animp0str",
       "hash": "E409BB1A946D2BB968AED7AA4C5AC12919F24186",
       "levelid": "custom_level_E409BB1A946D2BB968AED7AA4C5AC12919F24186",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "hitomania",
+      "levelAuthorName": "Kanahebi",
+      "hash": "77B4ABED1AF10207E8ACFA49C290E02B155B4390",
+      "levelid": "custom_level_77B4ABED1AF10207E8ACFA49C290E02B155B4390",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hold On Tight",
+      "levelAuthorName": "Maydeen",
+      "hash": "664383DD2E913B72B83B977EAA77840B45DC6E27",
+      "levelid": "custom_level_664383DD2E913B72B83B977EAA77840B45DC6E27",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cat Rubbing",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "8A96932EF58410F6320CAEFCA6E6377DB8E0B493",
+      "levelid": "custom_level_8A96932EF58410F6320CAEFCA6E6377DB8E0B493",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hold On Tight",
+      "levelAuthorName": "Maydeen",
+      "hash": "FADB7C4CE82C2142D086BAB32435AEDDCDD57B05",
+      "levelid": "custom_level_FADB7C4CE82C2142D086BAB32435AEDDCDD57B05",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "It's Juicy",
+      "levelAuthorName": "Petersome",
+      "hash": "CBFA6A08F99E7F72C059485C1E1071D4AE32CFCA",
+      "levelid": "custom_level_CBFA6A08F99E7F72C059485C1E1071D4AE32CFCA",
       "difficulties": [
         {
           "characteristic": "Standard",

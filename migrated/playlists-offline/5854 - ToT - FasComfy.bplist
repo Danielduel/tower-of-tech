@@ -8,8 +8,8 @@
     {
       "songName": "The Witch Hunt",
       "levelAuthorName": "Komeijisan051",
-      "hash": "8FFFF7DB5BFF8D305E2DE73E0FA16AB11A292BD9",
-      "levelid": "custom_level_8FFFF7DB5BFF8D305E2DE73E0FA16AB11A292BD9",
+      "hash": "01BFDCCBCD2AD8B0091F7F7757857EBC120C4F4A",
+      "levelid": "custom_level_01BFDCCBCD2AD8B0091F7F7757857EBC120C4F4A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -82,6 +82,30 @@
       "levelAuthorName": "Voidless",
       "hash": "9F1B294D2AEB9181C7B92C3A1285A1A6593CCD97",
       "levelid": "custom_level_9F1B294D2AEB9181C7B92C3A1285A1A6593CCD97",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Diastrophism",
+      "levelAuthorName": "potasium_",
+      "hash": "95CEDADD5A9FAB220C2F5AB411C4619018AC298C",
+      "levelid": "custom_level_95CEDADD5A9FAB220C2F5AB411C4619018AC298C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "METAVERSE DO BE LIKE THIS",
+      "levelAuthorName": "x-mens",
+      "hash": "48DD32F61E990B7DBF8823DD9E07E9E6AD7BDF8D",
+      "levelid": "custom_level_48DD32F61E990B7DBF8823DD9E07E9E6AD7BDF8D",
       "difficulties": [
         {
           "characteristic": "Standard",

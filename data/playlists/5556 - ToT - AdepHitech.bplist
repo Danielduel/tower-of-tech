@@ -2,7 +2,8 @@
   "playlistTitle": "ToT - AdepHitech",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHRNPHBZSJMKFWBPKD32"
+    "id": "01HK8XCHRNPHBZSJMKFWBPKD32",
+    "sort": 5556
   },
   "songs": [
     {
@@ -662,6 +663,90 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Deertracks",
+      "levelAuthorName": "AllPoland & Phøenix",
+      "hash": "63757612F82E0906C290323A373E4874E5176958",
+      "levelid": "custom_level_63757612F82E0906C290323A373E4874E5176958",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cold-Blooded",
+      "levelAuthorName": "ben208, Phøenix",
+      "hash": "A57F26985FE0BB67F571146705E929BCBF02EC02",
+      "levelid": "custom_level_A57F26985FE0BB67F571146705E929BCBF02EC02",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "bad guy",
+      "levelAuthorName": "Ge2toro",
+      "hash": "1E728993774453BFCDDD27674A6C84C31D3E228D",
+      "levelid": "custom_level_1E728993774453BFCDDD27674A6C84C31D3E228D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Loyal to myself",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "04FD7F2BC875A3C57FFC4EC2529192E2866A6968",
+      "levelid": "custom_level_04FD7F2BC875A3C57FFC4EC2529192E2866A6968",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "sweet tooth",
+      "levelAuthorName": "GojiCrafter",
+      "hash": "8C4C9B03920D0ACE0468B4A1E8B42E5A38240F0E",
+      "levelid": "custom_level_8C4C9B03920D0ACE0468B4A1E8B42E5A38240F0E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "君の脈で踊りたかつた",
+      "levelAuthorName": "Eckimlon",
+      "hash": "CAEC6F76304DD9B588BAD14DC0E49B879FDE7C04",
+      "levelid": "custom_level_CAEC6F76304DD9B588BAD14DC0E49B879FDE7C04",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "lil' freak",
+      "levelAuthorName": "Kassi",
+      "hash": "9B4C4BEE27E8424C1EEBF919C1EEDB0750522522",
+      "levelid": "custom_level_9B4C4BEE27E8424C1EEBF919C1EEDB0750522522",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

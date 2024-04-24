@@ -2,7 +2,8 @@
   "playlistTitle": "ToT - AccTempo",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHRRG9MJ0QM2FT5ZP6SP"
+    "id": "01HK8XCHRRG9MJ0QM2FT5ZP6SP",
+    "sort": 5668
   },
   "songs": [
     {
@@ -178,6 +179,30 @@
       "levelAuthorName": "Ken_Monogatari",
       "hash": "652004D416ECE07B35E63E57C9364FD75D3A4AD5",
       "levelid": "custom_level_652004D416ECE07B35E63E57C9364FD75D3A4AD5",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "影子小姐",
+      "levelAuthorName": "staryouh",
+      "hash": "87A0DD2591BD2428D9F91903431724F4053C7D2F",
+      "levelid": "custom_level_87A0DD2591BD2428D9F91903431724F4053C7D2F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Kitai",
+      "levelAuthorName": "Cush",
+      "hash": "E2D418217E7AAC80DDC547259EF7A8187C239416",
+      "levelid": "custom_level_E2D418217E7AAC80DDC547259EF7A8187C239416",
       "difficulties": [
         {
           "characteristic": "Lawless",

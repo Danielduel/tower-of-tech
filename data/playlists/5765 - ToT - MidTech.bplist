@@ -2,7 +2,8 @@
   "playlistTitle": "ToT - MidTech",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHRK0NSY3PNTPPBJ0X1F"
+    "id": "01HK8XCHRK0NSY3PNTPPBJ0X1F",
+    "sort": 5765
   },
   "songs": [
     {
@@ -166,18 +167,6 @@
       "levelAuthorName": "Eileeks",
       "hash": "272B3D70F4CA7AAAB25058EF3863B590A3182BFE",
       "levelid": "custom_level_272B3D70F4CA7AAAB25058EF3863B590A3182BFE",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "¡MAS CRAZY!",
-      "levelAuthorName": "Jabob vs. Hener",
-      "hash": "3C5216A30AE8C175CC4B5A90D1A82D09EE36EEC3",
-      "levelid": "custom_level_3C5216A30AE8C175CC4B5A90D1A82D09EE36EEC3",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -402,18 +391,6 @@
       ]
     },
     {
-      "songName": "BRAZILIAN DANÇA PHONK",
-      "levelAuthorName": "Artsiio",
-      "hash": "D51E116385A557B3CA8E757A061515DA47DD1AA8",
-      "levelid": "custom_level_D51E116385A557B3CA8E757A061515DA47DD1AA8",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Monster",
       "levelAuthorName": "Timeweaver",
       "hash": "24B1990F8F72224F7827721BA16C82BD3246E926",
@@ -442,18 +419,6 @@
       "levelAuthorName": "BigOlDumplin",
       "hash": "D52D404A164D9F0975586E90C0DA82AB027BC124",
       "levelid": "custom_level_D52D404A164D9F0975586E90C0DA82AB027BC124",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "ASTRO+NYAUT",
-      "levelAuthorName": "Gazer",
-      "hash": "7FBB0F39888A388D4E3EC5E8E26232159A7CF3A8",
-      "levelid": "custom_level_7FBB0F39888A388D4E3EC5E8E26232159A7CF3A8",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1402,6 +1367,78 @@
       "levelAuthorName": "abcbadq",
       "hash": "C40B2D2AEF71EA07709BA99CC6246029F61C767C",
       "levelid": "custom_level_C40B2D2AEF71EA07709BA99CC6246029F61C767C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Mambo Number 5",
+      "levelAuthorName": "Z-ANESaber",
+      "hash": "8192BDA9A875A958BE8F549AB1C9F70E50CD8E68",
+      "levelid": "custom_level_8192BDA9A875A958BE8F549AB1C9F70E50CD8E68",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Idol",
+      "levelAuthorName": "yabje, Rusty & Andy",
+      "hash": "8EA6D40002CECB79121F126921BEE431A5A046F5",
+      "levelid": "custom_level_8EA6D40002CECB79121F126921BEE431A5A046F5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Rabbit Hole",
+      "levelAuthorName": "Anammelech",
+      "hash": "506B58ADD6E31BF7A1331B94723DFBA6FB60F1AE",
+      "levelid": "custom_level_506B58ADD6E31BF7A1331B94723DFBA6FB60F1AE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "On Replay",
+      "levelAuthorName": "Gabriel & Marsh",
+      "hash": "99E5D817086DCDB0BE2A5D66DC7F0D2AD8064497",
+      "levelid": "custom_level_99E5D817086DCDB0BE2A5D66DC7F0D2AD8064497",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "With You",
+      "levelAuthorName": "P90KILLR",
+      "hash": "884176A5151AD5DBD1D504B0C697DC60742BFDA6",
+      "levelid": "custom_level_884176A5151AD5DBD1D504B0C697DC60742BFDA6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hana ni Natte",
+      "levelAuthorName": "nitronik.exe, steeak",
+      "hash": "203F27EF7D7DF500451046153460F2233DD2385E",
+      "levelid": "custom_level_203F27EF7D7DF500451046153460F2233DD2385E",
       "difficulties": [
         {
           "characteristic": "Standard",

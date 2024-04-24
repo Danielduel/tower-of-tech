@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203SPHDAP94MS02S49JC6",
     "owner": "Danielduel",
-    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203SPHDAP94MS02S49JC6"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HM4203SPHDAP94MS02S49JC6/download"
   },
   "songs": [
     {
@@ -81,30 +81,6 @@
       ]
     },
     {
-      "songName": "Diastrophism",
-      "levelAuthorName": "potasium_",
-      "hash": "95CEDADD5A9FAB220C2F5AB411C4619018AC298C",
-      "levelid": "custom_level_95CEDADD5A9FAB220C2F5AB411C4619018AC298C",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "With You",
-      "levelAuthorName": "P90KILLR",
-      "hash": "884176A5151AD5DBD1D504B0C697DC60742BFDA6",
-      "levelid": "custom_level_884176A5151AD5DBD1D504B0C697DC60742BFDA6",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Good L_ck (Yo_'re F_cked)",
       "levelAuthorName": "Rexxz",
       "hash": "C19FD0820A1B2FA4CF167898B1878F085D7E2239",
@@ -165,18 +141,6 @@
       ]
     },
     {
-      "songName": "Where Ever i Go - One Republic",
-      "levelAuthorName": "Mootachi",
-      "hash": "1952B5BD1B6AE39524370EE80CD5867A1079B490",
-      "levelid": "custom_level_1952B5BD1B6AE39524370EE80CD5867A1079B490",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "Seishun Complex",
       "levelAuthorName": "Comyute",
       "hash": "027AFD26DC08FBC807627EB35EE644126A5B1AE7",
@@ -193,18 +157,6 @@
       "levelAuthorName": "Ruz",
       "hash": "F585036504200CA0141E2ACAB45984A9FEFCD748",
       "levelid": "custom_level_F585036504200CA0141E2ACAB45984A9FEFCD748",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "METAVERSE DO BE LIKE THIS",
-      "levelAuthorName": "x-mens",
-      "hash": "48DD32F61E990B7DBF8823DD9E07E9E6AD7BDF8D",
-      "levelid": "custom_level_48DD32F61E990B7DBF8823DD9E07E9E6AD7BDF8D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -569,6 +521,66 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Full Moon Full Life",
+      "levelAuthorName": "eurnkung",
+      "hash": "3692F278FDA8AB37BA2BB3AEA00BC187F0586A3C",
+      "levelid": "custom_level_3692F278FDA8AB37BA2BB3AEA00BC187F0586A3C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Red Sun",
+      "levelAuthorName": "eurnkung",
+      "hash": "5B12DAB5D3BAAE3A2BE3732FA4FA7A48871F3A11",
+      "levelid": "custom_level_5B12DAB5D3BAAE3A2BE3732FA4FA7A48871F3A11",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dancing on the Street",
+      "levelAuthorName": "StevenBTW",
+      "hash": "A082256704086CB85659AFA869C2F991D101BC34",
+      "levelid": "custom_level_A082256704086CB85659AFA869C2F991D101BC34",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "The Witch Hunt",
+      "levelAuthorName": "Komeijisan051",
+      "hash": "01BFDCCBCD2AD8B0091F7F7757857EBC120C4F4A",
+      "levelid": "custom_level_01BFDCCBCD2AD8B0091F7F7757857EBC120C4F4A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "The World Calling",
+      "levelAuthorName": "Jaack & RFCaps",
+      "hash": "9E87E9CC1EA37CFDC0A7AFE0B4DDF9BEC6798515",
+      "levelid": "custom_level_9E87E9CC1EA37CFDC0A7AFE0B4DDF9BEC6798515",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

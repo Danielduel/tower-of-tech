@@ -1136,8 +1136,8 @@
     {
       "songName": "Grand Escape",
       "levelAuthorName": "BigOlDumplin",
-      "hash": "94859BE4D098603036820A8745B6899785335817",
-      "levelid": "custom_level_94859BE4D098603036820A8745B6899785335817",
+      "hash": "B7CF080047CD5B27F2502607825F42534669EE94",
+      "levelid": "custom_level_B7CF080047CD5B27F2502607825F42534669EE94",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1390,6 +1390,150 @@
       "levelAuthorName": "wangyufy",
       "hash": "8324F3D2A20CF113159D0A401BC1C9302B1745B6",
       "levelid": "custom_level_8324F3D2A20CF113159D0A401BC1C9302B1745B6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Koisuru Fortune Cookie",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "45851292ADFDEC0AE79B2AC32953D63C2D681355",
+      "levelid": "custom_level_45851292ADFDEC0AE79B2AC32953D63C2D681355",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rivers Is A Vampire",
+      "levelAuthorName": "BrightKnight",
+      "hash": "12FF14B83D1620593C493E73482E499511488015",
+      "levelid": "custom_level_12FF14B83D1620593C493E73482E499511488015",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cheerleader",
+      "levelAuthorName": "Phøenix",
+      "hash": "F2EBCB29021E8C8E876EF4D884333CF8E3742C93",
+      "levelid": "custom_level_F2EBCB29021E8C8E876EF4D884333CF8E3742C93",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Nightcore - Little Swing",
+      "levelAuthorName": "Semdol",
+      "hash": "7FF9548CA4C8761B614F45FEA8473D49CAE154AA",
+      "levelid": "custom_level_7FF9548CA4C8761B614F45FEA8473D49CAE154AA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Infinite Colour",
+      "levelAuthorName": "Dr_Marc",
+      "hash": "B30100C7FD12B999B24ED6AE34E3B74DED2CF0F8",
+      "levelid": "custom_level_B30100C7FD12B999B24ED6AE34E3B74DED2CF0F8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Value",
+      "levelAuthorName": "muffn",
+      "hash": "449AAEB6AA83B70E88B404AA7555887709FFBE92",
+      "levelid": "custom_level_449AAEB6AA83B70E88B404AA7555887709FFBE92",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "A Little Bit",
+      "levelAuthorName": "Jonas_0_0, DesperateWoman",
+      "hash": "5B56959C296C7D45581E012FC6EF8C770870AB74",
+      "levelid": "custom_level_5B56959C296C7D45581E012FC6EF8C770870AB74",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Blossom ",
+      "levelAuthorName": "Dr_Marc",
+      "hash": "646C20D3903803D074B1987A1B6687DC3AF836F3",
+      "levelid": "custom_level_646C20D3903803D074B1987A1B6687DC3AF836F3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Alastor's Game",
+      "levelAuthorName": "MarsTheMano",
+      "hash": "1B8796F48E712F9FFC42BC8579C4F3450F597C68",
+      "levelid": "custom_level_1B8796F48E712F9FFC42BC8579C4F3450F597C68",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "lil' freak",
+      "levelAuthorName": "Kassi",
+      "hash": "9B4C4BEE27E8424C1EEBF919C1EEDB0750522522",
+      "levelid": "custom_level_9B4C4BEE27E8424C1EEBF919C1EEDB0750522522",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Indigo Coral",
+      "levelAuthorName": "P90KILLR",
+      "hash": "878201E8410D99FD395D0C9FAE74D25C380BEDCC",
+      "levelid": "custom_level_878201E8410D99FD395D0C9FAE74D25C380BEDCC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "fantasy/reality",
+      "levelAuthorName": "Gabriel",
+      "hash": "C96AEC1072B2C8F188C2B2392E644E18A62B3592",
+      "levelid": "custom_level_C96AEC1072B2C8F188C2B2392E644E18A62B3592",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHQ6KFWB4MRA796Q0245",
     "owner": "Danielduel",
-    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHQ6KFWB4MRA796Q0245"
+    "syncURL": "https://tower-of-tech-editor.deno.dev/api/v1/playlist/get/01HK8XCHQ6KFWB4MRA796Q0245/download"
   },
   "songs": [
     {
@@ -53,18 +53,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Airhead",
-      "levelAuthorName": "kizuflux",
-      "hash": "41DF90FF901F8D2DFEE80D6F95CC3087EEF12E35",
-      "levelid": "custom_level_41DF90FF901F8D2DFEE80D6F95CC3087EEF12E35",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -613,18 +601,6 @@
       "levelAuthorName": "eurnkung",
       "hash": "4DC6802A700F04FFDB6791330A4D0AED955E54A0",
       "levelid": "custom_level_4DC6802A700F04FFDB6791330A4D0AED955E54A0",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Nightcore - Little Swing",
-      "levelAuthorName": "Semdol",
-      "hash": "7FF9548CA4C8761B614F45FEA8473D49CAE154AA",
-      "levelid": "custom_level_7FF9548CA4C8761B614F45FEA8473D49CAE154AA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2305,6 +2281,150 @@
       "levelAuthorName": "Kassi",
       "hash": "18BA37E6120AB981C44B78DC1ACB4515C579CA91",
       "levelid": "custom_level_18BA37E6120AB981C44B78DC1ACB4515C579CA91",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "WAKING UP ",
+      "levelAuthorName": "ASharpBlade",
+      "hash": "7F31842139F029F32AA23C2E5A7591359E0891AD",
+      "levelid": "custom_level_7F31842139F029F32AA23C2E5A7591359E0891AD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "blindfolded",
+      "levelAuthorName": "Syndicate",
+      "hash": "B375B8711CC120713E57F0C26A3C9824D9CF6431",
+      "levelid": "custom_level_B375B8711CC120713E57F0C26A3C9824D9CF6431",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Control (ft. Max Marshall)",
+      "levelAuthorName": "pkdan",
+      "hash": "7235B5B0A776AC7FE7A9C33BEC0F2FFA05AEB11D",
+      "levelid": "custom_level_7235B5B0A776AC7FE7A9C33BEC0F2FFA05AEB11D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shut My Mouth",
+      "levelAuthorName": "Timeweaver",
+      "hash": "F63B33E36C0405F5DD264D000AA6754074A31CAB",
+      "levelid": "custom_level_F63B33E36C0405F5DD264D000AA6754074A31CAB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "ここにいる",
+      "levelAuthorName": "Davaayy",
+      "hash": "3CA6F450C06FCB9C4ECABBD4C4E5C32B69E2B06B",
+      "levelid": "custom_level_3CA6F450C06FCB9C4ECABBD4C4E5C32B69E2B06B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Feel It",
+      "levelAuthorName": "August",
+      "hash": "1646B71A9CA262CA56BDE71CC313D422964720AC",
+      "levelid": "custom_level_1646B71A9CA262CA56BDE71CC313D422964720AC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rising",
+      "levelAuthorName": "Royal",
+      "hash": "BD43D217963EFC49EF23F2EB4A33A9C22BE0516C",
+      "levelid": "custom_level_BD43D217963EFC49EF23F2EB4A33A9C22BE0516C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "request",
+      "levelAuthorName": "Fitman",
+      "hash": "141DD9543629251CCFE2A57CD3DD75F1B1199452",
+      "levelid": "custom_level_141DD9543629251CCFE2A57CD3DD75F1B1199452",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Summer",
+      "levelAuthorName": "RFColaf",
+      "hash": "23BE10AD479D6DDDB93C24BE3579E24547320CE0",
+      "levelid": "custom_level_23BE10AD479D6DDDB93C24BE3579E24547320CE0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "DIM SUM PARADISE",
+      "levelAuthorName": "HickeyChan",
+      "hash": "56F476B8404A1A6149E4C761B2B594B1A7D7107A",
+      "levelid": "custom_level_56F476B8404A1A6149E4C761B2B594B1A7D7107A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "VENTEN",
+      "levelAuthorName": "Kival Evan",
+      "hash": "C7F52DC50C1AB73D13614B898C0063AFAF0A0183",
+      "levelid": "custom_level_C7F52DC50C1AB73D13614B898C0063AFAF0A0183",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Mentai Cosmic",
+      "levelAuthorName": "BigSlick",
+      "hash": "D197C583AF9CD5E1A835D22E1747530569286FBD",
+      "levelid": "custom_level_D197C583AF9CD5E1A835D22E1747530569286FBD",
       "difficulties": [
         {
           "characteristic": "Standard",

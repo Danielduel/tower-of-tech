@@ -2,7 +2,8 @@
   "playlistTitle": "ToT - AdepComfy",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHRH8RDXEEP9F4211NVG"
+    "id": "01HK8XCHRH8RDXEEP9F4211NVG",
+    "sort": 5545
   },
   "songs": [
     {
@@ -104,8 +105,8 @@
     {
       "songName": "What You Know",
       "levelAuthorName": "Taddus",
-      "hash": "53D2AECF5458DA7A3F8F753BEFE964071027BC52",
-      "levelid": "custom_level_53D2AECF5458DA7A3F8F753BEFE964071027BC52",
+      "hash": "CF1C53499B3F238935B150FC781DF0C214E33CB1",
+      "levelid": "custom_level_CF1C53499B3F238935B150FC781DF0C214E33CB1",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -590,6 +591,42 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Mambo Number 5",
+      "levelAuthorName": "Z-ANESaber",
+      "hash": "8192BDA9A875A958BE8F549AB1C9F70E50CD8E68",
+      "levelid": "custom_level_8192BDA9A875A958BE8F549AB1C9F70E50CD8E68",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Feel It",
+      "levelAuthorName": "August",
+      "hash": "1646B71A9CA262CA56BDE71CC313D422964720AC",
+      "levelid": "custom_level_1646B71A9CA262CA56BDE71CC313D422964720AC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Heartbreak",
+      "levelAuthorName": "Fvwrvrd & Timbo",
+      "hash": "02B85D98CF71AA913723503466FA3DEDABD15EF0",
+      "levelid": "custom_level_02B85D98CF71AA913723503466FA3DEDABD15EF0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
         }
       ]
     }

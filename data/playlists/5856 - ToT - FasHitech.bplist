@@ -2,7 +2,8 @@
   "playlistTitle": "ToT - FasHitech",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HM4203S214YAVEJ6NWWE3KF0"
+    "id": "01HM4203S214YAVEJ6NWWE3KF0",
+    "sort": 5856
   },
   "songs": [
     {
@@ -106,6 +107,42 @@
       "levelAuthorName": "ViSi & SL4SH",
       "hash": "6D5B3419F2BA4B95D79E5422B1FCF568D3B80461",
       "levelid": "custom_level_6D5B3419F2BA4B95D79E5422B1FCF568D3B80461",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Meromeroid",
+      "levelAuthorName": "Emiru",
+      "hash": "76C02AFE93115043F229EEEFA20982445E09FF6D",
+      "levelid": "custom_level_76C02AFE93115043F229EEEFA20982445E09FF6D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "white girl manifestation type beat",
+      "levelAuthorName": "RetrX & WalkingKat",
+      "hash": "DD13B3A2F055B94247188FD031FBB4623FC38417",
+      "levelid": "custom_level_DD13B3A2F055B94247188FD031FBB4623FC38417",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Black or White",
+      "levelAuthorName": "A Jhintleman",
+      "hash": "DFC3CCE6B9C5DC575A372DB762F37A9469A662E1",
+      "levelid": "custom_level_DFC3CCE6B9C5DC575A372DB762F37A9469A662E1",
       "difficulties": [
         {
           "characteristic": "Standard",
