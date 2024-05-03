@@ -8,12 +8,12 @@
 //     ));
 // }
 
+import { z } from "zod";
 import { kv, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import {
   LowercaseMapHash,
   makeLowercaseMapHash,
 } from "@/packages/types/brands.ts";
-import { z } from "zod";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { fetchHashes } from "@/packages/api-beatsaver/mod.ts";
@@ -28,22 +28,69 @@ const CacheRequestSchema = z.object({
 export const scheduleCache = async (hashes: LowercaseMapHash[]) => {
   if (hashes.length === 0) return;
 
-  console.log("Queueing ", hashes.length)
+  console.log("Queueing ", hashes.length);
   const remainingHashes = [...hashes];
   console.log(remainingHashes);
 
   let delayS = 1;
   while (remainingHashes.length > 0) {
     const items = remainingHashes.splice(0, 1);
-    console.log(`Enqueue ${items}`)
+    console.log(`Enqueue ${items}`);
     await kv.enqueue({
       for: watcherName,
       body: items,
     }, {
-      delay: delayS * 1000
+      delay: delayS * 1000,
     });
     delayS++;
   }
+};
+
+export const runWorkerBody = async (
+  parsed: typeof CacheRequestSchema._type,
+) => {
+  const filteredHashes = (await Promise.all(
+    parsed.body
+      .map(async (lowercaseHash) => {
+        const exists = await s3clientEditor.exists(lowercaseHash, {
+          bucketName: buckets.beatSaver.mapByHash,
+        });
+
+        if (exists) return null;
+
+        return lowercaseHash;
+      }),
+  ))
+    .filter(filterNulls);
+
+  console.log(
+    `Caching\n${
+      JSON.stringify(filteredHashes)
+    }\nto ${buckets.beatSaver.mapByHash}`,
+  );
+
+  let response = await fetchHashes(filteredHashes);
+  if ("error" in response) {
+    console.log(`Error for ${JSON.stringify(response)}`);
+    return;
+  }
+  if ("id" in response) {
+    response = { [filteredHashes[0]]: response };
+  }
+
+  if (!response) return;
+
+  await Promise.all(
+    Object.entries(response).map(async ([hash, data]) => {
+      await s3clientEditor.putObject(hash, JSON.stringify(data), {
+        bucketName: buckets.beatSaver.mapByHash,
+      });
+    }),
+  );
+
+  console.log(
+    `Cached ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`,
+  );
 };
 
 export const runWorker = () => {
@@ -51,39 +98,7 @@ export const runWorker = () => {
     try {
       const parsed = CacheRequestSchema.parse(msg);
 
-      const filteredHashes = (await Promise.all(
-        parsed.body
-          .map(async (lowercaseHash) => {
-            const exists = await s3clientEditor.exists(lowercaseHash, {
-              bucketName: buckets.beatSaver.mapByHash,
-            });
-
-            if (exists) return null;
-
-            return lowercaseHash;
-          }),
-      ))
-        .filter(filterNulls);
-      
-      console.log(`Caching ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`);
-
-      let response = await fetchHashes(filteredHashes);
-      if ("error" in response) {
-        return;
-      }
-      if ("id" in response) {
-        response = { [filteredHashes[0]]: response };
-      }
-
-      if (!response) return;
-
-      await Promise.all(Object.entries(response).map(async ([hash, data]) => {
-        await s3clientEditor.putObject(hash, JSON.stringify(data), {
-          bucketName: buckets.beatSaver.mapByHash,
-        })
-      }))
-      
-      console.log(`Cached ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`);
+      await runWorkerBody(parsed);
     } catch (_) {
       return;
       // expected

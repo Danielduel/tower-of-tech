@@ -18,7 +18,8 @@ export type BeatSaverUserId = Brand<number, "BeatSaverUserId">;
 export const makeBeatSaverUserId = make<BeatSaverUserId>();
 
 export type BeatSaverMapId = Brand<string, "BeatSaverMapId">;
-export const makeBeatSaverMapId = (id: string) => make<BeatSaverMapId>()(id.toLowerCase());
+export const makeBeatSaverMapId = (id: string) =>
+  make<BeatSaverMapId>()(id.toLowerCase());
 
 export const BeatSaverMapResponseUploader = z.object({
   id: z.number().transform(makeBeatSaverUserId),
@@ -116,6 +117,7 @@ export const BeatSaverIdToHashCacheSchema = z.object({
   id: z.string().transform(makeBeatSaverMapId).describe("primary"),
   hash: z.string().transform(makeLowercaseMapHash).optional(),
   available: z.boolean(),
+  removed: z.boolean().optional(),
   outdated: z.boolean(),
 });
 

@@ -37,7 +37,7 @@ export const cacheMapByHashIfNotExists = async (
 
 type IdsToHashesCacheType = {
   id: BeatSaverMapId;
-  status: "error" | "forgotten" | "old" | "ok" | "fetch";
+  status: "error" | "forgotten" | "old" | "ok" | "fetch" | "removed";
   data?: typeof BeatSaverIdToHashCacheSchema._type;
 };
 
@@ -49,6 +49,7 @@ const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
         .then((x) => x?.flat());
 
       if (!idToHashCacheItem) return { id, status: "fetch" };
+      if (!idToHashCacheItem.removed) return { id, status: "removed" };
       if (!idToHashCacheItem.available) return { id, status: "error" };
       if (!idToHashCacheItem.hash) return { id, status: "error" };
       return { id, status: "ok", data: idToHashCacheItem };
@@ -169,12 +170,17 @@ export const fetchAndCacheFromResolvablesRaw = async (
   const hashesFromIdResolvables = await idsToHashesCache(
     idResolvables.map((x) => x.data),
   );
-
   const hashesArrayFromResolvables = hashResolvables.map((x) => x.data);
-  const hashesFromCache = hashesFromIdResolvables
+
+  const hashesFromCacheOk = hashesFromIdResolvables
     .filter((x) => x.status === "ok")
     .map((x) => x.data!.hash!);
-  const hashesArray = [...hashesFromCache, ...hashesArrayFromResolvables];
+
+  const idsFromIdResolvablesRemoved = hashesFromIdResolvables
+    .filter((x) => x.status === "removed")
+    .map((x) => x.data!.id);
+
+  const hashesArray = [...hashesFromCacheOk, ...hashesArrayFromResolvables];
   const responseFromHashesP = fetchAndCacheHashes(hashesArray);
 
   const idsArray = hashesFromIdResolvables
@@ -184,12 +190,15 @@ export const fetchAndCacheFromResolvablesRaw = async (
 
   if (responseFromIds) {
     await dbEditor.BeatSaverIdToHashCache.addMany(
-      Object.entries(responseFromIds).map(([id, x]) => ({
-        id,
-        hash: x?.versions[0].hash,
-        available: !!x,
-        outdated: false,
-      })),
+      Object.entries(responseFromIds).map(([id, x]) => {
+        return {
+          id,
+          hash: x?.versions[0].hash,
+          available: !!x,
+          removed: !x,
+          outdated: false,
+        };
+      }),
     );
   }
 
