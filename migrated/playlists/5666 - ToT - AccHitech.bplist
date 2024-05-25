@@ -141,18 +141,6 @@
       ]
     },
     {
-      "songName": "Shoujyo S",
-      "levelAuthorName": "Pleo",
-      "hash": "44C10D1C8854CAD24E53214AD8FA171B9609FD32",
-      "levelid": "custom_level_44C10D1C8854CAD24E53214AD8FA171B9609FD32",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Technologic",
       "levelAuthorName": "namaki_duo",
       "hash": "84D5C213AF8F4F2FF83E5EFC6D6B9923011C0883",
@@ -389,18 +377,6 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "Desperate",
-      "levelAuthorName": "AllPoland",
-      "hash": "C37CDE238A4C7AF0B5CEDD568AFB97042E8FEAF1",
-      "levelid": "custom_level_C37CDE238A4C7AF0B5CEDD568AFB97042E8FEAF1",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -873,18 +849,6 @@
       ]
     },
     {
-      "songName": "Temptation",
-      "levelAuthorName": "Fainted",
-      "hash": "4E4E1F66767FDBF19A4905D7D319B1955AE4B192",
-      "levelid": "custom_level_4E4E1F66767FDBF19A4905D7D319B1955AE4B192",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "MONSTER",
       "levelAuthorName": "mansiii",
       "hash": "30EC33FB61AA3C500C16C3ACE22588DF2444A5F5",
@@ -925,18 +889,6 @@
       "levelAuthorName": "RetrX",
       "hash": "639DB56FF9E6E9FA3167C98A813F05C4DBE80B8F",
       "levelid": "custom_level_639DB56FF9E6E9FA3167C98A813F05C4DBE80B8F",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "HUMAN INSTALLATION",
-      "levelAuthorName": "Undeceiver & Spinvvy & D7oomyAli",
-      "hash": "74BE7D71B9FF57B141AD990DB5584F5588BD46EC",
-      "levelid": "custom_level_74BE7D71B9FF57B141AD990DB5584F5588BD46EC",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1537,6 +1489,114 @@
       "levelAuthorName": "Gabriel",
       "hash": "C96AEC1072B2C8F188C2B2392E644E18A62B3592",
       "levelid": "custom_level_C96AEC1072B2C8F188C2B2392E644E18A62B3592",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Accendio",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "0957896AAA78499DA67640009C55C00207847B8F",
+      "levelid": "custom_level_0957896AAA78499DA67640009C55C00207847B8F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shoujyo S",
+      "levelAuthorName": "Pleo",
+      "hash": "C74E79363D5CC18A577BA45B64B3578C3AE2690D",
+      "levelid": "custom_level_C74E79363D5CC18A577BA45B64B3578C3AE2690D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Desperate",
+      "levelAuthorName": "AllPoland",
+      "hash": "1038B2B47E5036A43FAC6A838D3E1097A13426BF",
+      "levelid": "custom_level_1038B2B47E5036A43FAC6A838D3E1097A13426BF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Born Again",
+      "levelAuthorName": "thelitlewiseowl",
+      "hash": "4EC47AE9B8E60B6913F2B34F66D4976ED1B2946C",
+      "levelid": "custom_level_4EC47AE9B8E60B6913F2B34F66D4976ED1B2946C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Usagi Flap",
+      "levelAuthorName": "Cush",
+      "hash": "B0087AE04370D55BB5B59156FDB076C68777A9DF",
+      "levelid": "custom_level_B0087AE04370D55BB5B59156FDB076C68777A9DF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Ruoska",
+      "levelAuthorName": "oegoe & Tseska",
+      "hash": "FE1FB1F15D9B6D84F3E3C89EFFDD691BC877CDD4",
+      "levelid": "custom_level_FE1FB1F15D9B6D84F3E3C89EFFDD691BC877CDD4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Alignment",
+      "levelAuthorName": "aideblob",
+      "hash": "C74217D307C9C6CEE78EDE30C7EFBFE4810DFAFE",
+      "levelid": "custom_level_C74217D307C9C6CEE78EDE30C7EFBFE4810DFAFE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "TAKA",
+      "levelAuthorName": "nitronik.exe",
+      "hash": "1D2D2427D574587E104CC31E2B90302372C6AD30",
+      "levelid": "custom_level_1D2D2427D574587E104CC31E2B90302372C6AD30",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dernière danse",
+      "levelAuthorName": "Nebelmonster",
+      "hash": "E0777F6D10F15B230F7ADE34D88C4629E13AD6F6",
+      "levelid": "custom_level_E0777F6D10F15B230F7ADE34D88C4629E13AD6F6",
       "difficulties": [
         {
           "characteristic": "Standard",

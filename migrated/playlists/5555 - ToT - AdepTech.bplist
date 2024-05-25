@@ -153,18 +153,6 @@
       ]
     },
     {
-      "songName": "Forget Me",
-      "levelAuthorName": "Hexagonial & XAce1337manX",
-      "hash": "7EC86860B5AFDDEA220B655A7B14E41CE33E2F19",
-      "levelid": "custom_level_7EC86860B5AFDDEA220B655A7B14E41CE33E2F19",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "The Middle",
       "levelAuthorName": "TetsuBeats",
       "hash": "4B980371B6005CC176AED1B402BD104AF56C31A3",
@@ -473,18 +461,6 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "Scuffed Up Age",
-      "levelAuthorName": "CookedChili",
-      "hash": "ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
-      "levelid": "custom_level_ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -821,18 +797,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Coin",
-      "levelAuthorName": "accuwucy",
-      "hash": "BF6D3F57EA986763325B570B5DFBACC3752C39A8",
-      "levelid": "custom_level_BF6D3F57EA986763325B570B5DFBACC3752C39A8",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
         }
       ]
     },
@@ -1211,8 +1175,8 @@
     {
       "songName": "Magnetic",
       "levelAuthorName": "minsiii, Jonas_0_0",
-      "hash": "6093201FF6C19A184D52228B8403C7C2D6A5AC4E",
-      "levelid": "custom_level_6093201FF6C19A184D52228B8403C7C2D6A5AC4E",
+      "hash": "FA8661A86334901DDE72070B47A6B68541F88E66",
+      "levelid": "custom_level_FA8661A86334901DDE72070B47A6B68541F88E66",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1229,6 +1193,78 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Magnetic",
+      "levelAuthorName": "minsiii, Jonas_0_0",
+      "hash": "FA8661A86334901DDE72070B47A6B68541F88E66",
+      "levelid": "custom_level_FA8661A86334901DDE72070B47A6B68541F88E66",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Don't Go Insane",
+      "levelAuthorName": "Joetastic",
+      "hash": "9BEED8FCA7B69C640089A6AE465444BA8AA91EB5",
+      "levelid": "custom_level_9BEED8FCA7B69C640089A6AE465444BA8AA91EB5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Hypnotized",
+      "levelAuthorName": "Viking & Taddus",
+      "hash": "D7E249531455BB216546810CB1015CF1A734E89F",
+      "levelid": "custom_level_D7E249531455BB216546810CB1015CF1A734E89F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "p.h.",
+      "levelAuthorName": "TOFU",
+      "hash": "84BCFF4756AC66BF1746824B0B221EB1E6A4AFF2",
+      "levelid": "custom_level_84BCFF4756AC66BF1746824B0B221EB1E6A4AFF2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Alive (TV Size)",
+      "levelAuthorName": "Joetastic",
+      "hash": "EC4C8298C8F9BA33AEB551D43C046FED3BA7F912",
+      "levelid": "custom_level_EC4C8298C8F9BA33AEB551D43C046FED3BA7F912",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Ascent",
+      "levelAuthorName": "nitronik.exe",
+      "hash": "095AAFC77C02AA022DF21FF5071D0328599D8756",
+      "levelid": "custom_level_095AAFC77C02AA022DF21FF5071D0328599D8756",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

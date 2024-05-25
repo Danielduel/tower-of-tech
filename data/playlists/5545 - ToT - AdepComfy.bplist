@@ -333,8 +333,8 @@
     {
       "songName": "Fireflies",
       "levelAuthorName": "Koreami",
-      "hash": "C27EFA47AC726E007D3500462E0484898DC7961A",
-      "levelid": "custom_level_C27EFA47AC726E007D3500462E0484898DC7961A",
+      "hash": "B9F34F8477B4183805060B09DFCCB9840F647EEE",
+      "levelid": "custom_level_B9F34F8477B4183805060B09DFCCB9840F647EEE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -351,18 +351,6 @@
         {
           "characteristic": "Lawless",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Don't Go Insane",
-      "levelAuthorName": "Joetastic",
-      "hash": "9BEED8FCA7B69C640089A6AE465444BA8AA91EB5",
-      "levelid": "custom_level_9BEED8FCA7B69C640089A6AE465444BA8AA91EB5",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -627,6 +615,42 @@
         {
           "characteristic": "Standard",
           "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "Coin",
+      "levelAuthorName": "accuwucy",
+      "hash": "BF6D3F57EA986763325B570B5DFBACC3752C39A8",
+      "levelid": "custom_level_BF6D3F57EA986763325B570B5DFBACC3752C39A8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Scuffed Up Age",
+      "levelAuthorName": "CookedChili",
+      "hash": "ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
+      "levelid": "custom_level_ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Unicorn",
+      "levelAuthorName": "Nebelmonster",
+      "hash": "918110A59E398D0F2C9B3D3BF863CC6B7896BB24",
+      "levelid": "custom_level_918110A59E398D0F2C9B3D3BF863CC6B7896BB24",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     }

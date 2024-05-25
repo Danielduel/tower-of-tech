@@ -66,18 +66,6 @@
       ]
     },
     {
-      "songName": "Sqlupp",
-      "levelAuthorName": "Aimedhades16",
-      "hash": "97E61F1B1E5C0CC22D2B01E6A770E596EE638CB0",
-      "levelid": "custom_level_97E61F1B1E5C0CC22D2B01E6A770E596EE638CB0",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Dance Number o Tomo ni",
       "levelAuthorName": "kizuflux, Uninstaller & Hades",
       "hash": "16D2EE144D7087673D0C2802206110483A53147B",
@@ -130,18 +118,6 @@
       "levelAuthorName": "Joetastic & Jamman",
       "hash": "3145C41EC609B2EAB9D2143B76CCEF1F13749B07",
       "levelid": "custom_level_3145C41EC609B2EAB9D2143B76CCEF1F13749B07",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "5733P BOMB",
-      "levelAuthorName": "Feco",
-      "hash": "63F7352EC318872EA81000725B28A87F79CE8A28",
-      "levelid": "custom_level_63F7352EC318872EA81000725B28A87F79CE8A28",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -212,8 +188,8 @@
     {
       "songName": "God-ish",
       "levelAuthorName": "muffn",
-      "hash": "95CD7AA1DDA2984E9A41E490A01B5B6088BA08EF",
-      "levelid": "custom_level_95CD7AA1DDA2984E9A41E490A01B5B6088BA08EF",
+      "hash": "AF669C718B201A8C893E7F94365C5AF268230C08",
+      "levelid": "custom_level_AF669C718B201A8C893E7F94365C5AF268230C08",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -414,18 +390,6 @@
       ]
     },
     {
-      "songName": "Paintbox",
-      "levelAuthorName": "Prim",
-      "hash": "936C6EF79C59F26A489E3E5BB3B37B844953D45B",
-      "levelid": "custom_level_936C6EF79C59F26A489E3E5BB3B37B844953D45B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "BOCA",
       "levelAuthorName": "Jabob",
       "hash": "6E68597FDAB79D1D204A017355BA2D139F2B6080",
@@ -454,18 +418,6 @@
       "levelAuthorName": "oegoe",
       "hash": "FDC72769D6CC629BA1D58F6268D61C52AB764EBF",
       "levelid": "custom_level_FDC72769D6CC629BA1D58F6268D61C52AB764EBF",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Shukusei!! Loli Kami Requiem",
-      "levelAuthorName": "Darturr",
-      "hash": "30F74B7AE1F0CED8E0A3F62A881C3CEF89BCCDB9",
-      "levelid": "custom_level_30F74B7AE1F0CED8E0A3F62A881C3CEF89BCCDB9",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -524,8 +476,8 @@
     {
       "songName": "Abstruse Dilemma",
       "levelAuthorName": "yabje",
-      "hash": "59ECA282FD6D8A0FE2A962A532995F03476A902D",
-      "levelid": "custom_level_59ECA282FD6D8A0FE2A962A532995F03476A902D",
+      "hash": "974F5A190A34F1A25F2D63C2D366F5C1CFF67CCA",
+      "levelid": "custom_level_974F5A190A34F1A25F2D63C2D366F5C1CFF67CCA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -754,18 +706,6 @@
       "levelAuthorName": "Joshabi & Bitz",
       "hash": "78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
       "levelid": "custom_level_78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Give to me",
-      "levelAuthorName": "IlluminatiSalad",
-      "hash": "73D8AD1E767EDB0F3D0266875DD6F0FA300CF4E8",
-      "levelid": "custom_level_73D8AD1E767EDB0F3D0266875DD6F0FA300CF4E8",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1206,18 +1146,6 @@
       ]
     },
     {
-      "songName": "Los! Los! Los!",
-      "levelAuthorName": "CoolingCloset",
-      "hash": "F3BD378DFE91F4371B976493C95936878D65448E",
-      "levelid": "custom_level_F3BD378DFE91F4371B976493C95936878D65448E",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "¡MAS CRAZY!",
       "levelAuthorName": "Jabob vs. Hener",
       "hash": "3C5216A30AE8C175CC4B5A90D1A82D09EE36EEC3",
@@ -1286,6 +1214,90 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "5733P BOMB",
+      "levelAuthorName": "Feco",
+      "hash": "5FC32164416EE61837096B971FAD4CC57FF4A872",
+      "levelid": "custom_level_5FC32164416EE61837096B971FAD4CC57FF4A872",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Show",
+      "levelAuthorName": "Nolanimations & CoolingCloset",
+      "hash": "AEDDA949B48302322F96384D009BEFBC06DA204B",
+      "levelid": "custom_level_AEDDA949B48302322F96384D009BEFBC06DA204B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Catch a Fire",
+      "levelAuthorName": "abcbadq",
+      "hash": "3616B04031236C364921A9874DEE6FE8ED0C7A4F",
+      "levelid": "custom_level_3616B04031236C364921A9874DEE6FE8ED0C7A4F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Luvoratorrrrry!",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "BB609FE6C66028D962F6A3281B0F686904B25B80",
+      "levelid": "custom_level_BB609FE6C66028D962F6A3281B0F686904B25B80",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "My My My",
+      "levelAuthorName": "Blackjack",
+      "hash": "374F0C27FB30FDD79CE688F484F02F55FCA51E8A",
+      "levelid": "custom_level_374F0C27FB30FDD79CE688F484F02F55FCA51E8A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "へらへらるん-Heraherarun",
+      "levelAuthorName": "kerokichi",
+      "hash": "DDA8944C9591C2197D7BFFDC080BC31AB8B51D50",
+      "levelid": "custom_level_DDA8944C9591C2197D7BFFDC080BC31AB8B51D50",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Abyss",
+      "levelAuthorName": "August & BigOlDumplin",
+      "hash": "51E907E937F8095CA4C14F621EFD2E51CE4D8239",
+      "levelid": "custom_level_51E907E937F8095CA4C14F621EFD2E51CE4D8239",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

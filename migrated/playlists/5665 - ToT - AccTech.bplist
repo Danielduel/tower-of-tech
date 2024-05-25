@@ -753,18 +753,6 @@
       ]
     },
     {
-      "songName": "KIen romance(TV size)",
-      "levelAuthorName": "esa_esa",
-      "hash": "D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
-      "levelid": "custom_level_D6EF4220CD1725B9FC5BECD7A04AEA2D1C5900BD",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "2 Phut Hon",
       "levelAuthorName": "Fatalution",
       "hash": "B4512C8922CD4482613B53696CF83AF89395DCA9",
@@ -961,18 +949,6 @@
       "levelAuthorName": "Joetastic",
       "hash": "52B6559BCBF987BF2D33BBE513ADC9166E3A1032",
       "levelid": "custom_level_52B6559BCBF987BF2D33BBE513ADC9166E3A1032",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Born Again",
-      "levelAuthorName": "thelitlewiseowl",
-      "hash": "4EC47AE9B8E60B6913F2B34F66D4976ED1B2946C",
-      "levelid": "custom_level_4EC47AE9B8E60B6913F2B34F66D4976ED1B2946C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2425,6 +2401,42 @@
       "levelAuthorName": "BigSlick",
       "hash": "D197C583AF9CD5E1A835D22E1747530569286FBD",
       "levelid": "custom_level_D197C583AF9CD5E1A835D22E1747530569286FBD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Paradise Chime",
+      "levelAuthorName": "Kinz",
+      "hash": "9C571DF59C2AAA8820AA62D21403DA49F40FCD10",
+      "levelid": "custom_level_9C571DF59C2AAA8820AA62D21403DA49F40FCD10",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Believing and Being",
+      "levelAuthorName": "Dr_Marc",
+      "hash": "AC1975A6D0193CEC3570C8F30C279F69928031BB",
+      "levelid": "custom_level_AC1975A6D0193CEC3570C8F30C279F69928031BB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Voices",
+      "levelAuthorName": "Rexxz",
+      "hash": "AC5BFD0168F72826D31425EA6B1CD809A3CF3C1C",
+      "levelid": "custom_level_AC5BFD0168F72826D31425EA6B1CD809A3CF3C1C",
       "difficulties": [
         {
           "characteristic": "Standard",

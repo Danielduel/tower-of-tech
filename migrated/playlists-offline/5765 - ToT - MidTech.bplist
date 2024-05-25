@@ -414,18 +414,6 @@
       ]
     },
     {
-      "songName": "Abnormality Dancing Girl",
-      "levelAuthorName": "BigOlDumplin",
-      "hash": "D52D404A164D9F0975586E90C0DA82AB027BC124",
-      "levelid": "custom_level_D52D404A164D9F0975586E90C0DA82AB027BC124",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Show",
       "levelAuthorName": "ODC",
       "hash": "91909F45F5B5DC3A7E822137CA9610A1638239C8",
@@ -558,18 +546,6 @@
       ]
     },
     {
-      "songName": "Bloodlust",
-      "levelAuthorName": "Cute_Ocelot",
-      "hash": "94ED9A695B8EFC06A6900310060DF1FD86662362",
-      "levelid": "custom_level_94ED9A695B8EFC06A6900310060DF1FD86662362",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Goreshit - Wasting My Time (Neraki Remix)",
       "levelAuthorName": "melonz",
       "hash": "75FB0A654AFBEEA42F8A7A26A305210634829E32",
@@ -694,18 +670,6 @@
       "levelAuthorName": "Denyah_",
       "hash": "D011AD03E648DF07D31B27D823E417A726A09027",
       "levelid": "custom_level_D011AD03E648DF07D31B27D823E417A726A09027",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Evil People",
-      "levelAuthorName": "BanditByTheStreet",
-      "hash": "FD5A4B515C4664A9AF6FBE07E3E351956A836335",
-      "levelid": "custom_level_FD5A4B515C4664A9AF6FBE07E3E351956A836335",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1340,8 +1304,8 @@
     {
       "songName": "RAPEENA",
       "levelAuthorName": "KultainenAnkka",
-      "hash": "A709AFB45D143A5542F1942EE202EE7C97FE3A25",
-      "levelid": "custom_level_A709AFB45D143A5542F1942EE202EE7C97FE3A25",
+      "hash": "573F3EDF7DDED44AF0C0C5D948005D7BE8016BE7",
+      "levelid": "custom_level_573F3EDF7DDED44AF0C0C5D948005D7BE8016BE7",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1438,6 +1402,102 @@
       "levelAuthorName": "nitronik.exe, steeak",
       "hash": "203F27EF7D7DF500451046153460F2233DD2385E",
       "levelid": "custom_level_203F27EF7D7DF500451046153460F2233DD2385E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Odo",
+      "levelAuthorName": "SpaceDorito",
+      "hash": "2E01A4B67CC259134B201E22C9E5F0C3B44BED7A",
+      "levelid": "custom_level_2E01A4B67CC259134B201E22C9E5F0C3B44BED7A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "INAZMA",
+      "levelAuthorName": "Joetastic & RealCoda",
+      "hash": "29722D5CD3F979FE713615F5C31A6F7B2358C988",
+      "levelid": "custom_level_29722D5CD3F979FE713615F5C31A6F7B2358C988",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Koakuma LOVE♡",
+      "levelAuthorName": "symphonic & FeudBoy_YT",
+      "hash": "802D7B459E81DD23180A7A0549765D8348B63CFF",
+      "levelid": "custom_level_802D7B459E81DD23180A7A0549765D8348B63CFF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cold As Ice (PH Electro Remix) (Nightcore Mix)",
+      "levelAuthorName": "Comyute",
+      "hash": "99F729150455F9BA20713D075B69BAF57CEEED59",
+      "levelid": "custom_level_99F729150455F9BA20713D075B69BAF57CEEED59",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Itadaki Babel ",
+      "levelAuthorName": "Dr_Marc",
+      "hash": "A06417F0E40CEF0B8A67B733E5EB5261F073C7E0",
+      "levelid": "custom_level_A06417F0E40CEF0B8A67B733E5EB5261F073C7E0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Pumpin' Junkies",
+      "levelAuthorName": "DaftMaple",
+      "hash": "F11ABE5D26ABEE5B5D321C630F5F2A13026A8D6C",
+      "levelid": "custom_level_F11ABE5D26ABEE5B5D321C630F5F2A13026A8D6C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Secret Lair",
+      "levelAuthorName": "Hiromiru",
+      "hash": "C7A2C1A367E25C512FA8AE32EF9663CA82ACBA1A",
+      "levelid": "custom_level_C7A2C1A367E25C512FA8AE32EF9663CA82ACBA1A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Kabul",
+      "levelAuthorName": "Khenab",
+      "hash": "0B777DE2C3FECD1E6C926EA710735B2647609C29",
+      "levelid": "custom_level_0B777DE2C3FECD1E6C926EA710735B2647609C29",
       "difficulties": [
         {
           "characteristic": "Standard",
