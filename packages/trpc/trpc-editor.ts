@@ -9,9 +9,8 @@ const getUrl = (internal: boolean) =>
     ? "http://localhost:8081/api/trpc"
     : "https://tower-of-tech-editor.deno.dev/api/trpc";
 
-export const createClient = (internal: boolean) => {
-  console.log(getUrl(internal));
-  return createTRPCProxyClient<AppRouter>({
+export const createClient = (internal: boolean) =>
+  createTRPCProxyClient<AppRouter>({
     links: [
       httpBatchLink({
         url: getUrl(internal),
@@ -24,4 +23,3 @@ export const createClient = (internal: boolean) => {
       }),
     ],
   });
-};

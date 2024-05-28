@@ -32,21 +32,25 @@ const textChannelToResolvables = async (channel: TextBasedChannel) => {
 export async function discordChannelHistoryToBeatSaverResolvables(
   channel: Channel,
 ) {
-  if (!channel) {
-    console.log("Channel doesn't exist");
+  try {
+    if (!channel) {
+      console.log("Channel doesn't exist");
+      return;
+    }
+
+    if (channel.isTextBased()) {
+      return await textChannelToResolvables(channel);
+    }
+
+    if (channel.isThreadOnly()) {
+      return await forumChannelToResolvables(channel);
+    }
+
+    console.log("Channel is not text based");
     return;
+  } catch (err) {
+    console.error(`error in discordChannelHistoryToBeatSaverResolvables`, err);
   }
-
-  if (channel.isTextBased()) {
-    return await textChannelToResolvables(channel);
-  }
-
-  if (channel.isThreadOnly()) {
-    return await forumChannelToResolvables(channel);
-  }
-
-  console.log("Channel is not text based");
-  return;
 }
 
 export async function discordChannelToBeatSaverData(
