@@ -1,8 +1,8 @@
 import {
   GatewayIntentBits,
   GuildScheduledEventEntityType,
-} from "npm:discord.js";
-import { getStartAndEndTime } from "./utils.ts";
+} from "@/apps/discord-bot/deps.ts";
+import { getStartAndEndTime } from "@/apps/discord-bot/cron/tech-multi/utils.ts";
 import {
   broadcastChannelId,
   eventDescription,
@@ -10,7 +10,7 @@ import {
   eventTitle,
   getEventNotificationMessage,
   guildId,
-} from "./constants.ts";
+} from "@/apps/discord-bot/cron/tech-multi/constants.ts";
 import { useClient } from "@/apps/discord-bot/client.ts";
 
 export async function createTechMultiEvent() {

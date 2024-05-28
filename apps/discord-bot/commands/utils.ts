@@ -7,7 +7,7 @@ export function respondWithMessage(content: string, ephemeral = false) {
     type: 4,
     data: {
       content,
-      ephemeral
+      ephemeral,
     },
   });
 }

@@ -1,4 +1,4 @@
-import { REST, Routes, SlashCommandBuilder } from "npm:discord.js";
+import { REST, Routes, SlashCommandBuilder } from "@/apps/discord-bot/deps.ts";
 import { adminCommandRouting } from "@/apps/discord-bot/commands/definitions.ts";
 
 const pingCommand = new SlashCommandBuilder()
@@ -69,12 +69,20 @@ const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
 
 const rest = new REST().setToken(DISCORD_TOT_BOT_TOKEN);
 
-await rest.put(Routes.applicationGuildCommands(DISCORD_TOT_BOT_CLIENT_ID, "689050370840068309"), { body: [] });
+await rest.put(
+  Routes.applicationGuildCommands(
+    DISCORD_TOT_BOT_CLIENT_ID,
+    "689050370840068309",
+  ),
+  { body: [] },
+);
 
 const applicationCommands = [
   pingCommand,
   playlistCommand,
-  adminCommand
+  adminCommand,
 ];
 
-await rest.put(Routes.applicationCommands(DISCORD_TOT_BOT_CLIENT_ID), { body: applicationCommands.map(x => x.toJSON()) });
+await rest.put(Routes.applicationCommands(DISCORD_TOT_BOT_CLIENT_ID), {
+  body: applicationCommands.map((x) => x.toJSON()),
+});

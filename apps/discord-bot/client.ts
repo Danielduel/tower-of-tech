@@ -1,8 +1,8 @@
 import {
-  Client,
   BitFieldResolvable,
+  Client,
   GatewayIntentsString,
-} from "npm:discord.js";
+} from "@/apps/discord-bot/deps.ts";
 
 async function createClient(
   intents: BitFieldResolvable<GatewayIntentsString, number>,
@@ -23,7 +23,7 @@ async function destroyClient(client: Client) {
 export async function useClient<T>(
   intents: BitFieldResolvable<GatewayIntentsString, number>,
   callback: (client: Client) => T,
-) { 
+) {
   const client = await createClient(intents);
   const result = await callback(client);
   destroyClient(client);

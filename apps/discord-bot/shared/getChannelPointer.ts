@@ -1,7 +1,7 @@
-import { ChannelType } from "npm:discord.js";
+import { ChannelType } from "@/apps/discord-bot/deps.ts";
 import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
 
-export function getChannelPointer (channel: CommandEmptyInteraction["channel"]) {
+export function getChannelPointer(channel: CommandEmptyInteraction["channel"]) {
   switch (channel.type) {
     case ChannelType.PublicThread:
     case ChannelType.PrivateThread:
@@ -13,7 +13,7 @@ export function getChannelPointer (channel: CommandEmptyInteraction["channel"]) 
       return {
         guildId: channel.guild_id,
         channelId: channel.id,
-      }
+      };
     case ChannelType.DM:
     case ChannelType.GroupDM:
       return;
