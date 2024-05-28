@@ -26,7 +26,14 @@ export async function useClient<T>(
 ) {
   try {
     const client = await createClient(intents);
-    const result = await callback(client);
+
+    let result;
+    try {
+      result = await callback(client);
+    } catch (err) {
+      console.error("Error in useClient callback", err);
+    }
+
     destroyClient(client);
     return result;
   } catch (err) {
