@@ -1,9 +1,13 @@
+export * as WS from "npm:@discordjs/ws@2.0.0-dev.1716768608-d22b55fc8";
+
 export {
   type BitFieldResolvable,
   type Channel,
   ChannelType,
+  Client,
   GatewayIntentBits,
   type GatewayIntentsString,
+  Guild,
   GuildScheduledEventEntityType,
   REST,
   Routes,
@@ -11,6 +15,4 @@ export {
   type TextBasedChannel,
   type TextBasedChannelFields,
   ThreadOnlyChannel,
-} from "npm:discord.js@14.14.0";
-
-export { Client, Guild } from "npm:discord.js@14.11.0";
+} from "npm:discord.js@14.15.3-dev.1716768610-d22b55fc8";
