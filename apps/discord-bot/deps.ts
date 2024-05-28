@@ -13,4 +13,4 @@ export {
   ThreadOnlyChannel,
 } from "npm:discord.js@14.14.0";
 
-export { Client, Guild } from "npm:discord.js@14.10.2";
+export { Client, Guild } from "npm:discord.js@14.11.0";
