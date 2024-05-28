@@ -6,7 +6,7 @@ import nacl from "https://cdn.skypack.dev/tweetnacl@v1.0.3?dts";
 import {
   InteractionType,
 } from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
-import { router } from "./router.ts";
+import { router } from "@/apps/discord-bot/commands/router.ts";
 
 export async function commandRoot(request: Request) {
   const { error } = await validateRequest(request, {

@@ -1,18 +1,16 @@
-export type {
-  BitFieldResolvable,
-  Channel,
-  GatewayIntentsString,
-  TextBasedChannel,
-} from "npm:discord.js@14.15.2";
-
 export {
+  type BitFieldResolvable,
+  type Channel,
   ChannelType,
-  Client,
   GatewayIntentBits,
-  Guild,
+  type GatewayIntentsString,
   GuildScheduledEventEntityType,
   REST,
   Routes,
   SlashCommandBuilder,
+  type TextBasedChannel,
+  type TextBasedChannelFields,
   ThreadOnlyChannel,
-} from "npm:discord.js@14.15.2";
+} from "npm:discord.js@14.14.0";
+
+export { Client, Guild } from "npm:discord.js@14.10.2";
