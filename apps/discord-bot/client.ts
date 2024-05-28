@@ -24,8 +24,12 @@ export async function useClient<T>(
   intents: BitFieldResolvable<GatewayIntentsString, number>,
   callback: (client: Client) => T,
 ) {
-  const client = await createClient(intents);
-  const result = await callback(client);
-  destroyClient(client);
-  return result;
+  try {
+    const client = await createClient(intents);
+    const result = await callback(client);
+    destroyClient(client);
+    return result;
+  } catch (err) {
+    console.error("Error in useClient", err);
+  }
 }
