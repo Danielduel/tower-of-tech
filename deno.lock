@@ -7,7 +7,6 @@
       "npm:@types/node": "npm:@types/node@18.16.19",
       "npm:@types/react": "npm:@types/react@18.2.41",
       "npm:@types/react-transition-group": "npm:@types/react-transition-group@4.4.10",
-      "npm:discord.js": "npm:discord.js@14.14.1",
       "npm:openai@4": "npm:openai@4.24.0",
       "npm:react": "npm:react@18.2.0",
       "npm:seed-color": "npm:seed-color@2.0.1"
