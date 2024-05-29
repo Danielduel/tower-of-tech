@@ -142,7 +142,6 @@ export async function techMultiShortReminder() {
 
 export async function techMultiJoke() {
   await useBot(GatewayIntents.GuildMessages, async (bot) => {
-    const guild = await getGuild(bot, BigInt(guildId));
     const channel = await getChannel(bot, BigInt(jokeChannelId));
 
     if (!channel) return;

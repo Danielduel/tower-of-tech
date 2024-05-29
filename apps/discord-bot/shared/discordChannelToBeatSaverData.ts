@@ -1,9 +1,6 @@
 import {
-  Channel,
-  ChannelTypes,
   Collection,
   GatewayIntents,
-  getChannels,
   getGuild,
   getMessages,
   Message,
@@ -11,45 +8,11 @@ import {
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { useBot } from "@/apps/discord-bot/client.ts";
 import { createClient } from "@/packages/trpc/trpc-editor.ts";
-import { filterNulls } from "@/packages/utils/filter.ts";
-
-// const forumChannelToResolvables = async (channel: ThreadOnlyChannel) => {
-//   const threads = await channel.threads.fetch();
-//   const messages = await Promise.all(
-//     threads.threads.map((thread) => thread.fetchStarterMessage()),
-//   );
-
-//   return messages
-//     .filter(filterNulls)
-//     .map((m) => findBeatSaverResolvables(m.content))
-//     .flatMap((x) => x.resolvables);
-// };
-
-// const textChannelToResolvables = async (
-//   channel: Channel,
-// ) => {
-//   return messages
-//     .map((m) => findBeatSaverResolvables(m.content))
-//     .flatMap((x) => x.resolvables);
-// };
 
 export function discordChannelHistoryToBeatSaverResolvables(
   messages: Collection<bigint, Message>,
 ) {
   try {
-    // if (!channel) {
-    //   console.log("Channel doesn't exist");
-    //   return;
-    // }
-
-    // if (channel.type === ChannelTypes.GuildText) {
-    //   return await textChannelToResolvables(channel);
-    // }
-
-    // if (channel.type === ChannelTypes.GuildForum) {
-    //   return await forumChannelToResolvables(channel);
-    // }
-
     return messages
       .map((m) => findBeatSaverResolvables(m.content))
       .flatMap((x) => x.resolvables);
@@ -68,14 +31,14 @@ export async function discordChannelToBeatSaverData(
       GatewayIntents.Guilds,
     async (bot) => {
       const guild = await getGuild(bot, BigInt(guildId));
-      // const guild = await client.guilds.fetch(guildId);
       const channel = guild.channels.get(BigInt(channelId));
-      // const channel = await guild.channels.fetch(channelId);
 
       if (!channel) return;
 
       const messages = await getMessages(bot, channel.id);
-      // const guildDetails = await guild.fetch();
+      console.log(
+        `discordChannelToBeatSaverData: Got ${messages.size} messages`,
+      );
 
       return {
         guildName: guild.name,
