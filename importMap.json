@@ -31,9 +31,6 @@
     "mesozoic/": "https://deno.land/x/danielduel_ultra_stack_mesozoic@0.0.2/",
 
     "@/": "./",
-    "react": ".///packages/react/mod.ts",
-
-    "npm:@discordjs/ws": "npm:@discordjs/ws@2.0.0-dev.1716768608-d22b55fc8",
-    "@discordjs/ws": "@discordjs/ws@2.0.0-dev.1716768608-d22b55fc8"
+    "react": ".///packages/react/mod.ts"
   }
 }

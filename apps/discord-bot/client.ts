@@ -1,40 +1,88 @@
 import {
-  BitFieldResolvable,
-  Client,
-  GatewayIntentsString,
+  _createBot,
+  Bot,
+  GatewayIntents,
+  startBot,
 } from "@/apps/discord-bot/deps.ts";
 
-async function createClient(
-  intents: BitFieldResolvable<GatewayIntentsString, number>,
+// async function createClient(
+//   intents: BitFieldResolvable<GatewayIntentsString, number>,
+// ) {
+//   const client = new Client({
+//     intents,
+//   });
+//   const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
+//   await client.login(DISCORD_TOT_BOT_TOKEN);
+//   return client;
+// }
+
+function createBot(
+  intents: GatewayIntents,
 ) {
-  const client = new Client({
-    intents,
-  });
   const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
-  await client.login(DISCORD_TOT_BOT_TOKEN);
-  return client;
+  console.log("Connecting!");
+
+  return new Promise<{ bot: Bot }>((resolve) => {
+    const _bot = _createBot({
+      token: DISCORD_TOT_BOT_TOKEN,
+      intents,
+      events: {
+        ready(bot) {
+          console.log("Connected!");
+          resolve({ bot });
+        },
+      },
+    });
+
+    startBot(_bot);
+  });
 }
 
-async function destroyClient(client: Client) {
-  await client.destroy();
-  client.removeAllListeners();
+// async function destroyClient(client: Client) {
+//   await client.destroy();
+//   client.removeAllListeners();
+// }
+async function destroyBot(bot: Bot) {
+  // await bot.ddestroy();
+  // bot.events.remove
+  // client.removeAllListeners();
 }
 
-export async function useClient<T>(
-  intents: BitFieldResolvable<GatewayIntentsString, number>,
-  callback: (client: Client) => T,
+// export async function useClient<T>(
+//   intents: GatewayIntents,
+//   callback: (client: Bot) => T,
+// ) {
+//   try {
+//     const bot = createBot(intents);
+
+//     let result;
+//     try {
+//       result = await callback(client);
+//     } catch (err) {
+//       console.error("Error in useClient callback", err);
+//     }
+
+//     destroyClient(client);
+//     return result;
+//   } catch (err) {
+//     console.error("Error in useClient", err);
+//   }
+// }
+
+export async function useBot<T>(
+  intents: GatewayIntents,
+  callback: (bot: Bot) => T,
 ) {
   try {
-    const client = await createClient(intents);
+    const { bot } = await createBot(intents);
 
     let result;
     try {
-      result = await callback(client);
+      result = await callback(bot);
     } catch (err) {
       console.error("Error in useClient callback", err);
     }
 
-    destroyClient(client);
     return result;
   } catch (err) {
     console.error("Error in useClient", err);
