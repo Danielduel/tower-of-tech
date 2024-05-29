@@ -1,16 +1,21 @@
 import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
 import { discordChannelToBeatSaverData } from "@/packages/discord/shared/discordChannelToBeatSaverData.ts";
-import { AdminCommandRoutingGet } from "@/packages/discord/commands/definitions.ts";
 import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
+import { ChannelTypes, DiscordInteraction } from "@/packages/discord/deps.ts";
 
 export async function adminChannelGetPlaylist(
-  commandEvent: AdminCommandRoutingGet,
+  commandEvent: DiscordInteraction,
 ) {
-  const channelPointer = getChannelPointer(commandEvent.channel);
+  // TODO: unhardcode this, it will not work for forum channels
+  const channelPointer = getChannelPointer({
+    type: ChannelTypes.GuildText,
+    id: commandEvent.channel_id,
+    guild_id: commandEvent.guild_id,
+  });
 
   if (!channelPointer) {
-    console.log(`Unsupported channel type ${commandEvent.channel.type}`);
+    console.log(`Unsupported channel type`);
     return respondWithMessage("Unsupported channel type", true);
   }
 

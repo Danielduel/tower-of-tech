@@ -1,19 +1,26 @@
 import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
 import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
-import { DiscordIncomingWebhook } from "@/packages/discord/deps.ts";
+import { DiscordInteraction } from "@/packages/discord/deps.ts";
+import { ChannelTypes } from "@/packages/discord/deps.ts";
 
 export async function adminChannelRegister(
-  commandEvent: DiscordIncomingWebhook,
+  commandEvent: DiscordInteraction,
 ) {
-  if (!commandEvent.source_channel) {
+  if (!commandEvent.channel_id) {
     console.error(`adminChannelRegister: no source channel`);
     throw "No source channel";
   }
-  const channelPointer = getChannelPointer(commandEvent.source_channel);
+
+  // TODO: unhardcode this, it will not work for forum channels
+  const channelPointer = getChannelPointer({
+    type: ChannelTypes.GuildText,
+    id: commandEvent.channel_id,
+    guild_id: commandEvent.guild_id,
+  });
 
   if (!channelPointer) {
-    console.log(`Unsupported channel type ${commandEvent.source_channel.type}`);
+    console.log(`Unsupported channel type`);
     return respondWithMessage("Unsupported channel type", true);
   }
 

@@ -1,6 +1,5 @@
 import { z } from "zod";
 import { executePing } from "@/packages/discord/commands/commands/ping.ts";
-import { CommandEmptyInteraction } from "@/packages/discord/commands/types.ts";
 import { adminChannelGetPlaylist } from "@/packages/discord/commands/commands/adminChannelGetPlaylist.ts";
 import { executePlaylists } from "@/packages/discord/commands/commands/playlists.ts";
 import {
@@ -11,7 +10,10 @@ import {
 import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
 import { adminChannelMarkAsPlaylist } from "@/packages/discord/commands/commands/adminChannelMarkAsPlaylist.ts";
 import { adminChannelRegister } from "@/packages/discord/commands/commands/adminChannelRegister.ts";
-import { DiscordIncomingWebhook } from "@/packages/discord/deps.ts";
+import {
+  DiscordInteraction,
+  DiscordMessageInteraction,
+} from "@/packages/discord/deps.ts";
 
 function parsedToPath(parsed: typeof commandSchema._type) {
   return [
@@ -23,7 +25,7 @@ function parsedToPath(parsed: typeof commandSchema._type) {
   ] as const;
 }
 
-export async function router(commandEvent: unknown) {
+export async function router(commandEvent: DiscordMessageInteraction) {
   let parsed, main, group, verb, subjectValue, switchValue;
   try {
     parsed = commandSchema.parse(commandEvent);
@@ -37,13 +39,13 @@ export async function router(commandEvent: unknown) {
             switch (verb) {
               case "register":
                 return await adminChannelRegister(
-                  commandEvent as DiscordIncomingWebhook,
+                  commandEvent as DiscordInteraction,
                 );
               case "get":
                 switch (subjectValue) {
                   case adminCommandRouting.get.subject.get_playlist_debug_data:
                     return await adminChannelGetPlaylist(
-                      commandEvent as AdminCommandRoutingGet,
+                      commandEvent as DiscordInteraction,
                     );
                   default:
                     throw "Routing problem admin channel get";
@@ -54,7 +56,7 @@ export async function router(commandEvent: unknown) {
                     .mark_as_playlist_channel:
                     // return await executeCreateChannelPlaylist(commandEvent as AdminCommandRoutingMark);
                     return await adminChannelMarkAsPlaylist(
-                      commandEvent as AdminCommandRoutingMark,
+                      commandEvent as DiscordInteraction,
                       switchValue as boolean,
                     );
                   default:

@@ -1,19 +1,24 @@
 import { z } from "zod";
-import { AdminCommandRoutingMark } from "@/packages/discord/commands/definitions.ts";
 import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
 import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
+import { ChannelTypes, DiscordInteraction } from "@/packages/discord/deps.ts";
 
 export async function adminChannelMarkAsPlaylist(
-  commandEvent: AdminCommandRoutingMark,
+  commandEvent: DiscordInteraction,
   switchValue = false,
 ) {
   const value = z.boolean().parse(switchValue);
 
-  const channelPointer = getChannelPointer(commandEvent.channel);
+  // TODO: unhardcode this, it will not work for forum channels
+  const channelPointer = getChannelPointer({
+    type: ChannelTypes.GuildText,
+    id: commandEvent.channel_id,
+    guild_id: commandEvent.guild_id,
+  });
 
   if (!channelPointer) {
-    console.log(`Unsupported channel type ${commandEvent.channel.type}`);
+    console.log(`Unsupported channel type`);
     return respondWithMessage("Unsupported channel type", true);
   }
 
