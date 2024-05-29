@@ -2,7 +2,7 @@ import { discordChannelToBeatSaverData } from "@/apps/discord-bot/shared/discord
 
 const data = await discordChannelToBeatSaverData(
   "689050370840068309",
-  "1186816165083877506",
+  "1186991221084790795",
 );
 
 console.log(data);

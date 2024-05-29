@@ -1,6 +1,7 @@
 import {
   Collection,
   GatewayIntents,
+  getChannel,
   getGuild,
   getMessages,
   Message,
@@ -31,9 +32,9 @@ export async function discordChannelToBeatSaverData(
       GatewayIntents.Guilds,
     async (bot) => {
       const guild = await getGuild(bot, BigInt(guildId));
-      const channel = guild.channels.get(BigInt(channelId));
+      const channel = await getChannel(bot, BigInt(channelId));
 
-      if (!channel) return;
+      if (!channel) throw "Invalid channel";
 
       const messages = await getMessages(bot, channel.id);
       console.log(
@@ -50,8 +51,8 @@ export async function discordChannelToBeatSaverData(
     },
   );
 
-  if (!data) return null;
-  if (!data.resolvables) return null;
+  if (!data) throw "No data";
+  if (!data.resolvables) throw "No resolvables";
 
   const client = createClient(false);
 
