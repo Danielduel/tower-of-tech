@@ -1,6 +1,13 @@
 import OpenAI from "npm:openai@4";
-import { GatewayIntentBits, Guild } from "@/apps/discord-bot/deps.ts";
-import { useClient } from "@/apps/discord-bot/client.ts";
+import {
+  ChannelTypes,
+  GatewayIntents,
+  getChannel,
+  getGuild,
+  getScheduledEventUsers,
+  sendMessage,
+} from "@/apps/discord-bot/deps.ts";
+import { useBot } from "@/apps/discord-bot/client.ts";
 import {
   broadcastChannelId,
   getLongPingReminderMessage,
@@ -11,19 +18,29 @@ import {
 } from "@/apps/discord-bot/cron/tech-multi/constants.ts";
 import { getStartAndEndTimeToday } from "@/apps/discord-bot/cron/tech-multi/utils.ts";
 import { handleFail, reportFail } from "@/packages/utils/handleFail.ts";
+import { Bot } from "@/apps/discord-bot/deps.ts";
+import { getScheduledEvents } from "@/apps/discord-bot/deps.ts";
 
 export async function getTechMultiGptPrompt(
   taskDefinition: string,
   wordLength: number,
-  guild: Guild,
+  bot: Bot,
+  guildId: string,
 ) {
   const openai = new OpenAI({
     apiKey: Deno.env.get("OPENAI_API_KEY"),
   });
+  const events = await getScheduledEvents(bot, BigInt(guildId));
+  const firstEvent = events.first();
 
-  const events = await guild.scheduledEvents.fetch();
-  const participants = await events.at(0)?.fetchSubscribers();
-  const participantsNames = participants?.map((x) => x.user.username)!;
+  if (!firstEvent) return "";
+
+  const participants = await getScheduledEventUsers(
+    bot,
+    BigInt(guildId),
+    firstEvent.id,
+  );
+  const participantsNames = participants.map((x) => x.username);
 
   const completion = await openai.chat.completions.create({
     model: "gpt-4",
@@ -40,96 +57,106 @@ export async function getTechMultiGptPrompt(
   return completion.choices[0].message.content;
 }
 
-export async function getReminderJoke(guild: Guild) {
+export async function getReminderJoke(bot: Bot, guildId: string) {
   return await getTechMultiGptPrompt(
     "Pick a random participant. Tell a joke.",
     40,
-    guild,
+    bot,
+    guildId,
   );
 }
 
-export async function getInvitation(guild: Guild) {
+export async function getInvitation(bot: Bot, guildId: string) {
   return await getTechMultiGptPrompt(
     "Create an invitation for this event.",
     40,
-    guild,
+    bot,
+    guildId,
   );
 }
 
-export async function getShortElevatorPitch(guild: Guild) {
+export async function getShortElevatorPitch(bot: Bot, guildId: string) {
   return await getTechMultiGptPrompt(
     "Write a short elevator pitch to another Beat Saber player that doesn't know about the event.",
     50,
-    guild,
+    bot,
+    guildId,
   );
 }
 
 export async function techMultiLongReminder() {
-  await useClient([
-    GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.GuildScheduledEvents,
-  ], async (client) => {
-    const guild = await client.guilds.fetch(guildId);
-    const channel = await guild.channels.fetch(broadcastChannelId);
+  await useBot(
+    GatewayIntents.GuildMessages |
+      GatewayIntents.GuildScheduledEvents,
+    async (bot) => {
+      const channel = await getChannel(bot, BigInt(broadcastChannelId));
 
-    if (!channel) return;
-    if (!channel.isTextBased()) return;
+      if (!channel) return;
+      if (channel.type !== ChannelTypes.GuildText) return;
 
-    const joke = await getReminderJoke(guild);
+      const joke = await getReminderJoke(bot, guildId);
 
-    const eventTimes = getStartAndEndTimeToday();
-    const startTimeWithoutMilis = Math.floor(
-      eventTimes.scheduledStartTime / 1000,
-    );
+      const eventTimes = getStartAndEndTimeToday();
+      const startTimeWithoutMilis = Math.floor(
+        eventTimes.scheduledStartTime / 1000,
+      );
 
-    await channel.send(
-      getLongPingReminderMessage(startTimeWithoutMilis, joke ?? ""),
-    );
-  });
+      await sendMessage(
+        bot,
+        BigInt(broadcastChannelId),
+        {
+          content: getLongPingReminderMessage(
+            startTimeWithoutMilis,
+            joke ?? "",
+          ),
+        },
+      );
+    },
+  );
 }
 
 export async function techMultiShortReminder() {
-  await useClient([GatewayIntentBits.GuildMessages], async (client) => {
-    const guild = await client.guilds.fetch(guildId);
-    const channel = await guild.channels.fetch(broadcastChannelId);
+  await useBot(GatewayIntents.GuildMessages, async (bot) => {
+    const guild = await getGuild(bot, BigInt(guildId));
+    const channel = await getChannel(bot, BigInt(broadcastChannelId));
 
     if (!channel) return;
-    if (!channel.isTextBased()) return;
+    if (channel.type !== ChannelTypes.GuildText) return;
 
-    const joke = await getReminderJoke(guild);
+    const joke = await getReminderJoke(bot, guildId);
 
     const eventTimes = getStartAndEndTimeToday();
     const startTimeWithoutMilis = Math.floor(
       eventTimes.scheduledStartTime / 1000,
     );
 
-    await channel.send(
-      getShortPingReminderMessage(startTimeWithoutMilis, joke ?? ""),
+    await sendMessage(
+      bot,
+      BigInt(broadcastChannelId),
+      {
+        content: getShortPingReminderMessage(startTimeWithoutMilis, joke ?? ""),
+      },
     );
   });
 }
 
 export async function techMultiJoke() {
-  await useClient([GatewayIntentBits.GuildMessages], async (client) => {
-    const guild = await client.guilds.fetch(guildId);
-    const channel = await guild.channels.fetch(jokeChannelId);
+  await useBot(GatewayIntents.GuildMessages, async (bot) => {
+    const guild = await getGuild(bot, BigInt(guildId));
+    const channel = await getChannel(bot, BigInt(jokeChannelId));
 
     if (!channel) return;
-    if (!channel.isTextBased()) return;
+    if (channel.type !== ChannelTypes.GuildText) return;
 
-    const joke = await getReminderJoke(guild);
+    const joke = await getReminderJoke(bot, guildId);
 
     if (!joke) return;
 
     await handleFail({
       throwableFunction: async () => {
-        const message = await channel.send(joke);
-        await Promise.all([
-          message.react(":clown:"),
-          message.react(":boop:"),
-          message.react(":thinking:"),
-          message.react(":snickers:"),
-        ]);
+        await sendMessage(bot, BigInt(jokeChannelId), {
+          content: joke,
+        });
       },
       handleCatch: reportFail,
     });

@@ -80,11 +80,11 @@ export async function useBot<T>(
     try {
       result = await callback(bot);
     } catch (err) {
-      console.error("Error in useClient callback", err);
+      console.error("Error in useBot callback", err);
     }
 
     return result;
   } catch (err) {
-    console.error("Error in useClient", err);
+    console.error("Error in useBot", err);
   }
 }
