@@ -1,8 +1,8 @@
-import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
-import { discordChannelToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelToBeatSaverData.ts";
-import { AdminCommandRoutingGet } from "@/apps/discord-bot/commands/definitions.ts";
-import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
-import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
+import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
+import { discordChannelToBeatSaverData } from "@/packages/discord/shared/discordChannelToBeatSaverData.ts";
+import { AdminCommandRoutingGet } from "@/packages/discord/commands/definitions.ts";
+import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
 
 export async function adminChannelGetPlaylist(
   commandEvent: AdminCommandRoutingGet,
@@ -22,7 +22,7 @@ export async function adminChannelGetPlaylist(
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
-  const discordChannelData = await dbDiscordBot.DiscordChannel
+  const discordChannelData = await dbEditor.DiscordChannel
     .find(channelId)
     .then((x) => x?.flat());
   if (!discordChannelData) {

@@ -5,9 +5,9 @@ import {
   getGuild,
   getMessages,
   Message,
-} from "@/apps/discord-bot/deps.ts";
+} from "@/packages/discord/deps.ts";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
-import { useBot } from "@/apps/discord-bot/client.ts";
+import { useBot } from "@/packages/discord/client.ts";
 import { createClient } from "@/packages/trpc/trpc-editor.ts";
 
 export function discordChannelHistoryToBeatSaverResolvables(

@@ -1,5 +1,5 @@
-import { REST, Routes, SlashCommandBuilder } from "@/apps/discord-bot/deps.ts";
-import { adminCommandRouting } from "@/apps/discord-bot/commands/definitions.ts";
+import { REST, Routes, SlashCommandBuilder } from "@/packages/discord/deps.ts";
+import { adminCommandRouting } from "@/packages/discord/commands/definitions.ts";
 
 const pingCommand = new SlashCommandBuilder()
   .setName("ping")

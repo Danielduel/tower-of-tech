@@ -1,7 +1,7 @@
-import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
-import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
-import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
-import { DiscordIncomingWebhook } from "@/apps/discord-bot/deps.ts";
+import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
+import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
+import { DiscordIncomingWebhook } from "@/packages/discord/deps.ts";
 
 export async function adminChannelRegister(
   commandEvent: DiscordIncomingWebhook,
@@ -32,17 +32,17 @@ export async function adminChannelRegister(
   }
   console.log(`Registering channel ${channelId} from guild ${guildId}`);
 
-  const discordChannelData = await dbDiscordBot.DiscordChannel
+  const discordChannelData = await dbEditor.DiscordChannel
     .find(channelId)
     .then((x) => x?.flat());
-  const discordGuildData = await dbDiscordBot.DiscordGuild
+  const discordGuildData = await dbEditor.DiscordGuild
     .find(guildId)
     .then((x) => x?.flat());
   if (discordChannelData) {
     return respondWithMessage("This channel is already registered", true);
   }
 
-  await dbDiscordBot.DiscordChannel.add({
+  await dbEditor.DiscordChannel.add({
     channelId,
     guildId,
     addedBy: commandEvent.user.id,
@@ -50,13 +50,13 @@ export async function adminChannelRegister(
   });
 
   if (!discordGuildData) {
-    await dbDiscordBot.DiscordGuild.add({
+    await dbEditor.DiscordGuild.add({
       guildId,
       addedBy: commandEvent.user.id,
       channels: [channelId],
     });
   } else {
-    await dbDiscordBot.DiscordGuild.update(guildId, {
+    await dbEditor.DiscordGuild.update(guildId, {
       channels: [...discordGuildData.channels, channelId],
     });
   }

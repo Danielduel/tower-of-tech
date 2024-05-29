@@ -9,6 +9,11 @@ import {
   apiV1HandlerGetPlaylistByIdRoute,
 } from "@/packages/api/v1/playlist/get.ts";
 import { router } from "https://raw.githubusercontent.com/Danielduel/rutt/cc92a9ea0f94514f48e583aae01bbaa00fc76397/mod.ts";
+import { apiV1HandlerDiscordCommandWebhook } from "@/packages/api/v1/discord/get.ts";
+import { commandRoot } from "@/packages/discord/commands/mod.ts";
+
+// "/api/playlist/guild/:guildId/channel/:channelId": playlistFromGuildChannel,
+// "/": commandRoot,
 
 const route = router({
   [apiV1HandlerGetPlaylistByIdRoute]: apiV1HandlerGetPlaylistById,
@@ -16,6 +21,7 @@ const route = router({
     apiV1HandlerGetPlaylistByIdDownload,
   [apiV1HandlerGetPlaylistByIdOneClickRoute]:
     apiV1HandlerGetPlaylistByIdOneClick,
+  [apiV1HandlerDiscordCommandWebhook]: commandRoot,
 });
 
 export const apiV1Handler = async (request: Request) => {

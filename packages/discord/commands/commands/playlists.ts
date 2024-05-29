@@ -1,4 +1,4 @@
-import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
+import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
 
 export function executePlaylists() {
   return respondWithMessage(

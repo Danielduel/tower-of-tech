@@ -1,4 +1,4 @@
-import { discordChannelToBeatSaverData } from "@/apps/discord-bot/shared/discordChannelToBeatSaverData.ts";
+import { discordChannelToBeatSaverData } from "@/packages/discord/shared/discordChannelToBeatSaverData.ts";
 import {
   ConnInfo,
   json,
@@ -9,7 +9,7 @@ import {
   BeatSaberPlaylistSongItem,
 } from "@/src/types/BeatSaberPlaylist.d.ts";
 import { BeatSaverMapResponseSuccessSchema } from "@/packages/types/beatsaver.ts";
-import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
+import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 
 const beatSaverResolvedToSongs = (
@@ -45,7 +45,7 @@ export async function playlistFromGuildChannel(
   if (!guildId) return json("Invalid guild id");
   if (!channelId) return json("Invalid channel id");
 
-  const discordChannelData = await dbDiscordBot.DiscordChannel
+  const discordChannelData = await dbEditor.DiscordChannel
     .find(channelId)
     .then((x) => x?.flat());
   if (!discordChannelData) {

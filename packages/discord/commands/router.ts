@@ -1,16 +1,17 @@
 import { z } from "zod";
-import { executePing } from "@/apps/discord-bot/commands/commands/ping.ts";
-import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
-import { adminChannelGetPlaylist } from "@/apps/discord-bot/commands/commands/adminChannelGetPlaylist.ts";
-import { executePlaylists } from "@/apps/discord-bot/commands/commands/playlists.ts";
+import { executePing } from "@/packages/discord/commands/commands/ping.ts";
+import { CommandEmptyInteraction } from "@/packages/discord/commands/types.ts";
+import { adminChannelGetPlaylist } from "@/packages/discord/commands/commands/adminChannelGetPlaylist.ts";
+import { executePlaylists } from "@/packages/discord/commands/commands/playlists.ts";
 import {
   adminCommandRouting,
   AdminCommandRoutingGet,
   AdminCommandRoutingMark,
-} from "@/apps/discord-bot/commands/definitions.ts";
-import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
-import { adminChannelMarkAsPlaylist } from "@/apps/discord-bot/commands/commands/adminChannelMarkAsPlaylist.ts";
-import { adminChannelRegister } from "@/apps/discord-bot/commands/commands/adminChannelRegister.ts";
+} from "@/packages/discord/commands/definitions.ts";
+import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
+import { adminChannelMarkAsPlaylist } from "@/packages/discord/commands/commands/adminChannelMarkAsPlaylist.ts";
+import { adminChannelRegister } from "@/packages/discord/commands/commands/adminChannelRegister.ts";
+import { DiscordIncomingWebhook } from "@/packages/discord/deps.ts";
 
 function parsedToPath(parsed: typeof commandSchema._type) {
   return [
@@ -36,7 +37,7 @@ export async function router(commandEvent: unknown) {
             switch (verb) {
               case "register":
                 return await adminChannelRegister(
-                  commandEvent as CommandEmptyInteraction,
+                  commandEvent as DiscordIncomingWebhook,
                 );
               case "get":
                 switch (subjectValue) {

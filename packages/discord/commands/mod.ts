@@ -1,12 +1,7 @@
-import {
-  json,
-  validateRequest,
-} from "https://deno.land/x/sift@0.6.0/mod.ts";
+import { json, validateRequest } from "https://deno.land/x/sift@0.6.0/mod.ts";
 import nacl from "https://cdn.skypack.dev/tweetnacl@v1.0.3?dts";
-import {
-  InteractionType,
-} from "https://deno.land/x/discord_api_types@0.37.62/v10.ts";
-import { router } from "@/apps/discord-bot/commands/router.ts";
+import { router } from "@/packages/discord/commands/router.ts";
+import { InteractionTypes } from "@/packages/discord/deps.ts";
 
 export async function commandRoot(request: Request) {
   const { error } = await validateRequest(request, {
@@ -29,13 +24,13 @@ export async function commandRoot(request: Request) {
   }
 
   const commandEvent = JSON.parse(body);
-  if (commandEvent.type === InteractionType.Ping) {
+  if (commandEvent.type === InteractionTypes.Ping) {
     return json({
       type: 1, // Type 1 in a response is a Pong interaction response type.
     });
   }
 
-  if (commandEvent.type === InteractionType.ApplicationCommand) {
+  if (commandEvent.type === InteractionTypes.ApplicationCommand) {
     const response = await router(commandEvent);
     if (response) return response;
   }

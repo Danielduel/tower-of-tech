@@ -1,4 +1,4 @@
-import { getStartAndEndTime } from "@/apps/discord-bot/cron/tech-multi/utils.ts";
+import { getStartAndEndTime } from "@/packages/discord/cron/tech-multi/utils.ts";
 import {
   broadcastChannelId,
   eventDescription,
@@ -6,8 +6,8 @@ import {
   eventTitle,
   getEventNotificationMessage,
   guildId,
-} from "@/apps/discord-bot/cron/tech-multi/constants.ts";
-import { useBot } from "@/apps/discord-bot/client.ts";
+} from "@/packages/discord/cron/tech-multi/constants.ts";
+import { useBot } from "@/packages/discord/client.ts";
 import {
   ChannelTypes,
   createScheduledEvent,
@@ -17,7 +17,7 @@ import {
   ScheduledEventEntityType,
   ScheduledEventPrivacyLevel,
   sendMessage,
-} from "@/apps/discord-bot/deps.ts";
+} from "@/packages/discord/deps.ts";
 
 export async function createTechMultiEvent() {
   await useBot(

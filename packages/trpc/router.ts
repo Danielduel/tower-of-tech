@@ -36,13 +36,14 @@ const map = t.router({
         })),
       )).fromHashes;
     }),
-  list: t.procedure.query(async () => {
-    const items = await dbEditor.BeatSaberPlaylistSongItem
-      .getMany()
-      .then((x) => x.result)
-      .then((x) => x.map((y) => y.flat()));
-    return items;
-  }),
+  list: t.procedure
+    .query(async () => {
+      const items = await dbEditor.BeatSaberPlaylistSongItem
+        .getMany()
+        .then((x) => x.result)
+        .then((x) => x.map((y) => y.flat()));
+      return items;
+    }),
   fromBeatSaverResolvables: t.procedure
     .input(
       z.object({ beatSaverResolvables: z.array(BeatSaverResolvableSchema) }),

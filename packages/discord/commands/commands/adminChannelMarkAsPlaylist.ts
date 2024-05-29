@@ -1,8 +1,8 @@
 import { z } from "zod";
-import { AdminCommandRoutingMark } from "@/apps/discord-bot/commands/definitions.ts";
-import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
-import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
-import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
+import { AdminCommandRoutingMark } from "@/packages/discord/commands/definitions.ts";
+import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
+import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
 
 export async function adminChannelMarkAsPlaylist(
   commandEvent: AdminCommandRoutingMark,
@@ -25,7 +25,7 @@ export async function adminChannelMarkAsPlaylist(
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
-  const discordChannelData = await dbDiscordBot.DiscordChannel
+  const discordChannelData = await dbEditor.DiscordChannel
     .find(channelId)
     .then((x) => x?.flat());
   if (!discordChannelData) {
@@ -43,7 +43,7 @@ export async function adminChannelMarkAsPlaylist(
     return;
   }
 
-  await dbDiscordBot.DiscordChannel
+  await dbEditor.DiscordChannel
     .update(channelId, {
       markedAsPlaylist: value,
     });

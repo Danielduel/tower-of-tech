@@ -16,6 +16,7 @@ export {
   getScheduledEventUsers,
   type Guild,
   type InteractionApplicationCommandCallbackData,
+  InteractionTypes,
   type Message,
   ScheduledEventEntityType,
   ScheduledEventPrivacyLevel,

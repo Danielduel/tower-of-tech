@@ -1,7 +1,7 @@
 import {
   CommandInteraction,
   DefinedStringOption,
-} from "@/apps/discord-bot/commands/types.ts";
+} from "@/packages/discord/commands/types.ts";
 
 export type AdminCommandRoutingGet = CommandInteraction<
   [DefinedStringOption<"subject", "get_playlist_debug_data">]

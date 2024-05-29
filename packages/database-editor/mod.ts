@@ -11,6 +11,10 @@ import {
   BeatSaverResponseWrapper,
 } from "@/packages/database-editor/BeatSaverResponse.ts";
 import { kvdex } from "kvdex/mod.ts";
+import {
+  DiscordChannel,
+  DiscordGuild,
+} from "@/packages/database-editor/DiscordGuild.ts";
 
 export const kv = isDbEditorRemote()
   ? await (async () => {
@@ -27,6 +31,8 @@ export const dbEditor = kvdex(kv, {
   BeatSaberPlaylist,
   BeatSaberPlaylistSongItem,
   BeatSaverIdToHashCache,
+  DiscordChannel,
+  DiscordGuild,
 });
 
 export const s3clientEditor = isLocal() && !isDbEditorRemote()

@@ -3,18 +3,7 @@ import {
   Bot,
   GatewayIntents,
   startBot,
-} from "@/apps/discord-bot/deps.ts";
-
-// async function createClient(
-//   intents: BitFieldResolvable<GatewayIntentsString, number>,
-// ) {
-//   const client = new Client({
-//     intents,
-//   });
-//   const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
-//   await client.login(DISCORD_TOT_BOT_TOKEN);
-//   return client;
-// }
+} from "@/packages/discord/deps.ts";
 
 function createBot(
   intents: GatewayIntents,

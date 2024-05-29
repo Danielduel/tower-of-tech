@@ -6,8 +6,8 @@ import {
   getGuild,
   getScheduledEventUsers,
   sendMessage,
-} from "@/apps/discord-bot/deps.ts";
-import { useBot } from "@/apps/discord-bot/client.ts";
+} from "@/packages/discord/deps.ts";
+import { useBot } from "@/packages/discord/client.ts";
 import {
   broadcastChannelId,
   getLongPingReminderMessage,
@@ -15,11 +15,11 @@ import {
   guildId,
   jokeChannelId,
   techMultiGptPrompt,
-} from "@/apps/discord-bot/cron/tech-multi/constants.ts";
-import { getStartAndEndTimeToday } from "@/apps/discord-bot/cron/tech-multi/utils.ts";
+} from "@/packages/discord/cron/tech-multi/constants.ts";
+import { getStartAndEndTimeToday } from "@/packages/discord/cron/tech-multi/utils.ts";
 import { handleFail, reportFail } from "@/packages/utils/handleFail.ts";
-import { Bot } from "@/apps/discord-bot/deps.ts";
-import { getScheduledEvents } from "@/apps/discord-bot/deps.ts";
+import { Bot } from "@/packages/discord/deps.ts";
+import { getScheduledEvents } from "@/packages/discord/deps.ts";
 
 export async function getTechMultiGptPrompt(
   taskDefinition: string,

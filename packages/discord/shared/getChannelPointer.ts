@@ -1,4 +1,4 @@
-import { ChannelTypes, DiscordChannel } from "@/apps/discord-bot/deps.ts";
+import { ChannelTypes, DiscordChannel } from "@/packages/discord/deps.ts";
 
 export function getChannelPointer(channel: Partial<DiscordChannel>) {
   switch (channel.type) {

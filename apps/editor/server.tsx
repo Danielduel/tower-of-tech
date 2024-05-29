@@ -20,6 +20,7 @@ import { StrictMode } from "react";
 import { apiV1Handler } from "@/packages/api/v1/mod.ts";
 import { isLocal } from "@/packages/utils/envrionment.ts";
 import { runWorker } from "@/packages/api-beatsaver/cache.ts";
+import { registerDiscordCronJobs } from "@/packages/discord/cron/mod.ts";
 
 const root = Deno.cwd();
 
@@ -177,6 +178,7 @@ const middleware = refresh({
 });
 
 runWorker();
+registerDiscordCronJobs();
 
 Deno.serve({ port: isLocal() ? 8081 : 80 }, async (request, ctx) => {
   const refresh = middleware(request);
