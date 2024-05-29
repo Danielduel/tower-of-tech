@@ -3,6 +3,8 @@ import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
 import { DiscordInteraction } from "@/packages/discord/deps.ts";
 import { ChannelTypes } from "@/packages/discord/deps.ts";
+import { links } from "@/apps/editor/routing.config.ts";
+import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
 export async function adminChannelRegister(
   commandEvent: DiscordInteraction,
@@ -70,7 +72,14 @@ export async function adminChannelRegister(
 
   return respondWithMessage(
     discordGuildData
-      ? "This channel is now registered and added to existing guild"
+      ? `This channel is now registered and added to existing guild 
+      [| Download link |](${
+        links.api.v1.discord.playlist.download(
+          guildId,
+          channelId,
+          towerOfTechWebsiteOrigin,
+        )
+      })`
       : "This channel is now registered and added to a new guild",
     true,
   );

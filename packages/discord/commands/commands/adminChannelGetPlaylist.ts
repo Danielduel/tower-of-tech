@@ -3,6 +3,8 @@ import { discordChannelToBeatSaverData } from "@/packages/discord/shared/discord
 import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
 import { ChannelTypes, DiscordInteraction } from "@/packages/discord/deps.ts";
+import { links } from "@/apps/editor/routing.config.ts";
+import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
 export async function adminChannelGetPlaylist(
   commandEvent: DiscordInteraction,
@@ -64,8 +66,14 @@ export async function adminChannelGetPlaylist(
       .join("\n")
   }
 
-    And it would be available here:
-    https://danielduel-tot-bot.deno.dev/api/playlist/guild/${guildId}/channel/${channelId}
+    [| Download link |](${
+    links.api.v1.discord.playlist.download(
+      guildId,
+      channelId,
+      towerOfTechWebsiteOrigin,
+    )
+  })
+  }
     `;
   // console.log(response);
   return respondWithMessage(response);
