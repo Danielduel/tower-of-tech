@@ -31,7 +31,9 @@ export async function adminChannelRegister(
 
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
-  if (!commandEvent.member) return respondWithMessage("Invalid user", true);
+  if (!commandEvent.member) return respondWithMessage("Invalid member", true);
+
+  console.log(commandEvent.member);
 
   if (commandEvent.member.user.id !== "221718279423655937") {
     console.log("Invalid caller id ", commandEvent.member.user.id);
