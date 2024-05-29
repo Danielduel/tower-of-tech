@@ -8,7 +8,7 @@ import {
 } from "@/packages/discord/deps.ts";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { useBot } from "@/packages/discord/client.ts";
-import { createClient } from "@/packages/trpc/trpc-editor.ts";
+import { fetchAndCacheFromResolvables } from "@/packages/api-beatsaver/mod.ts";
 
 export function discordChannelHistoryToBeatSaverResolvables(
   messages: Collection<bigint, Message>,
@@ -47,18 +47,14 @@ export async function discordChannelToBeatSaverData(
         resolvables: discordChannelHistoryToBeatSaverResolvables(
           messages,
         ),
-      };
+      } as const;
     },
   );
 
   if (!data) throw "No data";
   if (!data.resolvables) throw "No resolvables";
 
-  const client = createClient(false);
-
-  const resolved = await client.map.fromBeatSaverResolvables.query({
-    beatSaverResolvables: data.resolvables,
-  });
+  const resolved = await fetchAndCacheFromResolvables(data.resolvables);
 
   return {
     guildName: data.guildName,

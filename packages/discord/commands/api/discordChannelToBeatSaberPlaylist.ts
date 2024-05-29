@@ -1,16 +1,13 @@
 import { discordChannelToBeatSaverData } from "@/packages/discord/shared/discordChannelToBeatSaverData.ts";
 import {
-  ConnInfo,
-  json,
-  PathParams,
-} from "https://deno.land/x/sift@0.6.0/mod.ts";
-import {
   BeatSaberPlaylist,
   BeatSaberPlaylistSongItem,
 } from "@/src/types/BeatSaberPlaylist.d.ts";
 import { BeatSaverMapResponseSuccessSchema } from "@/packages/types/beatsaver.ts";
 import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
+import { links } from "@/apps/editor/routing.config.ts";
+import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
 const beatSaverResolvedToSongs = (
   arr: (
@@ -34,32 +31,28 @@ const beatSaverResolvedToSongs = (
     .filter(filterNulls);
 };
 
-export async function playlistFromGuildChannel(
-  request: Request,
-  connInfo: ConnInfo,
-  params: PathParams,
+export async function discordChannelToBeatSaberPlaylist(
+  guildId: string,
+  channelId: string,
 ) {
-  if (!params) return json("Invalid params");
-  const guildId = params.guildId;
-  const channelId = params.channelId;
-  if (!guildId) return json("Invalid guild id");
-  if (!channelId) return json("Invalid channel id");
+  if (!guildId) throw "Invalid guild id";
+  if (!channelId) throw "Invalid channel id";
 
   const discordChannelData = await dbEditor.DiscordChannel
     .find(channelId)
     .then((x) => x?.flat());
   if (!discordChannelData) {
-    return json("This channel is not registered (missing config data)");
+    throw "This channel is not registered (missing config data)";
   }
   if (discordChannelData.guildId !== guildId) {
-    return json("Channel-Guild mismatch error");
+    throw "Channel-Guild mismatch error";
   }
 
   const data = await discordChannelToBeatSaverData(
     guildId,
     channelId,
   );
-  if (!data) return json({});
+  if (!data) throw "No data";
 
   const responsePlaylist: BeatSaberPlaylist = {
     playlistAuthor: "Discord ToT bot",
@@ -67,10 +60,13 @@ export async function playlistFromGuildChannel(
     songs: beatSaverResolvedToSongs(data.resolved),
     image: "",
     customData: {
-      syncURL:
-        `https://danielduel-tot-bot.deno.dev/api/playlist/guild/${guildId}/channel/${channelId}`,
+      syncURL: links.api.v1.discord.playlist.download(
+        guildId,
+        channelId,
+        towerOfTechWebsiteOrigin,
+      ),
     },
   };
 
-  return json(responsePlaylist);
+  return responsePlaylist;
 }

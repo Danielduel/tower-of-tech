@@ -22,3 +22,9 @@ export const getPlaylistFileNameFromPlaylist = (
 
   return `${sortString}${playlist.playlistTitle} by ${playlist.playlistAuthor}.bplist`;
 };
+
+export const getPlaylistFileNameFromPlaylistForDiscord = (
+  playlist: GetPlaylistFileNameFromPlaylist,
+) => {
+  return `${playlist.playlistTitle}.bplist`;
+};

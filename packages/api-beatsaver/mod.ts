@@ -122,7 +122,7 @@ export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
 
   try {
     const awaitedCache = await resolvedFromCache;
-    return { ...response, ...awaitedCache };
+    return { ...response, ...awaitedCache } as const;
   } catch (err) {
     console.error(err);
   }
@@ -205,7 +205,7 @@ export const fetchAndCacheFromResolvablesRaw = async (
   return {
     fromHashes: await responseFromHashesP,
     fromIds: responseFromIds,
-  };
+  } as const;
 };
 
 export const fetchAndCacheFromResolvables = async (
@@ -216,5 +216,5 @@ export const fetchAndCacheFromResolvables = async (
   return [
     ...Object.values(resolved.fromHashes ?? {}),
     ...Object.values(resolved.fromIds ?? {}),
-  ];
+  ] as const;
 };

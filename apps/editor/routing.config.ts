@@ -107,6 +107,33 @@ export const links = {
             links.api.v1.playlist.data(playlistId, origin)
           }/oneclick/${encodeURI(playlistName)}`,
       },
+      discord: {
+        playlist: {
+          data: (
+            guildId: string,
+            channelId: string,
+            origin: string = defaultOrigin,
+          ) =>
+            `${origin}/api/v1/discord/playlist/get/guild/${guildId}/channel/${channelId}`,
+          download: (
+            guildId: string,
+            channelId: string,
+            origin: string = defaultOrigin,
+          ) =>
+            `${
+              links.api.v1.discord.playlist.data(guildId, channelId, origin)
+            }/download`,
+          oneClick: (
+            guildId: string,
+            channelId: string,
+            playlistName: string,
+            origin: string,
+          ) =>
+            `bsplaylist://playlist/${
+              links.api.v1.discord.playlist.data(guildId, channelId, origin)
+            }/oneclick/${encodeURI(playlistName)}`,
+        },
+      },
     },
   },
 };
