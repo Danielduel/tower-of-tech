@@ -28,6 +28,7 @@ export {
   getGuild,
   getMessages,
   getScheduledEvents,
+  getScheduledEventUsers,
   type Guild,
   type Message,
   ScheduledEventEntityType,
