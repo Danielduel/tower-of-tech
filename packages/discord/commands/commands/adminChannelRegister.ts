@@ -33,8 +33,6 @@ export async function adminChannelRegister(
   if (!channelId) return respondWithMessage("Invalid channel id", true);
   if (!commandEvent.member) return respondWithMessage("Invalid member", true);
 
-  console.log(commandEvent.member);
-
   if (commandEvent.member.user.id !== "221718279423655937") {
     console.log("Invalid caller id ", commandEvent.member.user.id);
     return;
@@ -54,14 +52,14 @@ export async function adminChannelRegister(
   await dbEditor.DiscordChannel.add({
     channelId,
     guildId,
-    addedBy: commandEvent.user.id,
+    addedBy: commandEvent.member.user.id,
     markedAsPlaylist: false,
   });
 
   if (!discordGuildData) {
     await dbEditor.DiscordGuild.add({
       guildId,
-      addedBy: commandEvent.user.id,
+      addedBy: commandEvent.member.user.id,
       channels: [channelId],
     });
   } else {
