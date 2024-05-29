@@ -1,15 +1,19 @@
 import { respondWithMessage } from "@/apps/discord-bot/commands/utils.ts";
 import { dbDiscordBot } from "@/packages/database-discord-bot/mod.ts";
-import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
 import { getChannelPointer } from "@/apps/discord-bot/shared/getChannelPointer.ts";
+import { DiscordIncomingWebhook } from "@/apps/discord-bot/deps.ts";
 
 export async function adminChannelRegister(
-  commandEvent: CommandEmptyInteraction,
+  commandEvent: DiscordIncomingWebhook,
 ) {
-  const channelPointer = getChannelPointer(commandEvent.channel);
+  if (!commandEvent.source_channel) {
+    console.error(`adminChannelRegister: no source channel`);
+    throw "No source channel";
+  }
+  const channelPointer = getChannelPointer(commandEvent.source_channel);
 
   if (!channelPointer) {
-    console.log(`Unsupported channel type ${commandEvent.channel.type}`);
+    console.log(`Unsupported channel type ${commandEvent.source_channel.type}`);
     return respondWithMessage("Unsupported channel type", true);
   }
 
@@ -20,9 +24,10 @@ export async function adminChannelRegister(
 
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
+  if (!commandEvent.user) return respondWithMessage("Invalid user", true);
 
-  if (commandEvent.member?.user?.id !== "221718279423655937") {
-    console.log("Invalid caller id ", commandEvent.member?.user?.id);
+  if (commandEvent.user.id !== "221718279423655937") {
+    console.log("Invalid caller id ", commandEvent.user.id);
     return;
   }
   console.log(`Registering channel ${channelId} from guild ${guildId}`);
@@ -40,14 +45,14 @@ export async function adminChannelRegister(
   await dbDiscordBot.DiscordChannel.add({
     channelId,
     guildId,
-    addedBy: commandEvent.member?.user?.id,
+    addedBy: commandEvent.user.id,
     markedAsPlaylist: false,
   });
 
   if (!discordGuildData) {
     await dbDiscordBot.DiscordGuild.add({
       guildId,
-      addedBy: commandEvent.member?.user?.id,
+      addedBy: commandEvent.user.id,
       channels: [channelId],
     });
   } else {

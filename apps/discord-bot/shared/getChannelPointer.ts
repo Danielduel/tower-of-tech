@@ -1,21 +1,20 @@
-import { ChannelType } from "@/apps/discord-bot/deps.ts";
-import { CommandEmptyInteraction } from "@/apps/discord-bot/commands/types.ts";
+import { ChannelTypes, DiscordChannel } from "@/apps/discord-bot/deps.ts";
 
-export function getChannelPointer(channel: CommandEmptyInteraction["channel"]) {
+export function getChannelPointer(channel: Partial<DiscordChannel>) {
   switch (channel.type) {
-    case ChannelType.PublicThread:
-    case ChannelType.PrivateThread:
+    case ChannelTypes.GuildPublicThread:
+    case ChannelTypes.GuildPrivateThread:
       return {
         guildId: channel.guild_id,
         channelId: channel.parent_id,
       };
-    case ChannelType.GuildText:
+    case ChannelTypes.GuildText:
       return {
         guildId: channel.guild_id,
         channelId: channel.id,
       };
-    case ChannelType.DM:
-    case ChannelType.GroupDM:
+    case ChannelTypes.DM:
+    case ChannelTypes.GroupDm:
       return;
   }
 }
