@@ -47,8 +47,19 @@ export async function adminChannelRegister(
   const discordGuildData = await dbEditor.DiscordGuild
     .find(guildId)
     .then((x) => x?.flat());
+
+  const downloadLink = `[| Download link |](${
+    links.api.v1.discord.playlist.download(
+      guildId,
+      channelId,
+      towerOfTechWebsiteOrigin,
+    )
+  })`;
   if (discordChannelData) {
-    return respondWithMessage("This channel is already registered", true);
+    return respondWithMessage(
+      `This channel is already registered ${downloadLink}`,
+      true,
+    );
   }
 
   await dbEditor.DiscordChannel.add({
@@ -72,22 +83,8 @@ export async function adminChannelRegister(
 
   return respondWithMessage(
     discordGuildData
-      ? `This channel is now registered and added to existing guild 
-      [| Download link |](${
-        links.api.v1.discord.playlist.download(
-          guildId,
-          channelId,
-          towerOfTechWebsiteOrigin,
-        )
-      })`
-      : `This channel is now registered and added to a new guild 
-      [| Download link |](${
-        links.api.v1.discord.playlist.download(
-          guildId,
-          channelId,
-          towerOfTechWebsiteOrigin,
-        )
-      })`,
+      ? `This channel is now registered and added to existing guild ${downloadLink}`
+      : `This channel is now registered and added to a new guild ${downloadLink}`,
     true,
   );
 }
