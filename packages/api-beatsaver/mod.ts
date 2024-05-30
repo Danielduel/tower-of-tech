@@ -16,6 +16,7 @@ import {
 } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { scheduleCache } from "@/packages/api-beatsaver/cache.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
+import { ulid } from "kvdex/src/deps.ts";
 
 export { BeatSaverApi };
 
@@ -163,6 +164,10 @@ export const batchFetchIds = async (idsArray: BeatSaverMapId[]) => {
 export const fetchAndCacheFromResolvablesRaw = async (
   resolvables: BeatSaverResolvable[],
 ) => {
+  const execUlid = ulid();
+  console.time(
+    `[${execUlid}] fetchAndCacheFromResolvablesRaw for ${resolvables.length}`,
+  );
   const {
     hashResolvables,
     idResolvables,
@@ -204,9 +209,16 @@ export const fetchAndCacheFromResolvablesRaw = async (
     );
   }
 
+  const fromHashes = await responseFromHashesP;
+  const fromIds = responseFromIds;
+
+  console.timeEnd(
+    `[${execUlid}] fetchAndCacheFromResolvablesRaw for ${resolvables.length}`,
+  );
+
   return {
-    fromHashes: await responseFromHashesP,
-    fromIds: responseFromIds,
+    fromHashes,
+    fromIds,
   } as const;
 };
 
