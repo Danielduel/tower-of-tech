@@ -1,13 +1,3 @@
-// const response = BeatSaverMapByHashResponseSchema.parse(object);
-// if (response) {
-//   await Promise.all(Object.entries(response)
-//     .map(([lowercaseHash, data]) =>
-//       s3clientEditor.putObject(lowercaseHash, JSON.stringify(data), {
-//         bucketName: buckets.beatSaver.mapByHash,
-//       })
-//     ));
-// }
-
 import { z } from "zod";
 import { kv, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import {
