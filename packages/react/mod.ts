@@ -38,8 +38,10 @@ import React from "https://esm.sh/react@18.2.0?dev";
 export default React;
 export type {
   FC,
+  ForwardRefExoticComponent,
   PropsWithChildren,
   PropsWithRef,
   ReactNode,
   Ref,
+  RefAttributes,
 } from "https://esm.sh/react@18.2.0?dev";

@@ -1,3 +1,3 @@
-import { Ref, PropsWithRef } from "react";
+import { PropsWithRef, Ref } from "react";
 
-export type WithMainContainerRef = PropsWithRef<{ ref: Ref<HTMLDivElement> }>;
+export type WithMainContainerRef = PropsWithRef<{ ref: Ref<HTMLElement> }>;

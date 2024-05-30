@@ -1,6 +1,11 @@
-import { FC, Suspense, useRef, useState } from "react";
+import {
+  FC,
+  ForwardRefExoticComponent,
+  RefAttributes,
+  Suspense,
+  useRef,
+} from "react";
 import { VisualNovelContainerLoading } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { WithMainContainerRef } from "@/packages/ui/refs.ts";
 
 export function MainLayout(
   { children, style }: React.PropsWithChildren & {
@@ -19,7 +24,9 @@ export function MainLayout(
   );
 }
 
-export const MainLayoutShell: FC<{ Component: FC<WithMainContainerRef> }> = (
+export const MainLayoutShell: FC<
+  { Component: ForwardRefExoticComponent<RefAttributes<HTMLDivElement>> }
+> = (
   { Component },
 ) => {
   const nodeRef = useRef<HTMLDivElement>(null);

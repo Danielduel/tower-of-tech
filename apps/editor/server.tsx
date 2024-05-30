@@ -1,4 +1,6 @@
+import { StrictMode } from "react";
 import { renderToReadableStream } from "react-dom/server";
+import { HelmetProvider } from "react-helmet-async";
 import { createCompilerHandler } from "ultra/lib/react/compiler.ts";
 import { createRenderHandler } from "ultra/lib/react/renderer.ts";
 import UltraServer from "ultra/lib/react/server.js";
@@ -11,16 +13,13 @@ import { StaticRouter } from "react-router-dom/server";
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 import { appRouter } from "@/packages/trpc/router.ts";
 import { TRPCServerProvider } from "@/packages/trpc/server.tsx";
-
-import App from "./App.tsx";
-import { HelmetProvider } from "react-helmet-async";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/packages/react-query/query-client.ts";
-import { StrictMode } from "react";
 import { apiV1Handler } from "@/packages/api/v1/mod.ts";
 import { isLocal } from "@/packages/utils/envrionment.ts";
 import { runWorker } from "@/packages/api-beatsaver/cache.ts";
 import { registerDiscordCronJobs } from "@/packages/discord/cron/mod.ts";
+import App from "@/apps/editor/App.tsx";
 
 const root = Deno.cwd();
 

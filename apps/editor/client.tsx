@@ -1,13 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-
 import UltraClient, { hydrate } from "ultra/lib/react/client.js";
-
 import { TRPCClientProvider } from "@/packages/trpc/ClientProvider.tsx";
 import { queryClient } from "@/packages/react-query/query-client.ts";
 import { Hydrate, QueryClientProvider } from "@tanstack/react-query";
+import App from "@/apps/editor/App.tsx";
 
-import App from "./App.tsx";
 declare const __REACT_QUERY_DEHYDRATED_STATE: unknown;
 
 function ClientApp() {
@@ -29,7 +27,7 @@ function ClientApp() {
 }
 
 try {
-  hydrate(document, <ClientApp />)
+  hydrate(document, <ClientApp />);
 } catch (err) {
-  console.error("There was an error while hydrating", err)
+  console.error("There was an error while hydrating", err);
 }
