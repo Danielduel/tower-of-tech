@@ -3,38 +3,6 @@ name: Deploy
 on: push
 
 jobs:
-  discord-bot_deploy:
-    runs-on: ubuntu-latest
-
-    permissions:
-      id-token: write
-      contents: read
-
-    steps:
-      - name: Clone repository
-        uses: actions/checkout@v3
-        with:
-          sparse-checkout: |
-            apps
-            packages
-            src
-            deno.json
-            deno.lock
-            importMap.json
-            importMap.local.json
-
-      - name: Deploy to Deno Deploy
-        uses: denoland/deployctl@v1
-        with:
-          project: danielduel-tot-bot
-          entrypoint: apps/discord-bot/main.ts
-          exclude: |
-            data
-            migrated
-            assets
-            public
-            scripts
-
   editor_deploy:
     runs-on: ubuntu-latest
 
