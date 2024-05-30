@@ -15,6 +15,7 @@ import {
   splitBeatSaverResolvables,
 } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { scheduleCache } from "@/packages/api-beatsaver/cache.ts";
+import { filterNulls } from "@/packages/utils/filter.ts";
 
 export { BeatSaverApi };
 
@@ -178,7 +179,8 @@ export const fetchAndCacheFromResolvablesRaw = async (
 
   const idsFromIdResolvablesRemoved = hashesFromIdResolvables
     .filter((x) => x.status === "removed")
-    .map((x) => x.data!.id);
+    .map((x) => x.data?.id ?? null)
+    .filter(filterNulls);
 
   const hashesArray = [...hashesFromCacheOk, ...hashesArrayFromResolvables];
   const responseFromHashesP = fetchAndCacheHashes(hashesArray);
