@@ -80,7 +80,14 @@ export async function adminChannelRegister(
           towerOfTechWebsiteOrigin,
         )
       })`
-      : "This channel is now registered and added to a new guild",
+      : `This channel is now registered and added to a new guild 
+      [| Download link |](${
+        links.api.v1.discord.playlist.download(
+          guildId,
+          channelId,
+          towerOfTechWebsiteOrigin,
+        )
+      })`,
     true,
   );
 }
