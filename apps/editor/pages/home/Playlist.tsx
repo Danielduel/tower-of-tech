@@ -10,10 +10,12 @@ import { links } from "@/apps/editor/routing.config.ts";
 import { makePlaylistId } from "@/packages/types/brands.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
+import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 
 export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
   const { playlistId } = useParams();
   const { data } = trpc.playlist.getById.useQuery({ id: playlistId! }, {
+    ...semiconstantCacheQuery,
     enabled: !!playlistId,
   });
 

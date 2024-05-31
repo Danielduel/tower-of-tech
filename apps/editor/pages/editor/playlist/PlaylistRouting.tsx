@@ -5,6 +5,7 @@ import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { WithPlaylistLinks } from "@/packages/ui/playlist/types.ts";
 import { PlaylistList } from "@/apps/editor/pages/editor/playlist/PlaylistList.tsx";
 import { PlaylistFromFile } from "@/apps/editor/pages/editor/playlist/PlaylistFromFile.tsx";
+import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 
 const PlaylistListing: FC<WithPlaylistLinks> = ({ playlists }) => {
   return playlists.map((playlist) => (
@@ -20,7 +21,10 @@ const PlaylistListing: FC<WithPlaylistLinks> = ({ playlists }) => {
 };
 
 export const PlaylistLayout: FC<PropsWithChildren> = ({ children }) => {
-  const { data: playlists } = trpc.playlist.listLinks.useQuery();
+  const { data: playlists } = trpc.playlist.listLinks.useQuery(
+    void 0,
+    semiconstantCacheQuery,
+  );
 
   return (
     <div className="sub-grid-layout">

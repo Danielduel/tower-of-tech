@@ -22,6 +22,7 @@ import {
 } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
+import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 
 export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
   displayName,
@@ -29,7 +30,10 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
   speedCategory,
   techCategory,
 }) => {
-  const { data } = trpc.playlist.getById.useQuery({ id: playlistId });
+  const { data } = trpc.playlist.getById.useQuery(
+    { id: playlistId },
+    semiconstantCacheQuery,
+  );
 
   if (!data) return "Loading...";
 

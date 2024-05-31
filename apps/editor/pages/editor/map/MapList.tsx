@@ -1,13 +1,13 @@
 import { FC } from "react";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { MapItem } from "@/apps/editor/components/MapItem.tsx";
+import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 
 export const MapList: FC = () => {
-  const { data: maps } = trpc.map.list.useQuery();
+  const { data: maps } = trpc.map.list.useQuery(void 0, semiconstantCacheQuery);
   const { data: beatsaverMaps } = trpc.map.resolve.useQuery({
     hashes: maps!.map((x) => x.hash),
-  }, { enabled: (maps?.length ?? 0) > 0, staleTime: Infinity });
-
+  }, { ...semiconstantCacheQuery, enabled: (maps?.length ?? 0) > 0 });
   return maps
     ? maps
       .map((map) => (

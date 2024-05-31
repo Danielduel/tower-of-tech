@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useMemo } from "react";
 import {
   WithMaps,
   WithPlaylist,
@@ -8,14 +8,18 @@ import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { MapItem } from "@/apps/editor/components/MapItem.tsx";
 import { Image } from "@/apps/editor/components/Image.tsx";
 import { links } from "@/apps/editor/routing.config.ts";
+import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 
 export const PlaylistMaps: FC<WithMaps & { prependKey: string }> = (
   { maps, prependKey },
 ) => {
-  const hashes = maps.flatMap((map) => map.hash.toString());
-  const { data: resolved } = trpc.map.resolve.useQuery({ hashes }, {
-    staleTime: Infinity,
-  });
+  const hashes = useMemo(() => maps.flatMap((map) => map.hash.toString()), [
+    maps,
+  ]);
+  const { data: resolved } = trpc.map.resolve.useQuery(
+    { hashes },
+    semiconstantCacheQuery,
+  );
 
   return (
     <div className="mx-1 border-l-1 border-black">
