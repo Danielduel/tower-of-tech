@@ -51,7 +51,7 @@ const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
         .then((x) => x?.flat());
 
       if (!idToHashCacheItem) return { id, status: "fetch" };
-      if (!idToHashCacheItem.removed) return { id, status: "removed" };
+      if (idToHashCacheItem.removed) return { id, status: "removed" };
       if (!idToHashCacheItem.available) return { id, status: "error" };
       if (!idToHashCacheItem.hash) return { id, status: "error" };
       return { id, status: "ok", data: idToHashCacheItem };
