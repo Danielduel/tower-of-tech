@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { client, resource } from "zod_api";
+import { client, resource } from "zod_api/mod.ts";
 import {
   BeatSaverMapByIdResponseSchema,
   BeatSaverMapResponseSuccessSchema,
