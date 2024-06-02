@@ -4,7 +4,7 @@ import {
   BeatSaverMapByIdResponseSchema,
   BeatSaverMapId,
 } from "@/packages/types/beatsaver.ts";
-import { fetcher } from "@/packages/fetcher/mod.ts";
+import { fetcher } from "@/packages/api-utils/fetcher.ts";
 import { fileExists } from "@/packages/fs/fileExists.ts";
 import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";

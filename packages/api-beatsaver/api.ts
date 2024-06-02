@@ -4,8 +4,8 @@ import {
   BeatSaverMapByIdResponseSchema,
   BeatSaverMapResponseSuccessSchema,
 } from "@/packages/types/beatsaver.ts";
-import { fetcher } from "@/packages/fetcher/mod.ts";
-import { getLogger } from "@/packages/logger/mod.ts";
+import { fetcher } from "@/packages/api-utils/fetcher.ts";
+import { getLogger } from "@/packages/api-utils/logger.ts";
 
 export const BeatSaverApi = client({
   fetcher,
