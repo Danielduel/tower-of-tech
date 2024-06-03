@@ -11,7 +11,7 @@ export const Link: FC<LinkProps> = (props) => {
   const match = useMatch({ path: resolved.pathname, end: true });
 
   const className =
-    `select-none p-1 text-lg hover:ring-1 ring-white w-full ${props.className} ${(match
+    `select-none p-1 text-lg hover:ring-1 hover:text-white ring-white w-full ${props.className} ${(match
       ? " underline "
       : " ")}`;
 

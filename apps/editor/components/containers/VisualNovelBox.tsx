@@ -20,7 +20,7 @@ export const VisualNovelButton = (
     <div className="border-r-4 border-white mt-5 h-8">
       <div
         {...props}
-        className="cursor-pointer select-none box-border inline hover:ring-1 ring-white p-4 text-2xl"
+        className="cursor-pointer select-none box-border inline hover:ring-1 hover:text-white ring-white p-4 text-2xl"
       />
     </div>
   );
@@ -33,7 +33,7 @@ export const VisualNovelButtonMedium = (
     <div className="border-r-4 border-white mt-2 h-5">
       <div
         {...props}
-        className="cursor-pointer select-none box-border inline hover:ring-1 ring-white p-2"
+        className="cursor-pointer select-none box-border inline hover:ring-1 hover:text-white ring-white p-2"
       />
     </div>
   );
@@ -46,7 +46,7 @@ export const VisualNovelAnchor = (
     <div className="border-r-4 border-white mt-5 h-8">
       <a
         {...props}
-        className="select-none hover:ring-1 ring-white w-full p-4 text-2xl"
+        className="select-none hover:ring-1 hover:text-white ring-white w-full p-4 text-2xl"
       />
     </div>
   );
@@ -148,11 +148,15 @@ export const VisualNovelStep = forwardRef<
   );
 });
 
-export const VisualNovelStepExplanation: FC<PropsWithChildren> = (
-  { children },
+export const VisualNovelStepExplanation: FC<
+  PropsWithChildren & { className?: string }
+> = (
+  { children, className = "" },
 ) => {
   return (
-    <div className="text-lg border-l-2 text-cyan-50 pl-5 mt-2">{children}</div>
+    <div className={`text-lg border-l-2 text-cyan-50 pl-5 mt-2 ${className}`}>
+      {children}
+    </div>
   );
 };
 
@@ -163,7 +167,7 @@ export const VisualNovelStepInlineATag: FC<
 ) => {
   return (
     <a
-      className="border px-4 py-1 box-content h-8 ml-4 mr-1"
+      className="border px-4 py-1 box-content h-8 ml-4 mr-1 hover:ring-1 inline-block hover:text-white ring-white w-max min-w-0 mb-2 !text-2xl no-underline"
       {...props}
     />
   );
@@ -186,7 +190,7 @@ export const VisualNovelATag: FC<
   const [visited, setVisited] = useState(false);
   return (
     <a
-      className={"hover:ring-1 ring-white border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline " +
+      className={"hover:ring-1 hover:text-white ring-white border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline " +
         (visited ? "opacity-50" : "")}
       href={href}
       download={download}
@@ -205,7 +209,7 @@ export const VisualNovelOneClickAnchor: FC<
   const [visited, setVisited] = useState(false);
   return (
     <a
-      className={"hover:ring-1 ring-white border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline " +
+      className={"hover:ring-1 hover:text-white ring-white border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline " +
         (visited ? "opacity-50" : "")}
       href={href}
       onClick={() => setVisited(true)}

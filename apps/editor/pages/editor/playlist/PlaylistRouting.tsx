@@ -11,7 +11,7 @@ const PlaylistListing: FC<WithPlaylistLinks> = ({ playlists }) => {
   return playlists.map((playlist) => (
     <Link
       to={`/editor/playlist/list/${playlist.id}`}
-      className="p-1 hover:ring-1 ring-neutral-500 w-full"
+      className="p-1 hover:ring-1 hover:text-white ring-neutral-500 w-full"
       key={playlist.id}
     >
       <h4 className="text-lg text-left">{playlist.playlistTitle}</h4>
@@ -32,13 +32,13 @@ export const PlaylistLayout: FC<PropsWithChildren> = ({ children }) => {
         <h3 className="text-md text-slate-600">Playlist Actions</h3>
         <Link
           to="/editor/playlist/new"
-          className="text-lg p-1 hover:ring-1 text-left w-full"
+          className="text-lg p-1 hover:ring-1 hover:text-white text-left w-full"
         >
           New playlist
         </Link>
         <Link
           to="/editor/playlist/from_file"
-          className="text-lg p-1 hover:ring-1 text-left w-full"
+          className="text-lg p-1 hover:ring-1 hover:text-white text-left w-full"
         >
           New/Update from file(s)
         </Link>

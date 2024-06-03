@@ -96,7 +96,7 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
 export const ToTPlaylistList = () => {
   const playlistArray = useMemo(() => Object.values(playlistMapping), []);
   return (
-    <div className="w-full flex flex-row flex-wrap">
+    <div className="w-full flex flex-row flex-wrap gap-2">
       {playlistArray.map((x) => <ToTPlaylistItem {...x} />)}
     </div>
   );
@@ -439,7 +439,7 @@ export const PlaylistInstallGuidePlatform = forwardRef<HTMLDivElement>(
           children="Standalone (you don't have the headset plugged into the PC)"
         />
         <a
-          className="hover:ring-1 ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2"
+          className="hover:ring-1 hover:text-white ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2"
           href="https://store.steampowered.com/valveindex"
         >
           PlayStation VR
