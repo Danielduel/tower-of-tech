@@ -65,6 +65,15 @@ export const BeatSaberPlaylistWithImageAsUrlSchema = z.object({
   imageUrl: z.string().transform(makeImageUrl),
 });
 
+export const BeatSaberPlaylistFlatWithImageAsUrlSchema = z.object({
+  id: z.string().transform(makePlaylistId),
+  playlistTitle: z.string(),
+  playlistAuthor: z.string(),
+  customData: BeatSaberPlaylistCustomDataSchema.optional(),
+  songs: z.array(z.string().transform(makeUppercaseMapHash)),
+  imageUrl: z.string().transform(makeImageUrl),
+});
+
 export const BeatSaberPlaylistFlatSchema = z.object({
   id: z.string().transform(makePlaylistId),
   playlistTitle: z.string(),

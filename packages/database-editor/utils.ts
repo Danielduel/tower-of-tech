@@ -1,5 +1,8 @@
 import { fromUint8Array } from "https://denopkg.com/chiefbiiko/base64@master/mod.ts";
-import { BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
+import {
+  BeatSaberPlaylistFlatSchema,
+  BeatSaberPlaylistSchema,
+} from "@/packages/types/beatsaber-playlist.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { makeImageBase64 } from "@/packages/types/brands.ts";
@@ -42,6 +45,25 @@ const stripVersionstamps = <T extends Record<string, unknown>>(
     return x;
   }
   return x;
+};
+
+export const fetchBeatSaberPlaylistWithoutResolvingSongItem = async (
+  playlistId: PlaylistId,
+) => {
+  const _item = (await dbEditor.BeatSaberPlaylist
+    .find(playlistId))
+    ?.flat();
+
+  if (!_item) return null;
+  const item = stripVersionstamps(_item);
+
+  return {
+    ...item,
+    customData: {
+      ...item.customData,
+      ...playlistIdToCustomData(playlistId).customData,
+    },
+  } satisfies Omit<typeof BeatSaberPlaylistFlatSchema._type, "image">;
 };
 
 export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem = async (

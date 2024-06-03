@@ -15,11 +15,15 @@ import {
   makePlaylistId,
 } from "@/packages/types/brands.ts";
 import {
+  BeatSaberPlaylistFlatWithImageAsUrlSchema,
   BeatSaberPlaylistWithImageAsUrlSchema,
   BeatSaberPlaylistWithoutIdSchema,
 } from "@/packages/types/beatsaber-playlist.ts";
 import { BeatSaverResolvableSchema } from "@/packages/api-beatsaver/BeatSaverResolvableSchema.ts";
-import { fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem } from "@/packages/database-editor/utils.ts";
+import {
+  fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem,
+  fetchBeatSaberPlaylistWithoutResolvingSongItem,
+} from "@/packages/database-editor/utils.ts";
 
 const t = initTRPC.create();
 
@@ -61,11 +65,35 @@ const playlist = t.router({
       .then((x) => x.map((y) => y.flat()));
     return items;
   }),
+  getByIdWithoutResolvingMaps: t.procedure
+    .input(z.object({ id: z.string().transform(makePlaylistId) }))
+    .query(async ({
+      input: { id },
+    }) => {
+      console.log("router call playlist.getByIdWithoutResolvingMaps");
+
+      const item = await fetchBeatSaberPlaylistWithoutResolvingSongItem(
+        id,
+      );
+      if (!item) return null;
+
+      const imageUrl = makeImageUrl(
+        await s3clientEditor.presignedGetObject(item.id, {
+          bucketName: buckets.playlist.coverImage,
+        }),
+      );
+      return {
+        ...item,
+        imageUrl,
+      } satisfies typeof BeatSaberPlaylistFlatWithImageAsUrlSchema._type;
+    }),
   getById: t.procedure
     .input(z.object({ id: z.string().transform(makePlaylistId) }))
     .query(async ({
       input: { id },
     }) => {
+      console.log("router call playlist.getById");
+
       const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(
         id,
       );

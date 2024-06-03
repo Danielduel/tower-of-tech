@@ -30,7 +30,7 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
   speedCategory,
   techCategory,
 }) => {
-  const { data } = trpc.playlist.getById.useQuery(
+  const { data } = trpc.playlist.getByIdWithoutResolvingMaps.useQuery(
     { id: playlistId },
     semiconstantCacheQuery,
   );
