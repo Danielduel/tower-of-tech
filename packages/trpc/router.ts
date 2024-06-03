@@ -13,6 +13,7 @@ import {
   makeImageUrl,
   makeLowercaseMapHash,
   makePlaylistId,
+  PlaylistId,
 } from "@/packages/types/brands.ts";
 import {
   BeatSaberPlaylistFlatWithImageAsUrlSchema,
@@ -21,6 +22,7 @@ import {
 } from "@/packages/types/beatsaber-playlist.ts";
 import { BeatSaverResolvableSchema } from "@/packages/api-beatsaver/BeatSaverResolvableSchema.ts";
 import {
+  fetchBeatSaberPlaylistsWithoutResolvingSongItem,
   fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem,
   fetchBeatSaberPlaylistWithoutResolvingSongItem,
 } from "@/packages/database-editor/utils.ts";
@@ -65,6 +67,43 @@ const playlist = t.router({
       .then((x) => x.map((y) => y.flat()));
     return items;
   }),
+  listByIdWithoutResolvingMaps: t.procedure
+    .input(z.object({ ids: z.array(z.string().transform(makePlaylistId)) }))
+    .query(async ({
+      input: { ids },
+    }) => {
+      console.log("router call playlist.listByIdWithoutResolvingMaps");
+
+      const items = await fetchBeatSaberPlaylistsWithoutResolvingSongItem(
+        ids,
+      );
+      if (!items) return null;
+
+      const imageUrlEntries = await Promise.all(
+        Object.keys(items).map(
+          async (key) => [
+            key,
+            await s3clientEditor.presignedGetObject(key, {
+              bucketName: buckets.playlist.coverImage,
+            }),
+          ],
+        ),
+      ).then((entries) =>
+        entries.map(([key, url]) => [key, makeImageUrl(url)] as const)
+      );
+      const imageUrls = Object.fromEntries(imageUrlEntries);
+
+      const response = Object.fromEntries(
+        Object.keys(items).map((
+          key,
+        ) => [key, { ...items[key], imageUrl: imageUrls[key] }]),
+      );
+
+      return response satisfies Record<
+        PlaylistId,
+        typeof BeatSaberPlaylistFlatWithImageAsUrlSchema._type
+      >;
+    }),
   getByIdWithoutResolvingMaps: t.procedure
     .input(z.object({ id: z.string().transform(makePlaylistId) }))
     .query(async ({

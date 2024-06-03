@@ -188,7 +188,14 @@ export const fetchAndCacheFromResolvablesRaw = async (
     .filter(filterNulls);
 
   const hashesArray = [...hashesFromCacheOk, ...hashesArrayFromResolvables];
+
+  console.time(
+    `[${execUlid}] fetchAndCacheFromResolvablesRaw fetchAndCacheHashes for ${hashesArray.length}`,
+  );
   const responseFromHashesP = fetchAndCacheHashes(hashesArray);
+  console.timeEnd(
+    `[${execUlid}] fetchAndCacheFromResolvablesRaw fetchAndCacheHashes for ${hashesArray.length}`,
+  );
 
   const idsArray = hashesFromIdResolvables
     .filter((x) => x.status === "fetch")
@@ -196,8 +203,12 @@ export const fetchAndCacheFromResolvablesRaw = async (
   const responseFromIds = await batchFetchIds(idsArray);
 
   if (responseFromIds) {
+    const responseFromIdsEntries = Object.entries(responseFromIds);
+    console.time(
+      `[${execUlid}] fetchAndCacheFromResolvablesRaw cache responseFromIds for ${responseFromIdsEntries.length}`,
+    );
     await dbEditor.BeatSaverIdToHashCache.addMany(
-      Object.entries(responseFromIds).map(([id, x]) => {
+      responseFromIdsEntries.map(([id, x]) => {
         return {
           id,
           hash: x?.versions[0].hash,
@@ -206,6 +217,9 @@ export const fetchAndCacheFromResolvablesRaw = async (
           outdated: false,
         };
       }),
+    );
+    console.timeEnd(
+      `[${execUlid}] fetchAndCacheFromResolvablesRaw cache responseFromIds for ${responseFromIdsEntries.length}`,
     );
   }
 

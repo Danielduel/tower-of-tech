@@ -10,6 +10,7 @@ import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId, PlaylistId } from "@/packages/types/brands.ts";
 import { links } from "@/apps/editor/routing.config.ts";
 import { makePlaylistUrl } from "@/packages/types/brands.ts";
+import { filterNulls } from "@/packages/utils/filter.ts";
 
 export const getImage = async (playlistId: PlaylistId) => {
   const imageBody = await s3clientEditor.getObject(playlistId, {
@@ -64,6 +65,21 @@ export const fetchBeatSaberPlaylistWithoutResolvingSongItem = async (
       ...playlistIdToCustomData(playlistId).customData,
     },
   } satisfies Omit<typeof BeatSaberPlaylistFlatSchema._type, "image">;
+};
+
+export const fetchBeatSaberPlaylistsWithoutResolvingSongItem = async (
+  playlistIds: PlaylistId[],
+): Promise<
+  Record<PlaylistId, Omit<typeof BeatSaberPlaylistSchema._type, "image">>
+> => {
+  const responses = await Promise.all(
+    playlistIds.map(fetchBeatSaberPlaylistWithoutResolvingSongItem),
+  );
+  const responseEntries = responses
+    .filter(filterNulls)
+    .map((response) => ([response.id, response] as const));
+  const response = Object.fromEntries(responseEntries);
+  return response;
 };
 
 export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem = async (

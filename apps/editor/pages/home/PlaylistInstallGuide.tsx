@@ -23,18 +23,24 @@ import {
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
 import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
+import {
+  BeatSaberPlaylistFlatWithImageAsUrlSchema,
+} from "@/packages/types/beatsaber-playlist.ts";
 
-export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
+export const ToTPlaylistItem: FC<
+  ToTPlaylistMappingItem & {
+    data:
+      | typeof BeatSaberPlaylistFlatWithImageAsUrlSchema._type
+      | null
+      | undefined;
+  }
+> = ({
+  data,
   displayName,
   playlistId,
   speedCategory,
   techCategory,
 }) => {
-  const { data } = trpc.playlist.getByIdWithoutResolvingMaps.useQuery(
-    { id: playlistId },
-    semiconstantCacheQuery,
-  );
-
   if (!data) return "Loading...";
 
   return (
@@ -95,9 +101,15 @@ export const ToTPlaylistItem: FC<ToTPlaylistMappingItem> = ({
 
 export const ToTPlaylistList = () => {
   const playlistArray = useMemo(() => Object.values(playlistMapping), []);
+  const { data } = trpc.playlist.listByIdWithoutResolvingMaps.useQuery(
+    { ids: playlistArray.map((item) => item.playlistId) },
+    semiconstantCacheQuery,
+  );
   return (
     <div className="w-full flex flex-row flex-wrap gap-2">
-      {playlistArray.map((x) => <ToTPlaylistItem {...x} />)}
+      {playlistArray.map((x) => (
+        <ToTPlaylistItem {...x} data={data[x.playlistId]} />
+      ))}
     </div>
   );
 };
