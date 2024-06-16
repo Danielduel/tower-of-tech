@@ -27,7 +27,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: tower-of-tech-editor
-          entrypoint: apps/editor/server.tsx
+          entrypoint: apps/website/server.tsx
           exclude: |
             data
             migrated

@@ -1,10 +1,10 @@
-import { VisualNovelStepExplanation } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { VisualNovelStepLink } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { VisualNovelDivider } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+import { VisualNovelStepExplanation } from "@/apps/website/components/containers/VisualNovelBox.tsx";
+import { VisualNovelStepLink } from "@/apps/website/components/containers/VisualNovelBox.tsx";
+import { VisualNovelDivider } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import {
   VisualNovelStep,
-} from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { links } from "@/apps/editor/routing.config.ts";
+} from "@/apps/website/components/containers/VisualNovelBox.tsx";
+import { links } from "@/apps/website/routing.config.ts";
 import { forwardRef } from "react";
 
 export const More = forwardRef<HTMLDivElement>((_, ref) => {

@@ -1,8 +1,8 @@
-import { VisualNovelStepExplanation } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { VisualNovelDivider } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+import { VisualNovelStepExplanation } from "@/apps/website/components/containers/VisualNovelBox.tsx";
+import { VisualNovelDivider } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import {
   VisualNovelStep,
-} from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+} from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { forwardRef } from "react";
 
 export const History = forwardRef<HTMLDivElement>((_, ref) => {

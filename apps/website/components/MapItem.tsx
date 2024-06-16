@@ -10,8 +10,8 @@ import {
   BeatSaverMapResponseVersionsItem,
   isBeatSaverMapResponseSuccessSchema,
 } from "@/packages/types/beatsaver.ts";
-import { Image } from "@/apps/editor/components/Image.tsx";
-import { VisualNovelButtonMedium } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+import { Image } from "@/apps/website/components/Image.tsx";
+import { VisualNovelButtonMedium } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 
 type MapItemProps = {
   playlistMapItem?: typeof BeatSaberPlaylistSongItemSchema._type;

@@ -19,7 +19,7 @@ import { apiV1Handler } from "@/packages/api/v1/mod.ts";
 import { isLocal } from "@/packages/utils/envrionment.ts";
 import { runWorker } from "@/packages/api-beatsaver/cache.ts";
 import { registerDiscordCronJobs } from "@/packages/discord/cron/mod.ts";
-import App from "@/apps/editor/App.tsx";
+import App from "@/apps/website/App.tsx";
 
 const root = Deno.cwd();
 
@@ -52,7 +52,7 @@ const renderer = createRenderHandler({
       </UltraServer>,
       {
         bootstrapModules: [
-          "@/apps/editor/client.tsx",
+          "@/apps/website/client.tsx",
         ],
       },
     );

@@ -1,30 +1,30 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { PlaylistRouting } from "@/apps/editor/pages/editor/playlist/PlaylistRouting.tsx";
-import { MapRouting } from "@/apps/editor/pages/editor/map/MapRouting.tsx";
-import NoPage from "@/apps/editor/pages/editor/NoPage.tsx";
-import Index from "@/apps/editor/pages/index.tsx";
-import { EditorLayoutShell } from "@/apps/editor/components/layouts/EditorLayout.tsx";
-import { MainLayoutShell } from "@/apps/editor/components/layouts/MainLayout.tsx";
-import { routing } from "@/apps/editor/routing.config.ts";
-import { Browse } from "@/apps/editor/pages/home/Browse.tsx";
-import { More } from "@/apps/editor/pages/home/More.tsx";
-import Download from "@/apps/editor/pages/home/Download.tsx";
-import { SnipeIndex } from "@/apps/editor/pages/snipe/index.tsx";
+import { PlaylistRouting } from "@/apps/website/pages/editor/playlist/PlaylistRouting.tsx";
+import { MapRouting } from "@/apps/website/pages/editor/map/MapRouting.tsx";
+import NoPage from "@/apps/website/pages/editor/NoPage.tsx";
+import Index from "@/apps/website/pages/index.tsx";
+import { EditorLayoutShell } from "@/apps/website/components/layouts/EditorLayout.tsx";
+import { MainLayoutShell } from "@/apps/website/components/layouts/MainLayout.tsx";
+import { routing } from "@/apps/website/routing.config.ts";
+import { Browse } from "@/apps/website/pages/home/Browse.tsx";
+import { More } from "@/apps/website/pages/home/More.tsx";
+import Download from "@/apps/website/pages/home/Download.tsx";
+import { SnipeIndex } from "@/apps/website/pages/snipe/index.tsx";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import {
   PlaylistInstallGuideModAssistant,
   PlaylistInstallGuidePCVRSteam,
   PlaylistInstallGuidePCVRSteamManualInstallMods,
   PlaylistInstallGuidePlatform,
-} from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
-import { PlaylistInstallGuidePCVRSteamManualDownload } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
-import { PlaylistInstallGuidePCVRSteamManualLocateFolder } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
-import { PlaylistInstallGuidePCVRSteamManualMoveAndExtract } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
-import { PlaylistInstallGuidePCVRSteamManualPostInstallationCheck } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
-import { PlaylistInstallGuidePCVRSteamCustom } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
-import { PlaylistInstallGuidePCVRPostInstallationCongratulations } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
-import { History } from "@/apps/editor/pages/home/History.tsx";
-import { PlaylistDetails } from "@/apps/editor/pages/home/Playlist.tsx";
+} from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
+import { PlaylistInstallGuidePCVRSteamManualDownload } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
+import { PlaylistInstallGuidePCVRSteamManualLocateFolder } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
+import { PlaylistInstallGuidePCVRSteamManualMoveAndExtract } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
+import { PlaylistInstallGuidePCVRSteamManualPostInstallationCheck } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
+import { PlaylistInstallGuidePCVRSteamCustom } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
+import { PlaylistInstallGuidePCVRPostInstallationCongratulations } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
+import { History } from "@/apps/website/pages/home/History.tsx";
+import { PlaylistDetails } from "@/apps/website/pages/home/Playlist.tsx";
 
 export const Routing = () => {
   const location = useLocation();

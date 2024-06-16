@@ -1,4 +1,4 @@
-import { VisualNovelContainer } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+import { VisualNovelContainer } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 
 export default function Download() {

@@ -7,7 +7,7 @@ import { playlistMapping } from "../../packages/playlist/mod.ts";
 import { getToTPlaylistSpeedCategory } from "../../packages/playlist/mod.ts";
 import { getToTPlaylistTechCategory } from "../../packages/playlist/mod.ts";
 import { PlaylistId } from "@/packages/types/brands.ts";
-import { links } from "@/apps/editor/routing.config.ts";
+import { links } from "@/apps/website/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 

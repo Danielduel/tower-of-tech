@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren } from "react";
 import { Route, Routes } from "react-router-dom";
-import { MapList } from "@/apps/editor/pages/editor/map/MapList.tsx";
+import { MapList } from "@/apps/website/pages/editor/map/MapList.tsx";
 
 export const MapLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -8,11 +8,11 @@ export const MapLayout: FC<PropsWithChildren> = ({ children }) => {
       <div className="flex flex-col items-start">
       </div>
       <div>
-        { children }
+        {children}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const MapRouting = () => {
   return (
@@ -21,5 +21,5 @@ export const MapRouting = () => {
         <Route path="list" element={<MapList />} />
       </Routes>
     </MapLayout>
-  )
+  );
 };

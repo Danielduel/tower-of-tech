@@ -7,7 +7,7 @@ import type {
 import { getCoverBase64 } from "@/src/utils/cover-image.ts";
 import { stringifyPlaylist } from "@/src/utils/json.ts";
 import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
-import { links } from "@/apps/editor/routing.config.ts";
+import { links } from "@/apps/website/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId } from "@/packages/types/brands.ts";
 

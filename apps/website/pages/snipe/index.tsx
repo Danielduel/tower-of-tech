@@ -1,9 +1,9 @@
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaverMapId } from "@/packages/types/beatsaver.ts";
 import { GlobeInstance } from "globe.gl";
-import { COUNTRIES } from "@/apps/editor/components/COUNTRIES.ts";
+import { COUNTRIES } from "@/apps/website/components/COUNTRIES.ts";
 
 type BeatLeaderWSAccepted = {
   data: {
@@ -28,14 +28,14 @@ type BeatLeaderWSAccepted = {
       country: string;
       platform: string;
     };
-  }
+  };
 };
 
 type BeatLeaderWSAcceptedModified = BeatLeaderWSAccepted & {
   skewLat: number;
   skewLng: number;
   timeAdded: number;
-}
+};
 
 const safeParse = (data: string) => {
   try {
@@ -48,8 +48,8 @@ const safeParse = (data: string) => {
 function getFlagEmoji(countryCode: string) {
   const codePoints = countryCode
     .toUpperCase()
-    .split('')
-    .map(char =>  127397 + char.charCodeAt(0));
+    .split("")
+    .map((char) => 127397 + char.charCodeAt(0));
   return String.fromCodePoint(...codePoints);
 }
 
@@ -67,17 +67,17 @@ const StatusItem = (props: BeatLeaderWSAcceptedModified) => {
           hash,
           id: songId,
           mapper,
-          name: songName
-        }
+          name: songName,
+        },
       },
       player: {
         avatar,
         country,
         id: playerId,
         name: playerName,
-        platform
-      }
-    }
+        platform,
+      },
+    },
   } = props;
   return (
     <div className="w-full text-white flex p-4 text-left">
@@ -86,23 +86,31 @@ const StatusItem = (props: BeatLeaderWSAcceptedModified) => {
       </div>
       <div>
         <div className="text-lg">{getFlagEmoji(country)} {playerName}</div>
-        <div>{Math.floor(accuracy * 10000) / 100}%{fullCombo ? " (FC)" : ""} {songName}
-        <br />by {author}
-        {mapper.length > 0 ? (<span><br />from {mapper}</span>) : null}
+        <div>
+          {Math.floor(accuracy * 10000) / 100}%{fullCombo ? " (FC)" : ""}{" "}
+          {songName}
+          <br />by {author}
+          {mapper.length > 0
+            ? (
+              <span>
+                <br />from {mapper}
+              </span>
+            )
+            : null}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const StatusItemAsHTML = (props: BeatLeaderWSAcceptedModified) => {
   const elem = <StatusItem {...props} />;
   const root = document.createElement("div");
-  root.className = "bg-zinc-900 glass"
-  root.setAttribute("name", "toRemove")
+  root.className = "bg-zinc-900 glass";
+  root.setAttribute("name", "toRemove");
   createRoot(root).render(elem);
   return root;
-}
+};
 
 const init = async () => {
   const Globe = (await import("globe.gl")).default;
@@ -123,10 +131,10 @@ const init = async () => {
 
   return Globe()
     // .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-    .globeImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+    .globeImageUrl("//unpkg.com/three-globe/example/img/earth-topology.png")
     .atmosphereColor("white")
     .backgroundColor("black")
-    .arcColor('color')
+    .arcColor("color")
     .arcDashLength(() => 0.1)
     .arcDashGap(() => 1)
     .arcDashAnimateTime(() => 2000)
@@ -136,9 +144,8 @@ const init = async () => {
     .pointColor(0x18181B)
     .pointsTransitionDuration(0)
     .htmlAltitude(0.5)
-    .htmlTransitionDuration(0)
-  (document.getElementById('globeViz')!)
-}
+    .htmlTransitionDuration(0)(document.getElementById("globeViz")!);
+};
 
 export const SnipeIndex = () => {
   const ref = useRef<GlobeInstance | null>(null);
@@ -148,14 +155,21 @@ export const SnipeIndex = () => {
   useEffect(() => {
     setTimeout(() => {
       setCounter(counter + 1);
-      
+
       const globe = ref.current;
       if (!globe) return;
 
-      const lenLatData = dataRef.current.map(x => {
-        const country = COUNTRIES.ref_country_codes.find(country => country.alpha2 === x.data.player.country);
+      const lenLatData = dataRef.current.map((x) => {
+        const country = COUNTRIES.ref_country_codes.find((country) =>
+          country.alpha2 === x.data.player.country
+        );
         if (!country) return { lat: 0, lng: 0, ...x };
-        return { name: "toRemove", lat: country.latitude + x.skewLat, lng: country.longitude  + x.skewLng, ...x };
+        return {
+          name: "toRemove",
+          lat: country.latitude + x.skewLat,
+          lng: country.longitude + x.skewLng,
+          ...x,
+        };
       });
 
       const scene = globe.scene();
@@ -169,11 +183,11 @@ export const SnipeIndex = () => {
       globe.htmlElementsData(lenLatData);
 
       setTimeout(() => {
-        htmlChildren.forEach(c => c.removeFromParent());
-        pointsChildren.forEach(c => c.removeFromParent());
-      }, 500)
-    }, 500)
-  }, [counter])
+        htmlChildren.forEach((c) => c.removeFromParent());
+        pointsChildren.forEach((c) => c.removeFromParent());
+      }, 500);
+    }, 500);
+  }, [counter]);
 
   useEffect(() => {
     (async () => {
@@ -182,12 +196,12 @@ export const SnipeIndex = () => {
       const controls = ref.current.controls();
       controls.autoRotate = true;
       controls.autoRotateSpeed = -5;
-    })()
+    })();
   }, []);
 
   useEffect(() => {
     const client = new WebSocket("wss://api.beatleader.xyz/general");
-    
+
     client.onmessage = (message) => {
       const data = safeParse(message.data);
       if (!data) return;
@@ -197,28 +211,36 @@ export const SnipeIndex = () => {
           ...data,
           skewLat: Math.random() * 4,
           skewLng: Math.random() * 4,
-          timeAdded: Date.now()
+          timeAdded: Date.now(),
         };
         dataRef.current.push(newData);
 
         const globe = ref.current;
         if (!globe) return;
-        const country = COUNTRIES.ref_country_codes.find(country => country.alpha2 === newData.data.player.country);
+        const country = COUNTRIES.ref_country_codes.find((country) =>
+          country.alpha2 === newData.data.player.country
+        );
         if (!country) return;
-        globe.pointOfView({ lat: country.latitude + newData.skewLat, lng: country.longitude  + newData.skewLng, altitude: 0.9 }, 600);
+        globe.pointOfView({
+          lat: country.latitude + newData.skewLat,
+          lng: country.longitude + newData.skewLng,
+          altitude: 0.9,
+        }, 600);
       }
 
       const now = Date.now();
-      dataRef.current = dataRef.current.filter(x => now - x.timeAdded < 10000);
-    }
-  }, [])
+      dataRef.current = dataRef.current.filter((x) =>
+        now - x.timeAdded < 10000
+      );
+    };
+  }, []);
 
-  return <div>
-    <div id="globeViz"></div>
-    <div className="w-96 h-[calc(100vh-8rem)] z-2 absolute top-0 right-0 border-box m-16 overflow-scroll glass scrollbar-hide">
-      {
-        dataRef.current.map((props) => <StatusItem { ...props } />)
-      }
+  return (
+    <div>
+      <div id="globeViz"></div>
+      <div className="w-96 h-[calc(100vh-8rem)] z-2 absolute top-0 right-0 border-box m-16 overflow-scroll glass scrollbar-hide">
+        {dataRef.current.map((props) => <StatusItem {...props} />)}
+      </div>
     </div>
-  </div>
+  );
 };

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useParams } from "react-router-dom";
-import { Playlist } from "@/apps/editor/pages/editor/playlist/PlaylistItem.tsx";
+import { Playlist } from "@/apps/website/pages/editor/playlist/PlaylistItem.tsx";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 

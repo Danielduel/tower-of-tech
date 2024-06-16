@@ -4,7 +4,7 @@ import UltraClient, { hydrate } from "ultra/lib/react/client.js";
 import { TRPCClientProvider } from "@/packages/trpc/ClientProvider.tsx";
 import { queryClient } from "@/packages/react-query/query-client.ts";
 import { Hydrate, QueryClientProvider } from "@tanstack/react-query";
-import App from "@/apps/editor/App.tsx";
+import App from "@/apps/website/App.tsx";
 
 declare const __REACT_QUERY_DEHYDRATED_STATE: unknown;
 

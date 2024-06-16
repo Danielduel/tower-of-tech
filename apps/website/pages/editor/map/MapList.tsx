@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
-import { MapItem } from "@/apps/editor/components/MapItem.tsx";
+import { MapItem } from "@/apps/website/components/MapItem.tsx";
 import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 
 export const MapList: FC = () => {

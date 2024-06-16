@@ -6,7 +6,7 @@ import {
 import { BeatSaverMapResponseSuccessSchema } from "@/packages/types/beatsaver.ts";
 import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
-import { links } from "@/apps/editor/routing.config.ts";
+import { links } from "@/apps/website/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
 const beatSaverResolvedToSongs = (

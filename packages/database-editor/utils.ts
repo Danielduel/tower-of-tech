@@ -8,7 +8,7 @@ import { buckets } from "@/packages/database-editor/buckets.ts";
 import { makeImageBase64 } from "@/packages/types/brands.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId, PlaylistId } from "@/packages/types/brands.ts";
-import { links } from "@/apps/editor/routing.config.ts";
+import { links } from "@/apps/website/routing.config.ts";
 import { makePlaylistUrl } from "@/packages/types/brands.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 

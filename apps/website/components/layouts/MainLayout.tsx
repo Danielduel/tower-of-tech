@@ -5,7 +5,7 @@ import {
   Suspense,
   useRef,
 } from "react";
-import { VisualNovelContainerLoading } from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+import { VisualNovelContainerLoading } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 
 export function MainLayout(
   { children, style }: React.PropsWithChildren & {

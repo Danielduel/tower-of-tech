@@ -1,6 +1,6 @@
 import { FC, forwardRef, useMemo, useState } from "react";
-import { links } from "@/apps/editor/routing.config.ts";
-import { Image } from "@/apps/editor/components/Image.tsx";
+import { links } from "@/apps/website/routing.config.ts";
+import { Image } from "@/apps/website/components/Image.tsx";
 import {
   getToTPlaylistSpeedCategory,
   getToTPlaylistTechCategory,
@@ -19,7 +19,7 @@ import {
   VisualNovelStepExplanation,
   VisualNovelStepInlineATag,
   VisualNovelStepLink,
-} from "@/apps/editor/components/containers/VisualNovelBox.tsx";
+} from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
 import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";

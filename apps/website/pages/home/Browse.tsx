@@ -4,11 +4,11 @@ import {
   VisualNovelStepExplanation,
   VisualNovelStepInlineATag,
   VisualNovelStepLink,
-} from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { ToTPlaylistList } from "@/apps/editor/pages/home/PlaylistInstallGuide.tsx";
+} from "@/apps/website/components/containers/VisualNovelBox.tsx";
+import { ToTPlaylistList } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
 import { forwardRef } from "react";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
-import { routing } from "@/apps/editor/routing.config.ts";
+import { routing } from "@/apps/website/routing.config.ts";
 
 // case playlistName.startsWith("Adep"): return "#5e81ac";
 // case playlistName.startsWith("Acc"): return "#88c0d0";

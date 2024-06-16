@@ -4,8 +4,8 @@ import {
   VisualNovelBody,
   VisualNovelContainer,
   VisualNovelLink,
-} from "@/apps/editor/components/containers/VisualNovelBox.tsx";
-import { links } from "@/apps/editor/routing.config.ts";
+} from "@/apps/website/components/containers/VisualNovelBox.tsx";
+import { links } from "@/apps/website/routing.config.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 import { forwardRef } from "react";
 

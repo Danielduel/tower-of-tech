@@ -5,9 +5,9 @@ import {
   WithPlaylistWithImageAsUrl,
 } from "@/packages/ui/playlist/types.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
-import { MapItem } from "@/apps/editor/components/MapItem.tsx";
-import { Image } from "@/apps/editor/components/Image.tsx";
-import { links } from "@/apps/editor/routing.config.ts";
+import { MapItem } from "@/apps/website/components/MapItem.tsx";
+import { Image } from "@/apps/website/components/Image.tsx";
+import { links } from "@/apps/website/routing.config.ts";
 import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 
 export const PlaylistMaps: FC<WithMaps & { prependKey: string }> = (
