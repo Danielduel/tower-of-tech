@@ -17,4 +17,4 @@ export const createTrpcClient = (internal: boolean) =>
     ? getTrpcClientFromUrl("/api/trpc")
     : isLocal()
     ? getTrpcClientFromUrl("http://localhost:8081/api/trpc")
-    : getTrpcClientFromUrl("https://tower-of-tech-editor.deno.dev/api/trpc");
+    : getTrpcClientFromUrl("https://tower-of-tech.deno.dev/api/trpc");

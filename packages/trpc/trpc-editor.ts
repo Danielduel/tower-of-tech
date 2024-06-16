@@ -7,7 +7,7 @@ const getUrl = (internal: boolean) =>
     ? "/api/trpc"
     : isLocal()
     ? "http://localhost:8081/api/trpc"
-    : "https://tower-of-tech-editor.deno.dev/api/trpc";
+    : "https://tower-of-tech.deno.dev/api/trpc";
 
 export const createClient = (internal: boolean) =>
   createTRPCProxyClient<AppRouter>({
