@@ -417,18 +417,6 @@
       ]
     },
     {
-      "songName": "Deeper",
-      "levelAuthorName": "Ryjiku",
-      "hash": "9EFAC573C92F8558F64A82FD2B523D929AD7EBE1",
-      "levelid": "custom_level_9EFAC573C92F8558F64A82FD2B523D929AD7EBE1",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Saucy",
       "levelAuthorName": "Cobayo",
       "hash": "E7D7D8B17BCB7F25B1A510F711F10B86BB5E8299",
@@ -635,8 +623,8 @@
     {
       "songName": "Ljusa Stjarnan",
       "levelAuthorName": "zeon",
-      "hash": "23BB19374AA675634BB285C3546EF1E33EC1E1EA",
-      "levelid": "custom_level_23BB19374AA675634BB285C3546EF1E33EC1E1EA",
+      "hash": "9988E50D064E05424813E98597E878C161F5D311",
+      "levelid": "custom_level_9988E50D064E05424813E98597E878C161F5D311",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -887,8 +875,8 @@
     {
       "songName": "CAN'T TAKE MY EYES OFF YOU",
       "levelAuthorName": "RetrX",
-      "hash": "639DB56FF9E6E9FA3167C98A813F05C4DBE80B8F",
-      "levelid": "custom_level_639DB56FF9E6E9FA3167C98A813F05C4DBE80B8F",
+      "hash": "7CCB74B74CB36958AFEC76E9316D1A8A23549105",
+      "levelid": "custom_level_7CCB74B74CB36958AFEC76E9316D1A8A23549105",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1597,6 +1585,90 @@
       "levelAuthorName": "Nebelmonster",
       "hash": "E0777F6D10F15B230F7ADE34D88C4629E13AD6F6",
       "levelid": "custom_level_E0777F6D10F15B230F7ADE34D88C4629E13AD6F6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "God-ish",
+      "levelAuthorName": "Flasks",
+      "hash": "E87DEB0B4499F86F820E37BEB521C887E37F3CCE",
+      "levelid": "custom_level_E87DEB0B4499F86F820E37BEB521C887E37F3CCE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "September",
+      "levelAuthorName": "edgyguns",
+      "hash": "1569AC632B176CE34C5721CEEE0D90FD1E389848",
+      "levelid": "custom_level_1569AC632B176CE34C5721CEEE0D90FD1E389848",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "tenetene",
+      "levelAuthorName": "oRuGaM",
+      "hash": "E84E85710D12DB2B88FF4CBD991E2ED222D38933",
+      "levelid": "custom_level_E84E85710D12DB2B88FF4CBD991E2ED222D38933",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "burbank house",
+      "levelAuthorName": "Nora Voilyn",
+      "hash": "09588378204844135B1386B55A56CF084FC4F3DE",
+      "levelid": "custom_level_09588378204844135B1386B55A56CF084FC4F3DE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "INSTRUCTIONS UNCLEAR",
+      "levelAuthorName": "Doogle",
+      "hash": "9E02508B0280FE38726E1C68024973F2766AA49C",
+      "levelid": "custom_level_9E02508B0280FE38726E1C68024973F2766AA49C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Yoidore Shirazu",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "432C943E1FC81A1E5C1D8EB4AB298AB7C0FB379B",
+      "levelid": "custom_level_432C943E1FC81A1E5C1D8EB4AB298AB7C0FB379B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Yume de Mata Aetaranaa",
+      "levelAuthorName": "zeon",
+      "hash": "356EAF94F57B2CC5C7E484939084F45BAC7EC789",
+      "levelid": "custom_level_356EAF94F57B2CC5C7E484939084F45BAC7EC789",
       "difficulties": [
         {
           "characteristic": "Standard",

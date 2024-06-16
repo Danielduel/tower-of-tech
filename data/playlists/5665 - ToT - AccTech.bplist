@@ -247,18 +247,6 @@
       ]
     },
     {
-      "songName": "Myths You Forgot",
-      "levelAuthorName": "nolan121405",
-      "hash": "B3574125C2C8D6E187D4B7C5D59B5BB625FD2217",
-      "levelid": "custom_level_B3574125C2C8D6E187D4B7C5D59B5BB625FD2217",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Transcend",
       "levelAuthorName": "SmokeyBacon",
       "hash": "EAFBBAC66DA0DF7FFEF8228A0EEE2AB32C7C1F39",
@@ -391,18 +379,6 @@
       ]
     },
     {
-      "songName": "Daisy",
-      "levelAuthorName": "eurnkung",
-      "hash": "E2C36CFE940526F90952EFBA3667297271C7DB96",
-      "levelid": "custom_level_E2C36CFE940526F90952EFBA3667297271C7DB96",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "We Fresh",
       "levelAuthorName": "eurnkung",
       "hash": "B408A30709F1292F5369254AF40484A663B47AC3",
@@ -447,30 +423,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Yume de Mata Aetaranaa",
-      "levelAuthorName": "zeon",
-      "hash": "356EAF94F57B2CC5C7E484939084F45BAC7EC789",
-      "levelid": "custom_level_356EAF94F57B2CC5C7E484939084F45BAC7EC789",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Palm Trees",
-      "levelAuthorName": "Flower_Power & Pixil & Auguxts",
-      "hash": "68A5CCB2D1633DBB1E6C5A646D42EE625441DCBE",
-      "levelid": "custom_level_68A5CCB2D1633DBB1E6C5A646D42EE625441DCBE",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -2439,6 +2391,114 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Checkmate",
+      "levelAuthorName": "Alice",
+      "hash": "CF2825AB6FCC4456B7D1EB9EFA6E9F3DD722A561",
+      "levelid": "custom_level_CF2825AB6FCC4456B7D1EB9EFA6E9F3DD722A561",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Hoshikuzu distancia",
+      "levelAuthorName": "shrado & Bitz",
+      "hash": "754C2606436DAA4EE58D917A56EB23FCC12328F6",
+      "levelid": "custom_level_754C2606436DAA4EE58D917A56EB23FCC12328F6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "She's Kerosene",
+      "levelAuthorName": "Andynak",
+      "hash": "0C1CCBEE630A85F390937A2B2CC52D876534DADD",
+      "levelid": "custom_level_0C1CCBEE630A85F390937A2B2CC52D876534DADD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Insane",
+      "levelAuthorName": "Emiru & steeak, ",
+      "hash": "79993E907F40A0EFFD855EE534588221989EEE60",
+      "levelid": "custom_level_79993E907F40A0EFFD855EE534588221989EEE60",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Counting Stars",
+      "levelAuthorName": "Faded 99 & Z-ANESaber",
+      "hash": "57679C24912368FBF934AF2667216F2C787CD4CD",
+      "levelid": "custom_level_57679C24912368FBF934AF2667216F2C787CD4CD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Silent Movie",
+      "levelAuthorName": "Nixie.Korten",
+      "hash": "6A33319772878BC111C715101B1B696FC3AFAD9E",
+      "levelid": "custom_level_6A33319772878BC111C715101B1B696FC3AFAD9E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Yowanehaki",
+      "levelAuthorName": "Gabriel x Marsh",
+      "hash": "13A1B008E40284318053124031D54548A20D992A",
+      "levelid": "custom_level_13A1B008E40284318053124031D54548A20D992A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Monster",
+      "levelAuthorName": "Joshabi",
+      "hash": "8DCFE49242E87D1D3EECABA2E55EA8ACBF39DB0B",
+      "levelid": "custom_level_8DCFE49242E87D1D3EECABA2E55EA8ACBF39DB0B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Hello World",
+      "levelAuthorName": "Fara",
+      "hash": "8D9D970FCE0C0DBF86B65F8B23736BFE155C6D05",
+      "levelid": "custom_level_8D9D970FCE0C0DBF86B65F8B23736BFE155C6D05",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

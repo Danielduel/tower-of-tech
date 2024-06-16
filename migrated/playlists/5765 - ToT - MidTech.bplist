@@ -429,18 +429,6 @@
       ]
     },
     {
-      "songName": "Diastrophism",
-      "levelAuthorName": "eifer",
-      "hash": "0857AE34F70C78104B651A59389FAFD2AADE3BB1",
-      "levelid": "custom_level_0857AE34F70C78104B651A59389FAFD2AADE3BB1",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Lovebeam!!",
       "levelAuthorName": "Gabriel",
       "hash": "3F4E7F71C9B1E9411FF442CDBED82075B031D75D",
@@ -1501,6 +1489,66 @@
       "levelAuthorName": "Khenab",
       "hash": "0B777DE2C3FECD1E6C926EA710735B2647609C29",
       "levelid": "custom_level_0B777DE2C3FECD1E6C926EA710735B2647609C29",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dance with Silence",
+      "levelAuthorName": "Serephor, DesperateWoman",
+      "hash": "D584D6CA7147C72E5507F92E25D9BC0CB028F002",
+      "levelid": "custom_level_D584D6CA7147C72E5507F92E25D9BC0CB028F002",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Fleeting Lullaby",
+      "levelAuthorName": "Anammelech",
+      "hash": "1994182CD549D7CAF984F35FDC0006735FD89FE4",
+      "levelid": "custom_level_1994182CD549D7CAF984F35FDC0006735FD89FE4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "The King's Return",
+      "levelAuthorName": "yabje",
+      "hash": "70ED9B671928AD6F48C6C439A7BBBE0E8EE8E5C8",
+      "levelid": "custom_level_70ED9B671928AD6F48C6C439A7BBBE0E8EE8E5C8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rogue",
+      "levelAuthorName": "pleo & winteredge",
+      "hash": "1AEB6E553033E084E5CA19A4DEC0332831BEFF15",
+      "levelid": "custom_level_1AEB6E553033E084E5CA19A4DEC0332831BEFF15",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Luna",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "708A230A4A2AD44F4BBE3C27598268C2339FBDB1",
+      "levelid": "custom_level_708A230A4A2AD44F4BBE3C27598268C2339FBDB1",
       "difficulties": [
         {
           "characteristic": "Standard",

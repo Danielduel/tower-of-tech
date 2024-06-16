@@ -126,18 +126,6 @@
       ]
     },
     {
-      "songName": "IZANA",
-      "levelAuthorName": "Sibs",
-      "hash": "C29529A1155E2310E61AD7E3777259DCABC2E1E7",
-      "levelid": "custom_level_C29529A1155E2310E61AD7E3777259DCABC2E1E7",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Lost Umbrella",
       "levelAuthorName": "Aquaflee",
       "hash": "9EFE62397031C67BB507C1A9A10753D14FB8E685",
@@ -438,18 +426,6 @@
       ]
     },
     {
-      "songName": "Fleeting Lullaby",
-      "levelAuthorName": "Anammelech",
-      "hash": "1994182CD549D7CAF984F35FDC0006735FD89FE4",
-      "levelid": "custom_level_1994182CD549D7CAF984F35FDC0006735FD89FE4",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "The 90's Decision",
       "levelAuthorName": "That_Narwhal",
       "hash": "42F218850E16F24CBCCB94DEF959889F9AB4663C",
@@ -466,30 +442,6 @@
       "levelAuthorName": "DiscoBaIIerz",
       "hash": "EB0F60D3AFCA96C6F0428A0B2A1F610F9854F083",
       "levelid": "custom_level_EB0F60D3AFCA96C6F0428A0B2A1F610F9854F083",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Abstruse Dilemma",
-      "levelAuthorName": "yabje",
-      "hash": "974F5A190A34F1A25F2D63C2D366F5C1CFF67CCA",
-      "levelid": "custom_level_974F5A190A34F1A25F2D63C2D366F5C1CFF67CCA",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "The King's Return",
-      "levelAuthorName": "yabje",
-      "hash": "70ED9B671928AD6F48C6C439A7BBBE0E8EE8E5C8",
-      "levelid": "custom_level_70ED9B671928AD6F48C6C439A7BBBE0E8EE8E5C8",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1122,18 +1074,6 @@
       ]
     },
     {
-      "songName": "String Theocracy",
-      "levelAuthorName": "kizuflux",
-      "hash": "6D6FCF4C4BA2DD68531D5483EB83B72FC23A5E35",
-      "levelid": "custom_level_6D6FCF4C4BA2DD68531D5483EB83B72FC23A5E35",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Eat",
       "levelAuthorName": "Nolanimations",
       "hash": "C5C142DC16075274CE063066513CA86E0854C459",
@@ -1298,6 +1238,66 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "God save me！(Muse Dash .ver)",
+      "levelAuthorName": "Amo",
+      "hash": "D749E725ED5126570F55D73A165E5C414B026DC5",
+      "levelid": "custom_level_D749E725ED5126570F55D73A165E5C414B026DC5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Deeper",
+      "levelAuthorName": "Ryjiku",
+      "hash": "9EFAC573C92F8558F64A82FD2B523D929AD7EBE1",
+      "levelid": "custom_level_9EFAC573C92F8558F64A82FD2B523D929AD7EBE1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hop・Step・Ranbu",
+      "levelAuthorName": "take_nyan",
+      "hash": "9C9602B70C413D0B2B77012716CB7577DAFED3A3",
+      "levelid": "custom_level_9C9602B70C413D0B2B77012716CB7577DAFED3A3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Work",
+      "levelAuthorName": "BigOlDumplin",
+      "hash": "C8A31ED4646213D617AA62AE523438026443735D",
+      "levelid": "custom_level_C8A31ED4646213D617AA62AE523438026443735D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Mushi Miko Unya no Happypy",
+      "levelAuthorName": "Uragirimono",
+      "hash": "7F791DE42DA8F439AC3D2454E35C2610D70C392E",
+      "levelid": "custom_level_7F791DE42DA8F439AC3D2454E35C2610D70C392E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }
