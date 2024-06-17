@@ -8,6 +8,12 @@
   "editor.defaultFormatter": "denoland.vscode-deno",
   "typescript.validate.enable": false,
   "javascript.validate.enable": false,
+
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": [
+      ".github/workflows/*.{yml,yaml}"
+    ]
+  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
