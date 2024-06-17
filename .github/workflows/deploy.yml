@@ -26,7 +26,7 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: tower-of-tech
+          project: tower-of-tech-editor
           entrypoint: apps/website/server.tsx
           exclude: |
             data
