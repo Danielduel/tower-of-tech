@@ -254,8 +254,7 @@ export const PlaylistInstallGuidePCVRPostInstallationCongratulations =
         </VisualNovelStepExplanation>
         <VisualNovelDivider />
         <VisualNovelStepLink
-          to={"#"}
-          className="opacity-50 hover:ring-transparent cursor-default"
+          to={links.home.playlistManagementGuide.folders}
           children="I have a lot of playlists now, how to manage this"
         />
         <VisualNovelStepLink

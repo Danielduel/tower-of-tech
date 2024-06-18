@@ -25,6 +25,7 @@ import { PlaylistInstallGuidePCVRSteamCustom } from "@/apps/website/pages/home/P
 import { PlaylistInstallGuidePCVRPostInstallationCongratulations } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
 import { History } from "@/apps/website/pages/home/History.tsx";
 import { PlaylistDetails } from "@/apps/website/pages/home/Playlist.tsx";
+import { PlaylistManagementGuidePCVR } from "@/apps/website/pages/home/PlaylistManagementGuide.tsx";
 
 export const Routing = () => {
   const location = useLocation();
@@ -160,6 +161,16 @@ export const Routing = () => {
                 index
                 element={
                   <MainLayoutShell Component={PlaylistInstallGuidePlatform} />
+                }
+              />
+            </Route>
+            <Route path={routing.home.playlistManagementGuide.root}>
+              <Route
+                path={routing.home.playlistManagementGuide.folders}
+                element={
+                  <MainLayoutShell
+                    Component={PlaylistManagementGuidePCVR}
+                  />
                 }
               />
             </Route>

@@ -127,6 +127,8 @@ export const VisualNovelStep = forwardRef<
 ) => {
   const isOutsideOfPlaylistTutorial = !location.pathname.startsWith(
     links.home.playlistInstallGuide.root,
+  ) && !location.pathname.startsWith(
+    links.home.playlistManagementGuide.root,
   );
 
   return (

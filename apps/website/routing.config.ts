@@ -32,6 +32,10 @@ export const routing = {
       pcvrSteamManualPostInstallationCongratulations:
         "pcvr-steam-manual-post-installation-congratulations",
     },
+    playlistManagementGuide: {
+      root: "playlist-management-guide/",
+      folders: "folders",
+    },
   },
 
   snipe: {
@@ -74,6 +78,10 @@ export const links = {
         "/home/playlist-install-guide/pcvr-steam-manual-post-installation-check",
       pcvrSteamManualPostInstallationCongratulations:
         "/home/playlist-install-guide/pcvr-steam-manual-post-installation-congratulations",
+    },
+    playlistManagementGuide: {
+      root: "/home/playlist-management-guide/",
+      folders: "/home/playlist-management-guide/folders",
     },
     download: "/home/download",
     more: "/home/more",
