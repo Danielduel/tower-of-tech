@@ -1,6 +1,7 @@
 import { createDiscordOAuthConfig, createHelpers } from "jsr:@deno/kv-oauth";
 import { HandlerForRoute } from "@/packages/api/v1/types.ts";
 import { isLocal } from "@/packages/utils/envrionment.ts";
+import { getSetCookies, setCookie } from "jsr:@std/http";
 
 export const apiV1HandlerAuthDiscordOauthSignInRoute = "/api/v1/auth/discord/oauth/signin";
 export const apiV1HandlerAuthDiscordOauthSignOutRoute = "/api/v1/auth/discord/oauth/signout";
@@ -29,7 +30,13 @@ export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
 > = async (req) => {
   const response = await signIn(req);
 
-  console.log(response.headers);
+  const cookies = getSetCookies(req.headers);
+  const _cookie = cookies.find((x) => x.name === "__Host-oauth-session" || x.name === "oauth-session");
+
+  if (_cookie) {
+    _cookie.sameSite = "Strict";
+    setCookie(req.headers, _cookie);
+  }
 
   return response;
 };
