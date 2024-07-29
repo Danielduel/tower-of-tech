@@ -35,7 +35,7 @@ export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
   const _cookie = cookies.find((x) => x.name === "__Host-oauth-session" || x.name === "oauth-session");
 
   if (_cookie) {
-    _cookie.sameSite = "Strict";
+    _cookie.sameSite = "None";
     setCookie(response.headers, _cookie);
   }
 
