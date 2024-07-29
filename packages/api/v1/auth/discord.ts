@@ -18,7 +18,11 @@ const {
   handleCallback,
   // getSessionId,
   signOut,
-} = createHelpers(oauthConfig);
+} = createHelpers(oauthConfig, {
+  cookieOptions: {
+    sameSite: "Strict",
+  },
+});
 
 export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
   typeof apiV1HandlerAuthDiscordOauthSignInRoute
