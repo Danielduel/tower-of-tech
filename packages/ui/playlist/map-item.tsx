@@ -74,9 +74,7 @@ export const MapItem = ({
       <div>
         <Field
           Fallback={() => <img className={coverStyle} src={""} />}
-          Success={({ beatSaver: { versions: [{ coverURL }] } }) => (
-            <img className={coverStyle} src={coverURL} />
-          )}
+          Success={({ beatSaver: { versions: [{ coverURL }] } }) => <img className={coverStyle} src={coverURL} />}
         />
       </div>
       <div>

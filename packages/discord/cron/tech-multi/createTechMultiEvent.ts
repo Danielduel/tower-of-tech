@@ -25,9 +25,7 @@ export async function createTechMultiEvent() {
       GatewayIntents.GuildMessages,
     async (bot) => {
       const scheduledEventsAll = await getScheduledEvents(bot, BigInt(guildId));
-      const scheduledEvents = scheduledEventsAll.filter((x) =>
-        x.name === eventTitle
-      );
+      const scheduledEvents = scheduledEventsAll.filter((x) => x.name === eventTitle);
 
       if (scheduledEvents.size !== 0) {
         return;

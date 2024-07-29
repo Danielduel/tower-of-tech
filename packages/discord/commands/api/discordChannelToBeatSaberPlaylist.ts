@@ -1,8 +1,5 @@
 import { discordChannelToBeatSaverData } from "@/packages/discord/shared/discordChannelToBeatSaverData.ts";
-import {
-  BeatSaberPlaylist,
-  BeatSaberPlaylistSongItem,
-} from "@/src/types/BeatSaberPlaylist.d.ts";
+import { BeatSaberPlaylist, BeatSaberPlaylistSongItem } from "@/src/types/BeatSaberPlaylist.d.ts";
 import { BeatSaverMapResponseSuccessSchema } from "@/packages/types/beatsaver.ts";
 import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";

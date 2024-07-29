@@ -1,8 +1,5 @@
 import { fromUint8Array } from "https://denopkg.com/chiefbiiko/base64@master/mod.ts";
-import {
-  BeatSaberPlaylistFlatSchema,
-  BeatSaberPlaylistSchema,
-} from "@/packages/types/beatsaber-playlist.ts";
+import { BeatSaberPlaylistFlatSchema, BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { makeImageBase64 } from "@/packages/types/brands.ts";
@@ -106,17 +103,16 @@ export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem = async (
   } satisfies Omit<typeof BeatSaberPlaylistSchema._type, "image">;
 };
 
-export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage =
-  async (playlistId: PlaylistId) => {
-    const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(
-      playlistId,
-    );
-    if (!item) return null;
+export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage = async (playlistId: PlaylistId) => {
+  const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(
+    playlistId,
+  );
+  if (!item) return null;
 
-    const data = {
-      ...item,
-      image: await getImage(playlistId),
-    } satisfies typeof BeatSaberPlaylistSchema._type;
+  const data = {
+    ...item,
+    image: await getImage(playlistId),
+  } satisfies typeof BeatSaberPlaylistSchema._type;
 
-    return data;
-  };
+  return data;
+};

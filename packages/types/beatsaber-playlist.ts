@@ -1,9 +1,6 @@
 import { z } from "zod";
 import { makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
-import {
-  BeatSaberDifficultyCharacteristicSchema,
-  BeatSaberDifficultyNameSchema,
-} from "@/packages/types/beatsaber.ts";
+import { BeatSaberDifficultyCharacteristicSchema, BeatSaberDifficultyNameSchema } from "@/packages/types/beatsaber.ts";
 import {
   makeImageBase64,
   makeImageUrl,

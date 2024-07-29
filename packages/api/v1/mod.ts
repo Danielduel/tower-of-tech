@@ -33,19 +33,14 @@ import {
 
 const route = router({
   [apiV1HandlerAuthDiscordOauthSignInRoute]: apiV1HandlerAuthDiscordOauthSignIn,
-  [apiV1HandlerAuthDiscordOauthSignOutRoute]:
-    apiV1HandlerAuthDiscordOauthSignOut,
-  [apiV1HandlerAuthDiscordOauthCallbackRoute]:
-    apiV1HandlerAuthDiscordOauthCallback,
+  [apiV1HandlerAuthDiscordOauthSignOutRoute]: apiV1HandlerAuthDiscordOauthSignOut,
+  [apiV1HandlerAuthDiscordOauthCallbackRoute]: apiV1HandlerAuthDiscordOauthCallback,
 
   [apiV1HandlerGetPlaylistByIdRoute]: apiV1HandlerGetPlaylistById,
-  [apiV1HandlerGetPlaylistByIdDownloadRoute]:
-    apiV1HandlerGetPlaylistByIdDownload,
-  [apiV1HandlerGetPlaylistByIdOneClickRoute]:
-    apiV1HandlerGetPlaylistByIdOneClick,
+  [apiV1HandlerGetPlaylistByIdDownloadRoute]: apiV1HandlerGetPlaylistByIdDownload,
+  [apiV1HandlerGetPlaylistByIdOneClickRoute]: apiV1HandlerGetPlaylistByIdOneClick,
   [apiV1HandlerDiscordCommandWebhook]: commandRoot,
-  [apiV1HandlerDiscordGetPlaylistByGuildIdChannelIdRoute]:
-    apiV1HandlerDiscordGetPlaylistByGuildIdChannelId,
+  [apiV1HandlerDiscordGetPlaylistByGuildIdChannelIdRoute]: apiV1HandlerDiscordGetPlaylistByGuildIdChannelId,
   [apiV1HandlerDiscordGetPlaylistByGuildIdChannelIdDownloadRoute]:
     apiV1HandlerDiscordGetPlaylistByGuildIdChannelIdDownload,
   [apiV1HandlerDiscordGetPlaylistByGuildIdChannelIdOneClickRoute]:

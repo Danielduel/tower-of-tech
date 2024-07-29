@@ -1,9 +1,5 @@
 import { FC, useMemo } from "react";
-import {
-  WithMaps,
-  WithPlaylist,
-  WithPlaylistWithImageAsUrl,
-} from "@/packages/ui/playlist/types.ts";
+import { WithMaps, WithPlaylist, WithPlaylistWithImageAsUrl } from "@/packages/ui/playlist/types.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { MapItem } from "@/apps/website/components/MapItem.tsx";
 import { Image } from "@/apps/website/components/Image.tsx";
@@ -39,9 +35,7 @@ export const Playlist: FC<
 > = (
   { playlist, prependKey },
 ) => {
-  const imageSrc = "imageUrl" in playlist
-    ? playlist.imageUrl
-    : "data:image/png;" + playlist.image;
+  const imageSrc = "imageUrl" in playlist ? playlist.imageUrl : "data:image/png;" + playlist.image;
 
   return (
     <div key={`playlist-${playlist.id}`} className="mb-4">

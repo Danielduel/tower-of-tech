@@ -67,9 +67,7 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
       }
     >
       <div className="ml-3">
-        {data.songs && (
-          <PlaylistMaps prependKey={playlistId} maps={data.songs} />
-        )}
+        {data.songs && <PlaylistMaps prependKey={playlistId} maps={data.songs} />}
       </div>
     </VisualNovelContainer>
   );

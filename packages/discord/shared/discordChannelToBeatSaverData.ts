@@ -1,11 +1,4 @@
-import {
-  Collection,
-  GatewayIntents,
-  getChannel,
-  getGuild,
-  getMessages,
-  Message,
-} from "@/packages/discord/deps.ts";
+import { Collection, GatewayIntents, getChannel, getGuild, getMessages, Message } from "@/packages/discord/deps.ts";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { useBot } from "@/packages/discord/client.ts";
 import { fetchAndCacheFromResolvables } from "@/packages/api-beatsaver/mod.ts";

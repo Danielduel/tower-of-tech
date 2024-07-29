@@ -1,9 +1,5 @@
 import { MapItem } from "@/packages/ui/playlist/map-item.tsx";
-import {
-  WithBeatSaverMaps,
-  WithMaps,
-  WithPlaylist,
-} from "@/packages/ui/playlist/types.ts";
+import { WithBeatSaverMaps, WithMaps, WithPlaylist } from "@/packages/ui/playlist/types.ts";
 
 const PlaylistMaps = (
   { maps, beatSaverMaps, prependKey }: WithMaps & WithBeatSaverMaps & {
@@ -14,9 +10,7 @@ const PlaylistMaps = (
     <div className="pl-2 border-l-1 border-black">
       {maps.map((map) => {
         const beatSaverMapItemHash = map.hash.toLowerCase();
-        const beatSaverMapItem = beatSaverMapItemHash in beatSaverMaps
-          ? beatSaverMaps[beatSaverMapItemHash]
-          : null;
+        const beatSaverMapItem = beatSaverMapItemHash in beatSaverMaps ? beatSaverMaps[beatSaverMapItemHash] : null;
         return (
           <MapItem
             key={`${prependKey}-${map.hash}`}

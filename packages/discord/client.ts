@@ -1,9 +1,4 @@
-import {
-  _createBot,
-  Bot,
-  GatewayIntents,
-  startBot,
-} from "@/packages/discord/deps.ts";
+import { _createBot, Bot, GatewayIntents, startBot } from "@/packages/discord/deps.ts";
 
 function createBot(
   intents: GatewayIntents,

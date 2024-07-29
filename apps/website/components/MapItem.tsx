@@ -128,9 +128,7 @@ export const MapItem: FC<MapItemProps> = ({
       >
         <div>
           <Field
-            Fallback={() => (
-              <Image className={coverStyle} width={128} height={128} src={""} />
-            )}
+            Fallback={() => <Image className={coverStyle} width={128} height={128} src={""} />}
             Success={({ beatSaver: { versions: [{ coverURL }] } }) => (
               <Image
                 className={coverStyle}

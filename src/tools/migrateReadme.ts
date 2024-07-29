@@ -1,7 +1,4 @@
-import {
-  ListTypes,
-  Markdown,
-} from "https://deno.land/x/deno_markdown@v0.2/mod.ts";
+import { ListTypes, Markdown } from "https://deno.land/x/deno_markdown@v0.2/mod.ts";
 import { playlists } from "@/src/tools/migratePlaylists.ts";
 import { playlistMapping } from "../../packages/playlist/mod.ts";
 import { getToTPlaylistSpeedCategory } from "../../packages/playlist/mod.ts";
@@ -12,12 +9,9 @@ import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 
 const markdown = new Markdown();
-const mdImg = (src: string) =>
-  `<img src="${src}" height="50px" width="50px" />`;
+const mdImg = (src: string) => `<img src="${src}" height="50px" width="50px" />`;
 const mkActions = (playlistId: PlaylistId) =>
-  `[Details](${
-    links.home.playlist.details(playlistId, towerOfTechWebsiteOrigin)
-  }) [Raw](${
+  `[Details](${links.home.playlist.details(playlistId, towerOfTechWebsiteOrigin)}) [Raw](${
     links.api.v1.playlist.download(playlistId, towerOfTechWebsiteOrigin)
   })`;
 
@@ -56,9 +50,7 @@ A playlist name should contain prefix and "tech" suffix.
       ...Object
         .entries(playlistMapping)
         .map(([mappingKey, mappingValue]) => {
-          const playlist = playlists.find((x) =>
-            x.playlist.customData!.id === mappingValue.playlistId
-          );
+          const playlist = playlists.find((x) => x.playlist.customData!.id === mappingValue.playlistId);
           if (!playlist) return ``;
           return [
             mdImg(`./migrated/covers/${mappingValue.displayName}.png`),

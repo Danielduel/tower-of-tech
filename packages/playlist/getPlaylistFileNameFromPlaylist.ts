@@ -1,7 +1,4 @@
-import {
-  BeatSaberPlaylistCustomDataSchema,
-  BeatSaberPlaylistSchema,
-} from "@/packages/types/beatsaber-playlist.ts";
+import { BeatSaberPlaylistCustomDataSchema, BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
 
 type GetPlaylistFileNameFromPlaylist = {
   playlistTitle: typeof BeatSaberPlaylistSchema._type["playlistTitle"];
@@ -15,10 +12,9 @@ type GetPlaylistFileNameFromPlaylist = {
 export const getPlaylistFileNameFromPlaylist = (
   playlist: GetPlaylistFileNameFromPlaylist,
 ) => {
-  const sortString =
-    playlist.customData && typeof playlist.customData.sort !== "undefined"
-      ? `${playlist.customData.sort} - `
-      : "";
+  const sortString = playlist.customData && typeof playlist.customData.sort !== "undefined"
+    ? `${playlist.customData.sort} - `
+    : "";
 
   return `${sortString}${playlist.playlistTitle} by ${playlist.playlistAuthor}.bplist`;
 };

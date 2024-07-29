@@ -1,9 +1,6 @@
 import { collection } from "kvdex/mod.ts";
 import { zodModel } from "kvdex/ext/zod.ts";
-import {
-  BeatSaberPlaylistFlatSchema,
-  BeatSaberPlaylistSongItemSchema,
-} from "@/packages/types/beatsaber-playlist.ts";
+import { BeatSaberPlaylistFlatSchema, BeatSaberPlaylistSongItemSchema } from "@/packages/types/beatsaber-playlist.ts";
 
 export const BeatSaberPlaylistSongItem = collection(
   zodModel(BeatSaberPlaylistSongItemSchema),

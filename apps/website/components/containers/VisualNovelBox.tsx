@@ -80,23 +80,17 @@ export const VisualNovelContainer = forwardRef<
 >(({ children, imageUrl, row, header }, ref) => {
   return (
     <div
-      className={`w-full my-5 flex justify-center ${
-        row ? "flex-row items-start" : "flex-col items-center"
-      }`}
+      className={`w-full my-5 flex justify-center ${row ? "flex-row items-start" : "flex-col items-center"}`}
       ref={ref}
     >
       <div
-        className={`min-h-[20vh] mb-4 relative wobble ${
-          row ? "sticky top-5" : ""
-        }`}
+        className={`min-h-[20vh] mb-4 relative wobble ${row ? "sticky top-5" : ""}`}
       >
         <div className="relative h-[20vh] w-[20vh] max-w-[25vw] max-h-[25vw] ml-auto">
           <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh] blur wobble-blur">
           </div>
           <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh]">
-            {imageUrl && (
-              <Image className="h-full w-full rounded-[2vh]" src={imageUrl} />
-            )}
+            {imageUrl && <Image className="h-full w-full rounded-[2vh]" src={imageUrl} />}
           </div>
         </div>
         {header}

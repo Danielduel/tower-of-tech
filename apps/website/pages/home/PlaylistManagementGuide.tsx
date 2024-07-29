@@ -14,11 +14,9 @@ export const PlaylistManagementGuidePCVR = forwardRef<HTMLDivElement>(
           Playlist folders are your system folders
         </VisualNovelStepExplanation>
         <VisualNovelDivider />
-        Below the mappicker you can see folder icons, hovering your focus over
-        the icon brings up the folder name
+        Below the mappicker you can see folder icons, hovering your focus over the icon brings up the folder name
         <VisualNovelDivider />
-        Clicking it narrows the playlists list to playlists contained by this
-        folder
+        Clicking it narrows the playlists list to playlists contained by this folder
       </VisualNovelStep>
     );
   },

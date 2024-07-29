@@ -76,9 +76,8 @@ export default function Index() {
         <SectionSection>
           <SectionTitle>Adep</SectionTitle>
           <SectionDescription>
-            Ideal playlists for beginners that are stuck between Expert and
-            Expert+ level and seek new things to try out. This is the first stop
-            for your tech journey!
+            Ideal playlists for beginners that are stuck between Expert and Expert+ level and seek new things to try
+            out. This is the first stop for your tech journey!
             {/* First actually complex maps, first handclap, first map that you hate, first... eghm... I am getting too romantic */}
           </SectionDescription>
           <SectionMapping>
@@ -89,8 +88,8 @@ export default function Index() {
         <SectionSection>
           <SectionTitle>Acc</SectionTitle>
           <SectionDescription>
-            New players can find those playlists fast, those maps will carry you
-            through new patterns without being too fast.
+            New players can find those playlists fast, those maps will carry you through new patterns without being too
+            fast.
           </SectionDescription>
           <SectionMapping>
             {accList.map((x) => <PlaylistLink {...x} />)}
@@ -100,9 +99,8 @@ export default function Index() {
         <SectionSection>
           <SectionTitle>Mid</SectionTitle>
           <SectionDescription>
-            It starts to be faster, combines tech with midspeedy pacing and
-            ocassional speed patterns but without speed speed, speed speed is
-            speedy, this is not speedy. Yet.
+            It starts to be faster, combines tech with midspeedy pacing and ocassional speed patterns but without speed
+            speed, speed speed is speedy, this is not speedy. Yet.
           </SectionDescription>
           <SectionMapping>
             {midList.map((x) => <PlaylistLink {...x} />)}

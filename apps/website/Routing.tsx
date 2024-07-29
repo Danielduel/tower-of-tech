@@ -153,15 +153,11 @@ export const Routing = () => {
               />
               <Route
                 path={routing.home.playlistInstallGuide.askAboutPlatform}
-                element={
-                  <MainLayoutShell Component={PlaylistInstallGuidePlatform} />
-                }
+                element={<MainLayoutShell Component={PlaylistInstallGuidePlatform} />}
               />
               <Route
                 index
-                element={
-                  <MainLayoutShell Component={PlaylistInstallGuidePlatform} />
-                }
+                element={<MainLayoutShell Component={PlaylistInstallGuidePlatform} />}
               />
             </Route>
             <Route path={routing.home.playlistManagementGuide.root}>

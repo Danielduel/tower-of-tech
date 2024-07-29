@@ -14,5 +14,5 @@ export const BeatSaverResolvableIdKindSchema = z.object({
 
 export const BeatSaverResolvableSchema = z.union([
   BeatSaverResolvableHashKindSchema,
-  BeatSaverResolvableIdKindSchema
+  BeatSaverResolvableIdKindSchema,
 ]);

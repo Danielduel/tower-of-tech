@@ -27,10 +27,8 @@ export const routing = {
       pcvrSteamManualLocateFolder: "pcvr-steam-manual-locate-folder",
       pcvrSteamManualMoveAndExtract: "pcvr-steam-manual-move-and-extract",
       pcvrSteamManualInstallMods: "pcvr-steam-manual-install-mods",
-      pcvrSteamManualPostInstallationCheck:
-        "pcvr-steam-manual-post-installation-check",
-      pcvrSteamManualPostInstallationCongratulations:
-        "pcvr-steam-manual-post-installation-congratulations",
+      pcvrSteamManualPostInstallationCheck: "pcvr-steam-manual-post-installation-check",
+      pcvrSteamManualPostInstallationCongratulations: "pcvr-steam-manual-post-installation-congratulations",
     },
     playlistManagementGuide: {
       root: "playlist-management-guide/",
@@ -57,8 +55,7 @@ export const links = {
   home: {
     root: "/",
     playlist: {
-      details: (playlistId: PlaylistId, origin = defaultOrigin) =>
-        `${origin}/home/playlist/${playlistId}/details`,
+      details: (playlistId: PlaylistId, origin = defaultOrigin) => `${origin}/home/playlist/${playlistId}/details`,
     },
     playlistInstallGuide: {
       root: "/home/playlist-install-guide/",
@@ -66,16 +63,11 @@ export const links = {
       modAssistant: "/home/playlist-install-guide/mod-assistant",
       pcvrSteamCustom: "/home/playlist-install-guide/pcvr-steam-custom",
       pcvrSteam: "/home/playlist-install-guide/pcvr-steam",
-      pcvrSteamManualDownload:
-        "/home/playlist-install-guide/pcvr-steam-manual-download",
-      pcvrSteamManualLocateFolder:
-        "/home/playlist-install-guide/pcvr-steam-manual-locate-folder",
-      pcvrSteamManualMoveAndExtract:
-        "/home/playlist-install-guide/pcvr-steam-manual-move-and-extract",
-      pcvrSteamManualInstallMods:
-        "/home/playlist-install-guide/pcvr-steam-manual-install-mods",
-      pcvrSteamManualPostInstallationCheck:
-        "/home/playlist-install-guide/pcvr-steam-manual-post-installation-check",
+      pcvrSteamManualDownload: "/home/playlist-install-guide/pcvr-steam-manual-download",
+      pcvrSteamManualLocateFolder: "/home/playlist-install-guide/pcvr-steam-manual-locate-folder",
+      pcvrSteamManualMoveAndExtract: "/home/playlist-install-guide/pcvr-steam-manual-move-and-extract",
+      pcvrSteamManualInstallMods: "/home/playlist-install-guide/pcvr-steam-manual-install-mods",
+      pcvrSteamManualPostInstallationCheck: "/home/playlist-install-guide/pcvr-steam-manual-post-installation-check",
       pcvrSteamManualPostInstallationCongratulations:
         "/home/playlist-install-guide/pcvr-steam-manual-post-installation-congratulations",
     },
@@ -102,8 +94,7 @@ export const links = {
   api: {
     v1: {
       playlist: {
-        data: (playlistId: PlaylistId, origin: string = defaultOrigin) =>
-          `${origin}/api/v1/playlist/get/${playlistId}`,
+        data: (playlistId: PlaylistId, origin: string = defaultOrigin) => `${origin}/api/v1/playlist/get/${playlistId}`,
         download: (playlistId: PlaylistId, origin: string = defaultOrigin) =>
           `${links.api.v1.playlist.data(playlistId, origin)}/download`,
         oneClick: (
@@ -111,9 +102,7 @@ export const links = {
           playlistName: string,
           origin: string,
         ) =>
-          `bsplaylist://playlist/${
-            links.api.v1.playlist.data(playlistId, origin)
-          }/oneclick/${encodeURI(playlistName)}`,
+          `bsplaylist://playlist/${links.api.v1.playlist.data(playlistId, origin)}/oneclick/${encodeURI(playlistName)}`,
       },
       discord: {
         playlist: {
@@ -121,25 +110,21 @@ export const links = {
             guildId: string,
             channelId: string,
             origin: string = defaultOrigin,
-          ) =>
-            `${origin}/api/v1/discord/playlist/get/guild/${guildId}/channel/${channelId}`,
+          ) => `${origin}/api/v1/discord/playlist/get/guild/${guildId}/channel/${channelId}`,
           download: (
             guildId: string,
             channelId: string,
             origin: string = defaultOrigin,
-          ) =>
-            `${
-              links.api.v1.discord.playlist.data(guildId, channelId, origin)
-            }/download`,
+          ) => `${links.api.v1.discord.playlist.data(guildId, channelId, origin)}/download`,
           oneClick: (
             guildId: string,
             channelId: string,
             playlistName: string,
             origin: string,
           ) =>
-            `bsplaylist://playlist/${
-              links.api.v1.discord.playlist.data(guildId, channelId, origin)
-            }/oneclick/${encodeURI(playlistName)}`,
+            `bsplaylist://playlist/${links.api.v1.discord.playlist.data(guildId, channelId, origin)}/oneclick/${
+              encodeURI(playlistName)
+            }`,
         },
       },
     },

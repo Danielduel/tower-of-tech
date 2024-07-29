@@ -1,20 +1,14 @@
 import "https://deno.land/std@0.206.0/dotenv/load.ts";
 import { S3Client } from "s3_lite_client";
 import { isDbEditorRemote, isLocal } from "@/packages/utils/envrionment.ts";
-import {
-  BeatSaberPlaylist,
-  BeatSaberPlaylistSongItem,
-} from "@/packages/database-editor/BeatSaberPlaylist.ts";
+import { BeatSaberPlaylist, BeatSaberPlaylistSongItem } from "@/packages/database-editor/BeatSaberPlaylist.ts";
 import {
   BeatSaverIdToHashCache,
   BeatSaverMapResponseSuccess,
   BeatSaverResponseWrapper,
 } from "@/packages/database-editor/BeatSaverResponse.ts";
 import { kvdex } from "kvdex/mod.ts";
-import {
-  DiscordChannel,
-  DiscordGuild,
-} from "@/packages/database-editor/DiscordGuild.ts";
+import { DiscordChannel, DiscordGuild } from "@/packages/database-editor/DiscordGuild.ts";
 
 export const kv = isDbEditorRemote()
   ? await (async () => {

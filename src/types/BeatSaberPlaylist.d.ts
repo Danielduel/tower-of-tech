@@ -19,7 +19,7 @@ export type BeatSaberPlaylistCustomData = {
   syncURL?: string;
   owner?: string;
   id?: string;
-}
+};
 
 export type BeatSaberPlaylist = {
   playlistTitle: string;
@@ -27,4 +27,4 @@ export type BeatSaberPlaylist = {
   customData?: BeatSaberPlaylistCustomData;
   songs: BeatSaberPlaylistSongItem[];
   image: string;
-}
+};

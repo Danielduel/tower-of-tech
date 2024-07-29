@@ -6,7 +6,7 @@ const mutate_moveKeyToTheTopOfTheObject = <T extends Record<string, unknown>>(va
   const cache = value[key];
   delete value[key];
   value[key] = cache;
-}
+};
 
 const playlistKeyStructure: (keyof BeatSaberPlaylist)[] = [
   "playlistTitle",
@@ -19,6 +19,6 @@ const playlistKeyStructure: (keyof BeatSaberPlaylist)[] = [
 export const stringifyPlaylist = (value: BeatSaberPlaylist) => {
   const v = value as Partial<BeatSaberPlaylist>;
   playlistKeyStructure
-    .forEach((key) => mutate_moveKeyToTheTopOfTheObject(v, key))
+    .forEach((key) => mutate_moveKeyToTheTopOfTheObject(v, key));
   return stringify(v);
 };

@@ -14,10 +14,4 @@ import internalOffline from "@/packages/test/mocks/playlists/internal-offline.js
   type: "json",
 };
 
-export {
-  internalOffline,
-  internalOnline,
-  rawAccSaber,
-  rawBeatSaver,
-  rawHitbloq,
-};
+export { internalOffline, internalOnline, rawAccSaber, rawBeatSaver, rawHitbloq };

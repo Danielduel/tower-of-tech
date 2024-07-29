@@ -20,14 +20,12 @@ Deno.test("getPlaylistFileNameFromPlaylist", async ({ step }) => {
   });
   await step("internal online", () => {
     const result = getPlaylistFileNameFromPlaylist(mocks.internalOnline);
-    const expect =
-      "12312312312124124 - test internal playlist by internal user.bplist";
+    const expect = "12312312312124124 - test internal playlist by internal user.bplist";
     assertEquals(result, expect);
   });
   await step("internal offline", () => {
     const result = getPlaylistFileNameFromPlaylist(mocks.internalOffline);
-    const expect =
-      "12312312312124124 - test internal playlist by internal user.bplist";
+    const expect = "12312312312124124 - test internal playlist by internal user.bplist";
     assertEquals(result, expect);
   });
 });

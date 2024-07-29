@@ -3,10 +3,8 @@ import { getPlaylistIdFromPlaylistIdWithExtension } from "@/packages/playlist/ge
 import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
 import { fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage } from "@/packages/database-editor/utils.ts";
 
-export const apiV1HandlerGetPlaylistByIdRoute =
-  "/api/v1/playlist/get/:playlistIdWithFileExtension";
-export const apiV1HandlerGetPlaylistByIdDownloadRoute =
-  "/api/v1/playlist/get/:playlistIdWithFileExtension/download";
+export const apiV1HandlerGetPlaylistByIdRoute = "/api/v1/playlist/get/:playlistIdWithFileExtension";
+export const apiV1HandlerGetPlaylistByIdDownloadRoute = "/api/v1/playlist/get/:playlistIdWithFileExtension/download";
 export const apiV1HandlerGetPlaylistByIdOneClickRoute =
   "/api/v1/playlist/get/:playlistIdWithFileExtension/oneclick/:desiredFileName";
 
@@ -16,10 +14,9 @@ export const apiV1HandlerGetPlaylistById: HandlerForRoute<
   const playlistId = getPlaylistIdFromPlaylistIdWithExtension(
     playlistIdWithFileExtension,
   );
-  const data =
-    await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(
-      playlistId,
-    );
+  const data = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(
+    playlistId,
+  );
   if (!data) return new Response("404", { status: 404 });
 
   return new Response(
@@ -38,10 +35,9 @@ export const apiV1HandlerGetPlaylistByIdDownload: HandlerForRoute<
   const playlistId = getPlaylistIdFromPlaylistIdWithExtension(
     playlistIdWithFileExtension,
   );
-  const data =
-    await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(
-      playlistId,
-    );
+  const data = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(
+    playlistId,
+  );
   if (!data) return new Response("404", { status: 404 });
   const filename = getPlaylistFileNameFromPlaylist(data);
 
@@ -62,10 +58,9 @@ export const apiV1HandlerGetPlaylistByIdOneClick: HandlerForRoute<
   const playlistId = getPlaylistIdFromPlaylistIdWithExtension(
     playlistIdWithFileExtension,
   );
-  const data =
-    await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(
-      playlistId,
-    );
+  const data = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(
+    playlistId,
+  );
   if (!data) return new Response("404", { status: 404 });
   const filename = getPlaylistFileNameFromPlaylist(data); // technically it is unused afaik, leaving it as nice to have
 

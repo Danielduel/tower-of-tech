@@ -33,8 +33,7 @@ const adminCommand = new SlashCommandBuilder()
               .addChoices(
                 {
                   name: "Get the playlist debug data.",
-                  value:
-                    adminCommandRouting.get.subject.get_playlist_debug_data,
+                  value: adminCommandRouting.get.subject.get_playlist_debug_data,
                 },
               )
           )
@@ -51,8 +50,7 @@ const adminCommand = new SlashCommandBuilder()
               .addChoices(
                 {
                   name: "Mark this channel as a playlist channel.",
-                  value:
-                    adminCommandRouting.mark.subject.mark_as_playlist_channel,
+                  value: adminCommandRouting.mark.subject.mark_as_playlist_channel,
                 },
               )
           )

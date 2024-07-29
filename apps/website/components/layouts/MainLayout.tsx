@@ -1,10 +1,4 @@
-import {
-  FC,
-  ForwardRefExoticComponent,
-  RefAttributes,
-  Suspense,
-  useRef,
-} from "react";
+import { FC, ForwardRefExoticComponent, RefAttributes, Suspense, useRef } from "react";
 import { VisualNovelContainerLoading } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 
 export function MainLayout(

@@ -87,8 +87,7 @@ const StatusItem = (props: BeatLeaderWSAcceptedModified) => {
       <div>
         <div className="text-lg">{getFlagEmoji(country)} {playerName}</div>
         <div>
-          {Math.floor(accuracy * 10000) / 100}%{fullCombo ? " (FC)" : ""}{" "}
-          {songName}
+          {Math.floor(accuracy * 10000) / 100}%{fullCombo ? " (FC)" : ""} {songName}
           <br />by {author}
           {mapper.length > 0
             ? (
@@ -160,9 +159,7 @@ export const SnipeIndex = () => {
       if (!globe) return;
 
       const lenLatData = dataRef.current.map((x) => {
-        const country = COUNTRIES.ref_country_codes.find((country) =>
-          country.alpha2 === x.data.player.country
-        );
+        const country = COUNTRIES.ref_country_codes.find((country) => country.alpha2 === x.data.player.country);
         if (!country) return { lat: 0, lng: 0, ...x };
         return {
           name: "toRemove",
@@ -217,9 +214,7 @@ export const SnipeIndex = () => {
 
         const globe = ref.current;
         if (!globe) return;
-        const country = COUNTRIES.ref_country_codes.find((country) =>
-          country.alpha2 === newData.data.player.country
-        );
+        const country = COUNTRIES.ref_country_codes.find((country) => country.alpha2 === newData.data.player.country);
         if (!country) return;
         globe.pointOfView({
           lat: country.latitude + newData.skewLat,
@@ -229,9 +224,7 @@ export const SnipeIndex = () => {
       }
 
       const now = Date.now();
-      dataRef.current = dataRef.current.filter((x) =>
-        now - x.timeAdded < 10000
-      );
+      dataRef.current = dataRef.current.filter((x) => now - x.timeAdded < 10000);
     };
   }, []);
 

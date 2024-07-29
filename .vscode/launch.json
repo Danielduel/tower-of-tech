@@ -16,7 +16,7 @@
         "-A",
         "--no-check",
         "--unstable",
-        "--inspect-wait",
+        "--inspect-wait"
       ],
       "attachSimplePort": 9229
     }

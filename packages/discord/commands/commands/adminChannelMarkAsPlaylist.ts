@@ -54,9 +54,7 @@ export async function adminChannelMarkAsPlaylist(
     });
 
   return respondWithMessage(
-    value
-      ? "This channel is now available as a playlist"
-      : "This channel is no longer available as a playlist",
+    value ? "This channel is now available as a playlist" : "This channel is no longer available as a playlist",
     true,
   );
 }

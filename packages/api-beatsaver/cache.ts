@@ -1,9 +1,6 @@
 import { z } from "zod";
 import { kv, s3clientEditor } from "@/packages/database-editor/mod.ts";
-import {
-  LowercaseMapHash,
-  makeLowercaseMapHash,
-} from "@/packages/types/brands.ts";
+import { LowercaseMapHash, makeLowercaseMapHash } from "@/packages/types/brands.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { fetchHashes } from "@/packages/api-beatsaver/mod.ts";
@@ -54,9 +51,7 @@ export const runWorkerBody = async (
     .filter(filterNulls);
 
   console.log(
-    `Caching\n${
-      JSON.stringify(filteredHashes)
-    }\nto ${buckets.beatSaver.mapByHash}`,
+    `Caching\n${JSON.stringify(filteredHashes)}\nto ${buckets.beatSaver.mapByHash}`,
   );
 
   let response = await fetchHashes(filteredHashes);

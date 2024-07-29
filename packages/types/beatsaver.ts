@@ -1,10 +1,7 @@
 import { z } from "zod";
 import { Brand, make } from "https://deno.land/x/ts_brand@0.0.1/mod.ts";
 
-import {
-  BeatSaberDifficultyCharacteristicSchema,
-  BeatSaberDifficultyNameSchema,
-} from "@/packages/types/beatsaber.ts";
+import { BeatSaberDifficultyCharacteristicSchema, BeatSaberDifficultyNameSchema } from "@/packages/types/beatsaber.ts";
 import {
   makeDateString,
   makeImageUrl,
@@ -18,8 +15,7 @@ export type BeatSaverUserId = Brand<number, "BeatSaverUserId">;
 export const makeBeatSaverUserId = make<BeatSaverUserId>();
 
 export type BeatSaverMapId = Brand<string, "BeatSaverMapId">;
-export const makeBeatSaverMapId = (id: string) =>
-  make<BeatSaverMapId>()(id.toLowerCase());
+export const makeBeatSaverMapId = (id: string) => make<BeatSaverMapId>()(id.toLowerCase());
 
 export const BeatSaverMapResponseUploader = z.object({
   id: z.number().transform(makeBeatSaverUserId),

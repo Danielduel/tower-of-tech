@@ -5,4 +5,4 @@ export const fileExists = async (path: string) => {
   } catch (e) {
     return false;
   }
-}
+};

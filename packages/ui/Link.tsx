@@ -1,8 +1,5 @@
 import { FC } from "react";
-import {
-  Link as _Link,
-  LinkProps,
-} from "https://esm.sh/react-router-dom@6.3.0?external=react";
+import { Link as _Link, LinkProps } from "https://esm.sh/react-router-dom@6.3.0?external=react";
 import { useResolvedPath } from "react-router-dom";
 import { useMatch } from "react-router-dom";
 

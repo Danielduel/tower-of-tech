@@ -1,8 +1,8 @@
 export const buckets = {
   playlist: {
-    coverImage: "playlist-cover-image"
+    coverImage: "playlist-cover-image",
   },
   beatSaver: {
-    mapByHash: "beatsaver-map-by-hash"
-  }
+    mapByHash: "beatsaver-map-by-hash",
+  },
 };

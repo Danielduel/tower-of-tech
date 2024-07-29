@@ -1,4 +1,4 @@
-import type { BeatSaberDifficultyName, BeatSaberDifficultyCharacteristic } from "./BeatSaber.d.ts";
+import type { BeatSaberDifficultyCharacteristic, BeatSaberDifficultyName } from "./BeatSaber.d.ts";
 
 export type BeatSaverMapResponseUploader = {
   id: number;
@@ -27,8 +27,7 @@ export type BeatSaverMapResponseStats = {
   score: number; // 0-1
 };
 
-export type BeatSaverMapResponseVersionsItemState =
-  "Published";
+export type BeatSaverMapResponseVersionsItemState = "Published";
 
 export type BeatSaverMapResponseVersionsItemDiffItemParitySummary = {
   error: number;
@@ -66,7 +65,7 @@ export type BeatSaverMapResponseVersionsItem = {
   downloadURL: string;
   coverURL: string;
   previewURL: string;
-}
+};
 
 export type BeatSaverMapResponseNotFound = {
   error: "Not Found";

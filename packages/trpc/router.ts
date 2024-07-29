@@ -3,10 +3,7 @@ import { initTRPC } from "@trpc/server";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { isReadOnly } from "@/packages/utils/envrionment.ts";
-import {
-  fetchAndCacheFromResolvables,
-  fetchAndCacheFromResolvablesRaw,
-} from "@/packages/api-beatsaver/mod.ts";
+import { fetchAndCacheFromResolvables, fetchAndCacheFromResolvablesRaw } from "@/packages/api-beatsaver/mod.ts";
 import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
 import {
   LowercaseMapHash,
@@ -88,9 +85,7 @@ const playlist = t.router({
             }),
           ],
         ),
-      ).then((entries) =>
-        entries.map(([key, url]) => [key, makeImageUrl(url)] as const)
-      );
+      ).then((entries) => entries.map(([key, url]) => [key, makeImageUrl(url)] as const));
       const imageUrls = Object.fromEntries(imageUrlEntries);
 
       const response = Object.fromEntries(

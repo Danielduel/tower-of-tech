@@ -1,8 +1,5 @@
 import { FC, useState } from "react";
-import {
-  BeatSaberPlaylistSchema,
-  BeatSaberPlaylistWithoutIdSchema,
-} from "@/packages/types/beatsaber-playlist.ts";
+import { BeatSaberPlaylistSchema, BeatSaberPlaylistWithoutIdSchema } from "@/packages/types/beatsaber-playlist.ts";
 import { Playlist } from "@/apps/website/pages/editor/playlist/PlaylistItem.tsx";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import type { FormEventHandler } from "npm:@types/react";

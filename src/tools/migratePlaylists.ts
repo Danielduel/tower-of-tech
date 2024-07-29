@@ -11,23 +11,16 @@ import { links } from "@/apps/website/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId } from "@/packages/types/brands.ts";
 
-const coverPath =
-  new URL(import.meta.resolve("../../migrated/covers")).pathname;
+const coverPath = new URL(import.meta.resolve("../../migrated/covers")).pathname;
 
-const sourcePath =
-  new URL(import.meta.resolve("../../data/playlists")).pathname;
-const destinationPath =
-  new URL(import.meta.resolve("../../migrated/playlists")).pathname;
-const destinationPathOffline =
-  new URL(import.meta.resolve("../../migrated/playlists-offline")).pathname;
+const sourcePath = new URL(import.meta.resolve("../../data/playlists")).pathname;
+const destinationPath = new URL(import.meta.resolve("../../migrated/playlists")).pathname;
+const destinationPathOffline = new URL(import.meta.resolve("../../migrated/playlists-offline")).pathname;
 
-const sourcePathGuests =
-  new URL(import.meta.resolve("../../data/playlists-guest")).pathname;
-const destinationPathGuests =
-  new URL(import.meta.resolve("../../migrated/playlists-guest")).pathname;
-const destinationPathOfflineGuests =
-  new URL(import.meta.resolve("../../migrated/playlists-guest-offline"))
-    .pathname;
+const sourcePathGuests = new URL(import.meta.resolve("../../data/playlists-guest")).pathname;
+const destinationPathGuests = new URL(import.meta.resolve("../../migrated/playlists-guest")).pathname;
+const destinationPathOfflineGuests = new URL(import.meta.resolve("../../migrated/playlists-guest-offline"))
+  .pathname;
 
 await Promise.all([
   Deno.mkdir(coverPath, { recursive: true }),
