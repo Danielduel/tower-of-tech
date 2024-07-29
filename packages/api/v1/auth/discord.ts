@@ -23,7 +23,11 @@ const {
 export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
   typeof apiV1HandlerAuthDiscordOauthSignInRoute
 > = async (req) => {
-  return await signIn(req);
+  const response = await signIn(req);
+
+  console.log(response.headers);
+
+  return response;
 };
 
 export const apiV1HandlerAuthDiscordOauthSignOut: HandlerForRoute<
