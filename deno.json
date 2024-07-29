@@ -25,7 +25,8 @@
     "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
   },
   "fmt": {
-    "exclude": [".ultra"]
+    "exclude": [".ultra"],
+    "lineWidth": 120
   },
   "lint": {
     "exclude": [".ultra"]

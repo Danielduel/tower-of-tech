@@ -10,10 +10,7 @@ import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { BeatSaverApi } from "@/packages/api-beatsaver/api.ts";
-import {
-  BeatSaverResolvable,
-  splitBeatSaverResolvables,
-} from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
+import { BeatSaverResolvable, splitBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { scheduleCache } from "@/packages/api-beatsaver/cache.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { ulid } from "kvdex/src/deps.ts";
@@ -182,10 +179,10 @@ export const fetchAndCacheFromResolvablesRaw = async (
     .filter((x) => x.status === "ok")
     .map((x) => x.data!.hash!);
 
-  const idsFromIdResolvablesRemoved = hashesFromIdResolvables
-    .filter((x) => x.status === "removed")
-    .map((x) => x.data?.id ?? null)
-    .filter(filterNulls);
+  // const idsFromIdResolvablesRemoved = hashesFromIdResolvables
+  //   .filter((x) => x.status === "removed")
+  //   .map((x) => x.data?.id ?? null)
+  //   .filter(filterNulls);
 
   const hashesArray = [...hashesFromCacheOk, ...hashesArrayFromResolvables];
 

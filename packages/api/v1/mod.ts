@@ -19,11 +19,25 @@ import {
   apiV1HandlerDiscordGetPlaylistByGuildIdChannelIdRoute,
 } from "@/packages/api/v1/discord/get.ts";
 import { commandRoot } from "@/packages/discord/commands/mod.ts";
+import {
+  apiV1HandlerAuthDiscordOauthCallback,
+  apiV1HandlerAuthDiscordOauthCallbackRoute,
+  apiV1HandlerAuthDiscordOauthSignIn,
+  apiV1HandlerAuthDiscordOauthSignInRoute,
+  apiV1HandlerAuthDiscordOauthSignOut,
+  apiV1HandlerAuthDiscordOauthSignOutRoute,
+} from "@/packages/api/v1/auth/discord.ts";
 
 // "/api/playlist/guild/:guildId/channel/:channelId": playlistFromGuildChannel,
 // "/": commandRoot,
 
 const route = router({
+  [apiV1HandlerAuthDiscordOauthSignInRoute]: apiV1HandlerAuthDiscordOauthSignIn,
+  [apiV1HandlerAuthDiscordOauthSignOutRoute]:
+    apiV1HandlerAuthDiscordOauthSignOut,
+  [apiV1HandlerAuthDiscordOauthCallbackRoute]:
+    apiV1HandlerAuthDiscordOauthCallback,
+
   [apiV1HandlerGetPlaylistByIdRoute]: apiV1HandlerGetPlaylistById,
   [apiV1HandlerGetPlaylistByIdDownloadRoute]:
     apiV1HandlerGetPlaylistByIdDownload,
