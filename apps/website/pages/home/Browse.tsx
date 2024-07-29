@@ -3,18 +3,10 @@ import {
   VisualNovelStep,
   VisualNovelStepExplanation,
   VisualNovelStepInlineATag,
-  VisualNovelStepLink,
 } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { ToTPlaylistList } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
 import { forwardRef } from "react";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
-import { routing } from "@/apps/website/routing.config.ts";
-
-// case playlistName.startsWith("Adep"): return "#5e81ac";
-// case playlistName.startsWith("Acc"): return "#88c0d0";
-// case playlistName.startsWith("Mid"): return "#a3be8c";
-// case playlistName.startsWith("Fas"): return "#ebcb8b";
-// case playlistName.startsWith("Sonic"): return "#d08770";
 
 export const Browse = forwardRef<HTMLDivElement>(
   (_, ref) => {

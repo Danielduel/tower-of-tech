@@ -1329,6 +1329,30 @@
       ]
     },
     {
+      "songName": "HELP!!",
+      "levelAuthorName": "Gazer",
+      "hash": "04C061C979B4A268A4BD7EDCE7662F8C82F4D452",
+      "levelid": "custom_level_04C061C979B4A268A4BD7EDCE7662F8C82F4D452",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "the prom",
+      "levelAuthorName": "GojiCrafter & Phøenix",
+      "hash": "882825125C2DF02B8B426B817AAFC28FC777143B",
+      "levelid": "custom_level_882825125C2DF02B8B426B817AAFC28FC777143B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "paqqin",
       "levelAuthorName": "ani",
       "hash": "308C5033314D7065C19C0A195DF96529979083DB",
@@ -2329,6 +2353,18 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "The Master",
+      "levelAuthorName": "Galaxy as \"The Master\"",
+      "hash": "8736D296EDFADEC149E895E274DD03D6561B9DF8",
+      "levelid": "custom_level_8736D296EDFADEC149E895E274DD03D6561B9DF8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },
@@ -4970,6 +5006,30 @@
           "characteristic": "Standard",
           "name": "Expert"
         },
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Poongdung",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "6EA7BE743FF27B0431FAA0CC817017E02B60237D",
+      "levelid": "custom_level_6EA7BE743FF27B0431FAA0CC817017E02B60237D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hollow Hunger",
+      "levelAuthorName": "Joetastic",
+      "hash": "B0AB9E784AF4C1B659D6D31BE782E2E0F858F78D",
+      "levelid": "custom_level_B0AB9E784AF4C1B659D6D31BE782E2E0F858F78D",
+      "difficulties": [
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
@@ -8361,18 +8421,6 @@
       ]
     },
     {
-      "songName": "the prom",
-      "levelAuthorName": "GojiCrafter & Phøenix",
-      "hash": "882825125C2DF02B8B426B817AAFC28FC777143B",
-      "levelid": "custom_level_882825125C2DF02B8B426B817AAFC28FC777143B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Last Score",
       "levelAuthorName": "Ge2toro",
       "hash": "0373079382B72F74AC022CD03976D5F22B1B4F02",
@@ -8442,6 +8490,18 @@
           "characteristic": "Standard",
           "name": "Expert"
         },
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Bubble",
+      "levelAuthorName": "Melon",
+      "hash": "C277F67E6B5AFD110B123628B11F8B2D9E575A19",
+      "levelid": "custom_level_C277F67E6B5AFD110B123628B11F8B2D9E575A19",
+      "difficulties": [
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
@@ -10133,6 +10193,18 @@
       ]
     },
     {
+      "songName": "DIY",
+      "levelAuthorName": "theAstra & jdgdaredevil",
+      "hash": "7AEA79F992C9B0EC50805F46C8EDCB3EF51D8D6F",
+      "levelid": "custom_level_7AEA79F992C9B0EC50805F46C8EDCB3EF51D8D6F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "NIGHT RUNNING (7_7 bootleg)",
       "levelAuthorName": "Hener",
       "hash": "6FD4593D810A3FA62E9ABE672C2C6C4DE34408AB",
@@ -10889,6 +10961,30 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Serotonin",
+      "levelAuthorName": "HypersonicSharkz",
+      "hash": "0A1C8E33953119A3E859E45B50ABCACE57AE0990",
+      "levelid": "custom_level_0A1C8E33953119A3E859E45B50ABCACE57AE0990",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "8 Legged Dreams",
+      "levelAuthorName": "Melon",
+      "hash": "4FD084A0DBB96FAF6C0DE93ADB509A944D65C5F6",
+      "levelid": "custom_level_4FD084A0DBB96FAF6C0DE93ADB509A944D65C5F6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },
@@ -11881,6 +11977,18 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Memento Mori",
+      "levelAuthorName": "Astellic",
+      "hash": "4DF33422D6701617DCD7D46DDC39F38BDE077DE3",
+      "levelid": "custom_level_4DF33422D6701617DCD7D46DDC39F38BDE077DE3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },
@@ -13317,6 +13425,30 @@
       ]
     },
     {
+      "songName": "Astrum",
+      "levelAuthorName": "riisi",
+      "hash": "1B3693B4AB1DA3EC36BE2D5ADA5BAC1D24CB4928",
+      "levelid": "custom_level_1B3693B4AB1DA3EC36BE2D5ADA5BAC1D24CB4928",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "MOVE",
+      "levelAuthorName": "Dr_Marc",
+      "hash": "C97AEAAE45506C32A305929BD516239D2A2A5021",
+      "levelid": "custom_level_C97AEAAE45506C32A305929BD516239D2A2A5021",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
       "songName": "Say So",
       "levelAuthorName": "Ken_Monogatari",
       "hash": "C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
@@ -14229,6 +14361,18 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "you [covered by nayuta]",
+      "levelAuthorName": "Idlebob & NiM",
+      "hash": "BAC6E338C6638CD7271070A0D8571E2601E5CE9B",
+      "levelid": "custom_level_BAC6E338C6638CD7271070A0D8571E2601E5CE9B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -16025,6 +16169,18 @@
       "levelAuthorName": "phoenixtvspeedcuber",
       "hash": "5D68C49FE9FE43A2B409144538621027B0D31A71",
       "levelid": "custom_level_5D68C49FE9FE43A2B409144538621027B0D31A71",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Alice Doll",
+      "levelAuthorName": "edgii",
+      "hash": "4E1D9D01F61AAB7BE56A91830B018782A3D78944",
+      "levelid": "custom_level_4E1D9D01F61AAB7BE56A91830B018782A3D78944",
       "difficulties": [
         {
           "characteristic": "Standard",
