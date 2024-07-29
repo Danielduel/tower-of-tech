@@ -1,8 +1,6 @@
 import { createDiscordOAuthConfig, createHelpers } from "jsr:@deno/kv-oauth";
 import { HandlerForRoute } from "@/packages/api/v1/types.ts";
 import { isLocal } from "@/packages/utils/envrionment.ts";
-import { getCookies, getSetCookies, setCookie } from "jsr:@std/http";
-import { clearRight } from "https://deno.land/x/tty@0.1.4/tty_async.ts";
 
 export const apiV1HandlerAuthDiscordOauthSignInRoute = "/api/v1/auth/discord/oauth/signin";
 export const apiV1HandlerAuthDiscordOauthSignOutRoute = "/api/v1/auth/discord/oauth/signout";
@@ -20,27 +18,12 @@ const {
   handleCallback,
   // getSessionId,
   signOut,
-} = createHelpers(oauthConfig, {
-  cookieOptions: {
-    sameSite: "Strict",
-  },
-});
+} = createHelpers(oauthConfig);
 
 export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
   typeof apiV1HandlerAuthDiscordOauthSignInRoute
 > = async (req) => {
   const response = await signIn(req);
-
-  const cookies = getSetCookies(response.headers);
-  const _cookie = cookies.find((x) => x.name === "__Host-oauth-session" || x.name === "oauth-session");
-
-  if (_cookie) {
-    _cookie.sameSite = "None";
-    setCookie(response.headers, _cookie);
-  }
-
-  console.log(cookies);
-
   return response;
 };
 
