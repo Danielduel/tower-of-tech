@@ -18,7 +18,11 @@ const {
   handleCallback,
   // getSessionId,
   signOut,
-} = createHelpers(oauthConfig);
+} = createHelpers(oauthConfig, {
+  cookieOptions: isLocal() ? {} : {
+    domain: "towerofte.ch",
+  },
+});
 
 export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
   typeof apiV1HandlerAuthDiscordOauthSignInRoute
