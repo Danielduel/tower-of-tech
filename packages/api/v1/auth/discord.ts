@@ -9,7 +9,7 @@ export const apiV1HandlerAuthDiscordOauthCallbackRoute = "/api/v1/auth/discord/o
 const oauthConfig = createDiscordOAuthConfig({
   redirectUri: isLocal()
     ? `http://localhost:8081${apiV1HandlerAuthDiscordOauthCallbackRoute}`
-    : `https://towerofte.ch${apiV1HandlerAuthDiscordOauthCallbackRoute}`,
+    : `https://www.towerofte.ch${apiV1HandlerAuthDiscordOauthCallbackRoute}`,
   scope: ["identify"],
 });
 
@@ -25,29 +25,7 @@ export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
 > = async (req) => {
   const response = await signIn(req);
 
-  const _response = new Response(
-    `
-      <html>
-        <body>
-          <script>
-            setTimeout(() => {
-              location.assign("${response.headers.get("location")}");
-            }, 90000);
-          </script>
-          <a href="${response.headers.get("location")}">Go to discord's auth page</a>
-        </body>
-      </html>
-    `,
-    {
-      ...response,
-      headers: response.headers,
-      status: 200,
-    },
-  );
-
-  _response.headers.set("Content-Type", "text/html");
-
-  return _response;
+  return response;
 };
 
 export const apiV1HandlerAuthDiscordOauthSignOut: HandlerForRoute<
@@ -59,7 +37,6 @@ export const apiV1HandlerAuthDiscordOauthSignOut: HandlerForRoute<
 export const apiV1HandlerAuthDiscordOauthCallback: HandlerForRoute<
   typeof apiV1HandlerAuthDiscordOauthCallbackRoute
 > = async (req) => {
-  console.log(req.headers);
   const { response } = await handleCallback(req);
   return response;
 };
