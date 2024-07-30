@@ -33,7 +33,9 @@ export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
     `
       <body>
         <script>
-          location.assign("${response.headers.get("location")}")
+          setTimeout(() => {
+            location.assign("${response.headers.get("location")}");
+          }, 90000);
         </script>
       </body>
     `,
