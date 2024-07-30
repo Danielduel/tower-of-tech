@@ -25,10 +25,6 @@ export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
 > = async (req) => {
   const response = await signIn(req);
 
-  // return response;
-
-  console.log(response);
-
   const _response = new Response(
     `
       <html>
@@ -49,8 +45,6 @@ export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
     },
   );
 
-  console.log(_response);
-
   _response.headers.set("Content-Type", "text/html");
 
   return _response;
@@ -65,6 +59,7 @@ export const apiV1HandlerAuthDiscordOauthSignOut: HandlerForRoute<
 export const apiV1HandlerAuthDiscordOauthCallback: HandlerForRoute<
   typeof apiV1HandlerAuthDiscordOauthCallbackRoute
 > = async (req) => {
+  console.log(req.headers);
   const { response } = await handleCallback(req);
   return response;
 };
