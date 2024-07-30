@@ -28,7 +28,29 @@ export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
   typeof apiV1HandlerAuthDiscordOauthSignInRoute
 > = async (req) => {
   const response = await signIn(req);
-  return response;
+
+  // return response;
+
+  console.log(response);
+
+  const _response = new Response(
+    `
+      <body>
+        <script>
+          location.assign("${response.headers.get("location")}")
+        </script>
+      </body>
+    `,
+    {
+      ...response,
+      headers: response.headers,
+      status: 200,
+    },
+  );
+
+  _response.headers.set("Content-Type", "text/html");
+
+  return _response;
 };
 
 export const apiV1HandlerAuthDiscordOauthSignOut: HandlerForRoute<
