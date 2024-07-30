@@ -31,13 +31,16 @@ export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
 
   const _response = new Response(
     `
-      <body>
-        <script>
-          setTimeout(() => {
-            location.assign("${response.headers.get("location")}");
-          }, 90000);
-        </script>
-      </body>
+      <html>
+        <body>
+          <script>
+            setTimeout(() => {
+              location.assign("${response.headers.get("location")}");
+            }, 90000);
+          </script>
+          <a href="${response.headers.get("location")}">Go to discord's auth page</a>
+        </body>
+      </html>
     `,
     {
       ...response,
