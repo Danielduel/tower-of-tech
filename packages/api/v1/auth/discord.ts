@@ -48,6 +48,8 @@ export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
     },
   );
 
+  console.log(_response);
+
   _response.headers.set("Content-Type", "text/html");
 
   return _response;
