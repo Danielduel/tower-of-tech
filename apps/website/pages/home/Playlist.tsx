@@ -30,7 +30,7 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
       ref={ref}
       row
       header={
-        <div className="block text-left md:text-right mt-5">
+        <div className="text-left md:text-right mt-5">
           <div className="ml-5 md:ml-0">
             <div className="text-2xl">
               {data?.playlistTitle}
@@ -68,7 +68,7 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
         </div>
       }
     >
-      <div className="ml-3">
+      <div className="md:ml-3 md:mt-6">
         {data.songs && <PlaylistMaps prependKey={playlistId} maps={data.songs} />}
       </div>
     </VisualNovelContainer>

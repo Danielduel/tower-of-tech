@@ -121,10 +121,10 @@ export const MapItem: FC<MapItemProps> = ({
   const Field = useBeatSaverMatch({ beatSaverMapItem, playlistMapItem });
 
   return (
-    <div className="glass p-2 mb-2">
+    <div className="glass md:p-2 mb-4 md:mb-2">
       <div
         key={playlistMapItem.hash}
-        className="text-left flex flex-row gap-4 text-lg w-prose"
+        className="text-left flex flex-row gap-2 md:gap-4 text-sm md:text-lg md:w-prose"
       >
         <div>
           <Field

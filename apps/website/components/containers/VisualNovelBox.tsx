@@ -81,7 +81,7 @@ export const VisualNovelContainer = forwardRef<
 >(({ children, imageUrl, row, header }, ref) => {
   return (
     <div
-      className={cn("w-full my-5 md:flex justify-center", {
+      className={cn("w-[100dvw] md:w-full my-5 md:flex justify-center overflow-hidden", {
         "flex-row items-start": row,
         "flex-col items-center": !row,
       })}
@@ -92,13 +92,13 @@ export const VisualNovelContainer = forwardRef<
           "sticky top-5": row,
         })}
       >
-        <div className="relative h-[40vw] w-[40vw] md:h-[20vh] md:w-[20vh] max-w-[80vw] max-h-[80vw] m-auto">
+        <div className="relative h-[14rem] w-[14rem] md:h-[20vh] md:w-[20vh] max-w-[80vw] max-h-[80vw] m-auto">
           <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh] blur wobble-blur">
           </div>
           <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh]">
             {imageUrl && (
               <Image
-                className="rounded-[2vh] h-[calc(40vw-10px)] w-[calc(40vw-10px)] md:h-[calc(20vh-10px)] md:w-[calc(20vh-10px)] max-w-[80vw] max-h-[80vw]"
+                className="rounded-[2vh] h-[calc(14rem-10px)] w-[calc(14rem-10px)] md:h-[calc(20vh-10px)] md:w-[calc(20vh-10px)] max-w-[80vw] max-h-[80vw]"
                 src={imageUrl}
               />
             )}

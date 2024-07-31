@@ -17,7 +17,7 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <title>Tower of tech</title>
-        <meta name="viewport" content="width=650, initial-scale=1, user-scalable=0" />
+        <meta name="viewport" content="width=360, initial-scale=1, user-scalable=0" />
         <link rel="shortcut icon" href={useAsset("/favicon.ico")} />
         <link rel="stylesheet" href={useAsset("/style.css")} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
