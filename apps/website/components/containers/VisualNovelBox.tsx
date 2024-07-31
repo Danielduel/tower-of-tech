@@ -63,7 +63,7 @@ export const VisualNovelActions: FC<PropsWithChildren> = ({ children }) => {
 
 export const VisualNovelBody: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="box-border text-2xl text-slate-200 max-w-prose w-full p-6 text-left glass">
+    <div className="box-border text-2xl text-slate-200 max-w-prose w-full md:p-6 text-left glass">
       <div key="content">
         {children}
       </div>

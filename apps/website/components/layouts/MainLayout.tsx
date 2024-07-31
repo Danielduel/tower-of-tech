@@ -11,7 +11,7 @@ export function MainLayout(
       style={style}
       className="z-10 min-w-min min-h-[100dvh] flex items-center text-white page"
     >
-      <div className="container mx-auto">
+      <div className="container md:mx-auto">
         {children}
       </div>
     </div>

@@ -39,54 +39,56 @@ export const ToTPlaylistItem: FC<
   if (!data) return "Loading...";
 
   return (
-    <div className="hover:ring-1 ring-[#FFF9] border min-w-0 inline-block relative pr-4 box-content w-full">
-      <div className="flex w-full">
+    <div className="text-center sm:text-left hover:ring-1 ring-[#FFF9] border min-w-0 inline-block relative sm:pr-4 box-content w-full">
+      <div className="flex flex-col sm:flex-row sm:w-full items-center sm:items-start">
         <div>
           <Image
-            className="w-40 min-w-40 h-40 min-h-40 mr-3"
+            className="w-40 min-w-40 h-40 min-h-40 sm:mr-3"
             height={160}
             width={160}
             src={data.imageUrl}
           />
         </div>
-        <div className="py-2 flex flex-col w-full min-w-64">
-          <div className="text-2xl">
-            {displayName}
+        <div className="flex flex-col w-full sm:flex-row ml-auto sm:ml-[none]">
+          <div className="py-2 flex flex-col sm:w-full sm:min-w-64">
+            <div className="text-2xl">
+              {displayName}
+            </div>
+            <div className="text-xl">
+              Speed: {getToTPlaylistSpeedCategory(speedCategory)}
+            </div>
+            <div className="text-xl">
+              Complexity: {getToTPlaylistTechCategory(techCategory)}
+            </div>
+            <div className="text-xl">
+              Items: {data.songs.length}
+            </div>
           </div>
-          <div className="text-xl">
-            Speed: {getToTPlaylistSpeedCategory(speedCategory)}
-          </div>
-          <div className="text-xl">
-            Complexity: {getToTPlaylistTechCategory(techCategory)}
-          </div>
-          <div className="text-xl">
-            Items: {data.songs.length}
-          </div>
-        </div>
-        <div className="py-2 flex flex-col">
-          <div className="text-xl ml-auto mt-auto text-right">
-            <VisualNovelStepLink to={links.home.playlist.details(data?.id)}>
-              Details
-            </VisualNovelStepLink>
-          </div>
-          <div className="text-xl ml-auto mt-auto text-right">
-            <VisualNovelOneClickAnchor
-              href={links.api.v1.playlist.oneClick(
-                playlistId,
-                getPlaylistFileNameFromPlaylist(data),
-                towerOfTechWebsiteOrigin,
-              )}
-            >
-              OneClick
-            </VisualNovelOneClickAnchor>
-          </div>
-          <div className="text-xl ml-auto mt-auto text-right">
-            <VisualNovelATag
-              download
-              href={links.api.v1.playlist.download(data.id)}
-            >
-              Download
-            </VisualNovelATag>
+          <div className="py-2 flex flex-wrap flex-col items-center">
+            <div className="text-xl sm:ml-auto mt-auto text-right">
+              <VisualNovelStepLink to={links.home.playlist.details(data?.id)}>
+                Details
+              </VisualNovelStepLink>
+            </div>
+            <div className="text-xl sm:ml-auto mt-auto text-right">
+              <VisualNovelOneClickAnchor
+                href={links.api.v1.playlist.oneClick(
+                  playlistId,
+                  getPlaylistFileNameFromPlaylist(data),
+                  towerOfTechWebsiteOrigin,
+                )}
+              >
+                OneClick
+              </VisualNovelOneClickAnchor>
+            </div>
+            <div className="text-xl sm:ml-auto mt-auto text-right">
+              <VisualNovelATag
+                download
+                href={links.api.v1.playlist.download(data.id)}
+              >
+                Download
+              </VisualNovelATag>
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +103,7 @@ export const ToTPlaylistList = () => {
     semiconstantCacheQuery,
   );
   return (
-    <div className="w-full flex flex-row flex-wrap gap-2">
+    <div className="w-[100dvw] px-5 sm:px-0 sm:w-full sm:flex sm:flex-row flex-wrap sm:gap-2 relative">
       {playlistArray.map((x) => <ToTPlaylistItem {...x} data={data[x.playlistId]} />)}
     </div>
   );
