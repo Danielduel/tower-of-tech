@@ -4,6 +4,8 @@ body {
   background: #000;
   text-align: center;
   font-family: 'Inter', sans-serif;
+  height: 100dvh;
+  width: 100dvw;
 }
 
 h1 {
