@@ -30,15 +30,17 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
       ref={ref}
       row
       header={
-        <div className="text-right mt-5">
-          <div className="text-2xl">
-            {data?.playlistTitle}
-          </div>
-          <div className="text-xl">
-            {data?.playlistAuthor}
-          </div>
-          <div className="text-xl">
-            Items: {data.songs.length}
+        <div className="block text-left md:text-right mt-5">
+          <div className="ml-5 md:ml-0">
+            <div className="text-2xl">
+              {data?.playlistTitle}
+            </div>
+            <div className="text-xl">
+              {data?.playlistAuthor}
+            </div>
+            <div className="text-xl">
+              Items: {data.songs.length}
+            </div>
           </div>
 
           <VisualNovelDivider />

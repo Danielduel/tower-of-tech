@@ -4,6 +4,7 @@ import { Link } from "@/packages/ui/Link.tsx";
 import { AnchorHTMLAttributes, FC, HtmlHTMLAttributes } from "npm:@types/react";
 import { links } from "@/apps/website/routing.config.ts";
 import { Image } from "@/apps/website/components/Image.tsx";
+import { cn } from "@/packages/utils/classnames.ts";
 
 export const VisualNovelLink = (props: LinkProps) => {
   return (
@@ -80,17 +81,27 @@ export const VisualNovelContainer = forwardRef<
 >(({ children, imageUrl, row, header }, ref) => {
   return (
     <div
-      className={`w-full my-5 flex justify-center ${row ? "flex-row items-start" : "flex-col items-center"}`}
+      className={cn("w-full my-5 md:flex justify-center", {
+        "flex-row items-start": row,
+        "flex-col items-center": !row,
+      })}
       ref={ref}
     >
       <div
-        className={`min-h-[20vh] mb-4 relative wobble ${row ? "sticky top-5" : ""}`}
+        className={cn("min-h-[20vh] mb-4 relative wobble", {
+          "sticky top-5": row,
+        })}
       >
-        <div className="relative h-[20vh] w-[20vh] max-w-[25vw] max-h-[25vw] ml-auto">
+        <div className="relative h-[40vw] w-[40vw] md:h-[20vh] md:w-[20vh] max-w-[80vw] max-h-[80vw] m-auto">
           <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh] blur wobble-blur">
           </div>
           <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh]">
-            {imageUrl && <Image className="h-full w-full rounded-[2vh]" src={imageUrl} />}
+            {imageUrl && (
+              <Image
+                className="rounded-[2vh] h-[calc(40vw-10px)] w-[calc(40vw-10px)] md:h-[calc(20vh-10px)] md:w-[calc(20vh-10px)] max-w-[80vw] max-h-[80vw]"
+                src={imageUrl}
+              />
+            )}
           </div>
         </div>
         {header}

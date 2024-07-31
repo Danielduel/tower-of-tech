@@ -1082,6 +1082,8 @@
     "https://deno.land/x/cache@0.2.13/file_fetcher.ts": "5c793cc83a5b9377679ec313b2a2321e51bf7ed15380fa82d387f1cdef3b924f",
     "https://deno.land/x/cache@0.2.13/helpers.ts": "d1545d6432277b7a0b5ea254d1c51d572b6452a8eadd9faa7ad9c5586a1725c4",
     "https://deno.land/x/cache@0.2.13/mod.ts": "3188250d3a013ef6c9eb060e5284cf729083af7944a29e60bb3d8597dd20ebcd",
+    "https://deno.land/x/classnames@0.1.1/index.ts": "03886a1878c120dcd84329f6860ddacddc5e3b8a89e726008ceaca3b959a2a03",
+    "https://deno.land/x/classnames@0.1.1/utils/isPlainObject.ts": "5d10ed38891cb4d27242c2314a1172c4f257f825a66b764d850e38e46cb81535",
     "https://deno.land/x/color@v0.3.0/mod.ts": "7db5473061c484f0e830ee883ab0764bb55999acfd6a182919540ac9efa830a2",
     "https://deno.land/x/crayon@3.3.2/mod.ts": "82ad225583a483c4837577971629cddaa22614093af8353da6426b9366de9780",
     "https://deno.land/x/crayon@3.3.2/src/conversions.ts": "9bfd3b1fbe412bcba092890ac558b6beaad4c3aa399cd99d45fadb324d28afd6",
