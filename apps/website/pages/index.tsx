@@ -6,8 +6,10 @@ import {
   VisualNovelLink,
 } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { links } from "@/apps/website/routing.config.ts";
-import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 import { forwardRef } from "react";
+import { isLocal } from "@/packages/utils/envrionment.ts";
+
+const indev = isLocal();
 
 const Index = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -27,6 +29,7 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
           to={links.home.browse}
         />
         <VisualNovelLink to={links.home.more} children="Tell me more" />
+        {indev && <VisualNovelAnchor href={links.home.features} children="Features" />}
       </VisualNovelActions>
     </VisualNovelContainer>
   );

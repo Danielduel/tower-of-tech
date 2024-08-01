@@ -8,7 +8,7 @@ import { MainLayoutShell } from "@/apps/website/components/layouts/MainLayout.ts
 import { routing } from "@/apps/website/routing.config.ts";
 import { Browse } from "@/apps/website/pages/home/Browse.tsx";
 import { More } from "@/apps/website/pages/home/More.tsx";
-import Download from "@/apps/website/pages/home/Download.tsx";
+import { Download } from "@/apps/website/pages/home/Download.tsx";
 import { SnipeIndex } from "@/apps/website/pages/snipe/index.tsx";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import {
@@ -26,6 +26,7 @@ import { PlaylistInstallGuidePCVRPostInstallationCongratulations } from "@/apps/
 import { History } from "@/apps/website/pages/home/History.tsx";
 import { PlaylistDetails } from "@/apps/website/pages/home/Playlist.tsx";
 import { PlaylistManagementGuidePCVR } from "@/apps/website/pages/home/PlaylistManagementGuide.tsx";
+import { Features } from "@/apps/website/pages/home/Features.tsx";
 
 export const Routing = () => {
   const location = useLocation();
@@ -63,6 +64,10 @@ export const Routing = () => {
             <Route
               path={routing.home.browse}
               element={<MainLayoutShell Component={Browse} />}
+            />
+            <Route
+              path={routing.home.features}
+              element={<MainLayoutShell Component={Features} />}
             />
             <Route
               path={routing.home.more}

@@ -13,6 +13,8 @@ export const routing = {
     download: "download",
     about: "about",
     browse: "browse",
+    features: "features",
+    account: "account",
     playlist: {
       root: "playlist/",
       details: ":playlistId/details",
@@ -80,6 +82,8 @@ export const links = {
     history: "/home/history",
     about: "/home/about",
     browse: "/home/browse",
+    features: "/home/features",
+    account: "/home/account",
   },
 
   editor: {
@@ -103,6 +107,18 @@ export const links = {
           origin: string,
         ) =>
           `bsplaylist://playlist/${links.api.v1.playlist.data(playlistId, origin)}/oneclick/${encodeURI(playlistName)}`,
+      },
+      auth: {
+        discord: {
+          oauth: {
+            signIn: (
+              origin: string = defaultOrigin,
+            ) => `${origin}/api/v1/auth/discord/oauth/signin`,
+            signOut: (
+              origin: string = defaultOrigin,
+            ) => `${origin}/api/v1/auth/discord/oauth/signout`,
+          },
+        },
       },
       discord: {
         playlist: {

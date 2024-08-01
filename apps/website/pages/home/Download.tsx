@@ -1,9 +1,10 @@
 import { VisualNovelContainer } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
+import { forwardRef } from "react";
 
-export default function Download() {
+export const Download = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <VisualNovelContainer>
+    <VisualNovelContainer ref={ref}>
       Here they are
       <a
         download
@@ -13,4 +14,4 @@ export default function Download() {
       </a>
     </VisualNovelContainer>
   );
-}
+});

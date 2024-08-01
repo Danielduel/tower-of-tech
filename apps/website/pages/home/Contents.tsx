@@ -1,4 +1,3 @@
-import { FC, PropsWithChildren } from "react";
 import { playlistMapping } from "@/packages/playlist/mod.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 
@@ -17,21 +16,6 @@ const PlaylistLink = (
     </div>
   );
 };
-
-const SectionSection: FC<PropsWithChildren> = ({ children }) => (
-  <section className="min-w-full mt-3">{children}</section>
-);
-const SectionTitle: FC<PropsWithChildren> = ({ children }) => (
-  <span className="text-4xl font-bold m-r-auto border-t-1 ml-[-1px] border-l-1 p-10 pt-1 pl-1 border-black text-left">
-    {children}
-  </span>
-);
-const SectionDescription: FC<PropsWithChildren> = ({ children }) => (
-  <div className="text-2xl ml-4 mt-2 text-[#333] text-left">{children}</div>
-);
-const SectionMapping: FC<PropsWithChildren> = ({ children }) => (
-  <div className="text-xl mt-2 text-[#333]">{children}</div>
-);
 
 export default function Index() {
   const { data: links } = trpc.playlist.listLinks.useQuery();
