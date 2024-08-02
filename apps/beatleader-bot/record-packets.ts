@@ -1,7 +1,11 @@
 const historyDir = `./data/beatleader-wss-history/${Date.now()}`;
+let autoInc = 0;
 const writeHistory = (
   ...data: unknown[]
-) => Deno.writeTextFile(`${historyDir}/${Date.now()}`, JSON.stringify(data));
+) => {
+  const path = `${historyDir}/${Date.now()}-${++autoInc}`;
+  return Deno.writeTextFile(path, JSON.stringify(data));
+};
 Deno.mkdirSync(historyDir, { recursive: true });
 
 const addr = "wss://sockets.api.beatleader.xyz/general";
