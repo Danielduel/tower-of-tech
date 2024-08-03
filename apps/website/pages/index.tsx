@@ -8,8 +8,6 @@ import {
 import { links } from "@/apps/website/routing.config.ts";
 import { forwardRef } from "react";
 
-const indev = (document as any)?.location.origin.startsWith("http://localhost:");
-
 const Index = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <VisualNovelContainer ref={ref}>
@@ -28,7 +26,7 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
           to={links.home.browse}
         />
         <VisualNovelLink to={links.home.more} children="Tell me more" />
-        {indev && <VisualNovelAnchor href={links.home.features} children="Features" />}
+        {false && <VisualNovelAnchor href={links.home.features} children="Features" />}
       </VisualNovelActions>
     </VisualNovelContainer>
   );
