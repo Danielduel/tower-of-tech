@@ -7,9 +7,8 @@ import {
 } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { links } from "@/apps/website/routing.config.ts";
 import { forwardRef } from "react";
-import { isLocal } from "@/packages/utils/envrionment.ts";
 
-const indev = isLocal();
+const indev = location.origin.startsWith("http://localhost:");
 
 const Index = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -34,4 +33,5 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
     </VisualNovelContainer>
   );
 });
+
 export default Index;
