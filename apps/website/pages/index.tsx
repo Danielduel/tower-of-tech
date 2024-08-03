@@ -8,7 +8,7 @@ import {
 import { links } from "@/apps/website/routing.config.ts";
 import { forwardRef } from "react";
 
-const indev = location.origin.startsWith("http://localhost:");
+const indev = document.location.origin.startsWith("http://localhost:");
 
 const Index = forwardRef<HTMLDivElement>((_, ref) => {
   return (
