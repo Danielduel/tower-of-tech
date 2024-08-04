@@ -124,6 +124,16 @@ i {
   border: 0px solid rgba(255, 255, 255, 0.125);
 }
 
+.md\:glass {
+  @media (min-width: 768px) {
+    backdrop-filter: blur(13px) saturate(140%);
+    -webkit-backdrop-filter: blur(13px) saturate(140%);
+    background-color: #d5e3ff3a;
+    border-radius: 12px;
+    border: 0px solid rgba(255, 255, 255, 0.125);
+  }
+}
+
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

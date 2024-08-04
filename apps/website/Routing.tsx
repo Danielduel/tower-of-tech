@@ -27,6 +27,7 @@ import { History } from "@/apps/website/pages/home/History.tsx";
 import { PlaylistDetails } from "@/apps/website/pages/home/Playlist.tsx";
 import { PlaylistManagementGuidePCVR } from "@/apps/website/pages/home/PlaylistManagementGuide.tsx";
 import { Features } from "@/apps/website/pages/home/Features.tsx";
+import { GuideLayoutShell } from "@/apps/website/components/layouts/GuideLayout.tsx";
 
 export const Routing = () => {
   const location = useLocation();
@@ -81,7 +82,7 @@ export const Routing = () => {
               <Route
                 path={routing.home.playlistInstallGuide.modAssistant}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistInstallGuideModAssistant}
                   />
                 }
@@ -89,7 +90,7 @@ export const Routing = () => {
               <Route
                 path={routing.home.playlistInstallGuide.pcvrSteamCustom}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistInstallGuidePCVRSteamCustom}
                   />
                 }
@@ -97,7 +98,7 @@ export const Routing = () => {
               <Route
                 path={routing.home.playlistInstallGuide.pcvrSteam}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistInstallGuidePCVRSteam}
                   />
                 }
@@ -106,7 +107,7 @@ export const Routing = () => {
                 path={routing.home.playlistInstallGuide
                   .pcvrSteamManualDownload}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistInstallGuidePCVRSteamManualDownload}
                   />
                 }
@@ -115,7 +116,7 @@ export const Routing = () => {
                 path={routing.home.playlistInstallGuide
                   .pcvrSteamManualLocateFolder}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistInstallGuidePCVRSteamManualLocateFolder}
                   />
                 }
@@ -124,7 +125,7 @@ export const Routing = () => {
                 path={routing.home.playlistInstallGuide
                   .pcvrSteamManualPostInstallationCheck}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistInstallGuidePCVRSteamManualPostInstallationCheck}
                   />
                 }
@@ -133,7 +134,7 @@ export const Routing = () => {
                 path={routing.home.playlistInstallGuide
                   .pcvrSteamManualMoveAndExtract}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistInstallGuidePCVRSteamManualMoveAndExtract}
                   />
                 }
@@ -142,7 +143,7 @@ export const Routing = () => {
                 path={routing.home.playlistInstallGuide
                   .pcvrSteamManualInstallMods}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistInstallGuidePCVRSteamManualInstallMods}
                   />
                 }
@@ -151,25 +152,25 @@ export const Routing = () => {
                 path={routing.home.playlistInstallGuide
                   .pcvrSteamManualPostInstallationCongratulations}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistInstallGuidePCVRPostInstallationCongratulations}
                   />
                 }
               />
               <Route
                 path={routing.home.playlistInstallGuide.askAboutPlatform}
-                element={<MainLayoutShell Component={PlaylistInstallGuidePlatform} />}
+                element={<GuideLayoutShell Component={PlaylistInstallGuidePlatform} />}
               />
               <Route
                 index
-                element={<MainLayoutShell Component={PlaylistInstallGuidePlatform} />}
+                element={<GuideLayoutShell Component={PlaylistInstallGuidePlatform} />}
               />
             </Route>
             <Route path={routing.home.playlistManagementGuide.root}>
               <Route
                 path={routing.home.playlistManagementGuide.folders}
                 element={
-                  <MainLayoutShell
+                  <GuideLayoutShell
                     Component={PlaylistManagementGuidePCVR}
                   />
                 }

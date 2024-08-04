@@ -13,7 +13,7 @@ const data = await Promise.all([...parentDirs].map((parent) => {
   return Promise.all(
     dataFilePaths
       .filter((x) => !x.endsWith("-skip"))
-      .filter((_, index) => index === 12)
+      // .filter((_, index) => index === 12)
       .map((path) =>
         new Promise(async (resolve) => {
           try {
@@ -35,9 +35,11 @@ const data = await Promise.all([...parentDirs].map((parent) => {
   );
 }));
 
-data.forEach(async (data) => {
-  console.log(data);
-});
+console.log(data);
+
+// data.forEach(async (data) => {
+//   console.log(data);
+// });
 
 // console.log(data);
 

@@ -63,7 +63,7 @@ export const VisualNovelActions: FC<PropsWithChildren> = ({ children }) => {
 
 export const VisualNovelBody: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="box-border text-2xl text-slate-200 max-w-prose w-full md:p-6 text-left glass">
+    <div className="box-border text-2xl text-slate-200 max-w-prose w-full p-4 md:p-6 text-left md:glass">
       <div key="content">
         {children}
       </div>
@@ -82,31 +82,12 @@ export const VisualNovelContainer = forwardRef<
   return (
     <div>
       <div
-        className={cn("w-[100dvw] md:w-full my-5 md:flex justify-center overflow-hidden", {
+        className={cn("w-[100dvw] md:w-full md:flex justify-center overflow-hidden", {
           "flex-row items-start": row,
           "flex-col items-center": !row,
         })}
         ref={ref}
       >
-        <div
-          className={cn("min-h-[20vh] mb-4 relative wobble", {
-            "sticky top-5": row,
-          })}
-        >
-          <div className="relative h-[14rem] w-[14rem] md:h-[20vh] md:w-[20vh] max-w-[80vw] max-h-[80vw] m-auto">
-            <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh] blur wobble-blur">
-            </div>
-            <div className="absolute top-0 right-0 h-full w-full border-[5px] rounded-[2vh]">
-              {imageUrl && (
-                <Image
-                  className="rounded-[2vh] h-[calc(14rem-10px)] w-[calc(14rem-10px)] md:h-[calc(20vh-10px)] md:w-[calc(20vh-10px)] max-w-[80vw] max-h-[80vw]"
-                  src={imageUrl}
-                />
-              )}
-            </div>
-          </div>
-          {header}
-        </div>
         {children}
       </div>
     </div>
