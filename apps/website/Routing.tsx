@@ -28,6 +28,7 @@ import { PlaylistDetails } from "@/apps/website/pages/home/Playlist.tsx";
 import { PlaylistManagementGuidePCVR } from "@/apps/website/pages/home/PlaylistManagementGuide.tsx";
 import { Features } from "@/apps/website/pages/home/Features.tsx";
 import { GuideLayoutShell } from "@/apps/website/components/layouts/GuideLayout.tsx";
+import { PlaylistDetailsLayoutShell } from "@/apps/website/components/layouts/PlaylistDetailsLayout.tsx";
 
 export const Routing = () => {
   const location = useLocation();
@@ -55,7 +56,7 @@ export const Routing = () => {
             <Route path={routing.home.playlist.root}>
               <Route
                 path={routing.home.playlist.details}
-                element={<MainLayoutShell Component={PlaylistDetails} />}
+                element={<PlaylistDetails />}
               />
             </Route>
             <Route

@@ -33,10 +33,18 @@ export const HeadingLink: FC<LinkProps> = ({ children, ...props }) => {
   );
 };
 
-export const Heading: FC = () => {
+export const HeadingMinimal: FC = () => {
   return (
     <>
       <HeadingLink to={links.home.root}>Home</HeadingLink>
+    </>
+  );
+};
+
+export const Heading: FC = () => {
+  return (
+    <>
+      <HeadingMinimal />
       <HeadingLink to={links.home.browse}>Browse</HeadingLink>
       <HeadingLink to={links.home.playlistInstallGuide.root}>Guide</HeadingLink>
     </>

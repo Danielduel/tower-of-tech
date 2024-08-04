@@ -11,8 +11,11 @@ import { makePlaylistId } from "@/packages/types/brands.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
 import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
+import { Image } from "@/apps/website/components/Image.tsx";
+import { PlaylistDetailsLayoutShell } from "@/apps/website/components/layouts/PlaylistDetailsLayout.tsx";
+import { LayoutContent, LayoutSidebar, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
 
-export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
+export const PlaylistDetailsInner = forwardRef<HTMLDivElement>((_, ref) => {
   const { playlistId } = useParams();
   const { data } = trpc.playlist.getById.useQuery({ id: playlistId! }, {
     ...semiconstantCacheQuery,
@@ -25,52 +28,54 @@ export const PlaylistDetails = forwardRef<HTMLDivElement>((_, ref) => {
   const brandedPlaylistId = makePlaylistId(playlistId);
 
   return (
-    <VisualNovelContainer
-      imageUrl={data.imageUrl}
-      ref={ref}
-      row
-      header={
-        <div className="text-left md:text-right mt-5">
-          <div className="ml-5 md:ml-0">
-            <div className="text-2xl">
-              {data?.playlistTitle}
-            </div>
-            <div className="text-xl">
-              {data?.playlistAuthor}
-            </div>
-            <div className="text-xl">
-              Items: {data.songs.length}
-            </div>
+    <LayoutWrapper>
+      <LayoutSidebar>
+        <Image src={data.imageUrl} className="w-56 h-56 mb-2 rounded-2xl text-right" />
+
+        <div className="ml-5 md:ml-0 text-right">
+          <div className="text-xl">
+            {data?.playlistTitle}
           </div>
-
-          <VisualNovelDivider />
-
-          {playlistId && (
-            <VisualNovelAnchor
-              href={links.api.v1.playlist.oneClick(
-                brandedPlaylistId,
-                getPlaylistFileNameFromPlaylist(data),
-                towerOfTechWebsiteOrigin,
-              )}
-            >
-              OneClick
-            </VisualNovelAnchor>
-          )}
-          <VisualNovelAnchor
-            href={links.api.v1.playlist.download(brandedPlaylistId)}
-            download
-          >
-            Download
-          </VisualNovelAnchor>
-          <VisualNovelLink to="/">
-            Home
-          </VisualNovelLink>
+          <div className="text-sm">
+            {data?.playlistAuthor}
+          </div>
+          <div className="text-sm">
+            Items: {data.songs.length}
+          </div>
         </div>
-      }
-    >
-      <div className="md:ml-3 md:mt-6">
-        {data.songs && <PlaylistMaps prependKey={playlistId} maps={data.songs} />}
-      </div>
-    </VisualNovelContainer>
+
+        <VisualNovelDivider />
+
+        {playlistId && (
+          <VisualNovelAnchor
+            href={links.api.v1.playlist.oneClick(
+              brandedPlaylistId,
+              getPlaylistFileNameFromPlaylist(data),
+              towerOfTechWebsiteOrigin,
+            )}
+          >
+            OneClick
+          </VisualNovelAnchor>
+        )}
+        <VisualNovelAnchor
+          href={links.api.v1.playlist.download(brandedPlaylistId)}
+          download
+        >
+          Download
+        </VisualNovelAnchor>
+        <VisualNovelLink to="/">
+          Home
+        </VisualNovelLink>
+      </LayoutSidebar>
+      <LayoutContent>
+        <div className="md:ml-3 md:mt-6">
+          {data.songs && <PlaylistMaps prependKey={playlistId} maps={data.songs} />}
+        </div>
+      </LayoutContent>
+    </LayoutWrapper>
   );
 });
+
+export const PlaylistDetails = () => {
+  return <PlaylistDetailsLayoutShell Component={PlaylistDetailsInner} />;
+};

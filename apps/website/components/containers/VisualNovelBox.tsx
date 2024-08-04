@@ -1,9 +1,8 @@
 import { forwardRef, PropsWithChildren, useState } from "react";
 import { LinkProps } from "react-router-dom";
 import { Link } from "@/packages/ui/Link.tsx";
-import { AnchorHTMLAttributes, FC, HtmlHTMLAttributes } from "npm:@types/react";
+import { AnchorHTMLAttributes, FC, HTMLAttributes } from "npm:@types/react";
 import { links } from "@/apps/website/routing.config.ts";
-import { Image } from "@/apps/website/components/Image.tsx";
 import { cn } from "@/packages/utils/classnames.ts";
 
 export const VisualNovelLink = (props: LinkProps) => {
@@ -15,7 +14,7 @@ export const VisualNovelLink = (props: LinkProps) => {
 };
 
 export const VisualNovelButton = (
-  props: HtmlHTMLAttributes<HTMLDivElement>,
+  props: HTMLAttributes<HTMLDivElement>,
 ) => {
   return (
     <div className="border-r-4 border-white mt-5 h-8">
@@ -28,7 +27,7 @@ export const VisualNovelButton = (
 };
 
 export const VisualNovelButtonMedium = (
-  props: HtmlHTMLAttributes<HTMLDivElement>,
+  props: HTMLAttributes<HTMLDivElement>,
 ) => {
   return (
     <div className="border-r-4 border-white mt-2 h-5">
@@ -47,7 +46,7 @@ export const VisualNovelAnchor = (
     <div className="border-r-4 border-white mt-5 h-8">
       <a
         {...props}
-        className="select-none hover:ring-1 hover:text-white ring-white w-full p-4 text-2xl"
+        className={cn("select-none hover:ring-1 hover:text-white ring-white w-full p-4 text-2xl", props.className)}
       />
     </div>
   );
@@ -82,10 +81,13 @@ export const VisualNovelContainer = forwardRef<
   return (
     <div>
       <div
-        className={cn("w-[100dvw] md:w-full md:flex justify-center overflow-hidden", {
-          "flex-row items-start": row,
-          "flex-col items-center": !row,
-        })}
+        className={cn(
+          "w-[100dvw] min-h-[100dvh] text-white text-5xl md:w-full md:flex justify-center overflow-hidden box-border",
+          {
+            "flex-row items-start": row,
+            "flex-col items-center": !row,
+          },
+        )}
         ref={ref}
       >
         {children}

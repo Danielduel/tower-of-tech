@@ -1,18 +1,20 @@
 import { FC, PropsWithChildren } from "react";
 import { cn } from "@/packages/utils/classnames.ts";
-import { HtmlHTMLAttributes } from "npm:@types/react";
+import { HTMLProps } from "npm:@types/react";
 
 export const LayoutWrapper: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className="">
-      <div className="min-h-[100dvh] max-w-[100dvw] w-max overflow-hidden flex flex-row mx-auto">
+      <div className="min-h-[100dvh] max-w-[100dvw] w-max flex flex-row mx-auto">
         {children}
       </div>
     </div>
   );
 };
 
-export const LayoutContent: FC<PropsWithChildren<HtmlHTMLAttributes<HTMLDivElement>>> = ({ children, ...props }) => {
+export const LayoutContent: FC<PropsWithChildren<HTMLProps<HTMLDivElement>>> = (
+  { children, ...props },
+) => {
   return (
     <div
       {...props}
@@ -27,8 +29,8 @@ export const LayoutContent: FC<PropsWithChildren<HtmlHTMLAttributes<HTMLDivEleme
 
 export const LayoutSidebar: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="hidden md:block w-56 h-[100dvh] text-2xl pt-4 text-left bg-transparent sticky top-0">
-      <div className="w-full h-full mx-auto text-white">
+    <div className="hidden md:block w-56 h-max text-2xl pt-4 text-left bg-transparent sticky top-0">
+      <div className="w-full h-max mx-auto text-white px-1 box-border">
         {children}
       </div>
     </div>

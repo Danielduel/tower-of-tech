@@ -2,7 +2,7 @@ import { FC, ForwardRefExoticComponent, RefAttributes, Suspense, useRef } from "
 import { VisualNovelContainerLoading } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { Link as _Link, LinkProps } from "react-router-dom";
 import { links } from "@/apps/website/routing.config.ts";
-import { Heading, HeadingLink, Link } from "@/apps/website/components/layouts/MainLayout.tsx";
+import { Heading, Link } from "@/apps/website/components/layouts/MainLayout.tsx";
 import { LayoutContent, LayoutSidebar, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
 
 const GuideLink: FC<LinkProps> = ({ children, ...props }) => {
@@ -45,7 +45,7 @@ export const GuideLayout = (
     <LayoutWrapper>
       <LayoutSidebar>
         <Heading />
-        <hr className="my-4" />
+        <hr className="my-4 mx-2 border-blue-200" />
         <Guide />
       </LayoutSidebar>
       <LayoutContent style={style}>
