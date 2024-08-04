@@ -82,7 +82,7 @@ export const VisualNovelContainer = forwardRef<
     <div>
       <div
         className={cn(
-          "w-[100dvw] min-h-[100dvh] text-white text-5xl md:w-full md:flex justify-center overflow-hidden box-border",
+          "w-[100dvw] min-h-[100dvh] pt-4 text-white text-5xl md:w-full md:flex overflow-hidden box-border",
           {
             "flex-row items-start": row,
             "flex-col items-center": !row,

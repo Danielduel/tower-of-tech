@@ -18,7 +18,7 @@ export const LayoutContent: FC<PropsWithChildren<HTMLProps<HTMLDivElement>>> = (
   return (
     <div
       {...props}
-      className={cn("z-10 my-10 min-w-[85ch] max-w-[85ch] text-white page", props.className)}
+      className={cn("z-10 box-border min-w-[85ch] max-w-[85ch] text-white page", props.className)}
     >
       <div className="container md:mx-auto">
         {children}
