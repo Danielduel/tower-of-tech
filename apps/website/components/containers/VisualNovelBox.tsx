@@ -1,5 +1,5 @@
 import { forwardRef, PropsWithChildren, useState } from "react";
-import { LinkProps } from "react-router-dom";
+import { LinkProps, useLocation } from "react-router-dom";
 import { Link } from "@/packages/ui/Link.tsx";
 import { AnchorHTMLAttributes, FC, HTMLAttributes } from "npm:@types/react";
 import { links } from "@/apps/website/routing.config.ts";
@@ -115,9 +115,11 @@ export const VisualNovelStep = forwardRef<
   { children },
   ref,
 ) => {
-  const isOutsideOfPlaylistTutorial = !location.pathname.startsWith(
+  const { pathname } = useLocation();
+
+  const isOutsideOfPlaylistTutorial = !pathname.startsWith(
     links.home.playlistInstallGuide.root,
-  ) && !location.pathname.startsWith(
+  ) && !pathname.startsWith(
     links.home.playlistManagementGuide.root,
   );
 

@@ -158,6 +158,11 @@ const playlist = t.router({
 const auth = t.router({
   discord: t.procedure
     .query(async ({ ctx }) => {
+      if (!ctx.request) {
+        return {
+          authorized: false,
+        };
+      }
       return {
         authorized: await isDiscordAuthorized(ctx.request),
       };
