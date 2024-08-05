@@ -4,6 +4,7 @@ import { Link as _Link, LinkProps } from "react-router-dom";
 import { links } from "@/apps/website/routing.config.ts";
 import { Heading, Link } from "@/apps/website/components/layouts/MainLayout.tsx";
 import { LayoutContent, LayoutSidebar, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
+import { Profile } from "@/apps/website/components/Profile.tsx";
 
 const GuideLink: FC<LinkProps> = ({ children, ...props }) => {
   return (
@@ -47,6 +48,7 @@ export const GuideLayout = (
         <Heading />
         <hr className="my-4 mx-2 border-blue-200" />
         <Guide />
+        <Profile />
       </LayoutSidebar>
       <LayoutContent style={style}>
         {children}

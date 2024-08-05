@@ -14,6 +14,7 @@ import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 import { Image } from "@/apps/website/components/Image.tsx";
 import { PlaylistDetailsLayoutShell } from "@/apps/website/components/layouts/PlaylistDetailsLayout.tsx";
 import { LayoutContent, LayoutSidebar, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
+import { Profile } from "@/apps/website/components/Profile.tsx";
 
 export const PlaylistDetailsInner = forwardRef<HTMLDivElement>((_, ref) => {
   const { playlistId } = useParams();
@@ -66,6 +67,8 @@ export const PlaylistDetailsInner = forwardRef<HTMLDivElement>((_, ref) => {
         <VisualNovelLink to="/">
           Home
         </VisualNovelLink>
+
+        <Profile />
       </LayoutSidebar>
       <LayoutContent>
         <div className="md:ml-3 md:mt-6">

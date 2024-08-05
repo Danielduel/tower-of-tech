@@ -164,7 +164,9 @@ const executeHandlers = composeHandlers(
         endpoint: "/api/trpc",
         req: request,
         router: appRouter,
-        createContext: () => ({}),
+        createContext: () => ({
+          request,
+        }),
       }),
   },
   renderer,

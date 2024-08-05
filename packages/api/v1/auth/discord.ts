@@ -16,7 +16,7 @@ const oauthConfig = createDiscordOAuthConfig({
 const {
   signIn,
   handleCallback,
-  // getSessionId,
+  getSessionId,
   signOut,
 } = createHelpers(oauthConfig);
 
@@ -39,6 +39,10 @@ export const apiV1HandlerAuthDiscordOauthCallback: HandlerForRoute<
 > = async (req) => {
   const { response } = await handleCallback(req);
   return response;
+};
+
+export const isDiscordAuthorized = async (req: Request) => {
+  return await getSessionId(req) === undefined;
 };
 
 // case "/protected-route":

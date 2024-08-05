@@ -6,6 +6,7 @@ import { useResolvedPath } from "react-router-dom";
 import { useMatch } from "react-router-dom";
 import { cn } from "@/packages/utils/classnames.ts";
 import { LayoutContent, LayoutSidebar, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
+import { Profile } from "@/apps/website/components/Profile.tsx";
 
 export const Link: FC<LinkProps> = (props) => {
   const resolved = useResolvedPath(props.to);
@@ -60,6 +61,7 @@ export const MainLayout = (
     <LayoutWrapper>
       <LayoutSidebar>
         <Heading />
+        <Profile />
       </LayoutSidebar>
       <LayoutContent style={style}>
         {children}

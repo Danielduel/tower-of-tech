@@ -23,6 +23,7 @@ import {
   fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem,
   fetchBeatSaberPlaylistWithoutResolvingSongItem,
 } from "@/packages/database-editor/utils.ts";
+import { isDiscordAuthorized } from "@/packages/api/v1/auth/discord.ts";
 
 const t = initTRPC.create();
 
@@ -154,9 +155,19 @@ const playlist = t.router({
     }),
 });
 
+const auth = t.router({
+  discord: t.procedure
+    .query(async ({ ctx }) => {
+      return {
+        authorized: await isDiscordAuthorized(ctx.request),
+      };
+    }),
+});
+
 export const appRouter = t.router({
   playlist,
   map,
+  auth,
 });
 
 export type AppRouter = typeof appRouter;
