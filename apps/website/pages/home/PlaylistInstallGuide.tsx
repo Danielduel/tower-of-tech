@@ -429,7 +429,7 @@ export const PlaylistInstallGuidePlatform = forwardRef<HTMLDivElement>(
         <VisualNovelStepLink
           to={""}
           className="opacity-50 hover:ring-transparent cursor-default"
-          children="Standalone (you don't have the headset plugged into the PC)"
+          children="Standalone"
         />
         <a
           className="hover:ring-1 hover:text-white ring-white border min-w-0 inline-block px-4 py-1 box-content h-8 ml-2 mb-2"

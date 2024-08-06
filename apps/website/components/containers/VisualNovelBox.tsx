@@ -4,6 +4,7 @@ import { Link } from "@/packages/ui/Link.tsx";
 import { AnchorHTMLAttributes, FC, HTMLAttributes } from "npm:@types/react";
 import { links } from "@/apps/website/routing.config.ts";
 import { cn } from "@/packages/utils/classnames.ts";
+import { LayoutContent, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
 
 export const VisualNovelLink = (props: LinkProps) => {
   return (
@@ -54,7 +55,7 @@ export const VisualNovelAnchor = (
 
 export const VisualNovelActions: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="w-full text-right text-2xl text-slate-200 max-w-prose flex flex-col gap-4 mt-4 mb-10">
+    <div className="w-full text-right text-2xl text-slate-200 flex flex-col gap-4 mt-4 mb-10">
       {children}
     </div>
   );
@@ -62,7 +63,7 @@ export const VisualNovelActions: FC<PropsWithChildren> = ({ children }) => {
 
 export const VisualNovelBody: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="box-border text-2xl text-slate-200 max-w-prose w-full p-4 md:p-6 text-left md:glass">
+    <div className="box-border text-2xl text-slate-200 w-full p-4 md:p-6 text-left md:glass">
       <div key="content">
         {children}
       </div>
@@ -79,29 +80,36 @@ export const VisualNovelContainer = forwardRef<
   }>
 >(({ children, imageUrl, row, header }, ref) => {
   return (
-    <div>
-      <div
-        className={cn(
-          "w-[100dvw] min-h-[100dvh] pt-4 text-white text-5xl md:w-full md:flex overflow-hidden box-border",
-          {
-            "flex-row items-start": row,
-            "flex-col items-center": !row,
-          },
-        )}
-        ref={ref}
-      >
-        {children}
-      </div>
-    </div>
+    <LayoutContent ref={ref}>
+      {children}
+    </LayoutContent>
   );
+  // return (
+  //   <div>
+  //     <div
+  //       className={cn(
+  //         "w-[100dvw] min-h-[100dvh] pt-4 text-white text-5xl md:w-full md:flex overflow-hidden box-border",
+  //         {
+  //           "flex-row items-start": row,
+  //           "flex-col items-center": !row,
+  //         },
+  //       )}
+  //       ref={ref}
+  //     >
+  //       {children}
+  //     </div>
+  //   </div>
+  // );
 });
 
 export const VisualNovelContainerLoading = forwardRef<HTMLDivElement>(
   (p, ref) => {
     return (
-      <VisualNovelContainer ref={ref}>
-        Loading...
-      </VisualNovelContainer>
+      <LayoutWrapper>
+        <VisualNovelContainer ref={ref}>
+          Loading...
+        </VisualNovelContainer>
+      </LayoutWrapper>
     );
   },
 );
