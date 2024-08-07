@@ -6,7 +6,8 @@
     "dev": "deno task s3s-fs-local & deno task editor:dev",
     "dev-remote": "deno task editor:dev-remote",
 
-    "beatleader-bot:record-packets": "deno run -A ./apps/beatleader-bot/record-packets.ts",
+    "beatleader-bot:logger": "deno run -A ./apps/beatleader-bot/tools/logger.ts",
+    "beatleader-bot:record": "deno run -A ./apps/beatleader-bot/tools/record.ts",
 
     "discord-bot:trigger": "TOT_ENVIRONMENT=local deno run -A --unstable --env ./apps/discord-bot/setup/trigger.ts",
     "discord-bot:register": "deno run -A --env ./apps/discord-bot/setup/register-commands.ts",

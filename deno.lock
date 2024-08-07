@@ -1522,6 +1522,7 @@
     "https://deno.land/x/discordeno@13.0.0/util/urlToBase64.ts": "80041d2d371702155fdb24d8ebea8689841a4d49df2db4917965b8ab47575a56",
     "https://deno.land/x/discordeno@13.0.0/util/utils.ts": "b16797ea1918af635f0c04c345a7c9b57c078310ac18d0c86936ec8abfaeddeb",
     "https://deno.land/x/discordeno@13.0.0/util/validateLength.ts": "7c610911d72082f9cfe2c455737cd37d8ce8f323483f0ef65fdfea6a993984b5",
+    "https://deno.land/x/event@2.0.1/mod.ts": "5b36cd679785638b59228ac42876c628e54efc50ae0015ba1589b9e8f12969b4",
     "https://deno.land/x/hono@v3.2.7/client/client.ts": "7a819af2aa9aabc746add4d01715fa37f83676fdf1b63fba1bbcd655b2d066a5",
     "https://deno.land/x/hono@v3.2.7/client/index.ts": "3ff4cf246f3543f827a85a2c84d66a025ac350ee927613629bda47e854bfb7ba",
     "https://deno.land/x/hono@v3.2.7/client/utils.ts": "9f9825a3f96e0e332fa91f4cd1cfffe2ef9da796c58904941c8405e3f18bda07",

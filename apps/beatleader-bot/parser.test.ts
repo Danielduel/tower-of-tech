@@ -1,7 +1,7 @@
 // deno-lint-ignore-file no-async-promise-executor
 
 import { Err, Ok } from "https://deno.land/x/optionals@v3.0.0/mod.ts";
-import { z } from "zod";
+import { BeatLeaderGeneralSocketAccepted, BeatLeaderGeneralSocketAny } from "@/apps/beatleader-bot/beatleader-zod.ts";
 
 const rootDir = "./data/beatleader-wss-history";
 const parentDirs = Deno.readDirSync(rootDir);
@@ -12,8 +12,6 @@ const data = await Promise.all([...parentDirs].map((parent) => {
   const dataFilePaths = [...dataFileNames].map(({ name }) => `${dataFileDir}/${name}`);
   return Promise.all(
     dataFilePaths
-      .filter((x) => !x.endsWith("-skip"))
-      // .filter((_, index) => index === 12)
       .map((path) =>
         new Promise(async (resolve) => {
           try {
@@ -28,18 +26,32 @@ const data = await Promise.all([...parentDirs].map((parent) => {
               dataInner,
             }));
           } catch (_) {
-            console.error(`Problem with ${path}`);
+            console.log(path);
+            return resolve(Err("Error reading file"));
           }
         })
       ),
   );
 }));
 
-console.log(data);
-
-// data.forEach(async (data) => {
-//   console.log(data);
-// });
+data.forEach((items) => {
+  items.forEach((item) => {
+    const unwrapData = (item as any).unwrap();
+    try {
+      const itemData = unwrapData.dataInner;
+      const parsed = BeatLeaderGeneralSocketAny.parse(itemData);
+      if (parsed.message === "accepted") {
+        BeatLeaderGeneralSocketAccepted.parse(itemData);
+        // console.log(`${parsed.message} - ok`);
+      } else {
+        // console.log(`${parsed.message} - skip`);
+      }
+    } catch (err) {
+      console.log(unwrapData.path);
+      console.error(err);
+    }
+  });
+});
 
 // console.log(data);
 
