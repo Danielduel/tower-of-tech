@@ -222,6 +222,6 @@ export const BeatLeaderGeneralSocketAccepted = z.object({
 });
 
 export const BeatLeaderGeneralSocketAny = z.object({
-  message: z.enum(["accepted", "upload"]),
+  message: z.enum(["accepted", "upload", "rejected"]),
   data: z.any(),
 });

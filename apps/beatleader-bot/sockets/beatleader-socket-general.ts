@@ -7,6 +7,7 @@ type WSGeneralEvents = {
   error: [any];
   close: [any];
   upload: [any];
+  rejected: [any];
   accepted: [typeof BeatLeaderGeneralSocketAccepted["_type"]];
   accepted_errorParse: [any];
   message_errorParse: [any, any];
@@ -56,6 +57,8 @@ export const createBeatleaderWSGeneral = () => {
           }
         case "upload":
           return WSGeneralEmitterInstance.emit("upload", parsedEventDataAny);
+        case "rejected":
+          return WSGeneralEmitterInstance.emit("rejected", parsedEventDataAny);
       }
     } catch (err) {
       return WSGeneralEmitterInstance.emit("message_errorParse", data, err);

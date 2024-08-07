@@ -48,6 +48,11 @@ ws.on("open", async (...data: unknown[]) => {
   await writeHistory("open", data);
 });
 
+ws.on("rejected", async (...data: unknown[]) => {
+  console.log("upload");
+  await writeHistory("upload", data);
+});
+
 ws.on("upload", async (...data: unknown[]) => {
   console.log("upload");
   await writeHistory("upload", data);
