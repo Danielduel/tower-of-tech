@@ -2,6 +2,7 @@ import { createBeatleaderWSGeneral } from "@/apps/beatleader-bot/sockets/beatlea
 import { Err } from "@/apps/beatleader-bot/deps.ts";
 
 const historyDir = `./data/beatleader-wss-history/${Date.now()}`;
+const logDir = `./data/beatleader-wss-log/${Date.now()}`;
 let autoIncHistory = 0;
 let autoIncLog = 0;
 let socketNum = 0;
@@ -16,7 +17,7 @@ const writeHistory = (
 const writeLog = (
   ...data: unknown[]
 ) => {
-  const path = `${historyDir}/${Date.now()}-${socketNum}-${++autoIncLog}`;
+  const path = `${logDir}/${Date.now()}-${socketNum}-${++autoIncLog}`;
   return Deno.writeTextFile(path, JSON.stringify(data));
 };
 
