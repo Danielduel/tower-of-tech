@@ -139,18 +139,6 @@
       ]
     },
     {
-      "songName": "EASY LOVE",
-      "levelAuthorName": "That_Narwhal",
-      "hash": "CDA84787D04A46335A5CC6C986DF999B3EB492DE",
-      "levelid": "custom_level_CDA84787D04A46335A5CC6C986DF999B3EB492DE",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "The Middle",
       "levelAuthorName": "TetsuBeats",
       "hash": "4B980371B6005CC176AED1B402BD104AF56C31A3",
@@ -383,18 +371,6 @@
       "levelAuthorName": "Gabriel & Marsh",
       "hash": "AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
       "levelid": "custom_level_AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
-        }
-      ]
-    },
-    {
-      "songName": "Multicolored",
-      "levelAuthorName": "ThySpoon",
-      "hash": "BA3EDDD4447985AAC531491C53D7E0F76FFF8603",
-      "levelid": "custom_level_BA3EDDD4447985AAC531491C53D7E0F76FFF8603",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1403,6 +1379,138 @@
       "levelAuthorName": "Astellic",
       "hash": "4DF33422D6701617DCD7D46DDC39F38BDE077DE3",
       "levelid": "custom_level_4DF33422D6701617DCD7D46DDC39F38BDE077DE3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Silent Movie",
+      "levelAuthorName": "Nixie.Korten",
+      "hash": "6A33319772878BC111C715101B1B696FC3AFAD9E",
+      "levelid": "custom_level_6A33319772878BC111C715101B1B696FC3AFAD9E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "moniker",
+      "levelAuthorName": "Camical",
+      "hash": "59ABEB4B138076FEC3AE1DEBB6A934DF954C03F5",
+      "levelid": "custom_level_59ABEB4B138076FEC3AE1DEBB6A934DF954C03F5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "To. X",
+      "levelAuthorName": "meoaww",
+      "hash": "8255AC79AEB74B19AE79CD6D3BE1F1517EF46C79",
+      "levelid": "custom_level_8255AC79AEB74B19AE79CD6D3BE1F1517EF46C79",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "La Femme Jolie",
+      "levelAuthorName": "Andynak",
+      "hash": "CA07E65070125CB351FE26FE43AF6C537120B3E7",
+      "levelid": "custom_level_CA07E65070125CB351FE26FE43AF6C537120B3E7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "RATATA",
+      "levelAuthorName": "Hener & Harper",
+      "hash": "8E4B7917C01E5987A5B3FF13FAA3CA8F27D21D34",
+      "levelid": "custom_level_8E4B7917C01E5987A5B3FF13FAA3CA8F27D21D34",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Shin FAKE STYLE",
+      "levelAuthorName": "symphonic",
+      "hash": "A330EC22CE93310D81E56EFF269EFF8A70883C17",
+      "levelid": "custom_level_A330EC22CE93310D81E56EFF269EFF8A70883C17",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "Closer",
+      "levelAuthorName": "xxZAROKxx",
+      "hash": "16D16D78C5203CF07D1056C1C9D2792E68E3AF54",
+      "levelid": "custom_level_16D16D78C5203CF07D1056C1C9D2792E68E3AF54",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Summer Grass, a Shadow Silhouette of the Passing Days",
+      "levelAuthorName": "XAce1337manX",
+      "hash": "52B916DB712619D2294D22D660A0DF63059F6C64",
+      "levelid": "custom_level_52B916DB712619D2294D22D660A0DF63059F6C64",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Take Me To Safety",
+      "levelAuthorName": "Nebelmonster & Lekrkoekj",
+      "hash": "A040D6ED9ACD99E6DCF0F915A4A12BC7784475DC",
+      "levelid": "custom_level_A040D6ED9ACD99E6DCF0F915A4A12BC7784475DC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Reincarnation",
+      "levelAuthorName": "shad & AaltopahWi",
+      "hash": "52C3BAFFA792696C69A02F9870B1CC3FC3EFAEF2",
+      "levelid": "custom_level_52C3BAFFA792696C69A02F9870B1CC3FC3EFAEF2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Lied To",
+      "levelAuthorName": "oegoe",
+      "hash": "64606CE394718815DEECD696737EA1AEE40E8CF4",
+      "levelid": "custom_level_64606CE394718815DEECD696737EA1AEE40E8CF4",
       "difficulties": [
         {
           "characteristic": "Standard",

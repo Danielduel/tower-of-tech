@@ -462,18 +462,6 @@
       ]
     },
     {
-      "songName": "phony",
-      "levelAuthorName": "Kanahebi",
-      "hash": "07101EE78F0C1E25FDEBDD0DC2F33CE3B65D6FE9",
-      "levelid": "custom_level_07101EE78F0C1E25FDEBDD0DC2F33CE3B65D6FE9",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Virus Funk",
       "levelAuthorName": "GalaxyMaster",
       "hash": "900614509D709FCD09D54A0DA80E476B4038A9A5",
@@ -1318,6 +1306,90 @@
       "levelAuthorName": "GojiCrafter & Phøenix",
       "hash": "882825125C2DF02B8B426B817AAFC28FC777143B",
       "levelid": "custom_level_882825125C2DF02B8B426B817AAFC28FC777143B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Random",
+      "levelAuthorName": "risi",
+      "hash": "C90D81268D7F214213684DD8F05ABC85684743C1",
+      "levelid": "custom_level_C90D81268D7F214213684DD8F05ABC85684743C1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Data Loss",
+      "levelAuthorName": "Bitz",
+      "hash": "A1304BAC310D3C8E15117789565349D6C2E5E66A",
+      "levelid": "custom_level_A1304BAC310D3C8E15117789565349D6C2E5E66A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Random",
+      "levelAuthorName": "oermergeesh & risi",
+      "hash": "FDBF8A60841AA140561D60DC57EC1A94F373F3B5",
+      "levelid": "custom_level_FDBF8A60841AA140561D60DC57EC1A94F373F3B5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "macaron moon",
+      "levelAuthorName": "harbgy",
+      "hash": "B40A6362DD24689B111E55B61B5F4F6376556B09",
+      "levelid": "custom_level_B40A6362DD24689B111E55B61B5F4F6376556B09",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Heilutaan",
+      "levelAuthorName": "riisi & Tseska",
+      "hash": "D1B4105889A35735A2548261B6EB575CB71DC32F",
+      "levelid": "custom_level_D1B4105889A35735A2548261B6EB575CB71DC32F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Stupid (Can't run from the urge)",
+      "levelAuthorName": "RetrX",
+      "hash": "67EE791812D3604BDC5266A5FF69303EEEAB61BE",
+      "levelid": "custom_level_67EE791812D3604BDC5266A5FF69303EEEAB61BE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "DAICON V",
+      "levelAuthorName": "VoltageO",
+      "hash": "499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
+      "levelid": "custom_level_499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
       "difficulties": [
         {
           "characteristic": "Standard",

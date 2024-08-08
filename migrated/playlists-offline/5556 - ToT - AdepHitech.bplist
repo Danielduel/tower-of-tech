@@ -114,18 +114,6 @@
       ]
     },
     {
-      "songName": "Reincarnation",
-      "levelAuthorName": "shad & AaltopahWi",
-      "hash": "52C3BAFFA792696C69A02F9870B1CC3FC3EFAEF2",
-      "levelid": "custom_level_52C3BAFFA792696C69A02F9870B1CC3FC3EFAEF2",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "Pastel Rain",
       "levelAuthorName": "ETAN",
       "hash": "2C01774FDB9C4BCC53DF1707ADE85CEA6F043477",
@@ -170,18 +158,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Closer",
-      "levelAuthorName": "xxZAROKxx",
-      "hash": "16D16D78C5203CF07D1056C1C9D2792E68E3AF54",
-      "levelid": "custom_level_16D16D78C5203CF07D1056C1C9D2792E68E3AF54",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -306,30 +282,6 @@
       ]
     },
     {
-      "songName": "Take Me To Safety",
-      "levelAuthorName": "Nebelmonster & Lekrkoekj",
-      "hash": "A040D6ED9ACD99E6DCF0F915A4A12BC7784475DC",
-      "levelid": "custom_level_A040D6ED9ACD99E6DCF0F915A4A12BC7784475DC",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "El Dorado",
-      "levelAuthorName": "MadChase",
-      "hash": "1D1328084340233CB9A8B5E934261252E1002949",
-      "levelid": "custom_level_1D1328084340233CB9A8B5E934261252E1002949",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Chimes",
       "levelAuthorName": "ZikkityZakOTA",
       "hash": "686BF95BEE41796B5F721170C9CB542E3C8B2DA5",
@@ -390,30 +342,6 @@
       ]
     },
     {
-      "songName": "Memories",
-      "levelAuthorName": "hwowhu",
-      "hash": "2783FA06F050617A4BEB8EC3CA4218940676DB78",
-      "levelid": "custom_level_2783FA06F050617A4BEB8EC3CA4218940676DB78",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Judgement Day",
-      "levelAuthorName": "nitronik.exe",
-      "hash": "65C41C11D58DCDE202455282289A44E2CBFB6C37",
-      "levelid": "custom_level_65C41C11D58DCDE202455282289A44E2CBFB6C37",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Antithesis",
       "levelAuthorName": "EOP Glacier",
       "hash": "E370C49C81AC28F2BF58160A03AA48355E016F89",
@@ -454,30 +382,6 @@
       "levelAuthorName": "minsiii, Bellus",
       "hash": "B8DEF201873340175FA5BB62AB6A22ADDAC61979",
       "levelid": "custom_level_B8DEF201873340175FA5BB62AB6A22ADDAC61979",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Let Go",
-      "levelAuthorName": "BigOlDumplin",
-      "hash": "D7D9270D2A55E1D873B90750BA4EBEA678A54041",
-      "levelid": "custom_level_D7D9270D2A55E1D873B90750BA4EBEA678A54041",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Freaks",
-      "levelAuthorName": "Tranch",
-      "hash": "914EF27D128C79F4BC749F46F2595A0D0501D78A",
-      "levelid": "custom_level_914EF27D128C79F4BC749F46F2595A0D0501D78A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -566,18 +470,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Beyond",
-      "levelAuthorName": "Marsh",
-      "hash": "61FA5016B5F517462D5265044A1F4DB1B4DE1C28",
-      "levelid": "custom_level_61FA5016B5F517462D5265044A1F4DB1B4DE1C28",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -806,6 +698,78 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "DECOMPOSE",
+      "levelAuthorName": "muffn",
+      "hash": "4F1715F15D436109B8E96C6CC6774E28E208CD65",
+      "levelid": "custom_level_4F1715F15D436109B8E96C6CC6774E28E208CD65",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Beautiful Things",
+      "levelAuthorName": "Chromia",
+      "hash": "E3B2501DC063905C3504E6A9899826F9988EF65A",
+      "levelid": "custom_level_E3B2501DC063905C3504E6A9899826F9988EF65A",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "RGB",
+      "levelAuthorName": "Dack",
+      "hash": "3654E2ED8A930CBE726C82ED5E0117F754E1BF30",
+      "levelid": "custom_level_3654E2ED8A930CBE726C82ED5E0117F754E1BF30",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Playback",
+      "levelAuthorName": "Danny",
+      "hash": "7E3C3902E320CA94E872D2D464664DD0922B7DDF",
+      "levelid": "custom_level_7E3C3902E320CA94E872D2D464664DD0922B7DDF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Villain",
+      "levelAuthorName": "Pleo",
+      "hash": "35626AD2D9C9792A99966E8BC3C65817458EEF8D",
+      "levelid": "custom_level_35626AD2D9C9792A99966E8BC3C65817458EEF8D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Mouthwash",
+      "levelAuthorName": "Kassi",
+      "hash": "F0791A3AED5913BC4F06B6DB325A85E8D16B673D",
+      "levelid": "custom_level_F0791A3AED5913BC4F06B6DB325A85E8D16B673D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }
