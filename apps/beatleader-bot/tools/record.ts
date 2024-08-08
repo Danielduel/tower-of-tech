@@ -2,7 +2,10 @@ import { createBeatleaderWSGeneral } from "@/apps/beatleader-bot/sockets/beatlea
 import { Err } from "@/apps/beatleader-bot/deps.ts";
 
 const historyDir = `./data/beatleader-wss-history/${Date.now()}`;
+Deno.mkdirSync(historyDir, { recursive: true });
 const logDir = `./data/beatleader-wss-log/${Date.now()}`;
+Deno.mkdirSync(logDir, { recursive: true });
+
 let autoIncHistory = 0;
 let autoIncLog = 0;
 let socketNum = 0;
@@ -20,8 +23,6 @@ const writeLog = (
   const path = `${logDir}/${Date.now()}-${socketNum}-${++autoIncLog}`;
   return Deno.writeTextFile(path, JSON.stringify(data));
 };
-
-Deno.mkdirSync(historyDir, { recursive: true });
 
 const createBeatleaderWSGeneralRecorder = () =>
   new Promise((resolve) => {
