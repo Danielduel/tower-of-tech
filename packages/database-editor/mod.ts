@@ -1,7 +1,11 @@
 import "https://deno.land/std@0.206.0/dotenv/load.ts";
 import { S3Client } from "s3_lite_client";
 import { isDbEditorRemote, isLocal } from "@/packages/utils/envrionment.ts";
-import { BeatSaberPlaylist, BeatSaberPlaylistSongItem } from "@/packages/database-editor/BeatSaberPlaylist.ts";
+import {
+  BeatSaberPlaylist,
+  BeatSaberPlaylistSongItem,
+  BeatSaberPlaylistSongItemMetadata,
+} from "@/packages/database-editor/BeatSaberPlaylist.ts";
 import {
   BeatSaverIdToHashCache,
   BeatSaverMapResponseSuccess,
@@ -23,6 +27,7 @@ export const dbEditor = kvdex(kv, {
   BeatSaverResponseWrapper,
   BeatSaverMapResponseSuccess,
   BeatSaberPlaylist,
+  BeatSaberPlaylistSongItemMetadata,
   BeatSaberPlaylistSongItem,
   BeatSaverIdToHashCache,
   DiscordChannel,

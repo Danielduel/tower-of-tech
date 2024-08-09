@@ -2,12 +2,13 @@ import { fromUint8Array } from "https://denopkg.com/chiefbiiko/base64@master/mod
 import { BeatSaberPlaylistFlatSchema, BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
-import { makeImageBase64 } from "@/packages/types/brands.ts";
+import { makeImageBase64, UppercaseMapHash } from "@/packages/types/brands.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId, PlaylistId } from "@/packages/types/brands.ts";
 import { links } from "@/apps/website/routing.config.ts";
 import { makePlaylistUrl } from "@/packages/types/brands.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
+import { getBeatSaberPlaylistSongItemMetadataKey } from "@/packages/database-editor/keys.ts";
 
 export const getImage = async (playlistId: PlaylistId) => {
   const imageBody = await s3clientEditor.getObject(playlistId, {
@@ -79,6 +80,24 @@ export const fetchBeatSaberPlaylistsWithoutResolvingSongItem = async (
   return response;
 };
 
+export const resolveSongsWithMetaForPlaylist = async (songHashes: UppercaseMapHash[], playlistId: PlaylistId) => {
+  const songs = await dbEditor.BeatSaberPlaylistSongItem
+    .findMany(songHashes)
+    .then((x) => x.map((x) => stripVersionstamps(x.flat())));
+
+  const songsMeta = await dbEditor.BeatSaberPlaylistSongItemMetadata
+    .findMany(songHashes.map((mapHash) => getBeatSaberPlaylistSongItemMetadataKey(playlistId, mapHash)))
+    .then((x) => x.map((x) => stripVersionstamps(x.flat())));
+
+  return songs.map((songData) => {
+    const metadata = songsMeta.find((item) => item.mapHash === songData.hash);
+    return {
+      ...songData,
+      difficulties: metadata?.difficulties ?? [],
+    };
+  });
+};
+
 export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem = async (
   playlistId: PlaylistId,
 ) => {
@@ -87,11 +106,9 @@ export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem = async (
     ?.flat();
 
   if (!_item) return null;
-  const item = stripVersionstamps(_item);
 
-  const songs = await dbEditor.BeatSaberPlaylistSongItem
-    .findMany(item.songs)
-    .then((x) => x.map((x) => stripVersionstamps(x.flat())));
+  const item = stripVersionstamps(_item);
+  const songs = await resolveSongsWithMetaForPlaylist(item.songs, playlistId);
 
   return {
     ...item,

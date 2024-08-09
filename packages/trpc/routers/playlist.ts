@@ -4,6 +4,7 @@ import { buckets } from "@/packages/database-editor/buckets.ts";
 import { makeUppercaseMapHash } from "@/packages/types/brands.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { BeatSaberPlaylistWithoutIdSchema } from "@/packages/types/beatsaber-playlist.ts";
+import { getBeatSaberPlaylistSongItemMetadataKey } from "@/packages/database-editor/keys.ts";
 
 export const createOrUpdatePlaylist = async (
   input: typeof BeatSaberPlaylistWithoutIdSchema._type,
@@ -33,6 +34,22 @@ export const createOrUpdatePlaylist = async (
     await dbEditor.BeatSaberPlaylistSongItem.addMany(input.songs);
     console.log(
       `Adding songs (${input.songs.length}) for ${playlistId} (finish)`,
+    );
+  } catch (err) {
+    console.log(err);
+  }
+  try {
+    console.log(
+      `Adding song metadata (${input.songs.length}) for ${playlistId} (start)`,
+    );
+    await dbEditor.BeatSaberPlaylistSongItemMetadata.addMany(input.songs.map((mapData) => ({
+      id: getBeatSaberPlaylistSongItemMetadataKey(playlistId, mapData.hash),
+      mapHash: mapData.hash,
+      playlistId,
+      difficulties: mapData.difficulties,
+    })));
+    console.log(
+      `Adding song metadata (${input.songs.length}) for ${playlistId} (finish)`,
     );
   } catch (err) {
     console.log(err);

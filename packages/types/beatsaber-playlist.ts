@@ -15,6 +15,13 @@ export const BeatSaberPlaylistSongItemDifficultySchema = z.object({
   name: BeatSaberDifficultyNameSchema,
 });
 
+export const BeatSaberPlaylistSongItemMetadataSchema = z.object({
+  id: z.string(),
+  playlistId: z.string().transform(makePlaylistId),
+  mapHash: z.string().transform(makeUppercaseMapHash),
+  difficulties: z.array(BeatSaberPlaylistSongItemDifficultySchema).optional(),
+});
+
 export const BeatSaberPlaylistSongItemSchema = z.object({
   hash: z.string().transform(makeUppercaseMapHash),
   levelid: z.string().transform(makeUppercaseMapHashForLevelId).optional(),
