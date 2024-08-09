@@ -28,13 +28,23 @@ import {
   apiV1HandlerAuthDiscordOauthSignOutRoute,
 } from "@/packages/api/v1/auth/discord.ts";
 
-// "/api/playlist/guild/:guildId/channel/:channelId": playlistFromGuildChannel,
-// "/": commandRoot,
+import {
+  apiV1HandlerAuthBeatLeaderOauthCallback,
+  apiV1HandlerAuthBeatLeaderOauthCallbackRoute,
+  apiV1HandlerAuthBeatLeaderOauthSignIn,
+  apiV1HandlerAuthBeatLeaderOauthSignInRoute,
+  apiV1HandlerAuthBeatLeaderOauthSignOut,
+  apiV1HandlerAuthBeatLeaderOauthSignOutRoute,
+} from "@/packages/api/v1/auth/beatleader.ts";
 
 const route = router({
   [apiV1HandlerAuthDiscordOauthSignInRoute]: apiV1HandlerAuthDiscordOauthSignIn,
   [apiV1HandlerAuthDiscordOauthSignOutRoute]: apiV1HandlerAuthDiscordOauthSignOut,
   [apiV1HandlerAuthDiscordOauthCallbackRoute]: apiV1HandlerAuthDiscordOauthCallback,
+
+  [apiV1HandlerAuthBeatLeaderOauthSignInRoute]: apiV1HandlerAuthBeatLeaderOauthSignIn,
+  [apiV1HandlerAuthBeatLeaderOauthSignOutRoute]: apiV1HandlerAuthBeatLeaderOauthSignOut,
+  [apiV1HandlerAuthBeatLeaderOauthCallbackRoute]: apiV1HandlerAuthBeatLeaderOauthCallback,
 
   [apiV1HandlerGetPlaylistByIdRoute]: apiV1HandlerGetPlaylistById,
   [apiV1HandlerGetPlaylistByIdDownloadRoute]: apiV1HandlerGetPlaylistByIdDownload,

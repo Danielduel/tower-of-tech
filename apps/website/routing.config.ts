@@ -119,6 +119,16 @@ export const links = {
             ) => `${origin}/api/v1/auth/discord/oauth/signout`,
           },
         },
+        beatleader: {
+          oauth: {
+            signIn: (
+              origin: string = defaultOrigin,
+            ) => `${origin}/api/v1/auth/beatleader/oauth/signin`,
+            signOut: (
+              origin: string = defaultOrigin,
+            ) => `${origin}/api/v1/auth/beatleader/oauth/signout`,
+          },
+        },
       },
       discord: {
         playlist: {

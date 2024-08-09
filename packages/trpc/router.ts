@@ -24,6 +24,7 @@ import {
   fetchBeatSaberPlaylistWithoutResolvingSongItem,
 } from "@/packages/database-editor/utils.ts";
 import { isDiscordAuthorized } from "@/packages/api/v1/auth/discord.ts";
+import { isBeatLeaderAuthorized } from "@/packages/api/v1/auth/beatleader.ts";
 
 const t = initTRPC.create();
 
@@ -165,6 +166,17 @@ const auth = t.router({
       }
       return {
         authorized: await isDiscordAuthorized(ctx.request),
+      };
+    }),
+  beatleader: t.procedure
+    .query(async ({ ctx }) => {
+      if (!ctx.request) {
+        return {
+          authorized: false,
+        };
+      }
+      return {
+        authorized: await isBeatLeaderAuthorized(ctx.request),
       };
     }),
 });

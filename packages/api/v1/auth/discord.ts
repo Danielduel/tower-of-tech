@@ -23,9 +23,7 @@ const {
 export const apiV1HandlerAuthDiscordOauthSignIn: HandlerForRoute<
   typeof apiV1HandlerAuthDiscordOauthSignInRoute
 > = async (req) => {
-  const response = await signIn(req);
-
-  return response;
+  return await signIn(req);
 };
 
 export const apiV1HandlerAuthDiscordOauthSignOut: HandlerForRoute<
@@ -37,7 +35,8 @@ export const apiV1HandlerAuthDiscordOauthSignOut: HandlerForRoute<
 export const apiV1HandlerAuthDiscordOauthCallback: HandlerForRoute<
   typeof apiV1HandlerAuthDiscordOauthCallbackRoute
 > = async (req) => {
-  const { response } = await handleCallback(req);
+  const { response, sessionId, tokens } = await handleCallback(req);
+
   return response;
 };
 
