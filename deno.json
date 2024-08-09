@@ -3,6 +3,8 @@
     "start": "deno run -A ./src/main.ts",
     "migrate": "deno run -A ./src/tools/migrate.ts",
 
+    "cli:build": "make -f ./apps/cli/Makefile build",
+
     "dev": "deno task s3s-fs-local & deno task editor:dev",
     "dev-remote": "deno task editor:dev-remote",
 
