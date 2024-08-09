@@ -11,13 +11,13 @@ const ProfileBeatLeader = () => {
   if (signedIn) {
     return (
       <>
-        <Link reloadDocument to={links.api.v1.auth.beatleader.oauth.signIn()} children="Beatleader sign in" />
+        <Link reloadDocument to={links.api.v1.auth.discord.oauth.signOut()} children="Beatleader sign out" />
       </>
     );
   }
   return (
     <>
-      <Link reloadDocument to={links.api.v1.auth.discord.oauth.signOut()} children="Beatleader sign out" />
+      <Link reloadDocument to={links.api.v1.auth.beatleader.oauth.signIn()} children="Beatleader sign in" />
     </>
   );
 };
@@ -31,13 +31,13 @@ const ProfileDiscord = () => {
   if (signedIn) {
     return (
       <>
-        <Link reloadDocument to={links.api.v1.auth.discord.oauth.signIn()} children="Discord sign in" />
+        <Link reloadDocument to={links.api.v1.auth.discord.oauth.signOut()} children="Discord sign out" />
       </>
     );
   }
   return (
     <>
-      <Link reloadDocument to={links.api.v1.auth.discord.oauth.signOut()} children="Discord sign out" />
+      <Link reloadDocument to={links.api.v1.auth.discord.oauth.signIn()} children="Discord sign in" />
     </>
   );
 };
