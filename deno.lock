@@ -874,7 +874,8 @@
   },
   "redirects": {
     "https://esm.sh/v128/@types/react@~18.2/index.d.ts": "https://esm.sh/v128/@types/react@18.2.38/index.d.ts",
-    "https://esm.sh/v128/@types/react@~18.2/jsx-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-runtime~.d.ts"
+    "https://esm.sh/v128/@types/react@~18.2/jsx-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-runtime~.d.ts",
+    "https://unpkg.com/@zip.js/zip.js/index.js": "https://unpkg.com/@zip.js/zip.js@2.7.48/index.js"
   },
   "remote": {
     "https://cdn.skypack.dev/-/http-cache-semantics@v4.1.1-N0bWdwKGKLbWpVco6TJA/dist=es2019,mode=imports/optimized/http-cache-semantics.js": "d2b8a8ddda629c7a915c269ecad2ba761cacad5c6e21bbf34381def053702294",
@@ -1809,6 +1810,35 @@
     "https://esm.sh/v135/use-sync-external-store@1.2.0/X-ZS9yZWFjdA/denonext/shim.js": "37e3c7d40c8197daac8a39b77b97e026fcbc5ee3cc80c48a9057473631dcb247",
     "https://raw.githubusercontent.com/Danielduel/rutt/cc92a9ea0f94514f48e583aae01bbaa00fc76397/mod.ts": "29ee4c9b9a407dead8a992f64ab37ce21287fe83c64be84e4bd82cd60bfccd88",
     "https://unpkg.com/@evan/wasm@0.0.93/target/ed25519/deno.js": "9728126890f17b71cee41afdab8a4bc362f6b9f409fe0a5c4f6ca9f3b510fd3a",
-    "https://unpkg.com/@evan/wasm@0.0.94/target/zlib/deno.js": "e65131e1c1f45e64960f2699a0b868927ea5c9201c4b986a7cfc57b18be5cc09"
+    "https://unpkg.com/@evan/wasm@0.0.94/target/zlib/deno.js": "e65131e1c1f45e64960f2699a0b868927ea5c9201c4b986a7cfc57b18be5cc09",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/index.js": "cd0656371a1ae54c835377982864b3f162cdbaa2d2afa26413e9dab3a36f0348",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/codec-pool.js": "bcadc41dd82392e586f8ce04791b3be92eab039fb6e09f08c86bb1b1c0419c82",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/codec-worker.js": "5e8d0201842e187827d9dc67f58d751213a3e5dce213374f2ba62e2c50a1bb7c",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/configuration.js": "baa316a63df2f8239f9d52cd4863eaedaddd34ad887b7513588da75d19e84932",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/constants.js": "14fe1468b87cd0fe20c6f1fec916485f875d8592beba94c9241af4cbd12dd88f",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/io.js": "3884028bae2696be0886dd5250ef7815303026897fc0e19a8c83a36857b3ae89",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/aes-crypto-stream.js": "8bc4f1490b64d8eb5850c88574ada77933c07b5052354804f19d729b8f4dd2e4",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/codec-stream.js": "1c0d9de91141bf89f49dc1e239dd22d75a3e46d38dd153aca1a6d48c231d4d85",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/codecs/crc32.js": "dfdde666f72b4a5ffc8cf5b1451e0db578ce4bd90de20df2cff5bfd47758cb23",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/codecs/deflate.js": "08c1b24d1845528f6db296570d690ecbe23c6c01c6cb26b561e601e770281c3a",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/codecs/inflate.js": "55d00eed332cf2c4f61e2ee23133e3257768d0608572ee3f9641a2921c3a6f67",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/codecs/sjcl.js": "462289c5312f01bba8a757a7a0f3d8f349f471183cb4c49fb73d58bba18a5428",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/common-crypto.js": "e3c28d03f3c2809d5bf69f31d01449679eb94cb76648e370145986313052436a",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/crc32-stream.js": "10e26bd18df0e1e89d61a62827a1a1c19f4e541636dd0eccbd85af3afabce289",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/stream-adapter.js": "9e7f3fe1601cc447943cd37b5adb6d74c6e9c404d002e707e8eace7bc048929c",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/zip-crypto-stream.js": "19305af1e8296e7fa6763f3391d0b8149a1e09c659e1d1ff32a484448b18243c",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/streams/zip-entry-stream.js": "5434921e9901b460ece7d669337ce71bfc013db682a638e0a40caa1d8e2e479e",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/util/cp437-decode.js": "d665ded184037ffe5d255be8f379f90416053e3d0d84fac95b28f4aeaab3d336",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/util/decode-text.js": "c04a098fa7c16470c48b6abd4eb4ac48af53547de65e7c8f39b78ae62330ad57",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/util/default-mime-type.js": "177ae00e1956d3d00cdefc40eb158cb591d3d24ede452c056d30f98d73d9cd73",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/util/encode-text.js": "47f2b26231d379e3d024db0a59bc713c76392fff7bf3120dae1a48453d47f8d3",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/util/mime-type.js": "6c6dfa4daf98ef59cd65118073b74f327ceab2ef28140e38934b0d15eb2b5c29",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/util/stream-codec-shim.js": "22ca28de10b002d576667c30360a63a41601ab1b6a5dd12c7b91aac8f7b1781b",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/zip-entry.js": "d30a535cd1e75ef98094cd04120f178c103cdc4055d23ff747ffc6a154da8d2d",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/zip-fs-core.js": "d69e2299a29d968c9ddd37d98720767b0b247582d6654e90bf2028150fb3a85b",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/zip-reader.js": "6f211eded2097cf3d8c32a11a65f26e14088a7648f34d7363d414895e0315a9c",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/core/zip-writer.js": "5b4e87dd06da6162eb2a4de7def7213627f42b86e24abaf24e631a69f470511f",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/z-worker-inline.js": "72b10e78e518dae68527a9ad47045db0e8c4747302b47024de781f389dc61315",
+    "https://unpkg.com/@zip.js/zip.js@2.7.48/lib/zip-fs.js": "c18ebfe158361827beaa9aac7ad27f7535bcd1d118e1888bf948067363df1b47"
   }
 }

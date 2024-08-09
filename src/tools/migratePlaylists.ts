@@ -10,6 +10,13 @@ import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
 import { links } from "@/apps/website/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId } from "@/packages/types/brands.ts";
+import {
+  // BlobWriter,
+  // HttpReader,
+  TextReader,
+  Uint8ArrayWriter,
+  ZipWriter,
+} from "https://unpkg.com/@zip.js/zip.js@2.7.48/index.js";
 
 const coverPath = new URL(import.meta.resolve("../../migrated/covers")).pathname;
 
@@ -108,23 +115,26 @@ Object
     playlistItems[key] = [{ ...arr[0], difficulties }];
   });
 
-const hardcodedMergedPlaylistId = "c73e5bf9-bb91-450c-913a-4b52d504444b";
-const allMaps = Object.values(playlistItems).flatMap((x) => x);
-playlists.push(
-  await migratePlaylist("ToT - *.bplist", {
-    image: "",
-    playlistAuthor: "Danielduel",
-    playlistTitle: "ToT - *",
-    songs: allMaps,
-    customData: {
-      id: hardcodedMergedPlaylistId,
-    },
-  }, "/"),
-);
+// Note - I think nobody uses this playlist
+// const hardcodedMergedPlaylistId = "c73e5bf9-bb91-450c-913a-4b52d504444b";
+// const allMaps = Object.values(playlistItems).flatMap((x) => x);
+// playlists.push(
+//   await migratePlaylist("ToT - *.bplist", {
+//     image: "",
+//     playlistAuthor: "Danielduel",
+//     playlistTitle: "ToT - *",
+//     songs: allMaps,
+//     customData: {
+//       id: hardcodedMergedPlaylistId,
+//     },
+//   }, "/"),
+// );
 
 type CompressFiles = {
   localPath: string;
   archivePath: string;
+  jsonData: string;
+  jsonDataOffline: string;
 };
 const compressFiles: CompressFiles[] = [];
 
@@ -179,6 +189,8 @@ await Promise.all([
     compressFiles.push({
       localPath: `${destinationPath}${path}${fileName}`,
       archivePath: `Playlists/ToT${path}${fileName}`,
+      jsonData: beatsaberPlaylistString,
+      jsonDataOffline: beatsaberPlaylistOfflineString,
     });
   })),
   Promise.all(guestPlaylists.map(async ({
@@ -230,6 +242,8 @@ await Promise.all([
     compressFiles.push({
       localPath: `${destinationPathGuests}${path}${fileName}`,
       archivePath: `Playlists/ToT Guest${path}${fileName}`,
+      jsonData: beatsaberPlaylistString,
+      jsonDataOffline: beatsaberPlaylistOfflineString,
     });
   })),
 ]);
@@ -242,5 +256,16 @@ await Promise.all(compressFiles.map(async (task) => {
   await Deno.remove(tempDir + task.archivePath, { recursive: true });
   await Deno.copyFile(task.localPath, tempDir + task.archivePath);
 }));
+
+const createPlaylistPack = async (files: CompressFiles[]) => {
+  const zipWriter = new ZipWriter(new Uint8ArrayWriter());
+  await Promise.all(files.map((file) => {
+    return zipWriter.add(file.archivePath, new TextReader(file.jsonData));
+  }));
+  return zipWriter.close();
+};
+
+const pack = await createPlaylistPack(compressFiles);
+Deno.writeFileSync("./tree/ToT.zip", pack);
 
 export { playlists };
