@@ -19,6 +19,7 @@
       "npm:@types/react": "npm:@types/react@18.3.3",
       "npm:discord.js@14.15.3-dev.1716768610-d22b55fc8": "npm:discord.js@14.15.3-dev.1716768610-d22b55fc8",
       "npm:openai@4": "npm:openai@4.47.2",
+      "npm:openai@4.55.3": "npm:openai@4.55.3",
       "npm:seed-color": "npm:seed-color@2.0.1",
       "npm:tailwindcss": "npm:tailwindcss@3.4.3_postcss@8.4.31"
     },
@@ -613,6 +614,18 @@
           "formdata-node": "formdata-node@4.4.1",
           "node-fetch": "node-fetch@2.7.0",
           "web-streams-polyfill": "web-streams-polyfill@3.2.1"
+        }
+      },
+      "openai@4.55.3": {
+        "integrity": "sha512-/IUDdK5w3aB1Kd88Ml7w5F+EkVM5aXlrY+lSpWXdIPL18CmGkC7lV9HFJ7beR0OUSFLFT0qmWvMynqtbMF06/Q==",
+        "dependencies": {
+          "@types/node": "@types/node@18.19.33",
+          "@types/node-fetch": "@types/node-fetch@2.6.9",
+          "abort-controller": "abort-controller@3.0.0",
+          "agentkeepalive": "agentkeepalive@4.5.0",
+          "form-data-encoder": "form-data-encoder@1.7.2",
+          "formdata-node": "formdata-node@4.4.1",
+          "node-fetch": "node-fetch@2.7.0"
         }
       },
       "path-is-absolute@1.0.1": {
