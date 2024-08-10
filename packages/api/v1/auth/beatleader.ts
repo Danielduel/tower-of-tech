@@ -46,7 +46,7 @@ export const apiV1HandlerAuthBeatLeaderOauthCallback: HandlerForRoute<
 
   console.log(tokens);
 
-  const data = fetchIdentity(tokens.accessToken);
+  const data = await fetchIdentity(tokens.accessToken);
 
   console.log(data);
 
