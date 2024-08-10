@@ -42,7 +42,7 @@ export const apiV1HandlerAuthDiscordOauthCallback: HandlerForRoute<
 
 export const isDiscordAuthorized = async (req: Request) => {
   console.log("isDiscordAuthorized", await getSessionId(req));
-  return await getSessionId(req) === undefined;
+  return await getSessionId(req) !== undefined;
 };
 
 // case "/protected-route":
