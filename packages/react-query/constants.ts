@@ -6,3 +6,12 @@ export const semiconstantCacheQuery = {
   refetchOnMount: false,
   refetchIntervalInBackground: false,
 };
+
+export const authCacheQuery = {
+  cacheTime: Infinity,
+  staleTime: Infinity,
+  refetchInterval: 0,
+  refetchOnWindowFocus: false,
+  refetchOnMount: true,
+  refetchIntervalInBackground: false,
+};
