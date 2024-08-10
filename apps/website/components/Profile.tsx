@@ -1,9 +1,10 @@
 import { Link } from "@/apps/website/components/layouts/MainLayout.tsx";
 import { links } from "@/apps/website/routing.config.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
+import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 
 const ProfileBeatLeader = () => {
-  const { data, isFetching } = trpc.auth.beatleader.useQuery();
+  const { data, isFetching } = trpc.auth.beatleader.useQuery(undefined, semiconstantCacheQuery);
   const signedIn = data?.authorized;
   if (isFetching) {
     return <></>;
@@ -23,7 +24,7 @@ const ProfileBeatLeader = () => {
 };
 
 const ProfileDiscord = () => {
-  const { data, isFetching } = trpc.auth.discord.useQuery();
+  const { data, isFetching } = trpc.auth.discord.useQuery(undefined, semiconstantCacheQuery);
   const signedIn = data?.authorized;
   if (isFetching) {
     return <></>;

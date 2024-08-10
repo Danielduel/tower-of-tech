@@ -1,5 +1,6 @@
 import { playlistMapping } from "@/packages/playlist/mod.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
+import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 
 const PlaylistLink = (
   { displayName }: { displayName: string },
@@ -18,7 +19,7 @@ const PlaylistLink = (
 };
 
 export default function Index() {
-  const { data: links } = trpc.playlist.listLinks.useQuery();
+  const { data: links } = trpc.playlist.listLinks.useQuery(undefined, semiconstantCacheQuery);
   if (!links) return;
 
   const list = links
