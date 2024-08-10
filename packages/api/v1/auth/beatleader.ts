@@ -13,7 +13,7 @@ const { getSessionId, handleCallback, signIn, signOut } = createHelpers({
   clientSecret: Deno.env.get("BEATLEADER_CLIENT_SECRET")!,
   redirectUri: isLocal()
     ? `http://localhost:8081${apiV1HandlerAuthBeatLeaderOauthCallbackRoute}`
-    : `https://towerofte.ch${apiV1HandlerAuthBeatLeaderOauthCallbackRoute}`,
+    : `https://www.towerofte.ch${apiV1HandlerAuthBeatLeaderOauthCallbackRoute}`,
   defaults: {
     scope: ["profile", "offline_access"],
   },
