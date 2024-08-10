@@ -56,5 +56,6 @@ export const apiV1HandlerAuthBeatLeaderOauthCallback: HandlerForRoute<
 };
 
 export const isBeatLeaderAuthorized = async (req: Request) => {
+  console.log("isBeatLeaderAuthorized", getSessionId(req));
   return await getSessionId(req) === undefined;
 };
