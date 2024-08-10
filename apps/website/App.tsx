@@ -31,7 +31,6 @@ export default function App() {
           rel="stylesheet"
         />
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="/refresh.js"></script>
         <ImportMapScript />
         <script
           dangerouslySetInnerHTML={{
