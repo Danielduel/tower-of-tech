@@ -41,7 +41,7 @@ export const apiV1HandlerAuthDiscordOauthCallback: HandlerForRoute<
 };
 
 export const isDiscordAuthorized = async (req: Request) => {
-  console.log("isDiscordAuthorized", getSessionId(req));
+  console.log("isDiscordAuthorized", await getSessionId(req));
   return await getSessionId(req) === undefined;
 };
 
