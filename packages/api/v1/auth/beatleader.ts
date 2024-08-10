@@ -20,11 +20,13 @@ const { getSessionId, handleCallback, signIn, signOut } = createHelpers({
 });
 
 const fetchIdentity = async (token: string) => {
-  return await fetch("https://api.beatleader.xyz/oauth2/identity", {
+  const data = await fetch("https://api.beatleader.xyz/oauth2/identity", {
     headers: {
       "Authorization": `Bearer ${token}`,
     },
   });
+
+  return await data.json();
 };
 
 export const apiV1HandlerAuthBeatLeaderOauthSignIn: HandlerForRoute<
