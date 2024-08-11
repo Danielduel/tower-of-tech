@@ -26,7 +26,7 @@ const writeLog = (
 
 const createBeatleaderWSGeneralRecorder = () =>
   new Promise((resolve) => {
-    const ws = createBeatleaderWSGeneral();
+    const ws = createBeatleaderWSGeneral({ debug: true });
 
     ws.on("accepted", async (...data: unknown[]) => {
       console.log("accepted");
