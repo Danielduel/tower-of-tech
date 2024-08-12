@@ -67,8 +67,6 @@ export const PlaylistDetailsInner = forwardRef<HTMLDivElement>((_, ref) => {
         <VisualNovelLink to="/">
           Home
         </VisualNovelLink>
-
-        <Profile />
       </LayoutSidebar>
       <LayoutContent>
         <div className="md:ml-3 md:mt-6">

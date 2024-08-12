@@ -48,7 +48,6 @@ export const GuideLayout = (
         <Heading />
         <hr className="my-4 mx-2 border-blue-200" />
         <Guide />
-        <Profile />
       </LayoutSidebar>
       <LayoutContent style={style}>
         {children}

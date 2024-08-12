@@ -29,6 +29,8 @@ import { PlaylistManagementGuidePCVR } from "@/apps/website/pages/home/PlaylistM
 import { Features } from "@/apps/website/pages/home/Features.tsx";
 import { GuideLayoutShell } from "@/apps/website/components/layouts/GuideLayout.tsx";
 import { PlaylistDetailsLayoutShell } from "@/apps/website/components/layouts/PlaylistDetailsLayout.tsx";
+import { TechMappers } from "@/apps/website/pages/home/TechMappers.tsx";
+import { Profile } from "@/apps/website/pages/home/Profile.tsx";
 
 export const Routing = () => {
   const location = useLocation();
@@ -59,6 +61,14 @@ export const Routing = () => {
                 element={<PlaylistDetails />}
               />
             </Route>
+            <Route
+              path={routing.home.profile}
+              element={<MainLayoutShell Component={Profile} />}
+            />
+            <Route
+              path={routing.home.techMappers}
+              element={<MainLayoutShell Component={TechMappers} />}
+            />
             <Route
               path={routing.home.download}
               element={<MainLayoutShell Component={Download} />}

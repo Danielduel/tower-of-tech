@@ -61,7 +61,6 @@ export const MainLayout = (
     <LayoutWrapper>
       <LayoutSidebar>
         <Heading />
-        <Profile />
       </LayoutSidebar>
       <LayoutContent style={style}>
         {children}

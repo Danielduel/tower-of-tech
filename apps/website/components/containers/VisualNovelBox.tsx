@@ -71,6 +71,16 @@ export const VisualNovelBody: FC<PropsWithChildren> = ({ children }) => {
   );
 };
 
+export const VisualNovelSubBody: FC<PropsWithChildren> = ({ children }) => {
+  return (
+    <div className="box-border text-2xl text-slate-200 w-full p-4 pt-2 md:p-6 md:pt-3 text-left">
+      <div key="content">
+        {children}
+      </div>
+    </div>
+  );
+};
+
 export const VisualNovelContainer = forwardRef<
   HTMLDivElement,
   PropsWithChildren<{
@@ -195,6 +205,7 @@ export const VisualNovelATag: FC<
       className={"hover:ring-1 hover:text-white ring-white border block w-max min-w-0 px-4 py-1 box-content ml-2 mb-2 !text-2xl no-underline " +
         (visited ? "opacity-50" : "")}
       href={href}
+      target="_blank"
       download={download}
       onClick={() => setVisited(true)}
     >

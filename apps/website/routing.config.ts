@@ -1,6 +1,8 @@
 import { PlaylistId } from "@/packages/types/brands.ts";
+import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
 const defaultOrigin = "";
+export const getWebsiteUrl = (internalUrl: string) => `${towerOfTechWebsiteOrigin}${internalUrl}`;
 
 export const routing = {
   root: "*",
@@ -15,6 +17,8 @@ export const routing = {
     browse: "browse",
     features: "features",
     account: "account",
+    techMappers: "tech-mappers",
+    profile: "profile",
     playlist: {
       root: "playlist/",
       details: ":playlistId/details",
@@ -84,6 +88,7 @@ export const links = {
     browse: "/home/browse",
     features: "/home/features",
     account: "/home/account",
+    techMappers: "/home/tech-mappers",
   },
 
   editor: {
