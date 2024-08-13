@@ -23,7 +23,8 @@
       "npm:openai@4": "npm:openai@4.47.2",
       "npm:openai@4.55.3": "npm:openai@4.55.3",
       "npm:seed-color": "npm:seed-color@2.0.1",
-      "npm:tailwindcss": "npm:tailwindcss@3.4.3_postcss@8.4.31"
+      "npm:tailwindcss": "npm:tailwindcss@3.4.3_postcss@8.4.31",
+      "npm:tailwindcss@3.4.3": "npm:tailwindcss@3.4.3_postcss@8.4.31"
     },
     "jsr": {
       "@deno/kv-oauth@0.11.0": {

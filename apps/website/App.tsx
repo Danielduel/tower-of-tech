@@ -20,6 +20,7 @@ export default function App() {
         <meta name="viewport" content="width=360, initial-scale=1, user-scalable=0" />
         <link rel="shortcut icon" href={useAsset("/favicon.ico")} />
         <link rel="stylesheet" href={useAsset("/style.css")} />
+        <link rel="stylesheet" href={useAsset("/tailwind.css")} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -30,7 +31,6 @@ export default function App() {
           href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
           rel="stylesheet"
         />
-        <script src="https://cdn.tailwindcss.com"></script>
         <ImportMapScript />
         <script
           dangerouslySetInnerHTML={{
