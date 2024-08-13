@@ -52,38 +52,6 @@ const scheduleNextRandomRequest = (channel: string, iteration: number = 0, remov
   }, time));
 };
 
-client.on("privmsg", (data) => {
-  if (channel === master) {
-    const msg = data.message.split(" ")[0];
-    switch (msg) {
-      case "!tot":
-        return client.privmsg(channel, `! @${data.user.displayName} https://www.towerofte.ch/`);
-      case "!link":
-        return client.privmsg(channel, `! @${data.user.displayName} :eyes:`);
-      case "!dc":
-      case "!discord":
-        return client.privmsg(channel, `! @${data.user.displayName} ${discordLink}`);
-      case "!maphelp":
-        return client.privmsg(
-          channel,
-          `! @${data.user.displayName} Mapping help ${getWebsiteUrl(links.home.techMappers)}`,
-        );
-      case "!eu":
-        setTimeout(() => client.privmsg(channel, `! Petition https://eci.ec.europa.eu/045/public/#/screen/home`), 10);
-        setTimeout(() => client.privmsg(channel, `! Webpage https://www.stopkillinggames.com/eci`), 500);
-        setTimeout(
-          () =>
-            client.privmsg(
-              channel,
-              `! Asmongold reacts to a person explaining the paper https://www.youtube.com/watch?v=ZYHkc7JAr7w`,
-            ),
-          1000,
-        );
-        return;
-    }
-  }
-});
-
 client.on("open", () => {
   console.log("Open");
   client.join(channel);
@@ -92,11 +60,4 @@ client.on("open", () => {
 
 client.on("error", (err) => {
   console.error(err);
-});
-
-Deno.addSignalListener("SIGINT", () => {
-  client.part(channel);
-  console.log("\nParted\n\n");
-  timeouts.forEach((x) => clearTimeout(x));
-  Deno.exit();
 });

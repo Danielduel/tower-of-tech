@@ -5,6 +5,7 @@
 
     "cli:build": "make -f ./apps/cli/Makefile build",
 
+    "website:tailwind:build": "tailwind -c ./apps/website/tailwind/tailwind.config.js -i ./apps/website/tailwind/input.css -o ./apps/website/public/tailwind.css",
     "dev": "deno task s3s-fs-local & deno task editor:dev",
     "dev-remote": "deno task editor:dev-remote",
 
@@ -16,6 +17,7 @@
     "discord-bot:register-raw": "deno run -A ./apps/discord-bot/setup/register-commands.ts",
 
     "twitch-irc-bot:playlist-worker": "deno run -A --env ./apps/twitch-irc-bot/tools/playlist-worker.ts",
+    "twitch-irc-bot:commands": "deno run -A --env ./apps/twitch-irc-bot/tools/commands.ts",
 
     "s3s-fs-local": "./scripts/s3s-fs-local.sh",
 

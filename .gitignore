@@ -8,7 +8,6 @@ local.db-shm
 local.db-wal
 raports
 maps
-log
 data/s3
 tree
 
