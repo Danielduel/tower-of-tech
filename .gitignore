@@ -15,7 +15,7 @@ data/beatleader-wss-history
 data/beatleader-wss-log
 data.zip
 
-apps/cli/bin
+apps/cli/target
 
 apps/mod
 apps/mod/target
