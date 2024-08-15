@@ -4,6 +4,7 @@
     "migrate": "deno run -A ./src/tools/migrate.ts",
 
     "cli:build": "make -f ./apps/cli/Makefile build",
+    "mod:build": "make -f ./apps/mod/Makefile build",
 
     "website:tailwind:build": "tailwind -c ./apps/website/tailwind/tailwind.config.js -i ./apps/website/tailwind/input.css -o ./apps/website/public/tailwind.css",
     "website:tailwind:watch": "tailwind -c ./apps/website/tailwind/tailwind.config.js -i ./apps/website/tailwind/input.css -o ./apps/website/public/tailwind.css --watch",

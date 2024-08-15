@@ -16,3 +16,6 @@ data/beatleader-wss-log
 data.zip
 
 apps/cli/bin
+
+apps/mod
+apps/mod/target
