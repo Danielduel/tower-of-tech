@@ -49,14 +49,16 @@ struct Pet {
 #[derive(Copy, Clone, Debug)]
 enum MenuItem {
     Home,
-    Pets,
+    Account,
+    Playlists
 }
 
 impl From<MenuItem> for usize {
     fn from(input: MenuItem) -> usize {
         match input {
             MenuItem::Home => 0,
-            MenuItem::Pets => 1,
+            MenuItem::Account => 1,
+            MenuItem::Playlists => 2,
         }
     }
 }
@@ -92,10 +94,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut terminal = Terminal::new(backend)?;
     terminal.clear()?;
 
-    let menu_titles = vec!["Home", "Pets", "Add", "Delete", "Quit"];
+    let menu_titles = vec!["Home", "Account", "Playlists", "Add", "Delete", "Quit"];
     let mut active_menu_item = MenuItem::Home;
-    let mut pet_list_state = ListState::default();
-    pet_list_state.select(Some(0));
+    let mut playlist_list_state = ListState::default();
+    playlist_list_state.select(Some(0));
 
     loop {
         terminal.draw(|rect| {
@@ -113,7 +115,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 )
                 .split(size);
 
-            let copyright = Paragraph::new("pet-CLI 2020 - all rights reserved")
+            let copyright = Paragraph::new("ToT CLI")
                 .style(Style::default().fg(Color::LightCyan))
                 .alignment(Alignment::Center)
                 .block(
@@ -150,16 +152,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             rect.render_widget(tabs, chunks[0]);
             match active_menu_item {
                 MenuItem::Home => rect.render_widget(render_home(), chunks[1]),
-                MenuItem::Pets => {
-                    let pets_chunks = Layout::default()
+                MenuItem::Account => rect.render_widget(render_account(), chunks[1]),
+                MenuItem::Playlists => {
+                    let playlists_chunks = Layout::default()
                         .direction(Direction::Horizontal)
                         .constraints(
                             [Constraint::Percentage(20), Constraint::Percentage(80)].as_ref(),
                         )
                         .split(chunks[1]);
-                    let (left, right) = render_pets(&pet_list_state);
-                    rect.render_stateful_widget(left, pets_chunks[0], &mut pet_list_state);
-                    rect.render_widget(right, pets_chunks[1]);
+                    let (left, right) = render_playlists(&playlist_list_state);
+                    rect.render_stateful_widget(left, playlists_chunks[0], &mut playlist_list_state);
+                    rect.render_widget(right, playlists_chunks[1]);
                 }
             }
             rect.render_widget(copyright, chunks[2]);
@@ -173,30 +176,31 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     break;
                 }
                 KeyCode::Char('h') => active_menu_item = MenuItem::Home,
-                KeyCode::Char('p') => active_menu_item = MenuItem::Pets,
-                KeyCode::Char('a') => {
-                    add_random_pet_to_db().expect("can add new random pet");
-                }
-                KeyCode::Char('d') => {
-                    remove_pet_at_index(&mut pet_list_state).expect("can remove pet");
-                }
+                KeyCode::Char('a') => active_menu_item = MenuItem::Account,
+                KeyCode::Char('p') => active_menu_item = MenuItem::Playlists,
+                // KeyCode::Char('a') => {
+                //     add_random_pet_to_db().expect("can add new random pet");
+                // }
+                // KeyCode::Char('d') => {
+                //     remove_pet_at_index(&mut pet_list_state).expect("can remove pet");
+                // }
                 KeyCode::Down => {
-                    if let Some(selected) = pet_list_state.selected() {
+                    if let Some(selected) = playlist_list_state.selected() {
                         let amount_pets = read_db().expect("can fetch pet list").len();
                         if selected >= amount_pets - 1 {
-                            pet_list_state.select(Some(0));
+                            playlist_list_state.select(Some(0));
                         } else {
-                            pet_list_state.select(Some(selected + 1));
+                            playlist_list_state.select(Some(selected + 1));
                         }
                     }
                 }
                 KeyCode::Up => {
-                    if let Some(selected) = pet_list_state.selected() {
+                    if let Some(selected) = playlist_list_state.selected() {
                         let amount_pets = read_db().expect("can fetch pet list").len();
                         if selected > 0 {
-                            pet_list_state.select(Some(selected - 1));
+                            playlist_list_state.select(Some(selected - 1));
                         } else {
-                            pet_list_state.select(Some(amount_pets - 1));
+                            playlist_list_state.select(Some(amount_pets - 1));
                         }
                     }
                 }
@@ -217,11 +221,11 @@ fn render_home<'a>() -> Paragraph<'a> {
         Spans::from(vec![Span::raw("to")]),
         Spans::from(vec![Span::raw("")]),
         Spans::from(vec![Span::styled(
-            "pet-CLI",
+            "ToT CLI",
             Style::default().fg(Color::LightBlue),
         )]),
         Spans::from(vec![Span::raw("")]),
-        Spans::from(vec![Span::raw("Press 'p' to access pets, 'a' to add random new pets and 'd' to delete the currently selected pet.")]),
+        Spans::from(vec![Span::raw("Press 'a' to access account, 'p' for playlists.")]),
     ])
     .alignment(Alignment::Center)
     .block(
@@ -234,11 +238,36 @@ fn render_home<'a>() -> Paragraph<'a> {
     home
 }
 
-fn render_pets<'a>(pet_list_state: &ListState) -> (List<'a>, Table<'a>) {
+fn render_account<'a>() -> Paragraph<'a> {
+    let home = Paragraph::new(vec![
+        Spans::from(vec![Span::raw("")]),
+        Spans::from(vec![Span::raw("Welcome")]),
+        Spans::from(vec![Span::raw("")]),
+        Spans::from(vec![Span::raw("to")]),
+        Spans::from(vec![Span::raw("")]),
+        Spans::from(vec![Span::styled(
+            "account view",
+            Style::default().fg(Color::LightBlue),
+        )]),
+        Spans::from(vec![Span::raw("")]),
+        Spans::from(vec![Span::raw("Press 'a' to access account, 'p' for playlists.")]),
+    ])
+    .alignment(Alignment::Center)
+    .block(
+        Block::default()
+            .borders(Borders::ALL)
+            .style(Style::default().fg(Color::White))
+            .title("Home")
+            .border_type(BorderType::Plain),
+    );
+    home
+}
+
+fn render_playlists<'a>(pet_list_state: &ListState) -> (List<'a>, Table<'a>) {
     let pets = Block::default()
         .borders(Borders::ALL)
         .style(Style::default().fg(Color::White))
-        .title("Pets")
+        .title("Playlists")
         .border_type(BorderType::Plain);
 
     let pet_list = read_db().expect("can fetch pet list");
