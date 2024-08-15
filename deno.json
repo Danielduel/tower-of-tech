@@ -6,8 +6,9 @@
     "cli:build": "make -f ./apps/cli/Makefile build",
 
     "website:tailwind:build": "tailwind -c ./apps/website/tailwind/tailwind.config.js -i ./apps/website/tailwind/input.css -o ./apps/website/public/tailwind.css",
+    "website:tailwind:watch": "tailwind -c ./apps/website/tailwind/tailwind.config.js -i ./apps/website/tailwind/input.css -o ./apps/website/public/tailwind.css --watch",
     "dev": "deno task s3s-fs-local & deno task editor:dev",
-    "dev-remote": "deno task editor:dev-remote",
+    "dev-remote": "deno task editor:dev-remote & deno task website:tailwind:watch",
 
     "beatleader-bot:logger": "deno run -A ./apps/beatleader-bot/tools/logger.ts",
     "beatleader-bot:record": "deno run -A ./apps/beatleader-bot/tools/record.ts",

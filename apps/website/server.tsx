@@ -23,7 +23,9 @@ import App from "@/apps/website/App.tsx";
 
 const root = Deno.cwd();
 
-const importMap = Deno.env.get("ULTRA_MODE") === "development"
+const isUltraDevMode = Deno.env.get("ULTRA_MODE") === "development";
+
+const importMap = isUltraDevMode
   ? await readImportMap("./importMap.local.json")
   : await readImportMap("./importMap.json");
 
