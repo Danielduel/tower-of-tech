@@ -1,3 +1,5 @@
+/// <reference lib="deno.unstable" />
+
 import "https://deno.land/std@0.206.0/dotenv/load.ts";
 import { S3Client } from "s3_lite_client";
 import { isDbEditorRemote, isLocal } from "@/packages/utils/envrionment.ts";
@@ -13,6 +15,7 @@ import {
 } from "@/packages/database-editor/BeatSaverResponse.ts";
 import { kvdex } from "kvdex/mod.ts";
 import { DiscordChannel, DiscordGuild } from "@/packages/database-editor/DiscordGuild.ts";
+import { BeatLeaderIntegration, ToTAccount, ToTAccountSession } from "@/packages/database-editor/Auth.ts";
 
 export const kv = isDbEditorRemote()
   ? await (async () => {
@@ -32,6 +35,9 @@ export const dbEditor = kvdex(kv, {
   BeatSaverIdToHashCache,
   DiscordChannel,
   DiscordGuild,
+  ToTAccount,
+  ToTAccountSession,
+  BeatLeaderIntegration,
 });
 
 export const s3clientEditor = isLocal() && !isDbEditorRemote()
