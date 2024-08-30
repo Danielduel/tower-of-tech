@@ -18,6 +18,9 @@ export const BeatLeaderIntegrationSchema = z.object({
 
 export const ToTAccountSessionSchema = z.object({
   id: z.string(),
+
+  lastActiveAt: z.date(),
+
   oauthSession: z.string(),
   siteSession: z.string(),
   parentId: z.string().transform(makeToTUserId),
