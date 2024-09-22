@@ -1,9 +1,7 @@
 import { assertEquals } from "@/packages/test/deps.ts";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { BeatSaverMapId, makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
-import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaberPlaylistSongItemDifficulty } from "@/src/types/BeatSaberPlaylist.d.ts";
-
 
 const standard = {
   easy: [{ name: "Easy", characteristic: "Standard" }],
@@ -22,18 +20,18 @@ const lawless = {
 } satisfies Record<string, BeatSaberPlaylistSongItemDifficulty[]>;
 
 const diffs: [string, BeatSaberPlaylistSongItemDifficulty[]][] = [
-  [ "e", standard.easy ],
-  [ "E", standard.easy ],
-  [ "es", standard.easy ],
-  [ "ES", standard.easy ],
-  [ "easy", standard.easy ],
-  [ "Easy", standard.easy ],
-  [ "se", standard.easy ],
-  [ "SE", standard.easy ],
-  [ "ses", standard.easy ],
-  [ "SES", standard.easy ],
-  [ "standard easy", standard.easy ],
-  [ "Standard Easy", standard.easy ],
+  ["e", standard.easy],
+  ["E", standard.easy],
+  ["es", standard.easy],
+  ["ES", standard.easy],
+  ["easy", standard.easy],
+  ["Easy", standard.easy],
+  ["se", standard.easy],
+  ["SE", standard.easy],
+  ["ses", standard.easy],
+  ["SES", standard.easy],
+  ["standard easy", standard.easy],
+  ["Standard Easy", standard.easy],
 
   ["n", standard.normal],
   ["N", standard.normal],
@@ -79,12 +77,12 @@ const diffs: [string, BeatSaberPlaylistSongItemDifficulty[]][] = [
   ["standard expert plus", standard.expertPlus],
   ["Standard Expert Plus", standard.expertPlus],
 
-  [ "le", lawless.easy ],
-  [ "LE", lawless.easy ],
-  [ "les", lawless.easy ],
-  [ "LES", lawless.easy ],
-  [ "lawless easy", lawless.easy ],
-  [ "Lawless Easy", lawless.easy ],
+  ["le", lawless.easy],
+  ["LE", lawless.easy],
+  ["les", lawless.easy],
+  ["LES", lawless.easy],
+  ["lawless easy", lawless.easy],
+  ["Lawless Easy", lawless.easy],
 
   ["ln", lawless.normal],
   ["LN", lawless.normal],
@@ -107,27 +105,32 @@ const diffs: [string, BeatSaberPlaylistSongItemDifficulty[]][] = [
   ["LX+", lawless.expertPlus],
   ["lawless expert plus", lawless.expertPlus],
   ["Lawless Expert Plus", lawless.expertPlus],
-]
-
-const buildDiffTest = (raw:string, expectedId: string) => {
-
-  return [
-    [
-      `${raw} (e)`,
-      makeBeatSaverMapId(expectedId),
-      []
-    ]
-  ]
-}
+];
 
 const lazyBankMessageToIdWithDiffs: [string, BeatSaverMapId, BeatSaberPlaylistSongItemDifficulty[]][] = [
   [
-    "https://beatsaver.com/maps/1f9a0 (Ex)",
-    "1f9a0",
-    [{ characteristic: "Standard", name: "Expert" }],
+    "https://beatsaver.com/maps/1f9a0 (ex)",
+    makeBeatSaverMapId("1f9a0"),
+    standard.expert,
+  ],
+  [
+    "!bsr 149b8 [Lawless Expert Plus]",
+    makeBeatSaverMapId("149b8"),
+    lawless.expertPlus,
+  ],
+  [
+    "!bsr 149b8 Lawless Expert Plus",
+    makeBeatSaverMapId("149b8"),
+    lawless.expertPlus,
+  ],
+  [
+    "!bsr 149b8 Normal",
+    makeBeatSaverMapId("149b8"),
+    standard.normal,
   ],
 ];
-const lazyBankMessageToId: [string, BeatSaverMapId, BeatSaberPlaylistSongItemDifficulty[]][] = ([
+
+const lazyBankMessageToId: [string, BeatSaverMapId, BeatSaberPlaylistSongItemDifficulty[]][] = [
   [
     "! @Danielduel last song :  https://beatsaver.com/maps/1f9a0",
     makeBeatSaverMapId("1f9a0"),
@@ -221,7 +224,7 @@ const lazyBankMessageToId: [string, BeatSaverMapId, BeatSaberPlaylistSongItemDif
   ],
   [
     "Oops I dropped this https://beatsaver.com/maps/384d6",
-   makeBeatSaverMapId("384d6"),
+    makeBeatSaverMapId("384d6"),
     [],
   ],
   [
@@ -250,6 +253,46 @@ const lazyBankMessageToId: [string, BeatSaverMapId, BeatSaberPlaylistSongItemDif
   // ],
 ];
 
+const lazyBankMessageToIdWithDiffsGenerated: [string, BeatSaverMapId, BeatSaberPlaylistSongItemDifficulty[]][] =
+  lazyBankMessageToId.flatMap(([message, expected, _diffs]) => {
+    const isCommand = message.startsWith("!bsr") || message.startsWith("bsr") || message.startsWith("sr");
+    return diffs
+      .flatMap(([difficultyAlias, expectedDiffs]) => {
+        return [
+          [`${message} ${difficultyAlias}`, expected, expectedDiffs] as [
+            string,
+            BeatSaverMapId,
+            BeatSaberPlaylistSongItemDifficulty[],
+          ],
+          [`${message} (${difficultyAlias})`, expected, expectedDiffs] as [
+            string,
+            BeatSaverMapId,
+            BeatSaberPlaylistSongItemDifficulty[],
+          ],
+          [`${message} [${difficultyAlias}]`, expected, expectedDiffs] as [
+            string,
+            BeatSaverMapId,
+            BeatSaberPlaylistSongItemDifficulty[],
+          ],
+          ...(!isCommand
+            ? [[`${difficultyAlias} ${message}`, expected, expectedDiffs] as [
+              string,
+              BeatSaverMapId,
+              BeatSaberPlaylistSongItemDifficulty[],
+            ], [`(${difficultyAlias}) ${message}`, expected, expectedDiffs] as [
+              string,
+              BeatSaverMapId,
+              BeatSaberPlaylistSongItemDifficulty[],
+            ], [`[${difficultyAlias}] ${message}`, expected, expectedDiffs] as [
+              string,
+              BeatSaverMapId,
+              BeatSaberPlaylistSongItemDifficulty[],
+            ]]
+            : []),
+        ];
+      });
+  });
+
 const tests = [
   [
     "given empty string, should return emptyish output",
@@ -267,6 +310,7 @@ const tests = [
       resolvables: [{
         data: "3d075a",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -278,6 +322,7 @@ const tests = [
       resolvables: [{
         data: "3d075a",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -289,6 +334,7 @@ const tests = [
       resolvables: [{
         data: "3d075",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -300,6 +346,7 @@ const tests = [
       resolvables: [{
         data: "3d075",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -311,6 +358,7 @@ const tests = [
       resolvables: [{
         data: "3d07",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -322,6 +370,7 @@ const tests = [
       resolvables: [{
         data: "3d07",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -333,6 +382,7 @@ const tests = [
       resolvables: [{
         data: "3d0",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -344,6 +394,7 @@ const tests = [
       resolvables: [{
         data: "3d0",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -355,6 +406,7 @@ const tests = [
       resolvables: [{
         data: "3d",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -366,6 +418,7 @@ const tests = [
       resolvables: [{
         data: "3d",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -377,6 +430,7 @@ const tests = [
       resolvables: [{
         data: "3",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -388,6 +442,7 @@ const tests = [
       resolvables: [{
         data: "3",
         kind: "id",
+        diffs: [],
       }],
     },
   ],
@@ -415,6 +470,7 @@ const tests = [
       resolvables: [{
         kind: "id",
         data: "a3da0d",
+        diffs: [],
       }],
     },
   ],
@@ -434,6 +490,7 @@ const tests = [
       resolvables: [{
         kind: "id",
         data: "a3da0d",
+        diffs: [],
       }],
     },
   ],
@@ -445,15 +502,41 @@ tests.forEach(([title, param, expected]) => {
   });
 });
 
-lazyBankMessageToId.forEach(([param, expected]) => {
+lazyBankMessageToIdWithDiffs.forEach(([param, expected, expectedDiffs]) => {
+  Deno.test(`BeatSaverResolvable.findBeatSaverResolvables given "${param}" expect "${expected}" with diffs of ${JSON.stringify(expectedDiffs)}`, () => {
+    assertEquals(findBeatSaverResolvables(param), {
+      raw: param,
+      resolvables: [{
+        kind: "id",
+        data: expected,
+        diffs: expectedDiffs,
+      }],
+    });
+  });
+});
+
+lazyBankMessageToId.forEach(([param, expected, expectedDiffs]) => {
   Deno.test(`BeatSaverResolvable.findBeatSaverResolvables given "${param}" expect "${expected}"`, () => {
     assertEquals(findBeatSaverResolvables(param), {
       raw: param,
       resolvables: [{
         kind: "id",
         data: expected,
-        diffs: [],
+        diffs: expectedDiffs,
       }],
     });
   });
 });
+
+// lazyBankMessageToIdWithDiffsGenerated.forEach(([param, expected, expectedDiffs]) => {
+//   Deno.test(`BeatSaverResolvable.findBeatSaverResolvables given "${param}" expect "${expected}" with diffs of ${JSON.stringify(expectedDiffs)}`, () => {
+//     assertEquals(findBeatSaverResolvables(param), {
+//       raw: param,
+//       resolvables: [{
+//         kind: "id",
+//         data: expected,
+//         diffs: expectedDiffs,
+//       }],
+//     });
+//   });
+// });

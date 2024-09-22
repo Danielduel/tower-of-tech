@@ -3,6 +3,7 @@ import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaverMapId, makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { BeatSaberPlaylistSongItemDifficulty } from "@/src/types/BeatSaberPlaylist.d.ts";
+import { difficultyMapping, difficultyMappingKeys } from "@/packages/api-beatsaver/difficultyMapping.ts";
 
 export type BeatSaverResolvableHashKind = {
   kind: "hash";
@@ -21,7 +22,21 @@ export type BeatSaverResolvable =
   | BeatSaverResolvableIdKind;
 
 const getDiffs = (raw: string) => {
-  const _split = raw.split("[")[1] || raw.split("(");
+  const results = difficultyMappingKeys
+    .map(
+      (key: keyof typeof difficultyMapping): BeatSaberPlaylistSongItemDifficulty[] | null => {
+        if (difficultyMapping[key].matchers.some((matcher) => matcher.test(raw))) {
+          return difficultyMapping[key].result;
+        }
+        return null;
+      },
+    ).filter(filterNulls)
+    .flat();
+  if (results.length > 0) {
+    return results;
+  }
+
+  return [];
 };
 
 const getBeatSaverIdFromBeatSaverMapsUrl = (
@@ -36,7 +51,7 @@ const getBeatSaverIdFromBeatSaverMapsUrl = (
   return makeBeatSaverMapId(id);
 };
 
-const getBeatSaverResolvableFromBeatSaverMapsUrl = (url: string, raw: string): BeatSaverResolvableIdKind | null => {
+const getBeatSaverResolvableFromBeatSaverMapsUrl = (raw: string, url: string): BeatSaverResolvableIdKind | null => {
   const id = getBeatSaverIdFromBeatSaverMapsUrl(url);
 
   if (!id) return null;
@@ -44,14 +59,14 @@ const getBeatSaverResolvableFromBeatSaverMapsUrl = (url: string, raw: string): B
   return {
     kind: "id",
     data: id,
-    diffs: [],
+    diffs: getDiffs(raw),
   };
 };
 
-const getBeatSaverResolvableFromUrl = (raw: string) => (url: string): BeatSaverResolvableIdKind | null => {
+const getBeatSaverResolvableFromUrl = (raw: string, url: string): BeatSaverResolvableIdKind | null => {
   switch (true) {
     case url.startsWith("https://beatsaver.com/maps/"):
-      return getBeatSaverResolvableFromBeatSaverMapsUrl(url, raw);
+      return getBeatSaverResolvableFromBeatSaverMapsUrl(raw, url);
   }
   return null;
 };
@@ -67,13 +82,16 @@ const findBeatSaverResolvablesInUrls = (
 
   const urls = [matches[0]];
   const resolvables = urls
-    .map(getBeatSaverResolvableFromUrl(raw))
+    .map((url) => getBeatSaverResolvableFromUrl(raw, url))
     .filter(filterNulls);
 
   return resolvables;
 };
 
-const getBeatSaverResolvableFromMessageWithOnlyId = (lowerCaseRaw: string): BeatSaverResolvableIdKind | null => {
+const getBeatSaverResolvableFromMessageWithOnlyId = (
+  raw: string,
+  lowerCaseRaw: string,
+): BeatSaverResolvableIdKind | null => {
   const matches = lowerCaseRaw.match(/^[0-9a-f]+$/);
 
   if (!matches) {
@@ -83,15 +101,17 @@ const getBeatSaverResolvableFromMessageWithOnlyId = (lowerCaseRaw: string): Beat
   return {
     kind: "id",
     data: makeBeatSaverMapId(matches[0]),
-    diffs: [],
+    diffs: getDiffs(raw),
   };
 };
 
 const getBeatSaverResolvableFromMessageCommandLike = (
+  raw: string,
   lowerCaseRaw: string,
   commandLike: string,
 ): BeatSaverResolvableIdKind | null => {
-  const [, _split] = lowerCaseRaw.split(commandLike);
+  const [, __split] = lowerCaseRaw.split(commandLike);
+  const [_split] = __split.split(" ");
   const split = _split.trim();
   const matches = split.match(/^[0-9a-f]+$/);
 
@@ -102,24 +122,21 @@ const getBeatSaverResolvableFromMessageCommandLike = (
   return {
     kind: "id",
     data: makeBeatSaverMapId(matches[0]),
-    diffs: [],
+    diffs: getDiffs(raw),
   };
 };
 
-const getBeatSaverResolvableFromMessage = (lowerCaseRaw: string): BeatSaverResolvable | null => {
+const getBeatSaverResolvableFromMessage = (raw: string, lowerCaseRaw: string): BeatSaverResolvable | null => {
   switch (true) {
     case lowerCaseRaw.startsWith("!bsr "):
-      return getBeatSaverResolvableFromMessageCommandLike(
-        lowerCaseRaw,
-        "!bsr ",
-      );
+      return getBeatSaverResolvableFromMessageCommandLike(raw, lowerCaseRaw, "!bsr ");
     case lowerCaseRaw.startsWith("bsr "):
-      return getBeatSaverResolvableFromMessageCommandLike(lowerCaseRaw, "bsr ");
+      return getBeatSaverResolvableFromMessageCommandLike(raw, lowerCaseRaw, "bsr ");
     case lowerCaseRaw.startsWith("sr "):
-      return getBeatSaverResolvableFromMessageCommandLike(lowerCaseRaw, "sr ");
+      return getBeatSaverResolvableFromMessageCommandLike(raw, lowerCaseRaw, "sr ");
   }
 
-  return getBeatSaverResolvableFromMessageWithOnlyId(lowerCaseRaw);
+  return getBeatSaverResolvableFromMessageWithOnlyId(raw, lowerCaseRaw);
 };
 
 const findBeatSaverResolvablesFromMessage = (raw: string) => {
@@ -127,7 +144,7 @@ const findBeatSaverResolvablesFromMessage = (raw: string) => {
 
   // recursive?
 
-  const resolvable = getBeatSaverResolvableFromMessage(lowerCaseRaw);
+  const resolvable = getBeatSaverResolvableFromMessage(raw, lowerCaseRaw);
 
   if (!resolvable) {
     return [];
