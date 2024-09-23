@@ -245,9 +245,10 @@ export const fetchAndCacheFromResolvables = async (
   resolvables: BeatSaverResolvable[],
 ) => {
   const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
+  const fromHashesValueArray = Object.values(resolved.fromHashes ?? {});
 
   const out = resolvables.map((resolvable) => {
-    return matchBeatSaverResolvable({
+    return matchBeatSaverResolvable<BeatSaberPlaylistSongItem | null, BeatSaberPlaylistSongItem | null>({
       onHashResolvable: (r) => {
         if (resolved.fromHashes) {
           // @ts-ignore
@@ -262,15 +263,24 @@ export const fetchAndCacheFromResolvables = async (
         }
         return null;
       },
+      // @ts-ignore
       onIdResolvable: (r) => {
         if (resolved.fromIds) {
-          const resolvedItem = resolved.fromIds[r.data];
-          if (resolvedItem) {
+          const resolvedItemFromId = resolved.fromIds[r.data];
+          if (resolvedItemFromId) {
             return {
-              ...resolvedItem,
+              ...resolvedItemFromId,
               difficulties: r.diffs,
             };
           }
+          const resolvedItemFromHash = fromHashesValueArray.find((x) => (x as Record<string, unknown>).id === r.data);
+          if (resolvedItemFromHash) {
+            return {
+              ...resolvedItemFromHash,
+              difficulties: r.diffs,
+            };
+          }
+
           return null;
         }
         return null;
@@ -279,5 +289,5 @@ export const fetchAndCacheFromResolvables = async (
   })
     .filter(filterNulls);
 
-  return out as unknown as BeatSaberPlaylistSongItem[];
+  return out;
 };
