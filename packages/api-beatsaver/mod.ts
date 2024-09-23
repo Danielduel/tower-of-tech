@@ -10,10 +10,18 @@ import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { BeatSaverApi } from "@/packages/api-beatsaver/api.ts";
-import { BeatSaverResolvable, splitBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
+import {
+  BeatSaverResolvable,
+  BeatSaverResolvableHashKind,
+  BeatSaverResolvableIdKind,
+  matchBeatSaverResolvable,
+  splitBeatSaverResolvables,
+} from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { scheduleCache } from "@/packages/api-beatsaver/cache.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { ulid } from "kvdex/src/deps.ts";
+import { BeatSaberPlaylistSongItemDifficulty } from "@/src/types/BeatSaberPlaylist.d.ts";
+import { BeatSaberPlaylistSongItem } from "@/src/types/BeatSaberPlaylist.d.ts";
 
 export { BeatSaverApi };
 
@@ -40,19 +48,21 @@ type IdsToHashesCacheType = {
   data?: typeof BeatSaverIdToHashCacheSchema._type;
 };
 
+const idToHashCache = async (id: BeatSaverMapId): Promise<IdsToHashesCacheType> => {
+  const idToHashCacheItem = await dbEditor.BeatSaverIdToHashCache
+    .find(id)
+    .then((x) => x?.flat());
+
+  if (!idToHashCacheItem) return { id, status: "fetch" };
+  if (idToHashCacheItem.removed) return { id, status: "removed" };
+  if (!idToHashCacheItem.available) return { id, status: "error" };
+  if (!idToHashCacheItem.hash) return { id, status: "error" };
+  return { id, status: "ok", data: idToHashCacheItem };
+};
+
 const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
   return await Promise.all(
-    idArray.map(async (id): Promise<IdsToHashesCacheType> => {
-      const idToHashCacheItem = await dbEditor.BeatSaverIdToHashCache
-        .find(id)
-        .then((x) => x?.flat());
-
-      if (!idToHashCacheItem) return { id, status: "fetch" };
-      if (idToHashCacheItem.removed) return { id, status: "removed" };
-      if (!idToHashCacheItem.available) return { id, status: "error" };
-      if (!idToHashCacheItem.hash) return { id, status: "error" };
-      return { id, status: "ok", data: idToHashCacheItem };
-    }),
+    idArray.map(idToHashCache),
   );
 };
 
@@ -170,9 +180,7 @@ export const fetchAndCacheFromResolvablesRaw = async (
     idResolvables,
   } = splitBeatSaverResolvables(resolvables);
 
-  const hashesFromIdResolvables = await idsToHashesCache(
-    idResolvables.map((x) => x.data),
-  );
+  const hashesFromIdResolvables = await idsToHashesCache(idResolvables.map((x) => x.data));
   const hashesArrayFromResolvables = hashResolvables.map((x) => x.data);
 
   const hashesFromCacheOk = hashesFromIdResolvables
@@ -238,8 +246,38 @@ export const fetchAndCacheFromResolvables = async (
 ) => {
   const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
 
-  return [
-    ...Object.values(resolved.fromHashes ?? {}),
-    ...Object.values(resolved.fromIds ?? {}),
-  ] as const;
+  const out = resolvables.map((resolvable) => {
+    return matchBeatSaverResolvable({
+      onHashResolvable: (r) => {
+        if (resolved.fromHashes) {
+          // @ts-ignore
+          const resolvedItem = resolved.fromHashes[r.data];
+          if (resolvedItem) {
+            return {
+              ...resolvedItem,
+              difficulties: r.diffs,
+            };
+          }
+          return null;
+        }
+        return null;
+      },
+      onIdResolvable: (r) => {
+        if (resolved.fromIds) {
+          const resolvedItem = resolved.fromIds[r.data];
+          if (resolvedItem) {
+            return {
+              ...resolvedItem,
+              difficulties: r.diffs,
+            };
+          }
+          return null;
+        }
+        return null;
+      },
+    })(resolvable);
+  })
+    .filter(filterNulls);
+
+  return out as unknown as BeatSaberPlaylistSongItem[];
 };

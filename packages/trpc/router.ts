@@ -38,6 +38,7 @@ const map = t.router({
         (hashes as LowercaseMapHash[]).map((hash) => ({
           kind: "hash",
           data: hash,
+          diffs: [],
         })),
       )).fromHashes;
     }),
@@ -54,7 +55,7 @@ const map = t.router({
       z.object({ beatSaverResolvables: z.array(BeatSaverResolvableSchema) }),
     )
     .query(async ({ input: { beatSaverResolvables } }) => {
-      return await fetchAndCacheFromResolvables(beatSaverResolvables);
+      return await fetchAndCacheFromResolvables(beatSaverResolvables.map((x) => ({ ...x, diffs: [] })));
     }),
 });
 

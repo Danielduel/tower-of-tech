@@ -24,13 +24,19 @@ const buildMatchers = (key: string, skipEscape = false) => {
   const escapedKey = skipEscape ? key : escapeRegExp(key);
   return [
     new RegExp(` ${escapedKey}$`),
+    new RegExp(`^${escapedKey} `),
     new RegExp(`\\(${escapedKey}\\)$`),
     new RegExp(`\\[${escapedKey}\\]$`),
+    new RegExp(`^\\(${escapedKey}\\)`),
+    new RegExp(`^\\[${escapedKey}\\]`),
   ];
 };
 
-const negativeLookbehindStandardLower = `(?<!lawless)`;
-const negativeLookbehindStandardUpper = `(?<!Lawless)`;
+const negativeLookbehindStandardLower = `(?<!lawless )`;
+const negativeLookbehindStandardUpper = `(?<!Lawless )`;
+
+const negativeLookaheadExpertLower = `(?! plus)`;
+const negativeLookaheadExpertUpper = `(?! Plus)`;
 
 export const difficultyMapping = {
   easyStandard: {
@@ -40,8 +46,8 @@ export const difficultyMapping = {
       ...buildMatchers("E"),
       ...buildMatchers("es"),
       ...buildMatchers("ES"),
-      ...buildMatchers(`${negativeLookbehindStandardLower} easy`, true),
-      ...buildMatchers(`${negativeLookbehindStandardUpper} Easy`, true),
+      ...buildMatchers(`${negativeLookbehindStandardLower}easy`, true),
+      ...buildMatchers(`${negativeLookbehindStandardUpper}Easy`, true),
       ...buildMatchers("se"),
       ...buildMatchers("SE"),
       ...buildMatchers("ses"),
@@ -56,8 +62,8 @@ export const difficultyMapping = {
     matchers: [
       ...buildMatchers("n"),
       ...buildMatchers("N"),
-      ...buildMatchers(`${negativeLookbehindStandardLower} ${escapeRegExp("normal")}`, true),
-      ...buildMatchers(`${negativeLookbehindStandardUpper} ${escapeRegExp("Normal")}`, true),
+      ...buildMatchers(`${negativeLookbehindStandardLower}normal`, true),
+      ...buildMatchers(`${negativeLookbehindStandardUpper}Normal`, true),
       ...buildMatchers("sn"),
       ...buildMatchers("SN"),
       ...buildMatchers("standard normal"),
@@ -70,8 +76,8 @@ export const difficultyMapping = {
     matchers: [
       ...buildMatchers("h"),
       ...buildMatchers("H"),
-      ...buildMatchers(`${negativeLookbehindStandardLower} hard`, true),
-      ...buildMatchers(`${negativeLookbehindStandardUpper} Hard`, true),
+      ...buildMatchers(`${negativeLookbehindStandardLower}hard`, true),
+      ...buildMatchers(`${negativeLookbehindStandardUpper}Hard`, true),
       ...buildMatchers("sh"),
       ...buildMatchers("SH"),
       ...buildMatchers("standard hard"),
@@ -86,12 +92,12 @@ export const difficultyMapping = {
       ...buildMatchers("X"),
       ...buildMatchers("ex"),
       ...buildMatchers("EX"),
-      ...buildMatchers(`${negativeLookbehindStandardLower} expert`, true),
-      ...buildMatchers(`${negativeLookbehindStandardUpper} Expert`, true),
+      ...buildMatchers(`${negativeLookbehindStandardLower}expert${negativeLookaheadExpertLower}`, true),
+      ...buildMatchers(`${negativeLookbehindStandardUpper}Expert${negativeLookaheadExpertUpper}`, true),
       ...buildMatchers("sx"),
       ...buildMatchers("SX"),
-      ...buildMatchers("standard expert"),
-      ...buildMatchers("Standard Expert"),
+      ...buildMatchers(`standard expert${negativeLookaheadExpertLower}`, true),
+      ...buildMatchers(`Standard Expert${negativeLookaheadExpertUpper}`, true),
     ],
   },
 
@@ -106,8 +112,8 @@ export const difficultyMapping = {
       ...buildMatchers("EXP"),
       ...buildMatchers("ex+"),
       ...buildMatchers("EX+"),
-      ...buildMatchers(`${negativeLookbehindStandardLower} expert plus`, true),
-      ...buildMatchers(`${negativeLookbehindStandardUpper} Expert Plus`, true),
+      ...buildMatchers(`${negativeLookbehindStandardLower}expert plus`, true),
+      ...buildMatchers(`${negativeLookbehindStandardUpper}Expert Plus`, true),
       ...buildMatchers("sxp"),
       ...buildMatchers("SXP"),
       ...buildMatchers("sx+"),
@@ -154,8 +160,8 @@ export const difficultyMapping = {
     matchers: [
       ...buildMatchers("lx"),
       ...buildMatchers("LX"),
-      ...buildMatchers("lawless expert"),
-      ...buildMatchers("Lawless Expert"),
+      ...buildMatchers(`lawless expert${negativeLookaheadExpertLower}`, true),
+      ...buildMatchers(`Lawless Expert${negativeLookaheadExpertUpper}`, true),
     ],
   },
 
