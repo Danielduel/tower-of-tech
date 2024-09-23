@@ -9,9 +9,9 @@ Deno.test("BeatSaverResolvable.matchBeatSaverResolvable", () => {
     onIdResolvable: ({ data }) => `id ${data}`,
   });
 
-  assertEquals(test({ kind: "id", data: makeBeatSaverMapId("aaa") }), "id aaa");
+  assertEquals(test({ kind: "id", data: makeBeatSaverMapId("aaa"), diffs: [] }), "id aaa");
   assertEquals(
-    test({ kind: "hash", data: makeLowercaseMapHash("aaa") }),
+    test({ kind: "hash", data: makeLowercaseMapHash("aaa"), diffs: [] }),
     "hash aaa",
   );
 });
