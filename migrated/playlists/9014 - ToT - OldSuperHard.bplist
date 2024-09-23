@@ -285,18 +285,6 @@
       ]
     },
     {
-      "songName": "1:15",
-      "levelAuthorName": "Bitz",
-      "hash": "D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
-      "levelid": "custom_level_D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Into the wild",
       "levelAuthorName": "BigOlDumplin",
       "hash": "8C07CE415360D78E0E6094CE59D473AAAF9CB5EB",
@@ -317,15 +305,7 @@
         {
           "characteristic": "Lawless",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Footsteps",
-      "levelAuthorName": "Kojirase Techers",
-      "hash": "3983E1E1F5ED0DC98EAF421F6CC16F8FCF8BAD0E",
-      "levelid": "custom_level_3983E1E1F5ED0DC98EAF421F6CC16F8FCF8BAD0E",
-      "difficulties": [
+        },
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"

@@ -41,6 +41,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -65,6 +69,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -101,6 +109,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -133,18 +145,6 @@
       "levelAuthorName": "Nolanimations",
       "hash": "98EFC0DA9A276D9CE6755B260035A8A4BACE3EBF",
       "levelid": "custom_level_98EFC0DA9A276D9CE6755B260035A8A4BACE3EBF",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Ren'ai Saiban (Love Trial)",
-      "levelAuthorName": "kizuflux",
-      "hash": "43094923A770E1AA7193480E54D4C6299032EB8B",
-      "levelid": "custom_level_43094923A770E1AA7193480E54D4C6299032EB8B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -221,6 +221,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -245,6 +249,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -281,6 +289,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -325,18 +337,6 @@
       "levelAuthorName": "Spinvertigoo",
       "hash": "9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
       "levelid": "custom_level_9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Ugoku, Ugoku",
-      "levelAuthorName": "Hexagonial",
-      "hash": "7AC2BD85723ACB7D4FD9957E62A7769700755C04",
-      "levelid": "custom_level_7AC2BD85723ACB7D4FD9957E62A7769700755C04",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -517,18 +517,6 @@
       "levelAuthorName": "Timeweaver",
       "hash": "E799B25C9D5CBC6092B44CB97B4B83B45FD6B353",
       "levelid": "custom_level_E799B25C9D5CBC6092B44CB97B4B83B45FD6B353",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "(Not) A Devil",
-      "levelAuthorName": "Skeelie & Alice",
-      "hash": "988485B5EB4A9BCBE76076FDC884B801AE5D474C",
-      "levelid": "custom_level_988485B5EB4A9BCBE76076FDC884B801AE5D474C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -809,6 +797,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -821,6 +813,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -869,6 +865,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -1153,42 +1153,6 @@
       "levelAuthorName": "Spinvvy",
       "hash": "D0BECFCFE1BA235D4629CC1219D3B8D6FAEACE64",
       "levelid": "custom_level_D0BECFCFE1BA235D4629CC1219D3B8D6FAEACE64",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "p.h.",
-      "levelAuthorName": "TOFU",
-      "hash": "84BCFF4756AC66BF1746824B0B221EB1E6A4AFF2",
-      "levelid": "custom_level_84BCFF4756AC66BF1746824B0B221EB1E6A4AFF2",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Alive (TV Size)",
-      "levelAuthorName": "Joetastic",
-      "hash": "EC4C8298C8F9BA33AEB551D43C046FED3BA7F912",
-      "levelid": "custom_level_EC4C8298C8F9BA33AEB551D43C046FED3BA7F912",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Es Isso",
-      "levelAuthorName": "xScaramouche & JohnnyDee",
-      "hash": "3E71158D17E9C257E3DB69F98F7C1237D9C1B8D4",
-      "levelid": "custom_level_3E71158D17E9C257E3DB69F98F7C1237D9C1B8D4",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1761,18 +1725,6 @@
       ]
     },
     {
-      "songName": "Fukashiki No Carte",
-      "levelAuthorName": "Ken_Monogatari",
-      "hash": "D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
-      "levelid": "custom_level_D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Tic! Tac! Toe! (DJMAX)",
       "levelAuthorName": "Remie & Emiru",
       "hash": "F7409F66E6148EDF57CB8CF4D305822E2CD53381",
@@ -1801,18 +1753,6 @@
       "levelAuthorName": "Dantsu",
       "hash": "4CF63EC64F73626ECAECE92FC6D48CF144BCA574",
       "levelid": "custom_level_4CF63EC64F73626ECAECE92FC6D48CF144BCA574",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Haru",
-      "levelAuthorName": "Comyute & CookedChili",
-      "hash": "427EA5E28D898FA8D0822CFD043887D5A092D0A2",
-      "levelid": "custom_level_427EA5E28D898FA8D0822CFD043887D5A092D0A2",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2021,6 +1961,10 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     },
@@ -2117,6 +2061,10 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },
@@ -2397,42 +2345,6 @@
       ]
     },
     {
-      "songName": "Checkmate",
-      "levelAuthorName": "Alice",
-      "hash": "CF2825AB6FCC4456B7D1EB9EFA6E9F3DD722A561",
-      "levelid": "custom_level_CF2825AB6FCC4456B7D1EB9EFA6E9F3DD722A561",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Hoshikuzu distancia",
-      "levelAuthorName": "shrado & Bitz",
-      "hash": "754C2606436DAA4EE58D917A56EB23FCC12328F6",
-      "levelid": "custom_level_754C2606436DAA4EE58D917A56EB23FCC12328F6",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "She's Kerosene",
-      "levelAuthorName": "Andynak",
-      "hash": "0C1CCBEE630A85F390937A2B2CC52D876534DADD",
-      "levelid": "custom_level_0C1CCBEE630A85F390937A2B2CC52D876534DADD",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "Insane",
       "levelAuthorName": "Emiru & steeak, ",
       "hash": "79993E907F40A0EFFD855EE534588221989EEE60",
@@ -2465,30 +2377,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Yowanehaki",
-      "levelAuthorName": "Gabriel x Marsh",
-      "hash": "13A1B008E40284318053124031D54548A20D992A",
-      "levelid": "custom_level_13A1B008E40284318053124031D54548A20D992A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Monster",
-      "levelAuthorName": "Joshabi",
-      "hash": "8DCFE49242E87D1D3EECABA2E55EA8ACBF39DB0B",
-      "levelid": "custom_level_8DCFE49242E87D1D3EECABA2E55EA8ACBF39DB0B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -2565,18 +2453,6 @@
       ]
     },
     {
-      "songName": "Checkmate",
-      "levelAuthorName": "Alice",
-      "hash": "CF2825AB6FCC4456B7D1EB9EFA6E9F3DD722A561",
-      "levelid": "custom_level_CF2825AB6FCC4456B7D1EB9EFA6E9F3DD722A561",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "Domestic Drastic",
       "levelAuthorName": "Acubens, Dr_Marc",
       "hash": "E7D6CF1CE7B04C80C10C5AE5EE468DB73C7AE5E5",
@@ -2645,6 +2521,198 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Into The Abyss",
+      "levelAuthorName": "PogU",
+      "hash": "9FD1C652A4C578884AEEA8BFB58C7B9C4592F707",
+      "levelid": "custom_level_9FD1C652A4C578884AEEA8BFB58C7B9C4592F707",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "About You",
+      "levelAuthorName": "DeeDee",
+      "hash": "66CF939A52ACABC870EF4E76E483CC919B9CBEFB",
+      "levelid": "custom_level_66CF939A52ACABC870EF4E76E483CC919B9CBEFB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Happy Place",
+      "levelAuthorName": "SmokeyBacon",
+      "hash": "72514529CB3ADA7C6C596FEE675E948B5040F851",
+      "levelid": "custom_level_72514529CB3ADA7C6C596FEE675E948B5040F851",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Nightcore - I Wanna Be You Slave",
+      "levelAuthorName": "Tizian",
+      "hash": "24051B9670BFA41E72C641D6F3940CADB99AC942",
+      "levelid": "custom_level_24051B9670BFA41E72C641D6F3940CADB99AC942",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "DROPS",
+      "levelAuthorName": "Ken_Monogatari, steeak",
+      "hash": "E7F55FBBE6FBA0AAC4643ED436C6730507F032B1",
+      "levelid": "custom_level_E7F55FBBE6FBA0AAC4643ED436C6730507F032B1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Requiem",
+      "levelAuthorName": "EOP Glacier",
+      "hash": "56C281C3A43C4EE198D2D3351DA7AE6932FB5BD0",
+      "levelid": "custom_level_56C281C3A43C4EE198D2D3351DA7AE6932FB5BD0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "How to Be a Heartbreaker",
+      "levelAuthorName": "CoolingCloset",
+      "hash": "2D39FC1277C16E3185D5E1E39D38F2F7C2A147C2",
+      "levelid": "custom_level_2D39FC1277C16E3185D5E1E39D38F2F7C2A147C2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "I'll See You Again",
+      "levelAuthorName": "4orizon",
+      "hash": "E07A22551E46A241DA3C80F590E4352C165FBD31",
+      "levelid": "custom_level_E07A22551E46A241DA3C80F590E4352C165FBD31",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Kamisama-chan",
+      "levelAuthorName": "Gabriel",
+      "hash": "D7225696A7CB018E774E99D905B90AE164E3ED20",
+      "levelid": "custom_level_D7225696A7CB018E774E99D905B90AE164E3ED20",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "mystique as iris",
+      "levelAuthorName": "take_nyan",
+      "hash": "1DEE1BCA9E1D9EDA6182DA31FA4CF65D91FE8B15",
+      "levelid": "custom_level_1DEE1BCA9E1D9EDA6182DA31FA4CF65D91FE8B15",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Triad of Dryad",
+      "levelAuthorName": "Dr_Marc",
+      "hash": "CC40B2DA44C782E208D6C8DE704DA86927B5EE3A",
+      "levelid": "custom_level_CC40B2DA44C782E208D6C8DE704DA86927B5EE3A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Lied To",
+      "levelAuthorName": "oegoe",
+      "hash": "64606CE394718815DEECD696737EA1AEE40E8CF4",
+      "levelid": "custom_level_64606CE394718815DEECD696737EA1AEE40E8CF4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Reincarnation",
+      "levelAuthorName": "shad & AaltopahWi",
+      "hash": "52C3BAFFA792696C69A02F9870B1CC3FC3EFAEF2",
+      "levelid": "custom_level_52C3BAFFA792696C69A02F9870B1CC3FC3EFAEF2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Mikansei Rendezvous",
+      "levelAuthorName": "wangyufy",
+      "hash": "B43367E73A384695269F2D7DA5FC83DDE086D4E4",
+      "levelid": "custom_level_B43367E73A384695269F2D7DA5FC83DDE086D4E4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "KICK BACK",
+      "levelAuthorName": "Narwhal & Jabob",
+      "hash": "521F3F8BC77E1893D57768A44113CA8D7EB4B2EF",
+      "levelid": "custom_level_521F3F8BC77E1893D57768A44113CA8D7EB4B2EF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Dance Hall",
+      "levelAuthorName": "mikuri",
+      "hash": "B0E8C05765848187263EAABDF17F664BD42C904A",
+      "levelid": "custom_level_B0E8C05765848187263EAABDF17F664BD42C904A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

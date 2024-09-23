@@ -13,17 +13,14 @@
         {
           "characteristic": "Standard",
           "name": "Easy"
-        }
-      ]
-    },
-    {
-      "songName": "春竹叶",
-      "levelAuthorName": "Anii",
-      "hash": "0e48500e95a0201ade1eb27c797cb0f2db4707af",
-      "difficulties": [
+        },
         {
           "characteristic": "Standard",
           "name": "Normal"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -101,17 +98,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "春竹叶",
-      "levelAuthorName": "Anii",
-      "hash": "0e48500e95a0201ade1eb27c797cb0f2db4707af",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },

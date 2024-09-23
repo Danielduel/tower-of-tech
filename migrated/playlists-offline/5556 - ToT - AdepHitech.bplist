@@ -546,18 +546,6 @@
       ]
     },
     {
-      "songName": "Ljusa Stjärnan",
-      "levelAuthorName": "zeon",
-      "hash": "9988E50D064E05424813E98597E878C161F5D311",
-      "levelid": "custom_level_9988E50D064E05424813E98597E878C161F5D311",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "Deertracks",
       "levelAuthorName": "AllPoland & Phøenix",
       "hash": "63757612F82E0906C290323A373E4874E5176958",
@@ -614,18 +602,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "君の脈で踊りたかつた",
-      "levelAuthorName": "Eckimlon",
-      "hash": "CAEC6F76304DD9B588BAD14DC0E49B879FDE7C04",
-      "levelid": "custom_level_CAEC6F76304DD9B588BAD14DC0E49B879FDE7C04",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -766,6 +742,42 @@
       "levelAuthorName": "Kassi",
       "hash": "F0791A3AED5913BC4F06B6DB325A85E8D16B673D",
       "levelid": "custom_level_F0791A3AED5913BC4F06B6DB325A85E8D16B673D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Lunes ng Umaga (monday morning)",
+      "levelAuthorName": "Cush & WinterEdge",
+      "hash": "A049FAB55D0B295E1E174D02532009F341081954",
+      "levelid": "custom_level_A049FAB55D0B295E1E174D02532009F341081954",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "HER",
+      "levelAuthorName": "VoltageO",
+      "hash": "9B66B124E538FBE8A72B41CA577232E8BE6C4D79",
+      "levelid": "custom_level_9B66B124E538FBE8A72B41CA577232E8BE6C4D79",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "AMERICAN HORROR SHOW",
+      "levelAuthorName": "Najoko",
+      "hash": "C921A6C7748B4718DA4826E168A8CF5B363D073A",
+      "levelid": "custom_level_C921A6C7748B4718DA4826E168A8CF5B363D073A",
       "difficulties": [
         {
           "characteristic": "Standard",

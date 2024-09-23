@@ -237,18 +237,6 @@
       ]
     },
     {
-      "songName": "Moneko",
-      "levelAuthorName": "JohnnyDee & xScaramouche",
-      "hash": "9B34FED1340B36BB393AB42B15F5EA4B407CE498",
-      "levelid": "custom_level_9B34FED1340B36BB393AB42B15F5EA4B407CE498",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Forever",
       "levelAuthorName": "Teuflum & muffn",
       "hash": "5868546DD2A98E6F0BC288A83506EB766113A9EB",

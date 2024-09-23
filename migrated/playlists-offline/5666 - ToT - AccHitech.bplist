@@ -50,6 +50,10 @@
         {
           "characteristic": "Lawless",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },
@@ -150,34 +154,10 @@
       ]
     },
     {
-      "songName": "1:15",
-      "levelAuthorName": "Bitz",
-      "hash": "D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
-      "levelid": "custom_level_D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Rose",
       "levelAuthorName": "RoadieRune, Otektarangi & Scrapper",
       "hash": "DB2853AF792421B4334DFA2F2C25F986BE3F3B62",
       "levelid": "custom_level_DB2853AF792421B4334DFA2F2C25F986BE3F3B62",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Into The Abyss",
-      "levelAuthorName": "PogU",
-      "hash": "9FD1C652A4C578884AEEA8BFB58C7B9C4592F707",
-      "levelid": "custom_level_9FD1C652A4C578884AEEA8BFB58C7B9C4592F707",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -901,6 +881,10 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]
@@ -1858,6 +1842,102 @@
       "levelAuthorName": "Jonas_0_0",
       "hash": "CD0FD442138EFD50166F64A6AE6F9F913309FDF6",
       "levelid": "custom_level_CD0FD442138EFD50166F64A6AE6F9F913309FDF6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "culture",
+      "levelAuthorName": "yabje & Alice",
+      "hash": "1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "levelid": "custom_level_1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Hässlich",
+      "levelAuthorName": "Najoko",
+      "hash": "0D73A0418FEBEB2FCD76A283B88257CC12F04DD6",
+      "levelid": "custom_level_0D73A0418FEBEB2FCD76A283B88257CC12F04DD6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Ren'ai Saiban (Love Trial)",
+      "levelAuthorName": "kizuflux",
+      "hash": "43094923A770E1AA7193480E54D4C6299032EB8B",
+      "levelid": "custom_level_43094923A770E1AA7193480E54D4C6299032EB8B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "HYPE MODE",
+      "levelAuthorName": "TOFU",
+      "hash": "C031E7E6F3320EB526FBFEE9465A2A5F889331E6",
+      "levelid": "custom_level_C031E7E6F3320EB526FBFEE9465A2A5F889331E6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "dancinwithsomebawdy",
+      "levelAuthorName": "RetrX",
+      "hash": "2107373E17DB92328A156EA9EB1010EAC091AB55",
+      "levelid": "custom_level_2107373E17DB92328A156EA9EB1010EAC091AB55",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Laid-Back Journey",
+      "levelAuthorName": "Marsh",
+      "hash": "F0F27D54287CFBE513C7A1DBD031B2EBFFC4A8E7",
+      "levelid": "custom_level_F0F27D54287CFBE513C7A1DBD031B2EBFFC4A8E7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Haru wo Tsugeru",
+      "levelAuthorName": "kibo",
+      "hash": "05861986493A8481A3B69A3F808ECD6FBC2CE752",
+      "levelid": "custom_level_05861986493A8481A3B69A3F808ECD6FBC2CE752",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Queen of Ice (Nora En Pure Remix)",
+      "levelAuthorName": "Joetastic",
+      "hash": "98E5939D60BA2D499825F05AE7B57C44765C3061",
+      "levelid": "custom_level_98E5939D60BA2D499825F05AE7B57C44765C3061",
       "difficulties": [
         {
           "characteristic": "Standard",

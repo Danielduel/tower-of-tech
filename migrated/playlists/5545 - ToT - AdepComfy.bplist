@@ -125,6 +125,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -241,18 +245,6 @@
       "levelAuthorName": "unqlTango",
       "hash": "446376C3270840A04FA55A8E97EBF31227F60DA6",
       "levelid": "custom_level_446376C3270840A04FA55A8E97EBF31227F60DA6",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Atomic Dog",
-      "levelAuthorName": "DeeDee",
-      "hash": "3D64EC40B89E748CEB1B3C278E431D8BD47B0F11",
-      "levelid": "custom_level_3D64EC40B89E748CEB1B3C278E431D8BD47B0F11",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -465,18 +457,6 @@
       ]
     },
     {
-      "songName": "Don't Fight The Music",
-      "levelAuthorName": "Marsh",
-      "hash": "682127FE2E7A1974EAE65A3A3958CA6F766A705C",
-      "levelid": "custom_level_682127FE2E7A1974EAE65A3A3958CA6F766A705C",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "All Time Low",
       "levelAuthorName": "sploobers",
       "hash": "B01FA9A1FE229A67544CDF35CB6E9879FEA4A4A2",
@@ -497,6 +477,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     },
@@ -621,18 +605,6 @@
       ]
     },
     {
-      "songName": "Coin",
-      "levelAuthorName": "accuwucy",
-      "hash": "BF6D3F57EA986763325B570B5DFBACC3752C39A8",
-      "levelid": "custom_level_BF6D3F57EA986763325B570B5DFBACC3752C39A8",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "Scuffed Up Age",
       "levelAuthorName": "CookedChili",
       "hash": "ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
@@ -677,15 +649,7 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Mainframe",
-      "levelAuthorName": "Spinvvy & Phøenix",
-      "hash": "601C94F000D8E4070BFE0572C8F9449D10DD2607",
-      "levelid": "custom_level_601C94F000D8E4070BFE0572C8F9449D10DD2607",
-      "difficulties": [
+        },
         {
           "characteristic": "Standard",
           "name": "Hard"
@@ -725,18 +689,6 @@
         {
           "characteristic": "Standard",
           "name": "Easy"
-        }
-      ]
-    },
-    {
-      "songName": "Wagamama Party Night",
-      "levelAuthorName": "akikucorn",
-      "hash": "34512BC014259615B90DE08B7A97C4E53AD6BDEB",
-      "levelid": "custom_level_34512BC014259615B90DE08B7A97C4E53AD6BDEB",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
         }
       ]
     },
@@ -865,6 +817,150 @@
       "levelAuthorName": "EOP Glacier",
       "hash": "B78761623616A6F281157CDD720EF92C92C544D7",
       "levelid": "custom_level_B78761623616A6F281157CDD720EF92C92C544D7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Yowanehaki",
+      "levelAuthorName": "Gabriel x Marsh",
+      "hash": "13A1B008E40284318053124031D54548A20D992A",
+      "levelid": "custom_level_13A1B008E40284318053124031D54548A20D992A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "Chakra",
+      "levelAuthorName": "Jabob",
+      "hash": "8E6BC0438A81C60AEEC4E9AFB937145FC9ECD947",
+      "levelid": "custom_level_8E6BC0438A81C60AEEC4E9AFB937145FC9ECD947",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "Antithesis",
+      "levelAuthorName": "EOP Glacier",
+      "hash": "E370C49C81AC28F2BF58160A03AA48355E016F89",
+      "levelid": "custom_level_E370C49C81AC28F2BF58160A03AA48355E016F89",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "The Middle",
+      "levelAuthorName": "TetsuBeats",
+      "hash": "4B980371B6005CC176AED1B402BD104AF56C31A3",
+      "levelid": "custom_level_4B980371B6005CC176AED1B402BD104AF56C31A3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "THATS WHAT I WANT",
+      "levelAuthorName": "Lekrkoekj",
+      "hash": "B3993B161A5715D1328735C0B41965704EC09930",
+      "levelid": "custom_level_B3993B161A5715D1328735C0B41965704EC09930",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Coconut Mall",
+      "levelAuthorName": "Rashed",
+      "hash": "416E79781F2C521AC28F84100FCE57627F38A932",
+      "levelid": "custom_level_416E79781F2C521AC28F84100FCE57627F38A932",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Reincarnation",
+      "levelAuthorName": "shad & AaltopahWi",
+      "hash": "52C3BAFFA792696C69A02F9870B1CC3FC3EFAEF2",
+      "levelid": "custom_level_52C3BAFFA792696C69A02F9870B1CC3FC3EFAEF2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Memory Bank",
+      "levelAuthorName": "Tranch",
+      "hash": "4016765D988A9522E1ACB2FB32AB0C4D5E8414AE",
+      "levelid": "custom_level_4016765D988A9522E1ACB2FB32AB0C4D5E8414AE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "The 91's Conundrum",
+      "levelAuthorName": "yabje & Dereknalox123",
+      "hash": "F2B389D290C76AFDB42C155C2E04EE250852326B",
+      "levelid": "custom_level_F2B389D290C76AFDB42C155C2E04EE250852326B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "I Miss the Misery",
+      "levelAuthorName": "DNQ",
+      "hash": "CEAA1AB444A8CFA9C388D1590423150C6E76F134",
+      "levelid": "custom_level_CEAA1AB444A8CFA9C388D1590423150C6E76F134",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Chaser",
+      "levelAuthorName": "simplymarvellous",
+      "hash": "AB4CDAF0B684B5811D0C5F0F079862CA03C09431",
+      "levelid": "custom_level_AB4CDAF0B684B5811D0C5F0F079862CA03C09431",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "HUGE W",
+      "levelAuthorName": "Joshabi",
+      "hash": "8104BC82A204BF94EC7C3D8CFB00D67980907B2F",
+      "levelid": "custom_level_8104BC82A204BF94EC7C3D8CFB00D67980907B2F",
       "difficulties": [
         {
           "characteristic": "Standard",

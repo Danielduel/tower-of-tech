@@ -543,18 +543,6 @@
       ]
     },
     {
-      "songName": "Religion",
-      "levelAuthorName": "A Jhintleman & GojiCrafter",
-      "hash": "BC299E58DE7C56854C3485BA046834920BB81C8F",
-      "levelid": "custom_level_BC299E58DE7C56854C3485BA046834920BB81C8F",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "D.A.W",
       "levelAuthorName": "Schwank",
       "hash": "8378E68AAE69795128DEF5413EECD1E3B3B66BD5",
@@ -1235,15 +1223,7 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Angel Echo",
-      "levelAuthorName": "risi, The_Editor",
-      "hash": "1A21E7640DDABFB6780504A249A357F11849FAEB",
-      "levelid": "custom_level_1A21E7640DDABFB6780504A249A357F11849FAEB",
-      "difficulties": [
+        },
         {
           "characteristic": "Standard",
           "name": "Expert"
@@ -1251,14 +1231,74 @@
       ]
     },
     {
-      "songName": "Angel Echo",
-      "levelAuthorName": "risi, The_Editor",
-      "hash": "1A21E7640DDABFB6780504A249A357F11849FAEB",
-      "levelid": "custom_level_1A21E7640DDABFB6780504A249A357F11849FAEB",
+      "songName": "SUNDA",
+      "levelAuthorName": "BigOlDumplin",
+      "hash": "6C1BDA1188538D0E96196E5F4B338442FFC1E2CB",
+      "levelid": "custom_level_6C1BDA1188538D0E96196E5F4B338442FFC1E2CB",
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "Expert"
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "八神过来",
+      "levelAuthorName": "Ge2toro",
+      "hash": "D03D14FDDC3CCEF8CE49EAC16E5CEE8D5005E50C",
+      "levelid": "custom_level_D03D14FDDC3CCEF8CE49EAC16E5CEE8D5005E50C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "KURSE OF KHARTOUM",
+      "levelAuthorName": "WalkingKat",
+      "hash": "5910D71BE36D0C33A64E78890A8DDA3A1C158E12",
+      "levelid": "custom_level_5910D71BE36D0C33A64E78890A8DDA3A1C158E12",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "CopyCat",
+      "levelAuthorName": "Voidless",
+      "hash": "0BC26654239A745C26D4E2135BFFFD5B455AEC32",
+      "levelid": "custom_level_0BC26654239A745C26D4E2135BFFFD5B455AEC32",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Belden Towers",
+      "levelAuthorName": "Baguette",
+      "hash": "04355A9F0DC037F027F0AC0EC430BAF5782ED1DA",
+      "levelid": "custom_level_04355A9F0DC037F027F0AC0EC430BAF5782ED1DA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Wings of Silence",
+      "levelAuthorName": "oegoe",
+      "hash": "FEC57C467A4C52DAF4A252E971834C3E5BEF8E0E",
+      "levelid": "custom_level_FEC57C467A4C52DAF4A252E971834C3E5BEF8E0E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

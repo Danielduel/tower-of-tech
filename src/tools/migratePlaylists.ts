@@ -17,6 +17,7 @@ import {
   Uint8ArrayWriter,
   ZipWriter,
 } from "https://unpkg.com/@zip.js/zip.js@2.7.48/index.js";
+import { difficultyEquals } from "@/packages/utils/difficultyEquals.ts";
 
 const coverPath = new URL(import.meta.resolve("../../migrated/covers")).pathname;
 
@@ -92,28 +93,28 @@ const [playlists, guestPlaylists] = await Promise.all([
     ),
   ),
 ]);
-const mergedMaps = playlists.flatMap((playlist) => playlist.playlist.songs);
+// const mergedMaps = playlists.flatMap((playlist) => playlist.playlist.songs);
 
-const playlistItems: Record<string, BeatSaberPlaylistSongItem[]> = {};
-mergedMaps.forEach((item) => {
-  if (!playlistItems[item.hash]) playlistItems[item.hash] = [];
+// const playlistItems: Record<string, BeatSaberPlaylistSongItem[]> = {};
+// mergedMaps.forEach((item) => {
+//   if (!playlistItems[item.hash]) playlistItems[item.hash] = [];
 
-  playlistItems[item.hash].push(item);
-});
+//   playlistItems[item.hash].push(item);
+// });
 
-Object
-  .entries(playlistItems)
-  .filter(([_, arr]) => arr.length > 1)
-  .forEach(([key, arr]) => {
-    const mergedStringDiffs = arr
-      .flatMap((item) => item.difficulties)
-      .map((diff) => `${diff.characteristic}:${diff.name}`);
-    const difficulties = [...new Set(mergedStringDiffs)].map((stringDiff) => {
-      const [characteristic, name] = stringDiff.split(":");
-      return { characteristic, name } as BeatSaberPlaylistSongItemDifficulty;
-    });
-    playlistItems[key] = [{ ...arr[0], difficulties }];
-  });
+// Object
+//   .entries(playlistItems)
+//   .filter(([_, arr]) => arr.length > 1)
+//   .forEach(([key, arr]) => {
+//     const mergedStringDiffs = arr
+//       .flatMap((item) => item.difficulties)
+//       .map((diff) => `${diff.characteristic}:${diff.name}`);
+//     const difficulties = [...new Set(mergedStringDiffs)].map((stringDiff) => {
+//       const [characteristic, name] = stringDiff.split(":");
+//       return { characteristic, name } as BeatSaberPlaylistSongItemDifficulty;
+//     });
+//     playlistItems[key] = [{ ...arr[0], difficulties }];
+//   });
 
 // Note - I think nobody uses this playlist
 // const hardcodedMergedPlaylistId = "c73e5bf9-bb91-450c-913a-4b52d504444b";
@@ -129,6 +130,33 @@ Object
 //     },
 //   }, "/"),
 // );
+
+const removePlaylistItemDuplicates = (items: BeatSaberPlaylistSongItem[]): BeatSaberPlaylistSongItem[] => {
+  const out = new Map<string, BeatSaberPlaylistSongItem>();
+
+  items.forEach((item) => {
+    const key = item.hash;
+    const exists = out.has(key);
+    if (!exists) {
+      out.set(key, item);
+    }
+
+    const state = out.get(key)!;
+
+    item.difficulties &&
+      item.difficulties.forEach((diff) => {
+        const alreadyAdded = state.difficulties.some((stateItem) => difficultyEquals(stateItem, diff));
+
+        if (alreadyAdded) return;
+
+        state.difficulties.push(diff);
+      });
+
+    out.set(key, state);
+  });
+
+  return [...out.values()];
+};
 
 type CompressFiles = {
   localPath: string;
@@ -154,7 +182,7 @@ await Promise.all([
       image: coverBase64,
       playlistAuthor: playlist.playlistAuthor,
       playlistTitle: playlist.playlistTitle,
-      songs: playlist.songs,
+      songs: removePlaylistItemDuplicates(playlist.songs),
       customData: {
         id: playlist?.customData?.id ?? ulid(),
       },
@@ -209,7 +237,7 @@ await Promise.all([
       image: coverBase64,
       playlistAuthor: playlist.playlistAuthor,
       playlistTitle: playlist.playlistTitle,
-      songs: playlist.songs,
+      songs: removePlaylistItemDuplicates(playlist.songs),
       customData: {
         id: playlist?.customData?.id ?? ulid(),
       },

@@ -12,6 +12,7 @@ import {
 } from "@/packages/types/beatsaver.ts";
 import { Image } from "@/apps/website/components/Image.tsx";
 import { VisualNovelButtonMedium } from "@/apps/website/components/containers/VisualNovelBox.tsx";
+import { difficultyEquals } from "@/packages/utils/difficultyEquals.ts";
 
 type MapItemProps = {
   playlistMapItem?: typeof BeatSaberPlaylistSongItemSchema._type;
@@ -90,8 +91,6 @@ const beatSaverDiffsToDifficulties = (diffs: BeatSaverDiffs): DiffT[] => {
     }
   ));
 };
-const difficultyEquals = (diff1: DiffT, diff2: DiffT) =>
-  diff1.characteristic === diff2.characteristic && diff1.name === diff2.name;
 const Difficulties: FC<
   { selectedDifficulties?: DiffT[]; availableDifficulties?: DiffT[] }
 > = ({

@@ -90,18 +90,6 @@
       ]
     },
     {
-      "songName": "BREAKME",
-      "levelAuthorName": "DiscoBaIIerz",
-      "hash": "F21617FBFD8873237F65471CE0CD56E8DCCAAD1B",
-      "levelid": "custom_level_F21617FBFD8873237F65471CE0CD56E8DCCAAD1B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Danzen! Futari wa Pretty Cure",
       "levelAuthorName": "BigSlick",
       "hash": "D6F4A2624EC1D0165E953ABB9196AC7C364ED1FB",

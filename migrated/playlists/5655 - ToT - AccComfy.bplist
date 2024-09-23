@@ -753,18 +753,6 @@
       ]
     },
     {
-      "songName": "Sensitive Ghost",
-      "levelAuthorName": "Gabriel",
-      "hash": "EE945978CBA4DC7EFB0CDBCA8687144DF923489A",
-      "levelid": "custom_level_EE945978CBA4DC7EFB0CDBCA8687144DF923489A",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "Hollow",
       "levelAuthorName": "Chromia",
       "hash": "FB0EAAC20831AEE3922FD8985027DD1EB7EDE511",
@@ -1169,6 +1157,162 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "1:15",
+      "levelAuthorName": "Bitz, Tranch, WalkingKat & Astellic",
+      "hash": "D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
+      "levelid": "custom_level_D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Megalovania",
+      "levelAuthorName": "Noveliniel",
+      "hash": "179239BB7C5CC185952DD0612B6AECA4D7C79E13",
+      "levelid": "custom_level_179239BB7C5CC185952DD0612B6AECA4D7C79E13",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Big Shot",
+      "levelAuthorName": "zSkull162",
+      "hash": "15F6280C484157B8D056D74314E109AB15FAD107",
+      "levelid": "custom_level_15F6280C484157B8D056D74314E109AB15FAD107",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Get Into It (Yuh)",
+      "levelAuthorName": "SynthVenom",
+      "hash": "FC6DCEE5409E8033113DA5F3588C5DEFD524360E",
+      "levelid": "custom_level_FC6DCEE5409E8033113DA5F3588C5DEFD524360E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "oniichan is ded ",
+      "levelAuthorName": "Umuruq",
+      "hash": "7F6A2104F1FC7E27E4AC0F3DBB9D0A67C313DEE7",
+      "levelid": "custom_level_7F6A2104F1FC7E27E4AC0F3DBB9D0A67C313DEE7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "ONIGIRI FREEWAY",
+      "levelAuthorName": "Fnyt",
+      "hash": "CF484CF057414606D273B8E61AB56258F93A77FE",
+      "levelid": "custom_level_CF484CF057414606D273B8E61AB56258F93A77FE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Control (ft. Max Marshall)",
+      "levelAuthorName": "pkdan",
+      "hash": "7235B5B0A776AC7FE7A9C33BEC0F2FFA05AEB11D",
+      "levelid": "custom_level_7235B5B0A776AC7FE7A9C33BEC0F2FFA05AEB11D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Waluigi Pinball",
+      "levelAuthorName": "Rashed",
+      "hash": "F39845F55D30479735767776327C71214A0BA1C8",
+      "levelid": "custom_level_F39845F55D30479735767776327C71214A0BA1C8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Feel It",
+      "levelAuthorName": "August",
+      "hash": "1646B71A9CA262CA56BDE71CC313D422964720AC",
+      "levelid": "custom_level_1646B71A9CA262CA56BDE71CC313D422964720AC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Wagamama Party Night",
+      "levelAuthorName": "akikucorn",
+      "hash": "34512BC014259615B90DE08B7A97C4E53AD6BDEB",
+      "levelid": "custom_level_34512BC014259615B90DE08B7A97C4E53AD6BDEB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Don't Fight The Music",
+      "levelAuthorName": "Marsh",
+      "hash": "682127FE2E7A1974EAE65A3A3958CA6F766A705C",
+      "levelid": "custom_level_682127FE2E7A1974EAE65A3A3958CA6F766A705C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Need U Now",
+      "levelAuthorName": "Kassi",
+      "hash": "578DBD039BBD576A2F122F96C97578F95C4B1536",
+      "levelid": "custom_level_578DBD039BBD576A2F122F96C97578F95C4B1536",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Better Not",
+      "levelAuthorName": "Olaf",
+      "hash": "4A9FD81F0E0D24AB42118FC7E8F722EAD8A0B4A6",
+      "levelid": "custom_level_4A9FD81F0E0D24AB42118FC7E8F722EAD8A0B4A6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }
