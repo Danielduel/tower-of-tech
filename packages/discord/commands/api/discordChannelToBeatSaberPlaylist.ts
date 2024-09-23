@@ -5,27 +5,50 @@ import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { links } from "@/apps/website/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
+import { BeatSaverResolvable } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
+import { matchBeatSaverResolvable } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 
-const beatSaverResolvedToSongs = (
-  arr: (
-    | typeof BeatSaverMapResponseSuccessSchema._type
-    | null
-    | undefined
-  )[],
-): BeatSaberPlaylistSongItem[] => {
-  return arr
-    .flatMap((data) => {
-      if (!data) return null;
-      return {
-        difficulties: [],
-        hash: data.versions[0].hash ?? "",
-        levelAuthorName: data.uploader.name ?? "",
-        levelid: `custom_level_${data.versions[0].hash}`,
-        songName: data.name ?? "",
-        key: data.id ?? "",
-      };
-    })
+const beatSaverMergeResponseAndResolvablesDiffToSongsItems = (resolvables: BeatSaverResolvable[], resolved: (
+  | typeof BeatSaverMapResponseSuccessSchema._type
+  | null
+  | undefined
+)[]): BeatSaberPlaylistSongItem[] => {
+  const out = resolvables.map((resolvable) => {
+    return matchBeatSaverResolvable({
+      onHashResolvable: (r) => {
+        const data = resolved.find((x) => x?.versions[0].hash === r.data);
+        if (data) {
+          return {
+            difficulties: r.diffs,
+            hash: data.versions[0].hash ?? "",
+            levelAuthorName: data.uploader.name ?? "",
+            levelid: `custom_level_${data.versions[0].hash}`,
+            songName: data.name ?? "",
+            key: data.id ?? "",
+          };
+        }
+        return null;
+      },
+      onIdResolvable: (r) => {
+        const data = resolved.find((x) => x?.id === r.data);
+        if (data) {
+          return {
+            difficulties: r.diffs,
+            hash: data.versions[0].hash ?? "",
+            levelAuthorName: data.uploader.name ?? "",
+            levelid: `custom_level_${data.versions[0].hash}`,
+            songName: data.name ?? "",
+            key: data.id ?? "",
+          };
+        }
+
+        return null;
+      },
+    })(resolvable);
+  })
     .filter(filterNulls);
+
+  return out;
 };
 
 export async function discordChannelToBeatSaberPlaylist(
@@ -54,7 +77,7 @@ export async function discordChannelToBeatSaberPlaylist(
   const responsePlaylist: BeatSaberPlaylist = {
     playlistAuthor: "Discord ToT bot",
     playlistTitle: `${data.channelName} (${data.guildName}) - ToT Bot`,
-    songs: beatSaverResolvedToSongs(data.resolved),
+    songs: beatSaverMergeResponseAndResolvablesDiffToSongsItems(data.resolvables, data.resolved),
     image: "",
     customData: {
       syncURL: links.api.v1.discord.playlist.download(

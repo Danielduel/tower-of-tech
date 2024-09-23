@@ -53,5 +53,6 @@ export async function discordChannelToBeatSaverData(
     guildName: data.guildName,
     channelName: data.channelName,
     resolved,
+    resolvables: data.resolvables,
   };
 }

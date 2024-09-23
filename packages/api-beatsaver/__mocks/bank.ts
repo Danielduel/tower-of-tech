@@ -181,6 +181,11 @@ export const lazyBankMessageToIdWithDiffs: [string, BeatSaverMapId, BeatSaberPla
     makeBeatSaverMapId("39543"),
     standard.expertPlus,
   ],
+  [
+    "https://beatsaver.com/maps/3ef5b (ex)",
+    makeBeatSaverMapId("3ef5b"),
+    standard.expert,
+  ],
 ];
 
 export const lazyBankMessageToId: [string, BeatSaverMapId, BeatSaberPlaylistSongItemDifficulty[]][] = [

@@ -22,6 +22,7 @@ import { filterNulls } from "@/packages/utils/filter.ts";
 import { ulid } from "kvdex/src/deps.ts";
 import { BeatSaberPlaylistSongItemDifficulty } from "@/src/types/BeatSaberPlaylist.d.ts";
 import { BeatSaberPlaylistSongItem } from "@/src/types/BeatSaberPlaylist.d.ts";
+import { BeatSaverMapResponseSuccessSchema } from "@/packages/types/beatsaver.ts";
 
 export { BeatSaverApi };
 
@@ -243,51 +244,11 @@ export const fetchAndCacheFromResolvablesRaw = async (
 
 export const fetchAndCacheFromResolvables = async (
   resolvables: BeatSaverResolvable[],
-) => {
+): Promise<typeof BeatSaverMapResponseSuccessSchema._type[]> => {
   const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
-  const fromHashesValueArray = Object.values(resolved.fromHashes ?? {});
 
-  const out = resolvables.map((resolvable) => {
-    return matchBeatSaverResolvable<BeatSaberPlaylistSongItem | null, BeatSaberPlaylistSongItem | null>({
-      onHashResolvable: (r) => {
-        if (resolved.fromHashes) {
-          // @ts-ignore
-          const resolvedItem = resolved.fromHashes[r.data];
-          if (resolvedItem) {
-            return {
-              ...resolvedItem,
-              difficulties: r.diffs,
-            };
-          }
-          return null;
-        }
-        return null;
-      },
-      // @ts-ignore
-      onIdResolvable: (r) => {
-        if (resolved.fromIds) {
-          const resolvedItemFromId = resolved.fromIds[r.data];
-          if (resolvedItemFromId) {
-            return {
-              ...resolvedItemFromId,
-              difficulties: r.diffs,
-            };
-          }
-          const resolvedItemFromHash = fromHashesValueArray.find((x) => (x as Record<string, unknown>).id === r.data);
-          if (resolvedItemFromHash) {
-            return {
-              ...resolvedItemFromHash,
-              difficulties: r.diffs,
-            };
-          }
-
-          return null;
-        }
-        return null;
-      },
-    })(resolvable);
-  })
-    .filter(filterNulls);
-
-  return out;
+  return [
+    ...Object.values<typeof BeatSaverMapResponseSuccessSchema._type>(resolved.fromHashes ?? {}),
+    ...Object.values(resolved.fromIds ?? {}),
+  ].filter(filterNulls);
 };
