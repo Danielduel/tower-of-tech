@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - MidHitech",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHPPDM9XD77EGJCVTA81",
-    "sort": 5766
+    "id": "01HK8XCHPPDM9XD77EGJCVTA81"
   },
   "songs": [
     {
@@ -1439,6 +1438,66 @@
       "levelAuthorName": "Azurii",
       "hash": "49A826824F726706FA830CD0542600E2C6B36CC1",
       "levelid": "custom_level_49A826824F726706FA830CD0542600E2C6B36CC1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "911",
+      "levelAuthorName": "PogU",
+      "hash": "4EAAAF8AA25B690C98E9C0C58176627B0D61CD42",
+      "levelid": "custom_level_4EAAAF8AA25B690C98E9C0C58176627B0D61CD42",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Neon Shot",
+      "levelAuthorName": "Astellic",
+      "hash": "6AFBDA127475986EF96A5EEDD947133F24D13EEF",
+      "levelid": "custom_level_6AFBDA127475986EF96A5EEDD947133F24D13EEF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "HYPER4ID",
+      "levelAuthorName": "VoltageO",
+      "hash": "5281ADDD3044164B7AE88942DFD92A881E0AEB82",
+      "levelid": "custom_level_5281ADDD3044164B7AE88942DFD92A881E0AEB82",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Libertas",
+      "levelAuthorName": "Eckimlon",
+      "hash": "72E5B35A67D6BEA005C0810D95A20D6BD6948396",
+      "levelid": "custom_level_72E5B35A67D6BEA005C0810D95A20D6BD6948396",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hakkiri Shiyouze",
+      "levelAuthorName": "minsiii",
+      "hash": "37E2407CA671B1404991DDCE549A315AB981DB90",
+      "levelid": "custom_level_37E2407CA671B1404991DDCE549A315AB981DB90",
       "difficulties": [
         {
           "characteristic": "Standard",

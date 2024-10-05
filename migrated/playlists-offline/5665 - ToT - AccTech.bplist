@@ -74,30 +74,6 @@
       ]
     },
     {
-      "songName": "Failure Girl (inabakumori Remix)",
-      "levelAuthorName": "Kanahebi",
-      "hash": "5D54C8279B19120B1A8272D37C5FADB8F6BB3B26",
-      "levelid": "custom_level_5D54C8279B19120B1A8272D37C5FADB8F6BB3B26",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Monsters",
-      "levelAuthorName": "JRE_McNuggies",
-      "hash": "67A8A7EF7D27EF3A62BC27F1A5F73B2CE639A5CB",
-      "levelid": "custom_level_67A8A7EF7D27EF3A62BC27F1A5F73B2CE639A5CB",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Checkmate",
       "levelAuthorName": "Alice",
       "hash": "CF2825AB6FCC4456B7D1EB9EFA6E9F3DD722A561",
@@ -110,18 +86,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Fireflies",
-      "levelAuthorName": "GojiCrafter",
-      "hash": "0DAFAF7E0D83EFFA6D1F4FC409A612AD3AE6FB31",
-      "levelid": "custom_level_0DAFAF7E0D83EFFA6D1F4FC409A612AD3AE6FB31",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -306,18 +270,6 @@
       ]
     },
     {
-      "songName": "Samurai Heart (Some Like It Hot!!)",
-      "levelAuthorName": "Kanahebi",
-      "hash": "D6D7FAFFD78233E0C2717B3C2D211DA5BF818C0D",
-      "levelid": "custom_level_D6D7FAFFD78233E0C2717B3C2D211DA5BF818C0D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Goodbye Declaration",
       "levelAuthorName": "TOFU",
       "hash": "B4B79DAEE82AE1C75BFE64572AB9FA9D442DBA2F",
@@ -334,30 +286,6 @@
       "levelAuthorName": "Spinvertigoo",
       "hash": "9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
       "levelid": "custom_level_9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Boi",
-      "levelAuthorName": "Kanahebi",
-      "hash": "26BC22E684B4566D131680CC633814D486B79BD9",
-      "levelid": "custom_level_26BC22E684B4566D131680CC633814D486B79BD9",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Aien-Jihen",
-      "levelAuthorName": "Gabriel & take_nyan",
-      "hash": "D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37",
-      "levelid": "custom_level_D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1638,18 +1566,6 @@
       ]
     },
     {
-      "songName": "Party Evenig, HOLLOWood",
-      "levelAuthorName": "mikuri",
-      "hash": "C55D03A0024168F94DC56A359E6FA388DE700C47",
-      "levelid": "custom_level_C55D03A0024168F94DC56A359E6FA388DE700C47",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "Sound 104",
       "levelAuthorName": "Nixie.Korten",
       "hash": "A9F80417228B6D5390B4691AE43EDF55222CEE81",
@@ -2698,6 +2614,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -2706,6 +2626,114 @@
       "levelAuthorName": "mikuri",
       "hash": "B0E8C05765848187263EAABDF17F664BD42C904A",
       "levelid": "custom_level_B0E8C05765848187263EAABDF17F664BD42C904A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Antwoord",
+      "levelAuthorName": "Uncouth",
+      "hash": "16FBEBD833AB1C6FE2EEAB26C59FFD3C55751B9F",
+      "levelid": "custom_level_16FBEBD833AB1C6FE2EEAB26C59FFD3C55751B9F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "SLAY",
+      "levelAuthorName": "meoaww",
+      "hash": "81DBA947B94067C9D581AEDA5F2A1167A1A862B2",
+      "levelid": "custom_level_81DBA947B94067C9D581AEDA5F2A1167A1A862B2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "5733P BOMB",
+      "levelAuthorName": "Feco",
+      "hash": "5FC32164416EE61837096B971FAD4CC57FF4A872",
+      "levelid": "custom_level_5FC32164416EE61837096B971FAD4CC57FF4A872",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "惊鹊",
+      "levelAuthorName": "ani",
+      "hash": "CAB94365D4625073A64B5111610FEBD01AF6E6E2",
+      "levelid": "custom_level_CAB94365D4625073A64B5111610FEBD01AF6E6E2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Catch Me",
+      "levelAuthorName": "nitronik.exe",
+      "hash": "803342D149751A1BEFCD0D931588A130424CD2A9",
+      "levelid": "custom_level_803342D149751A1BEFCD0D931588A130424CD2A9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Higashi",
+      "levelAuthorName": "zeon",
+      "hash": "28D1891F9A6D7B120741B4D100FBDFF584919EA1",
+      "levelid": "custom_level_28D1891F9A6D7B120741B4D100FBDFF584919EA1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Moby Duck",
+      "levelAuthorName": "gemboyong",
+      "hash": "023A8F07F08A9D6A580BB4B9F723D3541F857B31",
+      "levelid": "custom_level_023A8F07F08A9D6A580BB4B9F723D3541F857B31",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Jekyll",
+      "levelAuthorName": "Comyute",
+      "hash": "BD14FA3D5423DE4962C29B3224E64A361A57E98C",
+      "levelid": "custom_level_BD14FA3D5423DE4962C29B3224E64A361A57E98C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "大黒天",
+      "levelAuthorName": "okazu",
+      "hash": "DD48329BB30C6EDD8A1B8B6F301147F4959E5C60",
+      "levelid": "custom_level_DD48329BB30C6EDD8A1B8B6F301147F4959E5C60",
       "difficulties": [
         {
           "characteristic": "Standard",

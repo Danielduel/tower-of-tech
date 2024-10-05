@@ -650,6 +650,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -782,6 +786,54 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "I Knew You Were Trouble",
+      "levelAuthorName": "Brakepie, AlphaYT",
+      "hash": "F4EC5999DADFA56CA3AA846F51A2B810BF2476A9",
+      "levelid": "custom_level_F4EC5999DADFA56CA3AA846F51A2B810BF2476A9",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Drink",
+      "levelAuthorName": "RealCoda & Batthew",
+      "hash": "BB1957731A7A84BB09BF2B35355C68616E63413B",
+      "levelid": "custom_level_BB1957731A7A84BB09BF2B35355C68616E63413B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "chihiro",
+      "levelAuthorName": "Kassi & Taddus",
+      "hash": "FA4A78637C21CD5EC3AFAF6675FB52BC1C816512",
+      "levelid": "custom_level_FA4A78637C21CD5EC3AFAF6675FB52BC1C816512",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Angel Echo",
+      "levelAuthorName": "risi, The_Editor",
+      "hash": "1A21E7640DDABFB6780504A249A357F11849FAEB",
+      "levelid": "custom_level_1A21E7640DDABFB6780504A249A357F11849FAEB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     }

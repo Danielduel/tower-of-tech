@@ -64,7 +64,7 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
+          "name": "Expert"
         }
       ]
     },
@@ -137,6 +137,10 @@
         {
           "characteristic": "Standard",
           "name": "Normal"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },
@@ -148,7 +152,7 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "Hard"
+          "name": "Normal"
         }
       ]
     },
@@ -185,6 +189,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -640,10 +648,6 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "Normal"
-        },
-        {
-          "characteristic": "Standard",
           "name": "Easy"
         }
       ]
@@ -653,18 +657,6 @@
       "levelAuthorName": "TG90",
       "hash": "DF4E1EC7A5DF5A0B9465C55820D92D607B2755F6",
       "levelid": "custom_level_DF4E1EC7A5DF5A0B9465C55820D92D607B2755F6",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Spring Snow",
-      "levelAuthorName": "TheBlackParrot, Phøenix",
-      "hash": "CD2BA4D879895E112A1A99DA8C4FA6B43BB70EF1",
-      "levelid": "custom_level_CD2BA4D879895E112A1A99DA8C4FA6B43BB70EF1",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -857,7 +849,12 @@
       "levelAuthorName": "RateGyro",
       "hash": "5BB6A279FD2C6BF20495F42B6E4395A45F9C197C",
       "levelid": "custom_level_5BB6A279FD2C6BF20495F42B6E4395A45F9C197C",
-      "difficulties": []
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
     },
     {
       "songName": "Shutdown!",
@@ -903,7 +900,7 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "Expert"
+          "name": "Hard"
         }
       ]
     },
@@ -915,7 +912,7 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
+          "name": "Hard"
         }
       ]
     },
@@ -940,6 +937,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -1156,6 +1157,10 @@
         {
           "characteristic": "Standard",
           "name": "Easy"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -1180,6 +1185,10 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     },
@@ -1216,6 +1225,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -1384,6 +1397,114 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "EYE",
+      "levelAuthorName": "TOFU",
+      "hash": "0188B5CBE1236A08D137E866B9E177F15EAC560B",
+      "levelid": "custom_level_0188B5CBE1236A08D137E866B9E177F15EAC560B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "SUN GOES DOWN",
+      "levelAuthorName": "Shappy",
+      "hash": "D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
+      "levelid": "custom_level_D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "VORACITY",
+      "levelAuthorName": "Joshabi & Bitz",
+      "hash": "78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
+      "levelid": "custom_level_78B222785FA5798BA4D1E9C531F0AB98A393EAF2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "Ljusa Stjärnan",
+      "levelAuthorName": "zeon",
+      "hash": "9988E50D064E05424813E98597E878C161F5D311",
+      "levelid": "custom_level_9988E50D064E05424813E98597E878C161F5D311",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "BATTER UP",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "1FFE7EC8F89D288C49A020F2071CC0FD8F214ECF",
+      "levelid": "custom_level_1FFE7EC8F89D288C49A020F2071CC0FD8F214ECF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "MIROH",
+      "levelAuthorName": "simplymarvellous",
+      "hash": "B2D6B6334731009E4830DEC4C590B2EE3193AFC7",
+      "levelid": "custom_level_B2D6B6334731009E4830DEC4C590B2EE3193AFC7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Pop It",
+      "levelAuthorName": "Joetastic",
+      "hash": "A4C56F06B433CC0D467A0C9BD693EDFECC496E4A",
+      "levelid": "custom_level_A4C56F06B433CC0D467A0C9BD693EDFECC496E4A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "chihiro",
+      "levelAuthorName": "Kassi & Taddus",
+      "hash": "FA4A78637C21CD5EC3AFAF6675FB52BC1C816512",
+      "levelid": "custom_level_FA4A78637C21CD5EC3AFAF6675FB52BC1C816512",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Cool Me Down",
+      "levelAuthorName": "Ge2toro",
+      "hash": "C26EF93C2094FC3EFCCBC6B651FE77296A408B16",
+      "levelid": "custom_level_C26EF93C2094FC3EFCCBC6B651FE77296A408B16",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     }

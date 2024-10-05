@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - RainbowSurf",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HM4203RA2Q1R212DYYZW0VE4",
-    "sort": 6555
+    "id": "01HM4203RA2Q1R212DYYZW0VE4"
   },
   "songs": [
     {
@@ -398,6 +397,30 @@
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "911",
+      "levelAuthorName": "PogU",
+      "hash": "4EAAAF8AA25B690C98E9C0C58176627B0D61CD42",
+      "levelid": "custom_level_4EAAAF8AA25B690C98E9C0C58176627B0D61CD42",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "ouroVoros",
+      "levelAuthorName": "aonoa",
+      "hash": "8088506FA61DE55095CEA399AE483D14E9AEF122",
+      "levelid": "custom_level_8088506FA61DE55095CEA399AE483D14E9AEF122",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]

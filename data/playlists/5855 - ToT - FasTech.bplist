@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - FasTech",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HM4203RR9TZ2KAYG3BQ4ZJRV",
-    "sort": 5855
+    "id": "01HM4203RR9TZ2KAYG3BQ4ZJRV"
   },
   "songs": [
     {
@@ -419,6 +418,42 @@
       "levelAuthorName": "wangyufy",
       "hash": "8F0191E0B860E79BC4CC5ABB5D70F9DC4442C137",
       "levelid": "custom_level_8F0191E0B860E79BC4CC5ABB5D70F9DC4442C137",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Indomitable Spirit",
+      "levelAuthorName": "Foxy Boi",
+      "hash": "159DD14A3641566982908639DC08FA94E48F74CB",
+      "levelid": "custom_level_159DD14A3641566982908639DC08FA94E48F74CB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "ANOMALY",
+      "levelAuthorName": "dibl",
+      "hash": "B0932626D4D983F7AD1BF3ADE951068C48AEF6B8",
+      "levelid": "custom_level_B0932626D4D983F7AD1BF3ADE951068C48AEF6B8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "We Got the Moves",
+      "levelAuthorName": "Aimedhades16",
+      "hash": "1950AEFC629DA442919BD802B2DF1B65E00960B4",
+      "levelid": "custom_level_1950AEFC629DA442919BD802B2DF1B65E00960B4",
       "difficulties": [
         {
           "characteristic": "Standard",

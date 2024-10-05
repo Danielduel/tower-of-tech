@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - MidComfy",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HM4203SPHDAP94MS02S49JC6",
-    "sort": 5755
+    "id": "01HM4203SPHDAP94MS02S49JC6"
   },
   "songs": [
     {
@@ -791,6 +790,18 @@
       "levelAuthorName": "Elecast",
       "hash": "9FCEE83FB7501BC72131674731B3FE6209DA814E",
       "levelid": "custom_level_9FCEE83FB7501BC72131674731B3FE6209DA814E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "reeeplaaaay",
+      "levelAuthorName": "oermergeesh",
+      "hash": "326D0CB6C3DF3869099E867346120CBCA5FAD213",
+      "levelid": "custom_level_326D0CB6C3DF3869099E867346120CBCA5FAD213",
       "difficulties": [
         {
           "characteristic": "Standard",

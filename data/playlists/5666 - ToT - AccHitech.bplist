@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - AccHitech",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHRDHER45YMZ7XDS0RZ6",
-    "sort": 5666
+    "id": "01HK8XCHRDHER45YMZ7XDS0RZ6"
   },
   "songs": [
     {
@@ -50,6 +49,10 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]
@@ -143,18 +146,6 @@
       "levelAuthorName": "namaki_duo",
       "hash": "84D5C213AF8F4F2FF83E5EFC6D6B9923011C0883",
       "levelid": "custom_level_84D5C213AF8F4F2FF83E5EFC6D6B9923011C0883",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "1:15",
-      "levelAuthorName": "Bitz",
-      "hash": "D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
-      "levelid": "custom_level_D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -890,6 +881,10 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]
@@ -1927,18 +1922,6 @@
       ]
     },
     {
-      "songName": "Fukashiki No Carte",
-      "levelAuthorName": "Ken_Monogatari",
-      "hash": "D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
-      "levelid": "custom_level_D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Haru wo Tsugeru",
       "levelAuthorName": "kibo",
       "hash": "05861986493A8481A3B69A3F808ECD6FBC2CE752",
@@ -1955,6 +1938,126 @@
       "levelAuthorName": "Joetastic",
       "hash": "98E5939D60BA2D499825F05AE7B57C44765C3061",
       "levelid": "custom_level_98E5939D60BA2D499825F05AE7B57C44765C3061",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "search & destroy",
+      "levelAuthorName": "GojiCrafter & Parapass",
+      "hash": "AF1C32549CDFB46BA30D52EA33FE4EF26A729654",
+      "levelid": "custom_level_AF1C32549CDFB46BA30D52EA33FE4EF26A729654",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Boi",
+      "levelAuthorName": "Kanahebi",
+      "hash": "26BC22E684B4566D131680CC633814D486B79BD9",
+      "levelid": "custom_level_26BC22E684B4566D131680CC633814D486B79BD9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Party Evenig, HOLLOWood",
+      "levelAuthorName": "mikuri",
+      "hash": "C55D03A0024168F94DC56A359E6FA388DE700C47",
+      "levelid": "custom_level_C55D03A0024168F94DC56A359E6FA388DE700C47",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Angel Echo",
+      "levelAuthorName": "risi, The_Editor",
+      "hash": "1A21E7640DDABFB6780504A249A357F11849FAEB",
+      "levelid": "custom_level_1A21E7640DDABFB6780504A249A357F11849FAEB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Rahasia Perempuan (Swing Version)",
+      "levelAuthorName": "gemboyong",
+      "hash": "8BBC81BCC75C5E433122842040AE65F0FF1D893C",
+      "levelid": "custom_level_8BBC81BCC75C5E433122842040AE65F0FF1D893C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Jekyll",
+      "levelAuthorName": "Comyute",
+      "hash": "BD14FA3D5423DE4962C29B3224E64A361A57E98C",
+      "levelid": "custom_level_BD14FA3D5423DE4962C29B3224E64A361A57E98C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Surface Tension",
+      "levelAuthorName": "WhipsEdge",
+      "hash": "07825009025BD05104840DF619B4A19103E6A866",
+      "levelid": "custom_level_07825009025BD05104840DF619B4A19103E6A866",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Pop Song",
+      "levelAuthorName": "thelitlewiseowl",
+      "hash": "258F42C1C9B472EF532057D0C6F9E95002970A7C",
+      "levelid": "custom_level_258F42C1C9B472EF532057D0C6F9E95002970A7C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Samurai Heart (Some Like It Hot!!)",
+      "levelAuthorName": "Kanahebi",
+      "hash": "D6D7FAFFD78233E0C2717B3C2D211DA5BF818C0D",
+      "levelid": "custom_level_D6D7FAFFD78233E0C2717B3C2D211DA5BF818C0D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Aien-Jihen",
+      "levelAuthorName": "Gabriel & take_nyan",
+      "hash": "D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37",
+      "levelid": "custom_level_D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37",
       "difficulties": [
         {
           "characteristic": "Standard",

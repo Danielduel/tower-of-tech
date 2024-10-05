@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - Old Tek",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HM4203RJHZYD9JDDDW1SD1EQ",
-    "sort": 9011
+    "id": "01HM4203RJHZYD9JDDDW1SD1EQ"
   },
   "songs": [
     {
@@ -86,18 +85,6 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "BREAKME",
-      "levelAuthorName": "DiscoBaIIerz",
-      "hash": "F21617FBFD8873237F65471CE0CD56E8DCCAAD1B",
-      "levelid": "custom_level_F21617FBFD8873237F65471CE0CD56E8DCCAAD1B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]

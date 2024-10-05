@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - MidTech",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHRK0NSY3PNTPPBJ0X1F",
-    "sort": 5765
+    "id": "01HK8XCHRK0NSY3PNTPPBJ0X1F"
   },
   "songs": [
     {
@@ -1871,6 +1870,54 @@
       "levelAuthorName": "Emir",
       "hash": "20962ADBBC615349D62F8AE1061FB6B8CB513712",
       "levelid": "custom_level_20962ADBBC615349D62F8AE1061FB6B8CB513712",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Destroy",
+      "levelAuthorName": "Gabriel & okazu",
+      "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Oh wow!",
+      "levelAuthorName": "esa_esa",
+      "hash": "F0093C2E23852304D44DCAACDE24E961299A5274",
+      "levelid": "custom_level_F0093C2E23852304D44DCAACDE24E961299A5274",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Maholova",
+      "levelAuthorName": "voltage4536",
+      "hash": "0B80C73AFD64972FA47104FE9A5C23136DB9514D",
+      "levelid": "custom_level_0B80C73AFD64972FA47104FE9A5C23136DB9514D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "NIGHT",
+      "levelAuthorName": "BlAck_vOid-1001",
+      "hash": "F5876757112E6985C6575C72307B08FD8706DC6C",
+      "levelid": "custom_level_F5876757112E6985C6575C72307B08FD8706DC6C",
       "difficulties": [
         {
           "characteristic": "Standard",

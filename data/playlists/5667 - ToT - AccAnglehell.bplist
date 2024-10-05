@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - AccAnglehell",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHQCFJCC8B6BJNY2F0A1",
-    "sort": 5667
+    "id": "01HK8XCHQCFJCC8B6BJNY2F0A1"
   },
   "songs": [
     {
@@ -524,18 +523,6 @@
       "levelAuthorName": "staryouh",
       "hash": "5FC90DD064AE84E6921140772E056D3C3FF10530",
       "levelid": "custom_level_5FC90DD064AE84E6921140772E056D3C3FF10530",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Religion",
-      "levelAuthorName": "A Jhintleman & GojiCrafter",
-      "hash": "BC299E58DE7C56854C3485BA046834920BB81C8F",
-      "levelid": "custom_level_BC299E58DE7C56854C3485BA046834920BB81C8F",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1236,27 +1223,7 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Angel Echo",
-      "levelAuthorName": "risi, The_Editor",
-      "hash": "1A21E7640DDABFB6780504A249A357F11849FAEB",
-      "levelid": "custom_level_1A21E7640DDABFB6780504A249A357F11849FAEB",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Angel Echo",
-      "levelAuthorName": "risi, The_Editor",
-      "hash": "1A21E7640DDABFB6780504A249A357F11849FAEB",
-      "levelid": "custom_level_1A21E7640DDABFB6780504A249A357F11849FAEB",
-      "difficulties": [
+        },
         {
           "characteristic": "Standard",
           "name": "Expert"
@@ -1331,6 +1298,30 @@
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "樱花树下的约定 (DJ Yaha版)",
+      "levelAuthorName": "Zayta",
+      "hash": "A24992D63B9622E21D5F5BEF4BF0753A42CB1216",
+      "levelid": "custom_level_A24992D63B9622E21D5F5BEF4BF0753A42CB1216",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Motteke Sailor Fuku",
+      "levelAuthorName": "edgyguns",
+      "hash": "A62A104CC3CCC4454D470C8620134C23EF207713",
+      "levelid": "custom_level_A62A104CC3CCC4454D470C8620134C23EF207713",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]

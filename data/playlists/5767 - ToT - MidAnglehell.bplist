@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - MidAnglehell",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HM4203SHXNGDMWZVY685MDVR",
-    "sort": 5767
+    "id": "01HM4203SHXNGDMWZVY685MDVR"
   },
   "songs": [
     {
@@ -563,18 +562,6 @@
       "levelAuthorName": "kizuflux",
       "hash": "6D6FCF4C4BA2DD68531D5483EB83B72FC23A5E35",
       "levelid": "custom_level_6D6FCF4C4BA2DD68531D5483EB83B72FC23A5E35",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Maholova",
-      "levelAuthorName": "voltage4536",
-      "hash": "0B80C73AFD64972FA47104FE9A5C23136DB9514D",
-      "levelid": "custom_level_0B80C73AFD64972FA47104FE9A5C23136DB9514D",
       "difficulties": [
         {
           "characteristic": "Standard",

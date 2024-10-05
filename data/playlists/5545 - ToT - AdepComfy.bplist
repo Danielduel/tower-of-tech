@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - AdepComfy",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HK8XCHRH8RDXEEP9F4211NVG",
-    "sort": 5545
+    "id": "01HK8XCHRH8RDXEEP9F4211NVG"
   },
   "songs": [
     {
@@ -15,6 +14,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -63,6 +66,10 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     },
@@ -123,6 +130,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -195,6 +206,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -239,18 +254,6 @@
       "levelAuthorName": "unqlTango",
       "hash": "446376C3270840A04FA55A8E97EBF31227F60DA6",
       "levelid": "custom_level_446376C3270840A04FA55A8E97EBF31227F60DA6",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Atomic Dog",
-      "levelAuthorName": "DeeDee",
-      "hash": "3D64EC40B89E748CEB1B3C278E431D8BD47B0F11",
-      "levelid": "custom_level_3D64EC40B89E748CEB1B3C278E431D8BD47B0F11",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -387,6 +390,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -411,6 +418,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -483,6 +494,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     },
@@ -607,18 +622,6 @@
       ]
     },
     {
-      "songName": "Coin",
-      "levelAuthorName": "accuwucy",
-      "hash": "BF6D3F57EA986763325B570B5DFBACC3752C39A8",
-      "levelid": "custom_level_BF6D3F57EA986763325B570B5DFBACC3752C39A8",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "Scuffed Up Age",
       "levelAuthorName": "CookedChili",
       "hash": "ED265E4D65F1DE29C2E7098848779EE2AFCCDA7C",
@@ -663,15 +666,7 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Mainframe",
-      "levelAuthorName": "Spinvvy & Phøenix",
-      "hash": "601C94F000D8E4070BFE0572C8F9449D10DD2607",
-      "levelid": "custom_level_601C94F000D8E4070BFE0572C8F9449D10DD2607",
-      "difficulties": [
+        },
         {
           "characteristic": "Standard",
           "name": "Hard"
@@ -955,30 +950,6 @@
       ]
     },
     {
-      "songName": "Luvoratorrrrry!",
-      "levelAuthorName": "Ken_Monogatari",
-      "hash": "BB609FE6C66028D962F6A3281B0F686904B25B80",
-      "levelid": "custom_level_BB609FE6C66028D962F6A3281B0F686904B25B80",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
-        }
-      ]
-    },
-    {
-      "songName": "teeth (you)",
-      "levelAuthorName": "PogU",
-      "hash": "1525B27B1424C44D1F8E568FC117447C92426B0D",
-      "levelid": "custom_level_1525B27B1424C44D1F8E568FC117447C92426B0D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "I Miss the Misery",
       "levelAuthorName": "DNQ",
       "hash": "CEAA1AB444A8CFA9C388D1590423150C6E76F134",
@@ -1007,6 +978,286 @@
       "levelAuthorName": "Joshabi",
       "hash": "8104BC82A204BF94EC7C3D8CFB00D67980907B2F",
       "levelid": "custom_level_8104BC82A204BF94EC7C3D8CFB00D67980907B2F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Everything You Have Done",
+      "levelAuthorName": "Aquaflee",
+      "hash": "0573981EC268EF2D254D38BBD3C1B9126F33A227",
+      "levelid": "custom_level_0573981EC268EF2D254D38BBD3C1B9126F33A227",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Scare Me",
+      "levelAuthorName": "Fatalution",
+      "hash": "A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
+      "levelid": "custom_level_A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "AIAIAI",
+      "levelAuthorName": "Jevk",
+      "hash": "48C302770659065D1C6C91BD5DE0E25E50E18EF8",
+      "levelid": "custom_level_48C302770659065D1C6C91BD5DE0E25E50E18EF8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "La Femme Jolie",
+      "levelAuthorName": "Andynak",
+      "hash": "CA07E65070125CB351FE26FE43AF6C537120B3E7",
+      "levelid": "custom_level_CA07E65070125CB351FE26FE43AF6C537120B3E7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "culture",
+      "levelAuthorName": "yabje & Alice",
+      "hash": "1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "levelid": "custom_level_1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "MIROTIC",
+      "levelAuthorName": "eurnkung",
+      "hash": "A3CFD7447EA03BB85BC86957495D15613D71B081",
+      "levelid": "custom_level_A3CFD7447EA03BB85BC86957495D15613D71B081",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Lost in the Night",
+      "levelAuthorName": "Gibro",
+      "hash": "784BE4CAA0258BB91AD65B346ACA49B1919EC82F",
+      "levelid": "custom_level_784BE4CAA0258BB91AD65B346ACA49B1919EC82F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "you're wild",
+      "levelAuthorName": "Gibro",
+      "hash": "14E8B06CAC34301D6F7B987F72F12926FC0D59A3",
+      "levelid": "custom_level_14E8B06CAC34301D6F7B987F72F12926FC0D59A3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Welcome To The Secret Ghostland",
+      "levelAuthorName": "Ken_Monogatari",
+      "hash": "BC34519B85902800F8E75D4254EFC90F34855834",
+      "levelid": "custom_level_BC34519B85902800F8E75D4254EFC90F34855834",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Tomorrow Tonight",
+      "levelAuthorName": "Klondike",
+      "hash": "F95E002801C19A9F8E3B37FBACAC3D9BDE5FB54B",
+      "levelid": "custom_level_F95E002801C19A9F8E3B37FBACAC3D9BDE5FB54B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "w / WWW",
+      "levelAuthorName": "harbgy & Rusty",
+      "hash": "8CBB0966E1C11B9B082F5F253998F10F4495DA7D",
+      "levelid": "custom_level_8CBB0966E1C11B9B082F5F253998F10F4495DA7D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "When The Weak Go Marching In",
+      "levelAuthorName": "oegoe",
+      "hash": "88F1B7DC09CD9EB9F2A87D712DF7857329BC15FF",
+      "levelid": "custom_level_88F1B7DC09CD9EB9F2A87D712DF7857329BC15FF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Magnetic",
+      "levelAuthorName": "Cush",
+      "hash": "0118E0F44655F288EF71E60088A579CAEC9F4B64",
+      "levelid": "custom_level_0118E0F44655F288EF71E60088A579CAEC9F4B64",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "ゆるるユニバース",
+      "levelAuthorName": "misterlihao",
+      "hash": "51DC8C5650CF17B4E8C1175F6ADD148458D5D901",
+      "levelid": "custom_level_51DC8C5650CF17B4E8C1175F6ADD148458D5D901",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Ai o Chikaishi Hime Kazari",
+      "levelAuthorName": "Saut & Nolanimations",
+      "hash": "7DA41788EDDC376ADBC8DEC94918F5D72BFDB35E",
+      "levelid": "custom_level_7DA41788EDDC376ADBC8DEC94918F5D72BFDB35E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "The Only Thing I Know For Real",
+      "levelAuthorName": "Timbo",
+      "hash": "B5EBA0B2C57D9D0A6A3A257A1D8B40378D49CBA6",
+      "levelid": "custom_level_B5EBA0B2C57D9D0A6A3A257A1D8B40378D49CBA6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "The Title Track",
+      "levelAuthorName": "Tranch",
+      "hash": "F62692AAA24B2EDD17B2126E364100E66D961E92",
+      "levelid": "custom_level_F62692AAA24B2EDD17B2126E364100E66D961E92",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Destroy",
+      "levelAuthorName": "Gabriel & okazu",
+      "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Ljusa Stjärnan",
+      "levelAuthorName": "zeon",
+      "hash": "9988E50D064E05424813E98597E878C161F5D311",
+      "levelid": "custom_level_9988E50D064E05424813E98597E878C161F5D311",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "Jekyll",
+      "levelAuthorName": "Comyute",
+      "hash": "BD14FA3D5423DE4962C29B3224E64A361A57E98C",
+      "levelid": "custom_level_BD14FA3D5423DE4962C29B3224E64A361A57E98C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "save me from the monster in my head",
+      "levelAuthorName": "Nugget",
+      "hash": "EDAD419CA60A632EAB67B24477AC485DB01CEAE0",
+      "levelid": "custom_level_EDAD419CA60A632EAB67B24477AC485DB01CEAE0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "She's Kerosene",
+      "levelAuthorName": "Andynak",
+      "hash": "0C1CCBEE630A85F390937A2B2CC52D876534DADD",
+      "levelid": "custom_level_0C1CCBEE630A85F390937A2B2CC52D876534DADD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "dashstar*",
+      "levelAuthorName": "Spinvertigoo",
+      "hash": "9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
+      "levelid": "custom_level_9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
       "difficulties": [
         {
           "characteristic": "Standard",

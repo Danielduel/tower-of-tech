@@ -2,8 +2,7 @@
   "playlistTitle": "ToT - FasHitech",
   "playlistAuthor": "Danielduel",
   "customData": {
-    "id": "01HM4203S214YAVEJ6NWWE3KF0",
-    "sort": 5856
+    "id": "01HM4203S214YAVEJ6NWWE3KF0"
   },
   "songs": [
     {
@@ -239,6 +238,18 @@
       "levelAuthorName": "August & Bizzy",
       "hash": "3F6791E7850D3B04F2CCA2BFE783D47669363210",
       "levelid": "custom_level_3F6791E7850D3B04F2CCA2BFE783D47669363210",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Destroy",
+      "levelAuthorName": "Gabriel & okazu",
+      "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
       "difficulties": [
         {
           "characteristic": "Standard",

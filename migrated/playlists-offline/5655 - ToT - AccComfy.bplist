@@ -217,7 +217,7 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
+          "name": "Expert"
         }
       ]
     },
@@ -1310,6 +1310,150 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Solid Ground",
+      "levelAuthorName": "Phøenix",
+      "hash": "EA532620629CD6B2A0405B7A08CF4E80D8A688CF",
+      "levelid": "custom_level_EA532620629CD6B2A0405B7A08CF4E80D8A688CF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "STYX HELIX",
+      "levelAuthorName": "Bytrius & Joshabi",
+      "hash": "1CE20E57CCEA2637B152982D16B173B6664CF9A7",
+      "levelid": "custom_level_1CE20E57CCEA2637B152982D16B173B6664CF9A7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Hell Is Forever",
+      "levelAuthorName": "Comyute",
+      "hash": "B203F7E985D43ADD9C61DBAA334092EA81A879F1",
+      "levelid": "custom_level_B203F7E985D43ADD9C61DBAA334092EA81A879F1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Cool Me Down",
+      "levelAuthorName": "Ge2toro",
+      "hash": "C26EF93C2094FC3EFCCBC6B651FE77296A408B16",
+      "levelid": "custom_level_C26EF93C2094FC3EFCCBC6B651FE77296A408B16",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Goodbye",
+      "levelAuthorName": "Alice",
+      "hash": "7F7BE1A32E1907710874F0F961F2515FFFC2BCC2",
+      "levelid": "custom_level_7F7BE1A32E1907710874F0F961F2515FFFC2BCC2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Crazy Scary Holy Fantasy",
+      "levelAuthorName": "BRLias",
+      "hash": "6A60F463AE773A532068E7E28125912ADFA3CBA3",
+      "levelid": "custom_level_6A60F463AE773A532068E7E28125912ADFA3CBA3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Unsure",
+      "levelAuthorName": "DiscoBaIIerz",
+      "hash": "AF2F8FDB94605BAF6B922C2DD32EAB528050E58B",
+      "levelid": "custom_level_AF2F8FDB94605BAF6B922C2DD32EAB528050E58B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Destroy",
+      "levelAuthorName": "Gabriel & okazu",
+      "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Don't Be a Stranger",
+      "levelAuthorName": "DiscoBaIIerz",
+      "hash": "A30A04391D0B15BF7A34F020E811EE2216F169FE",
+      "levelid": "custom_level_A30A04391D0B15BF7A34F020E811EE2216F169FE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Rahasia Perempuan (Swing Version)",
+      "levelAuthorName": "gemboyong",
+      "hash": "8BBC81BCC75C5E433122842040AE65F0FF1D893C",
+      "levelid": "custom_level_8BBC81BCC75C5E433122842040AE65F0FF1D893C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Brother Louie",
+      "levelAuthorName": "noam15A",
+      "hash": "D86605F1BD87351EA4FF8DE5B61C136899C0BB8A",
+      "levelid": "custom_level_D86605F1BD87351EA4FF8DE5B61C136899C0BB8A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Fireflies",
+      "levelAuthorName": "GojiCrafter",
+      "hash": "0DAFAF7E0D83EFFA6D1F4FC409A612AD3AE6FB31",
+      "levelid": "custom_level_0DAFAF7E0D83EFFA6D1F4FC409A612AD3AE6FB31",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

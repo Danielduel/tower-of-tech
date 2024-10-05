@@ -573,18 +573,6 @@
       ]
     },
     {
-      "songName": "Maholova",
-      "levelAuthorName": "voltage4536",
-      "hash": "0B80C73AFD64972FA47104FE9A5C23136DB9514D",
-      "levelid": "custom_level_0B80C73AFD64972FA47104FE9A5C23136DB9514D",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "切っ先",
       "levelAuthorName": "staryouh",
       "hash": "7DF092AA8DF50101E0C0E24D034F04B88997EE51",
