@@ -1,5 +1,5 @@
 import Logger from "https://deno.land/x/logger@v1.1.3/logger.ts";
-import type { Logger as ZodApiLogger } from "zod_api";
+import type { Logger as ZodApiLogger } from "zod-api";
 
 const sessionTimestamp = Date.now();
 const canWriteToFs = (() => {

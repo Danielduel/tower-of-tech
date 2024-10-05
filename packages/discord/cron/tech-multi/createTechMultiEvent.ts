@@ -1,4 +1,4 @@
-import { getStartAndEndTime } from "@/packages/discord/cron/tech-multi/utils.ts";
+import { getStartAndEndTimeOfScheduledEventNextWeek } from "@/packages/discord/cron/tech-multi/utils.ts";
 import {
   broadcastChannelId,
   eventDescription,
@@ -31,7 +31,7 @@ export async function createTechMultiEvent() {
         return;
       }
 
-      const eventTimes = getStartAndEndTime();
+      const eventTimes = getStartAndEndTimeOfScheduledEventNextWeek();
       const scheduledEvent = await createScheduledEvent(bot, BigInt(guildId), {
         entityType: ScheduledEventEntityType.External,
         location: eventLocation,

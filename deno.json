@@ -18,8 +18,9 @@
     "discord-bot:register": "deno run -A --env ./apps/discord-bot/setup/register-commands.ts",
     "discord-bot:register-raw": "deno run -A ./apps/discord-bot/setup/register-commands.ts",
 
-    "twitch-irc-bot:playlist-worker": "deno run -A --env ./apps/twitch-irc-bot/tools/playlist-worker.ts",
-    "twitch-irc-bot:commands": "deno run -A --env ./apps/twitch-irc-bot/tools/commands.ts",
+    "twitch-bot:playlist-worker": "deno run -A --env ./apps/twitch-bot/tools/playlist-worker.ts",
+    "twitch-bot:commands": "deno run -A --env ./apps/twitch-bot/tools/commands.ts",
+    "twitch-bot:commands-techmulti": "deno run -A --env ./apps/twitch-bot/tools/commands-techmulti.ts",
 
     "s3s-fs-local": "./scripts/s3s-fs-local.sh",
 

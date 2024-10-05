@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { client, resource } from "zod_api/mod.ts";
+import { client, resource } from "zod-api";
 import { fetcher } from "@/packages/api-utils/fetcher.ts";
 import { getLogger } from "@/packages/api-utils/logger.ts";
 

@@ -1,11 +1,6 @@
 import { Client } from "https://deno.land/x/twitch_irc@0.11.2/mod.ts";
 import { getTwitchIRCLogger } from "@/packages/log/twitch-irc.ts";
-import {
-  TwitchChannel,
-  TwitchIRCEmitter,
-  TwitchIRCEventContext,
-  TwitchIRCEvents,
-} from "@/apps/twitch-irc-bot/types.ts";
+import { TwitchChannel, TwitchIRCEmitter, TwitchIRCEventContext, TwitchIRCEvents } from "@/apps/twitch-bot/types.ts";
 
 type CreateTwitchIRCOpts = {
   debug: boolean;
@@ -21,8 +16,7 @@ const logger = getTwitchIRCLogger();
 export const createTwitchIRC = ({ debug, credentials, channel }: CreateTwitchIRCOpts) => {
   logger.debug("create");
 
-  const _debug = (...args: unknown[]) =>
-    logger.debug(`${channel} ${credentials.nick} ${args.filter((x) => x && typeof x === "string")}`);
+  const _debug = (...args: unknown[]) => logger.debug(`${channel} ${credentials.nick} ${console.dir(args)}`);
 
   _debug("create emitter");
   const TwitchIRCEmitterInstance = new TwitchIRCEmitter();
@@ -79,5 +73,5 @@ export const createTwitchIRC = ({ debug, credentials, channel }: CreateTwitchIRC
     client.part(channel);
   };
 
-  return [TwitchIRCEmitterInstance, cleanup] as const;
+  return [TwitchIRCEmitterInstance, cleanup, context] as const;
 };

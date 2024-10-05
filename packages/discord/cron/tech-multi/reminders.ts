@@ -16,7 +16,7 @@ import {
   jokeChannelId,
   techMultiGptPrompt,
 } from "@/packages/discord/cron/tech-multi/constants.ts";
-import { getStartAndEndTimeToday } from "@/packages/discord/cron/tech-multi/utils.ts";
+import { getStartAndEndTimeOfScheduledEventCurrentWeek } from "@/packages/discord/cron/tech-multi/utils.ts";
 import { handleFail, reportFail } from "@/packages/utils/handleFail.ts";
 import { Bot } from "@/packages/discord/deps.ts";
 import { getScheduledEvents } from "@/packages/discord/deps.ts";
@@ -96,7 +96,7 @@ export async function techMultiLongReminder() {
 
       const joke = await getReminderJoke(bot, guildId);
 
-      const eventTimes = getStartAndEndTimeToday();
+      const eventTimes = getStartAndEndTimeOfScheduledEventCurrentWeek();
       const startTimeWithoutMilis = Math.floor(
         eventTimes.scheduledStartTime / 1000,
       );
@@ -125,7 +125,7 @@ export async function techMultiShortReminder() {
 
     const joke = await getReminderJoke(bot, guildId);
 
-    const eventTimes = getStartAndEndTimeToday();
+    const eventTimes = getStartAndEndTimeOfScheduledEventCurrentWeek();
     const startTimeWithoutMilis = Math.floor(
       eventTimes.scheduledStartTime / 1000,
     );

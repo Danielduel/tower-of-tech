@@ -1,7 +1,7 @@
 // deno-lint-ignore-file no-async-promise-executor
 
-import { Err, Ok } from "https://deno.land/x/optionals@v3.0.0/mod.ts";
 import { BeatLeaderGeneralSocketAccepted, BeatLeaderGeneralSocketAny } from "@/apps/beatleader-bot/beatleader-zod.ts";
+import { Err, Ok } from "@/packages/utils/optionals.ts";
 
 const rootDir = "./data/beatleader-wss-history";
 const parentDirs = Deno.readDirSync(rootDir);
