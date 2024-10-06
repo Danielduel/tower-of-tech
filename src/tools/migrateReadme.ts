@@ -1,8 +1,10 @@
 import { ListTypes, Markdown } from "https://deno.land/x/deno_markdown@v0.2/mod.ts";
 import { playlists } from "@/src/tools/migratePlaylists.ts";
-import { playlistMapping } from "../../packages/playlist/mod.ts";
-import { getToTPlaylistSpeedCategory } from "../../packages/playlist/mod.ts";
-import { getToTPlaylistTechCategory } from "../../packages/playlist/mod.ts";
+import {
+  getToTPlaylistSpeedCategory,
+  getToTPlaylistTechCategory,
+  playlistMapping,
+} from "@/packages/playlist/collections/tower-of-tech/mod.ts";
 import { PlaylistId } from "@/packages/types/brands.ts";
 import { links } from "@/apps/website/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";

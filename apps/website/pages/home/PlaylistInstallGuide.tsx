@@ -6,7 +6,7 @@ import {
   getToTPlaylistTechCategory,
   playlistMapping,
   ToTPlaylistMappingItem,
-} from "@/packages/playlist/mod.ts";
+} from "@/packages/playlist/collections/tower-of-tech/mod.ts";
 import { latestPlaylistReleaseUrl, towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import {
   VisualNovelATag,

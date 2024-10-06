@@ -9,10 +9,10 @@
   },
   "songs": [
     {
-      "songName": "Uraomote Lovers",
-      "levelAuthorName": "BigSlick",
       "hash": "64D0D0DF55C3FB4CE451797E0D5B152D054501D6",
       "levelid": "custom_level_64D0D0DF55C3FB4CE451797E0D5B152D054501D6",
+      "songName": "Uraomote Lovers",
+      "levelAuthorName": "BigSlick",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -21,10 +21,10 @@
       ]
     },
     {
-      "songName": "BS//Recall",
-      "levelAuthorName": "okazu",
       "hash": "BCE5FE7E4767B70E701FBCDA18EEA0D0B7D00A6F",
       "levelid": "custom_level_BCE5FE7E4767B70E701FBCDA18EEA0D0B7D00A6F",
+      "songName": "BS//Recall",
+      "levelAuthorName": "okazu",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -33,10 +33,10 @@
       ]
     },
     {
-      "songName": "ルナティッククレイジー",
-      "levelAuthorName": "Vegetable Mapping Team",
       "hash": "BCCE6D83037946AAE3BB96F5DC897C50813F2BCF",
       "levelid": "custom_level_BCCE6D83037946AAE3BB96F5DC897C50813F2BCF",
+      "songName": "ルナティッククレイジー",
+      "levelAuthorName": "Vegetable Mapping Team",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -45,10 +45,10 @@
       ]
     },
     {
-      "songName": "Following the Waving Wings -Last Plaudits-",
-      "levelAuthorName": "GojiCrafter",
       "hash": "CD72C9B0AF9EBE8EC932B00911DB49E51596CB09",
       "levelid": "custom_level_CD72C9B0AF9EBE8EC932B00911DB49E51596CB09",
+      "songName": "Following the Waving Wings -Last Plaudits-",
+      "levelAuthorName": "GojiCrafter",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -57,10 +57,10 @@
       ]
     },
     {
-      "songName": "In Rainbows",
-      "levelAuthorName": "ani",
       "hash": "C7485336564E55BA2F1133CCF6C97D701EF090AB",
       "levelid": "custom_level_C7485336564E55BA2F1133CCF6C97D701EF090AB",
+      "songName": "In Rainbows",
+      "levelAuthorName": "ani",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -69,10 +69,10 @@
       ]
     },
     {
-      "songName": "DADADADADADADADADADA",
-      "levelAuthorName": "Uragirimono",
       "hash": "2797B82DB70C795F324696B0EB91506522FB718E",
       "levelid": "custom_level_2797B82DB70C795F324696B0EB91506522FB718E",
+      "songName": "DADADADADADADADADADA",
+      "levelAuthorName": "Uragirimono",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -81,10 +81,10 @@
       ]
     },
     {
-      "songName": "Happiness Breeze",
-      "levelAuthorName": "Estrella & wangyufy",
       "hash": "923BEFBB5B9294837BDA07F6EFCDAB3140F5616B",
       "levelid": "custom_level_923BEFBB5B9294837BDA07F6EFCDAB3140F5616B",
+      "songName": "Happiness Breeze",
+      "levelAuthorName": "Estrella & wangyufy",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -93,10 +93,10 @@
       ]
     },
     {
-      "songName": "Abatement",
-      "levelAuthorName": "amo",
       "hash": "034A904670DD98BD589EA389C368BEA87D6F5EDD",
       "levelid": "custom_level_034A904670DD98BD589EA389C368BEA87D6F5EDD",
+      "songName": "Abatement",
+      "levelAuthorName": "amo",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -105,10 +105,10 @@
       ]
     },
     {
-      "songName": "A Dramatic Irony",
-      "levelAuthorName": "Cush",
       "hash": "2335C042FCD27B9DAAD61BA8F28E31AFFF7698CD",
       "levelid": "custom_level_2335C042FCD27B9DAAD61BA8F28E31AFFF7698CD",
+      "songName": "A Dramatic Irony",
+      "levelAuthorName": "Cush",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -117,10 +117,10 @@
       ]
     },
     {
-      "songName": "Teo",
-      "levelAuthorName": "RetrX",
       "hash": "5FB19E48F542BF6632F38457FBCA85DA2425360F",
       "levelid": "custom_level_5FB19E48F542BF6632F38457FBCA85DA2425360F",
+      "songName": "Teo",
+      "levelAuthorName": "RetrX",
       "difficulties": [
         {
           "characteristic": "Standard",

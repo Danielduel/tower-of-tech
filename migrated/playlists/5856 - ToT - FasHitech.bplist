@@ -9,10 +9,10 @@
   },
   "songs": [
     {
-      "songName": "NIGHT RUNNING (7_7 bootleg)",
-      "levelAuthorName": "Hener",
       "hash": "6FD4593D810A3FA62E9ABE672C2C6C4DE34408AB",
       "levelid": "custom_level_6FD4593D810A3FA62E9ABE672C2C6C4DE34408AB",
+      "songName": "NIGHT RUNNING (7_7 bootleg)",
+      "levelAuthorName": "Hener",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -21,10 +21,10 @@
       ]
     },
     {
-      "songName": "Ashed Wings",
-      "levelAuthorName": "RetrX",
       "hash": "85E5FF658790D0E7B9695B79B752A31211053D11",
       "levelid": "custom_level_85E5FF658790D0E7B9695B79B752A31211053D11",
+      "songName": "Ashed Wings",
+      "levelAuthorName": "RetrX",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -33,10 +33,10 @@
       ]
     },
     {
-      "songName": "werewolf howls.",
-      "levelAuthorName": "Aquaflee",
       "hash": "2744200D688BA9FD9477729E96CAED006C5097FA",
       "levelid": "custom_level_2744200D688BA9FD9477729E96CAED006C5097FA",
+      "songName": "werewolf howls.",
+      "levelAuthorName": "Aquaflee",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -45,10 +45,10 @@
       ]
     },
     {
-      "songName": "Frustration",
-      "levelAuthorName": "Nota",
       "hash": "86843A47DA42539E67A258588A272AF26D8D02D6",
       "levelid": "custom_level_86843A47DA42539E67A258588A272AF26D8D02D6",
+      "songName": "Frustration",
+      "levelAuthorName": "Nota",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -57,10 +57,10 @@
       ]
     },
     {
-      "songName": "PANIC HOLIC",
-      "levelAuthorName": "oermergeesh",
       "hash": "4C57E8F74EF06D00BD25289977226B87F053F94B",
       "levelid": "custom_level_4C57E8F74EF06D00BD25289977226B87F053F94B",
+      "songName": "PANIC HOLIC",
+      "levelAuthorName": "oermergeesh",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -69,10 +69,10 @@
       ]
     },
     {
-      "songName": "Elemental Creation",
-      "levelAuthorName": "Habryka x okazu",
       "hash": "D593E94B3228E90C847AA76EB0BEA42210D36554",
       "levelid": "custom_level_D593E94B3228E90C847AA76EB0BEA42210D36554",
+      "songName": "Elemental Creation",
+      "levelAuthorName": "Habryka x okazu",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -81,10 +81,10 @@
       ]
     },
     {
-      "songName": "Cassglass",
-      "levelAuthorName": "Maiden",
       "hash": "0FD53CAF5EFC55EF9DAAC0A085B3363D51824E61",
       "levelid": "custom_level_0FD53CAF5EFC55EF9DAAC0A085B3363D51824E61",
+      "songName": "Cassglass",
+      "levelAuthorName": "Maiden",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -93,10 +93,10 @@
       ]
     },
     {
-      "songName": "Einherjar Joker",
-      "levelAuthorName": "vOid vs v0rt3x",
       "hash": "3B4A88104DAD9BE2D5C95A23ED8539CC72FDC237",
       "levelid": "custom_level_3B4A88104DAD9BE2D5C95A23ED8539CC72FDC237",
+      "songName": "Einherjar Joker",
+      "levelAuthorName": "vOid vs v0rt3x",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -105,10 +105,10 @@
       ]
     },
     {
-      "songName": "Paper Bouquet",
-      "levelAuthorName": "ViSi & SL4SH",
       "hash": "6D5B3419F2BA4B95D79E5422B1FCF568D3B80461",
       "levelid": "custom_level_6D5B3419F2BA4B95D79E5422B1FCF568D3B80461",
+      "songName": "Paper Bouquet",
+      "levelAuthorName": "ViSi & SL4SH",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -117,10 +117,10 @@
       ]
     },
     {
-      "songName": "Meromeroid",
-      "levelAuthorName": "Emiru",
       "hash": "76C02AFE93115043F229EEEFA20982445E09FF6D",
       "levelid": "custom_level_76C02AFE93115043F229EEEFA20982445E09FF6D",
+      "songName": "Meromeroid",
+      "levelAuthorName": "Emiru",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -129,10 +129,10 @@
       ]
     },
     {
-      "songName": "white girl manifestation type beat",
-      "levelAuthorName": "RetrX & WalkingKat",
       "hash": "DD13B3A2F055B94247188FD031FBB4623FC38417",
       "levelid": "custom_level_DD13B3A2F055B94247188FD031FBB4623FC38417",
+      "songName": "white girl manifestation type beat",
+      "levelAuthorName": "RetrX & WalkingKat",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -141,10 +141,10 @@
       ]
     },
     {
-      "songName": "Black or White",
-      "levelAuthorName": "A Jhintleman",
       "hash": "DFC3CCE6B9C5DC575A372DB762F37A9469A662E1",
       "levelid": "custom_level_DFC3CCE6B9C5DC575A372DB762F37A9469A662E1",
+      "songName": "Black or White",
+      "levelAuthorName": "A Jhintleman",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -153,10 +153,10 @@
       ]
     },
     {
-      "songName": "Paintbox",
-      "levelAuthorName": "Prim",
       "hash": "936C6EF79C59F26A489E3E5BB3B37B844953D45B",
       "levelid": "custom_level_936C6EF79C59F26A489E3E5BB3B37B844953D45B",
+      "songName": "Paintbox",
+      "levelAuthorName": "Prim",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -165,10 +165,10 @@
       ]
     },
     {
-      "songName": "Megaburn",
-      "levelAuthorName": "Pleo",
       "hash": "DEF0DD6A61BBD718F76F9B62B22F2213233904EB",
       "levelid": "custom_level_DEF0DD6A61BBD718F76F9B62B22F2213233904EB",
+      "songName": "Megaburn",
+      "levelAuthorName": "Pleo",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -177,10 +177,10 @@
       ]
     },
     {
-      "songName": "Give to me",
-      "levelAuthorName": "IlluminatiSalad",
       "hash": "73D8AD1E767EDB0F3D0266875DD6F0FA300CF4E8",
       "levelid": "custom_level_73D8AD1E767EDB0F3D0266875DD6F0FA300CF4E8",
+      "songName": "Give to me",
+      "levelAuthorName": "IlluminatiSalad",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -189,10 +189,10 @@
       ]
     },
     {
-      "songName": "Unwelcome School",
-      "levelAuthorName": "wangyufy&meimo&tuc&nikola&ship",
       "hash": "A06729F354FF56B7099077BABD166B05218B3FAE",
       "levelid": "custom_level_A06729F354FF56B7099077BABD166B05218B3FAE",
+      "songName": "Unwelcome School",
+      "levelAuthorName": "wangyufy&meimo&tuc&nikola&ship",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -201,10 +201,10 @@
       ]
     },
     {
-      "songName": "Abstruse Dilemma",
-      "levelAuthorName": "yabje",
       "hash": "CFF3F82F88D9BDD727462E818FB1F786AA7ECB96",
       "levelid": "custom_level_CFF3F82F88D9BDD727462E818FB1F786AA7ECB96",
+      "songName": "Abstruse Dilemma",
+      "levelAuthorName": "yabje",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -213,10 +213,10 @@
       ]
     },
     {
-      "songName": "Unwelcome School",
-      "levelAuthorName": "namaki_mono",
       "hash": "A0E5B922408AA01AEC028C1CB4186EA488CDEA66",
       "levelid": "custom_level_A0E5B922408AA01AEC028C1CB4186EA488CDEA66",
+      "songName": "Unwelcome School",
+      "levelAuthorName": "namaki_mono",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -225,10 +225,10 @@
       ]
     },
     {
-      "songName": "Kyuukou",
-      "levelAuthorName": "zeon & Gabriel",
       "hash": "779583B8BACED4EA2A847282F1E1E3E6830BD8D8",
       "levelid": "custom_level_779583B8BACED4EA2A847282F1E1E3E6830BD8D8",
+      "songName": "Kyuukou",
+      "levelAuthorName": "zeon & Gabriel",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -237,10 +237,10 @@
       ]
     },
     {
-      "songName": "Medicine",
-      "levelAuthorName": "August & Bizzy",
       "hash": "3F6791E7850D3B04F2CCA2BFE783D47669363210",
       "levelid": "custom_level_3F6791E7850D3B04F2CCA2BFE783D47669363210",
+      "songName": "Medicine",
+      "levelAuthorName": "August & Bizzy",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -249,10 +249,10 @@
       ]
     },
     {
-      "songName": "Destroy",
-      "levelAuthorName": "Gabriel & okazu",
       "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
       "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "songName": "Destroy",
+      "levelAuthorName": "Gabriel & okazu",
       "difficulties": [
         {
           "characteristic": "Standard",

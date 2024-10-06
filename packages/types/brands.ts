@@ -4,7 +4,14 @@ export type UppercaseMapHashForLevelId = Brand<
   string,
   "UppercaseMapHashForLevelId"
 >;
-export const makeUppercaseMapHashForLevelId = (hash: string) => make<UppercaseMapHashForLevelId>()(hash.toUpperCase());
+export const makeUppercaseMapHashForLevelId = (custom_level_hash: string) => {
+  const lowerCase = custom_level_hash.toLowerCase();
+  if (lowerCase.startsWith("custom_level_")) {
+    const hash = lowerCase.split("custom_level_")[1]!;
+    return make<UppercaseMapHashForLevelId>()(`custom_level_${hash.toUpperCase()}`);
+  }
+  return make<UppercaseMapHashForLevelId>()(custom_level_hash.toUpperCase());
+};
 
 export type UppercaseMapHash = Brand<string, "UppercaseMapHash">;
 export const makeUppercaseMapHash = (hash: string) => make<UppercaseMapHash>()(hash.toUpperCase());

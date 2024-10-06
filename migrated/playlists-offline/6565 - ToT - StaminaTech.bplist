@@ -6,10 +6,10 @@
   },
   "songs": [
     {
-      "songName": "GOODTEK",
-      "levelAuthorName": "Hener",
       "hash": "5291DBA8E00BFF0F7C61EFE44A723CA70FCC5688",
       "levelid": "custom_level_5291DBA8E00BFF0F7C61EFE44A723CA70FCC5688",
+      "songName": "GOODTEK",
+      "levelAuthorName": "Hener",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "songName": "RPG",
-      "levelAuthorName": "GojiCrafter",
       "hash": "C11DD4E1098CFA83ED980EE7381D0BE83ED8E5F3",
       "levelid": "custom_level_C11DD4E1098CFA83ED980EE7381D0BE83ED8E5F3",
+      "songName": "RPG",
+      "levelAuthorName": "GojiCrafter",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -30,10 +30,10 @@
       ]
     },
     {
-      "songName": "Longinus",
-      "levelAuthorName": "Aimedhades16",
       "hash": "97F35444687C81EAA2EE5D26A720069D410594FC",
       "levelid": "custom_level_97F35444687C81EAA2EE5D26A720069D410594FC",
+      "songName": "Longinus",
+      "levelAuthorName": "Aimedhades16",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "songName": "Alice in Misanthrope",
-      "levelAuthorName": "Anammelech",
       "hash": "390A0550DA07DA2C764F8B98368C2D88BBC2996F",
       "levelid": "custom_level_390A0550DA07DA2C764F8B98368C2D88BBC2996F",
+      "songName": "Alice in Misanthrope",
+      "levelAuthorName": "Anammelech",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -54,10 +54,10 @@
       ]
     },
     {
-      "songName": "The Daybreak Will Never Come Again",
-      "levelAuthorName": "Anammelech",
       "hash": "947605D2AB0A828E5CF3A02B15164A7DB21FB111",
       "levelid": "custom_level_947605D2AB0A828E5CF3A02B15164A7DB21FB111",
+      "songName": "The Daybreak Will Never Come Again",
+      "levelAuthorName": "Anammelech",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -66,10 +66,10 @@
       ]
     },
     {
-      "songName": "Lost in Society",
-      "levelAuthorName": "Alpha Cancri",
       "hash": "36662E7EAA222AA2A697BF9F4419BB7494D71798",
       "levelid": "custom_level_36662E7EAA222AA2A697BF9F4419BB7494D71798",
+      "songName": "Lost in Society",
+      "levelAuthorName": "Alpha Cancri",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -78,10 +78,10 @@
       ]
     },
     {
-      "songName": "Ascension to Heaven",
-      "levelAuthorName": "oddloop",
       "hash": "6BE06198FBF000522A9ED1DF0ED8BD68C28A7862",
       "levelid": "custom_level_6BE06198FBF000522A9ED1DF0ED8BD68C28A7862",
+      "songName": "Ascension to Heaven",
+      "levelAuthorName": "oddloop",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -90,10 +90,10 @@
       ]
     },
     {
-      "songName": "can I play with madness",
-      "levelAuthorName": "Dtribe",
       "hash": "D5502D9753A3C3BB94371F919927DA28878367B5",
       "levelid": "custom_level_D5502D9753A3C3BB94371F919927DA28878367B5",
+      "songName": "can I play with madness",
+      "levelAuthorName": "Dtribe",
       "difficulties": [
         {
           "characteristic": "Standard",

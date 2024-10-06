@@ -1,5 +1,5 @@
 import { createBeatleaderWSGeneral } from "@/apps/beatleader-bot/sockets/beatleader-socket-general.ts";
-import { Err } from "@/apps/beatleader-bot/deps.ts";
+import { Err } from "@/packages/utils/optionals.ts";
 
 const historyDir = `./data/beatleader-wss-history/${Date.now()}`;
 Deno.mkdirSync(historyDir, { recursive: true });

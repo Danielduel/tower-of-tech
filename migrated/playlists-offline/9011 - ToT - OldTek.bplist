@@ -6,10 +6,10 @@
   },
   "songs": [
     {
-      "songName": "GHOST",
-      "levelAuthorName": "GojiCringer",
       "hash": "836135A28EB86ECF758A540DCFC8BFC42FB7055D",
       "levelid": "custom_level_836135A28EB86ECF758A540DCFC8BFC42FB7055D",
+      "songName": "GHOST",
+      "levelAuthorName": "GojiCringer",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "songName": "Signal (7_7 bootleg)",
-      "levelAuthorName": "Hener",
       "hash": "444548E1720DCC46523683F26E46ED1DCD72A707",
       "levelid": "custom_level_444548E1720DCC46523683F26E46ED1DCD72A707",
+      "songName": "Signal (7_7 bootleg)",
+      "levelAuthorName": "Hener",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -30,10 +30,10 @@
       ]
     },
     {
-      "songName": "SLIME INCIDENT",
-      "levelAuthorName": "A Jhintleman & Phøenix",
       "hash": "F3BC055E767C37F3B80E197392ECADE9774455D5",
       "levelid": "custom_level_F3BC055E767C37F3B80E197392ECADE9774455D5",
+      "songName": "SLIME INCIDENT",
+      "levelAuthorName": "A Jhintleman & Phøenix",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "songName": "BREAKME",
-      "levelAuthorName": "DiscoBaIIerz",
       "hash": "F21617FBFD8873237F65471CE0CD56E8DCCAAD1B",
       "levelid": "custom_level_F21617FBFD8873237F65471CE0CD56E8DCCAAD1B",
+      "songName": "BREAKME",
+      "levelAuthorName": "DiscoBaIIerz",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -54,10 +54,10 @@
       ]
     },
     {
-      "songName": "Turn It Up",
-      "levelAuthorName": "abcbadq",
       "hash": "67A32C8E55EAB4EC913EEC676B0B23B45BCC9E0E",
       "levelid": "custom_level_67A32C8E55EAB4EC913EEC676B0B23B45BCC9E0E",
+      "songName": "Turn It Up",
+      "levelAuthorName": "abcbadq",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -66,10 +66,10 @@
       ]
     },
     {
-      "songName": "Mushussu",
-      "levelAuthorName": "abcbadq & Dr_Marc",
       "hash": "254D9FAA986C0CB9600D0460BF4ADDCBCDD89C6A",
       "levelid": "custom_level_254D9FAA986C0CB9600D0460BF4ADDCBCDD89C6A",
+      "songName": "Mushussu",
+      "levelAuthorName": "abcbadq & Dr_Marc",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -78,10 +78,10 @@
       ]
     },
     {
-      "songName": "Haunted Device",
-      "levelAuthorName": "LittleMaiden",
       "hash": "C60A4FA98B626CE251708C85E40019794FF6DD9A",
       "levelid": "custom_level_C60A4FA98B626CE251708C85E40019794FF6DD9A",
+      "songName": "Haunted Device",
+      "levelAuthorName": "LittleMaiden",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -90,10 +90,10 @@
       ]
     },
     {
-      "songName": "Danzen! Futari wa Pretty Cure",
-      "levelAuthorName": "BigSlick",
       "hash": "D6F4A2624EC1D0165E953ABB9196AC7C364ED1FB",
       "levelid": "custom_level_D6F4A2624EC1D0165E953ABB9196AC7C364ED1FB",
+      "songName": "Danzen! Futari wa Pretty Cure",
+      "levelAuthorName": "BigSlick",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -102,10 +102,10 @@
       ]
     },
     {
-      "songName": "Chiisana hari no youna",
-      "levelAuthorName": "Fara",
       "hash": "FC00CED0B582C14C9A5FF0695A6F016CFDC80B67",
       "levelid": "custom_level_FC00CED0B582C14C9A5FF0695A6F016CFDC80B67",
+      "songName": "Chiisana hari no youna",
+      "levelAuthorName": "Fara",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -114,10 +114,10 @@
       ]
     },
     {
-      "songName": "Reality",
-      "levelAuthorName": "Jabob",
       "hash": "57BAB4CC3A049DA3A1CC6E9764DC9A2511568B63",
       "levelid": "custom_level_57BAB4CC3A049DA3A1CC6E9764DC9A2511568B63",
+      "songName": "Reality",
+      "levelAuthorName": "Jabob",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -126,10 +126,10 @@
       ]
     },
     {
-      "songName": "Drumturgy",
-      "levelAuthorName": "Anammelech & Uiop",
       "hash": "2668449CF4194AC774D3EB3694E49C90CAFC3421",
       "levelid": "custom_level_2668449CF4194AC774D3EB3694E49C90CAFC3421",
+      "songName": "Drumturgy",
+      "levelAuthorName": "Anammelech & Uiop",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -138,10 +138,10 @@
       ]
     },
     {
-      "songName": "Bug",
-      "levelAuthorName": "Vegetable Mapping Team",
       "hash": "905E6C964C52786321F6DF66B5DECCF95C6F4C6D",
       "levelid": "custom_level_905E6C964C52786321F6DF66B5DECCF95C6F4C6D",
+      "songName": "Bug",
+      "levelAuthorName": "Vegetable Mapping Team",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -150,10 +150,10 @@
       ]
     },
     {
-      "songName": "Kaibutsu Dance",
-      "levelAuthorName": "Hener",
       "hash": "F34CB0C026E744F87ABE07357BC0B29F62BBE197",
       "levelid": "custom_level_F34CB0C026E744F87ABE07357BC0B29F62BBE197",
+      "songName": "Kaibutsu Dance",
+      "levelAuthorName": "Hener",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -162,10 +162,10 @@
       ]
     },
     {
-      "songName": "FINAL PHASE",
-      "levelAuthorName": "Hades, Daan, Josh & Aqua",
       "hash": "1D727305FEDCDFAE00E6BC0D28036A10A8F9FA08",
       "levelid": "custom_level_1D727305FEDCDFAE00E6BC0D28036A10A8F9FA08",
+      "songName": "FINAL PHASE",
+      "levelAuthorName": "Hades, Daan, Josh & Aqua",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -174,10 +174,10 @@
       ]
     },
     {
-      "songName": "OPEN YOUR 3RD EYE",
-      "levelAuthorName": "TJ",
       "hash": "2678C3203C6A16357C177E0B9888DAE50386B9AF",
       "levelid": "custom_level_2678C3203C6A16357C177E0B9888DAE50386B9AF",
+      "songName": "OPEN YOUR 3RD EYE",
+      "levelAuthorName": "TJ",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -186,10 +186,10 @@
       ]
     },
     {
-      "songName": "Diabolic Swing",
-      "levelAuthorName": "Anammelech",
       "hash": "93021CCC0C65E37FAA57DFB92D6BFED972C36F0F",
       "levelid": "custom_level_93021CCC0C65E37FAA57DFB92D6BFED972C36F0F",
+      "songName": "Diabolic Swing",
+      "levelAuthorName": "Anammelech",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -198,10 +198,10 @@
       ]
     },
     {
-      "songName": "Odori Asobase",
-      "levelAuthorName": "Aimedhades16",
       "hash": "F72A03D5116741797B52A008E54512F0DDF4501A",
       "levelid": "custom_level_F72A03D5116741797B52A008E54512F0DDF4501A",
+      "songName": "Odori Asobase",
+      "levelAuthorName": "Aimedhades16",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -210,10 +210,10 @@
       ]
     },
     {
-      "songName": "心という名の不可解",
-      "levelAuthorName": "staryouh",
       "hash": "2491C65C3BA53C58128736A6A54914155AC6C57C",
       "levelid": "custom_level_2491C65C3BA53C58128736A6A54914155AC6C57C",
+      "songName": "心という名の不可解",
+      "levelAuthorName": "staryouh",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -222,10 +222,10 @@
       ]
     },
     {
-      "songName": "Autophagy",
-      "levelAuthorName": "anammelech & uiop327",
       "hash": "8A5BA815215361BDC8D7FE12F94AD6D799533748",
       "levelid": "custom_level_8A5BA815215361BDC8D7FE12F94AD6D799533748",
+      "songName": "Autophagy",
+      "levelAuthorName": "anammelech & uiop327",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -234,10 +234,10 @@
       ]
     },
     {
-      "songName": "Fanboy and Chum Chum Theme",
-      "levelAuthorName": "LittleMaiden",
       "hash": "B4366AFA5F34E235A30BEB8D56308613A4819F11",
       "levelid": "custom_level_B4366AFA5F34E235A30BEB8D56308613A4819F11",
+      "songName": "Fanboy and Chum Chum Theme",
+      "levelAuthorName": "LittleMaiden",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -246,10 +246,10 @@
       ]
     },
     {
-      "songName": "YES!",
-      "levelAuthorName": "Joni",
       "hash": "C4FA64A0BC485E2EDBE34A9AAB348F813602B993",
       "levelid": "custom_level_C4FA64A0BC485E2EDBE34A9AAB348F813602B993",
+      "songName": "YES!",
+      "levelAuthorName": "Joni",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -258,10 +258,10 @@
       ]
     },
     {
-      "songName": "Religion",
-      "levelAuthorName": "A Jhintleman & GojiCrafter",
       "hash": "BC299E58DE7C56854C3485BA046834920BB81C8F",
       "levelid": "custom_level_BC299E58DE7C56854C3485BA046834920BB81C8F",
+      "songName": "Religion",
+      "levelAuthorName": "A Jhintleman & GojiCrafter",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -270,10 +270,10 @@
       ]
     },
     {
-      "songName": "Maware! Setsugetsuka ",
-      "levelAuthorName": "BigSlick",
       "hash": "A4C09F44F02B340E2AE70747C898E634BDD062B3",
       "levelid": "custom_level_A4C09F44F02B340E2AE70747C898E634BDD062B3",
+      "songName": "Maware! Setsugetsuka ",
+      "levelAuthorName": "BigSlick",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -282,10 +282,10 @@
       ]
     },
     {
-      "songName": "DAICON V",
-      "levelAuthorName": "riisi",
       "hash": "6D7F1D6CDF0FAC2EA12A14AE45A550C0DBE0606E",
       "levelid": "custom_level_6D7F1D6CDF0FAC2EA12A14AE45A550C0DBE0606E",
+      "songName": "DAICON V",
+      "levelAuthorName": "riisi",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -294,10 +294,10 @@
       ]
     },
     {
-      "songName": "Gigantic O.T.N",
-      "levelAuthorName": "Hexagonial",
       "hash": "A40602AF11366C6132A33786A77017444C022F81",
       "levelid": "custom_level_A40602AF11366C6132A33786A77017444C022F81",
+      "songName": "Gigantic O.T.N",
+      "levelAuthorName": "Hexagonial",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -306,10 +306,10 @@
       ]
     },
     {
-      "songName": "Odo",
-      "levelAuthorName": "Anammelech",
       "hash": "034A0978CB68176B17F5E6EECD619E208FB04CC8",
       "levelid": "custom_level_034A0978CB68176B17F5E6EECD619E208FB04CC8",
+      "songName": "Odo",
+      "levelAuthorName": "Anammelech",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -318,10 +318,10 @@
       ]
     },
     {
-      "songName": "I missed the last train driven by THE jack skelebone,",
-      "levelAuthorName": "Touqai",
       "hash": "9BF08A9DC0B3A5A196610F97B2B41EA06AE9DD4F",
       "levelid": "custom_level_9BF08A9DC0B3A5A196610F97B2B41EA06AE9DD4F",
+      "songName": "I missed the last train driven by THE jack skelebone,",
+      "levelAuthorName": "Touqai",
       "difficulties": [
         {
           "characteristic": "Standard",

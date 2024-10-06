@@ -4,6 +4,7 @@ import { Playlist } from "@/apps/website/pages/editor/playlist/PlaylistItem.tsx"
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import type { FormEventHandler } from "npm:@types/react";
 import { filterNulls } from "@/packages/utils/filter.ts";
+import { migrateBeatSaberPlaylistWithoutIdSchema } from "@/packages/playlist/migrate.ts";
 
 export const PlaylistFromFile: FC = () => {
   const [playlists, setPlaylists] = useState<
@@ -21,7 +22,7 @@ export const PlaylistFromFile: FC = () => {
       input.files.length > 0
     ) {
       const readPlaylists = await Promise.all(
-        [...input.files].map(async (file) => {
+        [...input.files].map(async (file): Promise<(typeof BeatSaberPlaylistWithoutIdSchema._type) | null> => {
           const reader = new FileReader();
           const content = await new Promise((resolve, reject) => {
             reader.onload = (event) => resolve(event.target?.result);
@@ -30,10 +31,11 @@ export const PlaylistFromFile: FC = () => {
           });
           const object = JSON.parse(content as string);
           try {
-            const playlist = await BeatSaberPlaylistWithoutIdSchema.parseAsync(
+            const playlistParsed = await BeatSaberPlaylistWithoutIdSchema.parseAsync(
               object,
             );
-            return playlist;
+
+            return migrateBeatSaberPlaylistWithoutIdSchema(playlistParsed);
           } catch (err) {
             console.error(`In ${file.name}`, err);
             return null;

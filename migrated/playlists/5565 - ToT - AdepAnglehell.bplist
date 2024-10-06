@@ -9,10 +9,10 @@
   },
   "songs": [
     {
-      "songName": "tiziana",
-      "levelAuthorName": "Phøenix",
       "hash": "E417A1BBBA33A638AC1E73D8487BF2B1833DBED3",
       "levelid": "custom_level_E417A1BBBA33A638AC1E73D8487BF2B1833DBED3",
+      "songName": "tiziana",
+      "levelAuthorName": "Phøenix",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -21,10 +21,10 @@
       ]
     },
     {
-      "songName": "你呀你呀",
-      "levelAuthorName": "wangyufy",
       "hash": "2E9B994039FE8C3C5D6B6E34B178457E1909CBAB",
       "levelid": "custom_level_2E9B994039FE8C3C5D6B6E34B178457E1909CBAB",
+      "songName": "你呀你呀",
+      "levelAuthorName": "wangyufy",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -33,10 +33,10 @@
       ]
     },
     {
-      "songName": "disco light",
-      "levelAuthorName": "Various Mappers",
       "hash": "2337E9C03A2BAF32CB6BC2E5127172B772869FFA",
       "levelid": "custom_level_2337E9C03A2BAF32CB6BC2E5127172B772869FFA",
+      "songName": "disco light",
+      "levelAuthorName": "Various Mappers",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -45,10 +45,10 @@
       ]
     },
     {
-      "songName": "Christmas Eve/Sarajevo 12/24",
-      "levelAuthorName": "GalaxyMaster",
       "hash": "C5E6D1C5DCB77B9492D7ECA0808FC6261CFEB0AC",
       "levelid": "custom_level_C5E6D1C5DCB77B9492D7ECA0808FC6261CFEB0AC",
+      "songName": "Christmas Eve/Sarajevo 12/24",
+      "levelAuthorName": "GalaxyMaster",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -57,10 +57,10 @@
       ]
     },
     {
-      "songName": "Sting",
-      "levelAuthorName": "minsiii",
       "hash": "1E416827AFE9BBF8B7F61B1DE727EACCB72FC0D1",
       "levelid": "custom_level_1E416827AFE9BBF8B7F61B1DE727EACCB72FC0D1",
+      "songName": "Sting",
+      "levelAuthorName": "minsiii",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -69,10 +69,10 @@
       ]
     },
     {
-      "songName": "Wings",
-      "levelAuthorName": "mansiii",
       "hash": "764B4505AE8A82610B01E0186B33E2CCE6FCF5B3",
       "levelid": "custom_level_764B4505AE8A82610B01E0186B33E2CCE6FCF5B3",
+      "songName": "Wings",
+      "levelAuthorName": "mansiii",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -81,10 +81,10 @@
       ]
     },
     {
-      "songName": "bad guy",
-      "levelAuthorName": "Marsh",
       "hash": "2C9D511289F8AB477561D45F8E66ADEF818EC789",
       "levelid": "custom_level_2C9D511289F8AB477561D45F8E66ADEF818EC789",
+      "songName": "bad guy",
+      "levelAuthorName": "Marsh",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -93,10 +93,10 @@
       ]
     },
     {
-      "songName": "Mi Bebito Fiu Fiu",
-      "levelAuthorName": "Groovy",
       "hash": "7A185545110E0C1841BA95350C08B10BAE6F5E09",
       "levelid": "custom_level_7A185545110E0C1841BA95350C08B10BAE6F5E09",
+      "songName": "Mi Bebito Fiu Fiu",
+      "levelAuthorName": "Groovy",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -105,10 +105,10 @@
       ]
     },
     {
-      "songName": "After Dark",
-      "levelAuthorName": "zSkull162",
       "hash": "E9AE299CAA41A3DF89BC5CA8045B35BEDACFD4DB",
       "levelid": "custom_level_E9AE299CAA41A3DF89BC5CA8045B35BEDACFD4DB",
+      "songName": "After Dark",
+      "levelAuthorName": "zSkull162",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -117,10 +117,10 @@
       ]
     },
     {
-      "songName": "Bongo Bong",
-      "levelAuthorName": "Schnapq",
       "hash": "0E7BF5EDB2C83630B58F6D5B1197D75A1A788E96",
       "levelid": "custom_level_0E7BF5EDB2C83630B58F6D5B1197D75A1A788E96",
+      "songName": "Bongo Bong",
+      "levelAuthorName": "Schnapq",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -129,10 +129,10 @@
       ]
     },
     {
-      "songName": "Round and Around",
-      "levelAuthorName": "August",
       "hash": "3C9E8C081757AECA1421AC39749E6205728A59DE",
       "levelid": "custom_level_3C9E8C081757AECA1421AC39749E6205728A59DE",
+      "songName": "Round and Around",
+      "levelAuthorName": "August",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -141,10 +141,10 @@
       ]
     },
     {
-      "songName": "Sweet Dreams feat.Rica",
-      "levelAuthorName": "CharlotteAulin",
       "hash": "B5C42193C42B1D865A9C834BADB070666C5D32EE",
       "levelid": "custom_level_B5C42193C42B1D865A9C834BADB070666C5D32EE",
+      "songName": "Sweet Dreams feat.Rica",
+      "levelAuthorName": "CharlotteAulin",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -153,10 +153,10 @@
       ]
     },
     {
-      "songName": "Lunes ng Umaga (monday morning)",
-      "levelAuthorName": "Cush & WinterEdge",
       "hash": "A049FAB55D0B295E1E174D02532009F341081954",
       "levelid": "custom_level_A049FAB55D0B295E1E174D02532009F341081954",
+      "songName": "Lunes ng Umaga (monday morning)",
+      "levelAuthorName": "Cush & WinterEdge",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -165,10 +165,10 @@
       ]
     },
     {
-      "songName": "Honeymoon Phase",
-      "levelAuthorName": "Zyxi & Vylet",
       "hash": "3BBA20454D309D851B8C6E921897DEFCF119042F",
       "levelid": "custom_level_3BBA20454D309D851B8C6E921897DEFCF119042F",
+      "songName": "Honeymoon Phase",
+      "levelAuthorName": "Zyxi & Vylet",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -177,10 +177,10 @@
       ]
     },
     {
-      "songName": "Summer Grass, a Shadow Silhouette of the Passing Days",
-      "levelAuthorName": "XAce1337manX",
       "hash": "52B916DB712619D2294D22D660A0DF63059F6C64",
       "levelid": "custom_level_52B916DB712619D2294D22D660A0DF63059F6C64",
+      "songName": "Summer Grass, a Shadow Silhouette of the Passing Days",
+      "levelAuthorName": "XAce1337manX",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -189,10 +189,10 @@
       ]
     },
     {
-      "songName": "Freaks",
-      "levelAuthorName": "Tranch",
       "hash": "914EF27D128C79F4BC749F46F2595A0D0501D78A",
       "levelid": "custom_level_914EF27D128C79F4BC749F46F2595A0D0501D78A",
+      "songName": "Freaks",
+      "levelAuthorName": "Tranch",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -201,10 +201,10 @@
       ]
     },
     {
-      "songName": "El Dorado",
-      "levelAuthorName": "MadChase",
       "hash": "1D1328084340233CB9A8B5E934261252E1002949",
       "levelid": "custom_level_1D1328084340233CB9A8B5E934261252E1002949",
+      "songName": "El Dorado",
+      "levelAuthorName": "MadChase",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -213,10 +213,10 @@
       ]
     },
     {
-      "songName": "Take You Home",
-      "levelAuthorName": "Various Mappers",
       "hash": "1903BA35C2E4CB099DDCACEE29D917691680583D",
       "levelid": "custom_level_1903BA35C2E4CB099DDCACEE29D917691680583D",
+      "songName": "Take You Home",
+      "levelAuthorName": "Various Mappers",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -225,10 +225,10 @@
       ]
     },
     {
-      "songName": "Numb Little Bug",
-      "levelAuthorName": "Jevk",
       "hash": "01DEFE291DB8E813245D41781ACDEE82EE7E028A",
       "levelid": "custom_level_01DEFE291DB8E813245D41781ACDEE82EE7E028A",
+      "songName": "Numb Little Bug",
+      "levelAuthorName": "Jevk",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -237,10 +237,10 @@
       ]
     },
     {
-      "songName": "Feel Alive",
-      "levelAuthorName": "Bitz & Frost",
       "hash": "A05F9A104E43AE7E747F1AF3EC251FB58FFD03A1",
       "levelid": "custom_level_A05F9A104E43AE7E747F1AF3EC251FB58FFD03A1",
+      "songName": "Feel Alive",
+      "levelAuthorName": "Bitz & Frost",
       "difficulties": [
         {
           "characteristic": "Standard",

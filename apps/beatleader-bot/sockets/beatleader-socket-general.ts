@@ -1,7 +1,7 @@
 import { EventEmitter } from "https://deno.land/x/event@2.0.1/mod.ts";
 import { BeatLeaderGeneralSocketAccepted, BeatLeaderGeneralSocketAny } from "@/apps/beatleader-bot/beatleader-zod.ts";
-import { Err, Ok } from "@/apps/beatleader-bot/deps.ts";
 import { getWSGeneralLogger } from "@/packages/log/beatleader-bot.ts";
+import { Err, Ok } from "@/packages/utils/optionals.ts";
 
 type WSGeneralEvents = {
   open: [any];

@@ -9,10 +9,10 @@
   },
   "songs": [
     {
-      "songName": "Jormngand",
-      "levelAuthorName": "Uninstaller",
       "hash": "453694C4BB8C9AF1F27B0110149858E6F88EAC03",
       "levelid": "custom_level_453694C4BB8C9AF1F27B0110149858E6F88EAC03",
+      "songName": "Jormngand",
+      "levelAuthorName": "Uninstaller",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -21,10 +21,10 @@
       ]
     },
     {
-      "songName": "Movin'",
-      "levelAuthorName": "Premiere Equipe",
       "hash": "6333CDBEE499B889DEE520764BC0CAE569E8A4F2",
       "levelid": "custom_level_6333CDBEE499B889DEE520764BC0CAE569E8A4F2",
+      "songName": "Movin'",
+      "levelAuthorName": "Premiere Equipe",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -33,10 +33,10 @@
       ]
     },
     {
-      "songName": "Like Like",
-      "levelAuthorName": "MadChase",
       "hash": "9F9E4B05DCAF6D44332068109F36F4C9DB5AA357",
       "levelid": "custom_level_9F9E4B05DCAF6D44332068109F36F4C9DB5AA357",
+      "songName": "Like Like",
+      "levelAuthorName": "MadChase",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -45,10 +45,10 @@
       ]
     },
     {
-      "songName": "Hypnodancer",
-      "levelAuthorName": "Groovy",
       "hash": "C289C2FBEFA044E4C3FE98E9E39814E75AB423BB",
       "levelid": "custom_level_C289C2FBEFA044E4C3FE98E9E39814E75AB423BB",
+      "songName": "Hypnodancer",
+      "levelAuthorName": "Groovy",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -57,10 +57,10 @@
       ]
     },
     {
-      "songName": "Oyasumi",
-      "levelAuthorName": "Yaomin",
       "hash": "EB27A5093132E1688A3DC7C56EAF62F9523CBF26",
       "levelid": "custom_level_EB27A5093132E1688A3DC7C56EAF62F9523CBF26",
+      "songName": "Oyasumi",
+      "levelAuthorName": "Yaomin",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -69,10 +69,10 @@
       ]
     },
     {
-      "songName": "Geronimo",
-      "levelAuthorName": "Xenothas",
       "hash": "1C69E6F9DF191705158DB8B0B3A23C5920471C97",
       "levelid": "custom_level_1C69E6F9DF191705158DB8B0B3A23C5920471C97",
+      "songName": "Geronimo",
+      "levelAuthorName": "Xenothas",
       "difficulties": [
         {
           "characteristic": "Standard",

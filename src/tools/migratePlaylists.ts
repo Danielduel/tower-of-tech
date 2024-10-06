@@ -1,9 +1,5 @@
 // import { compress } from "../../../deno-zip/mod.ts";
-import type {
-  BeatSaberPlaylist,
-  BeatSaberPlaylistSongItem,
-  BeatSaberPlaylistSongItemDifficulty,
-} from "../types/BeatSaberPlaylist.d.ts";
+import type { BeatSaberPlaylist } from "../types/BeatSaberPlaylist.d.ts";
 import { getCoverBase64 } from "@/src/utils/cover-image.ts";
 import { stringifyPlaylist } from "@/src/utils/json.ts";
 import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
@@ -17,7 +13,11 @@ import {
   Uint8ArrayWriter,
   ZipWriter,
 } from "https://unpkg.com/@zip.js/zip.js@2.7.48/index.js";
-import { difficultyEquals } from "@/packages/utils/difficultyEquals.ts";
+import { removePlaylistItemDuplicates } from "@/packages/playlist/migrate.ts";
+import {
+  BeatSaberPlaylistWithoutIdSchema,
+  BeatSaberPlaylistWithoutIdSchemaT,
+} from "@/packages/types/beatsaber-playlist.ts";
 
 const coverPath = new URL(import.meta.resolve("../../migrated/covers")).pathname;
 
@@ -48,13 +48,13 @@ const dirListingGuests = [...Deno.readDirSync(sourcePathGuests)]
       .map((item) => [guestNameDir.name, item] as const)
   );
 
-const readPlaylistFile = (path: string): BeatSaberPlaylist => {
-  return JSON.parse(Deno.readTextFileSync(path));
+const readPlaylistFile = (path: string): BeatSaberPlaylistWithoutIdSchemaT => {
+  return BeatSaberPlaylistWithoutIdSchema.parse(JSON.parse(Deno.readTextFileSync(path)));
 };
 
 const migratePlaylist = async (
   fileName: string,
-  playlist: BeatSaberPlaylist,
+  playlist: BeatSaberPlaylistWithoutIdSchemaT,
   path: string,
 ) => {
   const longName = fileName
@@ -130,33 +130,6 @@ const [playlists, guestPlaylists] = await Promise.all([
 //     },
 //   }, "/"),
 // );
-
-const removePlaylistItemDuplicates = (items: BeatSaberPlaylistSongItem[]): BeatSaberPlaylistSongItem[] => {
-  const out = new Map<string, BeatSaberPlaylistSongItem>();
-
-  items.forEach((item) => {
-    const key = item.hash;
-    const exists = out.has(key);
-    if (!exists) {
-      out.set(key, item);
-    }
-
-    const state = out.get(key)!;
-
-    item.difficulties &&
-      item.difficulties.forEach((diff) => {
-        const alreadyAdded = state.difficulties.some((stateItem) => difficultyEquals(stateItem, diff));
-
-        if (alreadyAdded) return;
-
-        state.difficulties.push(diff);
-      });
-
-    out.set(key, state);
-  });
-
-  return [...out.values()];
-};
 
 type CompressFiles = {
   localPath: string;

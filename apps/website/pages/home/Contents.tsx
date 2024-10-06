@@ -1,4 +1,4 @@
-import { playlistMapping } from "@/packages/playlist/mod.ts";
+import { playlistMapping } from "@/packages/playlist/collections/tower-of-tech/mod.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 

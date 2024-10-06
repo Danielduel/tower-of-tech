@@ -9,10 +9,10 @@
   },
   "songs": [
     {
-      "songName": "Prestige And Vestige",
-      "levelAuthorName": "staryouh",
       "hash": "01C30BD1764A924A99A3ECF068109E83328C94DC",
       "levelid": "custom_level_01C30BD1764A924A99A3ECF068109E83328C94DC",
+      "songName": "Prestige And Vestige",
+      "levelAuthorName": "staryouh",
       "difficulties": [
         {
           "characteristic": "Standard",

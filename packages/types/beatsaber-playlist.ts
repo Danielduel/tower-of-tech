@@ -14,6 +14,7 @@ export const BeatSaberPlaylistSongItemDifficultySchema = z.object({
   characteristic: BeatSaberDifficultyCharacteristicSchema,
   name: BeatSaberDifficultyNameSchema,
 });
+export type BeatSaberPlaylistSongItemDifficultySchemaT = typeof BeatSaberPlaylistSongItemDifficultySchema._type;
 
 export const BeatSaberPlaylistSongItemMetadataSchema = z.object({
   id: z.string(),
@@ -50,6 +51,7 @@ export const BeatSaberPlaylistWithoutIdSchema = z.object({
   songs: z.array(BeatSaberPlaylistSongItemSchema),
   image: z.string().transform(makeImageBase64),
 });
+export type BeatSaberPlaylistWithoutIdSchemaT = typeof BeatSaberPlaylistWithoutIdSchema._type;
 
 export const BeatSaberPlaylistSchema = z.object({
   id: z.string().transform(makePlaylistId),
