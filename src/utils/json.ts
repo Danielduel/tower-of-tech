@@ -1,4 +1,4 @@
-import { BeatSaberPlaylist } from "@/src/types/BeatSaberPlaylist.d.ts";
+import { BeatSaberPlaylistWithoutIdSchemaT } from "@/packages/types/beatsaber-playlist.ts";
 
 export const stringify = <T>(value: T) => JSON.stringify(value, undefined, 2);
 
@@ -8,7 +8,7 @@ const mutate_moveKeyToTheTopOfTheObject = <T extends Record<string, unknown>>(va
   value[key] = cache;
 };
 
-const playlistKeyStructure: (keyof BeatSaberPlaylist)[] = [
+const playlistKeyStructure: (keyof BeatSaberPlaylistWithoutIdSchemaT)[] = [
   "playlistTitle",
   "playlistAuthor",
   "customData",
@@ -16,8 +16,8 @@ const playlistKeyStructure: (keyof BeatSaberPlaylist)[] = [
   "image",
 ];
 
-export const stringifyPlaylist = (value: BeatSaberPlaylist) => {
-  const v = value as Partial<BeatSaberPlaylist>;
+export const stringifyPlaylist = (value: BeatSaberPlaylistWithoutIdSchemaT) => {
+  const v = value as Partial<BeatSaberPlaylistWithoutIdSchemaT>;
   playlistKeyStructure
     .forEach((key) => mutate_moveKeyToTheTopOfTheObject(v, key));
   return stringify(v);

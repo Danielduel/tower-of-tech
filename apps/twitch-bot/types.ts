@@ -86,3 +86,25 @@ export type TwitchIRCEvents = {
 };
 
 export class TwitchIRCEmitter extends EventEmitter<TwitchIRCEvents> {}
+
+type TwitchPubSubEventData = {
+  socket_open: Event;
+  socket_close: CloseEvent;
+  socket_error: Event;
+  pong: void;
+  reconnect: void;
+};
+
+type TwitchPubSubEventHandlerOpts<T> = [{
+  event: T;
+}];
+
+export type TwitchPubSubEvents = {
+  socket_open: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["socket_open"]>;
+  socket_close: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["socket_close"]>;
+  socket_error: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["socket_error"]>;
+  pong: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["pong"]>;
+  reconnect: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["reconnect"]>;
+};
+
+export class TwitchPubSubEmitter extends EventEmitter<TwitchPubSubEvents> {}

@@ -1,5 +1,5 @@
 // deno-lint-ignore-file no-case-declarations
-import { channelReadAds } from "@/packages/api-twitch/helix-schema/scopes.ts";
+import { channelReadAds, channelReadRedemptions } from "@/packages/api-twitch/helix-schema/scopes.ts";
 import { channelManageBroadcast, createScopes } from "@/packages/api-twitch/helix-schema/scopes.ts";
 import { open } from "https://deno.land/x/open@v0.0.6/index.ts";
 import { userTokenSuccessSchema } from "@/packages/api-twitch/helix-schema/common.ts";
@@ -15,8 +15,7 @@ export const getUserToken = () =>
     payload.append("force_verify", "true");
     payload.append("redirect_uri", redirect_uri);
     payload.append("response_type", "code");
-    payload.append("scope", createScopes(channelManageBroadcast, channelReadAds));
-    // payload.append("state", "")
+    payload.append("scope", createScopes(channelManageBroadcast, channelReadRedemptions, channelReadAds));
 
     const content = () => `
       <style>

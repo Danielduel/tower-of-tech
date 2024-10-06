@@ -1,5 +1,9 @@
 import { fromUint8Array } from "https://denopkg.com/chiefbiiko/base64@master/mod.ts";
-import { BeatSaberPlaylistFlatSchema, BeatSaberPlaylistSchema } from "@/packages/types/beatsaber-playlist.ts";
+import {
+  BeatSaberPlaylistFlatSchemaT,
+  BeatSaberPlaylistSchema,
+  BeatSaberPlaylistSchemaT,
+} from "@/packages/types/beatsaber-playlist.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { makeImageBase64, UppercaseMapHash } from "@/packages/types/brands.ts";
@@ -48,7 +52,7 @@ const stripVersionstamps = <T extends Record<string, unknown>>(
 
 export const fetchBeatSaberPlaylistWithoutResolvingSongItem = async (
   playlistId: PlaylistId,
-) => {
+): Promise<Omit<BeatSaberPlaylistFlatSchemaT, "image"> | null> => {
   const _item = (await dbEditor.BeatSaberPlaylist
     .find(playlistId))
     ?.flat();
@@ -62,13 +66,13 @@ export const fetchBeatSaberPlaylistWithoutResolvingSongItem = async (
       ...item.customData,
       ...playlistIdToCustomData(playlistId).customData,
     },
-  } satisfies Omit<typeof BeatSaberPlaylistFlatSchema._type, "image">;
+  };
 };
 
 export const fetchBeatSaberPlaylistsWithoutResolvingSongItem = async (
   playlistIds: PlaylistId[],
 ): Promise<
-  Record<PlaylistId, Omit<typeof BeatSaberPlaylistSchema._type, "image">>
+  Record<PlaylistId, Omit<BeatSaberPlaylistFlatSchemaT, "image">>
 > => {
   const responses = await Promise.all(
     playlistIds.map(fetchBeatSaberPlaylistWithoutResolvingSongItem),
@@ -117,7 +121,7 @@ export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem = async (
       ...playlistIdToCustomData(playlistId).customData,
     },
     songs,
-  } satisfies Omit<typeof BeatSaberPlaylistSchema._type, "image">;
+  } satisfies Omit<BeatSaberPlaylistSchemaT, "image">;
 };
 
 export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage = async (playlistId: PlaylistId) => {
@@ -129,7 +133,7 @@ export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage = async
   const data = {
     ...item,
     image: await getImage(playlistId),
-  } satisfies typeof BeatSaberPlaylistSchema._type;
+  } satisfies BeatSaberPlaylistSchemaT;
 
   return data;
 };

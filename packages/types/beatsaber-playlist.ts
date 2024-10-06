@@ -31,6 +31,7 @@ export const BeatSaberPlaylistSongItemSchema = z.object({
   levelAuthorName: z.string().optional(),
   difficulties: z.array(BeatSaberPlaylistSongItemDifficultySchema).optional(),
 });
+export type BeatSaberPlaylistSongItemSchemaT = typeof BeatSaberPlaylistSongItemSchema._type;
 
 export const BeatSaberPlaylistCustomDataSchema = z.object({
   AllowDuplicates: z.boolean().optional(),
@@ -61,6 +62,7 @@ export const BeatSaberPlaylistSchema = z.object({
   songs: z.array(BeatSaberPlaylistSongItemSchema),
   image: z.string().transform(makeImageBase64),
 });
+export type BeatSaberPlaylistSchemaT = typeof BeatSaberPlaylistSchema._type;
 
 export const BeatSaberPlaylistWithImageAsUrlSchema = z.object({
   id: z.string().transform(makePlaylistId),
@@ -88,6 +90,7 @@ export const BeatSaberPlaylistFlatSchema = z.object({
   songs: z.array(z.string().transform(makeUppercaseMapHash)),
   image: z.null(),
 });
+export type BeatSaberPlaylistFlatSchemaT = typeof BeatSaberPlaylistFlatSchema._type;
 
 export const BeatSaberPlaylistLinkSchema = z.object({
   id: z.string().transform(makePlaylistId),

@@ -1,9 +1,8 @@
-import { collection } from "kvdex/mod.ts";
-import { zodModel } from "kvdex/ext/zod.ts";
+import { collection } from "@/packages/deps/kvdex.ts";
 import { BeatLeaderIntegrationSchema, ToTAccountFlatSchema, ToTAccountSessionSchema } from "@/packages/types/auth.ts";
 
 export const ToTAccount = collection(
-  zodModel(ToTAccountFlatSchema),
+  ToTAccountFlatSchema,
   {
     history: true,
     indices: {
@@ -14,7 +13,7 @@ export const ToTAccount = collection(
 );
 
 export const ToTAccountSession = collection(
-  zodModel(ToTAccountSessionSchema),
+  ToTAccountSessionSchema,
   {
     history: true,
     indices: {
@@ -27,7 +26,7 @@ export const ToTAccountSession = collection(
 );
 
 export const BeatLeaderIntegration = collection(
-  zodModel(BeatLeaderIntegrationSchema),
+  BeatLeaderIntegrationSchema,
   {
     history: true,
     indices: {

@@ -1,5 +1,4 @@
-import { collection } from "kvdex/mod.ts";
-import { zodModel } from "kvdex/ext/zod.ts";
+import { collection } from "@/packages/deps/kvdex.ts";
 import {
   BeatSaberPlaylistFlatSchema,
   BeatSaberPlaylistSongItemMetadataSchema,
@@ -8,7 +7,7 @@ import {
 import { getBeatSaberPlaylistSongItemMetadataKey } from "@/packages/database-editor/keys.ts";
 
 export const BeatSaberPlaylistSongItem = collection(
-  zodModel(BeatSaberPlaylistSongItemSchema),
+  BeatSaberPlaylistSongItemSchema,
   {
     idGenerator: (item) => item.hash,
     history: true,
@@ -19,7 +18,7 @@ export const BeatSaberPlaylistSongItem = collection(
 );
 
 export const BeatSaberPlaylist = collection(
-  zodModel(BeatSaberPlaylistFlatSchema),
+  BeatSaberPlaylistFlatSchema,
   {
     idGenerator: (item) => item.id,
     history: true,
@@ -27,7 +26,7 @@ export const BeatSaberPlaylist = collection(
 );
 
 export const BeatSaberPlaylistSongItemMetadata = collection(
-  zodModel(BeatSaberPlaylistSongItemMetadataSchema),
+  BeatSaberPlaylistSongItemMetadataSchema,
   {
     indices: {
       id: "primary",

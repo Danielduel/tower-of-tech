@@ -1,11 +1,10 @@
 // import { compress } from "../../../deno-zip/mod.ts";
-import type { BeatSaberPlaylist } from "../types/BeatSaberPlaylist.d.ts";
 import { getCoverBase64 } from "@/src/utils/cover-image.ts";
 import { stringifyPlaylist } from "@/src/utils/json.ts";
 import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
 import { links } from "@/apps/website/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
-import { makePlaylistId } from "@/packages/types/brands.ts";
+import { makeImageBase64, makePlaylistId, makePlaylistUrl } from "@/packages/types/brands.ts";
 import {
   // BlobWriter,
   // HttpReader,
@@ -69,7 +68,7 @@ const migratePlaylist = async (
     longName,
     shortName,
     playlist,
-    coverBase64: await getCoverBase64(shortName),
+    coverBase64: makeImageBase64(await getCoverBase64(shortName)),
   };
 };
 
@@ -93,43 +92,6 @@ const [playlists, guestPlaylists] = await Promise.all([
     ),
   ),
 ]);
-// const mergedMaps = playlists.flatMap((playlist) => playlist.playlist.songs);
-
-// const playlistItems: Record<string, BeatSaberPlaylistSongItem[]> = {};
-// mergedMaps.forEach((item) => {
-//   if (!playlistItems[item.hash]) playlistItems[item.hash] = [];
-
-//   playlistItems[item.hash].push(item);
-// });
-
-// Object
-//   .entries(playlistItems)
-//   .filter(([_, arr]) => arr.length > 1)
-//   .forEach(([key, arr]) => {
-//     const mergedStringDiffs = arr
-//       .flatMap((item) => item.difficulties)
-//       .map((diff) => `${diff.characteristic}:${diff.name}`);
-//     const difficulties = [...new Set(mergedStringDiffs)].map((stringDiff) => {
-//       const [characteristic, name] = stringDiff.split(":");
-//       return { characteristic, name } as BeatSaberPlaylistSongItemDifficulty;
-//     });
-//     playlistItems[key] = [{ ...arr[0], difficulties }];
-//   });
-
-// Note - I think nobody uses this playlist
-// const hardcodedMergedPlaylistId = "c73e5bf9-bb91-450c-913a-4b52d504444b";
-// const allMaps = Object.values(playlistItems).flatMap((x) => x);
-// playlists.push(
-//   await migratePlaylist("ToT - *.bplist", {
-//     image: "",
-//     playlistAuthor: "Danielduel",
-//     playlistTitle: "ToT - *",
-//     songs: allMaps,
-//     customData: {
-//       id: hardcodedMergedPlaylistId,
-//     },
-//   }, "/"),
-// );
 
 type CompressFiles = {
   localPath: string;
@@ -152,27 +114,29 @@ await Promise.all([
       delete playlist?.customData?.id;
     }
     const beatsaberPlaylistOffline = {
-      image: coverBase64,
+      image: makeImageBase64(coverBase64),
       playlistAuthor: playlist.playlistAuthor,
       playlistTitle: playlist.playlistTitle,
       songs: removePlaylistItemDuplicates(playlist.songs),
       customData: {
         id: playlist?.customData?.id ?? ulid(),
       },
-    } satisfies BeatSaberPlaylist;
-    const beatsaberPlaylist: BeatSaberPlaylist = {
+    } satisfies BeatSaberPlaylistWithoutIdSchemaT;
+    const beatsaberPlaylist: BeatSaberPlaylistWithoutIdSchemaT = {
       ...beatsaberPlaylistOffline,
       customData: {
         AllowDuplicates: false,
         id: beatsaberPlaylistOffline.customData?.id,
         owner: "Danielduel",
         // `https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists${path}${fileName}`
-        syncURL: new URL(
-          links.api.v1.playlist.download(
-            makePlaylistId(beatsaberPlaylistOffline.customData.id),
-            towerOfTechWebsiteOrigin,
-          ),
-        ).href,
+        syncURL: makePlaylistUrl(
+          new URL(
+            links.api.v1.playlist.download(
+              makePlaylistId(beatsaberPlaylistOffline.customData.id),
+              towerOfTechWebsiteOrigin,
+            ),
+          ).href,
+        ),
       },
     };
     const beatsaberPlaylistOfflineString = stringifyPlaylist(
@@ -206,7 +170,7 @@ await Promise.all([
       delete playlist?.customData?.id;
     }
 
-    const beatsaberPlaylistOffline: BeatSaberPlaylist = {
+    const beatsaberPlaylistOffline: BeatSaberPlaylistWithoutIdSchemaT = {
       image: coverBase64,
       playlistAuthor: playlist.playlistAuthor,
       playlistTitle: playlist.playlistTitle,
@@ -215,15 +179,17 @@ await Promise.all([
         id: playlist?.customData?.id ?? ulid(),
       },
     };
-    const beatsaberPlaylist: BeatSaberPlaylist = {
+    const beatsaberPlaylist: BeatSaberPlaylistWithoutIdSchemaT = {
       ...beatsaberPlaylistOffline,
       customData: {
         AllowDuplicates: false,
         id: beatsaberPlaylistOffline.customData?.id,
         owner: "Danielduel",
-        syncURL: new URL(
-          `https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists-guest${path}${fileName}`,
-        ).href,
+        syncURL: makePlaylistUrl(
+          new URL(
+            `https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists-guest${path}${fileName}`,
+          ).href,
+        ),
       },
     };
     const beatsaberPlaylistOfflineString = stringifyPlaylist(

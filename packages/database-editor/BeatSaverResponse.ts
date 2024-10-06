@@ -1,6 +1,5 @@
+import { collection } from "@/packages/deps/kvdex.ts";
 import { z } from "zod";
-import { collection } from "kvdex/mod.ts";
-import { zodModel } from "kvdex/ext/zod.ts";
 import {
   BeatSaverIdToHashCacheSchema,
   BeatSaverMapResponseSuccessSchema,
@@ -15,7 +14,7 @@ export const BeatSaverResponseWrapperSchema = z.object({
 });
 
 export const BeatSaverIdToHashCache = collection(
-  zodModel(BeatSaverIdToHashCacheSchema),
+  BeatSaverIdToHashCacheSchema,
   {
     idGenerator: (item) => item.id,
     history: true,
@@ -26,7 +25,7 @@ export const BeatSaverIdToHashCache = collection(
 );
 
 export const BeatSaverResponseWrapper = collection(
-  zodModel(BeatSaverResponseWrapperSchema),
+  BeatSaverResponseWrapperSchema,
   {
     idGenerator: (item) => item.id,
     history: true,
@@ -34,7 +33,7 @@ export const BeatSaverResponseWrapper = collection(
 );
 
 export const BeatSaverMapResponseSuccess = collection(
-  zodModel(BeatSaverMapResponseSuccessSchema),
+  BeatSaverMapResponseSuccessSchema,
   {
     idGenerator: (item) => item.id,
     history: true,

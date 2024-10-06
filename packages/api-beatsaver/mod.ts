@@ -3,6 +3,7 @@ import {
   BeatSaverMapByHashResponseSchema,
   BeatSaverMapByIdResponseSchema,
   BeatSaverMapId,
+  makeBeatSaverMapId,
 } from "@/packages/types/beatsaver.ts";
 import { fetcher } from "@/packages/api-utils/fetcher.ts";
 import { fileExists } from "@/packages/fs/fileExists.ts";
@@ -10,19 +11,11 @@ import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
 import { BeatSaverApi } from "@/packages/api-beatsaver/api.ts";
-import {
-  BeatSaverResolvable,
-  BeatSaverResolvableHashKind,
-  BeatSaverResolvableIdKind,
-  matchBeatSaverResolvable,
-  splitBeatSaverResolvables,
-} from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
+import { BeatSaverResolvable, splitBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { scheduleCache } from "@/packages/api-beatsaver/cache.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
-import { ulid } from "kvdex/src/deps.ts";
-import { BeatSaberPlaylistSongItemDifficulty } from "@/src/types/BeatSaberPlaylist.d.ts";
-import { BeatSaberPlaylistSongItem } from "@/src/types/BeatSaberPlaylist.d.ts";
 import { BeatSaverMapResponseSuccessSchema } from "@/packages/types/beatsaver.ts";
+import { ulid } from "@/packages/deps/ulid.ts";
 
 export { BeatSaverApi };
 
@@ -216,7 +209,7 @@ export const fetchAndCacheFromResolvablesRaw = async (
     await dbEditor.BeatSaverIdToHashCache.addMany(
       responseFromIdsEntries.map(([id, x]) => {
         return {
-          id,
+          id: makeBeatSaverMapId(id),
           hash: x?.versions[0].hash,
           available: !!x,
           removed: !x,

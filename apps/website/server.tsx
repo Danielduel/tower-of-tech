@@ -32,7 +32,7 @@ const importMap = isUltraDevMode
 importMap.imports["ultra/"] = "/_ultra/";
 importMap.imports["@/"] = "/@/";
 importMap.imports["zod"] = "/_x/zod@v3.22.4/mod.ts";
-importMap.imports["kvdex/"] = "/_x/kvdex@v0.31.0/";
+// importMap.imports["kvdex/"] = "/_x/kvdex@v0.31.0/";
 importMap.imports["https://deno.land/x/"] = "/_x/";
 
 const renderer = createRenderHandler({

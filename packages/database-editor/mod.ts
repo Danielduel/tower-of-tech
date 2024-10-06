@@ -13,9 +13,9 @@ import {
   BeatSaverMapResponseSuccess,
   BeatSaverResponseWrapper,
 } from "@/packages/database-editor/BeatSaverResponse.ts";
-import { kvdex } from "kvdex/mod.ts";
 import { DiscordChannel, DiscordGuild } from "@/packages/database-editor/DiscordGuild.ts";
 import { BeatLeaderIntegration, ToTAccount, ToTAccountSession } from "@/packages/database-editor/Auth.ts";
+import { kvdex } from "@/packages/deps/kvdex.ts";
 
 export const kv = isDbEditorRemote()
   ? await (async () => {
