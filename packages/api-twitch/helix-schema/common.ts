@@ -56,9 +56,6 @@ export const paginatedResponseSchemaWrapper = <T extends ZodTypeAny>(dataSchema:
     }),
   });
 
-export const zodParseInt = (x: string | undefined) => typeof x === "string" ? parseInt(x) : undefined;
-export const zodParseIntSchema = z.string().transform(zodParseInt);
-
 export const userTokenSuccessSchema = z.object({
   access_token: userAccessTokenSchema,
   refresh_token: userRefreshTokenSchema,

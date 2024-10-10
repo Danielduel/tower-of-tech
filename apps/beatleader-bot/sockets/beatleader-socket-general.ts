@@ -1,7 +1,7 @@
 import { EventEmitter } from "https://deno.land/x/event@2.0.1/mod.ts";
 import { BeatLeaderGeneralSocketAccepted, BeatLeaderGeneralSocketAny } from "@/apps/beatleader-bot/beatleader-zod.ts";
 import { getWSGeneralLogger } from "@/packages/log/beatleader-bot.ts";
-import { Err, Ok } from "@/packages/utils/optionals.ts";
+import { tryParse } from "@/packages/utils/tryParse.ts";
 
 type WSGeneralEvents = {
   open: [any];
@@ -12,14 +12,6 @@ type WSGeneralEvents = {
   accepted: [typeof BeatLeaderGeneralSocketAccepted["_type"]];
   accepted_errorParse: [any];
   message_errorParse: [any, any];
-};
-
-const tryParse = (data: string) => {
-  try {
-    return Ok(JSON.parse(data));
-  } catch (_) {
-    return Err("Error parsing");
-  }
 };
 
 class WSGeneralEmitter extends EventEmitter<WSGeneralEvents> {}

@@ -1,6 +1,7 @@
 import { createTwitchIRC } from "../sockets/twitch-irc.ts";
 import { defaultHeaders, TwitchAuthApi } from "@/packages/api-twitch/auth-api.ts";
 import { registerCommands } from "@/apps/twitch-bot/common/danielduel-commands.ts";
+import { registerPubSub } from "@/apps/twitch-bot/common/danielduel-pubsub.ts";
 
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
 const nick = Deno.env.get("TWITCH_IRC_COMMANDS_LOGIN")!;
@@ -16,6 +17,7 @@ const [irc, cleanup, ircContext] = createTwitchIRC({
 });
 
 registerCommands(irc);
+registerPubSub(ircContext);
 
 Deno.addSignalListener("SIGINT", () => {
   cleanup();

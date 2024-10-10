@@ -8,6 +8,8 @@ import {
   patchHelixChannelsHeadersSchema,
 } from "@/packages/api-twitch/helix-schema/helixChannels.ts";
 import { helixChannelsAdsResource } from "@/packages/api-twitch/helix-schema/helixChannelsAds.ts";
+import { helixChannelsAdsHeadersSchema } from "@/packages/api-twitch/helix-schema/helixChannelsAds.ts";
+import { BroadcasterId } from "@/packages/api-twitch/helix-schema/brand.ts";
 
 export const TwitchHelixApiClient = client({
   fetcher,
@@ -38,6 +40,20 @@ export const getChannelDataByBroadcasterName = async (
     searchParams: {
       query: broadcasterName,
       first: 1,
+    },
+    headers: {
+      ...auth,
+    },
+  });
+};
+
+export const getChannelAds = async (
+  auth: typeof helixChannelsAdsHeadersSchema._type,
+  broadcaster_id: BroadcasterId,
+) => {
+  return await TwitchHelixApiClient.channelsAds.get({
+    searchParams: {
+      broadcaster_id,
     },
     headers: {
       ...auth,

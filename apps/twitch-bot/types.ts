@@ -14,6 +14,10 @@ import type { UserState } from "https://deno.land/x/twitch_irc@0.11.2/lib/messag
 import type { Message } from "https://deno.land/x/twitch_irc@0.11.2/lib/message.ts";
 import type { Channel as TwitchChannel } from "https://deno.land/x/twitch_irc@0.11.2/lib/base.ts";
 import type { Client } from "https://deno.land/x/twitch_irc@0.11.2/mod.ts";
+import type {
+  TwitchRedemptionRewardSchemaT,
+  TwitchRedemptionSchemaT,
+} from "@/apps/twitch-bot/sockets/twitch-schema.ts";
 
 export type { TwitchChannel };
 
@@ -94,6 +98,11 @@ type TwitchPubSubEventData = {
   pong: void;
   reconnect: void;
 };
+type TwitchPubSubEventData_PointRedeem = {
+  reward: TwitchRedemptionRewardSchemaT;
+  redemption: TwitchRedemptionSchemaT;
+  topic: string;
+};
 
 type TwitchPubSubEventHandlerOpts<T> = [{
   event: T;
@@ -105,6 +114,7 @@ export type TwitchPubSubEvents = {
   socket_error: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["socket_error"]>;
   pong: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["pong"]>;
   reconnect: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["reconnect"]>;
+  reward_redeemed: [TwitchPubSubEventData_PointRedeem];
 };
 
 export class TwitchPubSubEmitter extends EventEmitter<TwitchPubSubEvents> {}

@@ -19,6 +19,7 @@
     "discord-bot:register-raw": "deno run -A ./apps/discord-bot/setup/register-commands.ts",
 
     "twitch-bot:playlist-worker": "deno run -A --env ./apps/twitch-bot/tools/playlist-worker.ts",
+    "twitch-bot:pubsub": "deno run -A --env ./apps/twitch-bot/tools/pubsub-prototype.ts",
     "twitch-bot:commands": "deno run -A --env ./apps/twitch-bot/tools/commands.ts",
     "twitch-bot:commands-techmulti": "deno run -A --env ./apps/twitch-bot/tools/commands-techmulti.ts",
 
