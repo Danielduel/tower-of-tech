@@ -1,5 +1,5 @@
-import { Brand, make } from "https://deno.land/x/ts_brand@0.0.1/mod.ts";
 import { z } from "zod";
+import { Brand, make } from "@/packages/deps/brand.ts";
 
 export type PaginationCursor = Brand<string, "PaginationCursor">;
 export const makePaginationCursor = (paginationCursor: string) => make<PaginationCursor>()(paginationCursor);

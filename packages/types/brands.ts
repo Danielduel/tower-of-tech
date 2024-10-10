@@ -1,4 +1,4 @@
-import { Brand, make } from "https://deno.land/x/ts_brand@0.0.1/mod.ts";
+import { Brand, make } from "@/packages/deps/brand.ts";
 
 export type UppercaseMapHashForLevelId = Brand<
   string,
