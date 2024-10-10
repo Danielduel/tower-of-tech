@@ -1,5 +1,5 @@
+import { assertEquals, describe, it } from "@/packages/deps/test.ts";
 import { getTimezoneOffsetO } from "@/packages/discord/cron/tech-multi/utils.ts";
-import { assertEquals, describe, it } from "../../../deps/test.ts";
 
 describe("getTimezoneOffsetO - check timezone mapping coverage", () => {
   // copy-paste from random stackoverflow answer

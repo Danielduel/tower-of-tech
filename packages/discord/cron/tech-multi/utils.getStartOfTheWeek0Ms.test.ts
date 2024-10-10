@@ -1,4 +1,4 @@
-import { assertEquals, describe, it } from "../../../deps/test.ts";
+import { assertEquals, describe, it } from "@/packages/deps/test.ts";
 import { getStartOfTheWeek0Ms } from "@/packages/discord/cron/tech-multi/utils.ts";
 
 describe("getStartOfTheWeek0Ms", () => {

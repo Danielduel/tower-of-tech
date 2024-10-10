@@ -1,9 +1,8 @@
-import { forwardRef, PropsWithChildren, useState } from "react";
+import { AnchorHTMLAttributes, FC, forwardRef, HTMLAttributes, PropsWithChildren, useState } from "react";
 import { LinkProps, useLocation } from "react-router-dom";
-import { Link } from "../ui/Link.tsx";
-import { AnchorHTMLAttributes, FC, HTMLAttributes } from "npm:@types/react";
+import { Link } from "@/apps/website/components/ui/Link.tsx";
 import { links } from "@/apps/website/routing.config.ts";
-import { cn } from "../../../../packages/deps/classnames.ts";
+import { cn } from "@/packages/deps/classnames.ts";
 import { LayoutContent, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
 
 export const VisualNovelLink = (props: LinkProps) => {

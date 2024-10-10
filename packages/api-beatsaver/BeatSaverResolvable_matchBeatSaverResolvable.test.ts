@@ -1,5 +1,5 @@
+import { assertEquals } from "@/packages/deps/test.ts";
 import { matchBeatSaverResolvable } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
-import { assertEquals } from "../deps/test.ts";
 import { makeBeatSaverMapId } from "@/packages/types/beatsaver.ts";
 import { makeLowercaseMapHash } from "@/packages/types/brands.ts";
 

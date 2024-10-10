@@ -1,5 +1,5 @@
 import { HandlerForRoute } from "@/packages/api/v1/types.ts";
-import { discordChannelToBeatSaberPlaylist } from "../../../discord/commands/api/discordChannelToBeatSaberPlaylist.ts";
+import { discordChannelToBeatSaberPlaylist } from "@/packages/discord/commands/api/discordChannelToBeatSaberPlaylist.ts";
 import { getPlaylistFileNameFromPlaylistForDiscord } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
 
 export const apiV1HandlerDiscordCommandWebhook = "/api/v1/discord/command-webhook";

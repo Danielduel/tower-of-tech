@@ -1,4 +1,4 @@
-import { assertEquals, describe, it } from "../../../deps/test.ts";
+import { assertEquals, describe, it } from "@/packages/deps/test.ts";
 import { HOUR_MS } from "@/packages/utils/time.ts";
 import { getTimezoneOffsetMs } from "@/packages/discord/cron/tech-multi/utils.ts";
 

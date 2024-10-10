@@ -1,4 +1,4 @@
-import { createTwitchIRC } from "../sockets/twitch-irc.ts";
+import { createTwitchIRC } from "@/apps/twitch-bot/sockets/twitch-irc.ts";
 import { defaultHeaders, TwitchAuthApi } from "@/packages/api-twitch/auth-api.ts";
 import { registerCommands } from "@/apps/twitch-bot/common/danielduel-commands.ts";
 import { registerPubSub } from "@/apps/twitch-bot/common/danielduel-pubsub.ts";
