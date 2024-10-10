@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import { ImgHTMLAttributes } from "npm:@types/react";
+import { ImgHTMLAttributes, useEffect, useRef, useState } from "react";
 
 const ImageLoading = (props: ImgHTMLAttributes<HTMLImageElement>) => {
   return (

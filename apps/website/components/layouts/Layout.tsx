@@ -1,6 +1,5 @@
-import { FC, PropsWithChildren } from "react";
+import { FC, HTMLProps, PropsWithChildren } from "react";
 import { cn } from "@/packages/deps/classnames.ts";
-import { HTMLProps } from "npm:@types/react";
 
 export const LayoutWrapper: FC<PropsWithChildren> = ({ children }) => {
   return (

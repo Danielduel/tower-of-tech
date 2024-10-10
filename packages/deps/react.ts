@@ -39,8 +39,11 @@ export default React;
 export type {
   AnchorHTMLAttributes,
   FC,
+  FormEventHandler,
   ForwardRefExoticComponent,
   HTMLAttributes,
+  HTMLProps,
+  ImgHTMLAttributes,
   PropsWithChildren,
   PropsWithRef,
   ReactNode,
