@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import {
   VisualNovelDivider,
   VisualNovelStep,
@@ -5,7 +6,6 @@ import {
   VisualNovelStepInlineATag,
 } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { ToTPlaylistList } from "@/apps/website/pages/home/PlaylistInstallGuide.tsx";
-import { forwardRef } from "react";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 
 export const Browse = forwardRef<HTMLDivElement>(

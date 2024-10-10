@@ -1,4 +1,4 @@
-import { EventEmitter } from "https://deno.land/x/event@2.0.1/mod.ts";
+import { EventEmitter } from "@/packages/deps/eventEmitter.ts";
 import type { ClearChat } from "https://deno.land/x/twitch_irc@0.11.2/lib/message/clearchat.ts";
 import type { ClearMsg } from "https://deno.land/x/twitch_irc@0.11.2/lib/message/clearmsg.ts";
 import type { GlobalUserState } from "https://deno.land/x/twitch_irc@0.11.2/lib/message/globaluserstate.ts";

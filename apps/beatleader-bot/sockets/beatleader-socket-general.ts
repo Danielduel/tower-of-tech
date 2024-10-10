@@ -1,4 +1,4 @@
-import { EventEmitter } from "https://deno.land/x/event@2.0.1/mod.ts";
+import { EventEmitter } from "@/packages/deps/eventEmitter.ts";
 import { BeatLeaderGeneralSocketAccepted, BeatLeaderGeneralSocketAny } from "@/apps/beatleader-bot/beatleader-zod.ts";
 import { getWSGeneralLogger } from "@/packages/log/beatleader-bot.ts";
 import { tryParse } from "@/packages/utils/tryParse.ts";
