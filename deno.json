@@ -3,6 +3,9 @@
     "start": "deno run -A ./src/main.ts",
     "migrate": "deno run -A ./src/tools/migrate.ts",
 
+    "check": "deno task website:check",
+    "website:check": "deno check ./apps/website/App.tsx",
+
     "cli:build": "make -f ./apps/cli/Makefile build",
     "mod:build": "make -f ./apps/mod/Makefile build",
 

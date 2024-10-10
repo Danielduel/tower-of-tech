@@ -1,5 +1,5 @@
-import { MapItem } from "@/packages/ui/playlist/map-item.tsx";
-import { WithBeatSaverMaps, WithMaps, WithPlaylist } from "@/packages/ui/playlist/types.ts";
+import { MapItem } from "./map-item.tsx";
+import { WithBeatSaverMaps, WithMaps, WithPlaylist } from "./types.ts";
 
 const PlaylistMaps = (
   { maps, beatSaverMaps, prependKey }: WithMaps & WithBeatSaverMaps & {

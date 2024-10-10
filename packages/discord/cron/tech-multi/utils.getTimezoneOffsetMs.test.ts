@@ -1,5 +1,4 @@
-import { describe, it } from "jsr:@std/testing/bdd";
-import { assertEquals } from "@/packages/test/deps.ts";
+import { assertEquals, describe, it } from "../../../deps/test.ts";
 import { HOUR_MS } from "@/packages/utils/time.ts";
 import { getTimezoneOffsetMs } from "@/packages/discord/cron/tech-multi/utils.ts";
 

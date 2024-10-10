@@ -1,4 +1,4 @@
-import { assertEquals } from "@/packages/test/deps.ts";
+import { assertEquals } from "../deps/test.ts";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import {
   lazyBankMessageToId,

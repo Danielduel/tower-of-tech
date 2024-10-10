@@ -4,9 +4,8 @@ import { Link as _Link, LinkProps } from "react-router-dom";
 import { links } from "@/apps/website/routing.config.ts";
 import { useResolvedPath } from "react-router-dom";
 import { useMatch } from "react-router-dom";
-import { cn } from "@/packages/utils/classnames.ts";
+import { cn } from "../../../../packages/deps/classnames.ts";
 import { LayoutContent, LayoutSidebar, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
-import { Profile } from "@/apps/website/components/Profile.tsx";
 
 export const Link: FC<LinkProps> = (props) => {
   const resolved = useResolvedPath(props.to);

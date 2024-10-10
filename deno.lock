@@ -28,6 +28,7 @@
       "jsr:@std/streams@^0.221.0": "jsr:@std/streams@0.221.0",
       "jsr:@std/testing": "jsr:@std/testing@1.0.3",
       "jsr:@std/ulid": "jsr:@std/ulid@1.0.0",
+      "jsr:@std/ulid@1.0.0": "jsr:@std/ulid@1.0.0",
       "jsr:@std/ulid@^0.220.0": "jsr:@std/ulid@0.220.1",
       "jsr:@std/ulid@^1.0.0": "jsr:@std/ulid@1.0.0",
       "npm:@discordjs/ws@2.0.0-dev.1716768608-d22b55fc8": "npm:@discordjs/ws@2.0.0-dev.1716768608-d22b55fc8",
@@ -975,8 +976,11 @@
     "https://deno.land/x/tmi/mod.ts": "https://deno.land/x/tmi@v1.0.6/mod.ts",
     "https://deno.land/x/twitch_irc/mod.ts": "https://deno.land/x/twitch_irc@0.11.2/mod.ts",
     "https://esm.sh/v128/@types/react@~18.2/index.d.ts": "https://esm.sh/v128/@types/react@18.2.38/index.d.ts",
+    "https://esm.sh/v128/@types/react@~18.2/jsx-dev-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-dev-runtime~.d.ts",
     "https://esm.sh/v128/@types/react@~18.2/jsx-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-runtime~.d.ts",
     "https://esm.sh/v135/@types/pako@~2.0/index.d.ts": "https://esm.sh/v135/@types/pako@2.0.3/index.d.ts",
+    "https://esm.sh/v135/@types/react-dom@~18.2/client~.d.ts": "https://esm.sh/v135/@types/react-dom@18.2.17/client~.d.ts",
+    "https://esm.sh/v135/@types/react-transition-group@~4.4/X-ZS9yZWFjdA/index.d.ts": "https://esm.sh/v135/@types/react-transition-group@4.4.10/X-ZS9yZWFjdA/index.d.ts",
     "https://unpkg.com/@zip.js/zip.js/index.js": "https://unpkg.com/@zip.js/zip.js@2.7.48/index.js"
   },
   "remote": {
@@ -1931,6 +1935,7 @@
     "https://esm.sh/v122/@trpc/server@10.0.0/denonext/server.mjs": "8654ddbb4b19af44b9a0df91fde8b26e10fee55c509359c5a41c738270576591",
     "https://esm.sh/v122/@trpc/server@10.0.0/denonext/shared.js": "c25907f1068d5526c8b58fbe1c099a803d2a6b0b6e28d4289ae2b337caad8f45",
     "https://esm.sh/v122/@trpc/server@10.0.0/observable": "c344939fd96905f2aa1000a5a3d9212729755e37c5e197cf579218b3c2212f23",
+    "https://esm.sh/v122/@trpc/server@10.0.0/rpc": "fe307b855f475f860c9d01c7f37b2d30560a9fcba2215bc45ec372a72d72c964",
     "https://esm.sh/v122/@trpc/server@10.0.0/shared": "e65742f88bdf1e8b40262ab0c038509c87e5cf6112dc72a0ff7b6bafa07ebd5b",
     "https://esm.sh/v122/@turf/boolean-point-in-polygon@6.5.0/denonext/boolean-point-in-polygon.mjs": "4ab1c28a117dbdb25491333c964b76b460b8c9046dcb64dfef802e6142844109",
     "https://esm.sh/v122/@turf/helpers@6.5.0/denonext/helpers.mjs": "3fdabda7695d541fd0715ed5930ff747f9b2149c917b4530665ac8cc0c769d5c",

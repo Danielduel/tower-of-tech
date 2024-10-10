@@ -1,8 +1,8 @@
 import { FC, PropsWithChildren, Suspense } from "react";
-import { Link } from "@/packages/ui/Link.tsx";
+import { Link } from "../../../components/ui/Link.tsx";
 import { Route, Routes } from "react-router-dom";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
-import { WithPlaylistLinks } from "@/packages/ui/playlist/types.ts";
+import { WithPlaylistLinks } from "../../../components/ui/playlist/types.ts";
 import { PlaylistList } from "@/apps/website/pages/editor/playlist/PlaylistList.tsx";
 import { PlaylistFromFile } from "@/apps/website/pages/editor/playlist/PlaylistFromFile.tsx";
 import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";

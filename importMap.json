@@ -29,6 +29,6 @@
     "mesozoic/": "https://deno.land/x/danielduel_ultra_stack_mesozoic@0.0.2/",
 
     "@/": "./",
-    "react": ".///packages/react/mod.ts"
+    "react": ".///packages/deps/react.ts"
   }
 }

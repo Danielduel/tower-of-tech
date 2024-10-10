@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Link } from "@/packages/ui/Link.tsx";
+import { Link } from "../ui/Link.tsx";
 import { links } from "@/apps/website/routing.config.ts";
 
 export function EditorLayout({ children }: React.PropsWithChildren) {

@@ -1,6 +1,6 @@
-import { assertEquals } from "@/packages/test/deps.ts";
+import { assertEquals } from "../deps/test.ts";
 import { getPlaylistFileNameFromPlaylist } from "@/packages/playlist/getPlaylistFileNameFromPlaylist.ts";
-import * as mocks from "@/packages/test/mocks/playlists/mod.ts";
+import * as mocks from "../__test__/playlists/mod.ts";
 
 Deno.test("getPlaylistFileNameFromPlaylist", async ({ step }) => {
   await step("accsaber raw", () => {

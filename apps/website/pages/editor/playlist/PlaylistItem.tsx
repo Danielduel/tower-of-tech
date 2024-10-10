@@ -1,5 +1,5 @@
 import { FC, useMemo } from "react";
-import { WithMaps, WithPlaylist, WithPlaylistWithImageAsUrl } from "@/packages/ui/playlist/types.ts";
+import { WithMaps, WithPlaylist, WithPlaylistWithImageAsUrl } from "../../../components/ui/playlist/types.ts";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { MapItem } from "@/apps/website/components/MapItem.tsx";
 import { Image } from "@/apps/website/components/Image.tsx";

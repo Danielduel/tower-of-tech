@@ -1,6 +1,6 @@
+import { forwardRef } from "react";
 import { VisualNovelContainer } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
-import { forwardRef } from "react";
 
 export const Download = forwardRef<HTMLDivElement>((_, ref) => {
   return (

@@ -1,4 +1,4 @@
-import { ConsoleHandler } from "@/packages/log/deps.ts";
+import { ConsoleHandler } from "@/packages/deps/log.ts";
 
 export const getDefaultHandler = () => new ConsoleHandler("DEBUG");
 export const getDefaultModuleHandler = (moduleName: string) => (

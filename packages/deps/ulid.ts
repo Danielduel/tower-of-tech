@@ -1,1 +1,1 @@
-export { ulid } from "jsr:@std/ulid";
+export { ulid } from "jsr:@std/ulid@1.0.0";

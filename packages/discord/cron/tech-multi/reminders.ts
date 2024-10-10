@@ -1,4 +1,3 @@
-import OpenAI from "npm:openai@4.55.3";
 import {
   ChannelTypes,
   GatewayIntents,
@@ -20,6 +19,7 @@ import { getStartAndEndTimeOfScheduledEventCurrentWeek } from "@/packages/discor
 import { handleFail, reportFail } from "@/packages/utils/handleFail.ts";
 import { Bot } from "@/packages/discord/deps.ts";
 import { getScheduledEvents } from "@/packages/discord/deps.ts";
+import { OpenAI } from "@/packages/deps/OpenAI.ts";
 
 export async function getTechMultiGptPrompt(
   taskDefinition: string,

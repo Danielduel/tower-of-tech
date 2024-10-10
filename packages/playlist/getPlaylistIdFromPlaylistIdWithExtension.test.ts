@@ -1,4 +1,4 @@
-import { assertEquals } from "@/packages/test/deps.ts";
+import { assertEquals } from "../deps/test.ts";
 import { getPlaylistIdFromPlaylistIdWithExtension } from "@/packages/playlist/getPlaylistIdFromPlaylistIdWithExtension.ts";
 
 Deno.test("playlistIdWithFileExtensionToPlaylistId", async ({ step }) => {
