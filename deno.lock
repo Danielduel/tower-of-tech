@@ -2,6 +2,7 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "jsr:@dduel/ts-brand@0.1.0": "jsr:@dduel/ts-brand@0.1.0",
       "jsr:@deno/kv-oauth": "jsr:@deno/kv-oauth@0.11.0",
       "jsr:@mtb/time@0.1.2": "jsr:@mtb/time@0.1.2",
       "jsr:@olli/kvdex": "jsr:@olli/kvdex@2.1.0",
@@ -27,6 +28,7 @@
       "jsr:@std/path@^1.0.2": "jsr:@std/path@1.0.2",
       "jsr:@std/streams@^0.221.0": "jsr:@std/streams@0.221.0",
       "jsr:@std/testing": "jsr:@std/testing@1.0.3",
+      "jsr:@std/testing@1.0.3": "jsr:@std/testing@1.0.3",
       "jsr:@std/ulid": "jsr:@std/ulid@1.0.0",
       "jsr:@std/ulid@1.0.0": "jsr:@std/ulid@1.0.0",
       "jsr:@std/ulid@^0.220.0": "jsr:@std/ulid@0.220.1",
@@ -43,6 +45,9 @@
       "npm:zod@^3.22.4": "npm:zod@3.23.8"
     },
     "jsr": {
+      "@dduel/ts-brand@0.1.0": {
+        "integrity": "db11d48e01f57b07dc6d66b5d2603fb1caeb35c0a716951447ea68e32dc17062"
+      },
       "@deno/kv-oauth@0.11.0": {
         "integrity": "17a8822fde1573563b8bdb526d925e398a4b92394381273bad1e837fb4a6c8b2",
         "dependencies": [
