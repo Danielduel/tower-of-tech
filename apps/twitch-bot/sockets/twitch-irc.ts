@@ -16,7 +16,8 @@ const logger = getTwitchIRCLogger();
 export const createTwitchIRC = ({ debug, credentials, channel }: CreateTwitchIRCOpts) => {
   logger.debug("create");
 
-  const _debug = (...args: unknown[]) => logger.debug(`${channel} ${credentials.nick} ${console.dir(args)}`);
+  const _debug = (...args: unknown[]) =>
+    logger.debug(`${channel} ${credentials.nick} ${args ? console.dir(args) : ""}`);
 
   _debug("create emitter");
   const TwitchIRCEmitterInstance = new TwitchIRCEmitter();
@@ -33,9 +34,9 @@ export const createTwitchIRC = ({ debug, credentials, channel }: CreateTwitchIRC
       [
         eventName,
         (e: TwitchIRCEvents[Type][0]["event"]) => {
-          _debug(`${eventName} start`, e);
+          // _debug(`${eventName} start`, e);
           emit(eventName, e);
-          _debug(`${eventName} end`);
+          // _debug(`${eventName} end`);
         },
       ] as const;
 

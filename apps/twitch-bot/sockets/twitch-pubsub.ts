@@ -106,8 +106,6 @@ export const createTwitchPubSub = async (channelId: BroadcasterId, authToken: Us
   wss.addEventListener("error", (event) => TwitchPubSubEmitterInstance.emit("socket_error", { event }));
   wss.addEventListener("message", (event) => {
     try {
-      console.log("asdasdas", JSON.stringify(event));
-
       logger.info("pubSubTypeSchema");
       const _parsed = pubSubTypeSchema.parse(event);
       if (_parsed.data.isErr()) {

@@ -61,6 +61,7 @@ class ChatShoutoutManager {
 }
 
 export class TwitchHelixBroadcasterApi {
+  public broadcasterLogin: string;
   protected broadcasterId: BroadcasterId;
   protected clientId: string;
   protected userCreds: UserTokenSuccessSchemaT;
@@ -74,6 +75,7 @@ export class TwitchHelixBroadcasterApi {
     this.clientId = clientId;
     this.userCreds = userCreds;
     this.broadcasterId = userData.id;
+    this.broadcasterLogin = userData.login;
   }
 
   private static createAuthHeaders(
@@ -189,17 +191,32 @@ export class TwitchHelixBroadcasterApi {
     return unwrapDataArrayResponseAll(response);
   }
 
+  public async getBroadcasterByName(broadcasterName: string) {
+    const response = await TwitchHelixApiClient.searchChannels.get({
+      headers: this.createAuthHeaders(),
+      searchParams: {
+        query: broadcasterName,
+        first: 1,
+      },
+    });
+
+    return unwrapDataArrayResponse(response);
+  }
+
   protected chatShoutoutLoop() {
     if (this.chatShoutoutManager.queuedChatShoutoutTimeout !== -1) return; // don't do anything if the queue is already working
     if (this.chatShoutoutManager.queuedChatShoutouts.length < 1) return; // don't do anything if there's anything in the queue
     const { lastChatShoutoutTimestamp, chatShoutoutCooldown } = this.chatShoutoutManager;
-    const nextChatShoutout = (lastChatShoutoutTimestamp + chatShoutoutCooldown) - Date.now();
+    const _nextChatShoutout = (lastChatShoutoutTimestamp + chatShoutoutCooldown) - Date.now();
+    const nextChatShoutout = Math.max(_nextChatShoutout, 0);
+    console.log("Next chat shoutout " + nextChatShoutout);
     this.chatShoutoutManager.queuedChatShoutoutTimeout = setTimeout(async () => {
       try {
         const { queuedChatShoutouts } = this.chatShoutoutManager;
         if (queuedChatShoutouts.length > 0) {
           // TODO(@Danielduel) - check and handle recurring shoutouts
           const broadcasterId = queuedChatShoutouts.shift()!;
+          console.log(`Sending shoutout for ${broadcasterId}`);
           await TwitchHelixApiClient.chatShoutoutResource.post({
             headers: this.createAuthHeaders(),
             searchParams: {
@@ -209,7 +226,11 @@ export class TwitchHelixBroadcasterApi {
             },
           });
         }
-      } catch (_) { /* Ignore the error for now, it will be caused by recurring shoutouts */ }
+      } catch (_) {
+        /* Ignore the error for now, it will be caused by recurring shoutouts */
+        console.error("FAILED TO SHOUTOUT");
+        console.error(_);
+      }
       this.chatShoutoutManager.lastChatShoutoutTimestamp = Date.now(); // even if the logic fails, I prefer to put the queue on cooldown
       this.chatShoutoutManager.queuedChatShoutoutTimeout = -1;
       this.chatShoutoutLoop();

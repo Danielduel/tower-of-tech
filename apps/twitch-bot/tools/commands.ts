@@ -39,7 +39,7 @@ const [pubSub, pubSubCleanup, pubSubContext] = await twitchHelixBroadcasterApiMa
 const twitchPubSubManager = new TwitchPubSubManager(pubSub, pubSubContext);
 await registerSnoozeAdsRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
-registerCommands(irc);
+registerCommands(irc, twitchHelixBroadcasterApiManaged);
 registerAdsWarningLoop(twitchHelixBroadcasterApiManaged, ircContext);
 
 Deno.addSignalListener("SIGINT", () => {

@@ -1,11 +1,14 @@
 import { createTwitchIRC } from "@/apps/twitch-bot/sockets/twitch-irc.ts";
 import { defaultHeaders, TwitchAuthApi } from "@/packages/api-twitch/auth-api.ts";
-import { getChannelDataByBroadcasterName, setChannelData } from "@/packages/api-twitch/helix-api.ts";
+import {
+  getChannelDataByBroadcasterName,
+  setChannelData,
+} from "../../../packages/api-twitch/helix/TwitchHelixApiClient.ts";
 import { getUserToken } from "@/packages/api-twitch/auth-api-get-user-access-token.e2e.ts";
 import { getRelativeTimeTechMulti } from "@/packages/discord/cron/tech-multi/utils.ts";
 import { createAppAuthorizationHeaders, createUserAuthorizationHeaders } from "@/packages/api-twitch/helix/common.ts";
 import { registerCommands } from "@/apps/twitch-bot/common/danielduel-commands.ts";
-import { registerPubSub } from "@/apps/twitch-bot/common/danielduel-pubsub.ts";
+import { registerPubSub } from "@/apps/twitch-bot/common/registerTechMultiReminderRedeem.ts";
 
 const userCredentials = await getUserToken();
 
