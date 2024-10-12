@@ -1,8 +1,15 @@
 // deno-lint-ignore-file no-case-declarations
-import { channelReadAds, channelReadRedemptions } from "@/packages/api-twitch/helix-schema/scopes.ts";
-import { channelManageBroadcast, createScopes } from "@/packages/api-twitch/helix-schema/scopes.ts";
+import {
+  channelManageAds,
+  channelManageRedemptions,
+  channelReadAds,
+  channelReadRedemptions,
+  moderatorManageAnnouncements,
+  moderatorManageShoutouts,
+} from "@/packages/api-twitch/helix/scopes.ts";
+import { channelManageBroadcast, createScopes } from "@/packages/api-twitch/helix/scopes.ts";
 import { open } from "https://deno.land/x/open@v0.0.6/index.ts";
-import { userTokenSuccessSchema } from "@/packages/api-twitch/helix-schema/common.ts";
+import { userTokenSuccessSchema } from "@/packages/api-twitch/helix/common.ts";
 
 const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const client_secret = Deno.env.get("TWITCH_API_CLIENT_SECRET")!;
@@ -15,7 +22,18 @@ export const getUserToken = () =>
     payload.append("force_verify", "true");
     payload.append("redirect_uri", redirect_uri);
     payload.append("response_type", "code");
-    payload.append("scope", createScopes(channelManageBroadcast, channelReadRedemptions, channelReadAds));
+    payload.append(
+      "scope",
+      createScopes(
+        channelManageBroadcast,
+        channelReadRedemptions,
+        channelReadAds,
+        channelManageAds,
+        channelManageRedemptions,
+        moderatorManageShoutouts,
+        moderatorManageAnnouncements,
+      ),
+    );
 
     const content = () => `
       <style>

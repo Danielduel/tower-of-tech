@@ -1,15 +1,23 @@
 import { client } from "zod-api";
 import { fetcher } from "@/packages/api-utils/fetcher.ts";
 import { getLogger } from "@/packages/api-utils/logger.ts";
-import { helixSearchChannelsHeadersSchema, helixSearchChannelsResource } from "./helix-schema/helixSearchChannels.ts";
+import {
+  helixSearchChannelsHeadersSchema,
+  helixSearchChannelsResource,
+} from "@/packages/api-twitch/helix/helixSearchChannels.ts";
 import {
   helixChannelsResource,
   patchHelixChannelsBodySchema,
   patchHelixChannelsHeadersSchema,
-} from "@/packages/api-twitch/helix-schema/helixChannels.ts";
-import { helixChannelsAdsResource } from "@/packages/api-twitch/helix-schema/helixChannelsAds.ts";
-import { helixChannelsAdsHeadersSchema } from "@/packages/api-twitch/helix-schema/helixChannelsAds.ts";
-import { BroadcasterId } from "@/packages/api-twitch/helix-schema/brand.ts";
+} from "@/packages/api-twitch/helix/helixChannels.ts";
+import { helixChannelsAdsResource } from "@/packages/api-twitch/helix/helixChannelsAds.ts";
+import { helixChannelsAdsHeadersSchema } from "@/packages/api-twitch/helix/helixChannelsAds.ts";
+import { BroadcasterId } from "@/packages/api-twitch/helix/brand.ts";
+import { helixUsersResource } from "@/packages/api-twitch/helix/helixUsers.ts";
+import { helixChannelsAdsScheduleSnoozeResource } from "@/packages/api-twitch/helix/helixChannelsAdsScheduleSnooze.ts";
+import { helixChannelPointsCustomRewardsResource } from "@/packages/api-twitch/helix/helixChannelPointsCustomRewards.ts";
+import { helixChatShoutoutResource } from "@/packages/api-twitch/helix/helixChatShoutouts.ts";
+import { helixChatAnnouncementsResource } from "@/packages/api-twitch/helix/helixChatAnnouncements.ts";
 
 export const TwitchHelixApiClient = client({
   fetcher,
@@ -18,19 +26,14 @@ export const TwitchHelixApiClient = client({
   resources: {
     channels: helixChannelsResource,
     channelsAds: helixChannelsAdsResource,
+    channelsAdsScheduleSnoozeResource: helixChannelsAdsScheduleSnoozeResource,
+    channelPointsCustomRewardsResource: helixChannelPointsCustomRewardsResource,
+    chatAnnouncements: helixChatAnnouncementsResource,
+    chatShoutoutResource: helixChatShoutoutResource,
     searchChannels: helixSearchChannelsResource,
+    users: helixUsersResource,
   },
 });
-
-export class OpenTwitchHelixApi {
-}
-
-export class PublicHelixApi {
-}
-
-export class ManagementHelixApi {
-  constructor() {}
-}
 
 export const getChannelDataByBroadcasterName = async (
   auth: typeof helixSearchChannelsHeadersSchema._type,

@@ -2,10 +2,7 @@ import { defaultHeaders, TwitchAuthApi } from "@/packages/api-twitch/auth-api.ts
 import { getChannelDataByBroadcasterName, setChannelData } from "@/packages/api-twitch/helix-api.ts";
 
 import { getUserToken } from "./auth-api-get-user-access-token.e2e.ts";
-import {
-  createAppAuthorizationHeaders,
-  createUserAuthorizationHeaders,
-} from "@/packages/api-twitch/helix-schema/common.ts";
+import { createAppAuthorizationHeaders, createUserAuthorizationHeaders } from "@/packages/api-twitch/helix/common.ts";
 
 const userCredentials = await getUserToken();
 

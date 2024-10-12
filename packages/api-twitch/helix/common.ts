@@ -9,8 +9,8 @@ import {
   userAccessTokenHeaderSchema,
   userAccessTokenSchema,
   userRefreshTokenSchema,
-} from "@/packages/api-twitch/helix-schema/brand.ts";
-import { AppAccessToken, UserAccessToken } from "@/packages/api-twitch/helix-schema/brand.ts";
+} from "@/packages/api-twitch/helix/brand.ts";
+import { AppAccessToken, UserAccessToken } from "@/packages/api-twitch/helix/brand.ts";
 
 export const appAuthHeadersSchema = z.object({
   Authorization: appAccessTokenHeaderSchema,
@@ -48,6 +48,11 @@ export const createUserAuthorizationHeaders = (
   ...createClientIdHeader(clientId),
 });
 
+export const responseSchemaWrapper = <T extends ZodTypeAny>(dataSchema: T) =>
+  z.object({
+    data: dataSchema,
+  });
+
 export const paginatedResponseSchemaWrapper = <T extends ZodTypeAny>(dataSchema: T) =>
   z.object({
     data: dataSchema,
@@ -63,6 +68,7 @@ export const userTokenSuccessSchema = z.object({
   scope: z.array(z.string()),
   token_type: z.string(),
 });
+export type UserTokenSuccessSchemaT = typeof userTokenSuccessSchema._type;
 
 export const appTokenSuccessSchema = z.object({
   access_token: appAccessTokenSchema,

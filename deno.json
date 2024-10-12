@@ -23,8 +23,8 @@
 
     "twitch-bot:playlist-worker": "deno run -A --env ./apps/twitch-bot/tools/playlist-worker.ts",
     "twitch-bot:pubsub": "deno run -A --env ./apps/twitch-bot/tools/pubsub-prototype.ts",
-    "twitch-bot:commands": "deno run -A --env ./apps/twitch-bot/tools/commands.ts",
-    "twitch-bot:commands-techmulti": "deno run -A --env ./apps/twitch-bot/tools/commands-techmulti.ts",
+    "twitch-bot:commands": "deno run -A --unstable --env ./apps/twitch-bot/tools/commands.ts",
+    "twitch-bot:commands-techmulti": "deno run -A --unstable --env ./apps/twitch-bot/tools/commands-techmulti.ts",
 
     "s3s-fs-local": "./scripts/s3s-fs-local.sh",
 

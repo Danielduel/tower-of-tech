@@ -9,6 +9,16 @@ export type BroadcasterId = Brand<string, "BroadcasterId">;
 export const makeBroadcasterId = (broadcasterId: string) => make<BroadcasterId>()(broadcasterId);
 export const broadcasterIdSchema = z.string().transform(makeBroadcasterId);
 
+export type TwitchRedeemMappingKeyId = Brand<string, "TwitchRedeemMappingKeyId">;
+export const makeTwitchRedeemMappingKeyId = (twitchRedeemMappingKeyId: string) =>
+  make<TwitchRedeemMappingKeyId>()(twitchRedeemMappingKeyId);
+export const twitchRedeemMappingKeyIdSchema = z.string().transform(makeTwitchRedeemMappingKeyId);
+
+export type TwitchChannelPointsCustomRewardId = Brand<string, "TwitchChannelPointsCustomRewardId">;
+export const makeTwitchChannelPointsCustomRewardId = (twitchChannelPointsCustomRewardId: string) =>
+  make<TwitchChannelPointsCustomRewardId>()(twitchChannelPointsCustomRewardId);
+export const twitchChannelPointsCustomRewardIdSchema = z.string().transform(makeTwitchChannelPointsCustomRewardId);
+
 export type GameId = Brand<string, "GameId">;
 export const makeGameId = (gameId: string) => make<GameId>()(gameId);
 export const gameIdSchema = z.string().transform(makeGameId);

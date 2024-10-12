@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { resource } from "zod-api";
-import { userAuthHeadersSchema } from "@/packages/api-twitch/helix-schema/common.ts";
+import { userAuthHeadersSchema } from "@/packages/api-twitch/helix/common.ts";
 import { zodParseNumberAsRFC3339DateSchema } from "@/packages/utils/zod.ts";
 
 export const helixChannelsAdsItemSchema = z.object({
@@ -11,6 +11,7 @@ export const helixChannelsAdsItemSchema = z.object({
   snooze_count: z.number(),
   snooze_refresh_at: zodParseNumberAsRFC3339DateSchema,
 });
+export type HelixChannelsAdsItemSchemaT = typeof helixChannelsAdsItemSchema._type;
 
 export const helixChannelsAdsQuerySchema = z.object({
   broadcaster_id: z.string(),

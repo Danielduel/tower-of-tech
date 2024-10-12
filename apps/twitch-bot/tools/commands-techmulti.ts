@@ -3,11 +3,9 @@ import { defaultHeaders, TwitchAuthApi } from "@/packages/api-twitch/auth-api.ts
 import { getChannelDataByBroadcasterName, setChannelData } from "@/packages/api-twitch/helix-api.ts";
 import { getUserToken } from "@/packages/api-twitch/auth-api-get-user-access-token.e2e.ts";
 import { getRelativeTimeTechMulti } from "@/packages/discord/cron/tech-multi/utils.ts";
-import {
-  createAppAuthorizationHeaders,
-  createUserAuthorizationHeaders,
-} from "@/packages/api-twitch/helix-schema/common.ts";
+import { createAppAuthorizationHeaders, createUserAuthorizationHeaders } from "@/packages/api-twitch/helix/common.ts";
 import { registerCommands } from "@/apps/twitch-bot/common/danielduel-commands.ts";
+import { registerPubSub } from "@/apps/twitch-bot/common/danielduel-pubsub.ts";
 
 const userCredentials = await getUserToken();
 
@@ -25,6 +23,7 @@ const [irc, cleanup, ircContext] = createTwitchIRC({
 });
 
 registerCommands(irc);
+registerPubSub(ircContext);
 
 Deno.addSignalListener("SIGINT", () => {
   cleanup();

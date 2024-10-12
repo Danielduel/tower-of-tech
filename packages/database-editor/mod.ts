@@ -16,6 +16,7 @@ import {
 import { DiscordChannel, DiscordGuild } from "@/packages/database-editor/DiscordGuild.ts";
 import { BeatLeaderIntegration, ToTAccount, ToTAccountSession } from "@/packages/database-editor/Auth.ts";
 import { kvdex } from "@/packages/deps/kvdex.ts";
+import { TwitchRedeemMapping } from "@/packages/database-editor/TwitchRedeem.ts";
 
 export const kv = isDbEditorRemote()
   ? await (async () => {
@@ -38,6 +39,7 @@ export const dbEditor = kvdex(kv, {
   ToTAccount,
   ToTAccountSession,
   BeatLeaderIntegration,
+  TwitchRedeemMapping,
 });
 
 export const s3clientEditor = isLocal() && !isDbEditorRemote()

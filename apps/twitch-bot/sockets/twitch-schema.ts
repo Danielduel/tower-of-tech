@@ -1,4 +1,4 @@
-import { broadcasterIdSchema } from "@/packages/api-twitch/helix-schema/brand.ts";
+import { broadcasterIdSchema } from "@/packages/api-twitch/helix/brand.ts";
 import { z } from "zod";
 import { zodParseStringAsDateSchema } from "@/packages/utils/zod.ts";
 

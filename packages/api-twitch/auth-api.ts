@@ -2,7 +2,7 @@ import { z } from "zod";
 import { client, resource } from "zod-api";
 import { fetcher } from "@/packages/api-utils/fetcher.ts";
 import { getLogger } from "@/packages/api-utils/logger.ts";
-import { appAccessTokenSchema } from "@/packages/api-twitch/helix-schema/brand.ts";
+import { appAccessTokenSchema } from "@/packages/api-twitch/helix/brand.ts";
 
 export const defaultHeaders = {
   "Content-Type": "application/x-www-form-urlencoded",

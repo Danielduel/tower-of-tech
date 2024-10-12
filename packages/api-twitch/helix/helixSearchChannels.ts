@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { broadcasterIdSchema, gameIdSchema } from "@/packages/api-twitch/helix-schema/brand.ts";
-import { appAuthHeadersSchema, paginatedResponseSchemaWrapper } from "@/packages/api-twitch/helix-schema/common.ts";
+import { broadcasterIdSchema, gameIdSchema } from "@/packages/api-twitch/helix/brand.ts";
+import { appAuthHeadersSchema, paginatedResponseSchemaWrapper } from "@/packages/api-twitch/helix/common.ts";
 import { resource } from "zod-api";
 
 export const helixSearchChannelsItemSchema = z.object({

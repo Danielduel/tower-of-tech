@@ -1,11 +1,11 @@
 import { z } from "zod";
 import { resource } from "zod-api";
-import { broadcasterIdSchema, gameIdSchema } from "@/packages/api-twitch/helix-schema/brand.ts";
+import { broadcasterIdSchema, gameIdSchema } from "@/packages/api-twitch/helix/brand.ts";
 import {
   appAuthHeadersSchema,
   paginatedResponseSchemaWrapper,
   userAuthHeadersSchema,
-} from "@/packages/api-twitch/helix-schema/common.ts";
+} from "@/packages/api-twitch/helix/common.ts";
 
 export const getHelixChannelsItemSchema = z.object({
   broadcaster_language: z.string(),
@@ -39,6 +39,7 @@ export const patchHelixChannelsBodySchema = z.object({
   // is_enabled: z.boolean().optional()
   is_branded_content: z.boolean().optional(),
 });
+export type PatchHelixChannelsBodySchemaT = typeof patchHelixChannelsBodySchema._type;
 
 export const patchHelixChannelsQuerySchema = z.object({
   broadcaster_id: z.string(),

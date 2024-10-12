@@ -195,6 +195,29 @@ export const getRelativeTime = (dateNow = Date.now()) => {
   };
 };
 
+export const getRelativeTimeNextWeek = (dateNow = Date.now()) => {
+  const schedule = getStartAndEndTimeOfScheduledEventNextWeek(dateNow);
+  const relativeStartMs = dateNow - schedule.scheduledStartTime;
+  const relativeEndMs = dateNow - schedule.scheduledEndTime;
+
+  const isBefore = relativeStartMs < 0;
+  const isDuring = relativeStartMs >= 0 && relativeEndMs < 0;
+  const isAfter = relativeEndMs >= 0;
+
+  const relativeStart = getTimeAgo(schedule.scheduledStartTime, dateNow);
+  const relativeEnd = getTimeAgo(schedule.scheduledEndTime, dateNow);
+
+  return {
+    relativeStart,
+    relativeStartMs,
+    relativeEnd,
+    relativeEndMs,
+    isBefore,
+    isDuring,
+    isAfter,
+  };
+};
+
 // export const getRelativeTimeStandard_ = (dateNow = Date.now()) => {
 //   const schedule = getStartAndEndTimeStandard(dateNow);
 //   const relativeStartMs = dateNow - schedule.scheduledStartTime;

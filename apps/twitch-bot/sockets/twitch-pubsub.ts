@@ -1,8 +1,8 @@
 import { z } from "zod";
 import { getTwitchPubSubLogger } from "@/packages/log/twitch-pubsub.ts";
 import { MINUTE_MS } from "@/packages/utils/time.ts";
-import { TwitchPubSubEmitter } from "@/apps/twitch-bot/types.ts";
-import { BroadcasterId, UserAccessToken } from "@/packages/api-twitch/helix-schema/brand.ts";
+import { TwitchPubSubContext, TwitchPubSubEmitter } from "@/apps/twitch-bot/types.ts";
+import { BroadcasterId, UserAccessToken } from "@/packages/api-twitch/helix/brand.ts";
 import { tryParse } from "@/packages/utils/tryParse.ts";
 import { zodParseStringAsDateSchema } from "@/packages/utils/zod.ts";
 import { TwitchRedemptionSchema } from "@/apps/twitch-bot/sockets/twitch-schema.ts";
@@ -158,7 +158,7 @@ export const createTwitchPubSub = async (channelId: BroadcasterId, authToken: Us
     wss.close();
   };
 
-  const context = {
+  const context: TwitchPubSubContext = {
     socket: wss,
     listenTopics,
   };

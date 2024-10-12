@@ -98,11 +98,6 @@ type TwitchPubSubEventData = {
   pong: void;
   reconnect: void;
 };
-type TwitchPubSubEventData_PointRedeem = {
-  reward: TwitchRedemptionRewardSchemaT;
-  redemption: TwitchRedemptionSchemaT;
-  topic: string;
-};
 
 type TwitchPubSubEventHandlerOpts<T> = [{
   event: T;
@@ -114,7 +109,16 @@ export type TwitchPubSubEvents = {
   socket_error: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["socket_error"]>;
   pong: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["pong"]>;
   reconnect: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["reconnect"]>;
-  reward_redeemed: [TwitchPubSubEventData_PointRedeem];
+  reward_redeemed: [{
+    reward: TwitchRedemptionRewardSchemaT;
+    redemption: TwitchRedemptionSchemaT;
+    topic: string;
+  }];
 };
 
 export class TwitchPubSubEmitter extends EventEmitter<TwitchPubSubEvents> {}
+
+export type TwitchPubSubContext = {
+  socket: WebSocket;
+  listenTopics: (topics: string[]) => void;
+};
