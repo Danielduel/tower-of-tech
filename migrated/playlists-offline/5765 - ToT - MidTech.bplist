@@ -378,18 +378,6 @@
       ]
     },
     {
-      "hash": "79B9936995E4530CA22E3A53DC52DAF69894FD65",
-      "levelid": "custom_level_79B9936995E4530CA22E3A53DC52DAF69894FD65",
-      "songName": "U.N. Owen Was Her?",
-      "levelAuthorName": "I Cant Jump Well",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "24B1990F8F72224F7827721BA16C82BD3246E926",
       "levelid": "custom_level_24B1990F8F72224F7827721BA16C82BD3246E926",
       "songName": "Monster",
@@ -414,30 +402,6 @@
       ]
     },
     {
-      "hash": "91909F45F5B5DC3A7E822137CA9610A1638239C8",
-      "levelid": "custom_level_91909F45F5B5DC3A7E822137CA9610A1638239C8",
-      "songName": "Show",
-      "levelAuthorName": "ODC",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "3F4E7F71C9B1E9411FF442CDBED82075B031D75D",
-      "levelid": "custom_level_3F4E7F71C9B1E9411FF442CDBED82075B031D75D",
-      "songName": "Lovebeam!!",
-      "levelAuthorName": "Gabriel",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "D9CFBFB16F04046F5FF994D235BCCB7DD2567D4D",
       "levelid": "custom_level_D9CFBFB16F04046F5FF994D235BCCB7DD2567D4D",
       "songName": "Firestarter VIP",
@@ -454,18 +418,6 @@
       "levelid": "custom_level_0C0162F316CCEE3C9B9C5A5356DB2AD6D18AC37B",
       "songName": "chomechochome",
       "levelAuthorName": "Kanahebi",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "77BF25F58AA565B61E68B6064EC9B7AB33E88722",
-      "levelid": "custom_level_77BF25F58AA565B61E68B6064EC9B7AB33E88722",
-      "songName": "Yuusha",
-      "levelAuthorName": "Emiru",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1338,30 +1290,6 @@
       ]
     },
     {
-      "hash": "8EA6D40002CECB79121F126921BEE431A5A046F5",
-      "levelid": "custom_level_8EA6D40002CECB79121F126921BEE431A5A046F5",
-      "songName": "Idol",
-      "levelAuthorName": "yabje, Rusty & Andy",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "hash": "506B58ADD6E31BF7A1331B94723DFBA6FB60F1AE",
-      "levelid": "custom_level_506B58ADD6E31BF7A1331B94723DFBA6FB60F1AE",
-      "songName": "Rabbit Hole",
-      "levelAuthorName": "Anammelech",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "99E5D817086DCDB0BE2A5D66DC7F0D2AD8064497",
       "levelid": "custom_level_99E5D817086DCDB0BE2A5D66DC7F0D2AD8064497",
       "songName": "On Replay",
@@ -1918,6 +1846,66 @@
       "levelid": "custom_level_F5876757112E6985C6575C72307B08FD8706DC6C",
       "songName": "NIGHT",
       "levelAuthorName": "BlAck_vOid-1001",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "B04B26FB26595133AD14E756870785B5D8BF6932",
+      "levelid": "custom_level_B04B26FB26595133AD14E756870785B5D8BF6932",
+      "songName": "Raise Your Hands",
+      "levelAuthorName": "Aquaflee",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "235CC69ACFF2F40F3E42C59243828A7905E97C78",
+      "levelid": "custom_level_235CC69ACFF2F40F3E42C59243828A7905E97C78",
+      "songName": "Trendy",
+      "levelAuthorName": "Dr_Marc",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "0AA0BE1CC9382652C6CD95BDE8B881F9D9BBF56D",
+      "levelid": "custom_level_0AA0BE1CC9382652C6CD95BDE8B881F9D9BBF56D",
+      "songName": "L'Ultima Cena",
+      "levelAuthorName": "Slayx",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "900614509D709FCD09D54A0DA80E476B4038A9A5",
+      "levelid": "custom_level_900614509D709FCD09D54A0DA80E476B4038A9A5",
+      "songName": "Virus Funk",
+      "levelAuthorName": "GalaxyMaster",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "A8E7157E5B2C57FDFA871DD9306EFC34F8596736",
+      "levelid": "custom_level_A8E7157E5B2C57FDFA871DD9306EFC34F8596736",
+      "songName": "Hollow Hunger",
+      "levelAuthorName": "Joshabi",
       "difficulties": [
         {
           "characteristic": "Standard",

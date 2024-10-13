@@ -493,11 +493,11 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
+          "name": "Hard"
         },
         {
           "characteristic": "Standard",
-          "name": "Hard"
+          "name": "Expert"
         }
       ]
     },
@@ -570,6 +570,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -618,6 +622,10 @@
         {
           "characteristic": "Standard",
           "name": "Easy"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     },
@@ -1262,6 +1270,102 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "D69E9EF955B556864846CBDE283EBF690DB3C4B3",
+      "levelid": "custom_level_D69E9EF955B556864846CBDE283EBF690DB3C4B3",
+      "songName": "Tempo Katana",
+      "levelAuthorName": "Joshabi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "64606CE394718815DEECD696737EA1AEE40E8CF4",
+      "levelid": "custom_level_64606CE394718815DEECD696737EA1AEE40E8CF4",
+      "songName": "Lied To",
+      "levelAuthorName": "oegoe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "A57D19C690E88E632A65C4CABB3A12BD41EC298D",
+      "levelid": "custom_level_A57D19C690E88E632A65C4CABB3A12BD41EC298D",
+      "songName": "Bad Liar",
+      "levelAuthorName": "Phøenix",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "905E6C964C52786321F6DF66B5DECCF95C6F4C6D",
+      "levelid": "custom_level_905E6C964C52786321F6DF66B5DECCF95C6F4C6D",
+      "songName": "Bug",
+      "levelAuthorName": "Vegetable Mapping Team",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "hash": "1B50DED93D7B6A54406317F88B16298BD2AAAF69",
+      "levelid": "custom_level_1B50DED93D7B6A54406317F88B16298BD2AAAF69",
+      "songName": "Broke",
+      "levelAuthorName": "4orizon & SoniqueTui",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "98E5939D60BA2D499825F05AE7B57C44765C3061",
+      "levelid": "custom_level_98E5939D60BA2D499825F05AE7B57C44765C3061",
+      "songName": "Queen of Ice (Nora En Pure Remix)",
+      "levelAuthorName": "Joetastic",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "E202227BF65DF7A76F66A362631BADC0897587D6",
+      "levelid": "custom_level_E202227BF65DF7A76F66A362631BADC0897587D6",
+      "songName": "Sayonara. Arigatou.",
+      "levelAuthorName": "XAce1337manX",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "E49D032632D9531A01A3962AA3006FCC38335258",
+      "levelid": "custom_level_E49D032632D9531A01A3962AA3006FCC38335258",
+      "songName": "Tsugihagi Spooky",
+      "levelAuthorName": "ZeCube",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     }

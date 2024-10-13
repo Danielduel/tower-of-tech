@@ -6,10 +6,10 @@
   },
   "songs": [
     {
-      "songName": "My Mother Wants Me Dead",
-      "levelAuthorName": "PogU",
       "hash": "E2A4D3400FC344C6F9B4DD48B30030679E1F1E6D",
       "levelid": "custom_level_E2A4D3400FC344C6F9B4DD48B30030679E1F1E6D",
+      "songName": "My Mother Wants Me Dead",
+      "levelAuthorName": "PogU",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "songName": "Apocalypse Simulator",
-      "levelAuthorName": "xScaramouche & Scrappy",
       "hash": "620CBED0B317879355E561B5C06FF356686C1706",
       "levelid": "custom_level_620CBED0B317879355E561B5C06FF356686C1706",
+      "songName": "Apocalypse Simulator",
+      "levelAuthorName": "xScaramouche & Scrappy",
       "difficulties": [
         {
           "characteristic": "Standard",

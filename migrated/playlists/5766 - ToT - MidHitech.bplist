@@ -261,18 +261,6 @@
       ]
     },
     {
-      "hash": "A5F9FD91974CA5EF686EF5439534130A08DAC53F",
-      "levelid": "custom_level_A5F9FD91974CA5EF686EF5439534130A08DAC53F",
-      "songName": "MENDES",
-      "levelAuthorName": "mux",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "hash": "10AB9C908D3A4A6D7CAD78896A9FB98ADA71982F",
       "levelid": "custom_level_10AB9C908D3A4A6D7CAD78896A9FB98ADA71982F",
       "songName": "Maware! Setsugetsuka ",
@@ -457,18 +445,6 @@
       "levelid": "custom_level_2DC3C349198E9117A425271B28611730CCFA3990",
       "songName": "Metal Sonic",
       "levelAuthorName": "A Jhintleman",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "900614509D709FCD09D54A0DA80E476B4038A9A5",
-      "levelid": "custom_level_900614509D709FCD09D54A0DA80E476B4038A9A5",
-      "songName": "Virus Funk",
-      "levelAuthorName": "GalaxyMaster",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1501,6 +1477,54 @@
       "levelid": "custom_level_37E2407CA671B1404991DDCE549A315AB981DB90",
       "songName": "Hakkiri Shiyouze",
       "levelAuthorName": "minsiii",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "79183DCDC58E5762F1BEC5C1F738B9F67634EAA0",
+      "levelid": "custom_level_79183DCDC58E5762F1BEC5C1F738B9F67634EAA0",
+      "songName": "Athletic Theme",
+      "levelAuthorName": "oegoe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "75DEE4AB15B7B93ED3A3B66383FFF656FF232F35",
+      "levelid": "custom_level_75DEE4AB15B7B93ED3A3B66383FFF656FF232F35",
+      "songName": "Zoltraak",
+      "levelAuthorName": "Cush",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "1558B7870DD4D65BB6B98821388E5FC9838DC810",
+      "levelid": "custom_level_1558B7870DD4D65BB6B98821388E5FC9838DC810",
+      "songName": "Catch a Fire",
+      "levelAuthorName": "abcbadq",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "BDF183D9D31F80C09D03564522EC6E06CFB86B31",
+      "levelid": "custom_level_BDF183D9D31F80C09D03564522EC6E06CFB86B31",
+      "songName": "GETTIN' HOTT",
+      "levelAuthorName": "VoltageO",
       "difficulties": [
         {
           "characteristic": "Standard",

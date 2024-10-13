@@ -321,18 +321,6 @@
       ]
     },
     {
-      "hash": "FB4D515904FCC700749B2670CFA4AF48AF2C15AA",
-      "levelid": "custom_level_FB4D515904FCC700749B2670CFA4AF48AF2C15AA",
-      "songName": "Back Door",
-      "levelAuthorName": "Alekcake",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "7EF2CB649E9A8236C4D322BFE5F298CAB57861D8",
       "levelid": "custom_level_7EF2CB649E9A8236C4D322BFE5F298CAB57861D8",
       "songName": "BOOMBOOM",
@@ -685,18 +673,6 @@
       "levelid": "custom_level_A0DC850B8A5A3CDF592DE65672D3353CC96253A0",
       "songName": "Blue Clue",
       "levelAuthorName": "tocxx",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "B04B26FB26595133AD14E756870785B5D8BF6932",
-      "levelid": "custom_level_B04B26FB26595133AD14E756870785B5D8BF6932",
-      "songName": "Raise Your Hands",
-      "levelAuthorName": "Aquaflee",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2741,6 +2717,42 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "5E5231C5EE0DD850051708CA2EA590AC80082A30",
+      "levelid": "custom_level_5E5231C5EE0DD850051708CA2EA590AC80082A30",
+      "songName": "Sanctuary",
+      "levelAuthorName": "Checkthepan",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "26DF187731B994E7F96E02338CF8E763C64F4C88",
+      "levelid": "custom_level_26DF187731B994E7F96E02338CF8E763C64F4C88",
+      "songName": "Amazing Happy Halloween Night",
+      "levelAuthorName": "Koctochka",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "A8E7157E5B2C57FDFA871DD9306EFC34F8596736",
+      "levelid": "custom_level_A8E7157E5B2C57FDFA871DD9306EFC34F8596736",
+      "songName": "Hollow Hunger",
+      "levelAuthorName": "Joshabi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

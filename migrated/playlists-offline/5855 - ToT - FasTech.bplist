@@ -386,6 +386,10 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },
@@ -454,6 +458,30 @@
       "levelid": "custom_level_1950AEFC629DA442919BD802B2DF1B65E00960B4",
       "songName": "We Got the Moves",
       "levelAuthorName": "Aimedhades16",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "65963F530329D200263DA7791EBCEA3EDB976498",
+      "levelid": "custom_level_65963F530329D200263DA7791EBCEA3EDB976498",
+      "songName": "Night of Nights",
+      "levelAuthorName": "Anammelech",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "B0390B8887D13F09AFC8DE90BECAFE9D2BA4FBA3",
+      "levelid": "custom_level_B0390B8887D13F09AFC8DE90BECAFE9D2BA4FBA3",
+      "songName": "SUPER SEX DELIVERY - ROAD TO SEXISTENCE 100% Glitchless NoCheat Speedrun",
+      "levelAuthorName": "Bitz",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -6,10 +6,10 @@
   },
   "songs": [
     {
-      "songName": "SswwiinnddlleerR!!",
-      "levelAuthorName": "staryouh",
       "hash": "712678946C6B7DAAE2A3771299D7D9530EDB62FD",
       "levelid": "custom_level_712678946C6B7DAAE2A3771299D7D9530EDB62FD",
+      "songName": "SswwiinnddlleerR!!",
+      "levelAuthorName": "staryouh",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -18,10 +18,22 @@
       ]
     },
     {
-      "songName": "Toxic Violet Cubes",
-      "levelAuthorName": "A Jhintleman",
       "hash": "D8644C9B583A902D2ABC71B4DC2CB3AD355F9BA8",
       "levelid": "custom_level_D8644C9B583A902D2ABC71B4DC2CB3AD355F9BA8",
+      "songName": "Toxic Violet Cubes",
+      "levelAuthorName": "A Jhintleman",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "D555B8705052646FE28942F0AC6CC2C86F410D4A",
+      "levelid": "custom_level_D555B8705052646FE28942F0AC6CC2C86F410D4A",
+      "songName": "Catastrophe Of This Miserable World",
+      "levelAuthorName": "abcbadq",
       "difficulties": [
         {
           "characteristic": "Standard",
