@@ -5,20 +5,12 @@ import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
 import { links } from "@/apps/website/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makeImageBase64, makePlaylistId, makePlaylistUrl } from "@/packages/types/brands.ts";
-import {
-  // BlobWriter,
-  // HttpReader,
-  TextReader,
-  Uint8ArrayWriter,
-  ZipWriter,
-} from "https://unpkg.com/@zip.js/zip.js@2.7.48/index.js";
+import { TextReader, Uint8ArrayWriter, ZipWriter } from "https://unpkg.com/@zip.js/zip.js@2.7.48/index.js";
 import { removePlaylistItemDuplicates } from "@/packages/playlist/migrate.ts";
 import {
   BeatSaberPlaylistWithoutIdSchema,
   BeatSaberPlaylistWithoutIdSchemaT,
 } from "@/packages/types/beatsaber-playlist.ts";
-import { createTrpcClient } from "@/packages/trpc/trpc-editor.ts";
-import { migrateBeatSaberPlaylistWithoutIdSchema } from "@/packages/playlist/migrate.ts";
 
 const coverPath = new URL(import.meta.resolve("../../migrated/covers")).pathname;
 

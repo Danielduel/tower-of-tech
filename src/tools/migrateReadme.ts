@@ -33,7 +33,7 @@ A playlist name should contain prefix and "tech" suffix.
       `Tech suffix would be "Comfy", "Tech", "Hitech", "Anglehell" and "Tempo".`,
     ],
     ListTypes.UnOrdered,
-    "*",
+    "-",
   )
   .paragraph(`There are and will be "guest" playlists - f.e. Morgolf's.`)
   .header(`Installation and current state`, 3)
@@ -75,7 +75,7 @@ A playlist name should contain prefix and "tech" suffix.
       `...opinion on something is not actually a tech?`,
     ],
     ListTypes.UnOrdered,
-    "*",
+    "-",
   )
   .paragraph(`If first 3: DM me on discord or do an issue on this repository`)
   .paragraph(`What I need now?`)
@@ -85,7 +85,7 @@ A playlist name should contain prefix and "tech" suffix.
       `More people who will be doublechecking categorization`,
     ],
     ListTypes.UnOrdered,
-    "*",
+    "-",
   )
   .header(`Thanks!`, 2)
   .paragraph(`People who like to discuss tech`)
@@ -99,7 +99,7 @@ A playlist name should contain prefix and "tech" suffix.
       `i_time (https://www.twitch.tv/i_time)`,
     ],
     ListTypes.UnOrdered,
-    "*",
+    "-",
   )
   .paragraph(`People who allowed me to add their playlists to the project`)
   .list(
@@ -114,7 +114,7 @@ A playlist name should contain prefix and "tech" suffix.
       `TheHarshJellyfish (https://www.twitch.tv/theharshjellyfish)`,
     ],
     ListTypes.UnOrdered,
-    "*",
+    "-",
   )
   .header(`ToT Bot`, 2)
   .paragraph(`Invite link`)
