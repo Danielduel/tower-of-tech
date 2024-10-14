@@ -91,4 +91,3 @@ People who allowed me to add their playlists to the project
 Invite link
 
 https://discord.com/api/oauth2/authorize?client_id=1171582001900421192&permissions=17600776047616&scope=bot+applications.commands
-

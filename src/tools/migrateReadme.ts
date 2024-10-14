@@ -17,7 +17,7 @@ const mkActions = (playlistId: PlaylistId) =>
     links.api.v1.playlist.download(playlistId, towerOfTechWebsiteOrigin)
   })`;
 
-await markdown
+const _markdownContent = markdown
   .header(`Tower of Tech`, 1)
   .paragraph(
     `This repository contains tech-related playlists and utilities used to manage them.`,
@@ -121,4 +121,10 @@ A playlist name should contain prefix and "tech" suffix.
   .paragraph(
     `https://discord.com/api/oauth2/authorize?client_id=1171582001900421192&permissions=17600776047616&scope=bot+applications.commands`,
   )
-  .write("./", "README");
+  .content;
+
+const _markdownContentArr = _markdownContent.split("\n");
+const _markdownContentArrFiltered = _markdownContentArr.filter((_, i) => i !== _markdownContentArr.length - 1);
+const markdownContent = _markdownContentArrFiltered.join("\n");
+
+await markdown.write("./", "README", markdownContent);
