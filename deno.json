@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "start": "deno run -A ./src/main.ts",
+    "start": "TOT_ENVIRONMENT=local deno run -A ./src/main.ts",
     "migrate": "deno run -A ./src/tools/migrate.ts",
 
     "check": "deno task website:check",

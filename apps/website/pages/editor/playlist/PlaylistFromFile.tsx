@@ -44,6 +44,8 @@ export const PlaylistFromFile: FC = () => {
       setPlaylists(readPlaylists.filter(filterNulls));
     }
   };
+
+  console.log("render");
   return (
     <div>
       <button
