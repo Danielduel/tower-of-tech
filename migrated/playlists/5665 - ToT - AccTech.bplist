@@ -2429,40 +2429,11 @@
       ]
     },
     {
-      "hash": "66CF939A52ACABC870EF4E76E483CC919B9CBEFB",
-      "levelid": "custom_level_66CF939A52ACABC870EF4E76E483CC919B9CBEFB",
-      "songName": "About You",
-      "levelAuthorName": "DeeDee",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "72514529CB3ADA7C6C596FEE675E948B5040F851",
-      "levelid": "custom_level_72514529CB3ADA7C6C596FEE675E948B5040F851",
-      "songName": "Happy Place",
-      "levelAuthorName": "SmokeyBacon",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "24051B9670BFA41E72C641D6F3940CADB99AC942",
       "levelid": "custom_level_24051B9670BFA41E72C641D6F3940CADB99AC942",
       "songName": "Nightcore - I Wanna Be You Slave",
       "levelAuthorName": "Tizian",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
+      "difficulties": []
     },
     {
       "hash": "E7F55FBBE6FBA0AAC4643ED436C6730507F032B1",
@@ -2749,6 +2720,42 @@
       "levelid": "custom_level_A8E7157E5B2C57FDFA871DD9306EFC34F8596736",
       "songName": "Hollow Hunger",
       "levelAuthorName": "Joshabi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "56ECE87921BEDC4F4D15CFE5C3EA05EC76C90B3F",
+      "levelid": "custom_level_56ECE87921BEDC4F4D15CFE5C3EA05EC76C90B3F",
+      "songName": "Walk on Water",
+      "levelAuthorName": "Hener",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "3A65DE6D4DB2763E092725FDF37F5AA824FF2BE8",
+      "levelid": "custom_level_3A65DE6D4DB2763E092725FDF37F5AA824FF2BE8",
+      "songName": "Medicine",
+      "levelAuthorName": "The Pharmacists",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
+      "levelid": "custom_level_B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
+      "songName": "Operation☆DOTABATA",
+      "levelAuthorName": "Comyute",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -566,6 +566,10 @@
         {
           "characteristic": "Lawless",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },

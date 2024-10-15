@@ -6,10 +6,10 @@
   },
   "songs": [
     {
-      "hash": "F694742CCB25F2FD35262DD4663024B141BD0C24",
-      "levelid": "custom_level_F694742CCB25F2FD35262DD4663024B141BD0C24",
       "songName": "Melancholy",
       "levelAuthorName": "exhaustedallthetime",
+      "hash": "F694742CCB25F2FD35262DD4663024B141BD0C24",
+      "levelid": "custom_level_F694742CCB25F2FD35262DD4663024B141BD0C24",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "hash": "13A1B008E40284318053124031D54548A20D992A",
-      "levelid": "custom_level_13A1B008E40284318053124031D54548A20D992A",
       "songName": "Yowanehaki",
       "levelAuthorName": "Gabriel x Marsh",
+      "hash": "13A1B008E40284318053124031D54548A20D992A",
+      "levelid": "custom_level_13A1B008E40284318053124031D54548A20D992A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -30,10 +30,10 @@
       ]
     },
     {
-      "hash": "2009E2D5F79BF8513A3FE082EF5DB24B98B3CB16",
-      "levelid": "custom_level_2009E2D5F79BF8513A3FE082EF5DB24B98B3CB16",
       "songName": "Buddy & Wilderness",
       "levelAuthorName": "okazu & Gabriel",
+      "hash": "2009E2D5F79BF8513A3FE082EF5DB24B98B3CB16",
+      "levelid": "custom_level_2009E2D5F79BF8513A3FE082EF5DB24B98B3CB16",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "hash": "D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
-      "levelid": "custom_level_D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
       "songName": "1:15",
       "levelAuthorName": "Bitz, Tranch, WalkingKat & Astellic",
+      "hash": "D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
+      "levelid": "custom_level_D8B1CBDC9372127293F4DE6F4B8840D1D28FBDDB",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -58,10 +58,10 @@
       ]
     },
     {
-      "hash": "609CA536B48ADB781ED5FA6CAE51DF61817FED2A",
-      "levelid": "custom_level_609CA536B48ADB781ED5FA6CAE51DF61817FED2A",
       "songName": "Garando",
       "levelAuthorName": "Ken_Monogatari",
+      "hash": "609CA536B48ADB781ED5FA6CAE51DF61817FED2A",
+      "levelid": "custom_level_609CA536B48ADB781ED5FA6CAE51DF61817FED2A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -70,10 +70,10 @@
       ]
     },
     {
-      "hash": "5E65F8C4D79CE9694C845E212716ED778A4AA304",
-      "levelid": "custom_level_5E65F8C4D79CE9694C845E212716ED778A4AA304",
       "songName": "夜曲",
       "levelAuthorName": "wangyufy",
+      "hash": "5E65F8C4D79CE9694C845E212716ED778A4AA304",
+      "levelid": "custom_level_5E65F8C4D79CE9694C845E212716ED778A4AA304",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -82,10 +82,10 @@
       ]
     },
     {
-      "hash": "76D023A4EBA97F9889ADC007D358070B0B228DAA",
-      "levelid": "custom_level_76D023A4EBA97F9889ADC007D358070B0B228DAA",
       "songName": "GimmexGimme",
       "levelAuthorName": "Marsh",
+      "hash": "76D023A4EBA97F9889ADC007D358070B0B228DAA",
+      "levelid": "custom_level_76D023A4EBA97F9889ADC007D358070B0B228DAA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -94,10 +94,10 @@
       ]
     },
     {
-      "hash": "858B6EF63FA5A7F478EA7F3371780CEFCEABA1AD",
-      "levelid": "custom_level_858B6EF63FA5A7F478EA7F3371780CEFCEABA1AD",
       "songName": "Ready to covered by Shirakami Fubuki",
       "levelAuthorName": "mux",
+      "hash": "858B6EF63FA5A7F478EA7F3371780CEFCEABA1AD",
+      "levelid": "custom_level_858B6EF63FA5A7F478EA7F3371780CEFCEABA1AD",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -106,10 +106,10 @@
       ]
     },
     {
-      "hash": "9BE4D157AFE11EA844E16732E08688762C903E8E",
-      "levelid": "custom_level_9BE4D157AFE11EA844E16732E08688762C903E8E",
       "songName": "YY",
       "levelAuthorName": "Ge2toro",
+      "hash": "9BE4D157AFE11EA844E16732E08688762C903E8E",
+      "levelid": "custom_level_9BE4D157AFE11EA844E16732E08688762C903E8E",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -118,10 +118,10 @@
       ]
     },
     {
-      "hash": "409DB485951246EDFFAD7667E950C50EE938FB6A",
-      "levelid": "custom_level_409DB485951246EDFFAD7667E950C50EE938FB6A",
       "songName": "Kitsuneno Mado",
       "levelAuthorName": "Gabriel",
+      "hash": "409DB485951246EDFFAD7667E950C50EE938FB6A",
+      "levelid": "custom_level_409DB485951246EDFFAD7667E950C50EE938FB6A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -130,10 +130,10 @@
       ]
     },
     {
-      "hash": "E35D6761949ABDD0BFAACA337D76C4083071F6BD",
-      "levelid": "custom_level_E35D6761949ABDD0BFAACA337D76C4083071F6BD",
       "songName": "The Paradox",
       "levelAuthorName": "BigSlick & Okazu",
+      "hash": "E35D6761949ABDD0BFAACA337D76C4083071F6BD",
+      "levelid": "custom_level_E35D6761949ABDD0BFAACA337D76C4083071F6BD",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -142,10 +142,10 @@
       ]
     },
     {
-      "hash": "84D5C213AF8F4F2FF83E5EFC6D6B9923011C0883",
-      "levelid": "custom_level_84D5C213AF8F4F2FF83E5EFC6D6B9923011C0883",
       "songName": "Technologic",
       "levelAuthorName": "namaki_duo",
+      "hash": "84D5C213AF8F4F2FF83E5EFC6D6B9923011C0883",
+      "levelid": "custom_level_84D5C213AF8F4F2FF83E5EFC6D6B9923011C0883",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -154,10 +154,10 @@
       ]
     },
     {
-      "hash": "DB2853AF792421B4334DFA2F2C25F986BE3F3B62",
-      "levelid": "custom_level_DB2853AF792421B4334DFA2F2C25F986BE3F3B62",
       "songName": "Rose",
       "levelAuthorName": "RoadieRune, Otektarangi & Scrapper",
+      "hash": "DB2853AF792421B4334DFA2F2C25F986BE3F3B62",
+      "levelid": "custom_level_DB2853AF792421B4334DFA2F2C25F986BE3F3B62",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -166,10 +166,10 @@
       ]
     },
     {
-      "hash": "70782128090BC9D7C7287237B3AD21F0EA8B454D",
-      "levelid": "custom_level_70782128090BC9D7C7287237B3AD21F0EA8B454D",
       "songName": "CYCLES",
       "levelAuthorName": "kizuflux",
+      "hash": "70782128090BC9D7C7287237B3AD21F0EA8B454D",
+      "levelid": "custom_level_70782128090BC9D7C7287237B3AD21F0EA8B454D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -178,10 +178,10 @@
       ]
     },
     {
-      "hash": "BDA1004619FE4C05C9E45F522343BAECB6BD3B56",
-      "levelid": "custom_level_BDA1004619FE4C05C9E45F522343BAECB6BD3B56",
       "songName": "come thru",
       "levelAuthorName": "Kansas, Phøenix",
+      "hash": "BDA1004619FE4C05C9E45F522343BAECB6BD3B56",
+      "levelid": "custom_level_BDA1004619FE4C05C9E45F522343BAECB6BD3B56",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -190,10 +190,10 @@
       ]
     },
     {
-      "hash": "02F2A82AA4FAF34E45534BAD247E095C70FFB941",
-      "levelid": "custom_level_02F2A82AA4FAF34E45534BAD247E095C70FFB941",
       "songName": "Do The Big Kick",
       "levelAuthorName": "P90KILLR",
+      "hash": "02F2A82AA4FAF34E45534BAD247E095C70FFB941",
+      "levelid": "custom_level_02F2A82AA4FAF34E45534BAD247E095C70FFB941",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -202,10 +202,10 @@
       ]
     },
     {
-      "hash": "766159A035EDB39CA4B43650E1C9A15FB756FBE3",
-      "levelid": "custom_level_766159A035EDB39CA4B43650E1C9A15FB756FBE3",
       "songName": "Not enough",
       "levelAuthorName": "Kanahebi",
+      "hash": "766159A035EDB39CA4B43650E1C9A15FB756FBE3",
+      "levelid": "custom_level_766159A035EDB39CA4B43650E1C9A15FB756FBE3",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -214,10 +214,10 @@
       ]
     },
     {
-      "hash": "21D0BA54C5FE137EE9C8EC9E380AB7CD55AF0990",
-      "levelid": "custom_level_21D0BA54C5FE137EE9C8EC9E380AB7CD55AF0990",
       "songName": "Nightcore - Cherry Gum",
       "levelAuthorName": "thelitlewiseowl",
+      "hash": "21D0BA54C5FE137EE9C8EC9E380AB7CD55AF0990",
+      "levelid": "custom_level_21D0BA54C5FE137EE9C8EC9E380AB7CD55AF0990",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -226,10 +226,10 @@
       ]
     },
     {
-      "hash": "8AA2411D8550E27A88D7842948C0793E0892540F",
-      "levelid": "custom_level_8AA2411D8550E27A88D7842948C0793E0892540F",
       "songName": "...Ready for it?",
       "levelAuthorName": "nitronik.exe",
+      "hash": "8AA2411D8550E27A88D7842948C0793E0892540F",
+      "levelid": "custom_level_8AA2411D8550E27A88D7842948C0793E0892540F",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -238,10 +238,10 @@
       ]
     },
     {
-      "hash": "E90E20C894242BDB7671DD1317AA8370EBD822B8",
-      "levelid": "custom_level_E90E20C894242BDB7671DD1317AA8370EBD822B8",
       "songName": "Hourglass",
       "levelAuthorName": "MadChase",
+      "hash": "E90E20C894242BDB7671DD1317AA8370EBD822B8",
+      "levelid": "custom_level_E90E20C894242BDB7671DD1317AA8370EBD822B8",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -250,10 +250,10 @@
       ]
     },
     {
-      "hash": "A012F54B406651A3E958662A0AE6C51DBAB77D9B",
-      "levelid": "custom_level_A012F54B406651A3E958662A0AE6C51DBAB77D9B",
       "songName": "This Beat Has Got Me",
       "levelAuthorName": "Alice",
+      "hash": "A012F54B406651A3E958662A0AE6C51DBAB77D9B",
+      "levelid": "custom_level_A012F54B406651A3E958662A0AE6C51DBAB77D9B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -262,10 +262,10 @@
       ]
     },
     {
-      "hash": "8D9D970FCE0C0DBF86B65F8B23736BFE155C6D05",
-      "levelid": "custom_level_8D9D970FCE0C0DBF86B65F8B23736BFE155C6D05",
       "songName": "Hello World",
       "levelAuthorName": "Fara",
+      "hash": "8D9D970FCE0C0DBF86B65F8B23736BFE155C6D05",
+      "levelid": "custom_level_8D9D970FCE0C0DBF86B65F8B23736BFE155C6D05",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -274,10 +274,10 @@
       ]
     },
     {
-      "hash": "CB97FDD4CC6E85A7F755845CFD248F1C3608B012",
-      "levelid": "custom_level_CB97FDD4CC6E85A7F755845CFD248F1C3608B012",
       "songName": "SLEEPWALK",
       "levelAuthorName": "mux",
+      "hash": "CB97FDD4CC6E85A7F755845CFD248F1C3608B012",
+      "levelid": "custom_level_CB97FDD4CC6E85A7F755845CFD248F1C3608B012",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -286,10 +286,10 @@
       ]
     },
     {
-      "hash": "2491C65C3BA53C58128736A6A54914155AC6C57C",
-      "levelid": "custom_level_2491C65C3BA53C58128736A6A54914155AC6C57C",
       "songName": "心という名の不可解",
       "levelAuthorName": "staryouh",
+      "hash": "2491C65C3BA53C58128736A6A54914155AC6C57C",
+      "levelid": "custom_level_2491C65C3BA53C58128736A6A54914155AC6C57C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -298,10 +298,10 @@
       ]
     },
     {
-      "hash": "ADE15E45F5736E943A571CDB5EC3C7DFDBC0E92D",
-      "levelid": "custom_level_ADE15E45F5736E943A571CDB5EC3C7DFDBC0E92D",
       "songName": "Black Soul Dress",
       "levelAuthorName": "Jonas_0_0, minsiii",
+      "hash": "ADE15E45F5736E943A571CDB5EC3C7DFDBC0E92D",
+      "levelid": "custom_level_ADE15E45F5736E943A571CDB5EC3C7DFDBC0E92D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -310,10 +310,10 @@
       ]
     },
     {
-      "hash": "9071AACE42D68385CC6ABF3947279571485B5A5F",
-      "levelid": "custom_level_9071AACE42D68385CC6ABF3947279571485B5A5F",
       "songName": "House of Memories",
       "levelAuthorName": "Cobayo",
+      "hash": "9071AACE42D68385CC6ABF3947279571485B5A5F",
+      "levelid": "custom_level_9071AACE42D68385CC6ABF3947279571485B5A5F",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -322,10 +322,10 @@
       ]
     },
     {
-      "hash": "6DEF462C6FEE6F6EF4046498B7BCEA4189FACACE",
-      "levelid": "custom_level_6DEF462C6FEE6F6EF4046498B7BCEA4189FACACE",
       "songName": "Cherry Talk",
       "levelAuthorName": "minsiii",
+      "hash": "6DEF462C6FEE6F6EF4046498B7BCEA4189FACACE",
+      "levelid": "custom_level_6DEF462C6FEE6F6EF4046498B7BCEA4189FACACE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -334,10 +334,10 @@
       ]
     },
     {
-      "hash": "5B449B1641F02654F844C76D9CF34E89BB81566E",
-      "levelid": "custom_level_5B449B1641F02654F844C76D9CF34E89BB81566E",
       "songName": "Shakira: Bzrp Music Sessions, Vol. 53",
       "levelAuthorName": "Cobayo",
+      "hash": "5B449B1641F02654F844C76D9CF34E89BB81566E",
+      "levelid": "custom_level_5B449B1641F02654F844C76D9CF34E89BB81566E",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -346,10 +346,10 @@
       ]
     },
     {
-      "hash": "5E89C16A07034CE7654E30FCCD64BA9844534C67",
-      "levelid": "custom_level_5E89C16A07034CE7654E30FCCD64BA9844534C67",
       "songName": "Anatasama",
       "levelAuthorName": "Emir",
+      "hash": "5E89C16A07034CE7654E30FCCD64BA9844534C67",
+      "levelid": "custom_level_5E89C16A07034CE7654E30FCCD64BA9844534C67",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -358,10 +358,10 @@
       ]
     },
     {
-      "hash": "F4283DBA05E06136E6201FD4E9FC19783922F364",
-      "levelid": "custom_level_F4283DBA05E06136E6201FD4E9FC19783922F364",
       "songName": "EUNOIA",
       "levelAuthorName": "minsiii",
+      "hash": "F4283DBA05E06136E6201FD4E9FC19783922F364",
+      "levelid": "custom_level_F4283DBA05E06136E6201FD4E9FC19783922F364",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -370,10 +370,10 @@
       ]
     },
     {
-      "hash": "03A9EA334223F15D3E23B521D1D5E743EFB39A05",
-      "levelid": "custom_level_03A9EA334223F15D3E23B521D1D5E743EFB39A05",
       "songName": "In The Back Room",
       "levelAuthorName": "Astellic",
+      "hash": "03A9EA334223F15D3E23B521D1D5E743EFB39A05",
+      "levelid": "custom_level_03A9EA334223F15D3E23B521D1D5E743EFB39A05",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -382,10 +382,10 @@
       ]
     },
     {
-      "hash": "E6AE1C26347EDE1630709C5D715A634AC9B69218",
-      "levelid": "custom_level_E6AE1C26347EDE1630709C5D715A634AC9B69218",
       "songName": "Usagi Flap",
       "levelAuthorName": "Spectral",
+      "hash": "E6AE1C26347EDE1630709C5D715A634AC9B69218",
+      "levelid": "custom_level_E6AE1C26347EDE1630709C5D715A634AC9B69218",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -394,10 +394,10 @@
       ]
     },
     {
-      "hash": "E7D7D8B17BCB7F25B1A510F711F10B86BB5E8299",
-      "levelid": "custom_level_E7D7D8B17BCB7F25B1A510F711F10B86BB5E8299",
       "songName": "Saucy",
       "levelAuthorName": "Cobayo",
+      "hash": "E7D7D8B17BCB7F25B1A510F711F10B86BB5E8299",
+      "levelid": "custom_level_E7D7D8B17BCB7F25B1A510F711F10B86BB5E8299",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -406,10 +406,10 @@
       ]
     },
     {
-      "hash": "BFCD1B48D1D4BF07BF82E0C6AC71DB3B2EE8C59E",
-      "levelid": "custom_level_BFCD1B48D1D4BF07BF82E0C6AC71DB3B2EE8C59E",
       "songName": "757",
       "levelAuthorName": "Astellic as \"fartbunny\"",
+      "hash": "BFCD1B48D1D4BF07BF82E0C6AC71DB3B2EE8C59E",
+      "levelid": "custom_level_BFCD1B48D1D4BF07BF82E0C6AC71DB3B2EE8C59E",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -418,10 +418,10 @@
       ]
     },
     {
-      "hash": "5EE17B1A5EA6DA9309A3F206A5BF7BD5E3BAA382",
-      "levelid": "custom_level_5EE17B1A5EA6DA9309A3F206A5BF7BD5E3BAA382",
       "songName": "DoReMi Goal",
       "levelAuthorName": "Fara",
+      "hash": "5EE17B1A5EA6DA9309A3F206A5BF7BD5E3BAA382",
+      "levelid": "custom_level_5EE17B1A5EA6DA9309A3F206A5BF7BD5E3BAA382",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -430,10 +430,10 @@
       ]
     },
     {
-      "hash": "819C22AD46026F0C7942ACECF97C0231E6C098A5",
-      "levelid": "custom_level_819C22AD46026F0C7942ACECF97C0231E6C098A5",
       "songName": "Divine",
       "levelAuthorName": "PogU",
+      "hash": "819C22AD46026F0C7942ACECF97C0231E6C098A5",
+      "levelid": "custom_level_819C22AD46026F0C7942ACECF97C0231E6C098A5",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -442,10 +442,10 @@
       ]
     },
     {
-      "hash": "72B048BAA623AF9390E3516466834997F007DD41",
-      "levelid": "custom_level_72B048BAA623AF9390E3516466834997F007DD41",
       "songName": "Bye Bye Bye",
       "levelAuthorName": "FatBeanzoop",
+      "hash": "72B048BAA623AF9390E3516466834997F007DD41",
+      "levelid": "custom_level_72B048BAA623AF9390E3516466834997F007DD41",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -454,10 +454,10 @@
       ]
     },
     {
-      "hash": "402FB3EE310C53B30B4CA5325B6928AFC6E71EBF",
-      "levelid": "custom_level_402FB3EE310C53B30B4CA5325B6928AFC6E71EBF",
       "songName": "Go Down",
       "levelAuthorName": "Gabriel",
+      "hash": "402FB3EE310C53B30B4CA5325B6928AFC6E71EBF",
+      "levelid": "custom_level_402FB3EE310C53B30B4CA5325B6928AFC6E71EBF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -466,10 +466,10 @@
       ]
     },
     {
-      "hash": "2C01774FDB9C4BCC53DF1707ADE85CEA6F043477",
-      "levelid": "custom_level_2C01774FDB9C4BCC53DF1707ADE85CEA6F043477",
       "songName": "Pastel Rain",
       "levelAuthorName": "ETAN",
+      "hash": "2C01774FDB9C4BCC53DF1707ADE85CEA6F043477",
+      "levelid": "custom_level_2C01774FDB9C4BCC53DF1707ADE85CEA6F043477",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -478,10 +478,10 @@
       ]
     },
     {
-      "hash": "A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
-      "levelid": "custom_level_A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
       "songName": "Show",
       "levelAuthorName": "Pleo",
+      "hash": "A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
+      "levelid": "custom_level_A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -490,10 +490,10 @@
       ]
     },
     {
-      "hash": "FE44B64D4F21C5A51B4073ED4CE0A27EA4580292",
-      "levelid": "custom_level_FE44B64D4F21C5A51B4073ED4CE0A27EA4580292",
       "songName": "Chain My Heart",
       "levelAuthorName": "thelitlewiseowl",
+      "hash": "FE44B64D4F21C5A51B4073ED4CE0A27EA4580292",
+      "levelid": "custom_level_FE44B64D4F21C5A51B4073ED4CE0A27EA4580292",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -502,10 +502,10 @@
       ]
     },
     {
-      "hash": "A7B250528D9F3B04DDD16FDBA949BF8A7EEAF44E",
-      "levelid": "custom_level_A7B250528D9F3B04DDD16FDBA949BF8A7EEAF44E",
       "songName": "The Color Of Tempo",
       "levelAuthorName": "riisi",
+      "hash": "A7B250528D9F3B04DDD16FDBA949BF8A7EEAF44E",
+      "levelid": "custom_level_A7B250528D9F3B04DDD16FDBA949BF8A7EEAF44E",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -514,10 +514,10 @@
       ]
     },
     {
-      "hash": "52A78390C2CB5066A403E3D57ABE1250849E797B",
-      "levelid": "custom_level_52A78390C2CB5066A403E3D57ABE1250849E797B",
       "songName": "Angels Don't Cry",
       "levelAuthorName": "Nebelmonster",
+      "hash": "52A78390C2CB5066A403E3D57ABE1250849E797B",
+      "levelid": "custom_level_52A78390C2CB5066A403E3D57ABE1250849E797B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -526,10 +526,10 @@
       ]
     },
     {
-      "hash": "2BE8A86559E94B7F0332A085EBACE4AB2B56E6BD",
-      "levelid": "custom_level_2BE8A86559E94B7F0332A085EBACE4AB2B56E6BD",
       "songName": "RGB",
       "levelAuthorName": "chikinbiskit",
+      "hash": "2BE8A86559E94B7F0332A085EBACE4AB2B56E6BD",
+      "levelid": "custom_level_2BE8A86559E94B7F0332A085EBACE4AB2B56E6BD",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -538,10 +538,10 @@
       ]
     },
     {
-      "hash": "6213A83B5409E1F104CEFD5EED8C47F43D5673EF",
-      "levelid": "custom_level_6213A83B5409E1F104CEFD5EED8C47F43D5673EF",
       "songName": "Los! Los! Los!",
       "levelAuthorName": "aruru",
+      "hash": "6213A83B5409E1F104CEFD5EED8C47F43D5673EF",
+      "levelid": "custom_level_6213A83B5409E1F104CEFD5EED8C47F43D5673EF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -550,10 +550,10 @@
       ]
     },
     {
-      "hash": "5ED654A49890842D4CFDC068DE1B095C2D7D5660",
-      "levelid": "custom_level_5ED654A49890842D4CFDC068DE1B095C2D7D5660",
       "songName": "ICKY",
       "levelAuthorName": "minsiii & mansiii",
+      "hash": "5ED654A49890842D4CFDC068DE1B095C2D7D5660",
+      "levelid": "custom_level_5ED654A49890842D4CFDC068DE1B095C2D7D5660",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -562,10 +562,10 @@
       ]
     },
     {
-      "hash": "7F655883B7A60AF59B6ABF092CAC6FC6DB6ABCF0",
-      "levelid": "custom_level_7F655883B7A60AF59B6ABF092CAC6FC6DB6ABCF0",
       "songName": "sing sing red indigo",
       "levelAuthorName": "officialMECH",
+      "hash": "7F655883B7A60AF59B6ABF092CAC6FC6DB6ABCF0",
+      "levelid": "custom_level_7F655883B7A60AF59B6ABF092CAC6FC6DB6ABCF0",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -574,10 +574,10 @@
       ]
     },
     {
-      "hash": "DAECCC80A8CF4BCE2915EE1E645536DB0CA76D61",
-      "levelid": "custom_level_DAECCC80A8CF4BCE2915EE1E645536DB0CA76D61",
       "songName": "No Limit",
       "levelAuthorName": "AYellow",
+      "hash": "DAECCC80A8CF4BCE2915EE1E645536DB0CA76D61",
+      "levelid": "custom_level_DAECCC80A8CF4BCE2915EE1E645536DB0CA76D61",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -586,10 +586,10 @@
       ]
     },
     {
-      "hash": "C5E587D70C284F6F02EC44B893C58DBEDD53E24D",
-      "levelid": "custom_level_C5E587D70C284F6F02EC44B893C58DBEDD53E24D",
       "songName": "Ray Of Solar",
       "levelAuthorName": "DaftMaple",
+      "hash": "C5E587D70C284F6F02EC44B893C58DBEDD53E24D",
+      "levelid": "custom_level_C5E587D70C284F6F02EC44B893C58DBEDD53E24D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -598,10 +598,10 @@
       ]
     },
     {
-      "hash": "9988E50D064E05424813E98597E878C161F5D311",
-      "levelid": "custom_level_9988E50D064E05424813E98597E878C161F5D311",
       "songName": "Ljusa Stjarnan",
       "levelAuthorName": "zeon",
+      "hash": "9988E50D064E05424813E98597E878C161F5D311",
+      "levelid": "custom_level_9988E50D064E05424813E98597E878C161F5D311",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -610,10 +610,10 @@
       ]
     },
     {
-      "hash": "7A580D76CB63E9433B957EC8E7BF83A4DF5FB656",
-      "levelid": "custom_level_7A580D76CB63E9433B957EC8E7BF83A4DF5FB656",
       "songName": "How You Like That",
       "levelAuthorName": "Schwank",
+      "hash": "7A580D76CB63E9433B957EC8E7BF83A4DF5FB656",
+      "levelid": "custom_level_7A580D76CB63E9433B957EC8E7BF83A4DF5FB656",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -622,10 +622,10 @@
       ]
     },
     {
-      "hash": "87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
-      "levelid": "custom_level_87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
       "songName": "Diamond Eyes",
       "levelAuthorName": "wangyufy&staryouth",
+      "hash": "87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
+      "levelid": "custom_level_87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -634,10 +634,10 @@
       ]
     },
     {
-      "hash": "51D3C516631E5C9F9F96FA75F95B45C9826463F3",
-      "levelid": "custom_level_51D3C516631E5C9F9F96FA75F95B45C9826463F3",
       "songName": "Rodeo",
       "levelAuthorName": "Xavier & Nebel",
+      "hash": "51D3C516631E5C9F9F96FA75F95B45C9826463F3",
+      "levelid": "custom_level_51D3C516631E5C9F9F96FA75F95B45C9826463F3",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -646,10 +646,10 @@
       ]
     },
     {
-      "hash": "DE3FB462C8666857EF43D38DD0C0165E910E96BA",
-      "levelid": "custom_level_DE3FB462C8666857EF43D38DD0C0165E910E96BA",
       "songName": "Roots",
       "levelAuthorName": "Phøenix",
+      "hash": "DE3FB462C8666857EF43D38DD0C0165E910E96BA",
+      "levelid": "custom_level_DE3FB462C8666857EF43D38DD0C0165E910E96BA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -658,10 +658,10 @@
       ]
     },
     {
-      "hash": "1FD2E5B76588CEA3C3EBB7A8F0602169ED5CCABF",
-      "levelid": "custom_level_1FD2E5B76588CEA3C3EBB7A8F0602169ED5CCABF",
       "songName": "Halzion",
       "levelAuthorName": "chikinbiskit",
+      "hash": "1FD2E5B76588CEA3C3EBB7A8F0602169ED5CCABF",
+      "levelid": "custom_level_1FD2E5B76588CEA3C3EBB7A8F0602169ED5CCABF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -670,10 +670,10 @@
       ]
     },
     {
-      "hash": "89C00194C91A47DD3E400C2F46BE41DECC092135",
-      "levelid": "custom_level_89C00194C91A47DD3E400C2F46BE41DECC092135",
       "songName": "Moshouchenggui",
       "levelAuthorName": "seasonsmouse",
+      "hash": "89C00194C91A47DD3E400C2F46BE41DECC092135",
+      "levelid": "custom_level_89C00194C91A47DD3E400C2F46BE41DECC092135",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -682,10 +682,10 @@
       ]
     },
     {
-      "hash": "DA3D0B159EDAC238C12BD169C36EFC5011BB6BCC",
-      "levelid": "custom_level_DA3D0B159EDAC238C12BD169C36EFC5011BB6BCC",
       "songName": "Hymn For The Weekend",
       "levelAuthorName": "DaftMaple & RateGyro",
+      "hash": "DA3D0B159EDAC238C12BD169C36EFC5011BB6BCC",
+      "levelid": "custom_level_DA3D0B159EDAC238C12BD169C36EFC5011BB6BCC",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -694,10 +694,10 @@
       ]
     },
     {
-      "hash": "9FF42C02220B971487B10E87626EA68821EEA6CA",
-      "levelid": "custom_level_9FF42C02220B971487B10E87626EA68821EEA6CA",
       "songName": "From The Start",
       "levelAuthorName": "Chromia",
+      "hash": "9FF42C02220B971487B10E87626EA68821EEA6CA",
+      "levelid": "custom_level_9FF42C02220B971487B10E87626EA68821EEA6CA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -706,10 +706,10 @@
       ]
     },
     {
-      "hash": "672597C84D932735BCE00CC0A3EEB143A184DBE9",
-      "levelid": "custom_level_672597C84D932735BCE00CC0A3EEB143A184DBE9",
       "songName": "Rendezvous (TV Size)",
       "levelAuthorName": "Joetastic & StormPacer",
+      "hash": "672597C84D932735BCE00CC0A3EEB143A184DBE9",
+      "levelid": "custom_level_672597C84D932735BCE00CC0A3EEB143A184DBE9",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -718,10 +718,10 @@
       ]
     },
     {
-      "hash": "6BFD6E26C6774264396ADC8285186031D291216A",
-      "levelid": "custom_level_6BFD6E26C6774264396ADC8285186031D291216A",
       "songName": "Every Second",
       "levelAuthorName": "Feco",
+      "hash": "6BFD6E26C6774264396ADC8285186031D291216A",
+      "levelid": "custom_level_6BFD6E26C6774264396ADC8285186031D291216A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -730,10 +730,10 @@
       ]
     },
     {
-      "hash": "04EC3397A791DE93D16C79960E047EE647D74892",
-      "levelid": "custom_level_04EC3397A791DE93D16C79960E047EE647D74892",
       "songName": "Mrs.Pumpkin's Funny Dream",
       "levelAuthorName": "Emiru",
+      "hash": "04EC3397A791DE93D16C79960E047EE647D74892",
+      "levelid": "custom_level_04EC3397A791DE93D16C79960E047EE647D74892",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -742,10 +742,10 @@
       ]
     },
     {
-      "hash": "154B8239E3942203FD4785D1AF802D854CFAD829",
-      "levelid": "custom_level_154B8239E3942203FD4785D1AF802D854CFAD829",
       "songName": "omajinai",
       "levelAuthorName": "Kanahebi",
+      "hash": "154B8239E3942203FD4785D1AF802D854CFAD829",
+      "levelid": "custom_level_154B8239E3942203FD4785D1AF802D854CFAD829",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -754,10 +754,10 @@
       ]
     },
     {
-      "hash": "3256D770FCBC4F61CD79970024B62C402D1D3407",
-      "levelid": "custom_level_3256D770FCBC4F61CD79970024B62C402D1D3407",
       "songName": "Whisper Whisper Whisper",
       "levelAuthorName": "shad & 段ボール",
+      "hash": "3256D770FCBC4F61CD79970024B62C402D1D3407",
+      "levelid": "custom_level_3256D770FCBC4F61CD79970024B62C402D1D3407",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -766,10 +766,10 @@
       ]
     },
     {
-      "hash": "44B327B7127D1E04875AF2AFD3CF201D6BCEFD2C",
-      "levelid": "custom_level_44B327B7127D1E04875AF2AFD3CF201D6BCEFD2C",
       "songName": "Crab Rave",
       "levelAuthorName": "Phøenix",
+      "hash": "44B327B7127D1E04875AF2AFD3CF201D6BCEFD2C",
+      "levelid": "custom_level_44B327B7127D1E04875AF2AFD3CF201D6BCEFD2C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -778,10 +778,10 @@
       ]
     },
     {
-      "hash": "B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
-      "levelid": "custom_level_B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
       "songName": "Operation☆DOTABATA",
       "levelAuthorName": "Comyute",
+      "hash": "B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
+      "levelid": "custom_level_B3D4F2E8139AA5D317A581643C147E9638A9EBCF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -790,10 +790,10 @@
       ]
     },
     {
-      "hash": "3820DD20E125EEF2F58AED9BDC9ACD2AC8E84476",
-      "levelid": "custom_level_3820DD20E125EEF2F58AED9BDC9ACD2AC8E84476",
       "songName": "Hungarian Dance No. 5",
       "levelAuthorName": "Andynak",
+      "hash": "3820DD20E125EEF2F58AED9BDC9ACD2AC8E84476",
+      "levelid": "custom_level_3820DD20E125EEF2F58AED9BDC9ACD2AC8E84476",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -802,10 +802,10 @@
       ]
     },
     {
-      "hash": "C55D03A0024168F94DC56A359E6FA388DE700C47",
-      "levelid": "custom_level_C55D03A0024168F94DC56A359E6FA388DE700C47",
       "songName": "Party Evenig, HOLLOWood",
       "levelAuthorName": "mikuri",
+      "hash": "C55D03A0024168F94DC56A359E6FA388DE700C47",
+      "levelid": "custom_level_C55D03A0024168F94DC56A359E6FA388DE700C47",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -814,10 +814,10 @@
       ]
     },
     {
-      "hash": "30EC33FB61AA3C500C16C3ACE22588DF2444A5F5",
-      "levelid": "custom_level_30EC33FB61AA3C500C16C3ACE22588DF2444A5F5",
       "songName": "MONSTER",
       "levelAuthorName": "mansiii",
+      "hash": "30EC33FB61AA3C500C16C3ACE22588DF2444A5F5",
+      "levelid": "custom_level_30EC33FB61AA3C500C16C3ACE22588DF2444A5F5",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -826,10 +826,10 @@
       ]
     },
     {
-      "hash": "312159BBEA91E75DCFF42DB674E796353F8871DE",
-      "levelid": "custom_level_312159BBEA91E75DCFF42DB674E796353F8871DE",
       "songName": "Born For This",
       "levelAuthorName": "Tpenny68",
+      "hash": "312159BBEA91E75DCFF42DB674E796353F8871DE",
+      "levelid": "custom_level_312159BBEA91E75DCFF42DB674E796353F8871DE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -838,10 +838,10 @@
       ]
     },
     {
-      "hash": "87AE38AD4424260AD90F3C3A08CDAA27E7FE0CED",
-      "levelid": "custom_level_87AE38AD4424260AD90F3C3A08CDAA27E7FE0CED",
       "songName": "Cha Cha Cha",
       "levelAuthorName": "Idlebob",
+      "hash": "87AE38AD4424260AD90F3C3A08CDAA27E7FE0CED",
+      "levelid": "custom_level_87AE38AD4424260AD90F3C3A08CDAA27E7FE0CED",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -850,10 +850,10 @@
       ]
     },
     {
-      "hash": "7CCB74B74CB36958AFEC76E9316D1A8A23549105",
-      "levelid": "custom_level_7CCB74B74CB36958AFEC76E9316D1A8A23549105",
       "songName": "CAN'T TAKE MY EYES OFF YOU",
       "levelAuthorName": "RetrX",
+      "hash": "7CCB74B74CB36958AFEC76E9316D1A8A23549105",
+      "levelid": "custom_level_7CCB74B74CB36958AFEC76E9316D1A8A23549105",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -862,10 +862,10 @@
       ]
     },
     {
-      "hash": "50D1D40CEB5A56C68D7F291F876FE292D2825E9F",
-      "levelid": "custom_level_50D1D40CEB5A56C68D7F291F876FE292D2825E9F",
       "songName": "Memory Lane",
       "levelAuthorName": "FatBeanzoop",
+      "hash": "50D1D40CEB5A56C68D7F291F876FE292D2825E9F",
+      "levelid": "custom_level_50D1D40CEB5A56C68D7F291F876FE292D2825E9F",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -874,10 +874,10 @@
       ]
     },
     {
-      "hash": "D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
-      "levelid": "custom_level_D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
       "songName": "Fukashiki No Carte",
       "levelAuthorName": "Ken_Monogatari",
+      "hash": "D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
+      "levelid": "custom_level_D6185DFD7FF3B4712DE81BF63D6FD13877A8EAF4",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -890,10 +890,10 @@
       ]
     },
     {
-      "hash": "B0E070AEF1AB807694C843232B72C14FD0CA0AFE",
-      "levelid": "custom_level_B0E070AEF1AB807694C843232B72C14FD0CA0AFE",
       "songName": "Turn it up",
       "levelAuthorName": "BigOlDumplin",
+      "hash": "B0E070AEF1AB807694C843232B72C14FD0CA0AFE",
+      "levelid": "custom_level_B0E070AEF1AB807694C843232B72C14FD0CA0AFE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -902,10 +902,10 @@
       ]
     },
     {
-      "hash": "617CDC4A25A7DB62EFE71AB88E2165F2026A37E8",
-      "levelid": "custom_level_617CDC4A25A7DB62EFE71AB88E2165F2026A37E8",
       "songName": "Where Our Blue Is",
       "levelAuthorName": "sofmoh",
+      "hash": "617CDC4A25A7DB62EFE71AB88E2165F2026A37E8",
+      "levelid": "custom_level_617CDC4A25A7DB62EFE71AB88E2165F2026A37E8",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -914,10 +914,10 @@
       ]
     },
     {
-      "hash": "870034DDB1D2C3D55A7E181049090067ACAACDCC",
-      "levelid": "custom_level_870034DDB1D2C3D55A7E181049090067ACAACDCC",
       "songName": "Pose for the Fans!",
       "levelAuthorName": "mux",
+      "hash": "870034DDB1D2C3D55A7E181049090067ACAACDCC",
+      "levelid": "custom_level_870034DDB1D2C3D55A7E181049090067ACAACDCC",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -926,10 +926,10 @@
       ]
     },
     {
-      "hash": "9CF60521E1C7EB65B2B49BB5D6AAD5FF9EF5C0F9",
-      "levelid": "custom_level_9CF60521E1C7EB65B2B49BB5D6AAD5FF9EF5C0F9",
       "songName": "Cheese",
       "levelAuthorName": "TOFU",
+      "hash": "9CF60521E1C7EB65B2B49BB5D6AAD5FF9EF5C0F9",
+      "levelid": "custom_level_9CF60521E1C7EB65B2B49BB5D6AAD5FF9EF5C0F9",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -938,10 +938,10 @@
       ]
     },
     {
-      "hash": "84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
-      "levelid": "custom_level_84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
       "songName": "Starships",
       "levelAuthorName": "okazu",
+      "hash": "84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
+      "levelid": "custom_level_84EC68F4DD0E3A87DFAC2CE5E08702C9DD46C742",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -950,10 +950,10 @@
       ]
     },
     {
-      "hash": "855C7330C615E37C4632A90DEC8FC912F6C672AC",
-      "levelid": "custom_level_855C7330C615E37C4632A90DEC8FC912F6C672AC",
       "songName": "Fukashigi No Carte",
       "levelAuthorName": "Aimedhades16",
+      "hash": "855C7330C615E37C4632A90DEC8FC912F6C672AC",
+      "levelid": "custom_level_855C7330C615E37C4632A90DEC8FC912F6C672AC",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -962,10 +962,10 @@
       ]
     },
     {
-      "hash": "12EE4BBC5A214100B2EF69CCFFDD57BA5C3C44EF",
-      "levelid": "custom_level_12EE4BBC5A214100B2EF69CCFFDD57BA5C3C44EF",
       "songName": "Oblivion",
       "levelAuthorName": "Matgenius04",
+      "hash": "12EE4BBC5A214100B2EF69CCFFDD57BA5C3C44EF",
+      "levelid": "custom_level_12EE4BBC5A214100B2EF69CCFFDD57BA5C3C44EF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -974,10 +974,10 @@
       ]
     },
     {
-      "hash": "60B1996C4E10031857FCA9D2DA28D22CD630EB5D",
-      "levelid": "custom_level_60B1996C4E10031857FCA9D2DA28D22CD630EB5D",
       "songName": "Jester",
       "levelAuthorName": "Nebelmonster",
+      "hash": "60B1996C4E10031857FCA9D2DA28D22CD630EB5D",
+      "levelid": "custom_level_60B1996C4E10031857FCA9D2DA28D22CD630EB5D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -986,10 +986,10 @@
       ]
     },
     {
-      "hash": "29EB1EC7A3AC0DBA1720835196F05AD91B425F4B",
-      "levelid": "custom_level_29EB1EC7A3AC0DBA1720835196F05AD91B425F4B",
       "songName": "オセロ(Othello)",
       "levelAuthorName": "wangyufy",
+      "hash": "29EB1EC7A3AC0DBA1720835196F05AD91B425F4B",
+      "levelid": "custom_level_29EB1EC7A3AC0DBA1720835196F05AD91B425F4B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -998,10 +998,10 @@
       ]
     },
     {
-      "hash": "76A8483D3FE0881EDD8BE0C118EBB29C9CF4D4B9",
-      "levelid": "custom_level_76A8483D3FE0881EDD8BE0C118EBB29C9CF4D4B9",
       "songName": "Out Of Style",
       "levelAuthorName": "Kassi",
+      "hash": "76A8483D3FE0881EDD8BE0C118EBB29C9CF4D4B9",
+      "levelid": "custom_level_76A8483D3FE0881EDD8BE0C118EBB29C9CF4D4B9",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1010,10 +1010,10 @@
       ]
     },
     {
-      "hash": "FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
-      "levelid": "custom_level_FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
       "songName": "LVL.99",
       "levelAuthorName": "Voidless",
+      "hash": "FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
+      "levelid": "custom_level_FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1022,10 +1022,10 @@
       ]
     },
     {
-      "hash": "92F640C1130FA32BBC61CD121A289C3E79762806",
-      "levelid": "custom_level_92F640C1130FA32BBC61CD121A289C3E79762806",
       "songName": "Love War",
       "levelAuthorName": "minsiii",
+      "hash": "92F640C1130FA32BBC61CD121A289C3E79762806",
+      "levelid": "custom_level_92F640C1130FA32BBC61CD121A289C3E79762806",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1034,10 +1034,10 @@
       ]
     },
     {
-      "hash": "AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
-      "levelid": "custom_level_AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
       "songName": "Cat Loving",
       "levelAuthorName": "Gabriel & Marsh",
+      "hash": "AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
+      "levelid": "custom_level_AE9FC1978EEF28B646CAC29F2BAF374FBBAC830C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1046,10 +1046,10 @@
       ]
     },
     {
-      "hash": "74A97D3E1C26A9D7BB74B7E3118EEE6E5E054164",
-      "levelid": "custom_level_74A97D3E1C26A9D7BB74B7E3118EEE6E5E054164",
       "songName": "Happier",
       "levelAuthorName": "VrQuacky",
+      "hash": "74A97D3E1C26A9D7BB74B7E3118EEE6E5E054164",
+      "levelid": "custom_level_74A97D3E1C26A9D7BB74B7E3118EEE6E5E054164",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1058,10 +1058,10 @@
       ]
     },
     {
-      "hash": "B7CF080047CD5B27F2502607825F42534669EE94",
-      "levelid": "custom_level_B7CF080047CD5B27F2502607825F42534669EE94",
       "songName": "Grand Escape",
       "levelAuthorName": "BigOlDumplin",
+      "hash": "B7CF080047CD5B27F2502607825F42534669EE94",
+      "levelid": "custom_level_B7CF080047CD5B27F2502607825F42534669EE94",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1070,10 +1070,10 @@
       ]
     },
     {
-      "hash": "2D889F76395527CD258C7DDBCBE0375C78027167",
-      "levelid": "custom_level_2D889F76395527CD258C7DDBCBE0375C78027167",
       "songName": "Burning Up",
       "levelAuthorName": "Ryger",
+      "hash": "2D889F76395527CD258C7DDBCBE0375C78027167",
+      "levelid": "custom_level_2D889F76395527CD258C7DDBCBE0375C78027167",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1082,10 +1082,10 @@
       ]
     },
     {
-      "hash": "2BF356961DCFB517FF960A5891CBEE6445EA62F0",
-      "levelid": "custom_level_2BF356961DCFB517FF960A5891CBEE6445EA62F0",
       "songName": "Yona Yona Journey",
       "levelAuthorName": "Ge2toro",
+      "hash": "2BF356961DCFB517FF960A5891CBEE6445EA62F0",
+      "levelid": "custom_level_2BF356961DCFB517FF960A5891CBEE6445EA62F0",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1094,10 +1094,10 @@
       ]
     },
     {
-      "hash": "F9F6210772BDDB75961FD3DD53085ABA1E48A3E9",
-      "levelid": "custom_level_F9F6210772BDDB75961FD3DD53085ABA1E48A3E9",
       "songName": "With a Billion Worldful of <3",
       "levelAuthorName": "Acubens & A Jhintleman",
+      "hash": "F9F6210772BDDB75961FD3DD53085ABA1E48A3E9",
+      "levelid": "custom_level_F9F6210772BDDB75961FD3DD53085ABA1E48A3E9",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1106,10 +1106,10 @@
       ]
     },
     {
-      "hash": "63A9468260565BD0EC6F68C8D4D9338BBBE3C316",
-      "levelid": "custom_level_63A9468260565BD0EC6F68C8D4D9338BBBE3C316",
       "songName": "Untie",
       "levelAuthorName": "fatahkent",
+      "hash": "63A9468260565BD0EC6F68C8D4D9338BBBE3C316",
+      "levelid": "custom_level_63A9468260565BD0EC6F68C8D4D9338BBBE3C316",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1118,10 +1118,10 @@
       ]
     },
     {
-      "hash": "4716934350AA843FBC30173C3A8EBD108A19587A",
-      "levelid": "custom_level_4716934350AA843FBC30173C3A8EBD108A19587A",
       "songName": "Rose Blossom",
       "levelAuthorName": "minsiii",
+      "hash": "4716934350AA843FBC30173C3A8EBD108A19587A",
+      "levelid": "custom_level_4716934350AA843FBC30173C3A8EBD108A19587A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1130,10 +1130,10 @@
       ]
     },
     {
-      "hash": "26E9E454A30E9A9F7AA0208171948064B0A1F61C",
-      "levelid": "custom_level_26E9E454A30E9A9F7AA0208171948064B0A1F61C",
       "songName": "Mi Mi Mi",
       "levelAuthorName": "Jevk",
+      "hash": "26E9E454A30E9A9F7AA0208171948064B0A1F61C",
+      "levelid": "custom_level_26E9E454A30E9A9F7AA0208171948064B0A1F61C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1142,10 +1142,10 @@
       ]
     },
     {
-      "hash": "EE157CFC5AF50276CD1F4E7311E18D04D481CCDB",
-      "levelid": "custom_level_EE157CFC5AF50276CD1F4E7311E18D04D481CCDB",
       "songName": "Blue (Da Ba Dee)",
       "levelAuthorName": "Skeelie",
+      "hash": "EE157CFC5AF50276CD1F4E7311E18D04D481CCDB",
+      "levelid": "custom_level_EE157CFC5AF50276CD1F4E7311E18D04D481CCDB",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1154,10 +1154,10 @@
       ]
     },
     {
-      "hash": "84CABC9A152780CDD69C19E2EB862DDB4F8CB084",
-      "levelid": "custom_level_84CABC9A152780CDD69C19E2EB862DDB4F8CB084",
       "songName": "Sweet Juice",
       "levelAuthorName": "fatahkent",
+      "hash": "84CABC9A152780CDD69C19E2EB862DDB4F8CB084",
+      "levelid": "custom_level_84CABC9A152780CDD69C19E2EB862DDB4F8CB084",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1166,10 +1166,10 @@
       ]
     },
     {
-      "hash": "128591911E21AE92E064AEF5122FE411AD2C5DD9",
-      "levelid": "custom_level_128591911E21AE92E064AEF5122FE411AD2C5DD9",
       "songName": "String Theocracy",
       "levelAuthorName": "P90KILLR",
+      "hash": "128591911E21AE92E064AEF5122FE411AD2C5DD9",
+      "levelid": "custom_level_128591911E21AE92E064AEF5122FE411AD2C5DD9",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1178,10 +1178,10 @@
       ]
     },
     {
-      "hash": "EE0B446169B30FE2AE0DEB63AD4C811089CBA18A",
-      "levelid": "custom_level_EE0B446169B30FE2AE0DEB63AD4C811089CBA18A",
       "songName": "I am",
       "levelAuthorName": "PnfrlEnm",
+      "hash": "EE0B446169B30FE2AE0DEB63AD4C811089CBA18A",
+      "levelid": "custom_level_EE0B446169B30FE2AE0DEB63AD4C811089CBA18A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1190,10 +1190,10 @@
       ]
     },
     {
-      "hash": "3F9B1ABA51FFB812BA314C24C3668CB7BC082259",
-      "levelid": "custom_level_3F9B1ABA51FFB812BA314C24C3668CB7BC082259",
       "songName": "yoidoreshirazu",
       "levelAuthorName": "Kanahebi",
+      "hash": "3F9B1ABA51FFB812BA314C24C3668CB7BC082259",
+      "levelid": "custom_level_3F9B1ABA51FFB812BA314C24C3668CB7BC082259",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1202,10 +1202,10 @@
       ]
     },
     {
-      "hash": "BFB0F885E032792E074B307F1EDC7AFA066CF2D7",
-      "levelid": "custom_level_BFB0F885E032792E074B307F1EDC7AFA066CF2D7",
       "songName": "Muñekita",
       "levelAuthorName": "voltage, OlbmaPhlee",
+      "hash": "BFB0F885E032792E074B307F1EDC7AFA066CF2D7",
+      "levelid": "custom_level_BFB0F885E032792E074B307F1EDC7AFA066CF2D7",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1214,10 +1214,10 @@
       ]
     },
     {
-      "hash": "49E89D720F0F6E9EFA734D6E096315BF88D6C57A",
-      "levelid": "custom_level_49E89D720F0F6E9EFA734D6E096315BF88D6C57A",
       "songName": "extra-ordinary",
       "levelAuthorName": "minsiii",
+      "hash": "49E89D720F0F6E9EFA734D6E096315BF88D6C57A",
+      "levelid": "custom_level_49E89D720F0F6E9EFA734D6E096315BF88D6C57A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1226,10 +1226,10 @@
       ]
     },
     {
-      "hash": "D51E248BC44758C4E08D92DCA181C69010A4AFFF",
-      "levelid": "custom_level_D51E248BC44758C4E08D92DCA181C69010A4AFFF",
       "songName": "アンメルト・アンブレラ",
       "levelAuthorName": "wangyufy",
+      "hash": "D51E248BC44758C4E08D92DCA181C69010A4AFFF",
+      "levelid": "custom_level_D51E248BC44758C4E08D92DCA181C69010A4AFFF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1238,10 +1238,10 @@
       ]
     },
     {
-      "hash": "DCEC7197CCEBB25F523412290DD9DD513A982B9D",
-      "levelid": "custom_level_DCEC7197CCEBB25F523412290DD9DD513A982B9D",
       "songName": "After Dark",
       "levelAuthorName": "Super ShoKwave 828",
+      "hash": "DCEC7197CCEBB25F523412290DD9DD513A982B9D",
+      "levelid": "custom_level_DCEC7197CCEBB25F523412290DD9DD513A982B9D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1250,10 +1250,10 @@
       ]
     },
     {
-      "hash": "5DCD89918124B5198CD1A7553F5D54CC91FC20B1",
-      "levelid": "custom_level_5DCD89918124B5198CD1A7553F5D54CC91FC20B1",
       "songName": "Paranoia(SBver2 Remix)",
       "levelAuthorName": "Shosa",
+      "hash": "5DCD89918124B5198CD1A7553F5D54CC91FC20B1",
+      "levelid": "custom_level_5DCD89918124B5198CD1A7553F5D54CC91FC20B1",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1262,10 +1262,10 @@
       ]
     },
     {
-      "hash": "736D893CA10815B229383C80834E682C0498690D",
-      "levelid": "custom_level_736D893CA10815B229383C80834E682C0498690D",
       "songName": "BAD NICK",
       "levelAuthorName": "Serephor & BanditByTheStreet",
+      "hash": "736D893CA10815B229383C80834E682C0498690D",
+      "levelid": "custom_level_736D893CA10815B229383C80834E682C0498690D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1274,10 +1274,10 @@
       ]
     },
     {
-      "hash": "5E211B3B7854A4E480E795F7C6A68DA2E076AD0A",
-      "levelid": "custom_level_5E211B3B7854A4E480E795F7C6A68DA2E076AD0A",
       "songName": "When We're Human",
       "levelAuthorName": "JRE_McNuggies",
+      "hash": "5E211B3B7854A4E480E795F7C6A68DA2E076AD0A",
+      "levelid": "custom_level_5E211B3B7854A4E480E795F7C6A68DA2E076AD0A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1286,10 +1286,10 @@
       ]
     },
     {
-      "hash": "5428511B991CD8CCC3F0BD3460C905A5546A99B6",
-      "levelid": "custom_level_5428511B991CD8CCC3F0BD3460C905A5546A99B6",
       "songName": "Someone Special",
       "levelAuthorName": "harbgy",
+      "hash": "5428511B991CD8CCC3F0BD3460C905A5546A99B6",
+      "levelid": "custom_level_5428511B991CD8CCC3F0BD3460C905A5546A99B6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1298,10 +1298,10 @@
       ]
     },
     {
-      "hash": "4401994DB519BF7C140E9DE8317FF7421C126B33",
-      "levelid": "custom_level_4401994DB519BF7C140E9DE8317FF7421C126B33",
       "songName": "Great Vengeance",
       "levelAuthorName": "XAce1337manX",
+      "hash": "4401994DB519BF7C140E9DE8317FF7421C126B33",
+      "levelid": "custom_level_4401994DB519BF7C140E9DE8317FF7421C126B33",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1310,10 +1310,10 @@
       ]
     },
     {
-      "hash": "8324F3D2A20CF113159D0A401BC1C9302B1745B6",
-      "levelid": "custom_level_8324F3D2A20CF113159D0A401BC1C9302B1745B6",
       "songName": "わたしたちのクエスト",
       "levelAuthorName": "wangyufy",
+      "hash": "8324F3D2A20CF113159D0A401BC1C9302B1745B6",
+      "levelid": "custom_level_8324F3D2A20CF113159D0A401BC1C9302B1745B6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1322,10 +1322,10 @@
       ]
     },
     {
-      "hash": "45851292ADFDEC0AE79B2AC32953D63C2D681355",
-      "levelid": "custom_level_45851292ADFDEC0AE79B2AC32953D63C2D681355",
       "songName": "Koisuru Fortune Cookie",
       "levelAuthorName": "Ken_Monogatari",
+      "hash": "45851292ADFDEC0AE79B2AC32953D63C2D681355",
+      "levelid": "custom_level_45851292ADFDEC0AE79B2AC32953D63C2D681355",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1334,10 +1334,10 @@
       ]
     },
     {
-      "hash": "12FF14B83D1620593C493E73482E499511488015",
-      "levelid": "custom_level_12FF14B83D1620593C493E73482E499511488015",
       "songName": "Rivers Is A Vampire",
       "levelAuthorName": "BrightKnight",
+      "hash": "12FF14B83D1620593C493E73482E499511488015",
+      "levelid": "custom_level_12FF14B83D1620593C493E73482E499511488015",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1346,10 +1346,10 @@
       ]
     },
     {
-      "hash": "F2EBCB29021E8C8E876EF4D884333CF8E3742C93",
-      "levelid": "custom_level_F2EBCB29021E8C8E876EF4D884333CF8E3742C93",
       "songName": "Cheerleader",
       "levelAuthorName": "Phøenix",
+      "hash": "F2EBCB29021E8C8E876EF4D884333CF8E3742C93",
+      "levelid": "custom_level_F2EBCB29021E8C8E876EF4D884333CF8E3742C93",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1358,10 +1358,10 @@
       ]
     },
     {
-      "hash": "7FF9548CA4C8761B614F45FEA8473D49CAE154AA",
-      "levelid": "custom_level_7FF9548CA4C8761B614F45FEA8473D49CAE154AA",
       "songName": "Nightcore - Little Swing",
       "levelAuthorName": "Semdol",
+      "hash": "7FF9548CA4C8761B614F45FEA8473D49CAE154AA",
+      "levelid": "custom_level_7FF9548CA4C8761B614F45FEA8473D49CAE154AA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1370,10 +1370,10 @@
       ]
     },
     {
-      "hash": "B30100C7FD12B999B24ED6AE34E3B74DED2CF0F8",
-      "levelid": "custom_level_B30100C7FD12B999B24ED6AE34E3B74DED2CF0F8",
       "songName": "Infinite Colour",
       "levelAuthorName": "Dr_Marc",
+      "hash": "B30100C7FD12B999B24ED6AE34E3B74DED2CF0F8",
+      "levelid": "custom_level_B30100C7FD12B999B24ED6AE34E3B74DED2CF0F8",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1382,10 +1382,10 @@
       ]
     },
     {
-      "hash": "449AAEB6AA83B70E88B404AA7555887709FFBE92",
-      "levelid": "custom_level_449AAEB6AA83B70E88B404AA7555887709FFBE92",
       "songName": "Value",
       "levelAuthorName": "muffn",
+      "hash": "449AAEB6AA83B70E88B404AA7555887709FFBE92",
+      "levelid": "custom_level_449AAEB6AA83B70E88B404AA7555887709FFBE92",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1394,10 +1394,10 @@
       ]
     },
     {
-      "hash": "5B56959C296C7D45581E012FC6EF8C770870AB74",
-      "levelid": "custom_level_5B56959C296C7D45581E012FC6EF8C770870AB74",
       "songName": "A Little Bit",
       "levelAuthorName": "Jonas_0_0, DesperateWoman",
+      "hash": "5B56959C296C7D45581E012FC6EF8C770870AB74",
+      "levelid": "custom_level_5B56959C296C7D45581E012FC6EF8C770870AB74",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1406,10 +1406,10 @@
       ]
     },
     {
-      "hash": "646C20D3903803D074B1987A1B6687DC3AF836F3",
-      "levelid": "custom_level_646C20D3903803D074B1987A1B6687DC3AF836F3",
       "songName": "Blossom ",
       "levelAuthorName": "Dr_Marc",
+      "hash": "646C20D3903803D074B1987A1B6687DC3AF836F3",
+      "levelid": "custom_level_646C20D3903803D074B1987A1B6687DC3AF836F3",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1418,10 +1418,10 @@
       ]
     },
     {
-      "hash": "1B8796F48E712F9FFC42BC8579C4F3450F597C68",
-      "levelid": "custom_level_1B8796F48E712F9FFC42BC8579C4F3450F597C68",
       "songName": "Alastor's Game",
       "levelAuthorName": "MarsTheMano",
+      "hash": "1B8796F48E712F9FFC42BC8579C4F3450F597C68",
+      "levelid": "custom_level_1B8796F48E712F9FFC42BC8579C4F3450F597C68",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1430,10 +1430,10 @@
       ]
     },
     {
-      "hash": "9B4C4BEE27E8424C1EEBF919C1EEDB0750522522",
-      "levelid": "custom_level_9B4C4BEE27E8424C1EEBF919C1EEDB0750522522",
       "songName": "lil' freak",
       "levelAuthorName": "Kassi",
+      "hash": "9B4C4BEE27E8424C1EEBF919C1EEDB0750522522",
+      "levelid": "custom_level_9B4C4BEE27E8424C1EEBF919C1EEDB0750522522",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1442,10 +1442,10 @@
       ]
     },
     {
-      "hash": "878201E8410D99FD395D0C9FAE74D25C380BEDCC",
-      "levelid": "custom_level_878201E8410D99FD395D0C9FAE74D25C380BEDCC",
       "songName": "Indigo Coral",
       "levelAuthorName": "P90KILLR",
+      "hash": "878201E8410D99FD395D0C9FAE74D25C380BEDCC",
+      "levelid": "custom_level_878201E8410D99FD395D0C9FAE74D25C380BEDCC",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1454,10 +1454,10 @@
       ]
     },
     {
-      "hash": "C96AEC1072B2C8F188C2B2392E644E18A62B3592",
-      "levelid": "custom_level_C96AEC1072B2C8F188C2B2392E644E18A62B3592",
       "songName": "fantasy/reality",
       "levelAuthorName": "Gabriel",
+      "hash": "C96AEC1072B2C8F188C2B2392E644E18A62B3592",
+      "levelid": "custom_level_C96AEC1072B2C8F188C2B2392E644E18A62B3592",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1466,10 +1466,10 @@
       ]
     },
     {
-      "hash": "0957896AAA78499DA67640009C55C00207847B8F",
-      "levelid": "custom_level_0957896AAA78499DA67640009C55C00207847B8F",
       "songName": "Accendio",
       "levelAuthorName": "Jonas_0_0",
+      "hash": "0957896AAA78499DA67640009C55C00207847B8F",
+      "levelid": "custom_level_0957896AAA78499DA67640009C55C00207847B8F",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1478,10 +1478,10 @@
       ]
     },
     {
-      "hash": "C74E79363D5CC18A577BA45B64B3578C3AE2690D",
-      "levelid": "custom_level_C74E79363D5CC18A577BA45B64B3578C3AE2690D",
       "songName": "Shoujyo S",
       "levelAuthorName": "Pleo",
+      "hash": "C74E79363D5CC18A577BA45B64B3578C3AE2690D",
+      "levelid": "custom_level_C74E79363D5CC18A577BA45B64B3578C3AE2690D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1490,10 +1490,10 @@
       ]
     },
     {
-      "hash": "1038B2B47E5036A43FAC6A838D3E1097A13426BF",
-      "levelid": "custom_level_1038B2B47E5036A43FAC6A838D3E1097A13426BF",
       "songName": "Desperate",
       "levelAuthorName": "AllPoland",
+      "hash": "1038B2B47E5036A43FAC6A838D3E1097A13426BF",
+      "levelid": "custom_level_1038B2B47E5036A43FAC6A838D3E1097A13426BF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1502,10 +1502,10 @@
       ]
     },
     {
-      "hash": "4EC47AE9B8E60B6913F2B34F66D4976ED1B2946C",
-      "levelid": "custom_level_4EC47AE9B8E60B6913F2B34F66D4976ED1B2946C",
       "songName": "Born Again",
       "levelAuthorName": "thelitlewiseowl",
+      "hash": "4EC47AE9B8E60B6913F2B34F66D4976ED1B2946C",
+      "levelid": "custom_level_4EC47AE9B8E60B6913F2B34F66D4976ED1B2946C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1514,10 +1514,10 @@
       ]
     },
     {
-      "hash": "B0087AE04370D55BB5B59156FDB076C68777A9DF",
-      "levelid": "custom_level_B0087AE04370D55BB5B59156FDB076C68777A9DF",
       "songName": "Usagi Flap",
       "levelAuthorName": "Cush",
+      "hash": "B0087AE04370D55BB5B59156FDB076C68777A9DF",
+      "levelid": "custom_level_B0087AE04370D55BB5B59156FDB076C68777A9DF",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1526,10 +1526,10 @@
       ]
     },
     {
-      "hash": "FE1FB1F15D9B6D84F3E3C89EFFDD691BC877CDD4",
-      "levelid": "custom_level_FE1FB1F15D9B6D84F3E3C89EFFDD691BC877CDD4",
       "songName": "Ruoska",
       "levelAuthorName": "oegoe & Tseska",
+      "hash": "FE1FB1F15D9B6D84F3E3C89EFFDD691BC877CDD4",
+      "levelid": "custom_level_FE1FB1F15D9B6D84F3E3C89EFFDD691BC877CDD4",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1538,10 +1538,10 @@
       ]
     },
     {
-      "hash": "C74217D307C9C6CEE78EDE30C7EFBFE4810DFAFE",
-      "levelid": "custom_level_C74217D307C9C6CEE78EDE30C7EFBFE4810DFAFE",
       "songName": "Alignment",
       "levelAuthorName": "aideblob",
+      "hash": "C74217D307C9C6CEE78EDE30C7EFBFE4810DFAFE",
+      "levelid": "custom_level_C74217D307C9C6CEE78EDE30C7EFBFE4810DFAFE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1550,10 +1550,10 @@
       ]
     },
     {
-      "hash": "1D2D2427D574587E104CC31E2B90302372C6AD30",
-      "levelid": "custom_level_1D2D2427D574587E104CC31E2B90302372C6AD30",
       "songName": "TAKA",
       "levelAuthorName": "nitronik.exe",
+      "hash": "1D2D2427D574587E104CC31E2B90302372C6AD30",
+      "levelid": "custom_level_1D2D2427D574587E104CC31E2B90302372C6AD30",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1562,10 +1562,10 @@
       ]
     },
     {
-      "hash": "E0777F6D10F15B230F7ADE34D88C4629E13AD6F6",
-      "levelid": "custom_level_E0777F6D10F15B230F7ADE34D88C4629E13AD6F6",
       "songName": "Dernière danse",
       "levelAuthorName": "Nebelmonster",
+      "hash": "E0777F6D10F15B230F7ADE34D88C4629E13AD6F6",
+      "levelid": "custom_level_E0777F6D10F15B230F7ADE34D88C4629E13AD6F6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1574,10 +1574,10 @@
       ]
     },
     {
-      "hash": "E87DEB0B4499F86F820E37BEB521C887E37F3CCE",
-      "levelid": "custom_level_E87DEB0B4499F86F820E37BEB521C887E37F3CCE",
       "songName": "God-ish",
       "levelAuthorName": "Flasks",
+      "hash": "E87DEB0B4499F86F820E37BEB521C887E37F3CCE",
+      "levelid": "custom_level_E87DEB0B4499F86F820E37BEB521C887E37F3CCE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1586,10 +1586,10 @@
       ]
     },
     {
-      "hash": "1569AC632B176CE34C5721CEEE0D90FD1E389848",
-      "levelid": "custom_level_1569AC632B176CE34C5721CEEE0D90FD1E389848",
       "songName": "September",
       "levelAuthorName": "edgyguns",
+      "hash": "1569AC632B176CE34C5721CEEE0D90FD1E389848",
+      "levelid": "custom_level_1569AC632B176CE34C5721CEEE0D90FD1E389848",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1598,10 +1598,10 @@
       ]
     },
     {
-      "hash": "E84E85710D12DB2B88FF4CBD991E2ED222D38933",
-      "levelid": "custom_level_E84E85710D12DB2B88FF4CBD991E2ED222D38933",
       "songName": "tenetene",
       "levelAuthorName": "oRuGaM",
+      "hash": "E84E85710D12DB2B88FF4CBD991E2ED222D38933",
+      "levelid": "custom_level_E84E85710D12DB2B88FF4CBD991E2ED222D38933",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1610,10 +1610,10 @@
       ]
     },
     {
-      "hash": "09588378204844135B1386B55A56CF084FC4F3DE",
-      "levelid": "custom_level_09588378204844135B1386B55A56CF084FC4F3DE",
       "songName": "burbank house",
       "levelAuthorName": "Nora Voilyn",
+      "hash": "09588378204844135B1386B55A56CF084FC4F3DE",
+      "levelid": "custom_level_09588378204844135B1386B55A56CF084FC4F3DE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1622,10 +1622,10 @@
       ]
     },
     {
-      "hash": "9E02508B0280FE38726E1C68024973F2766AA49C",
-      "levelid": "custom_level_9E02508B0280FE38726E1C68024973F2766AA49C",
       "songName": "INSTRUCTIONS UNCLEAR",
       "levelAuthorName": "Doogle",
+      "hash": "9E02508B0280FE38726E1C68024973F2766AA49C",
+      "levelid": "custom_level_9E02508B0280FE38726E1C68024973F2766AA49C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1634,10 +1634,10 @@
       ]
     },
     {
-      "hash": "432C943E1FC81A1E5C1D8EB4AB298AB7C0FB379B",
-      "levelid": "custom_level_432C943E1FC81A1E5C1D8EB4AB298AB7C0FB379B",
       "songName": "Yoidore Shirazu",
       "levelAuthorName": "Ken_Monogatari",
+      "hash": "432C943E1FC81A1E5C1D8EB4AB298AB7C0FB379B",
+      "levelid": "custom_level_432C943E1FC81A1E5C1D8EB4AB298AB7C0FB379B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1646,10 +1646,10 @@
       ]
     },
     {
-      "hash": "356EAF94F57B2CC5C7E484939084F45BAC7EC789",
-      "levelid": "custom_level_356EAF94F57B2CC5C7E484939084F45BAC7EC789",
       "songName": "Yume de Mata Aetaranaa",
       "levelAuthorName": "zeon",
+      "hash": "356EAF94F57B2CC5C7E484939084F45BAC7EC789",
+      "levelid": "custom_level_356EAF94F57B2CC5C7E484939084F45BAC7EC789",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1658,10 +1658,10 @@
       ]
     },
     {
-      "hash": "7AEA79F992C9B0EC50805F46C8EDCB3EF51D8D6F",
-      "levelid": "custom_level_7AEA79F992C9B0EC50805F46C8EDCB3EF51D8D6F",
       "songName": "DIY",
       "levelAuthorName": "theAstra & jdgdaredevil",
+      "hash": "7AEA79F992C9B0EC50805F46C8EDCB3EF51D8D6F",
+      "levelid": "custom_level_7AEA79F992C9B0EC50805F46C8EDCB3EF51D8D6F",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1670,10 +1670,10 @@
       ]
     },
     {
-      "hash": "4D2B49363280F7F802C782F97285460B65699186",
-      "levelid": "custom_level_4D2B49363280F7F802C782F97285460B65699186",
       "songName": "Sun Sala",
       "levelAuthorName": "Pleo",
+      "hash": "4D2B49363280F7F802C782F97285460B65699186",
+      "levelid": "custom_level_4D2B49363280F7F802C782F97285460B65699186",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1682,10 +1682,10 @@
       ]
     },
     {
-      "hash": "280E0F1C7BB7A96469F031939BC9E9BA13E7A1C8",
-      "levelid": "custom_level_280E0F1C7BB7A96469F031939BC9E9BA13E7A1C8",
       "songName": "Serpent Dance",
       "levelAuthorName": "Zyxi",
+      "hash": "280E0F1C7BB7A96469F031939BC9E9BA13E7A1C8",
+      "levelid": "custom_level_280E0F1C7BB7A96469F031939BC9E9BA13E7A1C8",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1694,10 +1694,10 @@
       ]
     },
     {
-      "hash": "8255AC79AEB74B19AE79CD6D3BE1F1517EF46C79",
-      "levelid": "custom_level_8255AC79AEB74B19AE79CD6D3BE1F1517EF46C79",
       "songName": "To. X",
       "levelAuthorName": "meoaww",
+      "hash": "8255AC79AEB74B19AE79CD6D3BE1F1517EF46C79",
+      "levelid": "custom_level_8255AC79AEB74B19AE79CD6D3BE1F1517EF46C79",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1706,10 +1706,10 @@
       ]
     },
     {
-      "hash": "79C81A4065B727EE105F0B14580A8427E24BC093",
-      "levelid": "custom_level_79C81A4065B727EE105F0B14580A8427E24BC093",
       "songName": "Walk that Walk",
       "levelAuthorName": "Uncouth",
+      "hash": "79C81A4065B727EE105F0B14580A8427E24BC093",
+      "levelid": "custom_level_79C81A4065B727EE105F0B14580A8427E24BC093",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1718,10 +1718,10 @@
       ]
     },
     {
-      "hash": "DC3FB17B637D9268776BF21F9E849C40D7B525E2",
-      "levelid": "custom_level_DC3FB17B637D9268776BF21F9E849C40D7B525E2",
       "songName": "Bloody Mary",
       "levelAuthorName": "oegoe",
+      "hash": "DC3FB17B637D9268776BF21F9E849C40D7B525E2",
+      "levelid": "custom_level_DC3FB17B637D9268776BF21F9E849C40D7B525E2",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1730,10 +1730,10 @@
       ]
     },
     {
-      "hash": "73F6B664BFE0A4BE3891E03ED31BDB49F27807AC",
-      "levelid": "custom_level_73F6B664BFE0A4BE3891E03ED31BDB49F27807AC",
       "songName": "Simple Life",
       "levelAuthorName": "Xenothas",
+      "hash": "73F6B664BFE0A4BE3891E03ED31BDB49F27807AC",
+      "levelid": "custom_level_73F6B664BFE0A4BE3891E03ED31BDB49F27807AC",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1742,10 +1742,10 @@
       ]
     },
     {
-      "hash": "D7D9270D2A55E1D873B90750BA4EBEA678A54041",
-      "levelid": "custom_level_D7D9270D2A55E1D873B90750BA4EBEA678A54041",
       "songName": "Let Go",
       "levelAuthorName": "BigOlDumplin",
+      "hash": "D7D9270D2A55E1D873B90750BA4EBEA678A54041",
+      "levelid": "custom_level_D7D9270D2A55E1D873B90750BA4EBEA678A54041",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1754,10 +1754,10 @@
       ]
     },
     {
-      "hash": "61FA5016B5F517462D5265044A1F4DB1B4DE1C28",
-      "levelid": "custom_level_61FA5016B5F517462D5265044A1F4DB1B4DE1C28",
       "songName": "Beyond",
       "levelAuthorName": "Marsh",
+      "hash": "61FA5016B5F517462D5265044A1F4DB1B4DE1C28",
+      "levelid": "custom_level_61FA5016B5F517462D5265044A1F4DB1B4DE1C28",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1766,10 +1766,10 @@
       ]
     },
     {
-      "hash": "41F7DADAB11AC3E96A29AA0CCB9959C1E7280BFE",
-      "levelid": "custom_level_41F7DADAB11AC3E96A29AA0CCB9959C1E7280BFE",
       "songName": "Supernova",
       "levelAuthorName": "Bellus",
+      "hash": "41F7DADAB11AC3E96A29AA0CCB9959C1E7280BFE",
+      "levelid": "custom_level_41F7DADAB11AC3E96A29AA0CCB9959C1E7280BFE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1778,10 +1778,10 @@
       ]
     },
     {
-      "hash": "5D12764722031BE0FA031885EAC7E4E1B199C957",
-      "levelid": "custom_level_5D12764722031BE0FA031885EAC7E4E1B199C957",
       "songName": "Protoflicker",
       "levelAuthorName": "risi",
+      "hash": "5D12764722031BE0FA031885EAC7E4E1B199C957",
+      "levelid": "custom_level_5D12764722031BE0FA031885EAC7E4E1B199C957",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1790,10 +1790,10 @@
       ]
     },
     {
-      "hash": "89E1613E8B3C26CE92D4F07FE0CB3D432CAA6770",
-      "levelid": "custom_level_89E1613E8B3C26CE92D4F07FE0CB3D432CAA6770",
       "songName": "Bye Bye Bye",
       "levelAuthorName": "FatBeanzoop & RFCaps",
+      "hash": "89E1613E8B3C26CE92D4F07FE0CB3D432CAA6770",
+      "levelid": "custom_level_89E1613E8B3C26CE92D4F07FE0CB3D432CAA6770",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1802,10 +1802,10 @@
       ]
     },
     {
-      "hash": "67CC2802080878E5492D4F9D64B4DE0EBBE83D53",
-      "levelid": "custom_level_67CC2802080878E5492D4F9D64B4DE0EBBE83D53",
       "songName": "Click",
       "levelAuthorName": "Jonas_0_0",
+      "hash": "67CC2802080878E5492D4F9D64B4DE0EBBE83D53",
+      "levelid": "custom_level_67CC2802080878E5492D4F9D64B4DE0EBBE83D53",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1814,10 +1814,10 @@
       ]
     },
     {
-      "hash": "68A64DF6022ED4BBEEE8510A93318CE387AC069A",
-      "levelid": "custom_level_68A64DF6022ED4BBEEE8510A93318CE387AC069A",
       "songName": "hitomania",
       "levelAuthorName": "Flasks",
+      "hash": "68A64DF6022ED4BBEEE8510A93318CE387AC069A",
+      "levelid": "custom_level_68A64DF6022ED4BBEEE8510A93318CE387AC069A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1826,10 +1826,10 @@
       ]
     },
     {
-      "hash": "65C41C11D58DCDE202455282289A44E2CBFB6C37",
-      "levelid": "custom_level_65C41C11D58DCDE202455282289A44E2CBFB6C37",
       "songName": "Judgement Day",
       "levelAuthorName": "nitronik.exe",
+      "hash": "65C41C11D58DCDE202455282289A44E2CBFB6C37",
+      "levelid": "custom_level_65C41C11D58DCDE202455282289A44E2CBFB6C37",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1838,10 +1838,10 @@
       ]
     },
     {
-      "hash": "CD0FD442138EFD50166F64A6AE6F9F913309FDF6",
-      "levelid": "custom_level_CD0FD442138EFD50166F64A6AE6F9F913309FDF6",
       "songName": "Mirrors",
       "levelAuthorName": "Jonas_0_0",
+      "hash": "CD0FD442138EFD50166F64A6AE6F9F913309FDF6",
+      "levelid": "custom_level_CD0FD442138EFD50166F64A6AE6F9F913309FDF6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1850,10 +1850,10 @@
       ]
     },
     {
-      "hash": "1B1FF3C44895A109522981A5EF5DB43EA66D7593",
-      "levelid": "custom_level_1B1FF3C44895A109522981A5EF5DB43EA66D7593",
       "songName": "culture",
       "levelAuthorName": "yabje & Alice",
+      "hash": "1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "levelid": "custom_level_1B1FF3C44895A109522981A5EF5DB43EA66D7593",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1862,10 +1862,10 @@
       ]
     },
     {
-      "hash": "0D73A0418FEBEB2FCD76A283B88257CC12F04DD6",
-      "levelid": "custom_level_0D73A0418FEBEB2FCD76A283B88257CC12F04DD6",
       "songName": "Hässlich",
       "levelAuthorName": "Najoko",
+      "hash": "0D73A0418FEBEB2FCD76A283B88257CC12F04DD6",
+      "levelid": "custom_level_0D73A0418FEBEB2FCD76A283B88257CC12F04DD6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1874,10 +1874,10 @@
       ]
     },
     {
-      "hash": "43094923A770E1AA7193480E54D4C6299032EB8B",
-      "levelid": "custom_level_43094923A770E1AA7193480E54D4C6299032EB8B",
       "songName": "Ren'ai Saiban (Love Trial)",
       "levelAuthorName": "kizuflux",
+      "hash": "43094923A770E1AA7193480E54D4C6299032EB8B",
+      "levelid": "custom_level_43094923A770E1AA7193480E54D4C6299032EB8B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1886,10 +1886,10 @@
       ]
     },
     {
-      "hash": "C031E7E6F3320EB526FBFEE9465A2A5F889331E6",
-      "levelid": "custom_level_C031E7E6F3320EB526FBFEE9465A2A5F889331E6",
       "songName": "HYPE MODE",
       "levelAuthorName": "TOFU",
+      "hash": "C031E7E6F3320EB526FBFEE9465A2A5F889331E6",
+      "levelid": "custom_level_C031E7E6F3320EB526FBFEE9465A2A5F889331E6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1898,10 +1898,10 @@
       ]
     },
     {
-      "hash": "2107373E17DB92328A156EA9EB1010EAC091AB55",
-      "levelid": "custom_level_2107373E17DB92328A156EA9EB1010EAC091AB55",
       "songName": "dancinwithsomebawdy",
       "levelAuthorName": "RetrX",
+      "hash": "2107373E17DB92328A156EA9EB1010EAC091AB55",
+      "levelid": "custom_level_2107373E17DB92328A156EA9EB1010EAC091AB55",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1910,10 +1910,10 @@
       ]
     },
     {
-      "hash": "F0F27D54287CFBE513C7A1DBD031B2EBFFC4A8E7",
-      "levelid": "custom_level_F0F27D54287CFBE513C7A1DBD031B2EBFFC4A8E7",
       "songName": "Laid-Back Journey",
       "levelAuthorName": "Marsh",
+      "hash": "F0F27D54287CFBE513C7A1DBD031B2EBFFC4A8E7",
+      "levelid": "custom_level_F0F27D54287CFBE513C7A1DBD031B2EBFFC4A8E7",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1922,10 +1922,10 @@
       ]
     },
     {
-      "hash": "05861986493A8481A3B69A3F808ECD6FBC2CE752",
-      "levelid": "custom_level_05861986493A8481A3B69A3F808ECD6FBC2CE752",
       "songName": "Haru wo Tsugeru",
       "levelAuthorName": "kibo",
+      "hash": "05861986493A8481A3B69A3F808ECD6FBC2CE752",
+      "levelid": "custom_level_05861986493A8481A3B69A3F808ECD6FBC2CE752",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1934,10 +1934,10 @@
       ]
     },
     {
-      "hash": "98E5939D60BA2D499825F05AE7B57C44765C3061",
-      "levelid": "custom_level_98E5939D60BA2D499825F05AE7B57C44765C3061",
       "songName": "Queen of Ice (Nora En Pure Remix)",
       "levelAuthorName": "Joetastic",
+      "hash": "98E5939D60BA2D499825F05AE7B57C44765C3061",
+      "levelid": "custom_level_98E5939D60BA2D499825F05AE7B57C44765C3061",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1946,10 +1946,10 @@
       ]
     },
     {
-      "hash": "AF1C32549CDFB46BA30D52EA33FE4EF26A729654",
-      "levelid": "custom_level_AF1C32549CDFB46BA30D52EA33FE4EF26A729654",
       "songName": "search & destroy",
       "levelAuthorName": "GojiCrafter & Parapass",
+      "hash": "AF1C32549CDFB46BA30D52EA33FE4EF26A729654",
+      "levelid": "custom_level_AF1C32549CDFB46BA30D52EA33FE4EF26A729654",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1958,10 +1958,10 @@
       ]
     },
     {
-      "hash": "26BC22E684B4566D131680CC633814D486B79BD9",
-      "levelid": "custom_level_26BC22E684B4566D131680CC633814D486B79BD9",
       "songName": "Boi",
       "levelAuthorName": "Kanahebi",
+      "hash": "26BC22E684B4566D131680CC633814D486B79BD9",
+      "levelid": "custom_level_26BC22E684B4566D131680CC633814D486B79BD9",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1970,10 +1970,10 @@
       ]
     },
     {
-      "hash": "1A21E7640DDABFB6780504A249A357F11849FAEB",
-      "levelid": "custom_level_1A21E7640DDABFB6780504A249A357F11849FAEB",
       "songName": "Angel Echo",
       "levelAuthorName": "risi, The_Editor",
+      "hash": "1A21E7640DDABFB6780504A249A357F11849FAEB",
+      "levelid": "custom_level_1A21E7640DDABFB6780504A249A357F11849FAEB",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1982,10 +1982,10 @@
       ]
     },
     {
-      "hash": "8BBC81BCC75C5E433122842040AE65F0FF1D893C",
-      "levelid": "custom_level_8BBC81BCC75C5E433122842040AE65F0FF1D893C",
       "songName": "Rahasia Perempuan (Swing Version)",
       "levelAuthorName": "gemboyong",
+      "hash": "8BBC81BCC75C5E433122842040AE65F0FF1D893C",
+      "levelid": "custom_level_8BBC81BCC75C5E433122842040AE65F0FF1D893C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1994,10 +1994,10 @@
       ]
     },
     {
-      "hash": "BD14FA3D5423DE4962C29B3224E64A361A57E98C",
-      "levelid": "custom_level_BD14FA3D5423DE4962C29B3224E64A361A57E98C",
       "songName": "Jekyll",
       "levelAuthorName": "Comyute",
+      "hash": "BD14FA3D5423DE4962C29B3224E64A361A57E98C",
+      "levelid": "custom_level_BD14FA3D5423DE4962C29B3224E64A361A57E98C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2006,10 +2006,10 @@
       ]
     },
     {
-      "hash": "07825009025BD05104840DF619B4A19103E6A866",
-      "levelid": "custom_level_07825009025BD05104840DF619B4A19103E6A866",
       "songName": "Surface Tension",
       "levelAuthorName": "WhipsEdge",
+      "hash": "07825009025BD05104840DF619B4A19103E6A866",
+      "levelid": "custom_level_07825009025BD05104840DF619B4A19103E6A866",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2018,10 +2018,10 @@
       ]
     },
     {
-      "hash": "258F42C1C9B472EF532057D0C6F9E95002970A7C",
-      "levelid": "custom_level_258F42C1C9B472EF532057D0C6F9E95002970A7C",
       "songName": "Pop Song",
       "levelAuthorName": "thelitlewiseowl",
+      "hash": "258F42C1C9B472EF532057D0C6F9E95002970A7C",
+      "levelid": "custom_level_258F42C1C9B472EF532057D0C6F9E95002970A7C",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2030,10 +2030,10 @@
       ]
     },
     {
-      "hash": "D6D7FAFFD78233E0C2717B3C2D211DA5BF818C0D",
-      "levelid": "custom_level_D6D7FAFFD78233E0C2717B3C2D211DA5BF818C0D",
       "songName": "Samurai Heart (Some Like It Hot!!)",
       "levelAuthorName": "Kanahebi",
+      "hash": "D6D7FAFFD78233E0C2717B3C2D211DA5BF818C0D",
+      "levelid": "custom_level_D6D7FAFFD78233E0C2717B3C2D211DA5BF818C0D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2042,10 +2042,10 @@
       ]
     },
     {
-      "hash": "D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37",
-      "levelid": "custom_level_D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37",
       "songName": "Aien-Jihen",
       "levelAuthorName": "Gabriel & take_nyan",
+      "hash": "D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37",
+      "levelid": "custom_level_D06BD638A1BBDBB907E4FE5FFA0F5E027E524C37",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2054,10 +2054,10 @@
       ]
     },
     {
-      "hash": "6D9454D7DFB90037FBEEDDF1804BEC290B333762",
-      "levelid": "custom_level_6D9454D7DFB90037FBEEDDF1804BEC290B333762",
       "songName": "Apocrypha III: Eternal Vespers",
       "levelAuthorName": "Revelate",
+      "hash": "6D9454D7DFB90037FBEEDDF1804BEC290B333762",
+      "levelid": "custom_level_6D9454D7DFB90037FBEEDDF1804BEC290B333762",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2066,10 +2066,10 @@
       ]
     },
     {
-      "hash": "F7DECCEFB5C0D6135DF9525AFA66B9CC5438E88F",
-      "levelid": "custom_level_F7DECCEFB5C0D6135DF9525AFA66B9CC5438E88F",
       "songName": "two",
       "levelAuthorName": "Kassi",
+      "hash": "F7DECCEFB5C0D6135DF9525AFA66B9CC5438E88F",
+      "levelid": "custom_level_F7DECCEFB5C0D6135DF9525AFA66B9CC5438E88F",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2078,10 +2078,10 @@
       ]
     },
     {
-      "hash": "276C0DFC3BF875B6593D0FFD819696C4AE928211",
-      "levelid": "custom_level_276C0DFC3BF875B6593D0FFD819696C4AE928211",
       "songName": "DEVILGIRL",
       "levelAuthorName": "Jabob",
+      "hash": "276C0DFC3BF875B6593D0FFD819696C4AE928211",
+      "levelid": "custom_level_276C0DFC3BF875B6593D0FFD819696C4AE928211",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2090,10 +2090,10 @@
       ]
     },
     {
-      "hash": "363055A3FD618FA5B514A1574A2F2910F0AF269A",
-      "levelid": "custom_level_363055A3FD618FA5B514A1574A2F2910F0AF269A",
       "songName": "Eyes Roll",
       "levelAuthorName": "Jabob",
+      "hash": "363055A3FD618FA5B514A1574A2F2910F0AF269A",
+      "levelid": "custom_level_363055A3FD618FA5B514A1574A2F2910F0AF269A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2102,10 +2102,10 @@
       ]
     },
     {
-      "hash": "563A3FB12320F6B022EE46BA7AB4E2253C1D477A",
-      "levelid": "custom_level_563A3FB12320F6B022EE46BA7AB4E2253C1D477A",
       "songName": "Zunda Shaking",
       "levelAuthorName": "Voidless",
+      "hash": "563A3FB12320F6B022EE46BA7AB4E2253C1D477A",
+      "levelid": "custom_level_563A3FB12320F6B022EE46BA7AB4E2253C1D477A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2114,10 +2114,46 @@
       ]
     },
     {
-      "hash": "5732109FEFD1D602FE5B90D03687C8CC201ED37B",
-      "levelid": "custom_level_5732109FEFD1D602FE5B90D03687C8CC201ED37B",
       "songName": "Can't Take My Eyes Off You",
       "levelAuthorName": "RetrX",
+      "hash": "5732109FEFD1D602FE5B90D03687C8CC201ED37B",
+      "levelid": "custom_level_5732109FEFD1D602FE5B90D03687C8CC201ED37B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "MOONLIT FLOOR",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "01D74C1B8C68E0E51A852A9F285C170170D3C082",
+      "levelid": "custom_level_01D74C1B8C68E0E51A852A9F285C170170D3C082",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Mantra",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "23A8CC9697258705129E6E74BA44737AFBC7BB79",
+      "levelid": "custom_level_23A8CC9697258705129E6E74BA44737AFBC7BB79",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Say it.",
+      "levelAuthorName": "Marsh",
+      "hash": "6469A74ECD910814903CC1F103D37A181B245F0E",
+      "levelid": "custom_level_6469A74ECD910814903CC1F103D37A181B245F0E",
       "difficulties": [
         {
           "characteristic": "Standard",
