@@ -1,22 +1,35 @@
 import { createTwitchIRC } from "@/apps/twitch-bot/sockets/twitch-irc.ts";
 import { defaultHeaders, TwitchAuthApi } from "@/packages/api-twitch/auth-api.ts";
-import {
-  getChannelDataByBroadcasterName,
-  setChannelData,
-} from "../../../packages/api-twitch/helix/TwitchHelixApiClient.ts";
+import { getChannelDataByBroadcasterName, setChannelData } from "@/packages/api-twitch/helix/TwitchHelixApiClient.ts";
 import { getUserToken } from "@/packages/api-twitch/auth-api-get-user-access-token.e2e.ts";
 import { getRelativeTimeTechMulti } from "@/packages/discord/cron/tech-multi/utils.ts";
 import { createAppAuthorizationHeaders, createUserAuthorizationHeaders } from "@/packages/api-twitch/helix/common.ts";
 import { registerCommands } from "@/apps/twitch-bot/common/danielduel-commands.ts";
-import { registerPubSub } from "@/apps/twitch-bot/common/registerTechMultiReminderRedeem.ts";
+import { registerTechMultiReminderRedeem } from "@/apps/twitch-bot/common/registerTechMultiReminderRedeem.ts";
+import { registerSnoozeAdsRedeem } from "@/apps/twitch-bot/common/registerSnoozeAdsRedeem.ts";
+import { registerAdsWarningLoop } from "@/apps/twitch-bot/common/registerAdsWarningLoop.ts";
+import { TwitchHelixBroadcasterApiManaged } from "@/packages/api-twitch/helix/TwitchHelixBroadcasterApiManaged.ts";
+import { TwitchPubSubManager } from "@/packages/api-twitch/pubsub/TwitchPubSubManager.ts";
 
-const userCredentials = await getUserToken();
-
+const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
 const nick = Deno.env.get("TWITCH_IRC_COMMANDS_LOGIN")!;
 const pass = Deno.env.get("TWITCH_IRC_COMMANDS_PASS")!;
 
-const [irc, cleanup, ircContext] = createTwitchIRC({
+const userCreds = await getUserToken();
+
+const twitchHelixBroadcasterApiManagedM = await TwitchHelixBroadcasterApiManaged.createFromUserCreds(
+  client_id,
+  userCreds,
+);
+if (twitchHelixBroadcasterApiManagedM.isErr()) {
+  console.error("TwitchHelixBroadcasterApiManaged failed to init");
+  console.error(twitchHelixBroadcasterApiManagedM.unwrapErr());
+  Deno.exit();
+}
+const twitchHelixBroadcasterApiManaged = twitchHelixBroadcasterApiManagedM.unwrap();
+
+const [irc, ircCleanup, ircContext] = createTwitchIRC({
   channel: channel as `#${string}`,
   debug: true,
   credentials: {
@@ -25,16 +38,23 @@ const [irc, cleanup, ircContext] = createTwitchIRC({
   },
 });
 
-registerCommands(irc);
-registerPubSub(ircContext);
+const [pubSub, pubSubCleanup, pubSubContext] = await twitchHelixBroadcasterApiManaged.getPubSub();
+
+const twitchPubSubManager = new TwitchPubSubManager(pubSub, pubSubContext);
+
+await registerSnoozeAdsRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
+await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
+registerCommands(irc, twitchHelixBroadcasterApiManaged);
+registerAdsWarningLoop(twitchHelixBroadcasterApiManaged, ircContext);
 
 Deno.addSignalListener("SIGINT", () => {
-  cleanup();
-  console.log("\nParted\n\n");
+  ircCleanup();
+  console.log("\nParted");
+  pubSubCleanup();
+  console.log("\nPubSub cleanup");
   Deno.exit();
 });
 
-const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const client_secret = Deno.env.get("TWITCH_API_CLIENT_SECRET")!;
 const grant_type = Deno.env.get("TWITCH_API_GRANT_TYPE")!;
 const masterChannel = Deno.env.get("TWITCH_API_MASTER_CHANNEL")!;
@@ -64,7 +84,7 @@ console.log(channelResponse);
 
 const updateChannelData = async (time: string, stage: string, progress: string) => {
   return await setChannelData(
-    createUserAuthorizationHeaders(client_id, userCredentials.access_token),
+    createUserAuthorizationHeaders(client_id, userCreds.access_token),
     channelResponse.data?.data[0].id!,
     {
       title: `| ${progress} | Weekly Tech Multi (public lobby, ${time}, ${stage})`,

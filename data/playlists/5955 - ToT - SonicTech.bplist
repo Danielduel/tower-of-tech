@@ -6,10 +6,10 @@
   },
   "songs": [
     {
-      "hash": "8E6E0C9FC7DF36561649F89C314FBA4870446835",
-      "levelid": "custom_level_8E6E0C9FC7DF36561649F89C314FBA4870446835",
       "songName": "Diabolic Swing",
       "levelAuthorName": "soap & blueraptor101",
+      "hash": "8E6E0C9FC7DF36561649F89C314FBA4870446835",
+      "levelid": "custom_level_8E6E0C9FC7DF36561649F89C314FBA4870446835",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "hash": "6E9498F81BBF26FA47B1691557B22486A720254D",
-      "levelid": "custom_level_6E9498F81BBF26FA47B1691557B22486A720254D",
       "songName": "Yggdrasil",
       "levelAuthorName": "GalaxyMaster",
+      "hash": "6E9498F81BBF26FA47B1691557B22486A720254D",
+      "levelid": "custom_level_6E9498F81BBF26FA47B1691557B22486A720254D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -30,10 +30,10 @@
       ]
     },
     {
-      "hash": "815A09C2B7A45C26705C8AA3A3B031BA8BD79110",
-      "levelid": "custom_level_815A09C2B7A45C26705C8AA3A3B031BA8BD79110",
       "songName": "Parallel Universe Shifter",
       "levelAuthorName": "Excess10n and Cyanite",
+      "hash": "815A09C2B7A45C26705C8AA3A3B031BA8BD79110",
+      "levelid": "custom_level_815A09C2B7A45C26705C8AA3A3B031BA8BD79110",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "hash": "30DEDF2F59D3256B4B2AD7EC68A64C110FE0FB75",
-      "levelid": "custom_level_30DEDF2F59D3256B4B2AD7EC68A64C110FE0FB75",
       "songName": "Blackmagik Blazing",
       "levelAuthorName": "Mr.Mrow",
+      "hash": "30DEDF2F59D3256B4B2AD7EC68A64C110FE0FB75",
+      "levelid": "custom_level_30DEDF2F59D3256B4B2AD7EC68A64C110FE0FB75",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -54,10 +54,10 @@
       ]
     },
     {
-      "hash": "32A30609820C5746AF4AE120F72DC51A3CBB277B",
-      "levelid": "custom_level_32A30609820C5746AF4AE120F72DC51A3CBB277B",
       "songName": "Usseewa",
       "levelAuthorName": "Uragirimono & Comyute",
+      "hash": "32A30609820C5746AF4AE120F72DC51A3CBB277B",
+      "levelid": "custom_level_32A30609820C5746AF4AE120F72DC51A3CBB277B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -66,10 +66,10 @@
       ]
     },
     {
-      "hash": "B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
-      "levelid": "custom_level_B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
       "songName": "Death Waltz",
       "levelAuthorName": "Aimedhades16",
+      "hash": "B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
+      "levelid": "custom_level_B5E010C45F235FA4E6AE16FF2B3C35F1622F391E",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -78,10 +78,10 @@
       ]
     },
     {
-      "hash": "DF1425BA763451935614C87678F11474061AC443",
-      "levelid": "custom_level_DF1425BA763451935614C87678F11474061AC443",
       "songName": "Venomous Firefly",
       "levelAuthorName": "GojiCrafter",
+      "hash": "DF1425BA763451935614C87678F11474061AC443",
+      "levelid": "custom_level_DF1425BA763451935614C87678F11474061AC443",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -90,10 +90,22 @@
       ]
     },
     {
-      "hash": "C389FE29C1B73A938258C7D0B5BF637837D20B57",
-      "levelid": "custom_level_C389FE29C1B73A938258C7D0B5BF637837D20B57",
       "songName": "YURUSHITE (LeaF Remix)",
       "levelAuthorName": "Aimedhades16",
+      "hash": "C389FE29C1B73A938258C7D0B5BF637837D20B57",
+      "levelid": "custom_level_C389FE29C1B73A938258C7D0B5BF637837D20B57",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hypnotize",
+      "levelAuthorName": "Voidless",
+      "hash": "573D4838AA842919C2AA9F5AF305B0AF3C36437C",
+      "levelid": "custom_level_573D4838AA842919C2AA9F5AF305B0AF3C36437C",
       "difficulties": [
         {
           "characteristic": "Standard",

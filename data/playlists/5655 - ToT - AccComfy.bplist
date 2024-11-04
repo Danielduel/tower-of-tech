@@ -1290,18 +1290,6 @@
       ]
     },
     {
-      "songName": "Need U Now",
-      "levelAuthorName": "Kassi",
-      "hash": "578DBD039BBD576A2F122F96C97578F95C4B1536",
-      "levelid": "custom_level_578DBD039BBD576A2F122F96C97578F95C4B1536",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Better Not",
       "levelAuthorName": "Olaf",
       "hash": "4A9FD81F0E0D24AB42118FC7E8F722EAD8A0B4A6",
@@ -1486,6 +1474,90 @@
       "levelAuthorName": "Uncouth",
       "hash": "9C5E31DCCD39317BCFBEE3F0016E424E0E8278AB",
       "levelid": "custom_level_9C5E31DCCD39317BCFBEE3F0016E424E0E8278AB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Synchronize",
+      "levelAuthorName": "Taddus",
+      "hash": "808AFF99ACE5D756986BFF4F3474B74082A1CDBA",
+      "levelid": "custom_level_808AFF99ACE5D756986BFF4F3474B74082A1CDBA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Peeping Tom",
+      "levelAuthorName": "Nixie.Korten",
+      "hash": "1C93BBB38BAFE3C0C2EB5F9A3AC5AA8DA1BD6ABE",
+      "levelid": "custom_level_1C93BBB38BAFE3C0C2EB5F9A3AC5AA8DA1BD6ABE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Diamonds",
+      "levelAuthorName": "Bearly",
+      "hash": "139E0B852F60E7CC7D20B5B1BC667C0E8745E6A9",
+      "levelid": "custom_level_139E0B852F60E7CC7D20B5B1BC667C0E8745E6A9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "feel anything",
+      "levelAuthorName": "night",
+      "hash": "4A892EE919E31ABC9F706885F4527B0C8E947147",
+      "levelid": "custom_level_4A892EE919E31ABC9F706885F4527B0C8E947147",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "BOOMBOOM",
+      "levelAuthorName": "eurnkung",
+      "hash": "7EF2CB649E9A8236C4D322BFE5F298CAB57861D8",
+      "levelid": "custom_level_7EF2CB649E9A8236C4D322BFE5F298CAB57861D8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "hitomania",
+      "levelAuthorName": "Flasks",
+      "hash": "68A64DF6022ED4BBEEE8510A93318CE387AC069A",
+      "levelid": "custom_level_68A64DF6022ED4BBEEE8510A93318CE387AC069A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Mainframe",
+      "levelAuthorName": "Spinvvy & Phøenix",
+      "hash": "601C94F000D8E4070BFE0572C8F9449D10DD2607",
+      "levelid": "custom_level_601C94F000D8E4070BFE0572C8F9449D10DD2607",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -6,18 +6,6 @@
   },
   "songs": [
     {
-      "songName": "Mainframe",
-      "levelAuthorName": "Spinny & Phøenix",
-      "hash": "601C94F000D8E4070BFE0572C8F9449D10DD2607",
-      "levelid": "custom_level_601C94F000D8E4070BFE0572C8F9449D10DD2607",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Overdose",
       "levelAuthorName": "mojo",
       "hash": "0B57D3858AA60452BBC3F6303B2C0AE03750D40D",
@@ -39,18 +27,6 @@
           "characteristic": "Standard",
           "name": "ExpertPlus"
         },
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "Love Bon Appétit",
-      "levelAuthorName": "Fuyakeru",
-      "hash": "A13A0EB7C0C7471C430A65ABC92E89660B4A875F",
-      "levelid": "custom_level_A13A0EB7C0C7471C430A65ABC92E89660B4A875F",
-      "difficulties": [
         {
           "characteristic": "Standard",
           "name": "Expert"
@@ -318,18 +294,6 @@
       ]
     },
     {
-      "songName": "BOOMBOOM",
-      "levelAuthorName": "eurnkung",
-      "hash": "7EF2CB649E9A8236C4D322BFE5F298CAB57861D8",
-      "levelid": "custom_level_7EF2CB649E9A8236C4D322BFE5F298CAB57861D8",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Psychobilly Freakout",
       "levelAuthorName": "Joetastic",
       "hash": "E7B47F5DED6A8B405C754CB2E288284ABEF7C65A",
@@ -574,18 +538,6 @@
       "levelAuthorName": "eurnkung",
       "hash": "A3060C1F52C4AD2E8689A0BC44E45D6E56AD80E9",
       "levelid": "custom_level_A3060C1F52C4AD2E8689A0BC44E45D6E56AD80E9",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "feel anything",
-      "levelAuthorName": "night",
-      "hash": "4A892EE919E31ABC9F706885F4527B0C8E947147",
-      "levelid": "custom_level_4A892EE919E31ABC9F706885F4527B0C8E947147",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -870,34 +822,10 @@
       ]
     },
     {
-      "songName": "Diamonds",
-      "levelAuthorName": "Bearly",
-      "hash": "139E0B852F60E7CC7D20B5B1BC667C0E8745E6A9",
-      "levelid": "custom_level_139E0B852F60E7CC7D20B5B1BC667C0E8745E6A9",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Identity",
       "levelAuthorName": "Poochy",
       "hash": "C8AA5E7CB2FA66222F82B6BC4FFC6E2E9F0D0CD8",
       "levelid": "custom_level_C8AA5E7CB2FA66222F82B6BC4FFC6E2E9F0D0CD8",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Peeping Tom",
-      "levelAuthorName": "Nixie.Korten",
-      "hash": "1C93BBB38BAFE3C0C2EB5F9A3AC5AA8DA1BD6ABE",
-      "levelid": "custom_level_1C93BBB38BAFE3C0C2EB5F9A3AC5AA8DA1BD6ABE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -958,18 +886,6 @@
       "levelAuthorName": "Revelate",
       "hash": "1C881771BBE8D2528E3DAAAEA923C1D5EAE51D49",
       "levelid": "custom_level_1C881771BBE8D2528E3DAAAEA923C1D5EAE51D49",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Odo",
-      "levelAuthorName": "Bloodcloak",
-      "hash": "9974123DA31B4BDB400ECD8FB3D716EF16525DE6",
-      "levelid": "custom_level_9974123DA31B4BDB400ECD8FB3D716EF16525DE6",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1522,18 +1438,6 @@
       "levelAuthorName": "Tpenny68 & The Salami Man",
       "hash": "0CB78D57543F9BA79E4EA5FE4FE176E2538686CA",
       "levelid": "custom_level_0CB78D57543F9BA79E4EA5FE4FE176E2538686CA",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Third Sun",
-      "levelAuthorName": "Voidless",
-      "hash": "CC9C70C17E7E764217F3A50B972FBEF86CC7923A",
-      "levelid": "custom_level_CC9C70C17E7E764217F3A50B972FBEF86CC7923A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2318,18 +2222,6 @@
       ]
     },
     {
-      "songName": "RIVERSIDE",
-      "levelAuthorName": "unrealCoda",
-      "hash": "3DEF814E633ADE909EBCA2F6DBF89B63D9DA2827",
-      "levelid": "custom_level_3DEF814E633ADE909EBCA2F6DBF89B63D9DA2827",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "Serpent Dance",
       "levelAuthorName": "Zyxi",
       "hash": "280E0F1C7BB7A96469F031939BC9E9BA13E7A1C8",
@@ -2394,18 +2286,6 @@
       "levelAuthorName": "VoltageO",
       "hash": "499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
       "levelid": "custom_level_499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "songName": "hitomania",
-      "levelAuthorName": "Flasks",
-      "hash": "68A64DF6022ED4BBEEE8510A93318CE387AC069A",
-      "levelid": "custom_level_68A64DF6022ED4BBEEE8510A93318CE387AC069A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2481,18 +2361,6 @@
       ]
     },
     {
-      "songName": "Kamisama-chan",
-      "levelAuthorName": "Gabriel",
-      "hash": "D7225696A7CB018E774E99D905B90AE164E3ED20",
-      "levelid": "custom_level_D7225696A7CB018E774E99D905B90AE164E3ED20",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "mystique as iris",
       "levelAuthorName": "take_nyan",
       "hash": "1DEE1BCA9E1D9EDA6182DA31FA4CF65D91FE8B15",
@@ -2545,34 +2413,6 @@
       "levelAuthorName": "wangyufy",
       "hash": "B43367E73A384695269F2D7DA5FC83DDE086D4E4",
       "levelid": "custom_level_B43367E73A384695269F2D7DA5FC83DDE086D4E4",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "KICK BACK",
-      "levelAuthorName": "Narwhal & Jabob",
-      "hash": "521F3F8BC77E1893D57768A44113CA8D7EB4B2EF",
-      "levelid": "custom_level_521F3F8BC77E1893D57768A44113CA8D7EB4B2EF",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        },
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
-        }
-      ]
-    },
-    {
-      "songName": "Dance Hall",
-      "levelAuthorName": "mikuri",
-      "hash": "B0E8C05765848187263EAABDF17F664BD42C904A",
-      "levelid": "custom_level_B0E8C05765848187263EAABDF17F664BD42C904A",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2757,6 +2597,78 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Unwelcome School",
+      "levelAuthorName": "Rusty vs. Narwhal",
+      "hash": "1758959387EBDBCD471CAD7481B3016F60F4DCA4",
+      "levelid": "custom_level_1758959387EBDBCD471CAD7481B3016F60F4DCA4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "bigassbearman",
+      "levelAuthorName": "August",
+      "hash": "D594F864DA0989F6FE8C8F18115E93EE7EB1D82C",
+      "levelid": "custom_level_D594F864DA0989F6FE8C8F18115E93EE7EB1D82C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Patchwork Staccato",
+      "levelAuthorName": "Fuyakeru",
+      "hash": "C4153856DCBAFAF97231F37A4A548809CDE9A6D8",
+      "levelid": "custom_level_C4153856DCBAFAF97231F37A4A548809CDE9A6D8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Safety Dance",
+      "levelAuthorName": "Bjorkless",
+      "hash": "AB79DC566FB7BAD40136DD0638BCC53257C68DED",
+      "levelid": "custom_level_AB79DC566FB7BAD40136DD0638BCC53257C68DED",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Runnin' Mouth",
+      "levelAuthorName": "Kassi",
+      "hash": "862D1D630A791A00FA3513007030348C3A2AC9F6",
+      "levelid": "custom_level_862D1D630A791A00FA3513007030348C3A2AC9F6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Black Rover",
+      "levelAuthorName": "JadenDaSweat2 & Glasso050",
+      "hash": "E282519F24BC47EA3BD292F17F3D3AD79153C4C6",
+      "levelid": "custom_level_E282519F24BC47EA3BD292F17F3D3AD79153C4C6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

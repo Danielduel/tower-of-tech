@@ -617,18 +617,6 @@
       ]
     },
     {
-      "hash": "1758959387EBDBCD471CAD7481B3016F60F4DCA4",
-      "levelid": "custom_level_1758959387EBDBCD471CAD7481B3016F60F4DCA4",
-      "songName": "Unwelcome School",
-      "levelAuthorName": "Rusty vs. Narwhal",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
-        }
-      ]
-    },
-    {
       "hash": "3BF9239FCB85A172B725B16B4524006336272D65",
       "levelid": "custom_level_3BF9239FCB85A172B725B16B4524006336272D65",
       "songName": "Kaikai Kitan (TV Size)",
@@ -1541,6 +1529,18 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "A13A0EB7C0C7471C430A65ABC92E89660B4A875F",
+      "levelid": "custom_level_A13A0EB7C0C7471C430A65ABC92E89660B4A875F",
+      "songName": "Love Bon Appétit",
+      "levelAuthorName": "Fuyakeru",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

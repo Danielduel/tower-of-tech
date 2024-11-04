@@ -165,18 +165,6 @@
       ]
     },
     {
-      "hash": "DEF0DD6A61BBD718F76F9B62B22F2213233904EB",
-      "levelid": "custom_level_DEF0DD6A61BBD718F76F9B62B22F2213233904EB",
-      "songName": "Megaburn",
-      "levelAuthorName": "Pleo",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "73D8AD1E767EDB0F3D0266875DD6F0FA300CF4E8",
       "levelid": "custom_level_73D8AD1E767EDB0F3D0266875DD6F0FA300CF4E8",
       "songName": "Give to me",
@@ -289,6 +277,18 @@
       "levelid": "custom_level_86DF3727AE8F2F76D21F6E1543C2241BEA64C3E3",
       "songName": "Nothing But Theory",
       "levelAuthorName": "A Jhintleman",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "5EC5D0279664745B37545F9A557D441D209D3A78",
+      "levelid": "custom_level_5EC5D0279664745B37545F9A557D441D209D3A78",
+      "songName": "[A]future",
+      "levelAuthorName": "Dr_Marc, Cush",
       "difficulties": [
         {
           "characteristic": "Standard",

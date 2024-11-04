@@ -153,18 +153,6 @@
       ]
     },
     {
-      "hash": "F585036504200CA0141E2ACAB45984A9FEFCD748",
-      "levelid": "custom_level_F585036504200CA0141E2ACAB45984A9FEFCD748",
-      "songName": "Sugar Loli",
-      "levelAuthorName": "Ruz",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "39CDF9A93BC50764183BD175190718C3A260BB00",
       "levelid": "custom_level_39CDF9A93BC50764183BD175190718C3A260BB00",
       "songName": "Space Invaders",
@@ -833,6 +821,18 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "E282519F24BC47EA3BD292F17F3D3AD79153C4C6",
+      "levelid": "custom_level_E282519F24BC47EA3BD292F17F3D3AD79153C4C6",
+      "songName": "Black Rover",
+      "levelAuthorName": "JadenDaSweat2 & Glasso050",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }
