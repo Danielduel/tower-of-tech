@@ -73,6 +73,31 @@ const staticHandler = createStaticHandler({
 const executeHandlers = composeHandlers(
   {
     supportsRequest: (request) => {
+      return request.url.includes("/bsml/v1/");
+    },
+    handleRequest: async (request) => {
+      return new Response(
+        `
+        <vertical child-control-height="false">
+          <horizontal bg="panel-top" pad-left="10" pad-right="10" horizontal-fit="PreferredSize">
+            <text text="Example" align="Center" font-size="10"></text>
+          </horizontal>
+          <horizontal bg="round-rect-panel" pad="8">
+            <text text="Hello BSML world"></text>
+          </horizontal>
+          <button text="Test Button"></button>
+        </vertical>
+      `,
+        {
+          headers: {
+            "Content-Type": "text/bsml",
+          },
+        },
+      );
+    },
+  },
+  {
+    supportsRequest: (request) => {
       return request.url.includes("/api/v1/");
     },
     handleRequest: async (request) => {
