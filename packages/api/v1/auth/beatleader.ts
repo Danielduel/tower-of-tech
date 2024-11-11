@@ -1,61 +1,56 @@
-import { createHelpers } from "jsr:@deno/kv-oauth";
 import { HandlerForRoute } from "@/packages/api/v1/types.ts";
-import { isLocal } from "@/packages/utils/envrionment.ts";
-
-export const apiV1HandlerAuthBeatLeaderOauthSignInRoute = "/api/v1/auth/beatleader/oauth/signin";
-export const apiV1HandlerAuthBeatLeaderOauthSignOutRoute = "/api/v1/auth/beatleader/oauth/signout";
-export const apiV1HandlerAuthBeatLeaderOauthCallbackRoute = "/api/v1/auth/beatleader/oauth/callback";
-
-const { getSessionId, handleCallback, signIn, signOut } = createHelpers({
-  authorizationEndpointUri: "https://api.beatleader.xyz/oauth2/authorize",
-  tokenUri: "https://api.beatleader.xyz/oauth2/token",
-  clientId: Deno.env.get("BEATLEADER_CLIENT_ID")!,
-  clientSecret: Deno.env.get("BEATLEADER_CLIENT_SECRET")!,
-  redirectUri: isLocal()
-    ? `http://localhost:8081${apiV1HandlerAuthBeatLeaderOauthCallbackRoute}`
-    : `https://www.towerofte.ch${apiV1HandlerAuthBeatLeaderOauthCallbackRoute}`,
-  defaults: {
-    scope: ["profile", "offline_access"],
-  },
-});
-
-const fetchIdentity = async (token: string) => {
-  const data = await fetch("https://api.beatleader.xyz/oauth2/identity", {
-    headers: {
-      "Authorization": `Bearer ${token}`,
-    },
-  });
-
-  return await data.json();
-};
+import {
+  apiV1HandlerAuthBeatLeaderOauthCallbackRoute,
+  apiV1HandlerAuthBeatLeaderOauthSignInRoute,
+  apiV1HandlerAuthBeatLeaderOauthSignOutRoute,
+  getBeatLeaderSessionId,
+  handleBeatLeaderCallback,
+  handleBeatLeaderSignIn,
+  handleBeatLeaderSignOut,
+} from "@/packages/api/v1/auth/beatleader-config.ts";
+import {
+  getAccountFromAccessTokensM,
+  getBeatLeaderCallbackStatusFromBeatLeaderTokens,
+  processBeatLeaderStatusForExistingAccount,
+  processBeatLeaderStatusForNewAccount,
+  removeToTSession,
+} from "@/packages/api/v1/auth/common.ts";
+import { makeToTSessionId } from "@/packages/types/auth.ts";
 
 export const apiV1HandlerAuthBeatLeaderOauthSignIn: HandlerForRoute<
   typeof apiV1HandlerAuthBeatLeaderOauthSignInRoute
 > = async (req) => {
-  return await signIn(req);
+  const currentSessionId = await getBeatLeaderSessionId(req);
+  if (currentSessionId) {
+    await removeToTSession(currentSessionId);
+  }
+  return await handleBeatLeaderSignIn(req);
 };
 
 export const apiV1HandlerAuthBeatLeaderOauthSignOut: HandlerForRoute<
   typeof apiV1HandlerAuthBeatLeaderOauthSignOutRoute
 > = async (req) => {
-  return await signOut(req);
+  return await handleBeatLeaderSignOut(req);
 };
 
 export const apiV1HandlerAuthBeatLeaderOauthCallback: HandlerForRoute<
   typeof apiV1HandlerAuthBeatLeaderOauthCallbackRoute
 > = async (req) => {
-  const { response, sessionId, tokens } = await handleCallback(req);
+  const { response, sessionId, tokens } = await handleBeatLeaderCallback(req);
 
-  console.log(tokens);
+  const existingAccountM = await getAccountFromAccessTokensM({ beatLeader: tokens });
+  const status = await getBeatLeaderCallbackStatusFromBeatLeaderTokens(tokens, makeToTSessionId(sessionId));
 
-  const data = await fetchIdentity(tokens.accessToken);
-
-  console.log(data);
+  if (existingAccountM.isOk()) {
+    const existingAccount = existingAccountM.unwrap();
+    processBeatLeaderStatusForExistingAccount(existingAccount, status);
+  } else {
+    processBeatLeaderStatusForNewAccount(status);
+  }
 
   return response;
 };
 
 export const isBeatLeaderAuthorized = async (req: Request) => {
-  console.log("isBeatLeaderAuthorized", await getSessionId(req));
-  return await getSessionId(req) !== undefined;
+  return await getBeatLeaderSessionId(req) !== undefined;
 };

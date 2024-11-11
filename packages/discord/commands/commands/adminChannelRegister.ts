@@ -78,7 +78,7 @@ export async function adminChannelRegister(
   } else {
     await dbEditor.DiscordGuild.update(guildId, {
       channels: [...discordGuildData.channels, channelId],
-    });
+    }, { strategy: "merge-shallow" });
   }
 
   return respondWithMessage(

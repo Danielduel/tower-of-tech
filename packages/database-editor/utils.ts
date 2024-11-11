@@ -40,7 +40,7 @@ export const playlistIdToCustomData = (playlistId: PlaylistId) => {
   };
 };
 
-const stripVersionstamps = <T extends Record<string, unknown>>(
+export const stripVersionstamps = <T extends Record<string, unknown>>(
   x: T,
 ): "versionstamp" extends keyof T ? Omit<T, "versionstamp"> : T => {
   if ("versionstamp" in x) {

@@ -1,7 +1,7 @@
 import { assertEquals, describe, it } from "@/packages/deps/test.ts";
-import { getTimezoneOffsetO } from "@/packages/discord/cron/tech-multi/utils.ts";
+import { getTimezoneOffsetM } from "@/packages/discord/cron/tech-multi/utils.ts";
 
-describe("getTimezoneOffsetO - check timezone mapping coverage", () => {
+describe("getTimezoneOffsetM - check timezone mapping coverage", () => {
   // copy-paste from random stackoverflow answer
   const tests = [
     "Europe/Andorra",
@@ -370,7 +370,7 @@ describe("getTimezoneOffsetO - check timezone mapping coverage", () => {
       "December",
     ].forEach((monthName) => {
       it(`Check ${timeZone} 1 ${monthName} 2024`, () => {
-        assertEquals(getTimezoneOffsetO(new Date(`1 ${monthName} 2024`).getTime(), timeZone).isOk(), true);
+        assertEquals(getTimezoneOffsetM(new Date(`1 ${monthName} 2024`).getTime(), timeZone).isOk(), true);
       });
     });
   });

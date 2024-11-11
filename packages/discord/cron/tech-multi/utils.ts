@@ -29,7 +29,7 @@ const timezoneMappingToUTC: Record<string, number> = {
   EST: -5,
 };
 
-export function getTimezoneOffsetO(time: number, timeZone: string): Result<number, Error> {
+export function getTimezoneOffsetM(time: number, timeZone: string): Result<number, Error> {
   const timezoneParts = Intl
     .DateTimeFormat(
       [],
@@ -84,7 +84,7 @@ export function getTimezoneOffsetO(time: number, timeZone: string): Result<numbe
 }
 
 export function getTimezoneOffsetMs(time: number, timeZone = "Europe/Warsaw") {
-  const timezoneOffsetO = getTimezoneOffsetO(time, timeZone);
+  const timezoneOffsetO = getTimezoneOffsetM(time, timeZone);
   const timezoneOffset = timezoneOffsetO.unwrapOrElse(() => 0);
   return timezoneOffset * HOUR_MS;
 }

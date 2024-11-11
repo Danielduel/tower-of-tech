@@ -25,6 +25,7 @@ import {
 } from "@/packages/database-editor/utils.ts";
 import { isDiscordAuthorized } from "@/packages/api/v1/auth/discord.ts";
 import { isBeatLeaderAuthorized } from "@/packages/api/v1/auth/beatleader.ts";
+import { getAccountFromRequestM, getFullAccountFromRequestM } from "@/packages/api/v1/auth/common.ts";
 
 const t = initTRPC.create();
 
@@ -158,6 +159,17 @@ const playlist = t.router({
 });
 
 const auth = t.router({
+  me: t.procedure
+    .query(async ({ ctx }) => {
+      if (!ctx.request) {
+        return null;
+      }
+      const accountM = await getFullAccountFromRequestM(ctx.request);
+      if (accountM.isOk()) {
+        return accountM.unwrap();
+      }
+      return null;
+    }),
   discord: t.procedure
     .query(async ({ ctx }) => {
       if (!ctx.request) {

@@ -44,8 +44,25 @@ const ProfileDiscord = () => {
 };
 
 export const Profile = () => {
+  const { data, isFetching, isRefetching, isLoading, error, isError } = trpc.auth.me.useQuery(
+    undefined,
+  );
+
+  if (isError) {
+    return "Error";
+  }
+
+  if (isLoading || isRefetching || isFetching) {
+    return "Loading...";
+  }
+
+  if (!data) {
+    return "No data";
+  }
+
   return (
     <>
+      Hi {data?.beatLeader?.name}
       <ProfileDiscord />
       <ProfileBeatLeader />
     </>

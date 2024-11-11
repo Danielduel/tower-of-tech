@@ -21,23 +21,31 @@ import {
 import { commandRoot } from "@/packages/discord/commands/mod.ts";
 import {
   apiV1HandlerAuthDiscordOauthCallback,
-  apiV1HandlerAuthDiscordOauthCallbackRoute,
   apiV1HandlerAuthDiscordOauthSignIn,
-  apiV1HandlerAuthDiscordOauthSignInRoute,
   apiV1HandlerAuthDiscordOauthSignOut,
-  apiV1HandlerAuthDiscordOauthSignOutRoute,
 } from "@/packages/api/v1/auth/discord.ts";
-
+import {
+  apiV1HandlerAuthDiscordOauthCallbackRoute,
+  apiV1HandlerAuthDiscordOauthSignInRoute,
+  apiV1HandlerAuthDiscordOauthSignOutRoute,
+} from "@/packages/api/v1/auth/discord-config.ts";
 import {
   apiV1HandlerAuthBeatLeaderOauthCallback,
-  apiV1HandlerAuthBeatLeaderOauthCallbackRoute,
   apiV1HandlerAuthBeatLeaderOauthSignIn,
-  apiV1HandlerAuthBeatLeaderOauthSignInRoute,
   apiV1HandlerAuthBeatLeaderOauthSignOut,
-  apiV1HandlerAuthBeatLeaderOauthSignOutRoute,
 } from "@/packages/api/v1/auth/beatleader.ts";
 
+import {
+  apiV1HandlerAuthBeatLeaderOauthCallbackRoute,
+  apiV1HandlerAuthBeatLeaderOauthSignInRoute,
+  apiV1HandlerAuthBeatLeaderOauthSignOutRoute,
+} from "@/packages/api/v1/auth/beatleader-config.ts";
+
+import { apiV1HandlerAuthMe, apiV1HandlerAuthMeRoute } from "@/packages/api/v1/auth/me.ts";
+
 const route = router({
+  [apiV1HandlerAuthMeRoute]: apiV1HandlerAuthMe,
+
   [apiV1HandlerAuthDiscordOauthSignInRoute]: apiV1HandlerAuthDiscordOauthSignIn,
   [apiV1HandlerAuthDiscordOauthSignOutRoute]: apiV1HandlerAuthDiscordOauthSignOut,
   [apiV1HandlerAuthDiscordOauthCallbackRoute]: apiV1HandlerAuthDiscordOauthCallback,
