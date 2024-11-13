@@ -16,6 +16,7 @@ export {
   getMessages,
   getScheduledEvents,
   getScheduledEventUsers,
+  getUser,
   type Guild,
   type InteractionApplicationCommandCallbackData,
   InteractionTypes,

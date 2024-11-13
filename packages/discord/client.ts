@@ -2,13 +2,13 @@ import { _createBot, Bot, GatewayIntents, startBot } from "@/packages/discord/de
 
 function createBot(
   intents: GatewayIntents,
+  token = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!,
 ) {
-  const DISCORD_TOT_BOT_TOKEN = Deno.env.get("DISCORD_TOT_BOT_TOKEN")!;
   console.log("Connecting!");
 
   return new Promise<{ bot: Bot }>((resolve) => {
     const _bot = _createBot({
-      token: DISCORD_TOT_BOT_TOKEN,
+      token,
       intents,
       events: {
         ready(bot) {
@@ -56,9 +56,10 @@ async function destroyBot(bot: Bot) {
 export async function useBot<T>(
   intents: GatewayIntents,
   callback: (bot: Bot) => T,
+  token?: string,
 ) {
   try {
-    const { bot } = await createBot(intents);
+    const { bot } = await createBot(intents, token);
 
     let result;
     try {

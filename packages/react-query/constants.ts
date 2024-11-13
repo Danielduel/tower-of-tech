@@ -12,6 +12,6 @@ export const authCacheQuery = {
   staleTime: Infinity,
   refetchInterval: 0,
   refetchOnWindowFocus: false,
-  refetchOnMount: true,
+  refetchOnMount: false,
   refetchIntervalInBackground: false,
 };

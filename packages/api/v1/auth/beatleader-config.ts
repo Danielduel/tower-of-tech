@@ -1,6 +1,6 @@
 import { createHelpers } from "jsr:@deno/kv-oauth";
 import { isLocal } from "@/packages/utils/envrionment.ts";
-import { makeToTSessionId, ToTSessionId } from "@/packages/types/auth.ts";
+import { makeToTAccountSessionId, ToTAccountSessionId } from "@/packages/types/auth.ts";
 
 export const apiV1HandlerAuthBeatLeaderOauthCallbackRoute = "/api/v1/auth/beatleader/oauth/callback";
 export const apiV1HandlerAuthBeatLeaderOauthSignInRoute = "/api/v1/auth/beatleader/oauth/signin";
@@ -26,8 +26,8 @@ const { getSessionId, handleCallback, signIn, signOut } = createHelpers({
 export const handleBeatLeaderCallback = handleCallback;
 export const handleBeatLeaderSignIn = signIn;
 export const handleBeatLeaderSignOut = signOut;
-export const getBeatLeaderSessionId = async (request: Request): Promise<ToTSessionId | undefined> => {
+export const getBeatLeaderSessionId = async (request: Request): Promise<ToTAccountSessionId | undefined> => {
   const sessionId = await getSessionId(request);
   if (typeof sessionId === "undefined") return sessionId;
-  return makeToTSessionId(sessionId);
+  return makeToTAccountSessionId(sessionId);
 };

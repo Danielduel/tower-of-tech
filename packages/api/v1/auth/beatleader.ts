@@ -11,11 +11,13 @@ import {
 import {
   getAccountFromAccessTokensM,
   getBeatLeaderCallbackStatusFromBeatLeaderTokens,
+  getExistingAccountM,
   processBeatLeaderStatusForExistingAccount,
   processBeatLeaderStatusForNewAccount,
   removeToTSession,
 } from "@/packages/api/v1/auth/common.ts";
-import { makeToTSessionId } from "@/packages/types/auth.ts";
+import { makeToTAccountSessionId } from "@/packages/types/auth.ts";
+import { dbEditor } from "@/packages/database-editor/mod.ts";
 
 export const apiV1HandlerAuthBeatLeaderOauthSignIn: HandlerForRoute<
   typeof apiV1HandlerAuthBeatLeaderOauthSignInRoute
@@ -30,6 +32,10 @@ export const apiV1HandlerAuthBeatLeaderOauthSignIn: HandlerForRoute<
 export const apiV1HandlerAuthBeatLeaderOauthSignOut: HandlerForRoute<
   typeof apiV1HandlerAuthBeatLeaderOauthSignOutRoute
 > = async (req) => {
+  const currentSessionId = await getBeatLeaderSessionId(req);
+  if (currentSessionId) {
+    await removeToTSession(currentSessionId);
+  }
   return await handleBeatLeaderSignOut(req);
 };
 
@@ -38,8 +44,8 @@ export const apiV1HandlerAuthBeatLeaderOauthCallback: HandlerForRoute<
 > = async (req) => {
   const { response, sessionId, tokens } = await handleBeatLeaderCallback(req);
 
-  const existingAccountM = await getAccountFromAccessTokensM({ beatLeader: tokens });
-  const status = await getBeatLeaderCallbackStatusFromBeatLeaderTokens(tokens, makeToTSessionId(sessionId));
+  const existingAccountM = await getExistingAccountM(req, { beatLeader: tokens });
+  const status = await getBeatLeaderCallbackStatusFromBeatLeaderTokens(tokens, makeToTAccountSessionId(sessionId));
 
   if (existingAccountM.isOk()) {
     const existingAccount = existingAccountM.unwrap();

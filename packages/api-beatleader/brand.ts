@@ -9,7 +9,7 @@ export type BeatLeaderUserAccessToken = Brand<string, "BeatLeaderUserAccessToken
 export const makeBeatLeaderUserAccessToken = make<BeatLeaderUserAccessToken>();
 export const beatLeaderUserAccessTokenSchema = z.string().transform(makeBeatLeaderUserAccessToken);
 
-export type BeatLeaderUserAccessTokenHeader = Brand<string, "UserAccessTokenHeader">;
+export type BeatLeaderUserAccessTokenHeader = Brand<string, "BeatLeaderUserAccessTokenHeader">;
 export const makeBeatLeaderUserAccessTokenHeader = (beatLeaderUserAccessTokenHeader: string) =>
   make<BeatLeaderUserAccessTokenHeader>()(beatLeaderUserAccessTokenHeader);
 export const beatLeaderUserAccessTokenHeaderSchema = z.string().transform(makeBeatLeaderUserAccessTokenHeader);

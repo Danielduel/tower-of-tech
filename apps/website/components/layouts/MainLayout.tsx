@@ -15,7 +15,7 @@ export const Link: FC<LinkProps> = (props) => {
     <_Link
       {...props}
       className={cn(
-        "select-none px-4 p-1 hover:ring-1 hover:text-white ring-white w-full block",
+        "select-none px-4 p-1 hover:ring-1 hover:text-white ring-gray-200 hover:ring-white w-full block",
         {
           "border-l-4": match,
         },
