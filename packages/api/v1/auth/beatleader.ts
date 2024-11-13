@@ -9,7 +9,6 @@ import {
   handleBeatLeaderSignOut,
 } from "@/packages/api/v1/auth/beatleader-config.ts";
 import {
-  getAccountFromAccessTokensM,
   getBeatLeaderCallbackStatusFromBeatLeaderTokens,
   getExistingAccountM,
   processBeatLeaderStatusForExistingAccount,
@@ -17,7 +16,6 @@ import {
   removeToTSession,
 } from "@/packages/api/v1/auth/common.ts";
 import { makeToTAccountSessionId } from "@/packages/types/auth.ts";
-import { dbEditor } from "@/packages/database-editor/mod.ts";
 
 export const apiV1HandlerAuthBeatLeaderOauthSignIn: HandlerForRoute<
   typeof apiV1HandlerAuthBeatLeaderOauthSignInRoute
