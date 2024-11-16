@@ -1,17 +1,9 @@
 import { collection } from "@/packages/deps/kvdex.ts";
-import { z } from "zod";
 import {
   BeatSaverIdToHashCacheSchema,
   BeatSaverMapResponseSuccessSchema,
-  makeBeatSaverMapId,
+  BeatSaverResponseWrapperSchema,
 } from "@/packages/types/beatsaver.ts";
-
-export const BeatSaverResponseWrapperSchema = z.object({
-  id: z.string().transform(makeBeatSaverMapId),
-  createdAt: z.date(),
-  available: z.boolean(),
-  removed: z.boolean(),
-});
 
 export const BeatSaverIdToHashCache = collection(
   BeatSaverIdToHashCacheSchema,
