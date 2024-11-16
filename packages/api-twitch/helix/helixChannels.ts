@@ -42,7 +42,7 @@ export const patchHelixChannelsBodySchema = z.object({
 export type PatchHelixChannelsBodySchemaT = typeof patchHelixChannelsBodySchema._type;
 
 export const patchHelixChannelsQuerySchema = z.object({
-  broadcaster_id: z.string(),
+  broadcaster_id: broadcasterIdSchema,
 });
 export const patchHelixChannelsHeadersSchema = userAuthHeadersSchema;
 

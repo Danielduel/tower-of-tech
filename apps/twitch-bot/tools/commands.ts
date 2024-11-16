@@ -11,6 +11,7 @@ const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
 const nick = Deno.env.get("TWITCH_IRC_COMMANDS_LOGIN")!;
 const pass = Deno.env.get("TWITCH_IRC_COMMANDS_PASS")!;
+const streamTitle = Deno.env.get("TWITCH_DEFAULT_STREAM_TITLE")!;
 
 const userCreds = await getUserToken();
 
@@ -41,6 +42,14 @@ await registerSnoozeAdsRedeem(twitchPubSubManager, ircContext, twitchHelixBroadc
 await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 registerCommands(irc, twitchHelixBroadcasterApiManaged);
 registerAdsWarningLoop(twitchHelixBroadcasterApiManaged, ircContext);
+
+const updateChannelTitle = async () => {
+  return await twitchHelixBroadcasterApiManaged.setChannelInfo({
+    title: streamTitle,
+  });
+};
+
+await updateChannelTitle();
 
 Deno.addSignalListener("SIGINT", () => {
   ircCleanup();

@@ -125,7 +125,7 @@ export class TwitchHelixBroadcasterApi {
     const response = await TwitchHelixApiClient.channels.patch({
       headers: this.createAuthHeaders(),
       searchParams: {
-        broadcaster_id: "",
+        broadcaster_id: this.userData.id,
       },
       body,
     });
@@ -201,6 +201,10 @@ export class TwitchHelixBroadcasterApi {
     });
 
     return unwrapDataArrayResponse(response);
+  }
+
+  public async getCurrentBroadcaster() {
+    return await this.getBroadcasterByName(this.userData.login);
   }
 
   protected chatShoutoutLoop() {
