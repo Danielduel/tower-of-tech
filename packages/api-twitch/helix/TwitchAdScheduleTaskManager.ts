@@ -1,8 +1,9 @@
 import { HelixChannelsAdsItemSchemaT } from "@/packages/api-twitch/helix/helixChannelsAds.ts";
 import { TwitchHelixBroadcasterApi } from "@/packages/api-twitch/helix/TwitchHelixBroadcasterApi.ts";
 import { Err, Ok, Result } from "@/packages/utils/optionals.ts";
+import { MINUTE_MS } from "@/packages/utils/time.ts";
 
-type Task = () => void | (() => Promise<void>);
+type Task<R = unknown> = () => R | (() => Promise<R>);
 class TimeOffsetTask {
   public currentTimeout: number | null = null;
 
@@ -40,7 +41,9 @@ export class TwitchAdScheduleTaskManager {
   constructor(
     public currentAdsSchedule: HelixChannelsAdsItemSchemaT,
     private twitchHelixBroadcasterApi: TwitchHelixBroadcasterApi,
-  ) {}
+  ) {
+    this.pushTimeOffsetTask(() => this.update(), -10 * MINUTE_MS);
+  }
 
   public static async fromTwitchHelixBroadcasterApi(
     twitchHelixBroadcasterApi: TwitchHelixBroadcasterApi,
