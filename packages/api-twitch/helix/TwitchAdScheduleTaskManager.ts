@@ -2,11 +2,12 @@ import { HelixChannelsAdsItemSchemaT } from "@/packages/api-twitch/helix/helixCh
 import { TwitchHelixBroadcasterApi } from "@/packages/api-twitch/helix/TwitchHelixBroadcasterApi.ts";
 import { Err, Ok, Result } from "@/packages/utils/optionals.ts";
 
+type Task = () => void | (() => Promise<void>);
 class TimeOffsetTask {
   public currentTimeout: number | null = null;
 
   constructor(
-    public task: () => void | (() => Promise<void>),
+    public task: Task,
     public timeOffset: number,
     unoffsettedTime?: number | null,
   ) {
@@ -34,6 +35,7 @@ class TimeOffsetTask {
 
 export class TwitchAdScheduleTaskManager {
   private timeOffsetTasks: TimeOffsetTask[] = [];
+  private onAdsEndedTasks: TimeOffsetTask[] = [];
 
   constructor(
     public currentAdsSchedule: HelixChannelsAdsItemSchemaT,
@@ -51,7 +53,7 @@ export class TwitchAdScheduleTaskManager {
     return Ok(new TwitchAdScheduleTaskManager(currentAdsSchedule, twitchHelixBroadcasterApi));
   }
 
-  private getNextAdAtTimeIfValid(now = Date.now()): number | null {
+  public getNextAdAtTimeIfValid(now = Date.now()): number | null {
     if (this.currentAdsSchedule.next_ad_at) {
       const nextAdAtTime = this.currentAdsSchedule.next_ad_at.getTime();
       const isInPast = nextAdAtTime < now;
@@ -63,26 +65,53 @@ export class TwitchAdScheduleTaskManager {
     return null;
   }
 
-  public pushTimeOffsetTask(fn: typeof TimeOffsetTask["prototype"]["task"], timeInAdvanceMs: number) {
+  public getNextAdEndTimeIfValid(now = Date.now()): number | null {
+    if (this.currentAdsSchedule.next_ad_at) {
+      const nextAdEndTime = this.currentAdsSchedule.next_ad_at.getTime() + this.currentAdsSchedule.duration;
+      const isInPast = nextAdEndTime < now;
+      const isValid = !isInPast;
+      if (isValid) {
+        return nextAdEndTime;
+      }
+    }
+    return null;
+  }
+
+  public pushTimeOffsetTask(task: Task, timeInAdvanceMs: number) {
     const nextAdAtTime = this.getNextAdAtTimeIfValid();
     this.timeOffsetTasks.push(
-      new TimeOffsetTask(fn, timeInAdvanceMs, nextAdAtTime),
+      new TimeOffsetTask(task, timeInAdvanceMs, nextAdAtTime),
     );
+  }
+
+  public pushOnAdsEndedTask(task: Task) {
+    this.onAdsEndedTasks.push(new TimeOffsetTask(task, 0, null));
   }
 
   private rescheduleAllTasks() {
     const nextAdAtTime = this.getNextAdAtTimeIfValid();
     if (typeof nextAdAtTime !== "number") {
       console.error("NextAdAt is invalid");
-      return;
+    } else {
+      this.timeOffsetTasks.forEach((x) => {
+        x.reschedule(nextAdAtTime);
+      });
     }
-    this.timeOffsetTasks.forEach((x) => {
-      x.reschedule(nextAdAtTime);
-    });
+
+    const nextAdEndTime = this.getNextAdEndTimeIfValid();
+    if (typeof nextAdEndTime !== "number") {
+      console.error("NextAdEnd is invalid");
+    } else {
+      this.onAdsEndedTasks.forEach((x) => {
+        x.reschedule(nextAdEndTime);
+      });
+    }
   }
 
   private shouldRescheduleTasks(newAdsSchedule: HelixChannelsAdsItemSchemaT): boolean {
-    return newAdsSchedule.next_ad_at !== this.currentAdsSchedule.next_ad_at;
+    const nextAdAtChanged = newAdsSchedule.next_ad_at !== this.currentAdsSchedule.next_ad_at;
+    const adDurationChanged = newAdsSchedule.duration !== this.currentAdsSchedule.duration;
+    return nextAdAtChanged || adDurationChanged;
   }
 
   public async update(): Promise<Result<void, Error>> {
