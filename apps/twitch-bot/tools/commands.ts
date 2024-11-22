@@ -7,7 +7,7 @@ import { registerAdsWarningLoop } from "@/apps/twitch-bot/common/registerAdsWarn
 import { TwitchPubSubManager } from "@/packages/api-twitch/pubsub/TwitchPubSubManager.ts";
 import { TwitchHelixBroadcasterApiManaged } from "@/packages/api-twitch/helix/TwitchHelixBroadcasterApiManaged.ts";
 import { TwitchAdScheduleTaskManager } from "@/packages/api-twitch/helix/TwitchAdScheduleTaskManager.ts";
-import { MINUTE_MS } from "@/packages/utils/time.ts";
+import { registerFirstOnStreamRedeem } from "@/apps/twitch-bot/common/registerFirstOnStreamRedeem.ts";
 
 const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
@@ -49,6 +49,7 @@ await registerSnoozeAdsRedeem(
   twitchHelixBroadcasterApiManaged,
   twitchAdScheduleManager,
 );
+await registerFirstOnStreamRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 registerCommands(irc, twitchHelixBroadcasterApiManaged);
 registerAdsWarningLoop(twitchHelixBroadcasterApiManaged, twitchAdScheduleManager, ircContext);

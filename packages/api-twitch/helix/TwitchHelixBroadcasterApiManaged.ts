@@ -6,6 +6,7 @@ import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { getTwitchRedeemMappingKey } from "@/packages/database-editor/keys.ts";
 import {
   GetHelixChannelPointsCustomRewardsItemSchemaT,
+  PatchHelixChannelPointsCustomRewardsBodySchemaT,
   PostHelixChannelPointsCustomRewardsBodySchemaT,
 } from "@/packages/api-twitch/helix/helixChannelPointsCustomRewards.ts";
 
@@ -46,9 +47,10 @@ export class TwitchHelixBroadcasterApiManaged extends TwitchHelixBroadcasterApi 
     );
   }
 
-  public async getOrCreateCustomPointReward(
+  public async getOrUpsertCustomPointReward(
     redeemName: string,
-    defaultBody: PostHelixChannelPointsCustomRewardsBodySchemaT,
+    set: PostHelixChannelPointsCustomRewardsBodySchemaT,
+    update: PatchHelixChannelPointsCustomRewardsBodySchemaT,
   ): Promise<Result<GetHelixChannelPointsCustomRewardsItemSchemaT, Error>> {
     const mappingEntry = await dbEditor.TwitchRedeemMapping
       .find(getTwitchRedeemMappingKey(this.broadcasterId, redeemName))
@@ -57,7 +59,7 @@ export class TwitchHelixBroadcasterApiManaged extends TwitchHelixBroadcasterApi 
     if (mappingEntry) {
       const redeemM = await super.getCustomPointReward(mappingEntry.twitchRedeemId);
       if (redeemM.isErr()) {
-        const createdRedeemM = await super.createCustomPointReward(defaultBody);
+        const createdRedeemM = await super.createCustomPointReward(set);
         if (createdRedeemM.isErr()) {
           return Err(createdRedeemM.unwrapErr());
         }
@@ -66,11 +68,16 @@ export class TwitchHelixBroadcasterApiManaged extends TwitchHelixBroadcasterApi 
       }
       const redeem = redeemM.unwrap();
 
-      return Ok(redeem);
+      const updatedRedeemM = await super.updateCustomPointReward(mappingEntry.twitchRedeemId, update);
+      if (updatedRedeemM.isErr()) {
+        return Err(updatedRedeemM.unwrapErr());
+      }
+
+      return Ok(updatedRedeemM.unwrap());
     }
 
     console.log("Creating new point reward");
-    const redeemM = await super.createCustomPointReward(defaultBody);
+    const redeemM = await super.createCustomPointReward(set);
     if (redeemM.isErr()) return Err(redeemM.unwrapErr());
     const redeem = redeemM.unwrap();
     const createdMappingEntry = await dbEditor.TwitchRedeemMapping.add({

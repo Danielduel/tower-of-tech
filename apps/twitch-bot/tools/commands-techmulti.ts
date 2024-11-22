@@ -10,6 +10,8 @@ import { registerSnoozeAdsRedeem } from "@/apps/twitch-bot/common/registerSnooze
 import { registerAdsWarningLoop } from "@/apps/twitch-bot/common/registerAdsWarningLoop.ts";
 import { TwitchHelixBroadcasterApiManaged } from "@/packages/api-twitch/helix/TwitchHelixBroadcasterApiManaged.ts";
 import { TwitchPubSubManager } from "@/packages/api-twitch/pubsub/TwitchPubSubManager.ts";
+import { TwitchAdScheduleTaskManager } from "@/packages/api-twitch/helix/TwitchAdScheduleTaskManager.ts";
+import { registerFirstOnStreamRedeem } from "@/apps/twitch-bot/common/registerFirstOnStreamRedeem.ts";
 
 const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
@@ -41,11 +43,19 @@ const [irc, ircCleanup, ircContext] = createTwitchIRC({
 const [pubSub, pubSubCleanup, pubSubContext] = await twitchHelixBroadcasterApiManaged.getPubSub();
 
 const twitchPubSubManager = new TwitchPubSubManager(pubSub, pubSubContext);
+const twitchAdScheduleManager =
+  (await TwitchAdScheduleTaskManager.fromTwitchHelixBroadcasterApi(twitchHelixBroadcasterApiManaged)).unwrap();
 
-await registerSnoozeAdsRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
+await registerSnoozeAdsRedeem(
+  twitchPubSubManager,
+  ircContext,
+  twitchHelixBroadcasterApiManaged,
+  twitchAdScheduleManager,
+);
+await registerFirstOnStreamRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 registerCommands(irc, twitchHelixBroadcasterApiManaged);
-registerAdsWarningLoop(twitchHelixBroadcasterApiManaged, ircContext);
+registerAdsWarningLoop(twitchHelixBroadcasterApiManaged, twitchAdScheduleManager, ircContext);
 
 Deno.addSignalListener("SIGINT", () => {
   ircCleanup();

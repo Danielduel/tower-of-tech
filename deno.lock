@@ -11,6 +11,7 @@
       "jsr:@olli/zod-api@0.9.2": "jsr:@olli/zod-api@0.9.2",
       "jsr:@std/assert@^0.221.0": "jsr:@std/assert@0.221.0",
       "jsr:@std/assert@^1.0.6": "jsr:@std/assert@1.0.6",
+      "jsr:@std/async": "jsr:@std/async@0.221.0",
       "jsr:@std/async@^0.221.0": "jsr:@std/async@0.221.0",
       "jsr:@std/bytes@^0.220.0": "jsr:@std/bytes@0.220.1",
       "jsr:@std/bytes@^1.0.1": "jsr:@std/bytes@1.0.2",
@@ -91,7 +92,10 @@
         "integrity": "1904c05806a25d94fe791d6d883b685c9e2dcd60e4f9fc30f4fc5cf010c72207"
       },
       "@std/async@0.221.0": {
-        "integrity": "f5519861754a1bb2898d227dd8ccb545abc975534aa9063e53911d6cb4e365cf"
+        "integrity": "f5519861754a1bb2898d227dd8ccb545abc975534aa9063e53911d6cb4e365cf",
+        "dependencies": [
+          "jsr:@std/assert@^0.221.0"
+        ]
       },
       "@std/bytes@0.220.1": {
         "integrity": "e522cdc7c152cfc8a09bd618618cbc710dcf57003ab6fab3a6c37ff4c88aa3db"

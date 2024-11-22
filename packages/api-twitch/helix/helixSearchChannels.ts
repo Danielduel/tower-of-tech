@@ -17,6 +17,7 @@ export const helixSearchChannelsItemSchema = z.object({
   title: z.string(),
   started_at: z.string(), // datelike
 });
+export type HelixSearchChannelsItemSchemaT = typeof helixSearchChannelsItemSchema._type;
 
 export const helixSearchChannelsQuerySchema = z.object({
   query: z.string(),

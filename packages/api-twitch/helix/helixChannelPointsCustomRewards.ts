@@ -48,14 +48,14 @@ export const postHelixChannelPointsCustomRewardsBodySchema = z.object({
 export type PostHelixChannelPointsCustomRewardsBodySchemaT = typeof postHelixChannelPointsCustomRewardsBodySchema._type;
 
 export const postHelixChannelPointsCustomRewardsQuerySchema = z.object({
-  broadcaster_id: z.string(),
+  broadcaster_id: broadcasterIdSchema,
 });
 export const postHelixChannelPointsCustomRewardsHeadersSchema = userAuthHeadersSchema;
 
 export const getHelixChannelPointsCustomRewardsItemSchema = postHelixChannelPointsCustomRewardsItemSchema;
 export type GetHelixChannelPointsCustomRewardsItemSchemaT = typeof getHelixChannelPointsCustomRewardsItemSchema._type;
 export const getHelixChannelPointsCustomRewardsQuerySchema = z.object({
-  broadcaster_id: z.string(),
+  broadcaster_id: broadcasterIdSchema,
   id: twitchChannelPointsCustomRewardIdSchema.optional(),
   only_manageable_rewards: z.boolean().optional(),
 });
@@ -64,6 +64,31 @@ export const getHelixChannelPointsCustomRewardsSuccessSchema = z.object({
   data: z.array(getHelixChannelPointsCustomRewardsItemSchema),
 });
 export const getHelixChannelPointsCustomRewardsHeadersSchema = userAuthHeadersSchema;
+
+export const patchHelixChannelPointsCustomRewardsQuerySchema = z.object({
+  broadcaster_id: broadcasterIdSchema,
+  id: twitchChannelPointsCustomRewardIdSchema,
+});
+export const patchHelixChannelPointsCustomRewardsHeadersSchema = userAuthHeadersSchema;
+export const patchHelixChannelPointsCustomRewardsBodySchema = z.object({
+  title: z.string().optional(),
+  cost: z.number().optional(),
+  prompt: z.string().optional(),
+  is_enabled: z.boolean().optional(),
+  background_color: z.string().optional(),
+  is_user_input_required: z.boolean().optional(),
+  is_max_per_stream_enabled: z.boolean().optional(),
+  max_per_stream: z.number().optional(),
+  is_max_per_user_per_stream_enabled: z.boolean().optional(),
+  max_per_user_per_stream: z.number().optional(),
+  is_global_cooldown_enabled: z.boolean().optional(),
+  is_paused: z.boolean().optional(),
+  global_cooldown_seconds: z.number().optional(),
+  should_redemptions_skip_request_queue: z.boolean().optional(),
+});
+export type PatchHelixChannelPointsCustomRewardsBodySchemaT =
+  typeof patchHelixChannelPointsCustomRewardsBodySchema._type;
+export const patchHelixChannelPointsCustomRewardsSuccessSchema = postHelixChannelPointsCustomRewardsSuccessSchema;
 
 export const helixChannelPointsCustomRewardsResource = resource("/helix/channel_points/custom_rewards", {
   actions: {
@@ -77,6 +102,12 @@ export const helixChannelPointsCustomRewardsResource = resource("/helix/channel_
       dataSchema: getHelixChannelPointsCustomRewardsSuccessSchema,
       searchParamsSchema: getHelixChannelPointsCustomRewardsQuerySchema,
       headersSchema: getHelixChannelPointsCustomRewardsHeadersSchema,
+    },
+    patch: {
+      headersSchema: patchHelixChannelPointsCustomRewardsHeadersSchema,
+      searchParamsSchema: patchHelixChannelPointsCustomRewardsQuerySchema,
+      bodySchema: patchHelixChannelPointsCustomRewardsBodySchema,
+      dataSchema: patchHelixChannelPointsCustomRewardsSuccessSchema,
     },
   },
 });

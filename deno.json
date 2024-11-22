@@ -9,6 +9,7 @@
     "website:check": "deno check ./apps/website/App.tsx",
 
     "cli:build": "make -f ./apps/cli/Makefile build",
+    "cli:list-resend-links": "TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --env --unstable ./apps/twitch-bot/tools/list-resendlinks.ts",
     "mod:build": "make -f ./apps/mod/Makefile build",
 
     "website:tailwind:build": "tailwind -c ./apps/website/tailwind/tailwind.config.js -i ./apps/website/tailwind/input.css -o ./apps/website/public/tailwind.css",
@@ -25,6 +26,8 @@
 
     "twitch-bot:playlist-worker": "deno run -A --env ./apps/twitch-bot/tools/playlist-worker.ts",
     "twitch-bot:pubsub": "deno run -A --env ./apps/twitch-bot/tools/pubsub-prototype.ts",
+    "twitch-bot:resend-link": "TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable --env ./apps/twitch-bot/resendLink/mod.ts",
+    "twitch-bot:resend-link-setup": "TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable --env ./apps/twitch-bot/resendLink/setup.ts",
     "twitch-bot:commands": "deno run -A --unstable --env ./apps/twitch-bot/tools/commands.ts",
     "twitch-bot:commands-techmulti": "deno run -A --unstable --env ./apps/twitch-bot/tools/commands-techmulti.ts",
 

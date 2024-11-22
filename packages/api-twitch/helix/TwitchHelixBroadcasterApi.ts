@@ -9,6 +9,7 @@ import { createTwitchPubSub } from "@/apps/twitch-bot/sockets/twitch-pubsub.ts";
 import { HelixChannelsAdsScheduleSnoozeItemSchemaT } from "@/packages/api-twitch/helix/helixChannelsAdsScheduleSnooze.ts";
 import {
   GetHelixChannelPointsCustomRewardsItemSchemaT,
+  PatchHelixChannelPointsCustomRewardsBodySchemaT,
   PostHelixChannelPointsCustomRewardsBodySchemaT,
   PostHelixChannelPointsCustomRewardsItemSchemaT,
 } from "@/packages/api-twitch/helix/helixChannelPointsCustomRewards.ts";
@@ -175,6 +176,22 @@ export class TwitchHelixBroadcasterApi {
         broadcaster_id: this.broadcasterId,
         id,
       },
+    });
+
+    return unwrapDataArrayResponse(response);
+  }
+
+  public async updateCustomPointReward(
+    id: TwitchChannelPointsCustomRewardId,
+    update: PatchHelixChannelPointsCustomRewardsBodySchemaT,
+  ): Promise<Result<GetHelixChannelPointsCustomRewardsItemSchemaT, Error>> {
+    const response = await TwitchHelixApiClient.channelPointsCustomRewardsResource.patch({
+      headers: this.createAuthHeaders(),
+      searchParams: {
+        broadcaster_id: this.broadcasterId,
+        id,
+      },
+      body: update,
     });
 
     return unwrapDataArrayResponse(response);

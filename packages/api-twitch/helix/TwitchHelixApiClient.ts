@@ -18,6 +18,7 @@ import { helixChannelsAdsScheduleSnoozeResource } from "@/packages/api-twitch/he
 import { helixChannelPointsCustomRewardsResource } from "@/packages/api-twitch/helix/helixChannelPointsCustomRewards.ts";
 import { helixChatShoutoutResource } from "@/packages/api-twitch/helix/helixChatShoutouts.ts";
 import { helixChatAnnouncementsResource } from "@/packages/api-twitch/helix/helixChatAnnouncements.ts";
+import { helixStreamsResource } from "@/packages/api-twitch/helix/helixStreams.ts";
 
 export const TwitchHelixApiClient = client({
   fetcher,
@@ -32,6 +33,7 @@ export const TwitchHelixApiClient = client({
     chatShoutoutResource: helixChatShoutoutResource,
     searchChannels: helixSearchChannelsResource,
     users: helixUsersResource,
+    streams: helixStreamsResource,
   },
 });
 

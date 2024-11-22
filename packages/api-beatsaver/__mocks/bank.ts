@@ -552,4 +552,16 @@ export const tests = [
       }],
     },
   ],
+  [
+    "given JP-style link copypaste, should extract ID",
+    "おべか / obeka /katsu0dashi 87.4% (4107d) https://beatsaver.com/maps/4107d",
+    {
+      raw: "おべか / obeka /katsu0dashi 87.4% (4107d) https://beatsaver.com/maps/4107d",
+      resolvables: [{
+        kind: "id",
+        data: "4107d",
+        diffs: [],
+      }],
+    },
+  ],
 ] as const;

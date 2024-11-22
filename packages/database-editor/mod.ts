@@ -22,6 +22,10 @@ import {
 } from "@/packages/database-editor/Auth.ts";
 import { kvdex } from "@/packages/deps/kvdex.ts";
 import { TwitchRedeemMapping } from "@/packages/database-editor/TwitchRedeem.ts";
+import {
+  ResendLinkTwitchBeatSaverResolvableIdKind,
+  ResendLinkTwitchChannelSettings,
+} from "@/packages/database-editor/ResendLink.ts";
 
 export const kv = isDbEditorRemote()
   ? await (async () => {
@@ -46,6 +50,9 @@ export const dbEditor = kvdex(kv, {
   BeatLeaderIntegration,
   DiscordIntegration,
   TwitchRedeemMapping,
+
+  ResendLinkTwitchBeatSaverResolvableIdKind,
+  ResendLinkTwitchChannelSettings,
 });
 
 export const s3clientEditor = isLocal() && !isDbEditorRemote()

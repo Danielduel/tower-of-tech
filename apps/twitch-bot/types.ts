@@ -18,6 +18,10 @@ import type {
   TwitchRedemptionRewardSchemaT,
   TwitchRedemptionSchemaT,
 } from "@/apps/twitch-bot/sockets/twitch-schema.ts";
+import {
+  PromiseMessageManagerWaitForResult,
+  PromiseMessageManagerWaitForT,
+} from "@/packages/api-twitch/utils/PromiseMessageManager.ts";
 
 export type { TwitchChannel };
 
@@ -60,9 +64,14 @@ export const Events = [
 ] as const;
 
 export type TwitchIRCEventContext = {
+  joined: boolean;
+  waitForJoin: Promise<void>;
   channel: TwitchChannel;
   client: Client;
-  send: (message: string) => void;
+  send: (message: string) => {
+    confirm: () => PromiseMessageManagerWaitForResult;
+  };
+  waitForMessage: PromiseMessageManagerWaitForT;
 };
 
 type TwitchIRCEventHandlerOpts<T> = [{

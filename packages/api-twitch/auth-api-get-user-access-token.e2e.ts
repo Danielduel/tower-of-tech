@@ -12,6 +12,11 @@ import { open } from "https://deno.land/x/open@v0.0.6/index.ts";
 import { userTokenSuccessSchema } from "@/packages/api-twitch/helix/common.ts";
 
 const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
+
+if (!client_id) {
+  throw "No client_id";
+}
+
 const client_secret = Deno.env.get("TWITCH_API_CLIENT_SECRET")!;
 const redirect_uri = "http://localhost:8080/authorize";
 

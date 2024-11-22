@@ -5,15 +5,15 @@ setup({
   handlers: {
     ...state.config.handlers,
     console: getDefaultHandler(),
-    WSGeneralConsole: getDefaultModuleHandler("WSGeneral"),
+    ResendLinkConsole: getDefaultModuleHandler("ResendLink"),
   },
   loggers: {
     ...state.config.loggers,
-    "WSGeneral": {
+    "ResendLink": {
       level: "DEBUG",
-      handlers: ["WSGeneralConsole"],
+      handlers: ["ResendLinkConsole"],
     },
   },
 });
 
-export const getWSGeneralLogger = () => getLogger("WSGeneral");
+export const getResendLinkLogger = () => getLogger("ResendLink");

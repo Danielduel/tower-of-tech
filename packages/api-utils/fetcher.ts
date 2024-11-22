@@ -1,5 +1,5 @@
-import { retry } from "https://deno.land/std@0.177.0/async/retry.ts";
 import { Fetcher } from "zod-api";
+import { retry } from "@/packages/utils/async.ts";
 
 export const fetcher: Fetcher = (input, init) => {
   return retry(

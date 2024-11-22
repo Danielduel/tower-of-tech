@@ -2,7 +2,6 @@ import { z, type ZodTypeAny } from "zod";
 import {
   appAccessTokenHeaderSchema,
   appAccessTokenSchema,
-  appRefreshTokenSchema,
   makeAppAccessTokenHeader,
   makeUserAccessTokenHeader,
   paginationCursorSchema,
@@ -57,7 +56,7 @@ export const paginatedResponseSchemaWrapper = <T extends ZodTypeAny>(dataSchema:
   z.object({
     data: dataSchema,
     pagination: z.object({
-      cursor: paginationCursorSchema,
+      cursor: paginationCursorSchema.optional(),
     }),
   });
 
@@ -72,8 +71,7 @@ export type UserTokenSuccessSchemaT = typeof userTokenSuccessSchema._type;
 
 export const appTokenSuccessSchema = z.object({
   access_token: appAccessTokenSchema,
-  refresh_token: appRefreshTokenSchema,
   expires_in: z.number(),
-  scope: z.array(z.string()),
   token_type: z.string(),
 });
+export type AppTokenSuccessSchemaT = typeof appTokenSuccessSchema._type;

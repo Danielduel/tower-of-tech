@@ -1,6 +1,7 @@
 import { Client } from "https://deno.land/x/twitch_irc@0.11.2/mod.ts";
 import { getTwitchIRCLogger } from "@/packages/log/twitch-irc.ts";
 import { TwitchChannel, TwitchIRCEmitter, TwitchIRCEventContext, TwitchIRCEvents } from "@/apps/twitch-bot/types.ts";
+import { PromiseMessageManager } from "@/packages/api-twitch/utils/PromiseMessageManager.ts";
 
 type CreateTwitchIRCOpts = {
   debug: boolean;
@@ -14,15 +15,17 @@ type CreateTwitchIRCOpts = {
 const logger = getTwitchIRCLogger();
 
 export const createTwitchIRC = ({ debug, credentials, channel }: CreateTwitchIRCOpts) => {
-  logger.debug("create");
+  let _joined = false;
+  const _joinedP = Promise.withResolvers<void>();
 
-  const _debug = (...args: unknown[]) =>
-    logger.debug(`${channel} ${credentials.nick} ${args ? console.dir(args) : ""}`);
+  const _debug = (...args: unknown[]) => logger.debug(`${channel} ${credentials.nick} ${args.join(" ")}`);
 
-  _debug("create emitter");
+  _debug("create PromiseMessageManager");
+  const promiseMessageManager = new PromiseMessageManager();
+  _debug("create TwitchIRCEmitter");
   const TwitchIRCEmitterInstance = new TwitchIRCEmitter();
 
-  _debug("create client");
+  _debug("create Client");
   const client = new Client({
     // @ts-ignore: wtf typescript
     credentials,
@@ -40,11 +43,51 @@ export const createTwitchIRC = ({ debug, credentials, channel }: CreateTwitchIRC
         },
       ] as const;
 
+  const confirmSend = (message: string) => () => {
+    return promiseMessageManager.waitFor((x) => x.message === message && x.sender.login === credentials.nick);
+  };
+
+  const send = (message: string) => {
+    client.privmsg(channel, message);
+    return {
+      confirm: confirmSend(message),
+    };
+  };
+
   const context: TwitchIRCEventContext = {
+    get joined() {
+      return _joined;
+    },
+    get waitForJoin() {
+      return _joinedP.promise;
+    },
     channel,
     client,
-    send: (message) => client.privmsg(channel, message),
+    send,
+    waitForMessage: promiseMessageManager.waitFor,
   };
+
+  _debug("register PromiseMessageManager hook");
+  TwitchIRCEmitterInstance.on("privmsg", (e) => {
+    return promiseMessageManager.attemptResolve({
+      message: e.event.message,
+      sender: e.event.user,
+    });
+  });
+
+  TwitchIRCEmitterInstance.on("join", (e) => {
+    if (!_joined) {
+      if (e.event.user === credentials.nick) {
+        _debug("irc joined");
+        _joined = true;
+        _joinedP.resolve();
+      }
+    }
+  });
+
+  TwitchIRCEmitterInstance.on("notice", (e) => {
+    // console.log(e.event);
+  });
 
   client.on(...defaultEventHandler("clearchat")((en, e) => TwitchIRCEmitterInstance.emit(en, { event: e, context })));
   client.on(...defaultEventHandler("clearmsg")((en, e) => TwitchIRCEmitterInstance.emit(en, { event: e, context })));

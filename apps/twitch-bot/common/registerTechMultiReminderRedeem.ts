@@ -8,9 +8,13 @@ export const registerTechMultiReminderRedeem = async (
   ircContext: TwitchIRCEventContext,
   twitchHelixBroadcasterApiManaged: TwitchHelixBroadcasterApiManaged,
 ) => {
-  const nextMultiRedeemM = await twitchHelixBroadcasterApiManaged.getOrCreateCustomPointReward("nextMultiRedeem", {
+  const nextMultiRedeemM = await twitchHelixBroadcasterApiManaged.getOrUpsertCustomPointReward("nextMultiRedeem", {
     title: "Wow, tech multi next week!",
     cost: 115,
+  }, {
+    title: "Wow, tech multi next week!",
+    cost: 115,
+    is_paused: false,
   });
 
   if (nextMultiRedeemM.isErr()) {

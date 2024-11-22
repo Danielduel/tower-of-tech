@@ -11,12 +11,22 @@ export const registerSnoozeAdsRedeem = async (
   twitchHelixBroadcasterApiManaged: TwitchHelixBroadcasterApiManaged,
   twitchAdScheduleManager: TwitchAdScheduleTaskManager,
 ) => {
-  const snoozeAdsRedeemM = await twitchHelixBroadcasterApiManaged.getOrCreateCustomPointReward("snoozeAdsRedeem", {
-    title: "Snooze/Check ads (or fail)",
-    cost: 555,
-    global_cooldown_seconds: 60,
-    is_global_cooldown_enabled: true,
-  });
+  const snoozeAdsRedeemM = await twitchHelixBroadcasterApiManaged.getOrUpsertCustomPointReward(
+    "snoozeAdsRedeem",
+    {
+      title: "Snooze/Check ads (or fail)",
+      cost: 555,
+      global_cooldown_seconds: 60,
+      is_global_cooldown_enabled: true,
+    },
+    {
+      title: "Snooze/Check ads (or fail)",
+      cost: 555,
+      global_cooldown_seconds: 60,
+      is_global_cooldown_enabled: true,
+      is_paused: false,
+    },
+  );
 
   if (snoozeAdsRedeemM.isErr()) {
     console.error(snoozeAdsRedeemM.unwrapErr());

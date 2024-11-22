@@ -8,6 +8,7 @@ export const registerCommands = (irc: TwitchIRCEmitter, twitchHelixBroadcasterAp
 
   irc.on("privmsg", async ({ event, context: { send } }) => {
     const [cmd, ...args] = event.message.split(" ");
+
     switch (cmd) {
       case "!so": {
         const _user = args[0];
@@ -34,8 +35,6 @@ export const registerCommands = (irc: TwitchIRCEmitter, twitchHelixBroadcasterAp
       }
       case "!tot":
         return send(`! @${event.user.displayName} https://www.towerofte.ch`);
-      case "!link":
-        return send(`! @${event.user.displayName} 👀`);
       case "!dc":
       case "!discord":
         return send(`! @${event.user.displayName} ${discordLink}`);
