@@ -17,11 +17,7 @@ class PromiseMessage {
     public promise: Promise<MessageContext>,
     public resolve: (value: MessageContext | PromiseLike<MessageContext>) => void,
     public reject: (value: void | PromiseLike<void>) => void,
-  ) {
-    promise.finally(() => {
-      this.fullfilled = true;
-    });
-  }
+  ) {}
 
   static createWaitFor(
     predicate: PromiseMessagePredicate,
@@ -33,15 +29,19 @@ class PromiseMessage {
     return promiseMessage;
   }
 
-  await(): Promise<Result<MessageContext, Error>> {
-    return this.promise
+  async await(): Promise<Result<MessageContext, Error>> {
+    const returns = await this.promise
       .then((v) => Ok(v))
       .catch((e) => {
         if (this.fallback !== null) {
           return Ok(this.fallback);
         }
-        return Err(e);
+        return Err(e) satisfies Result<MessageContext, Error>;
       });
+
+    this.fullfilled = true;
+
+    return returns;
   }
 
   attemptResolve(messageContext: MessageContext): boolean {
