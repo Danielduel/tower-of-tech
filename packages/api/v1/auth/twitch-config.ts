@@ -52,6 +52,8 @@ const clientSecret = Deno.env.get("TWITCH_API_CLIENT_SECRET")!;
 const redirectUri = isLocal()
   ? `http://localhost:8081${apiV1HandlerAuthTwitchOauthCallbackRoute}`
   : `https://www.towerofte.ch${apiV1HandlerAuthTwitchOauthCallbackRoute}`;
+
+console.log(redirectUri);
 const scope = createScopes(
   channelManageBroadcast,
   channelReadRedemptions,
