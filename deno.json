@@ -1,5 +1,8 @@
 {
   "tasks": {
+    "dev-remote": "deno task editor:dev-remote & deno task website:tailwind:watch",
+    "dev-remote:local-import": "deno task editor:dev-remote:local-import & deno task website:tailwind:watch",
+
     "start": "TOT_ENVIRONMENT=local deno run -A ./src/main.ts",
 
     "migrate": "deno run -A ./src/tools/migrate.ts",
@@ -15,7 +18,6 @@
     "website:tailwind:build": "tailwind -c ./apps/website/tailwind/tailwind.config.js -i ./apps/website/tailwind/input.css -o ./apps/website/public/tailwind.css",
     "website:tailwind:watch": "tailwind -c ./apps/website/tailwind/tailwind.config.js -i ./apps/website/tailwind/input.css -o ./apps/website/public/tailwind.css --watch",
     "dev": "deno task s3s-fs-local & deno task editor:dev",
-    "dev-remote": "deno task editor:dev-remote & deno task website:tailwind:watch",
 
     "beatleader-bot:logger": "deno run -A ./apps/beatleader-bot/tools/logger.ts",
     "beatleader-bot:record": "deno run -A ./apps/beatleader-bot/tools/record.ts",
@@ -35,6 +37,7 @@
 
     "editor:dev": "TOT_ENVIRONMENT=local deno run -A --unstable --no-check --watch --import-map importMap.local.json ./apps/website/server.tsx -p 8081",
     "editor:dev-remote": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable --no-check --watch ./apps/website/server.tsx -p 8081",
+    "editor:dev-remote:local-import": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable --no-check --watch --import-map importMap.local.json ./apps/website/server.tsx -p 8081",
     "editor:test": "deno test --allow-all",
     "editor:build": "deno run -A ./webapp/build.ts",
     "editor:start": "ULTRA_MODE=production deno run -A --no-remote ./webapp/server.js",

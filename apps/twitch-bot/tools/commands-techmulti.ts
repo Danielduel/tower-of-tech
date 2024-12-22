@@ -1,5 +1,5 @@
 import { createTwitchIRC } from "@/apps/twitch-bot/sockets/twitch-irc.ts";
-import { defaultHeaders, TwitchAuthApi } from "@/packages/api-twitch/auth-api.ts";
+import { defaultHeaders, TwitchBotAuthApi } from "@/packages/api-twitch/auth-api.ts";
 import { getChannelDataByBroadcasterName, setChannelData } from "@/packages/api-twitch/helix/TwitchHelixApiClient.ts";
 import { getUserToken } from "@/packages/api-twitch/auth-api-get-user-access-token.e2e.ts";
 import { getRelativeTimeTechMulti } from "@/packages/discord/cron/tech-multi/utils.ts";
@@ -12,6 +12,7 @@ import { TwitchHelixBroadcasterApiManaged } from "@/packages/api-twitch/helix/Tw
 import { TwitchPubSubManager } from "@/packages/api-twitch/pubsub/TwitchPubSubManager.ts";
 import { TwitchAdScheduleTaskManager } from "@/packages/api-twitch/helix/TwitchAdScheduleTaskManager.ts";
 import { registerFirstOnStreamRedeem } from "@/apps/twitch-bot/common/registerFirstOnStreamRedeem.ts";
+import { BeatSaberGameId } from "@/packages/api-twitch/utils/constants.ts";
 
 const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
@@ -76,7 +77,7 @@ const urlParams = new URLSearchParams({
   grant_type,
 });
 
-const authResponse = await TwitchAuthApi.token.post({
+const authResponse = await TwitchBotAuthApi.token.post({
   headers: defaultHeaders,
   body: { __STRIP_URL_STRING__: urlParams.toString() },
 });
@@ -97,7 +98,8 @@ const updateChannelData = async (time: string, stage: string, progress: string) 
     createUserAuthorizationHeaders(client_id, userCreds.access_token),
     channelResponse.data?.data[0].id!,
     {
-      title: `| ${progress} | Weekly Tech Multi (public lobby, ${time}, ${stage})`,
+      game_id: BeatSaberGameId,
+      title: `ᕕ(⌐■_■)ᕗ ♪♬ | ${progress} | Weekly Tech Multi (public lobby, ${time}, ${stage})`,
     },
   );
 };
@@ -123,5 +125,3 @@ setInterval(() => {
 }, 1 * 60 * 1000);
 
 broadcastTechMultiData();
-
-// console.log(schedule.scheduledStartTime, schedule.scheduledEndTime);

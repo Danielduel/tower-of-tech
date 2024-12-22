@@ -1,4 +1,4 @@
-import { defaultHeaders, TwitchAuthApi } from "@/packages/api-twitch/auth-api.ts";
+import { defaultHeaders, TwitchBotAuthApi } from "@/packages/api-twitch/auth-api.ts";
 import { getChannelDataByBroadcasterName, setChannelData } from "@/packages/api-twitch/helix/TwitchHelixApiClient.ts";
 
 import { getUserToken } from "@/packages/api-twitch/auth-api-get-user-access-token.e2e.ts";
@@ -17,12 +17,10 @@ const urlParams = new URLSearchParams({
   grant_type,
 });
 
-const authResponse = await TwitchAuthApi.token.post({
+const authResponse = await TwitchBotAuthApi.token.post({
   headers: defaultHeaders,
   body: { __STRIP_URL_STRING__: urlParams.toString() },
 });
-
-console.log(authResponse);
 
 if (!authResponse.data) Deno.exit();
 

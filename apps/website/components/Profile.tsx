@@ -67,6 +67,38 @@ const ProfileDiscord: FC<ProfileDiscordProps> = ({ notReady, signedIn }) => {
   );
 };
 
+type ProfileTwitchProps = {
+  notReady: boolean;
+  signedIn: boolean;
+};
+const ProfileTwitch: FC<ProfileTwitchProps> = ({ notReady, signedIn }) => {
+  if (notReady) {
+    return <></>;
+  }
+  if (signedIn) {
+    return (
+      <>
+        <Link
+          reloadDocument
+          className="text-lg inline ring-1"
+          to={links.api.v1.auth.twitch.oauth.signOut()}
+          children="Sign out"
+        />
+      </>
+    );
+  }
+  return (
+    <>
+      <Link
+        reloadDocument
+        className="text-lg inline ring-1"
+        to={links.api.v1.auth.twitch.oauth.signIn()}
+        children="Sign in"
+      />
+    </>
+  );
+};
+
 export const Profile = () => {
   const { data, isFetching, isRefetching, isLoading, error, isError } = trpc.auth.me.useQuery();
 
@@ -82,6 +114,7 @@ export const Profile = () => {
 
   const beatLeaderSignedIn = !!data?.beatLeader;
   const discordSignedIn = !!data?.discord;
+  const twitchSignedIn = !!data?.twitch;
 
   if (!data) {
     return (
@@ -98,6 +131,13 @@ export const Profile = () => {
           <h4 className="text-xl">Discord</h4>
           <h5 className="text-lg px-2 pt-2 pb-3 border-l-2">
             <ProfileDiscord notReady={notReady} signedIn={discordSignedIn} />
+          </h5>
+        </div>
+
+        <div className="py-4">
+          <h4 className="text-xl">Twitch</h4>
+          <h5 className="text-lg px-2 pt-2 pb-3 border-l-2">
+            <ProfileTwitch notReady={notReady} signedIn={twitchSignedIn} />
           </h5>
         </div>
       </>
@@ -123,6 +163,7 @@ export const Profile = () => {
           <ProfileBeatLeader notReady={notReady} signedIn={beatLeaderSignedIn} />
         </h5>
       </div>
+
       <div className="py-4">
         <h4 className="text-xl">Discord</h4>
         <h5 className="text-lg px-2 pt-2 pb-3 border-l-2">
@@ -138,6 +179,24 @@ export const Profile = () => {
             )
             : "Not connected"} <br />
           <ProfileDiscord notReady={notReady} signedIn={discordSignedIn} />
+        </h5>
+      </div>
+
+      <div className="py-4">
+        <h4 className="text-xl">Twitch</h4>
+        <h5 className="text-lg px-2 pt-2 pb-3 border-l-2">
+          {data.twitch
+            ? (
+              <>
+                {data.twitch.login} <br />
+                {data.twitch.displayName} <br />
+                <code>
+                  {data.twitch.id}
+                </code>
+              </>
+            )
+            : "Not connected"} <br />
+          <ProfileTwitch notReady={notReady} signedIn={twitchSignedIn} />
         </h5>
       </div>
     </>

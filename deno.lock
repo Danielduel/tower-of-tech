@@ -16,19 +16,29 @@
       "jsr:@std/bytes@^0.220.0": "jsr:@std/bytes@0.220.1",
       "jsr:@std/bytes@^1.0.1": "jsr:@std/bytes@1.0.2",
       "jsr:@std/cli@^0.221.0": "jsr:@std/cli@0.221.0",
+      "jsr:@std/cli@^1.0.6": "jsr:@std/cli@1.0.6",
       "jsr:@std/collections@^0.220.0": "jsr:@std/collections@0.220.1",
       "jsr:@std/collections@^1.0.2": "jsr:@std/collections@1.0.7",
       "jsr:@std/datetime@^0.221.0": "jsr:@std/datetime@0.221.0",
+      "jsr:@std/datetime@^0.225.2": "jsr:@std/datetime@0.225.2",
       "jsr:@std/encoding@^0.221.0": "jsr:@std/encoding@0.221.0",
+      "jsr:@std/encoding@^1.0.5": "jsr:@std/encoding@1.0.5",
       "jsr:@std/fmt@^0.221.0": "jsr:@std/fmt@0.221.0",
+      "jsr:@std/fmt@^1.0.3": "jsr:@std/fmt@1.0.3",
       "jsr:@std/fs": "jsr:@std/fs@1.0.1",
+      "jsr:@std/html@^1.0.3": "jsr:@std/html@1.0.3",
       "jsr:@std/http": "jsr:@std/http@0.221.0",
       "jsr:@std/http@^0.221.0": "jsr:@std/http@0.221.0",
+      "jsr:@std/http@^1.0.8": "jsr:@std/http@1.0.11",
       "jsr:@std/internal@^1.0.4": "jsr:@std/internal@1.0.4",
       "jsr:@std/media-types@^0.221.0": "jsr:@std/media-types@0.221.0",
+      "jsr:@std/media-types@^1.1.0": "jsr:@std/media-types@1.1.0",
+      "jsr:@std/net@^1.0.4": "jsr:@std/net@1.0.4",
       "jsr:@std/path@^0.221.0": "jsr:@std/path@0.221.0",
       "jsr:@std/path@^1.0.2": "jsr:@std/path@1.0.2",
+      "jsr:@std/path@^1.0.8": "jsr:@std/path@1.0.8",
       "jsr:@std/streams@^0.221.0": "jsr:@std/streams@0.221.0",
+      "jsr:@std/streams@^1.0.8": "jsr:@std/streams@1.0.8",
       "jsr:@std/testing": "jsr:@std/testing@1.0.3",
       "jsr:@std/testing@1.0.3": "jsr:@std/testing@1.0.3",
       "jsr:@std/ulid": "jsr:@std/ulid@1.0.0",
@@ -109,6 +119,9 @@
           "jsr:@std/assert@^0.221.0"
         ]
       },
+      "@std/cli@1.0.6": {
+        "integrity": "d22d8b38c66c666d7ad1f2a66c5b122da1704f985d3c47f01129f05abb6c5d3d"
+      },
       "@std/collections@0.220.1": {
         "integrity": "5820a8d7f69ef93af6807249dfa4be5b97ebf8654c587826612744cf7ae57ef2"
       },
@@ -118,17 +131,29 @@
       "@std/datetime@0.221.0": {
         "integrity": "41188de53bd811a0f04955b1cec0ce65f9b8fec293529818c829a55dfcce5031"
       },
+      "@std/datetime@0.225.2": {
+        "integrity": "45f0100554a912cd65f48089ef0a33aa1eb6ea21f08090840b539ab582827eaa"
+      },
       "@std/encoding@0.221.0": {
         "integrity": "d1dd76ef0dc5d14088411e6dc1dede53bf8308c95d1537df1214c97137208e45"
       },
+      "@std/encoding@1.0.5": {
+        "integrity": "ecf363d4fc25bd85bd915ff6733a7e79b67e0e7806334af15f4645c569fefc04"
+      },
       "@std/fmt@0.221.0": {
         "integrity": "379fed69bdd9731110f26b9085aeb740606b20428ce6af31ef6bd45ef8efa62a"
+      },
+      "@std/fmt@1.0.3": {
+        "integrity": "97765c16aa32245ff4e2204ecf7d8562496a3cb8592340a80e7e554e0bb9149f"
       },
       "@std/fs@1.0.1": {
         "integrity": "d6914ca2c21abe591f733b31dbe6331e446815e513e2451b3b9e472daddfefcb",
         "dependencies": [
           "jsr:@std/path@^1.0.2"
         ]
+      },
+      "@std/html@1.0.3": {
+        "integrity": "7a0ac35e050431fb49d44e61c8b8aac1ebd55937e0dc9ec6409aa4bab39a7988"
       },
       "@std/http@0.221.0": {
         "integrity": "35fdcfed1501f2052338bf7ffba5d66f1455f2fffc01e9d7cf13eed548fffbaa",
@@ -143,11 +168,30 @@
           "jsr:@std/streams@^0.221.0"
         ]
       },
+      "@std/http@1.0.11": {
+        "integrity": "f1928e69e7dcf1664e22d153934cb866bf31e1bbe4bc59f8ac1b4d0e98cb7558",
+        "dependencies": [
+          "jsr:@std/cli@^1.0.6",
+          "jsr:@std/encoding@^1.0.5",
+          "jsr:@std/fmt@^1.0.3",
+          "jsr:@std/html@^1.0.3",
+          "jsr:@std/media-types@^1.1.0",
+          "jsr:@std/net@^1.0.4",
+          "jsr:@std/path@^1.0.8",
+          "jsr:@std/streams@^1.0.8"
+        ]
+      },
       "@std/internal@1.0.4": {
         "integrity": "62e8e4911527e5e4f307741a795c0b0a9e6958d0b3790716ae71ce085f755422"
       },
       "@std/media-types@0.221.0": {
         "integrity": "572addcbda2a21367c1f8eaa8c72fea6654b50779027dbde9f693aaa4bac30c3"
+      },
+      "@std/media-types@1.1.0": {
+        "integrity": "c9d093f0c05c3512932b330e3cc1fe1d627b301db33a4c2c2185c02471d6eaa4"
+      },
+      "@std/net@1.0.4": {
+        "integrity": "2f403b455ebbccf83d8a027d29c5a9e3a2452fea39bb2da7f2c04af09c8bc852"
       },
       "@std/path@0.221.0": {
         "integrity": "0a36f6b17314ef653a3a1649740cc8db51b25a133ecfe838f20b79a56ebe0095",
@@ -158,11 +202,17 @@
       "@std/path@1.0.2": {
         "integrity": "a452174603f8c620bd278a380c596437a9eef50c891c64b85812f735245d9ec7"
       },
+      "@std/path@1.0.8": {
+        "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
+      },
       "@std/streams@0.221.0": {
         "integrity": "47f2f74634b47449277c0ee79fe878da4424b66bd8975c032e3afdca88986e61",
         "dependencies": [
           "jsr:@std/assert@^0.221.0"
         ]
+      },
+      "@std/streams@1.0.8": {
+        "integrity": "b41332d93d2cf6a82fe4ac2153b930adf1a859392931e2a19d9fabfb6f154fb3"
       },
       "@std/testing@1.0.3": {
         "integrity": "f98c2bee53860a5916727d7e7d3abe920dd6f9edace022e2d059f00d05c2cf42",
@@ -1041,6 +1091,7 @@
     "https://deno.land/std@0.154.0/async/tee.ts": "d27680d911816fcb3d231e16d690e7588079e66a9b2e5ce8cc354db94fdce95f",
     "https://deno.land/std@0.154.0/http/http_status.ts": "897575a7d6bc2b9123f6a38ecbc0f03d95a532c5d92029315dc9f508e12526b8",
     "https://deno.land/std@0.154.0/http/server.ts": "e2e16f0b124ffef022ad04797d4250d6e4fc0d9579780999091949b17789dd1a",
+    "https://deno.land/std@0.161.0/encoding/base64.ts": "c57868ca7fa2fbe919f57f88a623ad34e3d970d675bdc1ff3a9d02bba7409db2",
     "https://deno.land/std@0.176.0/_util/asserts.ts": "178dfc49a464aee693a7e285567b3d0b555dc805ff490505a8aae34f9cfb1462",
     "https://deno.land/std@0.176.0/_util/os.ts": "d932f56d41e4f6a6093d56044e29ce637f8dcc43c5a90af43504a889cf1775e3",
     "https://deno.land/std@0.176.0/bytes/copy.ts": "939d89e302a9761dcf1d9c937c7711174ed74c59eef40a1e4569a05c9de88219",
@@ -1798,6 +1849,17 @@
     "https://deno.land/x/lru@1.0.2/mod.ts": "1d44b87c4d40ff33749ae5fd85fe234344e0dace835fdfeb48413edea9461159",
     "https://deno.land/x/media_types@v2.11.1/db.ts": "1eac2b1b57195e41d7e40d7b236a3adeb93b4fa18084b4c9db49144fe685c78d",
     "https://deno.land/x/media_types@v2.11.1/mod.ts": "1be09ec3626332f9fe52a8a9ede852bb76d2207f84bec1f1b16c10555478008f",
+    "https://deno.land/x/oauth2_client@v1.0.2/mod.ts": "ea54c0a894d3303a80552ca65835b5b104d16415343b24e191f08e7f5db90ff7",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/authorization_code_grant.ts": "36953750b75fb0a14fbf4e0e4bcc1d5ae0209d216d7b32f93a134b035ecf3d25",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/client_credentials_grant.ts": "5bb9869925c5f5d11e8d66a86da37e2353107d57f57ec3a1480e197462e79be5",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/errors.ts": "7603479b80386b5cc7e384c2af5f5262ed7c2123e4e297d9f21e95515f8a803a",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/grant_base.ts": "86ae9eb3495f2304a634498fbb83741c5dc0e1357e02c40e12e212de5e9750f7",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/implicit_grant.ts": "d5359aebbdaaff039c0d078890aa4ffa2869da19c521e535e15caf09c069e6b8",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/oauth2_client.ts": "4e5ec26676661a3f69544826a4c27b30cc07dfcfc77f86981c324aaa53291a11",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/pkce.ts": "d286a087cc8ef985b71a2bf391e9e9d86a78ac6d93e30c46e73006171aed0986",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/refresh_token_grant.ts": "22cb1598e48fb037b4111a446573f7b48a3b361b58de58af17ba097221b12b54",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/resource_owner_password_credentials.ts": "bd3df99d32eeebffb411c4a2d3c3d057395515fb41690a8d91460dd74b9bf466",
+    "https://deno.land/x/oauth2_client@v1.0.2/src/types.ts": "3327c2e81bc483e91843fb103595dd304393c3ac2a530d1c89200b6a5cf75e13",
     "https://deno.land/x/open@v0.0.6/index.ts": "c7484a7bf2628236f33bbe354520e651811faf1a7cbc3c3f80958ce81b4c42ef",
     "https://deno.land/x/optionals@v2.0.2/mod.ts": "8e12b21e534e7f7304560bb07b46b628d5c953e5342f092a82a1300a60546bf2",
     "https://deno.land/x/optionals@v2.0.2/src/option.ts": "54d7dc633cff2aeff06cce94862cc0ed0730926c12d0605bbc1f90c28c9798a5",

@@ -8,12 +8,13 @@ import { TwitchPubSubManager } from "@/packages/api-twitch/pubsub/TwitchPubSubMa
 import { TwitchHelixBroadcasterApiManaged } from "@/packages/api-twitch/helix/TwitchHelixBroadcasterApiManaged.ts";
 import { TwitchAdScheduleTaskManager } from "@/packages/api-twitch/helix/TwitchAdScheduleTaskManager.ts";
 import { registerFirstOnStreamRedeem } from "@/apps/twitch-bot/common/registerFirstOnStreamRedeem.ts";
+import { BeatSaberGameId } from "@/packages/api-twitch/utils/constants.ts";
 
 const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
 const nick = Deno.env.get("TWITCH_IRC_COMMANDS_LOGIN")!;
 const pass = Deno.env.get("TWITCH_IRC_COMMANDS_PASS")!;
-const streamTitle = Deno.env.get("TWITCH_DEFAULT_STREAM_TITLE")!;
+// const streamTitle = Deno.env.get("TWITCH_DEFAULT_STREAM_TITLE")!;
 
 const userCreds = await getUserToken();
 
@@ -54,13 +55,14 @@ await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHel
 registerCommands(irc, twitchHelixBroadcasterApiManaged);
 registerAdsWarningLoop(twitchHelixBroadcasterApiManaged, twitchAdScheduleManager, ircContext);
 
-const updateChannelTitle = async () => {
+const updateChannelInfo = async () => {
   return await twitchHelixBroadcasterApiManaged.setChannelInfo({
-    title: streamTitle,
+    game_id: BeatSaberGameId,
+    // title: streamTitle,
   });
 };
 
-await updateChannelTitle();
+await updateChannelInfo();
 
 Deno.addSignalListener("SIGINT", () => {
   ircCleanup();

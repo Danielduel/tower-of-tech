@@ -22,6 +22,7 @@ export const BeatSaberPlaylistSongItemMetadataSchema = z.object({
   mapHash: z.string().transform(makeUppercaseMapHash),
   difficulties: z.array(BeatSaberPlaylistSongItemDifficultySchema).optional(),
 });
+export type BeatSaberPlaylistSongItemMetadataSchemaT = typeof BeatSaberPlaylistSongItemMetadataSchema._type;
 
 export const BeatSaberPlaylistSongItemSchema = z.object({
   hash: z.string().transform(makeUppercaseMapHash),

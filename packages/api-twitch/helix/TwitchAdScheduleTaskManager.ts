@@ -3,12 +3,13 @@ import { TwitchHelixBroadcasterApi } from "@/packages/api-twitch/helix/TwitchHel
 import { Err, Ok, Result } from "@/packages/utils/optionals.ts";
 import { MINUTE_MS, SECOND_MS } from "@/packages/utils/time.ts";
 import { delay } from "@/packages/utils/async.ts";
-import { getTimeAgo } from "@/packages/discord/cron/tech-multi/utils.ts";
 
 type Task<R = unknown> = () => R | (() => Promise<R>);
 class TimeOffsetTask {
   public currentTimeout: number | null = null;
   public currentDateTarget: Date | null = null;
+  public currentTimeTarget: number | null = null;
+  public sheduleTimeOffset: number | null = null;
 
   constructor(
     public task: Task,
@@ -28,17 +29,14 @@ class TimeOffsetTask {
   };
 
   private schedule = (unoffsettedTime: number) => {
-    if (this.currentDateTarget) console.log("previous timeout in ", getTimeAgo(this.currentDateTarget));
-
     const timeoutTime = unoffsettedTime - this.timeOffset;
-    const timeoutDate = new Date(Date.now() + timeoutTime);
+    const timeoutDate = new Date(timeoutTime);
+    const sheduleTimeOffset = timeoutTime - Date.now();
+    this.currentTimeTarget = timeoutTime;
     this.currentDateTarget = timeoutDate;
+    this.sheduleTimeOffset = sheduleTimeOffset;
 
-    console.log("unoffsettedTime", unoffsettedTime);
-    console.log("timeoutTime", timeoutTime);
-    console.log("next timeout in ", getTimeAgo(this.currentDateTarget));
-
-    this.currentTimeout = setTimeout(this.task, unoffsettedTime - this.timeOffset);
+    this.currentTimeout = setTimeout(this.task, sheduleTimeOffset);
   };
 
   public reschedule = (unoffsettedTime: number) => {
@@ -60,13 +58,6 @@ export class TwitchAdScheduleTaskManager {
 
   private async updateLoop() {
     while (true) {
-      console.warn("Update logs");
-      console.warn("Date.now()", Date.now());
-      console.warn("this.hasValidSchedule()", this.hasValidSchedule());
-      console.warn("this.getNextAdAtTimeIfValid()", this.getNextAdAtTimeIfValid());
-      console.warn("this.getNextAdEndTimeIfValid()", this.getNextAdEndTimeIfValid());
-      console.warn("this.timeOffsetTasks.length", this.timeOffsetTasks.length);
-      console.warn("this.onAdsEndedTasks.length", this.onAdsEndedTasks.length);
       await this.update();
       const delayMs = this.hasValidSchedule() ? 30 * MINUTE_MS : 10 * SECOND_MS;
       await delay(delayMs);
@@ -105,7 +96,7 @@ export class TwitchAdScheduleTaskManager {
 
   public getNextAdEndTimeIfValid(now = Date.now()): number | null {
     if (this.currentAdsSchedule.next_ad_at) {
-      const nextAdEndTime = this.currentAdsSchedule.next_ad_at.getTime() + this.currentAdsSchedule.duration;
+      const nextAdEndTime = this.currentAdsSchedule.next_ad_at.getTime() + this.currentAdsSchedule.duration * SECOND_MS;
       const isInPast = nextAdEndTime < now;
       const isValid = !isInPast;
       if (isValid) {
@@ -159,7 +150,6 @@ export class TwitchAdScheduleTaskManager {
     const currentAdsSchedule = currentAdsScheduleM.unwrap();
     const shouldRescheduleTasks = this.shouldRescheduleTasks(currentAdsSchedule);
     this.currentAdsSchedule = currentAdsSchedule;
-    console.warn("shouldRescheduleTasks", shouldRescheduleTasks);
 
     if (shouldRescheduleTasks) {
       this.rescheduleAllTasks();

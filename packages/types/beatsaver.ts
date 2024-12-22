@@ -24,6 +24,7 @@ export const BeatSaverResponseWrapperSchema = z.object({
   available: z.boolean(),
   removed: z.boolean(),
 });
+export type BeatSaverResponseWrapperSchemaT = typeof BeatSaverResponseWrapperSchema._type;
 
 export const BeatSaverMapResponseUploader = z.object({
   id: z.number().transform(makeBeatSaverUserId),
@@ -124,6 +125,7 @@ export const BeatSaverIdToHashCacheSchema = z.object({
   removed: z.boolean().optional(),
   outdated: z.boolean(),
 });
+export type BeatSaverIdToHashCacheSchemaT = typeof BeatSaverIdToHashCacheSchema._type;
 
 export const BeatSaverMapResponseSchema = z.union(
   [BeatSaverMapResponseSuccessSchema, BeatSaverMapResponseNotFoundSchema],

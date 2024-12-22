@@ -15,17 +15,42 @@ import {
 } from "@/packages/database-editor/BeatSaverResponse.ts";
 import { DiscordChannel, DiscordGuild } from "@/packages/database-editor/DiscordGuild.ts";
 import {
+  BeatLeaderAuthorization,
   BeatLeaderIntegration,
+  DiscordAuthorization,
   DiscordIntegration,
   ToTAccount,
   ToTAccountSession,
+  TwitchAuthorization,
+  TwitchIntegration,
 } from "@/packages/database-editor/Auth.ts";
 import { kvdex } from "@/packages/deps/kvdex.ts";
-import { TwitchRedeemMapping } from "@/packages/database-editor/TwitchRedeem.ts";
+import { TwitchRedeemMapping, TwitchRedeemMappingSchemaT } from "@/packages/database-editor/TwitchRedeem.ts";
 import {
   ResendLinkTwitchBeatSaverResolvableIdKind,
   ResendLinkTwitchChannelSettings,
 } from "@/packages/database-editor/ResendLink.ts";
+import { BeatSaverIdToHashCacheSchemaT, BeatSaverResponseWrapperSchemaT } from "@/packages/types/beatsaver.ts";
+import {
+  BeatSaberPlaylistFlatSchemaT,
+  BeatSaberPlaylistSongItemMetadataSchemaT,
+} from "@/packages/types/beatsaber-playlist.ts";
+import { BeatSaberPlaylistSongItemSchemaT } from "@/packages/types/beatsaber-playlist.ts";
+import { DiscordChannelSchemaT, DiscordGuildFlatSchemaT } from "@/packages/types/discord-guild.ts";
+import {
+  BeatLeaderAuthorizationSchemaT,
+  BeatLeaderIntegrationSchemaT,
+  DiscordAuthorizationSchemaT,
+  DiscordIntegrationSchemaT,
+  ToTAccountFlatSchemaT,
+  ToTAccountSessionSchemaT,
+  TwitchAuthorizationSchemaT,
+  TwitchIntegrationSchemaT,
+} from "@/packages/types/auth.ts";
+import {
+  ResendLinkTwitchBeatSaverResolvableIdKindSchemaT,
+  ResendLinkTwitchChannelSettingsFlatSchemaT,
+} from "@/packages/types/resendLink.ts";
 
 export const kv = isDbEditorRemote()
   ? await (async () => {
@@ -36,7 +61,7 @@ export const kv = isDbEditorRemote()
   ? await Deno.openKv("./local.db")
   : await Deno.openKv();
 
-export const dbEditor = kvdex(kv, {
+export const dbEditorSchema = {
   BeatSaverResponseWrapper,
   BeatSaverMapResponseSuccess,
   BeatSaberPlaylist,
@@ -48,12 +73,38 @@ export const dbEditor = kvdex(kv, {
   ToTAccount,
   ToTAccountSession,
   BeatLeaderIntegration,
+  BeatLeaderAuthorization,
   DiscordIntegration,
+  DiscordAuthorization,
   TwitchRedeemMapping,
-
+  TwitchIntegration,
+  TwitchAuthorization,
   ResendLinkTwitchBeatSaverResolvableIdKind,
   ResendLinkTwitchChannelSettings,
-});
+};
+
+export const dbEditor = kvdex(kv, dbEditorSchema);
+
+export type DbEditorSchemas = Record<keyof typeof dbEditor, unknown> & {
+  BeatSaverResponseWrapper: BeatSaverResponseWrapperSchemaT;
+  BeatSaberPlaylist: BeatSaberPlaylistFlatSchemaT;
+  BeatSaberPlaylistSongItemMetadata: BeatSaberPlaylistSongItemMetadataSchemaT;
+  BeatSaberPlaylistSongItem: BeatSaberPlaylistSongItemSchemaT;
+  BeatSaverIdToHashCache: BeatSaverIdToHashCacheSchemaT;
+  DiscordChannel: DiscordChannelSchemaT;
+  DiscordGuild: DiscordGuildFlatSchemaT;
+  ToTAccount: ToTAccountFlatSchemaT;
+  ToTAccountSession: ToTAccountSessionSchemaT;
+  BeatLeaderIntegration: BeatLeaderIntegrationSchemaT;
+  BeatLeaderAuthorization: BeatLeaderAuthorizationSchemaT;
+  DiscordIntegration: DiscordIntegrationSchemaT;
+  DiscordAuthorization: DiscordAuthorizationSchemaT;
+  TwitchIntegration: TwitchIntegrationSchemaT;
+  TwitchAuthorization: TwitchAuthorizationSchemaT;
+  TwitchRedeemMapping: TwitchRedeemMappingSchemaT;
+  ResendLinkTwitchBeatSaverResolvableIdKind: ResendLinkTwitchBeatSaverResolvableIdKindSchemaT;
+  ResendLinkTwitchChannelSettings: ResendLinkTwitchChannelSettingsFlatSchemaT;
+};
 
 export const s3clientEditor = isLocal() && !isDbEditorRemote()
   ? new S3Client({

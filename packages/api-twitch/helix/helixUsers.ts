@@ -24,6 +24,8 @@ export type GetHelixUsersItemSchemaT = typeof getHelixUsersItemSchema._type;
 //   login: z.string(),
 // });
 export const getHelixUsersSuccessSchema = responseSchemaWrapper(z.array(getHelixUsersItemSchema));
+export const GetHelixUsersSuccessSchemaT = typeof getHelixUsersSuccessSchema._type;
+
 export const getHelixUsersHeadersSchema = userAuthHeadersSchema;
 
 export const helixUsersResource = resource("/helix/users", {

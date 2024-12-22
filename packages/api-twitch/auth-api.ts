@@ -8,7 +8,24 @@ export const defaultHeaders = {
   "Content-Type": "application/x-www-form-urlencoded",
 };
 
-export const TwitchAuthApi = client({
+export const TwitchBotAuthApi = client({
+  fetcher,
+  baseUrl: "https://id.twitch.tv",
+  logger: await getLogger(),
+  resources: {
+    token: resource("/oauth2/token", {
+      actions: {
+        post: {
+          dataSchema: appTokenSuccessSchema,
+          headersSchema: z.object({}),
+          bodySchema: z.object({ __STRIP_URL_STRING__: z.string() }) as unknown as (ReturnType<typeof z.object>),
+        },
+      },
+    }),
+  },
+});
+
+export const TwitchUserAuthApi = client({
   fetcher,
   baseUrl: "https://id.twitch.tv",
   logger: await getLogger(),

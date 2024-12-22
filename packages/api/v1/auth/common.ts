@@ -1,17 +1,18 @@
 import {
-  BeatLeaderIntegrationSafeSchemaT,
+  BeatLeaderAuthorizationSchemaT,
   BeatLeaderIntegrationSchemaT,
-  DiscordIntegrationSafeSchemaT,
+  DiscordAuthorizationSchemaT,
   DiscordIntegrationSchemaT,
   makeToTAccountId,
   ToTAccountFlatSchemaT,
   ToTAccountId,
-  ToTAccountSafeSchemaT,
   ToTAccountSchemaT,
   ToTAccountSessionId,
   ToTAccountSessionSchemaT,
+  TwitchAuthorizationSchemaT,
+  TwitchIntegrationSchemaT,
 } from "@/packages/types/auth.ts";
-import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { dbEditor, dbEditorSchema } from "@/packages/database-editor/mod.ts";
 import { Err, Ok, Result } from "@/packages/utils/optionals.ts";
 import { getBeatLeaderSessionId } from "@/packages/api/v1/auth/beatleader-config.ts";
 import { getDiscordSessionId } from "@/packages/api/v1/auth/discord-config.ts";
@@ -32,6 +33,16 @@ import {
 } from "@/packages/api-discord/brand.ts";
 import { DiscordApi, DiscordApiUsersMeBodySchemaT } from "@/packages/api-discord/api.ts";
 import { createDiscordUserAuthHeaders } from "@/packages/api-discord/common.ts";
+import { makeUserAccessToken, UserAccessToken } from "@/packages/api-twitch/helix/brand.ts";
+import { createUserAuthorizationHeaders } from "@/packages/api-twitch/helix/common.ts";
+import { getTwitchSessionId } from "@/packages/api/v1/auth/twitch-config.ts";
+import { TwitchHelixApiClient } from "@/packages/api-twitch/helix/TwitchHelixApiClient.ts";
+import { GetHelixUsersItemSchemaT } from "@/packages/api-twitch/helix/helixUsers.ts";
+import { makeUserRefreshToken } from "@/packages/api-twitch/helix/brand.ts";
+
+const TWITCH_API_CLIENT_ID = Deno.env.get("TWITCH_API_CLIENT_ID")!;
+const TWITCH_API_CLIENT_SECRET = Deno.env.get("TWITCH_API_CLIENT_SECRET")!;
+const TWITCH_API_GRANT_TYPE = Deno.env.get("TWITCH_API_GRANT_TYPE")!;
 
 const getSessionFromSessionId = async (sessionId: ToTAccountSessionId) => {
   return await dbEditor.ToTAccountSession.find(sessionId);
@@ -80,6 +91,7 @@ const getSessionIdsFromRequest = async (request: Request): Promise<ToTAccountSes
     ...new Set([
       await getBeatLeaderSessionId(request) as ToTAccountSessionId | undefined,
       await getDiscordSessionId(request) as ToTAccountSessionId | undefined,
+      await getTwitchSessionId(request) as ToTAccountSessionId | undefined,
     ].filter(filterUndefineds)),
   ];
 };
@@ -95,7 +107,7 @@ export const getAccountFromRequestM = async (request: Request): Promise<Result<T
   return Err(Error("Account not found"));
 };
 
-export const _getFullAccountFromRequestM = async (
+export const getFullAccountFromRequestM = async (
   request: Request,
 ): Promise<Result<ToTAccountSchemaT, Error>> => {
   const accountM = await getAccountFromRequestM(request);
@@ -111,53 +123,27 @@ export const _getFullAccountFromRequestM = async (
   const discordR = account.discordId ? await dbEditor.DiscordIntegration.find(account.discordId) : null;
   const discord = discordR ? discordR.value : null;
 
+  const twitchR = account.twitchId ? await dbEditor.TwitchIntegration.find(account.twitchId) : null;
+  const twitch = twitchR ? twitchR.value : null;
+
   return Ok({
     ...account,
     sessions,
     beatLeader,
     discord,
-  });
-};
-
-export const beatLeaderIntegrationToBeatLeaderIntegrationSafe = (
-  x: BeatLeaderIntegrationSchemaT,
-): BeatLeaderIntegrationSafeSchemaT => {
-  const copy: BeatLeaderIntegrationSafeSchemaT = { ...x, expires: [][0], accessToken: [][0], refreshToken: [][0] };
-  return copy;
-};
-
-export const discordIntegrationToDiscordIntegrationSafe = (
-  x: DiscordIntegrationSchemaT,
-): DiscordIntegrationSafeSchemaT => {
-  const copy: DiscordIntegrationSafeSchemaT = { ...x, expires: [][0], accessToken: [][0], refreshToken: [][0] };
-  return copy;
-};
-
-export const getFullAccountFromRequestM = async (
-  request: Request,
-): Promise<Result<ToTAccountSafeSchemaT, Error>> => {
-  const accountM = await _getFullAccountFromRequestM(request);
-  if (accountM.isErr()) {
-    return Err(accountM.unwrapErr());
-  }
-  const account = accountM.unwrap();
-  const beatLeader = account.beatLeader ? beatLeaderIntegrationToBeatLeaderIntegrationSafe(account.beatLeader) : null;
-  const discord = account.discord ? discordIntegrationToDiscordIntegrationSafe(account.discord) : null;
-
-  return Ok({
-    ...account,
-    beatLeader,
-    discord,
+    twitch,
   });
 };
 
 type AllTokens = {
   beatLeader?: Tokens;
   discord?: Tokens;
+  twitch?: Tokens;
 };
 
 type BeatLeaderCallbackStatus = {
   account: ToTAccountFlatSchemaT | null;
+  authorization: BeatLeaderAuthorizationSchemaT | null;
   integration: BeatLeaderIntegrationSchemaT | null;
   identity: BeatLeaderApiOauthIdentityBodySchemaT | null;
   tokens: Tokens;
@@ -166,8 +152,18 @@ type BeatLeaderCallbackStatus = {
 
 type DiscordCallbackStatus = {
   account: ToTAccountFlatSchemaT | null;
+  authorization: DiscordAuthorizationSchemaT | null;
   integration: DiscordIntegrationSchemaT | null;
   identity: DiscordApiUsersMeBodySchemaT | null;
+  tokens: Tokens;
+  sessionId: ToTAccountSessionId;
+};
+
+type TwitchCallbackStatus = {
+  account: ToTAccountFlatSchemaT | null;
+  authorization: TwitchAuthorizationSchemaT | null;
+  integration: TwitchIntegrationSchemaT | null;
+  identity: GetHelixUsersItemSchemaT | null;
   tokens: Tokens;
   sessionId: ToTAccountSessionId;
 };
@@ -200,6 +196,20 @@ const getDiscordIdentityM = async (
   return Err(Error("Failed to get discord identity"));
 };
 
+const getTwitchIdentityM = async (
+  token: UserAccessToken,
+): Promise<Result<GetHelixUsersItemSchemaT, Error>> => {
+  const data = await TwitchHelixApiClient.users.get({
+    headers: createUserAuthorizationHeaders(TWITCH_API_CLIENT_ID, token),
+  });
+
+  if (data.ok) {
+    return Ok(data.data.data[0]);
+  }
+
+  return Err(Error("Failed to get twitch identity"));
+};
+
 const getAccountFromBeatLeaderConnectedAccount = async (
   beatLeaderIdentity: BeatLeaderApiOauthIdentityBodySchemaT,
 ): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
@@ -230,7 +240,22 @@ const getAccountFromDiscordConnectedAccount = async (
   return Err(Error("Can't find discord connected account"));
 };
 
-const getBeatLeaderIntegrationFromBeatLeaderIdentity = async (
+const getAccountFromTwitchConnectedAccount = async (
+  twitchIdentity: GetHelixUsersItemSchemaT,
+): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
+  const twitchConnectedAccounts = await dbEditor.ToTAccount.findBySecondaryIndex(
+    "twitchId",
+    twitchIdentity.id,
+  );
+  const twitchConnectedAccountFound = twitchConnectedAccounts.result.length > 0;
+  if (twitchConnectedAccountFound) {
+    const [connectedAccount] = twitchConnectedAccounts.result;
+    return Ok(connectedAccount.value);
+  }
+  return Err(Error("Can't find twitch connected account"));
+};
+
+const getBeatLeaderIntegrationFromBeatLeaderIdentityM = async (
   beatLeaderIdentity: BeatLeaderApiOauthIdentityBodySchemaT,
 ): Promise<Result<BeatLeaderIntegrationSchemaT, Error>> => {
   const beatLeaderIntegration = await dbEditor.BeatLeaderIntegration.find(beatLeaderIdentity.id);
@@ -240,7 +265,7 @@ const getBeatLeaderIntegrationFromBeatLeaderIdentity = async (
   return Err(Error("Can't find beatleader integration"));
 };
 
-const getDiscordIntegrationFromDiscordIdentity = async (
+const getDiscordIntegrationFromDiscordIdentityM = async (
   discordIdentity: DiscordApiUsersMeBodySchemaT,
 ): Promise<Result<DiscordIntegrationSchemaT, Error>> => {
   const discordIntegration = await dbEditor.DiscordIntegration.find(discordIdentity.id);
@@ -248,6 +273,16 @@ const getDiscordIntegrationFromDiscordIdentity = async (
     return Ok(discordIntegration.value);
   }
   return Err(Error("Can't find discord integration"));
+};
+
+const getTwitchIntegrationFromTwitchIdentityM = async (
+  twitchIdentity: GetHelixUsersItemSchemaT,
+): Promise<Result<TwitchIntegrationSchemaT, Error>> => {
+  const twitchIntegration = await dbEditor.TwitchIntegration.find(twitchIdentity.id);
+  if (twitchIntegration) {
+    return Ok(twitchIntegration.value);
+  }
+  return Err(Error("Can't find twitch integration"));
 };
 
 const getAccountFromBeatLeaderIntegrationM = async (
@@ -260,6 +295,36 @@ const getAccountFromBeatLeaderIntegrationM = async (
   return Err(Error("Can't find the account from beatleader integration"));
 };
 
+const getBeatLeaderAuthorizationFromBeatLeaderIdentityM = async (
+  identity: BeatLeaderApiOauthIdentityBodySchemaT,
+): Promise<Result<BeatLeaderAuthorizationSchemaT, Error>> => {
+  const account = await dbEditor.BeatLeaderAuthorization.find(identity.id);
+  if (account) {
+    return Ok(account.value);
+  }
+  return Err(Error("Can't find the beatleader authorization from beatleader identity"));
+};
+
+const getDiscordAuthorizationFromDiscordIdentityM = async (
+  identity: DiscordApiUsersMeBodySchemaT,
+): Promise<Result<DiscordAuthorizationSchemaT, Error>> => {
+  const account = await dbEditor.DiscordAuthorization.find(identity.id);
+  if (account) {
+    return Ok(account.value);
+  }
+  return Err(Error("Can't find the discord authorization from discord identity"));
+};
+
+const getTwitchAuthorizationFromTwitchIdentityM = async (
+  identity: GetHelixUsersItemSchemaT,
+): Promise<Result<TwitchAuthorizationSchemaT, Error>> => {
+  const account = await dbEditor.TwitchAuthorization.find(identity.id);
+  if (account) {
+    return Ok(account.value);
+  }
+  return Err(Error("Can't find the twitch authorization from twitch identity"));
+};
+
 const getAccountFromDiscordIntegrationM = async (
   discordIntegration: DiscordIntegrationSchemaT,
 ): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
@@ -270,10 +335,20 @@ const getAccountFromDiscordIntegrationM = async (
   return Err(Error("Can't find the account from discord integration"));
 };
 
+const getAccountFromTwitchIntegrationM = async (
+  twitchIntegration: TwitchIntegrationSchemaT,
+): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
+  const account = await dbEditor.ToTAccount.find(twitchIntegration.parentId);
+  if (account) {
+    return Ok(account.value);
+  }
+  return Err(Error("Can't find the account from twitch integration"));
+};
+
 const getAccountFromBeatLeaderIdentityM = async (
   beatLeaderIdentity: BeatLeaderApiOauthIdentityBodySchemaT,
 ): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
-  const beatLeaderIntegrationM = await getBeatLeaderIntegrationFromBeatLeaderIdentity(beatLeaderIdentity);
+  const beatLeaderIntegrationM = await getBeatLeaderIntegrationFromBeatLeaderIdentityM(beatLeaderIdentity);
   if (beatLeaderIntegrationM.isOk()) {
     const beatLeaderIntegration = beatLeaderIntegrationM.unwrap();
     const accountM = await getAccountFromBeatLeaderIntegrationM(beatLeaderIntegration);
@@ -287,7 +362,7 @@ const getAccountFromBeatLeaderIdentityM = async (
 const getAccountFromDiscordIdentityM = async (
   discordIdentity: DiscordApiUsersMeBodySchemaT,
 ): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
-  const discordIntegrationM = await getDiscordIntegrationFromDiscordIdentity(discordIdentity);
+  const discordIntegrationM = await getDiscordIntegrationFromDiscordIdentityM(discordIdentity);
   if (discordIntegrationM.isOk()) {
     const discordIntegration = discordIntegrationM.unwrap();
     const accountM = await getAccountFromDiscordIntegrationM(discordIntegration);
@@ -296,6 +371,20 @@ const getAccountFromDiscordIdentityM = async (
     }
   }
   return Err(Error("Can't find account from discord integration"));
+};
+
+const getAccountFromTwitchIdentityM = async (
+  twitchIdentity: GetHelixUsersItemSchemaT,
+): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
+  const twitchIntegrationM = await getTwitchIntegrationFromTwitchIdentityM(twitchIdentity);
+  if (twitchIntegrationM.isOk()) {
+    const twitchIntegration = twitchIntegrationM.unwrap();
+    const accountM = await getAccountFromTwitchIntegrationM(twitchIntegration);
+    if (accountM.isOk()) {
+      return accountM;
+    }
+  }
+  return Err(Error("Can't find account from twitch integration"));
 };
 
 const getAccountFromBeatLeaderTokensM = async (tokens: Tokens): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
@@ -338,6 +427,26 @@ const getAccountFromDiscordTokensM = async (tokens: Tokens): Promise<Result<ToTA
   return Err(Error("Can't find account from discord tokens"));
 };
 
+const getAccountFromTwitchTokensM = async (tokens: Tokens): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
+  const twitchIdentityM = await getTwitchIdentityM(makeUserAccessToken(tokens.accessToken));
+  if (twitchIdentityM.isErr()) {
+    return Err(Error("Can't fetch twitch identity using this access token"));
+  }
+  const twitchIdentity = twitchIdentityM.unwrap();
+
+  const connectedAccountM = await getAccountFromTwitchConnectedAccount(twitchIdentity);
+  if (connectedAccountM.isOk()) {
+    return Ok(connectedAccountM.unwrap());
+  }
+
+  const integrationAccountM = await getAccountFromTwitchIdentityM(twitchIdentity);
+  if (integrationAccountM.isOk()) {
+    return Ok(integrationAccountM.unwrap());
+  }
+
+  return Err(Error("Can't find account from twitch tokens"));
+};
+
 export const getAccountFromAccessTokensM = async (tokens: AllTokens): Promise<Result<ToTAccountFlatSchemaT, Error>> => {
   if (tokens.beatLeader) {
     const accountM = await getAccountFromBeatLeaderTokensM(tokens.beatLeader);
@@ -348,6 +457,13 @@ export const getAccountFromAccessTokensM = async (tokens: AllTokens): Promise<Re
 
   if (tokens.discord) {
     const accountM = await getAccountFromDiscordTokensM(tokens.discord);
+    if (accountM.isOk()) {
+      return accountM;
+    }
+  }
+
+  if (tokens.twitch) {
+    const accountM = await getAccountFromTwitchTokensM(tokens.twitch);
     if (accountM.isOk()) {
       return accountM;
     }
@@ -384,6 +500,7 @@ export const getBeatLeaderCallbackStatusFromBeatLeaderTokens = async (
     return {
       identity: null,
       account: null,
+      authorization: null,
       integration: null,
       tokens,
       sessionId,
@@ -391,34 +508,30 @@ export const getBeatLeaderCallbackStatusFromBeatLeaderTokens = async (
   }
   const identity = identityM.unwrap();
 
-  const integrationM = await getBeatLeaderIntegrationFromBeatLeaderIdentity(identity);
-  if (integrationM.isErr()) {
+  const integrationM = await getBeatLeaderIntegrationFromBeatLeaderIdentityM(identity);
+  const integration = integrationM.isOk() ? integrationM.unwrap() : null;
+  const authorizationM = await getBeatLeaderAuthorizationFromBeatLeaderIdentityM(identity);
+  const authorization = authorizationM.isOk() ? authorizationM.unwrap() : null;
+
+  if (!integration) {
     const accountM = await getAccountFromBeatLeaderConnectedAccount(identity);
-    if (accountM.isErr()) {
-      return {
-        identity,
-        account: null,
-        integration: null,
-        tokens,
-        sessionId,
-      };
-    }
-    const account = accountM.unwrap();
+    const account = accountM.isOk() ? accountM.unwrap() : null;
     return {
       identity,
       account,
-      integration: null,
+      authorization,
+      integration,
       tokens,
       sessionId,
     };
   }
-  const integration = integrationM.unwrap();
 
   const accountM = await getAccountFromBeatLeaderIntegrationM(integration);
   if (accountM.isErr()) {
     return {
       identity,
       integration,
+      authorization: null,
       account: null,
       tokens,
       sessionId,
@@ -429,6 +542,55 @@ export const getBeatLeaderCallbackStatusFromBeatLeaderTokens = async (
   return {
     identity,
     account,
+    authorization,
+    integration,
+    tokens,
+    sessionId,
+  };
+};
+
+export const getTwitchCallbackStatusFromTwitchTokens = async (
+  tokens: Tokens,
+  sessionId: ToTAccountSessionId,
+): Promise<TwitchCallbackStatus> => {
+  const identityM = await getTwitchIdentityM(makeUserAccessToken(tokens.accessToken));
+  if (identityM.isErr()) {
+    return {
+      identity: null,
+      account: null,
+      authorization: null,
+      integration: null,
+      tokens,
+      sessionId,
+    };
+  }
+  const identity = identityM.unwrap();
+
+  const integrationM = await getTwitchIntegrationFromTwitchIdentityM(identity);
+  const integration = integrationM.isOk() ? integrationM.unwrap() : null;
+  const authorizationM = await getTwitchAuthorizationFromTwitchIdentityM(identity);
+  const authorization = authorizationM.isOk() ? authorizationM.unwrap() : null;
+
+  if (!integration) {
+    const accountM = await getAccountFromTwitchConnectedAccount(identity);
+    const account = accountM.isOk() ? accountM.unwrap() : null;
+    return {
+      identity,
+      account,
+      authorization,
+      integration,
+      tokens,
+      sessionId,
+    };
+  }
+
+  const accountM = await getAccountFromTwitchIntegrationM(integration);
+  const account = accountM.isOk() ? accountM.unwrap() : null;
+
+  return {
+    identity,
+    account,
+    authorization,
     integration,
     tokens,
     sessionId,
@@ -446,6 +608,7 @@ export const getDiscordCallbackStatusFromDiscordTokens = async (
     return {
       identity: null,
       account: null,
+      authorization: null,
       integration: null,
       tokens,
       sessionId,
@@ -453,44 +616,31 @@ export const getDiscordCallbackStatusFromDiscordTokens = async (
   }
   const identity = identityM.unwrap();
 
-  const integrationM = await getDiscordIntegrationFromDiscordIdentity(identity);
-  if (integrationM.isErr()) {
+  const integrationM = await getDiscordIntegrationFromDiscordIdentityM(identity);
+  const integration = integrationM.isOk() ? integrationM.unwrap() : null;
+  const authorizationM = await getDiscordAuthorizationFromDiscordIdentityM(identity);
+  const authorization = authorizationM.isOk() ? authorizationM.unwrap() : null;
+
+  if (!integration) {
     const accountM = await getAccountFromDiscordConnectedAccount(identity);
-    if (accountM.isErr()) {
-      return {
-        identity,
-        account: null,
-        integration: null,
-        tokens,
-        sessionId,
-      };
-    }
-    const account = accountM.unwrap();
+    const account = accountM.isOk() ? accountM.unwrap() : null;
     return {
       identity,
       account,
-      integration: null,
+      authorization,
+      integration,
       tokens,
       sessionId,
     };
   }
-  const integration = integrationM.unwrap();
 
   const accountM = await getAccountFromDiscordIntegrationM(integration);
-  if (accountM.isErr()) {
-    return {
-      identity,
-      integration,
-      account: null,
-      tokens,
-      sessionId,
-    };
-  }
-  const account = accountM.unwrap();
+  const account = accountM.isOk() ? accountM.unwrap() : null;
 
   return {
     identity,
     account,
+    authorization,
     integration,
     tokens,
     sessionId,
@@ -509,6 +659,7 @@ const ensureToTAccount = async (
   const beatLeaderId = defaults.beatLeaderId ?? null;
   const sessionIds = defaults.sessionIds ?? [];
   const discordId = defaults.discordId ?? null;
+  const twitchId = defaults.twitchId ?? null;
 
   const newAccount = {
     id,
@@ -516,6 +667,7 @@ const ensureToTAccount = async (
     beatLeaderId,
     discordId,
     sessionIds,
+    twitchId,
   } satisfies ToTAccountFlatSchemaT;
 
   const resolve = await dbEditor.ToTAccount.add(newAccount);
@@ -527,106 +679,229 @@ const ensureToTAccount = async (
   return Err(Error("Failed to create a new ToTAccount"));
 };
 
-const ensureBeatLeaderIntegration = async (
-  integration: BeatLeaderIntegrationSchemaT | null,
-  defaults: BeatLeaderIntegrationSchemaT,
-): Promise<Result<BeatLeaderIntegrationSchemaT, Error>> => {
-  if (integration) return Ok(integration);
+type KvDexSchemaItemAddValue<K extends keyof typeof dbEditorSchema> = Parameters<
+  ReturnType<typeof dbEditorSchema[K]>["add"]
+>["0"];
+const createEnsureDatabaseItem = <K extends keyof typeof dbEditor["schema"]>(
+  databaseKey: K,
+) =>
+async <T extends KvDexSchemaItemAddValue<K>>(
+  item: T | null,
+  defaults: T,
+): Promise<Result<T, Error>> => {
+  if (item) return Ok(item);
 
-  console.log("Creating new BeatLeaderIntegration");
-  const resolve = await dbEditor.BeatLeaderIntegration.add(defaults);
-
-  if (resolve.ok) {
-    return Ok(defaults);
-  }
-
-  return Err(Error("Failed to create a new BeatLeaderIntegration"));
-};
-
-const ensureDiscordIntegration = async (
-  integration: DiscordIntegrationSchemaT | null,
-  defaults: DiscordIntegrationSchemaT,
-): Promise<Result<DiscordIntegrationSchemaT, Error>> => {
-  if (integration) return Ok(integration);
-
-  console.log("Creating new DiscordIntegration");
-
-  const resolve = await dbEditor.DiscordIntegration.add(defaults);
+  console.log(`Creating new ${databaseKey}`);
+  const resolve = await dbEditor[databaseKey].add(defaults as any); // TODO(@Danielduel) unhack this
 
   if (resolve.ok) {
     return Ok(defaults);
   }
 
-  return Err(Error("Failed to create a new BeatLeaderIntegration"));
+  return Err(Error(`Failed to create a new ${databaseKey}`));
+};
+export const ensureBeatLeaderIntegration = createEnsureDatabaseItem("BeatLeaderIntegration");
+export const ensureBeatLeaderAuthorization = createEnsureDatabaseItem("BeatLeaderAuthorization");
+export const ensureDiscordIntegration = createEnsureDatabaseItem("DiscordIntegration");
+export const ensureDiscordAuthorization = createEnsureDatabaseItem("DiscordAuthorization");
+export const ensureTwitchIntegration = createEnsureDatabaseItem("TwitchIntegration");
+export const ensureTwitchAuthorization = createEnsureDatabaseItem("TwitchAuthorization");
+
+/**
+ *         itemA        ┌─────────┐    itemB
+ *                      │         ▼
+ *  id (atobKey) (A) ◄──┼────┐   id (btoaKey) (B)
+ *                      │    │
+ *                      ▼    │
+ *  childId (atobLink) (C)   └─► childId (btoaLink) (D)
+ */
+
+type KvDexSchemaItemUpdateValue<K extends keyof typeof dbEditorSchema> = Parameters<
+  ReturnType<typeof dbEditorSchema[K]>["update"]
+>["1"];
+const createEnsureLink = <
+  K1 extends keyof typeof dbEditor["schema"],
+  K2 extends keyof typeof dbEditor["schema"],
+  I1 extends KvDexSchemaItemUpdateValue<K1>,
+  I2 extends KvDexSchemaItemUpdateValue<K2>,
+  A extends keyof I1,
+  B extends keyof I2,
+  C extends keyof I1,
+  D extends keyof I2,
+>(
+  databaseKeyItemA: K1,
+  databaseKeyItemB: K2,
+  atobKey: A,
+  btoaKey: B,
+  atobLink: C,
+  btoaLink: D,
+) =>
+async <
+  ItemA extends I1,
+  ItemB extends I2,
+>(
+  itemA: ItemA,
+  itemB: ItemB,
+): Promise<Result<void, Error>> => {
+  const idA = itemA[atobKey];
+  const childA = itemA[atobLink];
+  const idB = itemB[btoaKey];
+  const childB = itemB[btoaLink];
+
+  // @ts-ignore I don't care, it's fine. I spent an hour trying to metaprogram this link, but I surrender.
+  const isALinked = idA === childB;
+
+  // @ts-ignore I don't care, it's fine. I spent an hour trying to metaprogram this link, but I surrender.
+  const isBLinked = idB === childA;
+
+  if (!isALinked || !isBLinked) {
+    console.log(`
+      Check failed, updating.
+      isALinked=${isALinked} (From ${databaseKeyItemB}(B) to ${databaseKeyItemA}(A))
+      itemA.${atobKey as string} === itemB.${btoaLink as string}
+      itemA.${atobKey as string} is ${itemA[atobKey]}
+      itemB.${btoaLink as string} is ${itemB[btoaLink]}
+      
+      isBLinked=${isBLinked} (From ${databaseKeyItemA}(A) to ${databaseKeyItemB}(B))
+      itemB.${btoaKey as string} === itemA.${atobLink as string}
+      itemB.${btoaKey as string} is ${itemB[btoaKey]}
+      itemA.${atobLink as string} is ${itemA[atobLink]}
+`);
+  }
+
+  if (!isALinked) {
+    console.log(`Update ${databaseKeyItemB}.${btoaLink as string} = ${idA}`);
+    // @ts-ignore I don't care, it's fine. I spent an hour trying to metaprogram this link, but I surrender.
+    const result = await dbEditor[databaseKeyItemB].update(idB, {
+      [btoaLink]: idA,
+    });
+    if (!result.ok) {
+      // @ts-ignore I don't care, it's fine. I spent an hour trying to metaprogram this link, but I surrender.
+      return Err(Error(`Can't update ${databaseKeyItemB}.${btoaLink as string} = ${idA} for ${idB}`));
+    }
+  }
+
+  if (!isBLinked) {
+    console.log(`Update ${databaseKeyItemA}.${atobLink as string} = ${idB}`);
+    // @ts-ignore I don't care, it's fine. I spent an hour trying to metaprogram this link, but I surrender.
+    const result = await dbEditor[databaseKeyItemA].update(idA, {
+      [atobLink]: idB,
+    });
+    if (!result.ok) {
+      // @ts-ignore I don't care, it's fine. I spent an hour trying to metaprogram this link, but I surrender.
+      return Err(Error(`Can't update ${databaseKeyItemA}.${atobLink as string} = ${idB} for ${idA}`));
+    }
+  }
+
+  return Ok();
 };
 
-const ensureBeatLeaderIntegrationLink = async (
-  account: ToTAccountFlatSchemaT,
-  integration: BeatLeaderIntegrationSchemaT,
+const ensureDiscordIntegrationLink = createEnsureLink(
+  "ToTAccount",
+  "DiscordIntegration",
+  "id",
+  "id",
+  "discordId",
+  "parentId",
+);
+
+const ensureDiscordAuthorizationLink = createEnsureLink(
+  "ToTAccount",
+  "DiscordAuthorization",
+  "id",
+  "id",
+  "discordId",
+  "parentId",
+);
+
+const ensureBeatLeaderIntegrationLink = createEnsureLink(
+  "ToTAccount",
+  "BeatLeaderIntegration",
+  "id",
+  "id",
+  "beatLeaderId",
+  "parentId",
+);
+
+const ensureBeatLeaderAuthorizationLink = createEnsureLink(
+  "ToTAccount",
+  "BeatLeaderAuthorization",
+  "id",
+  "id",
+  "beatLeaderId",
+  "parentId",
+);
+
+const ensureTwitchIntegrationLink = createEnsureLink(
+  "ToTAccount",
+  "TwitchIntegration",
+  "id",
+  "id",
+  "twitchId",
+  "parentId",
+);
+
+const ensureTwitchAuthorizationLink = createEnsureLink(
+  "ToTAccount",
+  "TwitchAuthorization",
+  "id",
+  "id",
+  "twitchId",
+  "parentId",
+);
+
+export const processTwitchStatusForNewAccount = async (
+  status: TwitchCallbackStatus,
 ) => {
-  const isChild = account.beatLeaderId === integration.id;
-  const isParent = account.id === integration.parentId;
+  if (!status.identity) return;
 
-  if (isChild && isParent) return Ok();
+  const accountM = await ensureToTAccount(status.account, {
+    twitchId: status.identity.id,
+    sessionIds: [status.sessionId],
+  });
+  if (accountM.isErr()) {
+    throw accountM.unwrapErr();
+  }
+  const account = accountM.unwrap();
 
-  if (!isChild) {
-    console.log("Updating ToTAccount BeatLeader integration id");
+  const integrationM = await ensureTwitchIntegration(status.integration, {
+    id: status.identity.id,
+    parentId: account.id,
+    displayName: status.identity.display_name,
+    login: status.identity.login,
+  });
+  if (integrationM.isErr()) {
+    throw integrationM.unwrapErr();
+  }
+  const integration = integrationM.unwrap();
 
-    const isChildResult = await dbEditor.ToTAccount.update(account.id, {
-      beatLeaderId: integration.id,
-    });
+  const authorizationM = await ensureTwitchAuthorization(status.authorization, {
+    id: status.identity.id,
+    parentId: account.id,
 
-    if (!isChildResult.ok) {
-      return Err(Error("Can't update ToTAccount BeatLeader integration id"));
-    }
+    accessToken: makeUserAccessToken(status.tokens.accessToken),
+    refreshToken: makeUserRefreshToken(status.tokens.refreshToken!),
+    expires: new Date(Date.now() + status.tokens.expiresIn!),
+  });
+  if (authorizationM.isErr()) {
+    throw authorizationM.unwrapErr();
+  }
+  const authorization = authorizationM.unwrap();
+
+  const integrationLinkingM = await ensureTwitchIntegrationLink(account, integration);
+  if (integrationLinkingM.isErr()) {
+    throw integrationLinkingM.unwrapErr();
   }
 
-  if (!isParent) {
-    console.log("Updating BeatLeaderIntegration parent id");
-
-    const isParentResult = await dbEditor.BeatLeaderIntegration.update(integration.id, {
-      parentId: account.id,
-    });
-
-    if (!isParentResult.ok) {
-      return Err(Error("Can't update BeatLeaderIntegration parent id"));
-    }
+  const authorizationLinkingM = await ensureTwitchAuthorizationLink(account, authorization);
+  if (authorizationLinkingM.isErr()) {
+    throw authorizationLinkingM.unwrapErr();
   }
 
-  return Ok();
-};
-
-const ensureDiscordIntegrationLink = async (account: ToTAccountFlatSchemaT, integration: DiscordIntegrationSchemaT) => {
-  const isChild = account.discordId === integration.id;
-  const isParent = account.id === integration.parentId;
-
-  if (isChild && isParent) return Ok();
-
-  if (!isChild) {
-    console.log("Updating ToTAccount discord integration id");
-
-    const isChildResult = await dbEditor.ToTAccount.update(account.id, {
-      discordId: integration.id,
-    });
-
-    if (!isChildResult.ok) {
-      return Err(Error("Can't update ToTAccount discord integration id"));
-    }
+  const accountSessionM = await registerToTAccountSession(status.sessionId, account, true);
+  if (accountSessionM.isErr()) {
+    throw accountSessionM.unwrapErr();
   }
-
-  if (!isParent) {
-    console.log("Updating DiscordIntegration parent id");
-
-    const isParentResult = await dbEditor.DiscordIntegration.update(integration.id, {
-      parentId: account.id,
-    });
-
-    if (!isParentResult.ok) {
-      return Err(Error("Can't update DiscordIntegration parent id"));
-    }
-  }
-
-  return Ok();
 };
 
 export const processBeatLeaderStatusForNewAccount = async (
@@ -647,18 +922,33 @@ export const processBeatLeaderStatusForNewAccount = async (
     id: status.identity.id,
     parentId: account.id,
     name: status.identity.name,
-    accessToken: makeBeatLeaderUserAccessToken(status.tokens.accessToken),
-    refreshToken: makeBeatLeaderUserRefreshToken(status.tokens.refreshToken!),
-    expires: new Date(Date.now() + status.tokens.expiresIn!),
   });
   if (integrationM.isErr()) {
     throw integrationM.unwrapErr();
   }
   const integration = integrationM.unwrap();
 
-  const linkingM = await ensureBeatLeaderIntegrationLink(account, integration);
-  if (linkingM.isErr()) {
-    throw linkingM.unwrapErr();
+  const authorizationM = await ensureBeatLeaderAuthorization(status.authorization, {
+    id: status.identity.id,
+    parentId: account.id,
+
+    accessToken: makeBeatLeaderUserAccessToken(status.tokens.accessToken),
+    refreshToken: makeBeatLeaderUserRefreshToken(status.tokens.refreshToken!),
+    expires: new Date(Date.now() + status.tokens.expiresIn!),
+  });
+  if (authorizationM.isErr()) {
+    throw authorizationM.unwrapErr();
+  }
+  const authorization = authorizationM.unwrap();
+
+  const integrationLinkingM = await ensureBeatLeaderIntegrationLink(account, integration);
+  if (integrationLinkingM.isErr()) {
+    throw integrationLinkingM.unwrapErr();
+  }
+
+  const authorizationLinkingM = await ensureBeatLeaderAuthorizationLink(account, authorization);
+  if (authorizationLinkingM.isErr()) {
+    throw authorizationLinkingM.unwrapErr();
   }
 
   const accountSessionM = await registerToTAccountSession(status.sessionId, account, true);
@@ -688,19 +978,33 @@ export const processDiscordStatusForNewAccount = async (
     avatar: status.identity.avatar,
     global_name: status.identity.global_name,
     username: status.identity.username,
-
-    accessToken: makeDiscordUserAccessToken(status.tokens.accessToken),
-    refreshToken: makeDiscordUserRefreshToken(status.tokens.refreshToken!),
-    expires: new Date(Date.now() + status.tokens.expiresIn!),
   });
   if (integrationM.isErr()) {
     throw integrationM.unwrapErr();
   }
   const integration = integrationM.unwrap();
 
-  const linkingM = await ensureDiscordIntegrationLink(account, integration);
-  if (linkingM.isErr()) {
-    throw linkingM.unwrapErr();
+  const authorizationM = await ensureDiscordAuthorization(status.authorization, {
+    id: status.identity.id,
+    parentId: account.id,
+
+    accessToken: makeDiscordUserAccessToken(status.tokens.accessToken),
+    refreshToken: makeDiscordUserRefreshToken(status.tokens.refreshToken!),
+    expires: new Date(Date.now() + status.tokens.expiresIn!),
+  });
+  if (authorizationM.isErr()) {
+    throw authorizationM.unwrapErr();
+  }
+  const authorization = authorizationM.unwrap();
+
+  const integrationLinkingM = await ensureDiscordIntegrationLink(account, integration);
+  if (integrationLinkingM.isErr()) {
+    throw integrationLinkingM.unwrapErr();
+  }
+
+  const authorizationLinkingM = await ensureDiscordAuthorizationLink(account, authorization);
+  if (authorizationLinkingM.isErr()) {
+    throw authorizationLinkingM.unwrapErr();
   }
 
   const accountSessionM = await registerToTAccountSession(status.sessionId, account, true);
@@ -723,6 +1027,54 @@ const integrityCheckForStatusAndExistingAccount = (
   }
 };
 
+export const processTwitchStatusForExistingAccount = async (
+  existingAccount: ToTAccountFlatSchemaT,
+  status: TwitchCallbackStatus,
+) => {
+  if (!status.identity) return;
+
+  integrityCheckForStatusAndExistingAccount("processTwitchStatusForExistingAccount", status, existingAccount);
+
+  const accountSessionM = await registerToTAccountSession(status.sessionId, existingAccount);
+  if (accountSessionM.isErr()) {
+    throw accountSessionM.unwrapErr();
+  }
+
+  const integrationM = await ensureTwitchIntegration(status.integration, {
+    id: status.identity.id,
+    parentId: existingAccount.id,
+    displayName: status.identity.display_name,
+    login: status.identity.login,
+  });
+  if (integrationM.isErr()) {
+    throw integrationM.unwrapErr();
+  }
+  const integration = integrationM.unwrap();
+
+  const authorizationM = await ensureTwitchAuthorization(status.authorization, {
+    id: status.identity.id,
+    parentId: existingAccount.id,
+
+    accessToken: makeUserAccessToken(status.tokens.accessToken),
+    refreshToken: makeUserRefreshToken(status.tokens.refreshToken!),
+    expires: new Date(Date.now() + status.tokens.expiresIn!),
+  });
+  if (authorizationM.isErr()) {
+    throw authorizationM.unwrapErr();
+  }
+  const authorization = authorizationM.unwrap();
+
+  const integrationLinkingM = await ensureTwitchIntegrationLink(existingAccount, integration);
+  if (integrationLinkingM.isErr()) {
+    throw integrationLinkingM.unwrapErr();
+  }
+
+  const authorizationLinkingM = await ensureTwitchAuthorizationLink(existingAccount, authorization);
+  if (authorizationLinkingM.isErr()) {
+    throw authorizationLinkingM.unwrapErr();
+  }
+};
+
 export const processBeatLeaderStatusForExistingAccount = async (
   existingAccount: ToTAccountFlatSchemaT,
   status: BeatLeaderCallbackStatus,
@@ -740,18 +1092,33 @@ export const processBeatLeaderStatusForExistingAccount = async (
     id: status.identity.id,
     parentId: existingAccount.id,
     name: status.identity.name,
-    accessToken: makeBeatLeaderUserAccessToken(status.tokens.accessToken),
-    refreshToken: makeBeatLeaderUserRefreshToken(status.tokens.refreshToken!),
-    expires: new Date(Date.now() + status.tokens.expiresIn!),
   });
   if (integrationM.isErr()) {
     throw integrationM.unwrapErr();
   }
   const integration = integrationM.unwrap();
 
-  const linkingM = await ensureBeatLeaderIntegrationLink(existingAccount, integration);
-  if (linkingM.isErr()) {
-    throw linkingM.unwrapErr();
+  const authorizationM = await ensureBeatLeaderAuthorization(status.authorization, {
+    id: status.identity.id,
+    parentId: existingAccount.id,
+
+    accessToken: makeBeatLeaderUserAccessToken(status.tokens.accessToken),
+    refreshToken: makeBeatLeaderUserRefreshToken(status.tokens.refreshToken!),
+    expires: new Date(Date.now() + status.tokens.expiresIn!),
+  });
+  if (authorizationM.isErr()) {
+    throw authorizationM.unwrapErr();
+  }
+  const authorization = authorizationM.unwrap();
+
+  const integrationLinkingM = await ensureBeatLeaderIntegrationLink(existingAccount, integration);
+  if (integrationLinkingM.isErr()) {
+    throw integrationLinkingM.unwrapErr();
+  }
+
+  const authorizationLinkingM = await ensureBeatLeaderAuthorizationLink(existingAccount, authorization);
+  if (authorizationLinkingM.isErr()) {
+    throw authorizationLinkingM.unwrapErr();
   }
 };
 
@@ -775,19 +1142,33 @@ export const processDiscordStatusForExistingAccount = async (
     avatar: status.identity.avatar,
     global_name: status.identity.global_name,
     username: status.identity.username,
-
-    accessToken: makeDiscordUserAccessToken(status.tokens.accessToken),
-    refreshToken: makeDiscordUserRefreshToken(status.tokens.refreshToken!),
-    expires: new Date(Date.now() + status.tokens.expiresIn!),
   });
   if (integrationM.isErr()) {
     throw integrationM.unwrapErr();
   }
   const integration = integrationM.unwrap();
 
-  const linkingM = await ensureDiscordIntegrationLink(existingAccount, integration);
-  if (linkingM.isErr()) {
-    throw linkingM.unwrapErr();
+  const authorizationM = await ensureDiscordAuthorization(status.authorization, {
+    id: status.identity.id,
+    parentId: existingAccount.id,
+
+    accessToken: makeDiscordUserAccessToken(status.tokens.accessToken),
+    refreshToken: makeDiscordUserRefreshToken(status.tokens.refreshToken!),
+    expires: new Date(Date.now() + status.tokens.expiresIn!),
+  });
+  if (authorizationM.isErr()) {
+    throw authorizationM.unwrapErr();
+  }
+  const authorization = authorizationM.unwrap();
+
+  const integrationLinkingM = await ensureDiscordIntegrationLink(existingAccount, integration);
+  if (integrationLinkingM.isErr()) {
+    throw integrationLinkingM.unwrapErr();
+  }
+
+  const authorizationLinkingM = await ensureDiscordAuthorizationLink(existingAccount, authorization);
+  if (authorizationLinkingM.isErr()) {
+    throw authorizationLinkingM.unwrapErr();
   }
 };
 
@@ -845,6 +1226,10 @@ export const registerToTAccountSession = async (
 //   await dbEditor.ToTAccountSession.deleteMany();
 //   await dbEditor.BeatLeaderIntegration.deleteMany();
 //   await dbEditor.DiscordIntegration.deleteMany();
+//   await dbEditor.TwitchIntegration.deleteMany();
+//   await dbEditor.BeatLeaderAuthorization.deleteMany();
+//   await dbEditor.DiscordAuthorization.deleteMany();
+//   await dbEditor.TwitchAuthorization.deleteMany();
 //   console.log("Nuke complete");
 // };
 // await nukeAccountData();

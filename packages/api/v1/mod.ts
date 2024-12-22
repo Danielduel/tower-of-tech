@@ -42,6 +42,16 @@ import {
 } from "@/packages/api/v1/auth/beatleader-config.ts";
 
 import { apiV1HandlerAuthMe, apiV1HandlerAuthMeRoute } from "@/packages/api/v1/auth/me.ts";
+import {
+  apiV1HandlerAuthTwitchOauthCallbackRoute,
+  apiV1HandlerAuthTwitchOauthSignInRoute,
+  apiV1HandlerAuthTwitchOauthSignOutRoute,
+} from "@/packages/api/v1/auth/twitch-config.ts";
+import {
+  apiV1HandlerAuthTwitchOauthCallback,
+  apiV1HandlerAuthTwitchOauthSignIn,
+  apiV1HandlerAuthTwitchOauthSignOut,
+} from "@/packages/api/v1/auth/twitch.ts";
 
 const route = router({
   [apiV1HandlerAuthMeRoute]: apiV1HandlerAuthMe,
@@ -53,6 +63,10 @@ const route = router({
   [apiV1HandlerAuthBeatLeaderOauthSignInRoute]: apiV1HandlerAuthBeatLeaderOauthSignIn,
   [apiV1HandlerAuthBeatLeaderOauthSignOutRoute]: apiV1HandlerAuthBeatLeaderOauthSignOut,
   [apiV1HandlerAuthBeatLeaderOauthCallbackRoute]: apiV1HandlerAuthBeatLeaderOauthCallback,
+
+  [apiV1HandlerAuthTwitchOauthSignInRoute]: apiV1HandlerAuthTwitchOauthSignIn,
+  [apiV1HandlerAuthTwitchOauthSignOutRoute]: apiV1HandlerAuthTwitchOauthSignOut,
+  [apiV1HandlerAuthTwitchOauthCallbackRoute]: apiV1HandlerAuthTwitchOauthCallback,
 
   [apiV1HandlerGetPlaylistByIdRoute]: apiV1HandlerGetPlaylistById,
   [apiV1HandlerGetPlaylistByIdDownloadRoute]: apiV1HandlerGetPlaylistByIdDownload,

@@ -134,6 +134,16 @@ export const links = {
             ) => `${origin}/api/v1/auth/beatleader/oauth/signout`,
           },
         },
+        twitch: {
+          oauth: {
+            signIn: (
+              origin: string = defaultOrigin,
+            ) => `${origin}/api/v1/auth/twitch/oauth/signin`,
+            signOut: (
+              origin: string = defaultOrigin,
+            ) => `${origin}/api/v1/auth/twitch/oauth/signout`,
+          },
+        },
       },
       discord: {
         playlist: {

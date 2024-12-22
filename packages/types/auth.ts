@@ -10,6 +10,9 @@ import {
   discordUserIdSchema,
   discordUserRefreshTokenSchema,
 } from "@/packages/api-discord/brand.ts";
+import { broadcasterIdSchema } from "@/packages/api-twitch/helix/brand.ts";
+import { userAccessTokenSchema } from "@/packages/api-twitch/helix/brand.ts";
+import { userRefreshTokenSchema } from "@/packages/api-twitch/helix/brand.ts";
 
 export type ToTAccountId = Brand<string, "ToTAccountId">;
 export const makeToTAccountId = make<ToTAccountId>();
@@ -26,50 +29,52 @@ export const DiscordIntegrationSchema = z.object({
   username: z.string(),
   global_name: z.string(),
   avatar: z.string(),
+});
+export type DiscordIntegrationSchemaT = typeof DiscordIntegrationSchema._type;
+export const DiscordAuthorizationSchema = z.object({
+  id: discordUserIdSchema,
+  parentId: ToTAccountIdSchema,
 
   accessToken: discordUserAccessTokenSchema,
   refreshToken: discordUserRefreshTokenSchema,
   expires: z.date(),
 });
-export type DiscordIntegrationSchemaT = typeof DiscordIntegrationSchema._type;
-
-export const DiscordIntegrationSafeSchema = z.object({
-  id: discordUserIdSchema,
-  parentId: ToTAccountIdSchema,
-
-  username: z.string(),
-  global_name: z.string(),
-  avatar: z.string(),
-
-  accessToken: z.never(),
-  refreshToken: z.never(),
-  expires: z.never(),
-});
-export type DiscordIntegrationSafeSchemaT = typeof DiscordIntegrationSafeSchema._type;
+export type DiscordAuthorizationSchemaT = typeof DiscordAuthorizationSchema._type;
 
 export const BeatLeaderIntegrationSchema = z.object({
   id: beatLeaderUserIdSchema,
   parentId: ToTAccountIdSchema,
 
   name: z.string(),
+});
+export type BeatLeaderIntegrationSchemaT = typeof BeatLeaderIntegrationSchema._type;
+export const BeatLeaderAuthorizationSchema = z.object({
+  id: beatLeaderUserIdSchema,
+  parentId: ToTAccountIdSchema,
 
   accessToken: beatLeaderUserAccessTokenSchema,
   refreshToken: beatLeaderUserRefreshTokenSchema,
   expires: z.date(),
 });
-export type BeatLeaderIntegrationSchemaT = typeof BeatLeaderIntegrationSchema._type;
+export type BeatLeaderAuthorizationSchemaT = typeof BeatLeaderAuthorizationSchema._type;
 
-export const BeatLeaderIntegrationSafeSchema = z.object({
-  id: beatLeaderUserIdSchema,
+export const TwitchIntegrationSchema = z.object({
+  id: broadcasterIdSchema,
   parentId: ToTAccountIdSchema,
 
-  name: z.string(),
-
-  accessToken: z.never(),
-  refreshToken: z.never(),
-  expires: z.never(),
+  login: z.string(),
+  displayName: z.string().nullable().default(null),
 });
-export type BeatLeaderIntegrationSafeSchemaT = typeof BeatLeaderIntegrationSafeSchema._type;
+export type TwitchIntegrationSchemaT = typeof TwitchIntegrationSchema._type;
+export const TwitchAuthorizationSchema = z.object({
+  id: broadcasterIdSchema,
+  parentId: ToTAccountIdSchema,
+
+  accessToken: userAccessTokenSchema,
+  refreshToken: userRefreshTokenSchema,
+  expires: z.date(),
+});
+export type TwitchAuthorizationSchemaT = typeof TwitchAuthorizationSchema._type;
 
 export const ToTAccountSessionSchema = z.object({
   id: ToTAccountSessionIdSchema,
@@ -92,23 +97,11 @@ export const ToTAccountSchema = z.object({
 
   discordId: discordUserIdSchema.nullable().default(null),
   discord: DiscordIntegrationSchema.nullable().default(null),
+
+  twitchId: broadcasterIdSchema.nullable().default(null),
+  twitch: TwitchIntegrationSchema.nullable().default(null),
 });
 export type ToTAccountSchemaT = typeof ToTAccountSchema._type;
-
-export const ToTAccountSafeSchema = z.object({
-  id: ToTAccountIdSchema,
-  version: z.number().default(0),
-
-  sessions: z.array(ToTAccountSessionSchema),
-  sessionIds: z.array(ToTAccountSessionIdSchema),
-
-  beatLeaderId: beatLeaderUserIdSchema.nullable().default(null),
-  beatLeader: BeatLeaderIntegrationSafeSchema.nullable().default(null),
-
-  discordId: discordUserIdSchema.nullable().default(null),
-  discord: DiscordIntegrationSafeSchema.nullable().default(null),
-});
-export type ToTAccountSafeSchemaT = typeof ToTAccountSafeSchema._type;
 
 export const ToTAccountFlatSchema = z.object({
   id: ToTAccountIdSchema,
@@ -117,5 +110,6 @@ export const ToTAccountFlatSchema = z.object({
 
   beatLeaderId: beatLeaderUserIdSchema.nullable().default(null),
   discordId: discordUserIdSchema.nullable().default(null),
+  twitchId: broadcasterIdSchema.nullable().default(null),
 });
 export type ToTAccountFlatSchemaT = typeof ToTAccountFlatSchema._type;

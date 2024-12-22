@@ -19,6 +19,8 @@ export const ResendLinkTwitchBeatSaverResolvableIdKindSchema = z.object({
   comment: z.string().nullable().default(null),
   data: beatSaverMapIdSchema,
 });
+export type ResendLinkTwitchBeatSaverResolvableIdKindSchemaT =
+  typeof ResendLinkTwitchBeatSaverResolvableIdKindSchema._type;
 
 export const ResendLinkTwitchChannelSettingsFlatSchema = z.object({
   twitchId: broadcasterIdSchema,
