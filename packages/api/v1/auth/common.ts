@@ -41,8 +41,6 @@ import { GetHelixUsersItemSchemaT } from "@/packages/api-twitch/helix/helixUsers
 import { makeUserRefreshToken } from "@/packages/api-twitch/helix/brand.ts";
 
 const TWITCH_API_CLIENT_ID = Deno.env.get("TWITCH_API_CLIENT_ID")!;
-const TWITCH_API_CLIENT_SECRET = Deno.env.get("TWITCH_API_CLIENT_SECRET")!;
-const TWITCH_API_GRANT_TYPE = Deno.env.get("TWITCH_API_GRANT_TYPE")!;
 
 const getSessionFromSessionId = async (sessionId: ToTAccountSessionId) => {
   return await dbEditor.ToTAccountSession.find(sessionId);
