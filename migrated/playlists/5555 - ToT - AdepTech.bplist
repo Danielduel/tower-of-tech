@@ -137,10 +137,6 @@
         {
           "characteristic": "Standard",
           "name": "Normal"
-        },
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -1541,6 +1537,114 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "34C252E962F38BFDB05DE4EB692F3F65ACD3A072",
+      "levelid": "custom_level_34C252E962F38BFDB05DE4EB692F3F65ACD3A072",
+      "songName": "強風オールバック",
+      "levelAuthorName": "Ge2toro",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "13972AF7EAD7E23A3927247BEF0FC91F53A02778",
+      "levelid": "custom_level_13972AF7EAD7E23A3927247BEF0FC91F53A02778",
+      "songName": "Supernatural",
+      "levelAuthorName": "Eggcake, minsiii",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "C7F52DC50C1AB73D13614B898C0063AFAF0A0183",
+      "levelid": "custom_level_C7F52DC50C1AB73D13614B898C0063AFAF0A0183",
+      "songName": "VENTEN",
+      "levelAuthorName": "Kival Evan",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "F49231464C9A94A7DCAB481F07EB1F3BF0F4DB34",
+      "levelid": "custom_level_F49231464C9A94A7DCAB481F07EB1F3BF0F4DB34",
+      "songName": "Shinigami",
+      "levelAuthorName": "Ken_Monogatari",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "863E1B4F4DEE6F949BC02E200611DBF47A538096",
+      "levelid": "custom_level_863E1B4F4DEE6F949BC02E200611DBF47A538096",
+      "songName": "おべか / obeka",
+      "levelAuthorName": "katsu0dashi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "E1CE3A82B7B3B744665D98017E0F5C25F865572F",
+      "levelid": "custom_level_E1CE3A82B7B3B744665D98017E0F5C25F865572F",
+      "songName": "Half-Life",
+      "levelAuthorName": "TG90",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "9E83F01759646ECAB17AB92F9186FAC176533707",
+      "levelid": "custom_level_9E83F01759646ECAB17AB92F9186FAC176533707",
+      "songName": "Spring Thief",
+      "levelAuthorName": "chikinbiskit",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "176D62434E765D7AA0D347EC6235DE787C10CC20",
+      "levelid": "custom_level_176D62434E765D7AA0D347EC6235DE787C10CC20",
+      "songName": "The Journey Home",
+      "levelAuthorName": "ZeCube",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "C22CCE26E36704B4AD64E820F1986508D7C9BEE0",
+      "levelid": "custom_level_C22CCE26E36704B4AD64E820F1986508D7C9BEE0",
+      "songName": "Tetoris",
+      "levelAuthorName": "Gazer",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     }

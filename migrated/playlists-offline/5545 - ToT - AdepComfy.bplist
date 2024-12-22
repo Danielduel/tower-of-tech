@@ -602,18 +602,6 @@
       ]
     },
     {
-      "hash": "1646B71A9CA262CA56BDE71CC313D422964720AC",
-      "levelid": "custom_level_1646B71A9CA262CA56BDE71CC313D422964720AC",
-      "songName": "Feel It",
-      "levelAuthorName": "August",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "hash": "02B85D98CF71AA913723503466FA3DEDABD15EF0",
       "levelid": "custom_level_02B85D98CF71AA913723503466FA3DEDABD15EF0",
       "songName": "Heartbreak",
@@ -1414,6 +1402,142 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "DCBF1AE8FAF7C41586852CD99CEB25092A83C7A4",
+      "levelid": "custom_level_DCBF1AE8FAF7C41586852CD99CEB25092A83C7A4",
+      "songName": "Marunouchi Sadistic",
+      "levelAuthorName": "Emir",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "366D17739EC1C5FA7EB6579B991B4FB0CF34F344",
+      "levelid": "custom_level_366D17739EC1C5FA7EB6579B991B4FB0CF34F344",
+      "songName": "S7AGE",
+      "levelAuthorName": "Gabriel",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "9D9974056C0069768A7568A32377F8038860AA5A",
+      "levelid": "custom_level_9D9974056C0069768A7568A32377F8038860AA5A",
+      "songName": "Cerca/Esoterica",
+      "levelAuthorName": "take_nyan",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "B769BBFAFD818C5206DAA6B1F6362D5614467A20",
+      "levelid": "custom_level_B769BBFAFD818C5206DAA6B1F6362D5614467A20",
+      "songName": "Kakurenbo covered by SHIRATAMA UTANO",
+      "levelAuthorName": "Trisha",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "5E89C16A07034CE7654E30FCCD64BA9844534C67",
+      "levelid": "custom_level_5E89C16A07034CE7654E30FCCD64BA9844534C67",
+      "songName": "Anatasama",
+      "levelAuthorName": "Emir",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "F733640BB0F6CC3E2110534527679F51E5892B61",
+      "levelid": "custom_level_F733640BB0F6CC3E2110534527679F51E5892B61",
+      "songName": "The Weight Of Your Words",
+      "levelAuthorName": "Nebelmonster",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "AD3AE4645527E2FAC6678D9477AE7ECB60F0E40C",
+      "levelid": "custom_level_AD3AE4645527E2FAC6678D9477AE7ECB60F0E40C",
+      "songName": "Perfect Night",
+      "levelAuthorName": "Jonas_0_0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "8601EBB7142305A6560CDE19C6AEB8E389BCA34E",
+      "levelid": "custom_level_8601EBB7142305A6560CDE19C6AEB8E389BCA34E",
+      "songName": "Not Enough",
+      "levelAuthorName": "Spinvvy & Nugget",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "2804576D74BCDFD0906100E15491EC31AC33F2C8",
+      "levelid": "custom_level_2804576D74BCDFD0906100E15491EC31AC33F2C8",
+      "songName": "Arcade Dwellers",
+      "levelAuthorName": "Avexus, DirtyAlex & BanditByTheStreet",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "hash": "AC0DFA8A2E2DFC245C4843EDFB4F5B2C16E6F331",
+      "levelid": "custom_level_AC0DFA8A2E2DFC245C4843EDFB4F5B2C16E6F331",
+      "songName": "Diminitive",
+      "levelAuthorName": "gemboyong",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "4AEA162003D60203F16016C1298B1C61642307D5",
+      "levelid": "custom_level_4AEA162003D60203F16016C1298B1C61642307D5",
+      "songName": "アイ / AI",
+      "levelAuthorName": "meplauir",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     }

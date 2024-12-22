@@ -802,18 +802,6 @@
       ]
     },
     {
-      "hash": "BB1957731A7A84BB09BF2B35355C68616E63413B",
-      "levelid": "custom_level_BB1957731A7A84BB09BF2B35355C68616E63413B",
-      "songName": "Drink",
-      "levelAuthorName": "RealCoda & Batthew",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "hash": "FA4A78637C21CD5EC3AFAF6675FB52BC1C816512",
       "levelid": "custom_level_FA4A78637C21CD5EC3AFAF6675FB52BC1C816512",
       "songName": "chihiro",
@@ -842,6 +830,42 @@
       "levelid": "custom_level_029027EDC2D8FA9C720AC4ECBCD43C56172BEA6B",
       "songName": "In the Lobby",
       "levelAuthorName": "Muz",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C614A699FCBD68AC83D63EA81DC477A96D17049D",
+      "levelid": "custom_level_C614A699FCBD68AC83D63EA81DC477A96D17049D",
+      "songName": "If I Can Stop One Heart From Breaking",
+      "levelAuthorName": "Mirage & Cush",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "214E61174D8547B4C5BA340F660CE35A6A397C7E",
+      "levelid": "custom_level_214E61174D8547B4C5BA340F660CE35A6A397C7E",
+      "songName": "ETA",
+      "levelAuthorName": "Hener",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "32004430049E04E748B873EE97F4172C26625941",
+      "levelid": "custom_level_32004430049E04E748B873EE97F4172C26625941",
+      "songName": "Beings",
+      "levelAuthorName": "Phøenix & Skylerwolf127",
       "difficulties": [
         {
           "characteristic": "Standard",

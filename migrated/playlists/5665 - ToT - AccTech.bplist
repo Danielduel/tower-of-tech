@@ -2604,18 +2604,6 @@
       ]
     },
     {
-      "hash": "1758959387EBDBCD471CAD7481B3016F60F4DCA4",
-      "levelid": "custom_level_1758959387EBDBCD471CAD7481B3016F60F4DCA4",
-      "songName": "Unwelcome School",
-      "levelAuthorName": "Rusty vs. Narwhal",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
-        }
-      ]
-    },
-    {
       "hash": "D594F864DA0989F6FE8C8F18115E93EE7EB1D82C",
       "levelid": "custom_level_D594F864DA0989F6FE8C8F18115E93EE7EB1D82C",
       "songName": "bigassbearman",
@@ -2668,6 +2656,150 @@
       "levelid": "custom_level_E282519F24BC47EA3BD292F17F3D3AD79153C4C6",
       "songName": "Black Rover",
       "levelAuthorName": "JadenDaSweat2 & Glasso050",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "73F6B664BFE0A4BE3891E03ED31BDB49F27807AC",
+      "levelid": "custom_level_73F6B664BFE0A4BE3891E03ED31BDB49F27807AC",
+      "songName": "Simple Life",
+      "levelAuthorName": "Xenothas",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "1C6853D33F864FDE22F804FD05FA27D4C5F0568D",
+      "levelid": "custom_level_1C6853D33F864FDE22F804FD05FA27D4C5F0568D",
+      "songName": "APT",
+      "levelAuthorName": "Eggcake,Emiru\r\n",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "7AC2813DE226D07B5AD13B210A44ADA57E944431",
+      "levelid": "custom_level_7AC2813DE226D07B5AD13B210A44ADA57E944431",
+      "songName": "Get Through",
+      "levelAuthorName": "oegoe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "9E6C1618B1AA230BF0EC1E530C01241DC4D81839",
+      "levelid": "custom_level_9E6C1618B1AA230BF0EC1E530C01241DC4D81839",
+      "songName": "IYKYK",
+      "levelAuthorName": "minsiii",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "5F24C3A38C6E52448FF1E4EBBF6D88771B8124FA",
+      "levelid": "custom_level_5F24C3A38C6E52448FF1E4EBBF6D88771B8124FA",
+      "songName": "狂笑トリックスターズ",
+      "levelAuthorName": "Ge2toro",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "1AE9D74B80B5CBF1A580734CDAA2CB26426100C6",
+      "levelid": "custom_level_1AE9D74B80B5CBF1A580734CDAA2CB26426100C6",
+      "songName": "Poison Ivy",
+      "levelAuthorName": "JRE_McNuggies",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "563A3FB12320F6B022EE46BA7AB4E2253C1D477A",
+      "levelid": "custom_level_563A3FB12320F6B022EE46BA7AB4E2253C1D477A",
+      "songName": "Zunda Shaking",
+      "levelAuthorName": "Voidless",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "03F1DAAE723A610FB71B3FF7F99C945CCEB19D0D",
+      "levelid": "custom_level_03F1DAAE723A610FB71B3FF7F99C945CCEB19D0D",
+      "songName": "Feel It All",
+      "levelAuthorName": "Revelate",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "89E1613E8B3C26CE92D4F07FE0CB3D432CAA6770",
+      "levelid": "custom_level_89E1613E8B3C26CE92D4F07FE0CB3D432CAA6770",
+      "songName": "Bye Bye Bye",
+      "levelAuthorName": "FatBeanzoop & RFCaps",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "CBF2523E9050BB012F10104FF2CA5EA3C822F600",
+      "levelid": "custom_level_CBF2523E9050BB012F10104FF2CA5EA3C822F600",
+      "songName": "OMG",
+      "levelAuthorName": "Kassi & Jonas_0_0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "A3FBE48592186AA460A9F8E7E4AF041391F9A944",
+      "levelid": "custom_level_A3FBE48592186AA460A9F8E7E4AF041391F9A944",
+      "songName": "POW POW",
+      "levelAuthorName": "Jonas_0_0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "6BFD6E26C6774264396ADC8285186031D291216A",
+      "levelid": "custom_level_6BFD6E26C6774264396ADC8285186031D291216A",
+      "songName": "Every Second",
+      "levelAuthorName": "Feco",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -55,7 +55,7 @@ export const createOrUpdatePlaylist = async (
     console.log(err);
   }
   try {
-    console.log(`Adding playlist ${playlistId}`);
+    console.log(`Upsert playlist ${playlistId}`);
     return await dbEditor.BeatSaberPlaylist.upsert({
       id: playlistId,
       set: {

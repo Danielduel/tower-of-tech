@@ -918,18 +918,6 @@
       ]
     },
     {
-      "songName": "Lethaeus",
-      "levelAuthorName": "ob1cb",
-      "hash": "FE392A1E9010B8B8071B101B7CA6AA2AAEF0DC10",
-      "levelid": "custom_level_FE392A1E9010B8B8071B101B7CA6AA2AAEF0DC10",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Meowchine",
       "levelAuthorName": "CyanSnow",
       "hash": "24A148CDF2192F7A4F10A265B70E5C0DEB6424E9",
@@ -1582,6 +1570,102 @@
       "levelAuthorName": "zeon",
       "hash": "8FEFBE69AA38204C728116F8A7275EE9528D6140",
       "levelid": "custom_level_8FEFBE69AA38204C728116F8A7275EE9528D6140",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Metamorphose",
+      "levelAuthorName": "riisi",
+      "hash": "E01E580DB21BAFB8371E37EE30DC6F241E5394E8",
+      "levelid": "custom_level_E01E580DB21BAFB8371E37EE30DC6F241E5394E8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Luv U 4ll ♡ver",
+      "levelAuthorName": "August , Anzu7 & Voltage4536",
+      "hash": "FB67393DA5BBB21FC33D1B36DC41D0971CC97CB3",
+      "levelid": "custom_level_FB67393DA5BBB21FC33D1B36DC41D0971CC97CB3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Necromantic",
+      "levelAuthorName": "Kival Evan",
+      "hash": "80C0A103B0DF2B41B6687436FA6A0113CEA1F9B1",
+      "levelid": "custom_level_80C0A103B0DF2B41B6687436FA6A0113CEA1F9B1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Murder",
+      "levelAuthorName": "Undeceiver",
+      "hash": "6A37230FA519EE42B458ADE7A4AADDE2FEEB78C3",
+      "levelid": "custom_level_6A37230FA519EE42B458ADE7A4AADDE2FEEB78C3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "tropical night festival",
+      "levelAuthorName": "yabje & Fainted",
+      "hash": "00DB6BF71F7DD563D84BA35E89224B61C78DFBF2",
+      "levelid": "custom_level_00DB6BF71F7DD563D84BA35E89224B61C78DFBF2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "S.A.R.I.E.L.",
+      "levelAuthorName": "Kival Evan",
+      "hash": "0CEB78D6BE4622C0ACC40A2D7CE6DDB141750D76",
+      "levelid": "custom_level_0CEB78D6BE4622C0ACC40A2D7CE6DDB141750D76",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Dogbite",
+      "levelAuthorName": "Gabriel",
+      "hash": "59965FD85ADBA86C531D2659BA1F5049A21E8325",
+      "levelid": "custom_level_59965FD85ADBA86C531D2659BA1F5049A21E8325",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Official",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "AA0D6E3B034AD50B9DA467B11CCE0A454CB981CA",
+      "levelid": "custom_level_AA0D6E3B034AD50B9DA467B11CCE0A454CB981CA",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -6,10 +6,10 @@
   },
   "songs": [
     {
-      "songName": "Encounter",
-      "levelAuthorName": "Voidless",
       "hash": "1C8D22045AC39F4180EE97FF64372109028BBFC1",
       "levelid": "custom_level_1C8D22045AC39F4180EE97FF64372109028BBFC1",
+      "songName": "Encounter",
+      "levelAuthorName": "Voidless",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "songName": "YoiYoi Kokon",
-      "levelAuthorName": "staryouh",
       "hash": "621E2BEE72B926B126AB18E75DCE5B7B2AF4A5C3",
       "levelid": "custom_level_621E2BEE72B926B126AB18E75DCE5B7B2AF4A5C3",
+      "songName": "YoiYoi Kokon",
+      "levelAuthorName": "staryouh",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -30,10 +30,10 @@
       ]
     },
     {
-      "songName": "Diamond Eyes",
-      "levelAuthorName": "wangyufy&staryouth",
       "hash": "87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
       "levelid": "custom_level_87C8FC12200E836BFC0870D733FFCD8AD3F3CFEC",
+      "songName": "Diamond Eyes",
+      "levelAuthorName": "wangyufy&staryouth",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "songName": "The Master",
-      "levelAuthorName": "Galaxy as \"The Master\"",
       "hash": "8736D296EDFADEC149E895E274DD03D6561B9DF8",
       "levelid": "custom_level_8736D296EDFADEC149E895E274DD03D6561B9DF8",
+      "songName": "The Master",
+      "levelAuthorName": "Galaxy as \"The Master\"",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -54,10 +54,10 @@
       ]
     },
     {
-      "songName": "Kuroyuri - Halv -",
-      "levelAuthorName": "CharlotteAulin",
       "hash": "F1A1C7B434AD499ACBDDDA941B60402E0159DAD2",
       "levelid": "custom_level_F1A1C7B434AD499ACBDDDA941B60402E0159DAD2",
+      "songName": "Kuroyuri - Halv -",
+      "levelAuthorName": "CharlotteAulin",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -66,10 +66,10 @@
       ]
     },
     {
-      "songName": "CHAMPION GIRL",
-      "levelAuthorName": "winteredge",
       "hash": "7B2C96472F651FF88204006808AEE4101FE081A7",
       "levelid": "custom_level_7B2C96472F651FF88204006808AEE4101FE081A7",
+      "songName": "CHAMPION GIRL",
+      "levelAuthorName": "winteredge",
       "difficulties": [
         {
           "characteristic": "Lawless",

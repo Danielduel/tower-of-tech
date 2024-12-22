@@ -718,18 +718,6 @@
       ]
     },
     {
-      "hash": "6BFD6E26C6774264396ADC8285186031D291216A",
-      "levelid": "custom_level_6BFD6E26C6774264396ADC8285186031D291216A",
-      "songName": "Every Second",
-      "levelAuthorName": "Feco",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "04EC3397A791DE93D16C79960E047EE647D74892",
       "levelid": "custom_level_04EC3397A791DE93D16C79960E047EE647D74892",
       "songName": "Mrs.Pumpkin's Funny Dream",
@@ -1730,18 +1718,6 @@
       ]
     },
     {
-      "hash": "73F6B664BFE0A4BE3891E03ED31BDB49F27807AC",
-      "levelid": "custom_level_73F6B664BFE0A4BE3891E03ED31BDB49F27807AC",
-      "songName": "Simple Life",
-      "levelAuthorName": "Xenothas",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "hash": "D7D9270D2A55E1D873B90750BA4EBEA678A54041",
       "levelid": "custom_level_D7D9270D2A55E1D873B90750BA4EBEA678A54041",
       "songName": "Let Go",
@@ -2262,6 +2238,126 @@
       "levelid": "custom_level_6E85E180B268E3D7DACF9264195FBC226188C3B9",
       "songName": "Can't Get You Outta My Mind",
       "levelAuthorName": "Chromia",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "56EFC79BE6FD5974B99762AF3C0AB45DDDA86158",
+      "levelid": "custom_level_56EFC79BE6FD5974B99762AF3C0AB45DDDA86158",
+      "songName": "Morinomiya Shinryoujo",
+      "levelAuthorName": "BigSlick",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "AE2663E920461F3F17755BDE580B349195BBD745",
+      "levelid": "custom_level_AE2663E920461F3F17755BDE580B349195BBD745",
+      "songName": "Thick Of It",
+      "levelAuthorName": "phoenixtvspeedcuber",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "1AE9D74B80B5CBF1A580734CDAA2CB26426100C6",
+      "levelid": "custom_level_1AE9D74B80B5CBF1A580734CDAA2CB26426100C6",
+      "songName": "Poison Ivy",
+      "levelAuthorName": "JRE_McNuggies",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "7183E16D35BC8BA4B27D3D61A9D91C68C0BBCC98",
+      "levelid": "custom_level_7183E16D35BC8BA4B27D3D61A9D91C68C0BBCC98",
+      "songName": "Forward",
+      "levelAuthorName": "Dr_Marc",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "DACA8A5B1B804E669C4BA6A1B4A11284235C3E1E",
+      "levelid": "custom_level_DACA8A5B1B804E669C4BA6A1B4A11284235C3E1E",
+      "songName": "Motorspeed 300 km/h",
+      "levelAuthorName": "Fvrwvrd, Daan & VoltageO",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "5C73FC8A1781310A199382094D93F6C0759E821B",
+      "levelid": "custom_level_5C73FC8A1781310A199382094D93F6C0759E821B",
+      "songName": "I AM",
+      "levelAuthorName": "Jabob",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "5AFE44D8F04EC3AFA3308F5AECE5B351B35185FC",
+      "levelid": "custom_level_5AFE44D8F04EC3AFA3308F5AECE5B351B35185FC",
+      "songName": "If We Ever Broke Up",
+      "levelAuthorName": "August",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4B7CCFA9F224C2D1CE2BCDE91115D062D2515F80",
+      "levelid": "custom_level_4B7CCFA9F224C2D1CE2BCDE91115D062D2515F80",
+      "songName": "Bass Slut",
+      "levelAuthorName": "Anodize",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "49AAE1FADF26B5CAF8C59C4CF06FB4A34DFDB9C5",
+      "levelid": "custom_level_49AAE1FADF26B5CAF8C59C4CF06FB4A34DFDB9C5",
+      "songName": "Marigold",
+      "levelAuthorName": "pleo",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "1D184B085D27700D0815BDF9CA23218817DD33A2",
+      "levelid": "custom_level_1D184B085D27700D0815BDF9CA23218817DD33A2",
+      "songName": "Play Destroy",
+      "levelAuthorName": "nitronik.exe",
       "difficulties": [
         {
           "characteristic": "Standard",
