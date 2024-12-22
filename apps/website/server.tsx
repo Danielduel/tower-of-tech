@@ -224,7 +224,22 @@ const executeHandlers = composeHandlers(
   },
   renderer,
   compiler,
-  staticHandler,
+  {
+    // add on top of staticHandler to report failing requests
+    supportsRequest: staticHandler.supportsRequest,
+    handleRequest: async (request) => {
+      try {
+        return await staticHandler.handleRequest(request);
+      } catch (err) {
+        if (err === "Can't handle this request") {
+          console.warn(`
+Can't handle this request.
+404 for (${request.method}) ${request.url}`);
+        }
+      }
+      return Promise.resolve(new Response("Not found", { status: 404 }));
+    },
+  },
 );
 
 const middleware = refresh({
