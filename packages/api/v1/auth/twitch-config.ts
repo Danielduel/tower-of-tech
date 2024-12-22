@@ -53,6 +53,8 @@ const redirectUri = isLocal()
   ? `http://localhost:8081${apiV1HandlerAuthTwitchOauthCallbackRoute}`
   : `https://www.towerofte.ch${apiV1HandlerAuthTwitchOauthCallbackRoute}`;
 
+console.log(redirectUri);
+
 const scope = createScopes(
   channelManageBroadcast,
   channelReadRedemptions,
@@ -68,13 +70,13 @@ const _oauthConfig: OAuth2ClientConfig = {
   tokenUri: "https://id.twitch.tv/oauth2/token",
   clientId,
   clientSecret,
-  redirectUri: redirectUri,
+  redirectUri,
   defaults: {
     requestOptions: {
       urlParams: {
         client_id: clientId,
         client_secret: clientSecret,
-        redirect_uri: encodeURI(redirectUri),
+        redirectUri,
         response_type: "authorization_code",
       },
     },
