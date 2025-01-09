@@ -577,8 +577,8 @@
       ]
     },
     {
-      "hash": "DAECCC80A8CF4BCE2915EE1E645536DB0CA76D61",
-      "levelid": "custom_level_DAECCC80A8CF4BCE2915EE1E645536DB0CA76D61",
+      "hash": "099124F328981754C3D3D752AADA6BB20D48B3E5",
+      "levelid": "custom_level_099124F328981754C3D3D752AADA6BB20D48B3E5",
       "songName": "No Limit",
       "levelAuthorName": "AYellow",
       "difficulties": [
@@ -1361,8 +1361,8 @@
       ]
     },
     {
-      "hash": "B30100C7FD12B999B24ED6AE34E3B74DED2CF0F8",
-      "levelid": "custom_level_B30100C7FD12B999B24ED6AE34E3B74DED2CF0F8",
+      "hash": "8B4DB652E40CE58D53FCF021879C9D1CD3FA1B2A",
+      "levelid": "custom_level_8B4DB652E40CE58D53FCF021879C9D1CD3FA1B2A",
       "songName": "Infinite Colour",
       "levelAuthorName": "Dr_Marc",
       "difficulties": [
@@ -2361,6 +2361,18 @@
       "levelid": "custom_level_1D184B085D27700D0815BDF9CA23218817DD33A2",
       "songName": "Play Destroy",
       "levelAuthorName": "nitronik.exe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C1C8728D26D100E3FC63D48FF476C976C63116B5",
+      "levelid": "custom_level_C1C8728D26D100E3FC63D48FF476C976C63116B5",
+      "songName": "Best Day Of My Life",
+      "levelAuthorName": "Jevk",
       "difficulties": [
         {
           "characteristic": "Standard",

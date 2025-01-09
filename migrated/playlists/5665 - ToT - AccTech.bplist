@@ -489,18 +489,6 @@
       ]
     },
     {
-      "hash": "2DAC7DA7A36DA30AC1198AD640A36DE7DB589016",
-      "levelid": "custom_level_2DAC7DA7A36DA30AC1198AD640A36DE7DB589016",
-      "songName": "I can't sing a love song",
-      "levelAuthorName": "Comyute",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "0ED57C891ECEE164F3F1678D5C0FF2E18B24DE6B",
       "levelid": "custom_level_0ED57C891ECEE164F3F1678D5C0FF2E18B24DE6B",
       "songName": "Brittle Bones Nicky",
@@ -1849,22 +1837,6 @@
       ]
     },
     {
-      "hash": "A4C56F06B433CC0D467A0C9BD693EDFECC496E4A",
-      "levelid": "custom_level_A4C56F06B433CC0D467A0C9BD693EDFECC496E4A",
-      "songName": "Pop It",
-      "levelAuthorName": "Joetastic",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        },
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "F105A8697D26EF59749991B8872F062ECC1F048E",
       "levelid": "custom_level_F105A8697D26EF59749991B8872F062ECC1F048E",
       "songName": "Soy Yo",
@@ -2273,18 +2245,6 @@
       ]
     },
     {
-      "hash": "A0BCF3FD74B1A1CE981E4C8603023F3EBBF105A8",
-      "levelid": "custom_level_A0BCF3FD74B1A1CE981E4C8603023F3EBBF105A8",
-      "songName": "Mystic Light Quest",
-      "levelAuthorName": "Seasonsmouse",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "hash": "499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
       "levelid": "custom_level_499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
       "songName": "DAICON V",
@@ -2293,18 +2253,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "hash": "9FD1C652A4C578884AEEA8BFB58C7B9C4592F707",
-      "levelid": "custom_level_9FD1C652A4C578884AEEA8BFB58C7B9C4592F707",
-      "songName": "Into The Abyss",
-      "levelAuthorName": "PogU",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
