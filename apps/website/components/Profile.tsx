@@ -199,6 +199,15 @@ export const Profile = () => {
           <ProfileTwitch notReady={notReady} signedIn={twitchSignedIn} />
         </h5>
       </div>
+
+      <div>
+        <Link
+          to={links.api.v1.auth.me.signOutAll()}
+          reloadDocument
+          children="Sign out all"
+          className="text-lg inline ring-1"
+        />
+      </div>
     </>
   );
 };

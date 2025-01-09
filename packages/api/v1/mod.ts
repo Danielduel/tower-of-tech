@@ -41,7 +41,12 @@ import {
   apiV1HandlerAuthBeatLeaderOauthSignOutRoute,
 } from "@/packages/api/v1/auth/beatleader-config.ts";
 
-import { apiV1HandlerAuthMe, apiV1HandlerAuthMeRoute } from "@/packages/api/v1/auth/me.ts";
+import {
+  apiV1HandlerAuthMe,
+  apiV1HandlerAuthMeRoute,
+  apiV1HandlerAuthMeSignOut,
+  apiV1HandlerAuthMeSignOutRoute,
+} from "@/packages/api/v1/auth/me.ts";
 import {
   apiV1HandlerAuthTwitchOauthCallbackRoute,
   apiV1HandlerAuthTwitchOauthSignInRoute,
@@ -55,6 +60,7 @@ import {
 
 const route = router({
   [apiV1HandlerAuthMeRoute]: apiV1HandlerAuthMe,
+  [apiV1HandlerAuthMeSignOutRoute]: apiV1HandlerAuthMeSignOut,
 
   [apiV1HandlerAuthDiscordOauthSignInRoute]: apiV1HandlerAuthDiscordOauthSignIn,
   [apiV1HandlerAuthDiscordOauthSignOutRoute]: apiV1HandlerAuthDiscordOauthSignOut,

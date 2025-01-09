@@ -42,7 +42,7 @@ export const apiV1HandlerAuthTwitchOauthCallback: HandlerForRoute<
 > = async (req) => {
   const { response, sessionId, tokens } = await handleTwitchCallback(req);
 
-  const existingAccountM = await getExistingAccountM(req, { beatLeader: tokens });
+  const existingAccountM = await getExistingAccountM(req, { twitch: tokens });
   const status = await getTwitchCallbackStatusFromTwitchTokens(tokens, makeToTAccountSessionId(sessionId));
 
   if (existingAccountM.isOk()) {

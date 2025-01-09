@@ -114,6 +114,11 @@ export const links = {
           `bsplaylist://playlist/${links.api.v1.playlist.data(playlistId, origin)}/oneclick/${encodeURI(playlistName)}`,
       },
       auth: {
+        me: {
+          signOutAll: (
+            origin: string = defaultOrigin,
+          ) => `${origin}/api/v1/auth/me/signout`,
+        },
         discord: {
           oauth: {
             signIn: (
