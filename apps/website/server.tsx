@@ -34,6 +34,7 @@ importMap.imports["@/"] = "/@/";
 importMap.imports["zod"] = "/_x/zod@v3.22.4/mod.ts";
 // importMap.imports["kvdex/"] = "/_x/kvdex@v0.31.0/";
 importMap.imports["https://deno.land/x/"] = "/_x/";
+// importMap.imports["https://esm.sh/"] = "/_esm/"
 importMap.imports["jsr:@dduel/ts-brand@0.1.0"] = "/_jsr/@dduel/ts-brand/0.1.0/mod.ts";
 
 const renderer = createRenderHandler({
@@ -182,6 +183,31 @@ const executeHandlers = composeHandlers(
       );
     },
   },
+  // {
+  //   supportsRequest: (request) => {
+  //     return request.url.includes("/_esm/");
+  //   },
+  //   handleRequest: async (request) => {
+  //     const { pathname } = new URL(request.url);
+  //     const realPathName = pathname.split("/_esm/")[1];
+  //     const fullPathName = `https://esm.sh/${realPathName}`;
+  //     const content = await fetch(fullPathName);
+  //     const result = await compile(fullPathName, await content.text(), {
+  //       jsxImportSource: "react",
+  //       development: true,
+  //       minify: false,
+  //     });
+
+  //     return new Response(
+  //       result,
+  //       {
+  //         headers: {
+  //           "Content-Type": "application/javascript",
+  //         },
+  //       },
+  //     );
+  //   },
+  // },
   {
     supportsRequest: (request) => {
       return request.url.includes("/_jsr/");
