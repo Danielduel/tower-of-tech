@@ -1828,8 +1828,8 @@
     {
       "songName": "culture",
       "levelAuthorName": "yabje & Alice",
-      "hash": "1B1FF3C44895A109522981A5EF5DB43EA66D7593",
-      "levelid": "custom_level_1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "hash": "C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
+      "levelid": "custom_level_C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2366,10 +2366,10 @@
       ]
     },
     {
-      "songName": "Into The Abyss",
-      "levelAuthorName": "PogU",
-      "hash": "9FD1C652A4C578884AEEA8BFB58C7B9C4592F707",
-      "levelid": "custom_level_9FD1C652A4C578884AEEA8BFB58C7B9C4592F707",
+      "songName": "Best Day Of My Life",
+      "levelAuthorName": "Jevk",
+      "hash": "C1C8728D26D100E3FC63D48FF476C976C63116B5",
+      "levelid": "custom_level_C1C8728D26D100E3FC63D48FF476C976C63116B5",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2378,13 +2378,37 @@
       ]
     },
     {
-      "songName": "Best Day Of My Life",
-      "levelAuthorName": "Jevk",
-      "hash": "C1C8728D26D100E3FC63D48FF476C976C63116B5",
-      "levelid": "custom_level_C1C8728D26D100E3FC63D48FF476C976C63116B5",
+      "songName": "HER",
+      "levelAuthorName": "VoltageO",
+      "hash": "9B66B124E538FBE8A72B41CA577232E8BE6C4D79",
+      "levelid": "custom_level_9B66B124E538FBE8A72B41CA577232E8BE6C4D79",
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Madeline",
+      "levelAuthorName": "Phøenix",
+      "hash": "245B93CDD52E9E566DAA2A535CBBE810156F5DD2",
+      "levelid": "custom_level_245B93CDD52E9E566DAA2A535CBBE810156F5DD2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Fortress",
+      "levelAuthorName": "BigOlDumplin",
+      "hash": "B266122F56DB381BB68EE08DDC17DA5A23EF3B9E",
+      "levelid": "custom_level_B266122F56DB381BB68EE08DDC17DA5A23EF3B9E",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]

@@ -1829,8 +1829,8 @@
       ]
     },
     {
-      "hash": "1B1FF3C44895A109522981A5EF5DB43EA66D7593",
-      "levelid": "custom_level_1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "hash": "C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
+      "levelid": "custom_level_C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
       "songName": "culture",
       "levelAuthorName": "yabje & Alice",
       "difficulties": [
@@ -2376,6 +2376,42 @@
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "9B66B124E538FBE8A72B41CA577232E8BE6C4D79",
+      "levelid": "custom_level_9B66B124E538FBE8A72B41CA577232E8BE6C4D79",
+      "songName": "HER",
+      "levelAuthorName": "VoltageO",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "245B93CDD52E9E566DAA2A535CBBE810156F5DD2",
+      "levelid": "custom_level_245B93CDD52E9E566DAA2A535CBBE810156F5DD2",
+      "songName": "Madeline",
+      "levelAuthorName": "Phøenix",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "B266122F56DB381BB68EE08DDC17DA5A23EF3B9E",
+      "levelid": "custom_level_B266122F56DB381BB68EE08DDC17DA5A23EF3B9E",
+      "songName": "Fortress",
+      "levelAuthorName": "BigOlDumplin",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]

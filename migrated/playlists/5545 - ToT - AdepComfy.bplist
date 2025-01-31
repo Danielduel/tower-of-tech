@@ -885,6 +885,10 @@
         {
           "characteristic": "Standard",
           "name": "Normal"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     },
@@ -1005,6 +1009,10 @@
         {
           "characteristic": "Standard",
           "name": "Easy"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -1033,8 +1041,8 @@
       ]
     },
     {
-      "hash": "1B1FF3C44895A109522981A5EF5DB43EA66D7593",
-      "levelid": "custom_level_1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "hash": "C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
+      "levelid": "custom_level_C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
       "songName": "culture",
       "levelAuthorName": "yabje & Alice",
       "difficulties": [
@@ -1537,6 +1545,90 @@
       "levelid": "custom_level_4AEA162003D60203F16016C1298B1C61642307D5",
       "songName": "アイ / AI",
       "levelAuthorName": "meplauir",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "3E1F5888ACB119601D60111213C91A817EAC39B8",
+      "levelid": "custom_level_3E1F5888ACB119601D60111213C91A817EAC39B8",
+      "songName": "every word",
+      "levelAuthorName": "Kassi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "B2D6B6334731009E4830DEC4C590B2EE3193AFC7",
+      "levelid": "custom_level_B2D6B6334731009E4830DEC4C590B2EE3193AFC7",
+      "songName": "MIROH",
+      "levelAuthorName": "simplymarvellous",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "57F25F26ECB70808D609A600683A8A9CA996E753",
+      "levelid": "custom_level_57F25F26ECB70808D609A600683A8A9CA996E753",
+      "songName": "Time Left (TV Size)",
+      "levelAuthorName": "Joetastic",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "0B1CA5842EC84C1401E04342A41DCD26D2DBF2E7",
+      "levelid": "custom_level_0B1CA5842EC84C1401E04342A41DCD26D2DBF2E7",
+      "songName": "STRUT",
+      "levelAuthorName": "WalkingKat",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "35C2ACDF6F54A77CF6A967B978257439A484A626",
+      "levelid": "custom_level_35C2ACDF6F54A77CF6A967B978257439A484A626",
+      "songName": "RICOCHET",
+      "levelAuthorName": "moonlightmews, sploob",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "178E68A392835D6EF8762692AB059BC17433AC54",
+      "levelid": "custom_level_178E68A392835D6EF8762692AB059BC17433AC54",
+      "songName": "REKKA RESONANCE",
+      "levelAuthorName": "Marsh",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "1C609FD8297EF19BA093C74A40236A63EBE43007",
+      "levelid": "custom_level_1C609FD8297EF19BA093C74A40236A63EBE43007",
+      "songName": "Niewazne",
+      "levelAuthorName": "TetsuBeats",
       "difficulties": [
         {
           "characteristic": "Standard",

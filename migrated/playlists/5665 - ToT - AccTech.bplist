@@ -333,34 +333,10 @@
       ]
     },
     {
-      "hash": "50C376B0B8758D0D1BD351046AAEB71FFF031FC9",
-      "levelid": "custom_level_50C376B0B8758D0D1BD351046AAEB71FFF031FC9",
-      "songName": "Cruisin' For A Bruisin'",
-      "levelAuthorName": "Tpenny68",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "46532224DA23DED13AA2C1B20775E0A5B2AD0488",
       "levelid": "custom_level_46532224DA23DED13AA2C1B20775E0A5B2AD0488",
       "songName": "HITORIYOGARI",
       "levelAuthorName": "Huuzin",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "88F1B7DC09CD9EB9F2A87D712DF7857329BC15FF",
-      "levelid": "custom_level_88F1B7DC09CD9EB9F2A87D712DF7857329BC15FF",
-      "songName": "When The Weak Go Marching In",
-      "levelAuthorName": "oegoe",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -573,8 +549,8 @@
       ]
     },
     {
-      "hash": "4BCB04C9B256FF36807397E3B94EC508410098FE",
-      "levelid": "custom_level_4BCB04C9B256FF36807397E3B94EC508410098FE",
+      "hash": "F6A4584BFFD6DD4D47809DD1F8FBF088B6205C45",
+      "levelid": "custom_level_F6A4584BFFD6DD4D47809DD1F8FBF088B6205C45",
       "songName": "Algorithm",
       "levelAuthorName": "Pleo",
       "difficulties": [
@@ -709,10 +685,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        },
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -1105,30 +1077,6 @@
       "levelid": "custom_level_26ADFF08DCE1E813CD35255810A13A7F4D62D829",
       "songName": "Fences",
       "levelAuthorName": "Avexus",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "1AAF5FC389D79F2E343E3BCFD1AB1162FF785E99",
-      "levelid": "custom_level_1AAF5FC389D79F2E343E3BCFD1AB1162FF785E99",
-      "songName": "Aether",
-      "levelAuthorName": "PogU",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "4DD36CB0DF43ADEC27938275F89971A658CE0D1D",
-      "levelid": "custom_level_4DD36CB0DF43ADEC27938275F89971A658CE0D1D",
-      "songName": "Lose Control",
-      "levelAuthorName": "Bytrius",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1653,18 +1601,6 @@
       ]
     },
     {
-      "hash": "1B50DED93D7B6A54406317F88B16298BD2AAAF69",
-      "levelid": "custom_level_1B50DED93D7B6A54406317F88B16298BD2AAAF69",
-      "songName": "Broke",
-      "levelAuthorName": "4orizon & SoniqueTui",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "388CABBF359D06F6298C8493E44EA9B8BD060D17",
       "levelid": "custom_level_388CABBF359D06F6298C8493E44EA9B8BD060D17",
       "songName": "Float Play",
@@ -1772,18 +1708,6 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "B266122F56DB381BB68EE08DDC17DA5A23EF3B9E",
-      "levelid": "custom_level_B266122F56DB381BB68EE08DDC17DA5A23EF3B9E",
-      "songName": "Fortress",
-      "levelAuthorName": "BigOlDumplin",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]
@@ -2432,30 +2356,6 @@
       ]
     },
     {
-      "hash": "28D1891F9A6D7B120741B4D100FBDFF584919EA1",
-      "levelid": "custom_level_28D1891F9A6D7B120741B4D100FBDFF584919EA1",
-      "songName": "Higashi",
-      "levelAuthorName": "zeon",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
-      "hash": "023A8F07F08A9D6A580BB4B9F723D3541F857B31",
-      "levelid": "custom_level_023A8F07F08A9D6A580BB4B9F723D3541F857B31",
-      "songName": "Moby Duck",
-      "levelAuthorName": "gemboyong",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "BD14FA3D5423DE4962C29B3224E64A361A57E98C",
       "levelid": "custom_level_BD14FA3D5423DE4962C29B3224E64A361A57E98C",
       "songName": "Jekyll",
@@ -2672,18 +2572,6 @@
       ]
     },
     {
-      "hash": "1AE9D74B80B5CBF1A580734CDAA2CB26426100C6",
-      "levelid": "custom_level_1AE9D74B80B5CBF1A580734CDAA2CB26426100C6",
-      "songName": "Poison Ivy",
-      "levelAuthorName": "JRE_McNuggies",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "hash": "563A3FB12320F6B022EE46BA7AB4E2253C1D477A",
       "levelid": "custom_level_563A3FB12320F6B022EE46BA7AB4E2253C1D477A",
       "songName": "Zunda Shaking",
@@ -2748,6 +2636,18 @@
       "levelid": "custom_level_6BFD6E26C6774264396ADC8285186031D291216A",
       "songName": "Every Second",
       "levelAuthorName": "Feco",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "CAD63FF2F2C2B8AE7DD8DEF384DBDA22C34D5BB4",
+      "levelid": "custom_level_CAD63FF2F2C2B8AE7DD8DEF384DBDA22C34D5BB4",
+      "songName": "Zenith",
+      "levelAuthorName": "Gabriel, Marsh, Fuyakeru",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -68,7 +68,7 @@ const pubSubTypeSchema = z.object({
 });
 
 const pubSubInnerTypeSchema = z.object({
-  type: z.enum(["RESPONSE", "MESSAGE", "PONG"]),
+  type: z.enum(["RESPONSE", "MESSAGE", "PONG", "RECONNECT"]),
   data: z.any(),
 });
 

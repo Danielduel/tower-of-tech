@@ -6,10 +6,10 @@
   },
   "songs": [
     {
-      "hash": "C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
-      "levelid": "custom_level_C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
       "songName": "Say So",
       "levelAuthorName": "Ken_Monogatari",
+      "hash": "C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
+      "levelid": "custom_level_C72D0DD6CAD11AC41E4050EFA5A9366415AB0F7C",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "hash": "2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
-      "levelid": "custom_level_2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
       "songName": "Cure For Me",
       "levelAuthorName": "staryouh",
+      "hash": "2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
+      "levelid": "custom_level_2EA22AB85EA1B9AE3CF78B0B21E607B84C9CDF78",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -30,10 +30,10 @@
       ]
     },
     {
-      "hash": "40F9520FCB5CC12C44025067AFB33F6644A5CABC",
-      "levelid": "custom_level_40F9520FCB5CC12C44025067AFB33F6644A5CABC",
       "songName": "游山恋",
       "levelAuthorName": "Ge2toro",
+      "hash": "40F9520FCB5CC12C44025067AFB33F6644A5CABC",
+      "levelid": "custom_level_40F9520FCB5CC12C44025067AFB33F6644A5CABC",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "hash": "2977591D67AA099A0E53AF6EECAF3A27C4F6D499",
-      "levelid": "custom_level_2977591D67AA099A0E53AF6EECAF3A27C4F6D499",
       "songName": "临川浮梦",
       "levelAuthorName": "staryouh",
+      "hash": "2977591D67AA099A0E53AF6EECAF3A27C4F6D499",
+      "levelid": "custom_level_2977591D67AA099A0E53AF6EECAF3A27C4F6D499",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -54,10 +54,10 @@
       ]
     },
     {
-      "hash": "237C8288CEF6AECE33C41A0DA9A99461083AB118",
-      "levelid": "custom_level_237C8288CEF6AECE33C41A0DA9A99461083AB118",
       "songName": "Feel Alive",
       "levelAuthorName": "Bitz & Frost",
+      "hash": "237C8288CEF6AECE33C41A0DA9A99461083AB118",
+      "levelid": "custom_level_237C8288CEF6AECE33C41A0DA9A99461083AB118",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -66,10 +66,10 @@
       ]
     },
     {
-      "hash": "741654277E8A3E4E42FB057D565D0797EA523A3E",
-      "levelid": "custom_level_741654277E8A3E4E42FB057D565D0797EA523A3E",
       "songName": "Mirage",
       "levelAuthorName": "Uncouth",
+      "hash": "741654277E8A3E4E42FB057D565D0797EA523A3E",
+      "levelid": "custom_level_741654277E8A3E4E42FB057D565D0797EA523A3E",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -78,10 +78,10 @@
       ]
     },
     {
-      "hash": "79DBE1066D0DDED6805E7D584E138A0A26EF68CE",
-      "levelid": "custom_level_79DBE1066D0DDED6805E7D584E138A0A26EF68CE",
       "songName": "Nunca Es Suficiente",
       "levelAuthorName": "Cush",
+      "hash": "79DBE1066D0DDED6805E7D584E138A0A26EF68CE",
+      "levelid": "custom_level_79DBE1066D0DDED6805E7D584E138A0A26EF68CE",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -90,10 +90,10 @@
       ]
     },
     {
-      "hash": "FEF971BDE5C1F3F41B2C2DF9FC1CD4F67CBB041D",
-      "levelid": "custom_level_FEF971BDE5C1F3F41B2C2DF9FC1CD4F67CBB041D",
       "songName": "言いたいこと",
       "levelAuthorName": "wangyufy",
+      "hash": "FEF971BDE5C1F3F41B2C2DF9FC1CD4F67CBB041D",
+      "levelid": "custom_level_FEF971BDE5C1F3F41B2C2DF9FC1CD4F67CBB041D",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -102,10 +102,10 @@
       ]
     },
     {
-      "hash": "8A4C5D3A08F4A7484DBF4D7EABCA26BA16E08818",
-      "levelid": "custom_level_8A4C5D3A08F4A7484DBF4D7EABCA26BA16E08818",
       "songName": "Summer Dream",
       "levelAuthorName": "Cush",
+      "hash": "8A4C5D3A08F4A7484DBF4D7EABCA26BA16E08818",
+      "levelid": "custom_level_8A4C5D3A08F4A7484DBF4D7EABCA26BA16E08818",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -114,10 +114,10 @@
       ]
     },
     {
-      "hash": "A52927FBB4F182C0ED45302A25D48F4188F4328D",
-      "levelid": "custom_level_A52927FBB4F182C0ED45302A25D48F4188F4328D",
       "songName": "Ice Cream Machine",
       "levelAuthorName": "PogU",
+      "hash": "A52927FBB4F182C0ED45302A25D48F4188F4328D",
+      "levelid": "custom_level_A52927FBB4F182C0ED45302A25D48F4188F4328D",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -126,10 +126,10 @@
       ]
     },
     {
-      "hash": "CDF3913EA5B36529F239B33BA06F3043CAA8ED60",
-      "levelid": "custom_level_CDF3913EA5B36529F239B33BA06F3043CAA8ED60",
       "songName": "Yona Yona Yona",
       "levelAuthorName": "uɐʎu‾ǝʞɐʇ x snƃɐɯ",
+      "hash": "CDF3913EA5B36529F239B33BA06F3043CAA8ED60",
+      "levelid": "custom_level_CDF3913EA5B36529F239B33BA06F3043CAA8ED60",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -138,10 +138,10 @@
       ]
     },
     {
-      "hash": "DF190745A71D8C658309C0B94B9DF67BDE16D4E2",
-      "levelid": "custom_level_DF190745A71D8C658309C0B94B9DF67BDE16D4E2",
       "songName": "Lian'ai Gaoji",
       "levelAuthorName": "Lalahti, Danny, Jonas_0_0, Bellus",
+      "hash": "DF190745A71D8C658309C0B94B9DF67BDE16D4E2",
+      "levelid": "custom_level_DF190745A71D8C658309C0B94B9DF67BDE16D4E2",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -150,10 +150,10 @@
       ]
     },
     {
-      "hash": "C217CA17542913E420430F3F5BEA4FFE28093DBD",
-      "levelid": "custom_level_C217CA17542913E420430F3F5BEA4FFE28093DBD",
       "songName": "Lopeta",
       "levelAuthorName": "kibo",
+      "hash": "C217CA17542913E420430F3F5BEA4FFE28093DBD",
+      "levelid": "custom_level_C217CA17542913E420430F3F5BEA4FFE28093DBD",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -162,10 +162,10 @@
       ]
     },
     {
-      "hash": "CAEC6F76304DD9B588BAD14DC0E49B879FDE7C04",
-      "levelid": "custom_level_CAEC6F76304DD9B588BAD14DC0E49B879FDE7C04",
       "songName": "君の脈で踊りたかつた",
       "levelAuthorName": "Eckimlon",
+      "hash": "CAEC6F76304DD9B588BAD14DC0E49B879FDE7C04",
+      "levelid": "custom_level_CAEC6F76304DD9B588BAD14DC0E49B879FDE7C04",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -174,10 +174,10 @@
       ]
     },
     {
-      "hash": "93244DDF1ED34D15A9865C949986B4E125F339F2",
-      "levelid": "custom_level_93244DDF1ED34D15A9865C949986B4E125F339F2",
       "songName": "NADA",
       "levelAuthorName": "Tastum",
+      "hash": "93244DDF1ED34D15A9865C949986B4E125F339F2",
+      "levelid": "custom_level_93244DDF1ED34D15A9865C949986B4E125F339F2",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -186,13 +186,25 @@
       ]
     },
     {
-      "hash": "B9B8E1CC7F02DC50DACF66966F65FA6DD1A8767E",
-      "levelid": "custom_level_B9B8E1CC7F02DC50DACF66966F65FA6DD1A8767E",
       "songName": "DeLorean",
       "levelAuthorName": "Xenothas",
+      "hash": "B9B8E1CC7F02DC50DACF66966F65FA6DD1A8767E",
+      "levelid": "custom_level_B9B8E1CC7F02DC50DACF66966F65FA6DD1A8767E",
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "我会等",
+      "levelAuthorName": "KitsuriKon",
+      "hash": "D0CFB4F7CCF4342D1F357C4C34615AE3ACD7F962",
+      "levelid": "custom_level_D0CFB4F7CCF4342D1F357C4C34615AE3ACD7F962",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]

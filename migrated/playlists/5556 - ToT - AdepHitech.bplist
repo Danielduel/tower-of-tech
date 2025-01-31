@@ -273,8 +273,8 @@
       ]
     },
     {
-      "hash": "F2BC50524C9117959598902AF6B64CC6B70DEEDC",
-      "levelid": "custom_level_F2BC50524C9117959598902AF6B64CC6B70DEEDC",
+      "hash": "EA7B13580B437D88F06747A27EC8727D563548E4",
+      "levelid": "custom_level_EA7B13580B437D88F06747A27EC8727D563548E4",
       "songName": "Cure For Me",
       "levelAuthorName": "Groovy",
       "difficulties": [
@@ -465,8 +465,8 @@
       ]
     },
     {
-      "hash": "6158636039D9052CB5E7BFD62553A290E30ED0B2",
-      "levelid": "custom_level_6158636039D9052CB5E7BFD62553A290E30ED0B2",
+      "hash": "C271E7375EF8816FC2E7A416C71A36355021B366",
+      "levelid": "custom_level_C271E7375EF8816FC2E7A416C71A36355021B366",
       "songName": "Good Things Fall Apart",
       "levelAuthorName": "sploob",
       "difficulties": [
@@ -765,18 +765,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "hash": "9B66B124E538FBE8A72B41CA577232E8BE6C4D79",
-      "levelid": "custom_level_9B66B124E538FBE8A72B41CA577232E8BE6C4D79",
-      "songName": "HER",
-      "levelAuthorName": "VoltageO",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },

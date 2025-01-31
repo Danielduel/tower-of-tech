@@ -81,18 +81,6 @@
       ]
     },
     {
-      "hash": "0B1CA5842EC84C1401E04342A41DCD26D2DBF2E7",
-      "levelid": "custom_level_0B1CA5842EC84C1401E04342A41DCD26D2DBF2E7",
-      "songName": "STRUT",
-      "levelAuthorName": "WalkingKat",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "hash": "21F9A7E8694A2CE202F1A6339516443C98D49DCF",
       "levelid": "custom_level_21F9A7E8694A2CE202F1A6339516443C98D49DCF",
       "songName": "Feels Like Loneliness",
@@ -109,30 +97,6 @@
       "levelid": "custom_level_636C13F49EB90C255C6D04DF26E9AED336247344",
       "songName": "Tonchiki ranchiki chindon kikou",
       "levelAuthorName": "SieR",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
-        }
-      ]
-    },
-    {
-      "hash": "4B980371B6005CC176AED1B402BD104AF56C31A3",
-      "levelid": "custom_level_4B980371B6005CC176AED1B402BD104AF56C31A3",
-      "songName": "The Middle",
-      "levelAuthorName": "TetsuBeats",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
-      "hash": "178E68A392835D6EF8762692AB059BC17433AC54",
-      "levelid": "custom_level_178E68A392835D6EF8762692AB059BC17433AC54",
-      "songName": "REKKA RESONANCE",
-      "levelAuthorName": "Marsh",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -217,18 +181,6 @@
       ]
     },
     {
-      "hash": "9BB86E651A44F79C5B715DF29BDD0E7F7084759F",
-      "levelid": "custom_level_9BB86E651A44F79C5B715DF29BDD0E7F7084759F",
-      "songName": "Ghost Dive",
-      "levelAuthorName": "Comyute",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "hash": "1C609FD8297EF19BA093C74A40236A63EBE43007",
       "levelid": "custom_level_1C609FD8297EF19BA093C74A40236A63EBE43007",
       "songName": "Niewazne",
@@ -237,10 +189,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        },
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
         }
       ]
     },
@@ -429,18 +377,6 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
-        }
-      ]
-    },
-    {
-      "hash": "A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
-      "levelid": "custom_level_A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
-      "songName": "Scare Me",
-      "levelAuthorName": "Fatalution",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
         }
       ]
     },
@@ -793,18 +729,6 @@
       ]
     },
     {
-      "hash": "3E1F5888ACB119601D60111213C91A817EAC39B8",
-      "levelid": "custom_level_3E1F5888ACB119601D60111213C91A817EAC39B8",
-      "songName": "every word",
-      "levelAuthorName": "Kassi",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "0C613E9EE92BFAB6D055594178CADB80FBC9A254",
       "levelid": "custom_level_0C613E9EE92BFAB6D055594178CADB80FBC9A254",
       "songName": "Cinderella",
@@ -1133,8 +1057,8 @@
       ]
     },
     {
-      "hash": "A330EC22CE93310D81E56EFF269EFF8A70883C17",
-      "levelid": "custom_level_A330EC22CE93310D81E56EFF269EFF8A70883C17",
+      "hash": "0493EB2CC5A4E789B6652C8B930A3A2375D50683",
+      "levelid": "custom_level_0493EB2CC5A4E789B6652C8B930A3A2375D50683",
       "songName": "Shin FAKE STYLE",
       "levelAuthorName": "symphonic",
       "difficulties": [
@@ -1241,8 +1165,8 @@
       ]
     },
     {
-      "hash": "1B1FF3C44895A109522981A5EF5DB43EA66D7593",
-      "levelid": "custom_level_1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "hash": "C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
+      "levelid": "custom_level_C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
       "songName": "culture",
       "levelAuthorName": "yabje & Alice",
       "difficulties": [
@@ -1309,18 +1233,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "57F25F26ECB70808D609A600683A8A9CA996E753",
-      "levelid": "custom_level_57F25F26ECB70808D609A600683A8A9CA996E753",
-      "songName": "Time Left (TV Size)",
-      "levelAuthorName": "Joetastic",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
         }
       ]
     },
@@ -1437,18 +1349,6 @@
       "levelid": "custom_level_1FFE7EC8F89D288C49A020F2071CC0FD8F214ECF",
       "songName": "BATTER UP",
       "levelAuthorName": "Jonas_0_0",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
-      "hash": "B2D6B6334731009E4830DEC4C590B2EE3193AFC7",
-      "levelid": "custom_level_B2D6B6334731009E4830DEC4C590B2EE3193AFC7",
-      "songName": "MIROH",
-      "levelAuthorName": "simplymarvellous",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1645,6 +1545,30 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "48464C8EAB7624752B51E9782D0BE4F3D5650C06",
+      "levelid": "custom_level_48464C8EAB7624752B51E9782D0BE4F3D5650C06",
+      "songName": "Feel Alive",
+      "levelAuthorName": "Bitz, Frost",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "3F554BE7125EB32F03E3E265763D16084DB4D349",
+      "levelid": "custom_level_3F554BE7125EB32F03E3E265763D16084DB4D349",
+      "songName": "River of Darkness (Short Version)",
+      "levelAuthorName": "EerieWolf",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

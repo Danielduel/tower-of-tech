@@ -1032,8 +1032,8 @@
     {
       "songName": "culture",
       "levelAuthorName": "yabje & Alice",
-      "hash": "1B1FF3C44895A109522981A5EF5DB43EA66D7593",
-      "levelid": "custom_level_1B1FF3C44895A109522981A5EF5DB43EA66D7593",
+      "hash": "C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
+      "levelid": "custom_level_C3AB2D7773AAC4BBEBE494C9A05D717C980C3960",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1534,6 +1534,114 @@
       "levelAuthorName": "meplauir",
       "hash": "4AEA162003D60203F16016C1298B1C61642307D5",
       "levelid": "custom_level_4AEA162003D60203F16016C1298B1C61642307D5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Scare Me",
+      "levelAuthorName": "Fatalution",
+      "hash": "A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
+      "levelid": "custom_level_A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "every word",
+      "levelAuthorName": "Kassi",
+      "hash": "3E1F5888ACB119601D60111213C91A817EAC39B8",
+      "levelid": "custom_level_3E1F5888ACB119601D60111213C91A817EAC39B8",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "MIROH",
+      "levelAuthorName": "simplymarvellous",
+      "hash": "B2D6B6334731009E4830DEC4C590B2EE3193AFC7",
+      "levelid": "custom_level_B2D6B6334731009E4830DEC4C590B2EE3193AFC7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Time Left (TV Size)",
+      "levelAuthorName": "Joetastic",
+      "hash": "57F25F26ECB70808D609A600683A8A9CA996E753",
+      "levelid": "custom_level_57F25F26ECB70808D609A600683A8A9CA996E753",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "STRUT",
+      "levelAuthorName": "WalkingKat",
+      "hash": "0B1CA5842EC84C1401E04342A41DCD26D2DBF2E7",
+      "levelid": "custom_level_0B1CA5842EC84C1401E04342A41DCD26D2DBF2E7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "The Middle",
+      "levelAuthorName": "TetsuBeats",
+      "hash": "4B980371B6005CC176AED1B402BD104AF56C31A3",
+      "levelid": "custom_level_4B980371B6005CC176AED1B402BD104AF56C31A3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "RICOCHET",
+      "levelAuthorName": "moonlightmews, sploob",
+      "hash": "35C2ACDF6F54A77CF6A967B978257439A484A626",
+      "levelid": "custom_level_35C2ACDF6F54A77CF6A967B978257439A484A626",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "REKKA RESONANCE",
+      "levelAuthorName": "Marsh",
+      "hash": "178E68A392835D6EF8762692AB059BC17433AC54",
+      "levelid": "custom_level_178E68A392835D6EF8762692AB059BC17433AC54",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Niewazne",
+      "levelAuthorName": "TetsuBeats",
+      "hash": "1C609FD8297EF19BA093C74A40236A63EBE43007",
+      "levelid": "custom_level_1C609FD8297EF19BA093C74A40236A63EBE43007",
       "difficulties": [
         {
           "characteristic": "Standard",
