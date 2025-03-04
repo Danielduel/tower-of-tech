@@ -750,18 +750,6 @@
       ]
     },
     {
-      "hash": "5BB6A279FD2C6BF20495F42B6E4395A45F9C197C",
-      "levelid": "custom_level_5BB6A279FD2C6BF20495F42B6E4395A45F9C197C",
-      "songName": "Paradise",
-      "levelAuthorName": "RateGyro",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "hash": "9C7693FD0731E63163DE5FD8BF6B305BC7946A39",
       "levelid": "custom_level_9C7693FD0731E63163DE5FD8BF6B305BC7946A39",
       "songName": "Shutdown!",
@@ -1186,18 +1174,6 @@
       ]
     },
     {
-      "hash": "8E6BC0438A81C60AEEC4E9AFB937145FC9ECD947",
-      "levelid": "custom_level_8E6BC0438A81C60AEEC4E9AFB937145FC9ECD947",
-      "songName": "Chakra",
-      "levelAuthorName": "Jabob",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
-        }
-      ]
-    },
-    {
       "hash": "905E6C964C52786321F6DF66B5DECCF95C6F4C6D",
       "levelid": "custom_level_905E6C964C52786321F6DF66B5DECCF95C6F4C6D",
       "songName": "Bug",
@@ -1562,6 +1538,42 @@
       "levelid": "custom_level_3F554BE7125EB32F03E3E265763D16084DB4D349",
       "songName": "River of Darkness (Short Version)",
       "levelAuthorName": "EerieWolf",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "DA11DF72B9D0BD2182964D44621BEF47ED7A9B22",
+      "levelid": "custom_level_DA11DF72B9D0BD2182964D44621BEF47ED7A9B22",
+      "songName": "Love The Game",
+      "levelAuthorName": "JRE_McNuggies, Nugget",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "A0E63FB05BCFCABAD04D365ECE95EEF191F1856A",
+      "levelid": "custom_level_A0E63FB05BCFCABAD04D365ECE95EEF191F1856A",
+      "songName": "Short Skirt / Long Jacket",
+      "levelAuthorName": "Andynak, vanitygirl",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "18BA37E6120AB981C44B78DC1ACB4515C579CA91",
+      "levelid": "custom_level_18BA37E6120AB981C44B78DC1ACB4515C579CA91",
+      "songName": "Witches",
+      "levelAuthorName": "Kassi",
       "difficulties": [
         {
           "characteristic": "Standard",

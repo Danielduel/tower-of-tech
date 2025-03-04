@@ -162,18 +162,6 @@
       ]
     },
     {
-      "hash": "FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
-      "levelid": "custom_level_FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
-      "songName": "LVL.99",
-      "levelAuthorName": "Voidless",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "AF669C718B201A8C893E7F94365C5AF268230C08",
       "levelid": "custom_level_AF669C718B201A8C893E7F94365C5AF268230C08",
       "songName": "God-ish",
@@ -265,18 +253,6 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "188A4B89A7141989DE244A40DC3FD47A7E29CEEA",
-      "levelid": "custom_level_188A4B89A7141989DE244A40DC3FD47A7E29CEEA",
-      "songName": "Bug",
-      "levelAuthorName": "Jabob",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]
@@ -418,18 +394,6 @@
       "levelid": "custom_level_42F218850E16F24CBCCB94DEF959889F9AB4663C",
       "songName": "The 90's Decision",
       "levelAuthorName": "That_Narwhal",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "EB0F60D3AFCA96C6F0428A0B2A1F610F9854F083",
-      "levelid": "custom_level_EB0F60D3AFCA96C6F0428A0B2A1F610F9854F083",
-      "songName": "Napalm",
-      "levelAuthorName": "DiscoBaIIerz",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1494,18 +1458,6 @@
       ]
     },
     {
-      "hash": "1558B7870DD4D65BB6B98821388E5FC9838DC810",
-      "levelid": "custom_level_1558B7870DD4D65BB6B98821388E5FC9838DC810",
-      "songName": "Catch a Fire",
-      "levelAuthorName": "abcbadq",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "BDF183D9D31F80C09D03564522EC6E06CFB86B31",
       "levelid": "custom_level_BDF183D9D31F80C09D03564522EC6E06CFB86B31",
       "songName": "GETTIN' HOTT",
@@ -1558,18 +1510,6 @@
       "levelid": "custom_level_534A1112C1C11EF8EEC125511A8FDE8842AB440F",
       "songName": "Gunslinga",
       "levelAuthorName": "oegoe",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "8FEFBE69AA38204C728116F8A7275EE9528D6140",
-      "levelid": "custom_level_8FEFBE69AA38204C728116F8A7275EE9528D6140",
-      "songName": "Secret Illumination",
-      "levelAuthorName": "zeon",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1686,10 +1626,22 @@
       ]
     },
     {
-      "hash": "4F8732D91FEDEB325FC8B9D668CCF1301F1611E6",
-      "levelid": "custom_level_4F8732D91FEDEB325FC8B9D668CCF1301F1611E6",
-      "songName": "Simulation",
-      "levelAuthorName": "VoltageO",
+      "hash": "5B0C7E417AEE496E64C474E0EC54EA03CF24D346",
+      "levelid": "custom_level_5B0C7E417AEE496E64C474E0EC54EA03CF24D346",
+      "songName": "Duallel Spirit",
+      "levelAuthorName": "Baguette",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "80CE64C5BD7784358978AF20D185F5239E3A717C",
+      "levelid": "custom_level_80CE64C5BD7784358978AF20D185F5239E3A717C",
+      "songName": "As If It's Your Last",
+      "levelAuthorName": "Jonas_0_0, Danny, Lalahti",
       "difficulties": [
         {
           "characteristic": "Standard",

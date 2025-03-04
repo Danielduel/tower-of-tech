@@ -222,18 +222,6 @@
       ]
     },
     {
-      "hash": "72FC110FF526FB4CA1A3BEFBBD270CFBEE5C5EF0",
-      "levelid": "custom_level_72FC110FF526FB4CA1A3BEFBBD270CFBEE5C5EF0",
-      "songName": "After Hours",
-      "levelAuthorName": "Kansas & OneSpookyBoi",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "01A8F9C016AA1E0AFE53C50FC39ADF81D9E204D8",
       "levelid": "custom_level_01A8F9C016AA1E0AFE53C50FC39ADF81D9E204D8",
       "songName": "Masquerade",
@@ -1422,6 +1410,18 @@
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
+      "levelid": "custom_level_FEF1AF13738FF02E0D2BB5797D9834B00EF79A13",
+      "songName": "LVL.99",
+      "levelAuthorName": "Voidless",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]

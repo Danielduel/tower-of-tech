@@ -174,8 +174,8 @@
       ]
     },
     {
-      "hash": "93244DDF1ED34D15A9865C949986B4E125F339F2",
-      "levelid": "custom_level_93244DDF1ED34D15A9865C949986B4E125F339F2",
+      "hash": "98F06FE6AE3CC762D642C388B60D62F891789675",
+      "levelid": "custom_level_98F06FE6AE3CC762D642C388B60D62F891789675",
       "songName": "NADA",
       "levelAuthorName": "Tastum",
       "difficulties": [
@@ -202,6 +202,18 @@
       "levelid": "custom_level_D0CFB4F7CCF4342D1F357C4C34615AE3ACD7F962",
       "songName": "我会等",
       "levelAuthorName": "KitsuriKon",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "F4500F0CE8B35A9DA03EA1FF942CB8958A192E7F",
+      "levelid": "custom_level_F4500F0CE8B35A9DA03EA1FF942CB8958A192E7F",
+      "songName": "Cupid",
+      "levelAuthorName": "Jdgdaredevil",
       "difficulties": [
         {
           "characteristic": "Standard",

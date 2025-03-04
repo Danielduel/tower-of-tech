@@ -529,8 +529,8 @@
       ]
     },
     {
-      "hash": "9D0E38F49D5F63C864666EBFD6E159089DF3C4E1",
-      "levelid": "custom_level_9D0E38F49D5F63C864666EBFD6E159089DF3C4E1",
+      "hash": "7CCEB9B199BC9E6DAE84D6BC3AD59DB06225A30F",
+      "levelid": "custom_level_7CCEB9B199BC9E6DAE84D6BC3AD59DB06225A30F",
       "songName": "Rush Away",
       "levelAuthorName": "May",
       "difficulties": [
@@ -569,6 +569,18 @@
       "levelid": "custom_level_F0EC2162804C965001B0952DC0855174949C3BBD",
       "songName": "FLIP THE SWITCH",
       "levelAuthorName": "Jabob",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "5A39EF53207C7D902BEBC3C28B68D0A6936DECFF",
+      "levelid": "custom_level_5A39EF53207C7D902BEBC3C28B68D0A6936DECFF",
+      "songName": "YABABAINA",
+      "levelAuthorName": "Anammelech",
       "difficulties": [
         {
           "characteristic": "Standard",

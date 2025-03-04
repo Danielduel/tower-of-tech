@@ -66,18 +66,6 @@
       ]
     },
     {
-      "hash": "1B93BA69CC4278155D14F05AB58E4B812700C019",
-      "levelid": "custom_level_1B93BA69CC4278155D14F05AB58E4B812700C019",
-      "songName": "Reverie",
-      "levelAuthorName": "Econdsay eamtay",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "98EFC0DA9A276D9CE6755B260035A8A4BACE3EBF",
       "levelid": "custom_level_98EFC0DA9A276D9CE6755B260035A8A4BACE3EBF",
       "songName": "RGB",
@@ -366,18 +354,6 @@
       ]
     },
     {
-      "hash": "E799B25C9D5CBC6092B44CB97B4B83B45FD6B353",
-      "levelid": "custom_level_E799B25C9D5CBC6092B44CB97B4B83B45FD6B353",
-      "songName": "Oblivion",
-      "levelAuthorName": "Timeweaver",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "0F1F8C54F72E2055EE229C5F5FBBCF1FC7305801",
       "levelid": "custom_level_0F1F8C54F72E2055EE229C5F5FBBCF1FC7305801",
       "songName": "Danger",
@@ -390,34 +366,10 @@
       ]
     },
     {
-      "hash": "4DC6802A700F04FFDB6791330A4D0AED955E54A0",
-      "levelid": "custom_level_4DC6802A700F04FFDB6791330A4D0AED955E54A0",
-      "songName": "I do! Do you?",
-      "levelAuthorName": "eurnkung",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "488B9870A8FA2B99FAB0E8B1C97B17D42D83934B",
       "levelid": "custom_level_488B9870A8FA2B99FAB0E8B1C97B17D42D83934B",
       "songName": "Holy Moly Holy Night",
       "levelAuthorName": "Ge2toro",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "D5AA250E519765E9CA23EE6FC5CB7CB91FA1942A",
-      "levelid": "custom_level_D5AA250E519765E9CA23EE6FC5CB7CB91FA1942A",
-      "songName": "Waste My Time",
-      "levelAuthorName": "Alice",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -442,18 +394,6 @@
       "levelid": "custom_level_6C1318A687DDD44F172948FFD8FCF6872293BD37",
       "songName": "Run Boy Run",
       "levelAuthorName": "Vadez",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "A151CA92F2F26A59178AF738C939699727F45410",
-      "levelid": "custom_level_A151CA92F2F26A59178AF738C939699727F45410",
-      "songName": "Nemesis",
-      "levelAuthorName": "Gabriel",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1257,7 +1197,7 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "ExpertPlus"
+          "name": "Expert"
         }
       ]
     },
@@ -1365,7 +1305,7 @@
       "difficulties": [
         {
           "characteristic": "Standard",
-          "name": "Hard"
+          "name": "Expert"
         }
       ]
     },
@@ -1470,18 +1410,6 @@
       "levelid": "custom_level_9FA50CD323E28090E13CDFDA294C95184C90C1F6",
       "songName": "Strong wind Allback",
       "levelAuthorName": "Emiru",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "4CF63EC64F73626ECAECE92FC6D48CF144BCA574",
-      "levelid": "custom_level_4CF63EC64F73626ECAECE92FC6D48CF144BCA574",
-      "songName": "This Is The Life",
-      "levelAuthorName": "Dantsu",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1678,10 +1606,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        },
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
         }
       ]
     },
@@ -1818,34 +1742,10 @@
       ]
     },
     {
-      "hash": "E707DB95257361DEB1D2199529CA2A64BFAB6CB4",
-      "levelid": "custom_level_E707DB95257361DEB1D2199529CA2A64BFAB6CB4",
-      "songName": "CLASSY",
-      "levelAuthorName": "eurnkung",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "169774DC0E5F830C354B521BECDBA80256BE4AD6",
       "levelid": "custom_level_169774DC0E5F830C354B521BECDBA80256BE4AD6",
       "songName": "On The Floor",
       "levelAuthorName": "Aquaflee",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "18BA37E6120AB981C44B78DC1ACB4515C579CA91",
-      "levelid": "custom_level_18BA37E6120AB981C44B78DC1ACB4515C579CA91",
-      "songName": "Witches",
-      "levelAuthorName": "Kassi",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2042,18 +1942,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "57679C24912368FBF934AF2667216F2C787CD4CD",
-      "levelid": "custom_level_57679C24912368FBF934AF2667216F2C787CD4CD",
-      "songName": "Counting Stars",
-      "levelAuthorName": "Faded 99 & Z-ANESaber",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -2325,18 +2213,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "hash": "CAB94365D4625073A64B5111610FEBD01AF6E6E2",
-      "levelid": "custom_level_CAB94365D4625073A64B5111610FEBD01AF6E6E2",
-      "songName": "惊鹊",
-      "levelAuthorName": "ani",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -2645,6 +2521,54 @@
       "levelid": "custom_level_CAD63FF2F2C2B8AE7DD8DEF384DBDA22C34D5BB4",
       "songName": "Zenith",
       "levelAuthorName": "Gabriel, Marsh, Fuyakeru",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "749A8C900EB8B3F7B8D41CCBA3FDFDEAF997FEDF",
+      "levelid": "custom_level_749A8C900EB8B3F7B8D41CCBA3FDFDEAF997FEDF",
+      "songName": "Out of Focus",
+      "levelAuthorName": "misterlihao",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C56040E307335A3E7116DE76E4F07D472CFE28D3",
+      "levelid": "custom_level_C56040E307335A3E7116DE76E4F07D472CFE28D3",
+      "songName": "Help Me",
+      "levelAuthorName": "Alzaraf",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "CACCDA86525621ED2EC79F1F728BEE5F29E901B0",
+      "levelid": "custom_level_CACCDA86525621ED2EC79F1F728BEE5F29E901B0",
+      "songName": "AKKERA-COUNTRY-BOY",
+      "levelAuthorName": "Dr_Marc",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "00DE30865A5EA8AE770D8B363FE8C2FE721E286C",
+      "levelid": "custom_level_00DE30865A5EA8AE770D8B363FE8C2FE721E286C",
+      "songName": "Aimai Funk",
+      "levelAuthorName": "Fuyakeru",
       "difficulties": [
         {
           "characteristic": "Standard",

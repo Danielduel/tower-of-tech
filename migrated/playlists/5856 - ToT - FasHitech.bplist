@@ -225,8 +225,8 @@
       ]
     },
     {
-      "hash": "3F6791E7850D3B04F2CCA2BFE783D47669363210",
-      "levelid": "custom_level_3F6791E7850D3B04F2CCA2BFE783D47669363210",
+      "hash": "965DC78BB2675977CB82A1CF70E5D6642ECFEC0B",
+      "levelid": "custom_level_965DC78BB2675977CB82A1CF70E5D6642ECFEC0B",
       "songName": "Medicine",
       "levelAuthorName": "August & Bizzy",
       "difficulties": [
@@ -300,6 +300,42 @@
       "hash": "3975E03CC9A9BB454DC8D752CFC9F13E84616E71",
       "levelid": "custom_level_3975E03CC9A9BB454DC8D752CFC9F13E84616E71",
       "songName": "Fading Wind",
+      "levelAuthorName": "VoltageO",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "3276CD8D24B4CBD8C692F4EEADA3305928876F1E",
+      "levelid": "custom_level_3276CD8D24B4CBD8C692F4EEADA3305928876F1E",
+      "songName": "Bug",
+      "levelAuthorName": "Jabob",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "7447E6F27C2D7AE0DF43281E5533D17EC4A061C9",
+      "levelid": "custom_level_7447E6F27C2D7AE0DF43281E5533D17EC4A061C9",
+      "songName": "Poison Mushroom",
+      "levelAuthorName": "RetrX",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4F8732D91FEDEB325FC8B9D668CCF1301F1611E6",
+      "levelid": "custom_level_4F8732D91FEDEB325FC8B9D668CCF1301F1611E6",
+      "songName": "Simulation",
       "levelAuthorName": "VoltageO",
       "difficulties": [
         {

@@ -861,6 +861,10 @@
         {
           "characteristic": "Standard",
           "name": "Easy"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -1489,18 +1493,6 @@
       ]
     },
     {
-      "hash": "AD3AE4645527E2FAC6678D9477AE7ECB60F0E40C",
-      "levelid": "custom_level_AD3AE4645527E2FAC6678D9477AE7ECB60F0E40C",
-      "songName": "Perfect Night",
-      "levelAuthorName": "Jonas_0_0",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "hash": "8601EBB7142305A6560CDE19C6AEB8E389BCA34E",
       "levelid": "custom_level_8601EBB7142305A6560CDE19C6AEB8E389BCA34E",
       "songName": "Not Enough",
@@ -1633,6 +1625,102 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "0390B613E68CDF2C453217427F0B3FED67560FFE",
+      "levelid": "custom_level_0390B613E68CDF2C453217427F0B3FED67560FFE",
+      "songName": "Peace and Tranquility",
+      "levelAuthorName": "Eckimlon, kibo, Taddus",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "9AE2FA6D0E9A44124EFFD5D3A2B7B3946CF076CF",
+      "levelid": "custom_level_9AE2FA6D0E9A44124EFFD5D3A2B7B3946CF076CF",
+      "songName": "Fingertips",
+      "levelAuthorName": "spacky",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "0B8EB23FFCD9B0363A8708C5DCDE093120F35F59",
+      "levelid": "custom_level_0B8EB23FFCD9B0363A8708C5DCDE093120F35F59",
+      "songName": "DEMON TIME",
+      "levelAuthorName": "moonlightmews",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "A184DADF955EDAC6D203DE95327480BE29305F8E",
+      "levelid": "custom_level_A184DADF955EDAC6D203DE95327480BE29305F8E",
+      "songName": "War",
+      "levelAuthorName": "TG90",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "0373079382B72F74AC022CD03976D5F22B1B4F02",
+      "levelid": "custom_level_0373079382B72F74AC022CD03976D5F22B1B4F02",
+      "songName": "Last Score",
+      "levelAuthorName": "Ge2toro",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "5BB6A279FD2C6BF20495F42B6E4395A45F9C197C",
+      "levelid": "custom_level_5BB6A279FD2C6BF20495F42B6E4395A45F9C197C",
+      "songName": "Paradise",
+      "levelAuthorName": "RateGyro",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "9FA50CD323E28090E13CDFDA294C95184C90C1F6",
+      "levelid": "custom_level_9FA50CD323E28090E13CDFDA294C95184C90C1F6",
+      "songName": "Strong wind Allback",
+      "levelAuthorName": "Emiru",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "EA532620629CD6B2A0405B7A08CF4E80D8A688CF",
+      "levelid": "custom_level_EA532620629CD6B2A0405B7A08CF4E80D8A688CF",
+      "songName": "Solid Ground",
+      "levelAuthorName": "Phøenix",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

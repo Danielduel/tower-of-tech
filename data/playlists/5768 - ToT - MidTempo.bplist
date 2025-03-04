@@ -42,18 +42,6 @@
       ]
     },
     {
-      "songName": "The Master",
-      "levelAuthorName": "Galaxy as \"The Master\"",
-      "hash": "8736D296EDFADEC149E895E274DD03D6561B9DF8",
-      "levelid": "custom_level_8736D296EDFADEC149E895E274DD03D6561B9DF8",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Kuroyuri - Halv -",
       "levelAuthorName": "CharlotteAulin",
       "hash": "F1A1C7B434AD499ACBDDDA941B60402E0159DAD2",

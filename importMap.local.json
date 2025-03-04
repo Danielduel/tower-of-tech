@@ -26,7 +26,7 @@
     "@trpc/server/": "https://esm.sh/*@trpc/server@10.45.2/",
     "@trpc/client": "https://esm.sh/*@trpc/client@10.45.2",
     "@trpc/client/": "https://esm.sh/*@trpc/client@10.45.2/",
-    "@trpc/react-query": "https://esm.sh/*@trpc/react-query@10.45.2",
+    "@trpc/react-query": "https://esm.sh/*@trpc/react-query@10.45.2?standalone&deps=react@18.2.0",
     "zod": "npm:zod@^3.22.4",
     "zod-api": "jsr:@olli/zod-api@0.9.2",
     "s3_lite_client": "https://deno.land/x/s3_lite_client@0.6.1/mod.ts",

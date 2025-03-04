@@ -6,18 +6,6 @@
   },
   "songs": [
     {
-      "hash": "C8B4A8237C8B6EF8D1B5C25AA313267D284052F4",
-      "levelid": "custom_level_C8B4A8237C8B6EF8D1B5C25AA313267D284052F4",
-      "songName": "Green Greens",
-      "levelAuthorName": "Rashed",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "hash": "75CADAC9031FEF0F41F1579BA31F03EA34770B52",
       "levelid": "custom_level_75CADAC9031FEF0F41F1579BA31F03EA34770B52",
       "songName": "handle me",
@@ -106,18 +94,6 @@
       "levelid": "custom_level_48DB559D5082D2C7D6F052C3DB3EF2A29F7347F4",
       "songName": "Last Resort",
       "levelAuthorName": "Bytrius",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "3B70F7697A31006229D2D2DEB2027AF7808F12AD",
-      "levelid": "custom_level_3B70F7697A31006229D2D2DEB2027AF7808F12AD",
-      "songName": "Lilith",
-      "levelAuthorName": "nitronik.exe",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -786,18 +762,6 @@
       ]
     },
     {
-      "hash": "026B3B5942A4FFE452FFBC3A89AE633F4D9E54CE",
-      "levelid": "custom_level_026B3B5942A4FFE452FFBC3A89AE633F4D9E54CE",
-      "songName": "Milk Crown on Sonnetica",
-      "levelAuthorName": "Vegetable Mapping Team",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
-        }
-      ]
-    },
-    {
       "hash": "54532F625C9CDC1F172352C36D4E0A6648682E20",
       "levelid": "custom_level_54532F625C9CDC1F172352C36D4E0A6648682E20",
       "songName": "HER",
@@ -818,18 +782,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "hash": "E29C06EE0EC203F937993AD34462A59320EB66E7",
-      "levelid": "custom_level_E29C06EE0EC203F937993AD34462A59320EB66E7",
-      "songName": "I WALK ALONE I DIE ALONE (I feel sick)",
-      "levelAuthorName": "PogU",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -946,18 +898,6 @@
       "levelid": "custom_level_882825125C2DF02B8B426B817AAFC28FC777143B",
       "songName": "the prom",
       "levelAuthorName": "GojiCrafter & Phøenix",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "0373079382B72F74AC022CD03976D5F22B1B4F02",
-      "levelid": "custom_level_0373079382B72F74AC022CD03976D5F22B1B4F02",
-      "songName": "Last Score",
-      "levelAuthorName": "Ge2toro",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1850,6 +1790,138 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "0EF33396F5982458142296242D4EE94AEF6451EB",
+      "levelid": "custom_level_0EF33396F5982458142296242D4EE94AEF6451EB",
+      "songName": "Kokoro Yohou",
+      "levelAuthorName": "Ge2toro",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "280B192F303BB229721C960E49EBE57F1A126810",
+      "levelid": "custom_level_280B192F303BB229721C960E49EBE57F1A126810",
+      "songName": "Carmen",
+      "levelAuthorName": "muffie, coollie, nollie",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "4DC6802A700F04FFDB6791330A4D0AED955E54A0",
+      "levelid": "custom_level_4DC6802A700F04FFDB6791330A4D0AED955E54A0",
+      "songName": "I do! Do you?",
+      "levelAuthorName": "eurnkung",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "D5AA250E519765E9CA23EE6FC5CB7CB91FA1942A",
+      "levelid": "custom_level_D5AA250E519765E9CA23EE6FC5CB7CB91FA1942A",
+      "songName": "Waste My Time",
+      "levelAuthorName": "Alice",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "EFAECFA90DFD881AE5F4280474CAB4E31B4D7B06",
+      "levelid": "custom_level_EFAECFA90DFD881AE5F4280474CAB4E31B4D7B06",
+      "songName": "on & on",
+      "levelAuthorName": "Rail Zen",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "57679C24912368FBF934AF2667216F2C787CD4CD",
+      "levelid": "custom_level_57679C24912368FBF934AF2667216F2C787CD4CD",
+      "songName": "Counting Stars",
+      "levelAuthorName": "Faded 99, Z-ANESaber",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "E707DB95257361DEB1D2199529CA2A64BFAB6CB4",
+      "levelid": "custom_level_E707DB95257361DEB1D2199529CA2A64BFAB6CB4",
+      "songName": "CLASSY",
+      "levelAuthorName": "eurnkung",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "932A7FA3F3D20D751BC8ED458C8EE4BC73852F82",
+      "levelid": "custom_level_932A7FA3F3D20D751BC8ED458C8EE4BC73852F82",
+      "songName": "3days",
+      "levelAuthorName": "Almarya",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "8EA6D40002CECB79121F126921BEE431A5A046F5",
+      "levelid": "custom_level_8EA6D40002CECB79121F126921BEE431A5A046F5",
+      "songName": "Idol",
+      "levelAuthorName": "yabje, Rusty, Andy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "F5934558F0D74F2AAF89B4B36C98A3042B7596DF",
+      "levelid": "custom_level_F5934558F0D74F2AAF89B4B36C98A3042B7596DF",
+      "songName": "Lavie",
+      "levelAuthorName": "Gabriel",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "56A654BF626E8054E91EA395297D854409A23BD6",
+      "levelid": "custom_level_56A654BF626E8054E91EA395297D854409A23BD6",
+      "songName": "ReawakeR",
+      "levelAuthorName": "BlAck_vOid-1001",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }
