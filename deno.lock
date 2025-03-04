@@ -34,6 +34,7 @@
       "npm:openai@4.55.3": "npm:openai@4.55.3_zod@3.23.8",
       "npm:seed-color": "npm:seed-color@2.0.1",
       "npm:tailwindcss": "npm:tailwindcss@3.4.9_postcss@8.4.41",
+      "npm:tailwindcss@3.4.9": "npm:tailwindcss@3.4.9_postcss@8.4.41",
       "npm:zod@^3.22.4": "npm:zod@3.23.8"
     },
     "jsr": {
