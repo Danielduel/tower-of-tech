@@ -5,7 +5,7 @@ import { GetHelixUsersItemSchemaT } from "@/packages/api-twitch/helix/helixUsers
 import { Err, Ok, Result } from "@/packages/utils/optionals.ts";
 import { BroadcasterId, TwitchChannelPointsCustomRewardId } from "@/packages/api-twitch/helix/brand.ts";
 import { HelixChannelsAdsItemSchemaT } from "@/packages/api-twitch/helix/helixChannelsAds.ts";
-import { createTwitchPubSub } from "@/apps/twitch-bot/sockets/twitch-pubsub.ts";
+import { createTwitchEventSub } from "@/apps/twitch-bot/sockets/twitch-eventsub.ts";
 import { HelixChannelsAdsScheduleSnoozeItemSchemaT } from "@/packages/api-twitch/helix/helixChannelsAdsScheduleSnooze.ts";
 import {
   GetHelixChannelPointsCustomRewardsItemSchemaT,
@@ -15,6 +15,7 @@ import {
 } from "@/packages/api-twitch/helix/helixChannelPointsCustomRewards.ts";
 import { MINUTE_MS } from "@/packages/utils/time.ts";
 import { HelixChatAnnouncementsBodySchemaT } from "@/packages/api-twitch/helix/helixChatAnnouncements.ts";
+import { HelixEventSubSubscriptionsQuerySchemaT } from "@/packages/api-twitch/helix/helixEventSubSubscriptions.ts";
 
 function unwrapDataArrayResponse<
   T extends { data: { data: (unknown)[] } | null } extends { data: { data: (infer P)[] } | null } ? P : unknown,
@@ -45,7 +46,7 @@ function handlePatchResponse<T extends { ok: boolean; error?: Error }>(response:
   return Err(response.error ?? "Other error");
 }
 
-class ChatShoutoutItem {
+export class ChatShoutoutItem {
   constructor(
     public targetBroadcasterId: BroadcasterId,
     public lastShoutoutTimestamp: number,
@@ -181,6 +182,15 @@ export class TwitchHelixBroadcasterApi {
     return unwrapDataArrayResponse(response);
   }
 
+  public async postEventSubSubsctiption(body: HelixEventSubSubscriptionsQuerySchemaT): Promise<null> {
+    const response = await TwitchHelixApiClient.eventSubSubsciptions.post({
+      headers: this.createAuthHeaders(),
+      body
+    });
+    console.log(response);
+    return null;
+  }
+  
   public async updateCustomPointReward(
     id: TwitchChannelPointsCustomRewardId,
     update: PatchHelixChannelPointsCustomRewardsBodySchemaT,
@@ -274,7 +284,7 @@ export class TwitchHelixBroadcasterApi {
     });
   }
 
-  public async getPubSub() {
-    return await createTwitchPubSub(this.broadcasterId, this.userCreds.access_token);
+  public async getEventSub() {
+    return await createTwitchEventSub(this.broadcasterId, this.userCreds.access_token);
   }
 }

@@ -12,7 +12,7 @@
     "website:check": "deno check ./apps/website/App.tsx",
 
     "cli:build": "make -f ./apps/cli/Makefile build",
-    "cli:list-resend-links": "TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --env --unstable ./apps/twitch-bot/tools/list-resendlinks.ts",
+    "cli:list-resend-links": "TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --env --unstable-kv --unstable ./apps/twitch-bot/tools/list-resendlinks.ts",
     "mod:build": "make -f ./apps/mod/Makefile build",
 
     "website:tailwind:build": "tailwind -c ./apps/website/tailwind/tailwind.config.js -i ./apps/website/tailwind/input.css -o ./apps/website/public/tailwind.css",
@@ -22,26 +22,26 @@
     "beatleader-bot:logger": "deno run -A ./apps/beatleader-bot/tools/logger.ts",
     "beatleader-bot:record": "deno run -A ./apps/beatleader-bot/tools/record.ts",
 
-    "discord-bot:trigger": "TOT_ENVIRONMENT=local deno run -A --unstable --env ./apps/discord-bot/setup/trigger.ts",
+    "discord-bot:trigger": "TOT_ENVIRONMENT=local deno run -A --unstable-kv --unstable --env ./apps/discord-bot/setup/trigger.ts",
     "discord-bot:register": "deno run -A --env ./apps/discord-bot/setup/register-commands.ts",
     "discord-bot:register-raw": "deno run -A ./apps/discord-bot/setup/register-commands.ts",
 
     "twitch-bot:playlist-worker": "deno run -A --env ./apps/twitch-bot/tools/playlist-worker.ts",
     "twitch-bot:pubsub": "deno run -A --env ./apps/twitch-bot/tools/pubsub-prototype.ts",
-    "twitch-bot:resend-link": "TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable --env ./apps/twitch-bot/resendLink/mod.ts",
-    "twitch-bot:resend-link-setup": "TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable --env ./apps/twitch-bot/resendLink/setup.ts",
-    "twitch-bot:commands": "deno run -A --unstable --env ./apps/twitch-bot/tools/commands.ts",
-    "twitch-bot:commands-techmulti": "deno run -A --unstable --env ./apps/twitch-bot/tools/commands-techmulti.ts",
+    "twitch-bot:resend-link": "TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable-kv --unstable --env ./apps/twitch-bot/resendLink/mod.ts",
+    "twitch-bot:resend-link-setup": "TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable-kv --unstable --env ./apps/twitch-bot/resendLink/setup.ts",
+    "twitch-bot:commands": "deno run -A --unstable-kv --unstable --env ./apps/twitch-bot/tools/commands.ts",
+    "twitch-bot:commands-techmulti": "deno run -A --unstable-kv --unstable --env ./apps/twitch-bot/tools/commands-techmulti.ts",
 
     "s3s-fs-local": "./scripts/s3s-fs-local.sh",
 
-    "editor:dev": "TOT_ENVIRONMENT=local deno run -A --unstable --no-check --watch --import-map importMap.local.json ./apps/website/server.tsx -p 8081",
-    "editor:dev-remote": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable --no-check --watch ./apps/website/server.tsx -p 8081",
-    "editor:dev-remote:local-import": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable --no-check --watch --import-map importMap.local.json ./apps/website/server.tsx -p 8081",
+    "editor:dev": "TOT_ENVIRONMENT=local deno run -A --unstable-kv --unstable --no-check --watch --import-map importMap.local.json ./apps/website/server.tsx -p 8081",
+    "editor:dev-remote": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable-kv --unstable --no-check --watch ./apps/website/server.tsx -p 8081",
+    "editor:dev-remote:local-import": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable-kv --unstable --no-check --watch --import-map importMap.local.json ./apps/website/server.tsx -p 8081",
     "editor:test": "deno test --allow-all",
     "editor:build": "deno run -A ./webapp/build.ts",
     "editor:start": "ULTRA_MODE=production deno run -A --no-remote ./webapp/server.js",
-    "editor:purge": "deno run -A --unstable ./purge.ts"
+    "editor:purge": "deno run -A --unstable-kv --unstable ./purge.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsxdev",

@@ -1,4 +1,4 @@
-import { Client } from "https://deno.land/x/twitch_irc@0.11.2/mod.ts";
+import { Client } from "jsr:@dduel/twitch-irc@0.11.4";
 import { getTwitchIRCLogger } from "@/packages/log/twitch-irc.ts";
 import { TwitchChannel, TwitchIRCEmitter, TwitchIRCEventContext, TwitchIRCEvents } from "@/apps/twitch-bot/types.ts";
 import { PromiseMessageManager } from "@/packages/api-twitch/utils/PromiseMessageManager.ts";

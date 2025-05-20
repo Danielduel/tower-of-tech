@@ -19,12 +19,14 @@ import { helixChannelPointsCustomRewardsResource } from "@/packages/api-twitch/h
 import { helixChatShoutoutResource } from "@/packages/api-twitch/helix/helixChatShoutouts.ts";
 import { helixChatAnnouncementsResource } from "@/packages/api-twitch/helix/helixChatAnnouncements.ts";
 import { helixStreamsResource } from "@/packages/api-twitch/helix/helixStreams.ts";
+import { helixEventSubSubscriptionsResource } from "@/packages/api-twitch/helix/helixEventSubSubscriptions.ts";
 
 export const TwitchHelixApiClient = client({
   fetcher,
   baseUrl: "https://api.twitch.tv",
   logger: await getLogger(),
   resources: {
+    eventSubSubsciptions: helixEventSubSubscriptionsResource,
     channels: helixChannelsResource,
     channelsAds: helixChannelsAdsResource,
     channelsAdsScheduleSnoozeResource: helixChannelsAdsScheduleSnoozeResource,
@@ -79,3 +81,4 @@ export const setChannelData = async (
     },
   });
 };
+

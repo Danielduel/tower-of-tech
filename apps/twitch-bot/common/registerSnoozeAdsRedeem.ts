@@ -25,6 +25,7 @@ export const registerSnoozeAdsRedeem = async (
       global_cooldown_seconds: 60,
       is_global_cooldown_enabled: true,
       is_paused: false,
+      is_enabled: true,
     },
   );
 

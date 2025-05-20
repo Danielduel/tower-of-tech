@@ -41,7 +41,7 @@ const [irc, ircCleanup, ircContext] = createTwitchIRC({
   },
 });
 
-const [pubSub, pubSubCleanup, pubSubContext] = await twitchHelixBroadcasterApiManaged.getPubSub();
+const [pubSub, pubSubCleanup, pubSubContext] = await twitchHelixBroadcasterApiManaged.getEventSub();
 
 const twitchPubSubManager = new TwitchPubSubManager(pubSub, pubSubContext);
 const twitchAdScheduleManager =

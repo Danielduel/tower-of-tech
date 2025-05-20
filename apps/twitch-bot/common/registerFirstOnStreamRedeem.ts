@@ -21,6 +21,7 @@ export const registerFirstOnStreamRedeem = async (
       max_per_stream: 1,
       is_max_per_stream_enabled: true,
       is_paused: false,
+      is_enabled: true,
     },
   );
 

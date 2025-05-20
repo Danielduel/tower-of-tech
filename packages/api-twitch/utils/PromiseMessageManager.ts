@@ -1,4 +1,4 @@
-import { User } from "https://deno.land/x/twitch_irc@0.11.2/lib/message/common.ts";
+import type { User } from "jsr:@dduel/twitch-irc@0.11.4";
 import { SECOND_MS } from "@/packages/utils/time.ts";
 import { deadline } from "@/packages/utils/async.ts";
 import { Err, Ok, Result } from "@/packages/utils/optionals.ts";

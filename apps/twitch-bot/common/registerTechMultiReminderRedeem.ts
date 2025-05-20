@@ -15,6 +15,7 @@ export const registerTechMultiReminderRedeem = async (
     title: "Wow, tech multi next week!",
     cost: 115,
     is_paused: false,
+    is_enabled: true,
   });
 
   if (nextMultiRedeemM.isErr()) {

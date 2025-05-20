@@ -38,9 +38,22 @@ const [irc, ircCleanup, ircContext] = createTwitchIRC({
   },
 });
 
-const [pubSub, pubSubCleanup, pubSubContext] = await twitchHelixBroadcasterApiManaged.getPubSub();
+const [pubSub, eventSubCleanup, pubSubContext] = await twitchHelixBroadcasterApiManaged.getEventSub();
 
-const twitchPubSubManager = new TwitchPubSubManager(pubSub, pubSubContext);
+// await twitchHelixBroadcasterApiManaged.postEventSubSubsctiption({
+//   type: "channel.channel_points_custom_reward_redemption.add",
+//   transport: {
+//     method: "websocket",
+//     session_id: session.payload.session.id,
+//   },
+//   condition: {
+//     broadcaster_user_id: twitchHelixBroadcasterApiManaged.userData.id,
+//   },
+//   version: "1"
+// });
+//
+
+const twitchPubSubManager = new TwitchPubSubManager(pubSub, pubSubContext, twitchHelixBroadcasterApiManaged);
 const twitchAdScheduleManager =
   (await TwitchAdScheduleTaskManager.fromTwitchHelixBroadcasterApi(twitchHelixBroadcasterApiManaged)).unwrap();
 
@@ -67,7 +80,7 @@ await updateChannelInfo();
 Deno.addSignalListener("SIGINT", () => {
   ircCleanup();
   console.log("\nParted");
-  pubSubCleanup();
+  eventSubCleanup();
   console.log("\nPubSub cleanup");
   Deno.exit();
 });

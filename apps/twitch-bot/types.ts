@@ -13,8 +13,9 @@ import type { UserNotice } from "https://deno.land/x/twitch_irc@0.11.2/lib/messa
 import type { UserState } from "https://deno.land/x/twitch_irc@0.11.2/lib/message/userstate.ts";
 import type { Message } from "https://deno.land/x/twitch_irc@0.11.2/lib/message.ts";
 import type { Channel as TwitchChannel } from "https://deno.land/x/twitch_irc@0.11.2/lib/base.ts";
-import type { Client } from "https://deno.land/x/twitch_irc@0.11.2/mod.ts";
+import type { Client } from "jsr:@dduel/twitch-irc@0.11.4";
 import type {
+EventSubWelcomeInnerTypeSchemaT,
   TwitchRedemptionRewardSchemaT,
   TwitchRedemptionSchemaT,
 } from "@/apps/twitch-bot/sockets/twitch-schema.ts";
@@ -130,4 +131,5 @@ export class TwitchPubSubEmitter extends EventEmitter<TwitchPubSubEvents> {}
 export type TwitchPubSubContext = {
   socket: WebSocket;
   listenTopics: (topics: string[]) => void;
+  websocketSession: EventSubWelcomeInnerTypeSchemaT;
 };
