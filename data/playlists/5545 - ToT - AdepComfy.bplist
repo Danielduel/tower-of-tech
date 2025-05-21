@@ -1152,8 +1152,8 @@
     {
       "songName": "Ai o Chikaishi Hime Kazari",
       "levelAuthorName": "Saut & Nolanimations",
-      "hash": "7DA41788EDDC376ADBC8DEC94918F5D72BFDB35E",
-      "levelid": "custom_level_7DA41788EDDC376ADBC8DEC94918F5D72BFDB35E",
+      "hash": "0ECE9EC659645D8E12E635CADA6047C97D233684",
+      "levelid": "custom_level_0ECE9EC659645D8E12E635CADA6047C97D233684",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1742,6 +1742,282 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Pompeii",
+      "levelAuthorName": "Tranch",
+      "hash": "664F8823D370AF4D4F47450F84159A9DA4225B3F",
+      "levelid": "custom_level_664F8823D370AF4D4F47450F84159A9DA4225B3F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Daisy",
+      "levelAuthorName": "eurnkung",
+      "hash": "E2C36CFE940526F90952EFBA3667297271C7DB96",
+      "levelid": "custom_level_E2C36CFE940526F90952EFBA3667297271C7DB96",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Daughter of Hallownest",
+      "levelAuthorName": "mkWTF",
+      "hash": "6179B007C9BD659F07993EE6EE33C45AA231980C",
+      "levelid": "custom_level_6179B007C9BD659F07993EE6EE33C45AA231980C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "KICK BACK",
+      "levelAuthorName": "Narwhal, Jabob",
+      "hash": "521F3F8BC77E1893D57768A44113CA8D7EB4B2EF",
+      "levelid": "custom_level_521F3F8BC77E1893D57768A44113CA8D7EB4B2EF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "HUGE W",
+      "levelAuthorName": "Joshabi",
+      "hash": "8104BC82A204BF94EC7C3D8CFB00D67980907B2F",
+      "levelid": "custom_level_8104BC82A204BF94EC7C3D8CFB00D67980907B2F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "My Castle Town",
+      "levelAuthorName": "zSkull162",
+      "hash": "4C57CA4A1B724C2E27B3FBCA2CCDC4D3F73944A2",
+      "levelid": "custom_level_4C57CA4A1B724C2E27B3FBCA2CCDC4D3F73944A2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "DAICON V",
+      "levelAuthorName": "VoltageO, riisi",
+      "hash": "DDA13B4DC6BC34F777D38032061BC78A7A63414E",
+      "levelid": "custom_level_DDA13B4DC6BC34F777D38032061BC78A7A63414E",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Thriller (James Egbert Dubstep Remix)",
+      "levelAuthorName": "pkdan",
+      "hash": "5D5DF852651BB568012635FF3A356EFDD9372B80",
+      "levelid": "custom_level_5D5DF852651BB568012635FF3A356EFDD9372B80",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Bluerose",
+      "levelAuthorName": "Marsh",
+      "hash": "93B559CA104E3C7B00D6EA3CA3201EBD9BD33739",
+      "levelid": "custom_level_93B559CA104E3C7B00D6EA3CA3201EBD9BD33739",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "There Till The End",
+      "levelAuthorName": "JRE_McNuggies, winteredge, McMelon_XoXo, Nugget",
+      "hash": "10ADB02F9AC04383D5540A543A919C69825662DB",
+      "levelid": "custom_level_10ADB02F9AC04383D5540A543A919C69825662DB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": " Get Through",
+      "levelAuthorName": "Davaayy",
+      "hash": "4C0FA506FE189F4CAC1287FDA39A7B0FF3298AF4",
+      "levelid": "custom_level_4C0FA506FE189F4CAC1287FDA39A7B0FF3298AF4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Six Shooter",
+      "levelAuthorName": "Cush",
+      "hash": "0756928711A2C80838D1F391846D4B046D706596",
+      "levelid": "custom_level_0756928711A2C80838D1F391846D4B046D706596",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Drought",
+      "levelAuthorName": "Teuflum",
+      "hash": "C17B1A1144299CF776F9B590E66C992AD02ECCE3",
+      "levelid": "custom_level_C17B1A1144299CF776F9B590E66C992AD02ECCE3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Elemental Ethnic",
+      "levelAuthorName": "take_nyan, Gabriel",
+      "hash": "841693BA35DC9A962F21F9ADA9BB56AF22EC5E45",
+      "levelid": "custom_level_841693BA35DC9A962F21F9ADA9BB56AF22EC5E45",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "The Nights",
+      "levelAuthorName": "Nolanimations",
+      "hash": "45F9480A43DDEA9FF338BF449AD9EAD62F73EB52",
+      "levelid": "custom_level_45F9480A43DDEA9FF338BF449AD9EAD62F73EB52",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Viyella's Scream",
+      "levelAuthorName": "Timbo",
+      "hash": "7ACE8EEE8E217A00A895AA7D12977CBC9AC0CDC5",
+      "levelid": "custom_level_7ACE8EEE8E217A00A895AA7D12977CBC9AC0CDC5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "CLASSY",
+      "levelAuthorName": "eurnkung",
+      "hash": "E707DB95257361DEB1D2199529CA2A64BFAB6CB4",
+      "levelid": "custom_level_E707DB95257361DEB1D2199529CA2A64BFAB6CB4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Peeping Tom",
+      "levelAuthorName": "Nixie.Korten",
+      "hash": "1C93BBB38BAFE3C0C2EB5F9A3AC5AA8DA1BD6ABE",
+      "levelid": "custom_level_1C93BBB38BAFE3C0C2EB5F9A3AC5AA8DA1BD6ABE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Medium Rare Milk",
+      "levelAuthorName": "Spinvvy",
+      "hash": "6A5BA53C83E01FEB579C95C0252592C03A26EBCF",
+      "levelid": "custom_level_6A5BA53C83E01FEB579C95C0252592C03A26EBCF",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Binary",
+      "levelAuthorName": "P90KILLR",
+      "hash": "71EEC521EC8C8418737CE8F4B64359D69BCDF5D1",
+      "levelid": "custom_level_71EEC521EC8C8418737CE8F4B64359D69BCDF5D1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "guitar song",
+      "levelAuthorName": "edgyguns",
+      "hash": "42BF34B08CA9BD66FD8B9912B0447A06C3AD1AB0",
+      "levelid": "custom_level_42BF34B08CA9BD66FD8B9912B0447A06C3AD1AB0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Midnight City",
+      "levelAuthorName": "GojiCrafter",
+      "hash": "3ACDB01876BD6C49381EA74918C99744CD793DD2",
+      "levelid": "custom_level_3ACDB01876BD6C49381EA74918C99744CD793DD2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "OMG",
+      "levelAuthorName": "Bellus",
+      "hash": "813497AEF9A6693B72FBEE62162D1E62CE8AF39B",
+      "levelid": "custom_level_813497AEF9A6693B72FBEE62162D1E62CE8AF39B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     }

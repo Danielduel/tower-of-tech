@@ -37,7 +37,7 @@
 
     "editor:dev": "TOT_ENVIRONMENT=local deno run -A --unstable-kv --unstable --no-check --watch --import-map importMap.local.json ./apps/website/server.tsx -p 8081",
     "editor:dev-remote": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable-kv --unstable --no-check --watch ./apps/website/server.tsx -p 8081",
-    "editor:dev-remote:local-import": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable-kv --unstable --no-check --watch --import-map importMap.local.json ./apps/website/server.tsx -p 8081",
+    "editor:dev-remote:local-import": "ULTRA_LOG_LEVEL=DEBUG TOT_ENVIRONMENT=local DD_EDITOR_REMOTE=true deno run -A --unstable-kv --unstable --no-check --watch --unstable-cron --unstable-detect-cjs --import-map importMap.local.json ./apps/website/server.tsx -p 8081",
     "editor:test": "deno test --allow-all",
     "editor:build": "deno run -A ./webapp/build.ts",
     "editor:start": "ULTRA_MODE=production deno run -A --no-remote ./webapp/server.js",

@@ -2285,8 +2285,8 @@
       ]
     },
     {
-      "hash": "7183E16D35BC8BA4B27D3D61A9D91C68C0BBCC98",
-      "levelid": "custom_level_7183E16D35BC8BA4B27D3D61A9D91C68C0BBCC98",
+      "hash": "DE4485464CB4269F9043F9FC7C3CA967B47966F0",
+      "levelid": "custom_level_DE4485464CB4269F9043F9FC7C3CA967B47966F0",
       "songName": "Forward",
       "levelAuthorName": "Dr_Marc",
       "difficulties": [
@@ -2496,6 +2496,114 @@
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "08464E6FA151E860E9FE9CFEBE609010B2909388",
+      "levelid": "custom_level_08464E6FA151E860E9FE9CFEBE609010B2909388",
+      "songName": "Catch Me",
+      "levelAuthorName": "Uncouth",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "EA2FFD91885DD1073BEF0DE114C12B68AD5B6404",
+      "levelid": "custom_level_EA2FFD91885DD1073BEF0DE114C12B68AD5B6404",
+      "songName": "You're Gonna Go Far, Kid",
+      "levelAuthorName": "GojiCrafter",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "E07A22551E46A241DA3C80F590E4352C165FBD31",
+      "levelid": "custom_level_E07A22551E46A241DA3C80F590E4352C165FBD31",
+      "songName": "I'll See You Again",
+      "levelAuthorName": "4orizon",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "537FC928E0CD09C187532F893479E9C8F639D652",
+      "levelid": "custom_level_537FC928E0CD09C187532F893479E9C8F639D652",
+      "songName": "LEFT TO RIGHT",
+      "levelAuthorName": "PogU",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "49222E7D40686BCFA9E4097738F803CA0D1E7019",
+      "levelid": "custom_level_49222E7D40686BCFA9E4097738F803CA0D1E7019",
+      "songName": "Too Much",
+      "levelAuthorName": "Kassi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "D828B1A3A28C368A6E7756C04813724D514515FD",
+      "levelid": "custom_level_D828B1A3A28C368A6E7756C04813724D514515FD",
+      "songName": "Curtain Call",
+      "levelAuthorName": "Chromia",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "149F5C2720F7A7FB423735D3F296304EF92F9A6D",
+      "levelid": "custom_level_149F5C2720F7A7FB423735D3F296304EF92F9A6D",
+      "songName": "Ridiculous",
+      "levelAuthorName": "nitronik.exe, THMX",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "13212AF1B9B2FF595538043FC6AD007234F6C195",
+      "levelid": "custom_level_13212AF1B9B2FF595538043FC6AD007234F6C195",
+      "songName": "Tic! Tac! Toe!",
+      "levelAuthorName": "GalaxyMaster",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "7E2A833DCF5C62671A6FDD192EF194D252052955",
+      "levelid": "custom_level_7E2A833DCF5C62671A6FDD192EF194D252052955",
+      "songName": "It's Love",
+      "levelAuthorName": "JRE_McNuggies, Meme Doggo",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]

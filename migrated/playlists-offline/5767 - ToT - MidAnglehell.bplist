@@ -462,18 +462,6 @@
       ]
     },
     {
-      "hash": "664383DD2E913B72B83B977EAA77840B45DC6E27",
-      "levelid": "custom_level_664383DD2E913B72B83B977EAA77840B45DC6E27",
-      "songName": "Hold On Tight",
-      "levelAuthorName": "Maydeen",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "8A96932EF58410F6320CAEFCA6E6377DB8E0B493",
       "levelid": "custom_level_8A96932EF58410F6320CAEFCA6E6377DB8E0B493",
       "songName": "Cat Rubbing",
@@ -498,8 +486,8 @@
       ]
     },
     {
-      "hash": "CBFA6A08F99E7F72C059485C1E1071D4AE32CFCA",
-      "levelid": "custom_level_CBFA6A08F99E7F72C059485C1E1071D4AE32CFCA",
+      "hash": "4E3E2BD0F25EFB0AA8856141A92335DE6BA601C4",
+      "levelid": "custom_level_4E3E2BD0F25EFB0AA8856141A92335DE6BA601C4",
       "songName": "It's Juicy",
       "levelAuthorName": "Petersome",
       "difficulties": [
@@ -618,8 +606,8 @@
       ]
     },
     {
-      "hash": "55205F9BCD2AFF1B7E34AB5407D02DB2F6C2F0DE",
-      "levelid": "custom_level_55205F9BCD2AFF1B7E34AB5407D02DB2F6C2F0DE",
+      "hash": "13717D6BDA6AED22AC57786AC743A01BE220E02C",
+      "levelid": "custom_level_13717D6BDA6AED22AC57786AC743A01BE220E02C",
       "songName": "Patrol Mode",
       "levelAuthorName": "Voidless",
       "difficulties": [
@@ -670,6 +658,66 @@
       "levelid": "custom_level_3DBE398E3C85F030E210883ECBF1CE84263DFF15",
       "songName": "TETORIS",
       "levelAuthorName": "Emiru",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4287B1155AD1328A54BB26BF1B0318B49F6668D6",
+      "levelid": "custom_level_4287B1155AD1328A54BB26BF1B0318B49F6668D6",
+      "songName": "Scarlet Pinheel",
+      "levelAuthorName": "A Jhintleman",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4B449E118399723E0022EFB0DFAB5FE3DCBA303A",
+      "levelid": "custom_level_4B449E118399723E0022EFB0DFAB5FE3DCBA303A",
+      "songName": "Bluenation",
+      "levelAuthorName": "Dr_Marc",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "082F546C8610D193AF4E89A87EE7BDCDD584860D",
+      "levelid": "custom_level_082F546C8610D193AF4E89A87EE7BDCDD584860D",
+      "songName": "ash",
+      "levelAuthorName": "Astellic",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "117FE773C1A503FB47CB634442A27CB74F11F2BE",
+      "levelid": "custom_level_117FE773C1A503FB47CB634442A27CB74F11F2BE",
+      "songName": "Freefall",
+      "levelAuthorName": "dibl, ItsVasili",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "DDFE9CF4EA3453792AF2F6EE62C3EB7EB10AC545",
+      "levelid": "custom_level_DDFE9CF4EA3453792AF2F6EE62C3EB7EB10AC545",
+      "songName": "Bark Skinpson",
+      "levelAuthorName": "oermergeesh",
       "difficulties": [
         {
           "characteristic": "Standard",

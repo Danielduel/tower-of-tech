@@ -320,8 +320,8 @@
     {
       "songName": "Thunder",
       "levelAuthorName": "Undeceiver",
-      "hash": "01E7C9A1C044C7A8A353FB9065D28C7188C17416",
-      "levelid": "custom_level_01E7C9A1C044C7A8A353FB9065D28C7188C17416",
+      "hash": "1DD52F5E7D7E6AE38962B1195EA72C6E5C96EF27",
+      "levelid": "custom_level_1DD52F5E7D7E6AE38962B1195EA72C6E5C96EF27",
       "difficulties": [
         {
           "characteristic": "Lawless",
@@ -349,6 +349,30 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Overdose",
+      "levelAuthorName": "chikinbiskit",
+      "hash": "8157B4D0D955E8D21F98595EFD4B54A5355A9A65",
+      "levelid": "custom_level_8157B4D0D955E8D21F98595EFD4B54A5355A9A65",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "The Girl Who Glitched (Ai.Mi's Theme from Omega Strikers) ",
+      "levelAuthorName": "winteredge, Baguette, Azaela",
+      "hash": "35ACF74E0C4C20E37980797A72EDE6B964145A6A",
+      "levelid": "custom_level_35ACF74E0C4C20E37980797A72EDE6B964145A6A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]

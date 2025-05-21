@@ -127,4 +127,5 @@ const _markdownContentArr = _markdownContent.split("\n");
 const _markdownContentArrFiltered = _markdownContentArr.filter((_, i) => i !== _markdownContentArr.length - 1);
 const markdownContent = _markdownContentArrFiltered.join("\n");
 
-await markdown.write("./", "README", markdownContent);
+await Deno.writeTextFile("./README.md", markdownContent);
+// await markdown.write("./", "README", markdownContent);

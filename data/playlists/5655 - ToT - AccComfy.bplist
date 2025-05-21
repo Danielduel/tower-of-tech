@@ -878,6 +878,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -1682,6 +1686,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -1918,6 +1926,138 @@
       "levelAuthorName": "BlAck_vOid-1001",
       "hash": "56A654BF626E8054E91EA395297D854409A23BD6",
       "levelid": "custom_level_56A654BF626E8054E91EA395297D854409A23BD6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "The Middle",
+      "levelAuthorName": "TetsuBeats",
+      "hash": "4B980371B6005CC176AED1B402BD104AF56C31A3",
+      "levelid": "custom_level_4B980371B6005CC176AED1B402BD104AF56C31A3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Feel It All",
+      "levelAuthorName": "Revelate",
+      "hash": "03F1DAAE723A610FB71B3FF7F99C945CCEB19D0D",
+      "levelid": "custom_level_03F1DAAE723A610FB71B3FF7F99C945CCEB19D0D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "YoiYoi Kokon",
+      "levelAuthorName": "Joshabi",
+      "hash": "C21CAA4DBDC45CE369F2C94D8646964D2113080D",
+      "levelid": "custom_level_C21CAA4DBDC45CE369F2C94D8646964D2113080D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "I'm a Controversy",
+      "levelAuthorName": "Davinci",
+      "hash": "3CB415A3F9290EC616E33D16290F4808848176FC",
+      "levelid": "custom_level_3CB415A3F9290EC616E33D16290F4808848176FC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Oblivion",
+      "levelAuthorName": "Timeweaver",
+      "hash": "E799B25C9D5CBC6092B44CB97B4B83B45FD6B353",
+      "levelid": "custom_level_E799B25C9D5CBC6092B44CB97B4B83B45FD6B353",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Oboro",
+      "levelAuthorName": "SakuraGrass",
+      "hash": "361F015410F838D590BF3D6E5042D84536F7EBD2",
+      "levelid": "custom_level_361F015410F838D590BF3D6E5042D84536F7EBD2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Running",
+      "levelAuthorName": "Duddzy",
+      "hash": "5BBBDA67E15C9F55377F4BFF150374F12E280C3A",
+      "levelid": "custom_level_5BBBDA67E15C9F55377F4BFF150374F12E280C3A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Totsuka no Tsurugi",
+      "levelAuthorName": "Glasso050",
+      "hash": "2303911F554AA4507ECD4FA2C94CB8EB83453DD4",
+      "levelid": "custom_level_2303911F554AA4507ECD4FA2C94CB8EB83453DD4",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Autonomy",
+      "levelAuthorName": "Joshabi",
+      "hash": "ACBF9FF3733741789A37AFE3E6CF7C947E895148",
+      "levelid": "custom_level_ACBF9FF3733741789A37AFE3E6CF7C947E895148",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "I2I",
+      "levelAuthorName": "JRE_McNuggies, Ceries",
+      "hash": "0647C6BAC50D0DA761B818901967AC4A4874CCCC",
+      "levelid": "custom_level_0647C6BAC50D0DA761B818901967AC4A4874CCCC",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "#Cookie Jar",
+      "levelAuthorName": "Bytrius",
+      "hash": "969483F1239ED66C08106BD3CBE53EC15E416532",
+      "levelid": "custom_level_969483F1239ED66C08106BD3CBE53EC15E416532",
       "difficulties": [
         {
           "characteristic": "Standard",
