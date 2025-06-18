@@ -1374,18 +1374,6 @@
       ]
     },
     {
-      "hash": "13972AF7EAD7E23A3927247BEF0FC91F53A02778",
-      "levelid": "custom_level_13972AF7EAD7E23A3927247BEF0FC91F53A02778",
-      "songName": "Supernatural",
-      "levelAuthorName": "Eggcake, minsiii",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "hash": "C7F52DC50C1AB73D13614B898C0063AFAF0A0183",
       "levelid": "custom_level_C7F52DC50C1AB73D13614B898C0063AFAF0A0183",
       "songName": "VENTEN",
@@ -1682,6 +1670,78 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "6C21314EBE4CCB51B467FCD600D35DEED389A70C",
+      "levelid": "custom_level_6C21314EBE4CCB51B467FCD600D35DEED389A70C",
+      "songName": "Ordinary",
+      "levelAuthorName": "BigOlDumplin",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "966C18F066A972A0C921E9F6453FF91C52B6A000",
+      "levelid": "custom_level_966C18F066A972A0C921E9F6453FF91C52B6A000",
+      "songName": "Lumière",
+      "levelAuthorName": "Rashed",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "DFD262775728017FD9E26261CA4BEDE1383C4884",
+      "levelid": "custom_level_DFD262775728017FD9E26261CA4BEDE1383C4884",
+      "songName": "QUATTUORUX",
+      "levelAuthorName": "Azurii",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "CF3077F8A54876611B3452CB8972D9201CC8D87B",
+      "levelid": "custom_level_CF3077F8A54876611B3452CB8972D9201CC8D87B",
+      "songName": "The Less I Know the Better",
+      "levelAuthorName": "BombardToo",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "330E238759277789ED29710EB466470592C1C27A",
+      "levelid": "custom_level_330E238759277789ED29710EB466470592C1C27A",
+      "songName": "I Know How This Ends",
+      "levelAuthorName": "JRE_McNuggies",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "53CD16B9398B9E7254CA802C80E415A8AE744E3A",
+      "levelid": "custom_level_53CD16B9398B9E7254CA802C80E415A8AE744E3A",
+      "songName": "We Are One",
+      "levelAuthorName": "nitronik.exe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

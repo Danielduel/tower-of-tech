@@ -262,18 +262,6 @@
       ]
     },
     {
-      "songName": "Meltdown",
-      "levelAuthorName": "Bytrius",
-      "hash": "9662D5D1F48FE47EFF6050F90A2EE121D10478C9",
-      "levelid": "custom_level_9662D5D1F48FE47EFF6050F90A2EE121D10478C9",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "songName": "¡MAS CRAZY!",
       "levelAuthorName": "Frost",
       "hash": "67CA412EFBF24E3D4A71237937234523D0663A6C",
@@ -2014,6 +2002,42 @@
       "levelAuthorName": "Bellus",
       "hash": "813497AEF9A6693B72FBEE62162D1E62CE8AF39B",
       "levelid": "custom_level_813497AEF9A6693B72FBEE62162D1E62CE8AF39B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "String Theocracy",
+      "levelAuthorName": "CharlotteAulin",
+      "hash": "30AA61C6239571188DF7CF7BFDCC3555D467D1FA",
+      "levelid": "custom_level_30AA61C6239571188DF7CF7BFDCC3555D467D1FA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "See You Next Crossing",
+      "levelAuthorName": "wangyufy",
+      "hash": "C6A50413DE0C87ABB53A2513A631A3CA2ACD70EE",
+      "levelid": "custom_level_C6A50413DE0C87ABB53A2513A631A3CA2ACD70EE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Rip N Dip",
+      "levelAuthorName": "Cush",
+      "hash": "D7D4A60F7BEBDCA1FC1BE9033F61CCC2A5736946",
+      "levelid": "custom_level_D7D4A60F7BEBDCA1FC1BE9033F61CCC2A5736946",
       "difficulties": [
         {
           "characteristic": "Standard",

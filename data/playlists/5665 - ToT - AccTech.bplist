@@ -2097,18 +2097,6 @@
       ]
     },
     {
-      "songName": "Lied To",
-      "levelAuthorName": "oegoe",
-      "hash": "64606CE394718815DEECD696737EA1AEE40E8CF4",
-      "levelid": "custom_level_64606CE394718815DEECD696737EA1AEE40E8CF4",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "Reincarnation",
       "levelAuthorName": "shad & AaltopahWi",
       "hash": "52C3BAFFA792696C69A02F9870B1CC3FC3EFAEF2",
@@ -2737,6 +2725,30 @@
       "levelAuthorName": "Avexus",
       "hash": "2E0C47EF32BC1BA3B111A022B2EFBACFCB023F14",
       "levelid": "custom_level_2E0C47EF32BC1BA3B111A022B2EFBACFCB023F14",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Crisis",
+      "levelAuthorName": "Spinvvy",
+      "hash": "257A728D347E9985B30F9CC9DBD1692E958B80ED",
+      "levelid": "custom_level_257A728D347E9985B30F9CC9DBD1692E958B80ED",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Euphoria Rush",
+      "levelAuthorName": "Avexus, Barnotek",
+      "hash": "FC08DCAD46388672DF6B3F09D98AEA7D85C15D01",
+      "levelid": "custom_level_FC08DCAD46388672DF6B3F09D98AEA7D85C15D01",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -618,8 +618,8 @@
       ]
     },
     {
-      "hash": "09E78D99BD7415B0802C55359599D6F3ACF21D13",
-      "levelid": "custom_level_09E78D99BD7415B0802C55359599D6F3ACF21D13",
+      "hash": "38508FB1FB0A0EC1E2D8D528047BA3F12F6039BF",
+      "levelid": "custom_level_38508FB1FB0A0EC1E2D8D528047BA3F12F6039BF",
       "songName": "Bonus Stage",
       "levelAuthorName": "Baguette",
       "difficulties": [
@@ -718,6 +718,18 @@
       "levelid": "custom_level_DDFE9CF4EA3453792AF2F6EE62C3EB7EB10AC545",
       "songName": "Bark Skinpson",
       "levelAuthorName": "oermergeesh",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "F9FBB417387CF2C91CB9688E7FE986D50D399E6A",
+      "levelid": "custom_level_F9FBB417387CF2C91CB9688E7FE986D50D399E6A",
+      "songName": "扬旗鸣鼓",
+      "levelAuthorName": "staryouh",
       "difficulties": [
         {
           "characteristic": "Standard",
