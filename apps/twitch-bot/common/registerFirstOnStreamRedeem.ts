@@ -31,8 +31,8 @@ export const registerFirstOnStreamRedeem = async (
   }
   const firstOnStreamRedeem = firstOnStreamRedeemM.unwrap();
 
-  twitchPubSubManager.registerRewardRedeemedCallback(firstOnStreamRedeem.id, async ({ redemption }) => {
-    const name = redemption.user.display_name ?? redemption.user.login;
+  twitchPubSubManager.registerRewardRedeemedCallback(firstOnStreamRedeem.id, async ({ event: redemption }) => {
+    const name = redemption.user_name ?? redemption.user_login;
     const updatedRedeemM = await twitchHelixBroadcasterApiManaged.updateCustomPointReward(firstOnStreamRedeem.id, {
       title: `${name} was first!`,
     });

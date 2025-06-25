@@ -15,9 +15,10 @@ import type { Message } from "https://deno.land/x/twitch_irc@0.11.2/lib/message.
 import type { Channel as TwitchChannel } from "https://deno.land/x/twitch_irc@0.11.2/lib/base.ts";
 import type { Client } from "jsr:@dduel/twitch-irc@0.11.4";
 import type {
+eventSubNotificationPayloadSchema_CustomRewardRedeem_EventT,
+eventSubNotificationPayloadSchema_ChannelRaid_EventT,
 EventSubWelcomeInnerTypeSchemaT,
-  TwitchRedemptionRewardSchemaT,
-  TwitchRedemptionSchemaT,
+eventSubNotificationPayloadSchema_ChannelFollow_EventT,
 } from "@/apps/twitch-bot/sockets/twitch-schema.ts";
 import {
   PromiseMessageManagerWaitForResult,
@@ -119,11 +120,9 @@ export type TwitchPubSubEvents = {
   socket_error: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["socket_error"]>;
   pong: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["pong"]>;
   reconnect: TwitchPubSubEventHandlerOpts<TwitchPubSubEventData["reconnect"]>;
-  reward_redeemed: [{
-    reward: TwitchRedemptionRewardSchemaT;
-    redemption: TwitchRedemptionSchemaT;
-    topic: string;
-  }];
+  reward_redeemed: TwitchPubSubEventHandlerOpts<eventSubNotificationPayloadSchema_CustomRewardRedeem_EventT>;
+  channel_raid: TwitchPubSubEventHandlerOpts<eventSubNotificationPayloadSchema_ChannelRaid_EventT>;
+  channel_follow: TwitchPubSubEventHandlerOpts<eventSubNotificationPayloadSchema_ChannelFollow_EventT>;
 };
 
 export class TwitchPubSubEmitter extends EventEmitter<TwitchPubSubEvents> {}

@@ -9,6 +9,7 @@ import { TwitchHelixBroadcasterApiManaged } from "@/packages/api-twitch/helix/Tw
 import { TwitchAdScheduleTaskManager } from "@/packages/api-twitch/helix/TwitchAdScheduleTaskManager.ts";
 import { registerFirstOnStreamRedeem } from "@/apps/twitch-bot/common/registerFirstOnStreamRedeem.ts";
 import { BeatSaberGameId } from "@/packages/api-twitch/utils/constants.ts";
+import { registerAppendRaiderName } from "@/apps/twitch-bot/common/registerAppendRaiderName.ts";
 
 const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
@@ -63,15 +64,20 @@ await registerSnoozeAdsRedeem(
   twitchHelixBroadcasterApiManaged,
   twitchAdScheduleManager,
 );
+
+const baseTitle = "ᕕ(⌐■_■)ᕗ ♪♬ Techy techy";
+
 await registerFirstOnStreamRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 registerCommands(irc, twitchHelixBroadcasterApiManaged);
 registerAdsWarningLoop(twitchHelixBroadcasterApiManaged, twitchAdScheduleManager, ircContext);
+registerAppendRaiderName(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged, baseTitle);
 
 const updateChannelInfo = async () => {
   return await twitchHelixBroadcasterApiManaged.setChannelInfo({
     game_id: BeatSaberGameId,
-    // title: streamTitle,
+    tags: ["English", "Polski", "Linux", "ValveIndex", "pro", "VR", "tech", "sport", "AMA", "BackseatingAllowed"],
+    title: baseTitle + " - raid me even if you aren't streaming - testing sth",
   });
 };
 

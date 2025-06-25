@@ -5,11 +5,15 @@ import { BroadcasterId, UserAccessToken } from "@/packages/api-twitch/helix/bran
 import {
   eventSubInnerTypeGenericSchema,
   eventSubInnerTypeNotificationSchema,
+  eventSubInnerTypeNotificationSchema_ChannelRaid,
+  eventSubInnerTypeNotificationSchema_CustomRewardRedeem,
+  eventSubInnerTypeNotificationSchema_Generic,
   eventSubTypeSchema,
   eventSubWelcomeInnerTypeSchema,
   EventSubWelcomeInnerTypeSchemaT,
   eventSubWelcomeTypeSchema,
 } from "@/apps/twitch-bot/sockets/twitch-schema.ts";
+import { TwitchHelixBroadcasterApiManaged } from "@/packages/api-twitch/helix/TwitchHelixBroadcasterApiManaged.ts";
 
 const logger = getTwitchPubSubLogger();
 
@@ -87,58 +91,38 @@ export const createTwitchEventSub = async (channelId: BroadcasterId, authToken: 
 
     const _parsedDataUnwrap = _parsed.data.unwrap();
     logger.info("eventSubInnerTypeSchema");
-    console.log("event", _parsedDataUnwrap);
     const __parsed = eventSubInnerTypeGenericSchema.parse(_parsedDataUnwrap);
-    console.log(__parsed);
 
     switch (__parsed.metadata.message_type) {
       case "notification":
-        const {
-          // metadata,
-          payload: {
-            event,
-            // subscription,
-          },
-        } = eventSubInnerTypeNotificationSchema.parse(_parsedDataUnwrap);
-        const reward = {
-          cost: event.reward.cost,
-          prompt: event.reward.prompt,
-          title: event.reward.title,
-          is_enabled: true,
-          id: event.reward.id,
-          background_color: "",
-          channel_id: event.broadcaster_user_id,
-          global_cooldown: { is_enabled: false, global_cooldown_seconds: 0 },
-          is_in_stock: true,
-          is_paused: false,
-          is_sub_only: false,
-          is_user_input_required: false,
-          max_per_stream: { is_enabled: false, max_per_stream: 0 },
-          max_per_user_per_stream: { is_enabled: false, max_per_user_per_stream: 0 },
-          should_redemptions_skip_request_queue: false,
-          cooldown_expires_at: null,
-          default_image: null,
-          image: null,
-          redemptions_redeemed_current_stream: null,
-          template_id: null,
-          updated_for_indicator_at: undefined,
-        };
+        const { payload: { subscription: { type } } } = eventSubInnerTypeNotificationSchema_Generic.parse(
+          _parsedDataUnwrap,
+        );
 
-        TwitchPubSubEmitterInstance.emit("reward_redeemed", {
-          reward,
-          redemption: {
-            reward,
-            channel_id: event.broadcaster_user_id,
-            id: event.id,
-            user: {
-              id: event.user_id,
-              display_name: event.user_name,
-              login: event.user_login,
-            },
-            redeemed_at: event.redeemed_at
-          },
-          topic: reward.title
-        });
+        switch (type) {
+          case "channel.raid": {
+            const {
+              payload: {
+                event: _event,
+              },
+            } = eventSubInnerTypeNotificationSchema_ChannelRaid.parse(_parsedDataUnwrap);
+
+            TwitchPubSubEmitterInstance.emit("channel_raid", { event: _event });
+            return;
+          }
+          case "channel.channel_points_custom_reward_redemption.add": {
+            const {
+              // metadata,
+              payload: {
+                event: _event,
+                subscription,
+              },
+            } = eventSubInnerTypeNotificationSchema_CustomRewardRedeem.parse(_parsedDataUnwrap);
+
+            TwitchPubSubEmitterInstance.emit("reward_redeemed", { event: _event });
+            return;
+          }
+        }
     }
   };
 
@@ -175,7 +159,7 @@ export const createTwitchEventSub = async (channelId: BroadcasterId, authToken: 
     wss.close();
   };
 
-  registerPingLoop(TwitchPubSubEmitterInstance, wss);
+  // registerPingLoop(TwitchPubSubEmitterInstance, wss);
 
   await new Promise((r) => wss.addEventListener("open", () => r(null), { once: true }));
   const sessionWelcomeData = await setupWelcomePromise.promise;

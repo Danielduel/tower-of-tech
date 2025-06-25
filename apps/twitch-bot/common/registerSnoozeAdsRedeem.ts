@@ -35,10 +35,10 @@ export const registerSnoozeAdsRedeem = async (
   }
   const snoozeAdsRedeem = snoozeAdsRedeemM.unwrap();
 
-  twitchPubSubManager.registerRewardRedeemedCallback(snoozeAdsRedeem.id, async ({ redemption }) => {
+  twitchPubSubManager.registerRewardRedeemedCallback(snoozeAdsRedeem.id, async ({ event: redemption }) => { 
     const nextAdAt = twitchAdScheduleManager.getNextAdAtTimeIfValid();
     if (typeof nextAdAt !== "number") {
-      ircContext.send(`@${redemption.user.display_name} no ads planned`);
+      ircContext.send(`@${redemption.user_name} no ads planned`);
       return;
     }
 
@@ -51,13 +51,13 @@ export const registerSnoozeAdsRedeem = async (
       const nextAdsAfterTimeStr = getTimeAgo(nextAdAt);
 
       ircContext.send(
-        `@${redemption.user.display_name} next ads in ${nextAdsAfterTimeStr} [Snoozes remaining: ${snoozeCount}]`,
+        `@${redemption.user_name} next ads in ${nextAdsAfterTimeStr} [Snoozes remaining: ${snoozeCount}]`,
       );
       return;
     }
 
     if (snoozeCount < 1) {
-      ircContext.send(`@${redemption.user.display_name} no available snoozes :C CODE 114`);
+      ircContext.send(`@${redemption.user_name} no available snoozes :C CODE 114`);
       return;
     }
 
@@ -65,23 +65,23 @@ export const registerSnoozeAdsRedeem = async (
       await twitchHelixBroadcasterApiManaged.postAdsSnooze();
       const nextAdsAfterM = await twitchAdScheduleManager.update();
       if (nextAdsAfterM.isErr()) {
-        ircContext.send(`@${redemption.user.display_name} no idea what happen, ads should be snoozed though CODE 113`);
+        ircContext.send(`@${redemption.user_name} no idea what happen, ads should be snoozed though CODE 113`);
         return;
       }
       const snoozeCountAfter = twitchAdScheduleManager.currentAdsSchedule.snooze_count;
       const nextAdAtAfter = twitchAdScheduleManager.getNextAdAtTimeIfValid();
       if (typeof nextAdAtAfter !== "number") {
-        ircContext.send(`@${redemption.user.display_name} no ads planned Kappa CODE 112`);
+        ircContext.send(`@${redemption.user_name} no ads planned Kappa CODE 112`);
         return;
       }
       const nextAdsAfterTimeStr = getTimeAgo(nextAdAtAfter);
 
       ircContext.send(
-        `@${redemption.user.display_name} ads snoozed, next ads in ${nextAdsAfterTimeStr} [Snoozes remaining: ${snoozeCountAfter}]`,
+        `@${redemption.user_name} ads snoozed, next ads in ${nextAdsAfterTimeStr} [Snoozes remaining: ${snoozeCountAfter}]`,
       );
       return;
     }
 
-    ircContext.send(`@${redemption.user.display_name} there was an error, thanks for points C: CODE 111`);
+    ircContext.send(`@${redemption.user_name} there was an error, thanks for points C: CODE 111`);
   });
 };

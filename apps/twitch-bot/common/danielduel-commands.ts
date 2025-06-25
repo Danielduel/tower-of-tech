@@ -52,13 +52,6 @@ export const registerCommands = (irc: TwitchIRCEmitter, twitchHelixBroadcasterAp
       case "!eu":
         setTimeout(() => send(`! Petition https://eci.ec.europa.eu/045/public/#/screen/home`), 10);
         setTimeout(() => send(`! Webpage https://www.stopkillinggames.com/eci`), 500);
-        setTimeout(
-          () =>
-            send(
-              `! Asmongold reacts to a person explaining the paper https://www.youtube.com/watch?v=ZYHkc7JAr7w`,
-            ),
-          1000,
-        );
         return;
     }
   });

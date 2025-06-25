@@ -68,6 +68,7 @@ export class TwitchHelixBroadcasterApi {
   protected clientId: string;
   protected userCreds: UserTokenSuccessSchemaT;
   protected chatShoutoutManager = new ChatShoutoutManager();
+  protected lastChannelInfo: PatchHelixChannelsBodySchemaT = {};
 
   constructor(
     clientId: string,
@@ -124,6 +125,10 @@ export class TwitchHelixBroadcasterApi {
   }
 
   public async setChannelInfo(body: PatchHelixChannelsBodySchemaT): Promise<Result<null, Error>> {
+    this.lastChannelInfo = {
+      ...this.lastChannelInfo,
+      ...body
+    };
     const response = await TwitchHelixApiClient.channels.patch({
       headers: this.createAuthHeaders(),
       searchParams: {
@@ -182,7 +187,7 @@ export class TwitchHelixBroadcasterApi {
     return unwrapDataArrayResponse(response);
   }
 
-  public async postEventSubSubsctiption(body: HelixEventSubSubscriptionsQuerySchemaT): Promise<null> {
+  public async postEventSubSubscription(body: HelixEventSubSubscriptionsQuerySchemaT): Promise<null> {
     const response = await TwitchHelixApiClient.eventSubSubsciptions.post({
       headers: this.createAuthHeaders(),
       body

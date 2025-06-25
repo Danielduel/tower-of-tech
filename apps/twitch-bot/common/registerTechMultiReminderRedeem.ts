@@ -24,11 +24,11 @@ export const registerTechMultiReminderRedeem = async (
   }
   const nextMultiRedeem = nextMultiRedeemM.unwrap();
 
-  twitchPubSubManager.registerRewardRedeemedCallback(nextMultiRedeem.id, ({ redemption }) => {
+  twitchPubSubManager.registerRewardRedeemedCallback(nextMultiRedeem.id, ({ event: redemption }) => {
     let relativeTime = getRelativeTime();
     if (relativeTime.isAfter || relativeTime.isDuring) {
       relativeTime = getRelativeTimeNextWeek();
     }
-    ircContext.send(`@${redemption.user.display_name} the tech multi happens in ${relativeTime.relativeStart}`);
+    ircContext.send(`@${redemption.user_name} the tech multi happens in ${relativeTime.relativeStart}`);
   });
 };

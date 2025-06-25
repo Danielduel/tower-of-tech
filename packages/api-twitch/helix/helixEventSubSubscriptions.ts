@@ -6,11 +6,12 @@ import { broadcasterIdSchema } from "@/packages/api-twitch/helix/brand.ts";
 // channel.channel_points_custom_reward_redemption.add
 
 export const helixEventSubSubscriptionsQuerySchema = z.object({
-  type: z.enum(["channel.follow", "channel.channel_points_custom_reward_redemption.add"]),
+  type: z.string(), // z.enum(["channel.follow", "channel.channel_points_custom_reward_redemption.add"]),
   version: z.enum(["1", "2"]),
   condition: z.object({
-    broadcaster_user_id: broadcasterIdSchema,
-    // moderator_user_id: broadcasterIdSchema 
+    to_broadcaster_user_id: broadcasterIdSchema.optional(),
+    broadcaster_user_id: broadcasterIdSchema.optional(),
+    moderator_user_id: broadcasterIdSchema.optional() 
   }),
   transport: z.object({
     method: z.enum(["websocket"]),

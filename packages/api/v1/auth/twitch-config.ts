@@ -25,10 +25,12 @@ import { getAndDeleteOAuthSession, setSiteSession } from "https://jsr.io/@deno/k
 import { isLocal } from "@/packages/utils/envrionment.ts";
 import { makeToTAccountSessionId, ToTAccountSessionId } from "@/packages/types/auth.ts";
 import {
+bitsRead,
   channelManageAds,
   channelManageBroadcast,
   channelManageRedemptions,
   channelReadAds,
+  channelReadGoals,
   channelReadRedemptions,
   moderatorManageAnnouncements,
   moderatorManageShoutouts,
@@ -54,6 +56,8 @@ const redirectUri = isLocal()
   : `https://www.towerofte.ch${apiV1HandlerAuthTwitchOauthCallbackRoute}`;
 
 const scope = createScopes(
+  bitsRead,
+  channelReadGoals,
   channelManageBroadcast,
   channelReadRedemptions,
   channelReadAds,

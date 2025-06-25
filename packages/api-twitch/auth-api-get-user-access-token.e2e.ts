@@ -1,11 +1,14 @@
 // deno-lint-ignore-file no-case-declarations
 import {
+  bitsRead,
   channelManageAds,
   channelManageRedemptions,
   channelReadAds,
+  channelReadGoals,
   channelReadRedemptions,
   moderatorManageAnnouncements,
   moderatorManageShoutouts,
+  moderatorReadFollowers,
 } from "@/packages/api-twitch/helix/scopes.ts";
 import { channelManageBroadcast, createScopes } from "@/packages/api-twitch/helix/scopes.ts";
 import { open } from "https://deno.land/x/open@v0.0.6/index.ts";
@@ -30,11 +33,14 @@ export const getUserToken = () =>
     payload.append(
       "scope",
       createScopes(
+        bitsRead,
+        channelReadGoals,
         channelManageBroadcast,
         channelReadRedemptions,
         channelReadAds,
         channelManageAds,
         channelManageRedemptions,
+        moderatorReadFollowers,
         moderatorManageShoutouts,
         moderatorManageAnnouncements,
       ),
