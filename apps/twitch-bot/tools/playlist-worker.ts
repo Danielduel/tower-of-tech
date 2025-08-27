@@ -1,3 +1,5 @@
+globalThis.window = globalThis;
+
 import * as TwitchIrc from "https://deno.land/x/twitch_irc@0.11.2/mod.ts";
 import { createTrpcClient } from "@/packages/trpc/trpc-editor.ts";
 import { getWebsiteUrl, links } from "@/apps/website/routing.config.ts";

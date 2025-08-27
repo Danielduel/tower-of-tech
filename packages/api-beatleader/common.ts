@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z, ZodTypeAny } from "zod";
 import {
   BeatLeaderUserAccessToken,
   beatLeaderUserAccessTokenHeaderSchema,
@@ -15,3 +15,14 @@ export const createBeatLeaderUserAuthHeaders = (
 ): BeatLeaderUserAuthHeadersSchemaT => ({
   Authorization: makeBeatLeaderUserAccessTokenHeader(`Bearer ${beatLeaderUserAccessToken}`),
 });
+
+export const paginatedResponseSchemaWrapper = <T extends ZodTypeAny>(dataSchema: T) =>
+  z.object({
+    metadata: z.object({
+      itemsPerPage: z.number(),
+      page: z.number(),
+      total: z.number(),
+    }),
+    data: dataSchema,
+  });
+

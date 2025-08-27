@@ -22,6 +22,10 @@ import { extractBeatLeaderProfileIdFromTwitchChatResponse } from "@/packages/api
     "! @Danielduel You can find the streamer's ScoreSaber Profile at https://scoresaber.com/u/76561198850017179 BeatLeader Profile at https://www.beatleader.xyz/u/76561198850017179",
     "76561198850017179",
   ],
+  [
+    "! @Danielduel You can find the streamer's ScoreSaber Profile at https://scoresaber.com/u/76561197961367044 BeatLeader Profile at https://www.beatleader.xyz/u/76561197961367044",
+    "76561197961367044"
+  ]
 ].forEach(([param, expected]) => {
   Deno.test(`extractBeatLeaderProfileIdFromTwitchChatResponse given "${param}" expect "${expected}"`, () => {
     assertEquals(extractBeatLeaderProfileIdFromTwitchChatResponse(param), expected);

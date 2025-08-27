@@ -56,7 +56,7 @@
     "exclude": [".ultra"],
 
     "rules": {
-      "exclude": ["no-case-declarations"]
+      "exclude": ["no-case-declarations", "no-namespace"]
     }
   },
   "importMap": "./importMap.json"

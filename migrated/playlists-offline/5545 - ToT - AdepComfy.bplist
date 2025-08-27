@@ -1026,6 +1026,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -1486,6 +1490,10 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },
@@ -2006,6 +2014,78 @@
         {
           "characteristic": "Standard",
           "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "DDE4E25560BF0C8A875B825C0CA7A1B3426D10A5",
+      "levelid": "custom_level_DDE4E25560BF0C8A875B825C0CA7A1B3426D10A5",
+      "songName": "(PokeDance) Hey Boogie Woogie Bang Bang",
+      "levelAuthorName": "Saberat",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "0A8A6652DC6E40B1CD4E30067324127305A3666B",
+      "levelid": "custom_level_0A8A6652DC6E40B1CD4E30067324127305A3666B",
+      "songName": "ドラゴンブレイン",
+      "levelAuthorName": "Hanari",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "F502898A3A9550672B6DEC2B2930509B8DF3F2FC",
+      "levelid": "custom_level_F502898A3A9550672B6DEC2B2930509B8DF3F2FC",
+      "songName": "Chaoz Japan",
+      "levelAuthorName": "EOP Glacier",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "16FBEBD833AB1C6FE2EEAB26C59FFD3C55751B9F",
+      "levelid": "custom_level_16FBEBD833AB1C6FE2EEAB26C59FFD3C55751B9F",
+      "songName": "Antwoord",
+      "levelAuthorName": "Uncouth",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "hash": "AC1975A6D0193CEC3570C8F30C279F69928031BB",
+      "levelid": "custom_level_AC1975A6D0193CEC3570C8F30C279F69928031BB",
+      "songName": "Believing and Being",
+      "levelAuthorName": "Dr_Marc",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "0711150BA717C5B139C3DDD0A9FC96EFA7E329B9",
+      "levelid": "custom_level_0711150BA717C5B139C3DDD0A9FC96EFA7E329B9",
+      "songName": "Shall We",
+      "levelAuthorName": "Nixie.Korten",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }

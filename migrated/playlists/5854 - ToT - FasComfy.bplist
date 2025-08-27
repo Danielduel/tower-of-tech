@@ -33,8 +33,8 @@
       ]
     },
     {
-      "hash": "D51E116385A557B3CA8E757A061515DA47DD1AA8",
-      "levelid": "custom_level_D51E116385A557B3CA8E757A061515DA47DD1AA8",
+      "hash": "CF56EF669B5245492B1C479C9E5446BE62E21A0B",
+      "levelid": "custom_level_CF56EF669B5245492B1C479C9E5446BE62E21A0B",
       "songName": "BRAZILIAN DANÇA PHONK",
       "levelAuthorName": "Artsiio",
       "difficulties": [
@@ -301,6 +301,30 @@
       "levelid": "custom_level_2A65817C53A131C7D952CD0DF15D49D7AE4BEE7B",
       "songName": "Genjitsu Mysterium",
       "levelAuthorName": "yabje",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "81C25210CCEF3A0AE46EEA4A81CB4B84602AAF7E",
+      "levelid": "custom_level_81C25210CCEF3A0AE46EEA4A81CB4B84602AAF7E",
+      "songName": "Cirno's Perfect Math Class",
+      "levelAuthorName": "AQU",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "E2A4D3400FC344C6F9B4DD48B30030679E1F1E6D",
+      "levelid": "custom_level_E2A4D3400FC344C6F9B4DD48B30030679E1F1E6D",
+      "songName": "My Mother Wants Me Dead",
+      "levelAuthorName": "PogU",
       "difficulties": [
         {
           "characteristic": "Standard",

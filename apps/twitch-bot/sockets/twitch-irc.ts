@@ -89,6 +89,10 @@ export const createTwitchIRC = ({ debug, credentials, channel }: CreateTwitchIRC
     // console.log(e.event);
   });
 
+  TwitchIRCEmitterInstance.on("close", () => _debug("emitted closed"))
+  TwitchIRCEmitterInstance.on("reconnect", () => _debug("emitted reconnect"))
+  TwitchIRCEmitterInstance.on("error", () => _debug("emitted error"))
+
   client.on(...defaultEventHandler("clearchat")((en, e) => TwitchIRCEmitterInstance.emit(en, { event: e, context })));
   client.on(...defaultEventHandler("clearmsg")((en, e) => TwitchIRCEmitterInstance.emit(en, { event: e, context })));
   client.on(...defaultEventHandler("close")((en, e) => TwitchIRCEmitterInstance.emit(en, { event: e, context })));

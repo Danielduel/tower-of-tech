@@ -476,8 +476,8 @@
     {
       "songName": "Etude Op 10-4",
       "levelAuthorName": "Jabob",
-      "hash": "5D97DDFD9468E0BBD9B719219D3BBC240AF1E809",
-      "levelid": "custom_level_5D97DDFD9468E0BBD9B719219D3BBC240AF1E809",
+      "hash": "F397D5A33FB8F124CFFAF53A6BDA45865C35603B",
+      "levelid": "custom_level_F397D5A33FB8F124CFFAF53A6BDA45865C35603B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -490,6 +490,18 @@
       "levelAuthorName": "Jabob",
       "hash": "F0EC2162804C965001B0952DC0855174949C3BBD",
       "levelid": "custom_level_F0EC2162804C965001B0952DC0855174949C3BBD",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Sendan Life",
+      "levelAuthorName": "AccIsSponge",
+      "hash": "FB828125CD77E2A39194EF2579E1A75998C4E833",
+      "levelid": "custom_level_FB828125CD77E2A39194EF2579E1A75998C4E833",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -966,18 +966,6 @@
       ]
     },
     {
-      "songName": "La Femme Jolie",
-      "levelAuthorName": "Andynak",
-      "hash": "CA07E65070125CB351FE26FE43AF6C537120B3E7",
-      "levelid": "custom_level_CA07E65070125CB351FE26FE43AF6C537120B3E7",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
-        }
-      ]
-    },
-    {
       "songName": "RATATA",
       "levelAuthorName": "Hener & Harper",
       "hash": "8E4B7917C01E5987A5B3FF13FAA3CA8F27D21D34",
@@ -1650,18 +1638,6 @@
       ]
     },
     {
-      "songName": "Not Enough",
-      "levelAuthorName": "Spinvvy, Nugget",
-      "hash": "8601EBB7142305A6560CDE19C6AEB8E389BCA34E",
-      "levelid": "custom_level_8601EBB7142305A6560CDE19C6AEB8E389BCA34E",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Follow You",
       "levelAuthorName": "Kassi, oegoe",
       "hash": "42F6A0E99BBA59C40705EC6BB3EE1732AE70ED2B",
@@ -1754,6 +1730,90 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Doubt",
+      "levelAuthorName": "Lekrkoekj, Scorefam",
+      "hash": "F8F68A0EB8D259FB66D3930DAF5C6727E5658385",
+      "levelid": "custom_level_F8F68A0EB8D259FB66D3930DAF5C6727E5658385",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Sacrifice (Eat Me Up)",
+      "levelAuthorName": "Comyute",
+      "hash": "487E2C13B9C05CA08E25A9F74457C2D87C0D8590",
+      "levelid": "custom_level_487E2C13B9C05CA08E25A9F74457C2D87C0D8590",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rearview",
+      "levelAuthorName": "Hezzxter",
+      "hash": "CB4B430E0342DE411295BE5E1A250035700AE28C",
+      "levelid": "custom_level_CB4B430E0342DE411295BE5E1A250035700AE28C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "Swim",
+      "levelAuthorName": "moonlightmewss",
+      "hash": "D354C3FCA857E4A272AC5C210853FDE850AF059B",
+      "levelid": "custom_level_D354C3FCA857E4A272AC5C210853FDE850AF059B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "There She Goes",
+      "levelAuthorName": "noam15A, wasas387",
+      "hash": "B91801E74437E2A9390EE08B3BE127F252604485",
+      "levelid": "custom_level_B91801E74437E2A9390EE08B3BE127F252604485",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Paradise Chime",
+      "levelAuthorName": "Kinz",
+      "hash": "9C571DF59C2AAA8820AA62D21403DA49F40FCD10",
+      "levelid": "custom_level_9C571DF59C2AAA8820AA62D21403DA49F40FCD10",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Human Contact",
+      "levelAuthorName": "Kassi",
+      "hash": "454ABF2AC04C2A005B896930CA3FA19B9DBB000B",
+      "levelid": "custom_level_454ABF2AC04C2A005B896930CA3FA19B9DBB000B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }

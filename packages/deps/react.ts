@@ -5,7 +5,6 @@ export {
   Component,
   createContext,
   createElement,
-  createFactory,
   createRef,
   forwardRef,
   Fragment,
@@ -33,8 +32,9 @@ export {
   useSyncExternalStore,
   useTransition,
   version,
-} from "https://esm.sh/react@18.2.0?dev";
-import React from "https://esm.sh/react@18.2.0?dev";
+  use
+} from "https://esm.sh/react@19.1.0?dev";
+import React from "https://esm.sh/react@19.1.0?dev";
 export default React;
 export type {
   AnchorHTMLAttributes,
@@ -49,4 +49,4 @@ export type {
   ReactNode,
   Ref,
   RefAttributes,
-} from "https://esm.sh/react@18.2.0?dev";
+} from "https://esm.sh/react@19.1.0?dev";

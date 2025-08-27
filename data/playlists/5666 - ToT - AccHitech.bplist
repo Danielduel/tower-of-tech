@@ -1754,18 +1754,6 @@
       ]
     },
     {
-      "songName": "Protoflicker",
-      "levelAuthorName": "risi",
-      "hash": "5D12764722031BE0FA031885EAC7E4E1B199C957",
-      "levelid": "custom_level_5D12764722031BE0FA031885EAC7E4E1B199C957",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Bye Bye Bye",
       "levelAuthorName": "FatBeanzoop & RFCaps",
       "hash": "89E1613E8B3C26CE92D4F07FE0CB3D432CAA6770",
@@ -2670,6 +2658,102 @@
       "levelAuthorName": "Jonas_0_0",
       "hash": "C848EE116DA3B6A2FB13CC5DF424CE1F08BE3982",
       "levelid": "custom_level_C848EE116DA3B6A2FB13CC5DF424CE1F08BE3982",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Bang Bang",
+      "levelAuthorName": "oegoe, kibo",
+      "hash": "B3D4F988D15822EC890B67A38467A534D290FCF1",
+      "levelid": "custom_level_B3D4F988D15822EC890B67A38467A534D290FCF1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Valhalla Calling - Viking Metal Version",
+      "levelAuthorName": "AbeVsTheBeat",
+      "hash": "111E157590FCC1E29B3C9846984D1EA5B7007F40",
+      "levelid": "custom_level_111E157590FCC1E29B3C9846984D1EA5B7007F40",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "AGEN WIDA",
+      "levelAuthorName": "oermergeesh",
+      "hash": "E1C8F40FE0DC531CCA94243FE69D3BB42BF32F39",
+      "levelid": "custom_level_E1C8F40FE0DC531CCA94243FE69D3BB42BF32F39",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Spiderwebs",
+      "levelAuthorName": "Grizlor",
+      "hash": "5450AA74398A8C47542373B7FD4CA4328185AF97",
+      "levelid": "custom_level_5450AA74398A8C47542373B7FD4CA4328185AF97",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Waterfall",
+      "levelAuthorName": "oermergeesh",
+      "hash": "B071787BA04AEC9627AB97A7420A4F1AD887F9A3",
+      "levelid": "custom_level_B071787BA04AEC9627AB97A7420A4F1AD887F9A3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Ten Ten Tengoku Jigoku Koku",
+      "levelAuthorName": "Dr_Marc, Comyute",
+      "hash": "35005B800013468B358A8D46623E3705BB7FD02C",
+      "levelid": "custom_level_35005B800013468B358A8D46623E3705BB7FD02C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Spiderwebs",
+      "levelAuthorName": "Grizlor",
+      "hash": "5450AA74398A8C47542373B7FD4CA4328185AF97",
+      "levelid": "custom_level_5450AA74398A8C47542373B7FD4CA4328185AF97",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Shoninyokkyu",
+      "levelAuthorName": "minsiii",
+      "hash": "4A3AC93E2FC2F7DE309F7FD3113FE2F6A89EDFAE",
+      "levelid": "custom_level_4A3AC93E2FC2F7DE309F7FD3113FE2F6A89EDFAE",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -218,6 +218,7 @@ const executeHandlers = composeHandlers(
       const fullPathName = `https://jsr.io/${realPathName}`;
       const content = await fetch(fullPathName);
       const result = await compile(fullPathName, await content.text(), {
+        jsx: "react-jsx",
         jsxImportSource: "react",
         development: true,
         minify: false,

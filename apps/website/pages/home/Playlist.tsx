@@ -1,5 +1,4 @@
-import { VisualNovelContainer } from "@/apps/website/components/containers/VisualNovelBox.tsx";
-import { forwardRef } from "react";
+import { forwardRef, use } from "@/packages/deps/react.ts";
 import { useParams } from "react-router-dom";
 import { trpc } from "@/packages/trpc/trpc-react.ts";
 import { PlaylistMaps } from "@/apps/website/pages/editor/playlist/PlaylistItem.tsx";
@@ -14,7 +13,7 @@ import { semiconstantCacheQuery } from "@/packages/react-query/constants.ts";
 import { Image } from "@/apps/website/components/Image.tsx";
 import { PlaylistDetailsLayoutShell } from "@/apps/website/components/layouts/PlaylistDetailsLayout.tsx";
 import { LayoutContent, LayoutSidebar, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
-import { Profile } from "@/apps/website/components/Profile.tsx";
+import { BeatLeaderApi } from "../../../../packages/api-beatleader/api.ts";
 
 export const PlaylistDetailsInner = forwardRef<HTMLDivElement>((_, ref) => {
   const { playlistId } = useParams();
@@ -22,6 +21,14 @@ export const PlaylistDetailsInner = forwardRef<HTMLDivElement>((_, ref) => {
     ...semiconstantCacheQuery,
     enabled: !!playlistId,
   });
+
+  const beatLeaderData = use(BeatLeaderApi.playerByIdScoresCompact.get({
+    urlParams: {
+      playerId: "76561199792344379" 
+    }
+  }));
+
+  console.log(beatLeaderData);
 
   if (!playlistId) return null;
   if (!data) return "Loading...";

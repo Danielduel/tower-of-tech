@@ -30,18 +30,6 @@
       ]
     },
     {
-      "hash": "C48A2E907543A1245BC670BD1D082FB555F129B0",
-      "levelid": "custom_level_C48A2E907543A1245BC670BD1D082FB555F129B0",
-      "songName": "Parallel Universe Shifter",
-      "levelAuthorName": "Excess10n and Cyanite",
-      "difficulties": [
-        {
-          "characteristic": "Lawless",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "30DEDF2F59D3256B4B2AD7EC68A64C110FE0FB75",
       "levelid": "custom_level_30DEDF2F59D3256B4B2AD7EC68A64C110FE0FB75",
       "songName": "Blackmagik Blazing",
@@ -102,10 +90,22 @@
       ]
     },
     {
-      "hash": "336A840B4A4D38E7F3493DFC0726B2CD37626683",
-      "levelid": "custom_level_336A840B4A4D38E7F3493DFC0726B2CD37626683",
-      "songName": "Hypnotize",
-      "levelAuthorName": "Voidless",
+      "hash": "0D5355D0A16B71C2F47693E37EF3C6241FBEDEC3",
+      "levelid": "custom_level_0D5355D0A16B71C2F47693E37EF3C6241FBEDEC3",
+      "songName": "Emergency Curtain Call",
+      "levelAuthorName": "BSWC Team",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "FB828125CD77E2A39194EF2579E1A75998C4E833",
+      "levelid": "custom_level_FB828125CD77E2A39194EF2579E1A75998C4E833",
+      "songName": "Sendan Life",
+      "levelAuthorName": "AccIsSponge",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -65,7 +65,7 @@ await registerSnoozeAdsRedeem(
   twitchAdScheduleManager,
 );
 
-const baseTitle = "ᕕ(⌐■_■)ᕗ ♪♬ Techy techy";
+const baseTitle = ":) !bsr !wip";
 
 await registerFirstOnStreamRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
@@ -76,8 +76,8 @@ registerAppendRaiderName(twitchPubSubManager, ircContext, twitchHelixBroadcaster
 const updateChannelInfo = async () => {
   return await twitchHelixBroadcasterApiManaged.setChannelInfo({
     game_id: BeatSaberGameId,
-    tags: ["English", "Polski", "Linux", "ValveIndex", "pro", "VR", "tech", "sport", "AMA", "BackseatingAllowed"],
-    title: baseTitle + " - raid me even if you aren't streaming - testing sth",
+    tags: ["English", "Polski", "Linux", "ValveIndex", "VR", "tech", "sport", "AMA", "BackseatingAllowed"],
+    title: baseTitle // + " - raid me even if you aren't streaming - testing sth",
   });
 };
 

@@ -438,18 +438,6 @@
       ]
     },
     {
-      "hash": "A3060C1F52C4AD2E8689A0BC44E45D6E56AD80E9",
-      "levelid": "custom_level_A3060C1F52C4AD2E8689A0BC44E45D6E56AD80E9",
-      "songName": "Zimzalabim",
-      "levelAuthorName": "eurnkung",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "6B617200F8D4F547DCE57CF719F10A73D7BDC123",
       "levelid": "custom_level_6B617200F8D4F547DCE57CF719F10A73D7BDC123",
       "songName": "Be My Guest",
@@ -606,18 +594,6 @@
       "levelid": "custom_level_A15F112FFE8ABB5BAA962B678E89BC7657890183",
       "songName": "Ai no Supreme (TV Size)",
       "levelAuthorName": "Joetastic",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "784B770168683BD13B1CF1C59C7C3DBDB9FDE419",
-      "levelid": "custom_level_784B770168683BD13B1CF1C59C7C3DBDB9FDE419",
-      "songName": "Mutant (feat. Hatsune Miku)",
-      "levelAuthorName": "Comyute",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2733,6 +2709,90 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "83EBAD715FEF123DD1E78A3CEBA698491DD74D27",
+      "levelid": "custom_level_83EBAD715FEF123DD1E78A3CEBA698491DD74D27",
+      "songName": "oops!",
+      "levelAuthorName": "Danny, Jonas_0_0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "8199DCBFBF9B58AFA3C64427EBD6C5BEE560A1D7",
+      "levelid": "custom_level_8199DCBFBF9B58AFA3C64427EBD6C5BEE560A1D7",
+      "songName": "All In My Head",
+      "levelAuthorName": "Miljon",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "57A864983305915330A83E96320989CEC3526A18",
+      "levelid": "custom_level_57A864983305915330A83E96320989CEC3526A18",
+      "songName": "Done Da Da",
+      "levelAuthorName": "Jonas",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "A92D75135E6598195819F73BF71DDD9B211ADDCB",
+      "levelid": "custom_level_A92D75135E6598195819F73BF71DDD9B211ADDCB",
+      "songName": "PYTHON",
+      "levelAuthorName": "Jonas",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "B1D893EABF9004351DC89AF752DB2E9FD285FFEE",
+      "levelid": "custom_level_B1D893EABF9004351DC89AF752DB2E9FD285FFEE",
+      "songName": "Always",
+      "levelAuthorName": "oermergeesh",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "3AF01102EBE839DCFAD8E7CEF4C14846C34CC827",
+      "levelid": "custom_level_3AF01102EBE839DCFAD8E7CEF4C14846C34CC827",
+      "songName": "Santiana",
+      "levelAuthorName": "AbeVsTheBeat",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "A1A4C14EB55CBBACEE181B75CCCC9B904BA27F62",
+      "levelid": "custom_level_A1A4C14EB55CBBACEE181B75CCCC9B904BA27F62",
+      "songName": "Hypnotize",
+      "levelAuthorName": "Voidless",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     }
