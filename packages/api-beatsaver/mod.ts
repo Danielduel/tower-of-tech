@@ -222,7 +222,7 @@ export const fetchAndCacheFromResolvablesRaw = async (
     );
   }
 
-  const fromHashes = await responseFromHashesP;
+  const fromHashes: typeof responseFromIds = await responseFromHashesP;
   const fromIds = responseFromIds;
 
   console.timeEnd(

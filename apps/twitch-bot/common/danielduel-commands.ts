@@ -1,5 +1,5 @@
 import { TwitchIRCEmitter } from "@/apps/twitch-bot/types.ts";
-import { getWebsiteUrl, links } from "@/apps/website/routing.config.ts";
+import { getWebsiteUrl, links } from "@/apps/website-old/routing.config.ts";
 import { TwitchHelixBroadcasterApi } from "@/packages/api-twitch/helix/TwitchHelixBroadcasterApi.ts";
 import { ChannelRole } from "https://deno.land/x/twitch_irc@0.11.2/mod.ts";
 

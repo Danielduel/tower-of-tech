@@ -1,11 +1,11 @@
 import { FC, ForwardRefExoticComponent, RefAttributes, Suspense, useRef } from "react";
 import { VisualNovelContainerLoading } from "@/apps/website/components/containers/VisualNovelBox.tsx";
 import { Link as _Link, LinkProps } from "react-router-dom";
-import { links } from "@/apps/website/routing.config.ts";
+import { links } from "@/apps/website-old/routing.config.ts";
 import { useResolvedPath } from "react-router-dom";
 import { useMatch } from "react-router-dom";
 import { cn } from "@/packages/deps/classnames.ts";
-import { LayoutContent, LayoutSidebar, LayoutWrapper } from "@/apps/website/components/layouts/Layout.tsx";
+import { LayoutContent, LayoutSidebar, LayoutWrapper } from "@/apps/website-old/components/layouts/Layout.tsx";
 
 export const Link: FC<LinkProps> = (props) => {
   const resolved = useResolvedPath(props.to);

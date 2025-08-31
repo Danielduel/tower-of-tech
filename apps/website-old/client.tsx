@@ -1,4 +1,5 @@
-// import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+import * as JSX from "react/jsx-dev-runtime";
+import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import UltraClient, { hydrate } from "ultra/lib/react/client.js";

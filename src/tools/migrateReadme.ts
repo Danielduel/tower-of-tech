@@ -6,7 +6,7 @@ import {
   playlistMapping,
 } from "@/packages/playlist/collections/tower-of-tech/mod.ts";
 import { PlaylistId } from "@/packages/types/brands.ts";
-import { links } from "@/apps/website/routing.config.ts";
+import { links } from "@/apps/website-old/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 

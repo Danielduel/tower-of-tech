@@ -1,3 +1,4 @@
+import * as React from "react";
 import { StrictMode } from "react";
 import { renderToReadableStream } from "react-dom/server";
 import { HelmetProvider } from "react-helmet-async";
@@ -26,8 +27,8 @@ const root = Deno.cwd();
 const isUltraDevMode = Deno.env.get("ULTRA_MODE") === "development";
 
 const importMap = isUltraDevMode
-  ? await readImportMap("./importMap.local.json")
-  : await readImportMap("./importMap.json");
+  ? await readImportMap("./importMap.local.jsonc")
+  : await readImportMap("./importMap.jsonc");
 
 importMap.imports["ultra/"] = "/_ultra/";
 importMap.imports["@/"] = "/@/";

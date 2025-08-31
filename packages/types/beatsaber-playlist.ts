@@ -42,6 +42,8 @@ export const BeatSaberPlaylistCustomDataSchema = z.object({
     "Sort has to be lowerequal 12312312312124124",
   ).int("Sort has to be an integer").optional(),
   owner: z.string().optional(),
+  public: z.boolean().optional().default(false),
+  private: z.boolean().optional().default(false),
   id: z.string().optional(),
 });
 

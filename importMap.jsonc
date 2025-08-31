@@ -1,7 +1,24 @@
 {
   "imports": {
-    "react/": "https://esm.sh/react@19.1.0/",
-    "react/jsx-dev-runtime": "https://esm.sh/react@19.1.0/jsx-dev-runtime",
+    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
+    "preact": "https://esm.sh/preact@10.22.0",
+    "preact/": "https://esm.sh/preact@10.22.0/",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
+    "tailwindcss": "npm:tailwindcss@3.4.1",
+    "tailwindcss/": "npm:/tailwindcss@3.4.1/",
+    "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js",
+    "$std/": "https://deno.land/std@0.216.0/", 
+
+    "jsr:@deno/kv-oauth": "../deno_kv_oauth/mod.ts",
+    "@std/assert": "jsr:@std/assert@^1.0.6",
+    "@std/datetime": "jsr:@std/datetime@^0.225.2",
+    "@std/fs": "jsr:@std/fs@^1.0.4",
+    "@std/http": "jsr:@std/http@^1.0.8",
+    "@std/testing": "jsr:@std/testing@^1.0.3",
+    
+    "react": "npm:react",
+
     "react-dom": "https://esm.sh/react-dom@19.1.0",
     "react-dom/server": "https://esm.sh/react-dom@19.1.0/server?dev",
     "react-dom/client": "https://esm.sh/react-dom@19.1.0/client?dev",
@@ -10,7 +27,7 @@
 
     "react-router-dom": "https://esm.sh/react-router-dom@6.3.0?external=react",
     "react-router-dom/server": "https://esm.sh/react-router-dom@6.3.0/server?external=react",
-    "react-transition-group": "https://esm.sh/*react-transition-group@4.4.5?standalone",
+    "react-transition-group": "https://esm.sh/react-transition-group@4.4.5?external=react",
 
     "@tanstack/react-query": "https://esm.sh/@tanstack/react-query@4.2.3?external=react",
     "@tanstack/react-query-devtools": "https://esm.sh/v122/@tanstack/react-query-devtools@4.13.0?external=react,@tanstack/react-query&dev",
@@ -19,17 +36,11 @@
     "@trpc/client": "https://esm.sh/*@trpc/client@10.45.2",
     "@trpc/client/": "https://esm.sh/*@trpc/client@10.45.2/",
     "@trpc/react-query": "https://esm.sh/*@trpc/react-query@10.45.2?standalone&deps=react@19.1.0",
-    "zod": "npm:zod@^3.25.76",
+    "zod": "npm:zod@^3.22.4",
     "zod-api": "jsr:@olli/zod-api@0.9.2",
     "jex": "jsr:@olli/jex@0.8.1",
     "s3_lite_client": "https://deno.land/x/s3_lite_client@0.6.1/mod.ts",
 
-    "react-helmet-async": "https://esm.sh/react-helmet-async@1.3.0?external=react",
-
-    "ultra/": "https://deno.land/x/danielduel_ultra_stack_ultra@0.0.13/",
-    "mesozoic/": "https://deno.land/x/danielduel_ultra_stack_mesozoic@0.0.2/",
-
-    "@/": "./",
-    "react": ".///packages/deps/react.ts"
+    "@/": "./"
   }
 }

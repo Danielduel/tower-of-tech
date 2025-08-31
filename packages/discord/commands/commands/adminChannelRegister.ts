@@ -3,7 +3,7 @@ import { dbEditor } from "@/packages/database-editor/mod.ts";
 import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
 import { DiscordInteraction } from "@/packages/discord/deps.ts";
 import { ChannelTypes } from "@/packages/discord/deps.ts";
-import { links } from "@/apps/website/routing.config.ts";
+import { links } from "@/apps/website-old/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 
 export async function adminChannelRegister(

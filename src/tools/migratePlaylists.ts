@@ -2,7 +2,7 @@
 import { getCoverBase64 } from "@/src/utils/cover-image.ts";
 import { stringifyPlaylist } from "@/src/utils/json.ts";
 import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
-import { links } from "@/apps/website/routing.config.ts";
+import { links } from "@/apps/website-old/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makeImageBase64, makePlaylistId, makePlaylistUrl } from "@/packages/types/brands.ts";
 import { TextReader, Uint8ArrayWriter, ZipWriter } from "https://unpkg.com/@zip.js/zip.js@2.7.48/index.js";

@@ -6,23 +6,54 @@ import {
 } from "@/packages/types/beatsaber-playlist.ts";
 import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { buckets } from "@/packages/database-editor/buckets.ts";
-import { makeImageBase64, UppercaseMapHash } from "@/packages/types/brands.ts";
+import {
+  LowercaseMapHash,
+  makeImageBase64,
+  makeImageUrl,
+  makeLowercaseMapHash,
+  UppercaseMapHash,
+} from "@/packages/types/brands.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId, PlaylistId } from "@/packages/types/brands.ts";
-import { links } from "@/apps/website/routing.config.ts";
+import { links } from "@/apps/website-old/routing.config.ts";
 import { makePlaylistUrl } from "@/packages/types/brands.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { getBeatSaberPlaylistSongItemMetadataKey } from "@/packages/database-editor/keys.ts";
+import { fetchAndCacheFromResolvablesRaw } from "@/packages/api-beatsaver/mod.ts";
 
 export const getImage = async (playlistId: PlaylistId) => {
-  const imageBody = await s3clientEditor.getObject(playlistId, {
-    bucketName: buckets.playlist.coverImage,
-  })
-    .then((x) => x.arrayBuffer())
-    .then((x) => new Uint8Array(x))
-    .then((x) => fromUint8Array(x));
+  try {
+    const imageBody = await s3clientEditor.getObject(playlistId, {
+      bucketName: buckets.playlist.coverImage,
+    })
+      .then((x) => x.arrayBuffer())
+      .then((x) => new Uint8Array(x))
+      .then((x) => fromUint8Array(x));
 
-  return makeImageBase64(imageBody);
+    return makeImageBase64(imageBody);
+  } catch (_) {
+    return null;
+  }
+};
+
+export const getImageUrl = async (playlistId: PlaylistId) => {
+  const imageUrl = await s3clientEditor.getPresignedUrl("GET", playlistId, {
+    bucketName: buckets.playlist.coverImage,
+  });
+
+  if (!imageUrl) return null;
+
+  return makeImageUrl(imageUrl);
+};
+
+export const playlistListLinks = async () => {
+  const items = await dbEditor.BeatSaberPlaylist
+    .getMany()
+    .then((x) => x.result)
+    .then((x) => x.map((y) => y.flat()));
+
+  const itemsFiltered = items.filter((x) => x.customData?.public);
+  return itemsFiltered satisfies BeatSaberPlaylistFlatSchemaT[];
 };
 
 export const playlistIdToCustomData = (playlistId: PlaylistId) => {
@@ -93,15 +124,28 @@ export const resolveSongsWithMetaForPlaylist = async (songHashes: UppercaseMapHa
     .findMany(songHashes.map((mapHash) => getBeatSaberPlaylistSongItemMetadataKey(playlistId, mapHash)))
     .then((x) => x.map((x) => stripVersionstamps(x.flat())));
 
+  const beatsaverItemsMetadata = (await fetchAndCacheFromResolvablesRaw(
+    (songHashes.map(makeLowercaseMapHash)).map((hash) => ({
+      kind: "hash",
+      data: hash,
+      diffs: [],
+    })),
+  )).fromHashes;
+
   return songs.map((songData) => {
     const metadata = songsMeta.find((item) => item.mapHash === songData.hash);
+    const beatsaverItemMetadata = beatsaverItemsMetadata[makeLowercaseMapHash(songData.hash)];
+    // console.log({ metadata, songData, beatsaverItemMetadata });
     return {
       ...songData,
+      key: beatsaverItemMetadata?.id ?? undefined,
       difficulties: metadata?.difficulties ?? [],
+      coverUrl: beatsaverItemMetadata?.versions[0].coverURL,
     };
   });
 };
 
+export type fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemT = Omit<BeatSaberPlaylistSchemaT, "image">;
 export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem = async (
   playlistId: PlaylistId,
 ) => {
@@ -124,6 +168,7 @@ export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem = async (
   } satisfies Omit<BeatSaberPlaylistSchemaT, "image">;
 };
 
+export type fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImageT = BeatSaberPlaylistSchemaT;
 export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage = async (playlistId: PlaylistId) => {
   const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(
     playlistId,
