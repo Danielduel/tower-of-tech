@@ -1,58 +1,36 @@
 name: Deploy
-
-on: push
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
 
 jobs:
-  editor_deploy:
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     permissions:
-      id-token: write # This is required to allow the GitHub Action to authenticate with Deno Deploy.
-      contents: read
+      id-token: write # Needed for auth with Deno Deploy
+      contents: read # Needed to clone the repository
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
-        with:
-          sparse-checkout: |
-            apps
-            packages
-            src
-            deno.json
-            deno.lock
-            importMap.json
-            importMap.local.json
+        uses: actions/checkout@v4
 
-      - name: Deploy to Deno Deploy
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Build step
+        run: "deno task website:build"
+
+      - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: tower-of-tech-editor
-          entrypoint: apps/website/server.tsx
-          exclude: |
-            data
-            migrated
-            assets
-            public
-            scripts
-
-  discord-bot_register-commands:
-    runs-on: ubuntu-latest
-
-    permissions:
-      id-token: write # This is required to allow the GitHub Action to authenticate with Deno Deploy.
-      contents: read
-
-    steps:
-      - name: Clone repository
-        uses: actions/checkout@v3
-
-      - uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-
-      - name: Register discord commands
-        env:
-          DISCORD_TOT_BOT_CLIENT_ID: ${{ secrets.DISCORD_TOT_BOT_CLIENT_ID }}
-          DISCORD_TOT_BOT_TOKEN: ${{ secrets.DISCORD_TOT_BOT_TOKEN }}
-        run: |
-          deno task discord-bot:register-raw
+          project: "tower-of-tech-editor"
+          entrypoint: "apps/website/main.ts"
+          root: "./apps/website"
+          
+          
