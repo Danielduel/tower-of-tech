@@ -1,6 +1,8 @@
 {
   "tasks": {
     "website:start": "deno task --cwd=apps/website website:start",
+    "website:build": "deno task --cwd=apps/website website:build",
+    
     "dev-remote": "deno task editor:dev-remote & deno task website:tailwind:watch",
     "dev-remote:local-import": "deno task editor:dev-remote:local-import & deno task website:tailwind:watch",
     "start": "TOT_ENVIRONMENT=local deno run -A ./src/main.ts",
