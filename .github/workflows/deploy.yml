@@ -30,7 +30,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "tower-of-tech-editor"
-          entrypoint: "apps/website/main.ts"
+          entrypoint: "main.ts"
           root: "./apps/website"
           
           
