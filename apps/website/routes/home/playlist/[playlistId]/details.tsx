@@ -2,7 +2,7 @@ import { FunctionComponent } from "preact";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { makePlaylistId } from "@/packages/types/brands.ts";
 import { utils } from "@tot/db-schema";
-import { CopyButton } from "../../../../components/CopyButton.tsx";
+import { CopyButton } from "../../../../islands/CopyButton.tsx";
 
 export const handler: Handlers<utils.fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImageT> = {
   async GET(_req, ctx) {
