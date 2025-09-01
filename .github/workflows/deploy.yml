@@ -24,13 +24,13 @@ jobs:
           deno-version: v2.x
 
       - name: Build step
-        run: "deno task website:build"
+        run: "deno task build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "tower-of-tech-editor"
-          entrypoint: "main.ts"
-          root: "./apps/website"
+          entrypoint: "apps/website/main.ts"
+          root: "."
           
           
