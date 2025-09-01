@@ -1,17 +1,14 @@
 import { FunctionComponent } from "preact";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { makePlaylistId } from "@/packages/types/brands.ts";
-import {
-  fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage,
-  fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImageT,
-} from "@/packages/database-editor/utils.ts";
+import { utils } from "@tot/db-schema";
 import { CopyButton } from "../../../../components/CopyButton.tsx";
 
-export const handler: Handlers<fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImageT> = {
+export const handler: Handlers<utils.fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImageT> = {
   async GET(_req, ctx) {
     const playlistId = ctx.params.playlistId;
     if (!playlistId) return ctx.renderNotFound({ message: "PlaylistId invalid" });
-    const playlist = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(makePlaylistId(playlistId));
+    const playlist = await utils.fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(makePlaylistId(playlistId));
 
     if (!playlist) {
       return ctx.renderNotFound({
@@ -23,7 +20,7 @@ export const handler: Handlers<fetchBeatSaberPlaylistWithBeatSaberPlaylistSongIt
   },
 };
 
-const PlaylistDetailsPage: FunctionComponent<PageProps<fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImageT>> =
+const PlaylistDetailsPage: FunctionComponent<PageProps<utils.fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImageT>> =
   ({ data }) => {
     return (
       <div>
@@ -44,7 +41,9 @@ const PlaylistDetailsPage: FunctionComponent<PageProps<fetchBeatSaberPlaylistWit
                 <div>{v.songName}</div>
                 <div>{v.levelAuthorName}</div>
                 <div>
-                  {v.key ? <CopyButton childText={`!bsr ${v.key}`} copyText={`!bsr ${v.key}`} /> : "Unavailable on BeatSaver"}
+                  {v.key
+                    ? <CopyButton childText={`!bsr ${v.key}`} copyText={`!bsr ${v.key}`} />
+                    : "Unavailable on BeatSaver"}
                 </div>
 
                 <div>{v.difficulties.map((x) => `${x.name} (${x.characteristic})`).join(", ")}</div>

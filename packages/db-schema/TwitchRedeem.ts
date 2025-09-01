@@ -5,7 +5,7 @@ import {
   twitchRedeemMappingKeyIdSchema,
 } from "@/packages/api-twitch/helix/brand.ts";
 import { collection } from "@/packages/deps/kvdex.ts";
-import { getTwitchRedeemMappingKey } from "@/packages/database-editor/keys.ts";
+import { getTwitchRedeemMappingKey } from "./keys.ts";
 
 export const TwitchRedeemMappingSchema = z.object({
   id: twitchRedeemMappingKeyIdSchema,

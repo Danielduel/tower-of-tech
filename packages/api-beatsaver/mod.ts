@@ -8,8 +8,8 @@ import {
 import { fetcher } from "@/packages/api-utils/fetcher.ts";
 import { fileExists } from "@/packages/utils/fileExists.ts";
 import { LowercaseMapHash } from "@/packages/types/brands.ts";
-import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
-import { buckets } from "@/packages/database-editor/buckets.ts";
+import { S3 } from "@tot/s3";
+import { DB } from "@tot/db"
 import { BeatSaverApi } from "@/packages/api-beatsaver/api.ts";
 import { BeatSaverResolvable, splitBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { scheduleCache } from "@/packages/api-beatsaver/cache.ts";
@@ -43,7 +43,8 @@ type IdsToHashesCacheType = {
 };
 
 const idToHashCache = async (id: BeatSaverMapId): Promise<IdsToHashesCacheType> => {
-  const idToHashCacheItem = await dbEditor.BeatSaverIdToHashCache
+  const db = await DB.get();
+  const idToHashCacheItem = await db.BeatSaverIdToHashCache
     .find(id)
     .then((x) => x?.flat());
 
@@ -62,12 +63,13 @@ const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
 
 const fetchAndCacheHashesGetCache = (hashArray: LowercaseMapHash[]) => {
   return hashArray.map(async (lowercaseHash) => {
-    const exists = await s3clientEditor.exists(lowercaseHash, {
-      bucketName: buckets.beatSaver.mapByHash,
+    const s3 = await S3.get();
+    const exists = await s3.exists(lowercaseHash, {
+      bucketName: S3.buckets.beatSaver.mapByHash,
     });
     if (exists) {
-      const response = await s3clientEditor.getObject(lowercaseHash, {
-        bucketName: buckets.beatSaver.mapByHash,
+      const response = await s3.getObject(lowercaseHash, {
+        bucketName: S3.buckets.beatSaver.mapByHash,
       });
       const data = await response.json();
 
@@ -206,7 +208,8 @@ export const fetchAndCacheFromResolvablesRaw = async (
     console.time(
       `[${execUlid}] fetchAndCacheFromResolvablesRaw cache responseFromIds for ${responseFromIdsEntries.length}`,
     );
-    await dbEditor.BeatSaverIdToHashCache.addMany(
+    const db = await DB.get();
+    await db.BeatSaverIdToHashCache.addMany(
       responseFromIdsEntries.map(([id, x]) => {
         return {
           id: makeBeatSaverMapId(id),

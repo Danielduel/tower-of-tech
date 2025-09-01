@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
-import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { DB } from "@tot/db";
 import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
 import { ChannelTypes, DiscordInteraction } from "@/packages/discord/deps.ts";
 
@@ -30,7 +30,8 @@ export async function adminChannelMarkAsPlaylist(
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
-  const discordChannelData = await dbEditor.DiscordChannel
+  const db = await DB.get();
+  const discordChannelData = await db.DiscordChannel
     .find(channelId)
     .then((x) => x?.flat());
   if (!discordChannelData) {
@@ -48,7 +49,7 @@ export async function adminChannelMarkAsPlaylist(
     return;
   }
 
-  await dbEditor.DiscordChannel
+  await db.DiscordChannel
     .update(channelId, {
       markedAsPlaylist: value,
     });

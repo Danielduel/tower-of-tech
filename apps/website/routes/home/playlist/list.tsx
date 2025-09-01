@@ -1,16 +1,16 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { getImageUrl, playlistListLinks } from "@/packages/database-editor/utils.ts";
+import { utils } from "@tot/db-schema";
 import { BeatSaberPlaylistFlatSchemaT } from "../../../../../packages/types/beatsaber-playlist.ts";
 
 export const handler: Handlers<BeatSaberPlaylistFlatSchemaT[]> = {
   async GET(_req, ctx) {
-    const playlists = await playlistListLinks();
+    const playlists = await utils.playlistListLinks();
 
     if (!playlists) return ctx.renderNotFound({ message: "Playlists not found" });
     if (playlists.length < 1) return ctx.renderNotFound({ message: "No playlists found" });
 
     const playlistsWithImageUrls = await Promise.all(playlists.map(async (x) => {
-      const imageUrl = await getImageUrl(
+      const imageUrl = await utils.getImageUrl(
         x.id,
       );
       return ({

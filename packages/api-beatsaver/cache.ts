@@ -1,7 +1,7 @@
 import { z } from "zod";
-import { kv, s3clientEditor } from "@/packages/database-editor/mod.ts";
+import { DB } from "@tot/db";
+import { S3 } from "@tot/s3";
 import { LowercaseMapHash, makeLowercaseMapHash } from "@/packages/types/brands.ts";
-import { buckets } from "@/packages/database-editor/buckets.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { fetchHashes } from "@/packages/api-beatsaver/mod.ts";
 
@@ -14,6 +14,7 @@ const CacheRequestSchema = z.object({
 
 export const scheduleCache = async (hashes: LowercaseMapHash[]) => {
   if (hashes.length === 0) return;
+  const kv = await DB.getKv();
 
   console.log("Queueing ", hashes.length);
   const remainingHashes = [...hashes];
@@ -36,11 +37,12 @@ export const scheduleCache = async (hashes: LowercaseMapHash[]) => {
 export const runWorkerBody = async (
   parsed: typeof CacheRequestSchema._type,
 ) => {
+  const s3 = await S3.get();
   const filteredHashes = (await Promise.all(
     parsed.body
       .map(async (lowercaseHash) => {
-        const exists = await s3clientEditor.exists(lowercaseHash, {
-          bucketName: buckets.beatSaver.mapByHash,
+        const exists = await s3.exists(lowercaseHash, {
+          bucketName: S3.buckets.beatSaver.mapByHash,
         });
 
         if (exists) return null;
@@ -51,7 +53,7 @@ export const runWorkerBody = async (
     .filter(filterNulls);
 
   console.log(
-    `Caching\n${JSON.stringify(filteredHashes)}\nto ${buckets.beatSaver.mapByHash}`,
+    `Caching\n${JSON.stringify(filteredHashes)}\nto ${S3.buckets.beatSaver.mapByHash}`,
   );
 
   let response = await fetchHashes(filteredHashes);
@@ -67,18 +69,19 @@ export const runWorkerBody = async (
 
   await Promise.all(
     Object.entries(response).map(async ([hash, data]) => {
-      await s3clientEditor.putObject(hash, JSON.stringify(data), {
-        bucketName: buckets.beatSaver.mapByHash,
+      await s3.putObject(hash, JSON.stringify(data), {
+        bucketName: S3.buckets.beatSaver.mapByHash,
       });
     }),
   );
 
   console.log(
-    `Cached ${filteredHashes[0]} to ${buckets.beatSaver.mapByHash}`,
+    `Cached ${filteredHashes[0]} to ${S3.buckets.beatSaver.mapByHash}`,
   );
 };
 
-export const runWorker = () => {
+export const runWorker = async () => {
+  const kv = await DB.getKv();
   kv.listenQueue(async (msg: unknown) => {
     try {
       const parsed = CacheRequestSchema.parse(msg);

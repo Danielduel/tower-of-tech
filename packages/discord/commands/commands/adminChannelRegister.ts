@@ -1,5 +1,5 @@
 import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
-import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { DB } from "@tot/db";
 import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
 import { DiscordInteraction } from "@/packages/discord/deps.ts";
 import { ChannelTypes } from "@/packages/discord/deps.ts";
@@ -41,10 +41,11 @@ export async function adminChannelRegister(
   }
   console.log(`Registering channel ${channelId} from guild ${guildId}`);
 
-  const discordChannelData = await dbEditor.DiscordChannel
+  const db = await DB.get();
+  const discordChannelData = await db.DiscordChannel
     .find(channelId)
     .then((x) => x?.flat());
-  const discordGuildData = await dbEditor.DiscordGuild
+  const discordGuildData = await db.DiscordGuild
     .find(guildId)
     .then((x) => x?.flat());
 
@@ -62,7 +63,7 @@ export async function adminChannelRegister(
     );
   }
 
-  await dbEditor.DiscordChannel.add({
+  await db.DiscordChannel.add({
     channelId,
     guildId,
     addedBy: commandEvent.member.user.id,
@@ -70,13 +71,13 @@ export async function adminChannelRegister(
   });
 
   if (!discordGuildData) {
-    await dbEditor.DiscordGuild.add({
+    await db.DiscordGuild.add({
       guildId,
       addedBy: commandEvent.member.user.id,
       channels: [channelId],
     });
   } else {
-    await dbEditor.DiscordGuild.update(guildId, {
+    await db.DiscordGuild.update(guildId, {
       channels: [...discordGuildData.channels, channelId],
     }, { strategy: "merge-shallow" });
   }

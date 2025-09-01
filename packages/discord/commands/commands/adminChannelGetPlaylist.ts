@@ -1,6 +1,6 @@
 import { respondWithMessage } from "@/packages/discord/commands/utils.ts";
 import { discordChannelToBeatSaverData } from "@/packages/discord/shared/discordChannelToBeatSaverData.ts";
-import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { DB } from "@tot/db";
 import { getChannelPointer } from "@/packages/discord/shared/getChannelPointer.ts";
 import { ChannelTypes, DiscordInteraction } from "@/packages/discord/deps.ts";
 import { links } from "@/apps/website-old/routing.config.ts";
@@ -29,7 +29,8 @@ export async function adminChannelGetPlaylist(
   if (!guildId) return respondWithMessage("Invalid guild id", true);
   if (!channelId) return respondWithMessage("Invalid channel id", true);
 
-  const discordChannelData = await dbEditor.DiscordChannel
+  const db = await DB.get();
+  const discordChannelData = await db.DiscordChannel
     .find(channelId)
     .then((x) => x?.flat());
   if (!discordChannelData) {

@@ -4,8 +4,8 @@ import {
   BeatSaberPlaylistSchema,
   BeatSaberPlaylistSchemaT,
 } from "@/packages/types/beatsaber-playlist.ts";
-import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
-import { buckets } from "@/packages/database-editor/buckets.ts";
+import { DB } from "@tot/db";
+import { S3 } from "@tot/s3";
 import {
   LowercaseMapHash,
   makeImageBase64,
@@ -18,13 +18,14 @@ import { makePlaylistId, PlaylistId } from "@/packages/types/brands.ts";
 import { links } from "@/apps/website-old/routing.config.ts";
 import { makePlaylistUrl } from "@/packages/types/brands.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
-import { getBeatSaberPlaylistSongItemMetadataKey } from "@/packages/database-editor/keys.ts";
 import { fetchAndCacheFromResolvablesRaw } from "@/packages/api-beatsaver/mod.ts";
+import { keys } from "@tot/db-schema";
 
 export const getImage = async (playlistId: PlaylistId) => {
   try {
-    const imageBody = await s3clientEditor.getObject(playlistId, {
-      bucketName: buckets.playlist.coverImage,
+    const s3 = await S3.get();
+    const imageBody = await s3.getObject(playlistId, {
+      bucketName: S3.buckets.playlist.coverImage,
     })
       .then((x) => x.arrayBuffer())
       .then((x) => new Uint8Array(x))
@@ -37,8 +38,9 @@ export const getImage = async (playlistId: PlaylistId) => {
 };
 
 export const getImageUrl = async (playlistId: PlaylistId) => {
-  const imageUrl = await s3clientEditor.getPresignedUrl("GET", playlistId, {
-    bucketName: buckets.playlist.coverImage,
+  const s3 = await S3.get();
+  const imageUrl = await s3.getPresignedUrl("GET", playlistId, {
+    bucketName: S3.buckets.playlist.coverImage,
   });
 
   if (!imageUrl) return null;
@@ -47,7 +49,8 @@ export const getImageUrl = async (playlistId: PlaylistId) => {
 };
 
 export const playlistListLinks = async () => {
-  const items = await dbEditor.BeatSaberPlaylist
+  const db = await DB.get();
+  const items = await db.BeatSaberPlaylist
     .getMany()
     .then((x) => x.result)
     .then((x) => x.map((y) => y.flat()));
@@ -84,7 +87,8 @@ export const stripVersionstamps = <T extends Record<string, unknown>>(
 export const fetchBeatSaberPlaylistWithoutResolvingSongItem = async (
   playlistId: PlaylistId,
 ): Promise<Omit<BeatSaberPlaylistFlatSchemaT, "image"> | null> => {
-  const _item = (await dbEditor.BeatSaberPlaylist
+  const db = await DB.get();
+  const _item = (await db.BeatSaberPlaylist
     .find(playlistId))
     ?.flat();
 
@@ -116,12 +120,13 @@ export const fetchBeatSaberPlaylistsWithoutResolvingSongItem = async (
 };
 
 export const resolveSongsWithMetaForPlaylist = async (songHashes: UppercaseMapHash[], playlistId: PlaylistId) => {
-  const songs = await dbEditor.BeatSaberPlaylistSongItem
+  const db = await DB.get();
+  const songs = await db.BeatSaberPlaylistSongItem
     .findMany(songHashes)
     .then((x) => x.map((x) => stripVersionstamps(x.flat())));
 
-  const songsMeta = await dbEditor.BeatSaberPlaylistSongItemMetadata
-    .findMany(songHashes.map((mapHash) => getBeatSaberPlaylistSongItemMetadataKey(playlistId, mapHash)))
+  const songsMeta = await db.BeatSaberPlaylistSongItemMetadata
+    .findMany(songHashes.map((mapHash) => keys.getBeatSaberPlaylistSongItemMetadataKey(playlistId, mapHash)))
     .then((x) => x.map((x) => stripVersionstamps(x.flat())));
 
   const beatsaverItemsMetadata = (await fetchAndCacheFromResolvablesRaw(
@@ -149,7 +154,8 @@ export type fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemT = Omit<BeatSabe
 export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem = async (
   playlistId: PlaylistId,
 ) => {
-  const _item = (await dbEditor.BeatSaberPlaylist
+  const db = await DB.get();
+  const _item = (await db.BeatSaberPlaylist
     .find(playlistId))
     ?.flat();
 

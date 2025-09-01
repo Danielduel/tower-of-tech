@@ -1,6 +1,6 @@
 import { Handlers } from "$fresh/server.ts";
 import { getPlaylistIdFromPlaylistIdWithExtension } from "@/packages/playlist/getPlaylistIdFromPlaylistIdWithExtension.ts";
-import { fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage } from "@/packages/database-editor/utils.ts";
+import { utils } from "@tot/db-schema"
 
 export const handler: Handlers = {
   async GET(_req, ctx) {
@@ -11,7 +11,7 @@ export const handler: Handlers = {
     const playlistId = getPlaylistIdFromPlaylistIdWithExtension(
       playlistIdWithFileExtension,
     );
-    const data = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(
+    const data = await utils.fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage(
       playlistId,
     );
     if (!data) return new Response("404", { status: 404 });

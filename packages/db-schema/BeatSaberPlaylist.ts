@@ -4,7 +4,7 @@ import {
   BeatSaberPlaylistSongItemMetadataSchema,
   BeatSaberPlaylistSongItemSchema,
 } from "@/packages/types/beatsaber-playlist.ts";
-import { getBeatSaberPlaylistSongItemMetadataKey } from "@/packages/database-editor/keys.ts";
+import { getBeatSaberPlaylistSongItemMetadataKey } from "./keys.ts";
 
 export const BeatSaberPlaylistSongItem = collection(
   BeatSaberPlaylistSongItemSchema,

@@ -2,8 +2,8 @@ import { TwitchHelixBroadcasterApi } from "@/packages/api-twitch/helix/TwitchHel
 import { UserTokenSuccessSchemaT } from "@/packages/api-twitch/helix/common.ts";
 import { GetHelixUsersItemSchemaT } from "@/packages/api-twitch/helix/helixUsers.ts";
 import { Err, Ok, Result } from "@/packages/utils/optionals.ts";
-import { dbEditor } from "@/packages/database-editor/mod.ts";
-import { getTwitchRedeemMappingKey } from "@/packages/database-editor/keys.ts";
+import { DB } from "@tot/db";
+import { keys } from "@tot/db-schema";
 import {
   GetHelixChannelPointsCustomRewardsItemSchemaT,
   PatchHelixChannelPointsCustomRewardsBodySchemaT,
@@ -14,12 +14,12 @@ export class TwitchHelixBroadcasterApiManaged extends TwitchHelixBroadcasterApi 
   constructor(
     clientId: string,
     userCreds: UserTokenSuccessSchemaT,
-    public userData: GetHelixUsersItemSchemaT,
+    public override userData: GetHelixUsersItemSchemaT,
   ) {
     super(clientId, userCreds, userData);
   }
 
-  public static async createFromUserCreds(
+  public static override async createFromUserCreds(
     clientId: string,
     userCreds: UserTokenSuccessSchemaT,
   ): Promise<Result<TwitchHelixBroadcasterApiManaged, Error>> {
@@ -52,8 +52,9 @@ export class TwitchHelixBroadcasterApiManaged extends TwitchHelixBroadcasterApi 
     set: PostHelixChannelPointsCustomRewardsBodySchemaT,
     update: PatchHelixChannelPointsCustomRewardsBodySchemaT,
   ): Promise<Result<GetHelixChannelPointsCustomRewardsItemSchemaT, Error>> {
-    const mappingEntry = await dbEditor.TwitchRedeemMapping
-      .find(getTwitchRedeemMappingKey(this.broadcasterId, redeemName))
+    const db = await DB.get();
+    const mappingEntry = await db.TwitchRedeemMapping
+      .find(keys.getTwitchRedeemMappingKey(this.broadcasterId, redeemName))
       .then((x) => x?.flat());
 
     if (mappingEntry) {
@@ -80,11 +81,11 @@ export class TwitchHelixBroadcasterApiManaged extends TwitchHelixBroadcasterApi 
     const redeemM = await super.createCustomPointReward(set);
     if (redeemM.isErr()) return Err(redeemM.unwrapErr());
     const redeem = redeemM.unwrap();
-    const createdMappingEntry = await dbEditor.TwitchRedeemMapping.add({
+    const createdMappingEntry = await db.TwitchRedeemMapping.add({
       channelId: this.broadcasterId,
       name: redeemName,
       twitchRedeemId: redeem.id,
-      id: getTwitchRedeemMappingKey(this.broadcasterId, redeemName),
+      id: keys.getTwitchRedeemMappingKey(this.broadcasterId, redeemName),
     });
 
     return Ok(redeem);

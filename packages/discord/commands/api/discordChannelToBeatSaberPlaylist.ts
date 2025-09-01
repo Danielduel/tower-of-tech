@@ -1,6 +1,6 @@
 import { discordChannelToBeatSaverData } from "@/packages/discord/shared/discordChannelToBeatSaverData.ts";
 import { BeatSaverMapResponseSuccessSchema } from "@/packages/types/beatsaver.ts";
-import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { DB } from "@tot/db";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { links } from "@/apps/website-old/routing.config.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
@@ -69,7 +69,9 @@ export async function discordChannelToBeatSaberPlaylist(
   if (!guildId) throw "Invalid guild id";
   if (!channelId) throw "Invalid channel id";
 
-  const discordChannelData = await dbEditor.DiscordChannel
+  const db = await DB.get();
+
+  const discordChannelData = await db.DiscordChannel
     .find(channelId)
     .then((x) => x?.flat());
   if (!discordChannelData) {
