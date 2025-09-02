@@ -81,7 +81,10 @@
       ]
     },
     "@olli/zod-api@0.9.2": {
-      "integrity": "532811a8f812f59110bee7625ea69b53b36aa7bac2b4df33925172710f002041"
+      "integrity": "532811a8f812f59110bee7625ea69b53b36aa7bac2b4df33925172710f002041",
+      "dependencies": [
+        "npm:zod"
+      ]
     },
     "@std/assert@0.221.0": {
       "integrity": "a5f1aa6e7909dbea271754fd4ab3f4e687aeff4873b4cef9a320af813adb489a"

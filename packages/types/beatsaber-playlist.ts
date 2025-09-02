@@ -57,6 +57,15 @@ export const BeatSaberPlaylistWithoutIdSchema = z.object({
 });
 export type BeatSaberPlaylistWithoutIdSchemaT = typeof BeatSaberPlaylistWithoutIdSchema._type;
 
+export const BeatSaberPlaylistWithoutIdAndImageSchema = z.object({
+  id: z.any().optional(),
+  playlistTitle: z.string(),
+  playlistAuthor: z.string(),
+  customData: BeatSaberPlaylistCustomDataSchema.optional(),
+  songs: z.array(BeatSaberPlaylistSongItemSchema),
+  image: z.any().optional(),
+});
+
 export const BeatSaberPlaylistSchema = z.object({
   id: z.string().transform(makePlaylistId),
   playlistTitle: z.string(),

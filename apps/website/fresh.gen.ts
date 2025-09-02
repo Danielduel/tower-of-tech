@@ -9,6 +9,8 @@ import * as $api_v1_discord_playlist_get_guild_guildId_channel_channelId_ from "
 import * as $api_v1_discord_playlist_get_guild_guildId_channel_channelId_download from "./routes/api/v1/discord/playlist/get/guild/[guildId]/channel/[channelId]/download.tsx";
 import * as $api_v1_discord_playlist_get_guild_guildId_channel_channelId_oneclick_desiredFileName_ from "./routes/api/v1/discord/playlist/get/guild/[guildId]/channel/[channelId]/oneclick/[desiredFileName].tsx";
 import * as $api_v1_playlist_get_playlistIdWithFileExtension_ from "./routes/api/v1/playlist/get/[playlistIdWithFileExtension].tsx";
+import * as $api_v1_playlist_get_playlistIdWithFileExtension_beatleader_player_playerId_ from "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/beatleader/player/[playerId].ts";
+import * as $api_v1_playlist_get_playlistIdWithFileExtension_beatleader_player_playerId_unplayed from "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/beatleader/player/[playerId]/unplayed.ts";
 import * as $api_v1_playlist_get_playlistIdWithFileExtension_download from "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/download.tsx";
 import * as $api_v1_playlist_get_playlistIdWithFileExtension_oneclick_desiredFileName_ from "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/oneclick/[desiredFileName].tsx";
 import * as $home_layout from "./routes/home/_layout.tsx";
@@ -17,7 +19,9 @@ import * as $home_index from "./routes/home/index.tsx";
 import * as $home_playlist_playlistId_details from "./routes/home/playlist/[playlistId]/details.tsx";
 import * as $home_playlist_list from "./routes/home/playlist/list.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $CopyButton from "./islands/CopyButton.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $playlist_PlaylistDetails from "./islands/playlist/PlaylistDetails.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -32,6 +36,10 @@ const manifest = {
     "./routes/api/v1/discord/playlist/get/guild/[guildId]/channel/[channelId]/oneclick/[desiredFileName].tsx":
       $api_v1_discord_playlist_get_guild_guildId_channel_channelId_oneclick_desiredFileName_,
     "./routes/api/v1/playlist/get/[playlistIdWithFileExtension].tsx": $api_v1_playlist_get_playlistIdWithFileExtension_,
+    "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/beatleader/player/[playerId].ts":
+      $api_v1_playlist_get_playlistIdWithFileExtension_beatleader_player_playerId_,
+    "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/beatleader/player/[playerId]/unplayed.ts":
+      $api_v1_playlist_get_playlistIdWithFileExtension_beatleader_player_playerId_unplayed,
     "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/download.tsx":
       $api_v1_playlist_get_playlistIdWithFileExtension_download,
     "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/oneclick/[desiredFileName].tsx":
@@ -44,7 +52,9 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/CopyButton.tsx": $CopyButton,
     "./islands/Counter.tsx": $Counter,
+    "./islands/playlist/PlaylistDetails.tsx": $playlist_PlaylistDetails,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
