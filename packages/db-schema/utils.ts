@@ -13,6 +13,7 @@ import {
   makeLowercaseMapHash,
   UppercaseMapHash,
 } from "@/packages/types/brands.ts";
+import { BeatLeaderAPIPlayerByIdScoresCompact } from "@/packages/api-beatleader/player/playerByIdScoresCompact.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId, PlaylistId } from "@/packages/types/brands.ts";
 import { links } from "@/apps/website-old/routing.config.ts";
@@ -188,3 +189,65 @@ export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndImage = async
 
   return data;
 };
+
+export const _fetchBeatLeaderScoresForPlayerIdFileteredByPlaylist = async (
+  beatleaderPlayerId: string,
+  playlist: fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemT,
+  count: number,
+  page: number,
+) => {
+  const playerDataR = await fetch(
+    `https://api.beatleader.xyz/player/${beatleaderPlayerId}/scores/compact?count=${count}&page=${page}`,
+    {
+      body: JSON.stringify([playlist]),
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+    },
+  );
+  const _playerData = await playerDataR.json();
+  const playerData = await BeatLeaderAPIPlayerByIdScoresCompact.GET.SuccessSchema.parseAsync(_playerData);
+
+  return playerData;
+};
+
+export const fetchBeatLeaderScoresForPlayerIdFilteredByPlaylist = async (
+  beatleaderPlayerId: string,
+  playlist: fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemT,
+): Promise<BeatLeaderAPIPlayerByIdScoresCompact.GET.ItemT[]> => {
+  const returns: BeatLeaderAPIPlayerByIdScoresCompact.GET.ItemT[] = [];
+  let response = await _fetchBeatLeaderScoresForPlayerIdFileteredByPlaylist(beatleaderPlayerId, playlist, 100, 1);
+  returns.push(...response.data);
+  while (response.metadata.page * response.metadata.itemsPerPage < response.metadata.total) {
+    console.log(response.metadata);
+    response = await _fetchBeatLeaderScoresForPlayerIdFileteredByPlaylist(beatleaderPlayerId, playlist, 100, response.metadata.page + 1);
+    returns.push(...response.data);
+  }
+  console.log(response.metadata);
+
+  return returns;
+}
+
+export const fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndBeatLeaderScoresForPlayerId = async (
+  playlistId: PlaylistId,
+  beatleaderPlayerId: string,
+) => {
+  const data = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(
+    playlistId,
+  );
+  if (!data) throw 404;
+
+  const imageUrl = await getImageUrl(playlistId);
+  const beatLeaderCompactScores = await fetchBeatLeaderScoresForPlayerIdFilteredByPlaylist(beatleaderPlayerId, data);
+
+  return {
+    playlist: data,
+    beatLeaderCompactScores,
+    imageUrl,
+  };
+};
+export type fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndBeatLeaderScoresForPlayerIdT = Awaited<
+  ReturnType<typeof fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItemAndBeatLeaderScoresForPlayerId>
+>;

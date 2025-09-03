@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { resource } from "zod-api";
 import { paginatedResponseSchemaWrapper } from "@/packages/api-beatleader/common.ts";
-import { BeatSaberPlaylistWithoutIdAndImageSchema } from "../../types/beatsaber-playlist.ts";
 
 export namespace BeatLeaderAPIPlayerByIdScoresCompact {
   export namespace GET {
