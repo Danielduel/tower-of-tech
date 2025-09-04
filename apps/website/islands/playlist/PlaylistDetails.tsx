@@ -6,19 +6,27 @@ import { makeUppercaseMapHash } from "@/packages/types/brands.ts";
 
 const beatLeaderDiffIntToDiffName = (i: number) => {
   switch (i) {
-    case 1: return "Easy";
-    case 3: return "Normal";
-    case 5: return "Hard";
-    case 7: return "Expert";
-    case 9: return "ExpertPlus";
+    case 1:
+      return "Easy";
+    case 3:
+      return "Normal";
+    case 5:
+      return "Hard";
+    case 7:
+      return "Expert";
+    case 9:
+      return "ExpertPlus";
   }
-}
+};
 
 export const PlaylistDetails: FunctionalComponent<
-  { playlist: BeatSaberPlaylistSchemaT; beatLeaderCompactScores?: BeatLeaderAPIPlayerByIdScoresCompact.GET.ItemT[], imageUrl?: string }
+  {
+    playlist: BeatSaberPlaylistSchemaT;
+    beatLeaderCompactScores?: BeatLeaderAPIPlayerByIdScoresCompact.GET.ItemT[];
+    imageUrl?: string;
+  }
 > = ({ playlist, beatLeaderCompactScores, imageUrl }) => {
-  const imageSource = imageUrl ?? `data:image/png;base64,${playlist.image}`
-
+  const imageSource = imageUrl ?? `data:image/png;base64,${playlist.image}`;
 
   return (
     <div>
@@ -57,8 +65,19 @@ export const PlaylistDetails: FunctionalComponent<
                     const scoreFcDesc = score ? score.score.fullCombo ? " (FC)" : "" : "";
                     const scoreDesc = score ? ` [scored ${~~(score.score.accuracy * 10000) / 100}%${scoreFcDesc}]` : "";
 
-                    return `${x.name} (${x.characteristic})${scoreDesc}`;
-                  }).join(", ")}
+                    return {
+                      childText: `${x.name} (${x.characteristic})${scoreDesc}`,
+                      copyText: `!bsr ${v.key} (${x.characteristic} ${x.name})`
+                    };
+                  }).map((x) => {
+                    return (
+                      <div>
+                        {v.key
+                          ? <CopyButton childText={x.childText} copyText={x.copyText} />
+                          : x.childText}
+                      </div>
+                    );
+                  })}
                 </div>
                 <div>
                 </div>
