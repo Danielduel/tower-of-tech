@@ -2,6 +2,7 @@ import { EventEmitter } from "@/packages/deps/eventEmitter.ts";
 import { BeatLeaderGeneralSocketAccepted, BeatLeaderGeneralSocketAny } from "@/apps/beatleader-bot/beatleader-zod.ts";
 import { getWSGeneralLogger } from "@/packages/log/beatleader-bot.ts";
 import { tryParse } from "@/packages/utils/tryParse.ts";
+import { BEATLEADER_SOCKETS_URL } from "@/packages/api-beatleader/api.ts";
 
 type WSGeneralEvents = {
   open: [any];
@@ -25,7 +26,7 @@ const logger = getWSGeneralLogger();
 export const createBeatleaderWSGeneral = ({ debug }: CreateBeatleaderWSGeneralOpts) => {
   logger.debug("create");
 
-  const addr = "wss://sockets.api.beatleader.xyz/general";
+  const addr = `${BEATLEADER_SOCKETS_URL}/general`;
   logger.debug("create WebSocket");
   const ws = new WebSocket(addr);
 

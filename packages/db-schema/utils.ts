@@ -14,6 +14,7 @@ import {
   UppercaseMapHash,
 } from "@/packages/types/brands.ts";
 import { BeatLeaderAPIPlayerByIdScoresCompact } from "@/packages/api-beatleader/player/playerByIdScoresCompact.ts";
+import { BEATLEADER_API_URL } from "@/packages/api-beatleader/api.ts";
 import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { makePlaylistId, PlaylistId } from "@/packages/types/brands.ts";
 import { links } from "@/apps/website-old/routing.config.ts";
@@ -197,7 +198,7 @@ export const _fetchBeatLeaderScoresForPlayerIdFileteredByPlaylist = async (
   page: number,
 ) => {
   const playerDataR = await fetch(
-    `https://api.beatleader.xyz/player/${beatleaderPlayerId}/scores/compact?count=${count}&page=${page}`,
+    `${BEATLEADER_API_URL}/player/${beatleaderPlayerId}/scores/compact?count=${count}&page=${page}`,
     {
       body: JSON.stringify([playlist]),
       method: "POST",

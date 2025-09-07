@@ -12,10 +12,12 @@ const beatLeaderApiOauthIdentityBodySchema = z.object({
   name: z.string(),
 });
 export type BeatLeaderApiOauthIdentityBodySchemaT = typeof beatLeaderApiOauthIdentityBodySchema._type;
+export const BEATLEADER_API_URL = Deno.env.get("BEATLEADER_API_URL") || "https://api.beatleader.xyz";
+export const BEATLEADER_SOCKETS_URL = Deno.env.get("BEATLEADER_SOCKETS_URL") || "wss://socket.beatleader.xyz";
 
 export const BeatLeaderApi = client({
   fetcher,
-  baseUrl: "https://api.beatleader.xyz",
+  baseUrl: BEATLEADER_API_URL,
   logger: await getLogger(),
   resources: {
     oauthIdentity: resource("/oauth2/identity", {

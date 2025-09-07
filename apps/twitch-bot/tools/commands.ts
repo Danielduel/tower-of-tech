@@ -65,7 +65,7 @@ await registerSnoozeAdsRedeem(
   twitchAdScheduleManager,
 );
 
-const baseTitle = ":) !bsr !wip";
+const baseTitle = "Your daily dose of smooth tech !bsr !wip";
 
 await registerFirstOnStreamRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);

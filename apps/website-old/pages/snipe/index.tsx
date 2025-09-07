@@ -4,6 +4,7 @@ import { LowercaseMapHash } from "@/packages/types/brands.ts";
 import { BeatSaverMapId } from "@/packages/types/beatsaver.ts";
 import { GlobeInstance } from "globe.gl";
 import { COUNTRIES } from "@/apps/website/components/COUNTRIES.ts";
+import { BEATLEADER_SOCKETS_URL } from "../../../../packages/api-beatleader/api.ts";
 
 type BeatLeaderWSAccepted = {
   data: {
@@ -197,7 +198,7 @@ export const SnipeIndex = () => {
   }, []);
 
   useEffect(() => {
-    const client = new WebSocket("wss://api.beatleader.xyz/general");
+    const client = new WebSocket(`${BEATLEADER_SOCKETS_URL}/general`);
 
     client.onmessage = (message) => {
       const data = safeParse(message.data);
