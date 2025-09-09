@@ -4,6 +4,7 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $_middleware from "./routes/_middleware.ts";
 import * as $api_v1_discord_command_webhook from "./routes/api/v1/discord/command-webhook.tsx";
 import * as $api_v1_discord_playlist_get_guild_guildId_channel_channelId_ from "./routes/api/v1/discord/playlist/get/guild/[guildId]/channel/[channelId].tsx";
 import * as $api_v1_discord_playlist_get_guild_guildId_channel_channelId_download from "./routes/api/v1/discord/playlist/get/guild/[guildId]/channel/[channelId]/download.tsx";
@@ -29,6 +30,7 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/_middleware.ts": $_middleware,
     "./routes/api/v1/discord/command-webhook.tsx": $api_v1_discord_command_webhook,
     "./routes/api/v1/discord/playlist/get/guild/[guildId]/channel/[channelId].tsx":
       $api_v1_discord_playlist_get_guild_guildId_channel_channelId_,
