@@ -6,23 +6,30 @@ export const apiV1HandlerAuthDiscordOauthSignInRoute = "/api/v1/auth/discord/oau
 export const apiV1HandlerAuthDiscordOauthSignOutRoute = "/api/v1/auth/discord/oauth/signout";
 export const apiV1HandlerAuthDiscordOauthCallbackRoute = "/api/v1/auth/discord/oauth/callback";
 
-const oauthConfig = createDiscordOAuthConfig({
-  redirectUri: isLocal()
-    ? `http://localhost:8000${apiV1HandlerAuthDiscordOauthCallbackRoute}`
-    : `https://www.towerofte.ch${apiV1HandlerAuthDiscordOauthCallbackRoute}`,
-  scope: ["identify"],
-});
+let _helpers = null;
+try {
+  const oauthConfig = createDiscordOAuthConfig({
+    redirectUri: isLocal()
+      ? `http://localhost:8000${apiV1HandlerAuthDiscordOauthCallbackRoute}`
+      : `https://www.towerofte.ch${apiV1HandlerAuthDiscordOauthCallbackRoute}`,
+    scope: ["identify"],
+  });
+
+  _helpers = createHelpers(oauthConfig, {
+    cookieOptions: {
+      name: "authorization-Discord",
+    },
+  });
+} catch (_) {
+  console.warn(_);
+}
 
 const {
   signIn,
   handleCallback,
   getSessionId,
   signOut,
-} = createHelpers(oauthConfig, {
-  cookieOptions: {
-    name: "authorization-Discord",
-  },
-});
+} = _helpers!;
 
 export const handleDiscordCallback = handleCallback;
 export const handleDiscordSignIn = signIn;
