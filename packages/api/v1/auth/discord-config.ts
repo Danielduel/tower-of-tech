@@ -29,7 +29,7 @@ const {
   handleCallback,
   getSessionId,
   signOut,
-} = _helpers!;
+} = _helpers! ?? {};
 
 export const handleDiscordCallback = handleCallback;
 export const handleDiscordSignIn = signIn;
