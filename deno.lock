@@ -3,6 +3,7 @@
   "specifiers": {
     "jsr:@dduel/ts-brand@0.1.0": "0.1.0",
     "jsr:@dduel/twitch-irc@0.11.4": "0.11.4",
+    "jsr:@deno/kv-oauth@*": "0.11.0",
     "jsr:@denosaurs/event@2.0.2": "2.0.2",
     "jsr:@luca/esbuild-deno-loader@0.11.0": "0.11.0",
     "jsr:@olli/kvdex@0.36.1": "0.36.1",
@@ -60,6 +61,7 @@
     "@deno/kv-oauth@0.11.0": {
       "integrity": "17a8822fde1573563b8bdb526d925e398a4b92394381273bad1e837fb4a6c8b2",
       "dependencies": [
+        "jsr:@std/datetime@0.221",
         "jsr:@std/http@0.221"
       ]
     },
