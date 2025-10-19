@@ -3,6 +3,10 @@ import { BeatSaberPlaylistSchemaT } from "../../../../packages/types/beatsaber-p
 import { CopyButton } from "../CopyButton.tsx";
 import { BeatLeaderAPIPlayerByIdScoresCompact } from "../../../../packages/api-beatleader/player/playerByIdScoresCompact.ts";
 import { makeUppercaseMapHash } from "@/packages/types/brands.ts";
+import { LinkButton } from "../LinkButton.tsx";
+import { links } from "../../../website-old/routing.config.ts";
+import { towerOfTechWebsiteOrigin } from "../../../../packages/utils/constants.ts";
+import { getPlaylistFileNameFromPlaylist } from "../../../../packages/playlist/getPlaylistFileNameFromPlaylist.ts";
 
 const beatLeaderDiffIntToDiffName = (i: number) => {
   switch (i) {
@@ -36,6 +40,13 @@ export const PlaylistDetails: FunctionalComponent<
           <div class="ml-4">
             <h4>{playlist.playlistTitle}</h4>
             <h5>{playlist.playlistAuthor}</h5>
+            <LinkButton href={links.api.v1.playlist.download(playlist.id)} download>
+              Download
+            </LinkButton>
+            <br />
+            <LinkButton href={links.api.v1.playlist.oneClick(playlist.id, getPlaylistFileNameFromPlaylist(playlist), towerOfTechWebsiteOrigin)}>
+              OneClick
+            </LinkButton>
           </div>
         </div>
       </div>

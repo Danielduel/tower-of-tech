@@ -1314,8 +1314,8 @@
       ]
     },
     {
-      "hash": "499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
-      "levelid": "custom_level_499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
+      "hash": "DDA13B4DC6BC34F777D38032061BC78A7A63414E",
+      "levelid": "custom_level_DDA13B4DC6BC34F777D38032061BC78A7A63414E",
       "songName": "DAICON V",
       "levelAuthorName": "VoltageO",
       "difficulties": [
@@ -1773,6 +1773,126 @@
       "hash": "30AA61C6239571188DF7CF7BFDCC3555D467D1FA",
       "levelid": "custom_level_30AA61C6239571188DF7CF7BFDCC3555D467D1FA",
       "songName": "String Theocracy",
+      "levelAuthorName": "CharlotteAulin",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "6B617200F8D4F547DCE57CF719F10A73D7BDC123",
+      "levelid": "custom_level_6B617200F8D4F547DCE57CF719F10A73D7BDC123",
+      "songName": "Be My Guest",
+      "levelAuthorName": "A-PlouVR",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "CE4ED44D13FA3D88CA8524AA090132ED07B091D7",
+      "levelid": "custom_level_CE4ED44D13FA3D88CA8524AA090132ED07B091D7",
+      "songName": "HONK",
+      "levelAuthorName": "Chromia",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "CC296E41F99C0153AC3D2742E87347FA3521C9A9",
+      "levelid": "custom_level_CC296E41F99C0153AC3D2742E87347FA3521C9A9",
+      "songName": "Mesmerizer",
+      "levelAuthorName": "Poochy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "23047C808919A53F4D049C4E558CEC8A31F0695B",
+      "levelid": "custom_level_23047C808919A53F4D049C4E558CEC8A31F0695B",
+      "songName": "Whiplash",
+      "levelAuthorName": "dotGet",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "6E0A8908EDB376F59211E1B5711AEA4C5A92E034",
+      "levelid": "custom_level_6E0A8908EDB376F59211E1B5711AEA4C5A92E034",
+      "songName": "Shy Toy Soldier",
+      "levelAuthorName": "Cush",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "2781588C39A5F06FEF6B35F4BDF5160F537845E1",
+      "levelid": "custom_level_2781588C39A5F06FEF6B35F4BDF5160F537845E1",
+      "songName": "Watching you",
+      "levelAuthorName": "Dr_Marc",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "E9E05DBEF4A6527C22186A433C1DB527BC475C98",
+      "levelid": "custom_level_E9E05DBEF4A6527C22186A433C1DB527BC475C98",
+      "songName": "Good Vibes",
+      "levelAuthorName": "Tseska",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "6E42DBE2D25A118E9A948C8516E8C9D94B96326B",
+      "levelid": "custom_level_6E42DBE2D25A118E9A948C8516E8C9D94B96326B",
+      "songName": "Rise & Shine",
+      "levelAuthorName": "Vainstains",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "29D05694A3703ACC95E0B3C338CC9659B7FEA046",
+      "levelid": "custom_level_29D05694A3703ACC95E0B3C338CC9659B7FEA046",
+      "songName": "BAD X END",
+      "levelAuthorName": "VoltageO X Voidless",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "BCF3D9A4D413EDE743197DD7707B80F8D1E0C4D1",
+      "levelid": "custom_level_BCF3D9A4D413EDE743197DD7707B80F8D1E0C4D1",
+      "songName": "Khronostasis Katharsis - Halv -",
       "levelAuthorName": "CharlotteAulin",
       "difficulties": [
         {

@@ -7,12 +7,9 @@ import {
   Auth,
   BeatSaberPlaylist,
   BeatSaverResponse,
-  buckets,
   DiscordGuild,
-  keys,
   ResendLink,
   TwitchRedeem,
-  utils,
 } from "@tot/db-schema";
 import type { BeatSaverIdToHashCacheSchemaT, BeatSaverResponseWrapperSchemaT } from "@/packages/types/beatsaver.ts";
 import type {

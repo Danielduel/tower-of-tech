@@ -1295,8 +1295,8 @@
       ]
     },
     {
-      "hash": "A24992D63B9622E21D5F5BEF4BF0753A42CB1216",
-      "levelid": "custom_level_A24992D63B9622E21D5F5BEF4BF0753A42CB1216",
+      "hash": "B3D055CDED6DF163A30506A636D204AB748EE685",
+      "levelid": "custom_level_B3D055CDED6DF163A30506A636D204AB748EE685",
       "songName": "樱花树下的约定 (DJ Yaha版)",
       "levelAuthorName": "Zayta",
       "difficulties": [
@@ -1527,6 +1527,78 @@
       "levelid": "custom_level_5D12764722031BE0FA031885EAC7E4E1B199C957",
       "songName": "Protoflicker",
       "levelAuthorName": "risi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "977AE946B1DDA0879725AEA2D0AB12F0F35BD935",
+      "levelid": "custom_level_977AE946B1DDA0879725AEA2D0AB12F0F35BD935",
+      "songName": "Yomigaeri - Halv -",
+      "levelAuthorName": "CharlotteAulin",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "CD23BFC58A7230CED5F8A80A85F72C1A16581284",
+      "levelid": "custom_level_CD23BFC58A7230CED5F8A80A85F72C1A16581284",
+      "songName": "Light It Up",
+      "levelAuthorName": "Tranch",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "FA4A360D6EEFB377FECDC58629844206D1A16051",
+      "levelid": "custom_level_FA4A360D6EEFB377FECDC58629844206D1A16051",
+      "songName": "throw it up",
+      "levelAuthorName": "Parapass, GojiCrafter",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "F0C2A618CDA9481B7E59419D1D3F45BD0BF40ABC",
+      "levelid": "custom_level_F0C2A618CDA9481B7E59419D1D3F45BD0BF40ABC",
+      "songName": "魑魅魍魉",
+      "levelAuthorName": "Hana",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "8F3859B84F0E15271D28EFE5FCE85149C4B8FADC",
+      "levelid": "custom_level_8F3859B84F0E15271D28EFE5FCE85149C4B8FADC",
+      "songName": "Fashion Week",
+      "levelAuthorName": "Cush",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "619DBEECAFB979BFABAC0EFB9CA487BB07854776",
+      "levelid": "custom_level_619DBEECAFB979BFABAC0EFB9CA487BB07854776",
+      "songName": "Punta Cana",
+      "levelAuthorName": "Groovy",
       "difficulties": [
         {
           "characteristic": "Standard",

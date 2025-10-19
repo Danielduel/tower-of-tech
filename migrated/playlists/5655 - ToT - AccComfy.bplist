@@ -1333,8 +1333,8 @@
       ]
     },
     {
-      "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
-      "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "hash": "B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
+      "levelid": "custom_level_B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
       "songName": "Destroy",
       "levelAuthorName": "Gabriel & okazu",
       "difficulties": [
@@ -2205,6 +2205,178 @@
       "levelid": "custom_level_E7D6CF1CE7B04C80C10C5AE5EE468DB73C7AE5E5",
       "songName": "Domestic Drastic",
       "levelAuthorName": "Acubens, Dr_Marc",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "24051B9670BFA41E72C641D6F3940CADB99AC942",
+      "levelid": "custom_level_24051B9670BFA41E72C641D6F3940CADB99AC942",
+      "songName": "Nightcore - I Wanna Be You Slave",
+      "levelAuthorName": "Tizian",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "B2680C8A0CD51EC4991E4BFB37BBB0363687EF9C",
+      "levelid": "custom_level_B2680C8A0CD51EC4991E4BFB37BBB0363687EF9C",
+      "songName": "Point at Infinity",
+      "levelAuthorName": "wangyufy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "F56B9282184C72B93C0A617E6B137504EEC9E83F",
+      "levelid": "custom_level_F56B9282184C72B93C0A617E6B137504EEC9E83F",
+      "songName": "Toku be chu, shite",
+      "levelAuthorName": "wangyufy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "7369A0C65EDEF33F7A5D4771F929C2681A58F657",
+      "levelid": "custom_level_7369A0C65EDEF33F7A5D4771F929C2681A58F657",
+      "songName": "Lay Down",
+      "levelAuthorName": "Uncouth",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "94D649E5B135F3521825E6758B6DF7C5F925F7D2",
+      "levelid": "custom_level_94D649E5B135F3521825E6758B6DF7C5F925F7D2",
+      "songName": "Kyouensanka",
+      "levelAuthorName": "Vassa",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4FFE23198FA48E523FA5C309E3AF92561932099A",
+      "levelid": "custom_level_4FFE23198FA48E523FA5C309E3AF92561932099A",
+      "songName": "Cloud 9",
+      "levelAuthorName": "voltage4536",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "534D248C1171E54B6F7ABD0D559F87727C99F275",
+      "levelid": "custom_level_534D248C1171E54B6F7ABD0D559F87727C99F275",
+      "songName": "Thomas The Tank Engine Theme",
+      "levelAuthorName": "MrStacker",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "6BB8C8D7F2F5BBA6827CC0D0F0C8397777FA888A",
+      "levelid": "custom_level_6BB8C8D7F2F5BBA6827CC0D0F0C8397777FA888A",
+      "songName": "Holy Knight",
+      "levelAuthorName": "Cush, THMX",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "9B91E591611E5ABB9454736F2536FE3763EAA301",
+      "levelid": "custom_level_9B91E591611E5ABB9454736F2536FE3763EAA301",
+      "songName": "NEMONEMO",
+      "levelAuthorName": "Lalahti, Danny, 3ggcake",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "F9E8A7144FA55B1D359DDAEEE2521AC6A3D14EA0",
+      "levelid": "custom_level_F9E8A7144FA55B1D359DDAEEE2521AC6A3D14EA0",
+      "songName": "ABCD",
+      "levelAuthorName": "Lalahti, Jonas_0_0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "5A00878A5D14AEFA4B923D041350603AADBBC66A",
+      "levelid": "custom_level_5A00878A5D14AEFA4B923D041350603AADBBC66A",
+      "songName": "this is what autumn feels like",
+      "levelAuthorName": "THMX, BsNico",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4A668AF6EFB8198755ED5F17E48F36CBB1F4A9D0",
+      "levelid": "custom_level_4A668AF6EFB8198755ED5F17E48F36CBB1F4A9D0",
+      "songName": "Happier",
+      "levelAuthorName": "Rayman",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "819A470057BD70AD20CB2D6574AE712CF9DF83C7",
+      "levelid": "custom_level_819A470057BD70AD20CB2D6574AE712CF9DF83C7",
+      "songName": "In My Bones",
+      "levelAuthorName": "sammy, Tonkie, 3ggcake",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "7519CD0EDE4F10F86C324228694D7202E3DA8630",
+      "levelid": "custom_level_7519CD0EDE4F10F86C324228694D7202E3DA8630",
+      "songName": "Idol",
+      "levelAuthorName": "Comyute",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -236,8 +236,8 @@
     {
       "songName": "Destroy",
       "levelAuthorName": "Gabriel & okazu",
-      "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
-      "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "hash": "B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
+      "levelid": "custom_level_B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -346,6 +346,30 @@
       "levelAuthorName": "oermergeesh",
       "hash": "D7B7AA1BCC4978A0659C0AFC850807CAEDD42FE7",
       "levelid": "custom_level_D7B7AA1BCC4978A0659C0AFC850807CAEDD42FE7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rasputin Dance Off",
+      "levelAuthorName": "A Jhintleman",
+      "hash": "CEAF061C4FDEEA5C7903FAED28DCB6F87592F7A2",
+      "levelid": "custom_level_CEAF061C4FDEEA5C7903FAED28DCB6F87592F7A2",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "AMAZING MIGHTYYYY!!!!",
+      "levelAuthorName": "take_nyan",
+      "hash": "AE6DAD44D6D5E6CEF9A431AACE7F4FA908DC7D6A",
+      "levelid": "custom_level_AE6DAD44D6D5E6CEF9A431AACE7F4FA908DC7D6A",
       "difficulties": [
         {
           "characteristic": "Standard",

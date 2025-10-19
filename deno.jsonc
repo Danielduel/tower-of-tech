@@ -51,6 +51,7 @@
   },
   "workspace": [
     "apps/website",
+    "packages/api-steam",
     "packages/s3",
     "packages/db",
     "packages/db-schema"

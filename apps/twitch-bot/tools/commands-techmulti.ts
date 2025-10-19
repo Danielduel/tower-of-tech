@@ -13,6 +13,7 @@ import { TwitchPubSubManager } from "@/packages/api-twitch/pubsub/TwitchPubSubMa
 import { TwitchAdScheduleTaskManager } from "@/packages/api-twitch/helix/TwitchAdScheduleTaskManager.ts";
 import { registerFirstOnStreamRedeem } from "@/apps/twitch-bot/common/registerFirstOnStreamRedeem.ts";
 import { BeatSaberGameId } from "@/packages/api-twitch/utils/constants.ts";
+import { registerFastfetchCommand } from "../common/danielduel-fastfetch.ts";
 
 const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
@@ -47,12 +48,14 @@ const twitchPubSubManager = new TwitchPubSubManager(pubSub, pubSubContext, twitc
 const twitchAdScheduleManager =
   (await TwitchAdScheduleTaskManager.fromTwitchHelixBroadcasterApi(twitchHelixBroadcasterApiManaged)).unwrap();
 
+
 await registerSnoozeAdsRedeem(
   twitchPubSubManager,
   ircContext,
   twitchHelixBroadcasterApiManaged,
   twitchAdScheduleManager,
 );
+await registerFastfetchCommand(twitchPubSubManager, twitchHelixBroadcasterApiManaged, ircContext);
 await registerFirstOnStreamRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 registerCommands(irc, twitchHelixBroadcasterApiManaged);

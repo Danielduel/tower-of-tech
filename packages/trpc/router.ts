@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { initTRPC } from "@trpc/server";
-import { buckets } from "@/packages/database-editor/buckets.ts";
-import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
+import { S3 } from "@/packages/s3/mod.ts";
+import { DB } from "@/packages/db/mod.ts";
 import { isReadOnly } from "@/packages/utils/envrionment.ts";
 import { fetchAndCacheFromResolvables, fetchAndCacheFromResolvablesRaw } from "@/packages/api-beatsaver/mod.ts";
 import { createOrUpdatePlaylist } from "@/packages/trpc/routers/playlist.ts";
@@ -22,10 +22,10 @@ import {
   fetchBeatSaberPlaylistsWithoutResolvingSongItem,
   fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem,
   fetchBeatSaberPlaylistWithoutResolvingSongItem,
-} from "@/packages/database-editor/utils.ts";
+} from "@/packages/db-schema/utils.ts";
 import { isDiscordAuthorized } from "@/packages/api/v1/auth/discord.ts";
 import { isBeatLeaderAuthorized } from "@/packages/api/v1/auth/beatleader.ts";
-import { getAccountFromRequestM, getFullAccountFromRequestM } from "@/packages/api/v1/auth/common.ts";
+import { getFullAccountFromRequestM } from "@/packages/api/v1/auth/common.ts";
 
 const t = initTRPC.create();
 
@@ -62,7 +62,8 @@ const map = t.router({
 
 const playlist = t.router({
   listLinks: t.procedure.query(async () => {
-    const items = await dbEditor.BeatSaberPlaylist
+    const dbClient = await DB.get();
+    const items = await dbClient.BeatSaberPlaylist
       .getMany()
       .then((x) => x.result)
       .then((x) => x.map((y) => y.flat()));
@@ -74,6 +75,7 @@ const playlist = t.router({
       input: { ids },
     }) => {
       console.log("router call playlist.listByIdWithoutResolvingMaps");
+      const s3Client = await S3.get();
 
       const items = await fetchBeatSaberPlaylistsWithoutResolvingSongItem(
         ids,
@@ -84,8 +86,8 @@ const playlist = t.router({
         Object.keys(items).map(
           async (key) => [
             key,
-            await s3clientEditor.presignedGetObject(key, {
-              bucketName: buckets.playlist.coverImage,
+            await s3Client.presignedGetObject(key, {
+              bucketName: S3.buckets.playlist.coverImage,
             }),
           ],
         ),
@@ -109,6 +111,7 @@ const playlist = t.router({
       input: { id },
     }) => {
       console.log("router call playlist.getByIdWithoutResolvingMaps");
+      const s3Client = await S3.get();
 
       const item = await fetchBeatSaberPlaylistWithoutResolvingSongItem(
         id,
@@ -116,8 +119,8 @@ const playlist = t.router({
       if (!item) return null;
 
       const imageUrl = makeImageUrl(
-        await s3clientEditor.presignedGetObject(item.id, {
-          bucketName: buckets.playlist.coverImage,
+        await s3Client.presignedGetObject(item.id, {
+          bucketName: S3.buckets.playlist.coverImage,
         }),
       );
       return {
@@ -131,6 +134,7 @@ const playlist = t.router({
       input: { id },
     }) => {
       console.log("router call playlist.getById");
+      const s3Client = await S3.get();
 
       const item = await fetchBeatSaberPlaylistWithBeatSaberPlaylistSongItem(
         id,
@@ -138,8 +142,8 @@ const playlist = t.router({
       if (!item) return null;
 
       const imageUrl = makeImageUrl(
-        await s3clientEditor.presignedGetObject(item.id, {
-          bucketName: buckets.playlist.coverImage,
+        await s3Client.presignedGetObject(item.id, {
+          bucketName: S3.buckets.playlist.coverImage,
         }),
       );
       return {
@@ -150,6 +154,7 @@ const playlist = t.router({
   createOrUpdate: t.procedure
     .input(z.array(BeatSaberPlaylistWithoutIdSchema))
     .mutation(async ({ input }) => {
+      console.log(`isReadOnly:`, isReadOnly());
       if (!isReadOnly()) {
         return await Promise.all(input.map(createOrUpdatePlaylist));
       } else {

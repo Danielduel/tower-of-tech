@@ -10,6 +10,7 @@ import { TwitchAdScheduleTaskManager } from "@/packages/api-twitch/helix/TwitchA
 import { registerFirstOnStreamRedeem } from "@/apps/twitch-bot/common/registerFirstOnStreamRedeem.ts";
 import { BeatSaberGameId } from "@/packages/api-twitch/utils/constants.ts";
 import { registerAppendRaiderName } from "@/apps/twitch-bot/common/registerAppendRaiderName.ts";
+import { registerFastfetchCommand } from "../common/danielduel-fastfetch.ts";
 
 const client_id = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const channel = Deno.env.get("TWITCH_IRC_COMMANDS_CHANNEL")!;
@@ -41,19 +42,6 @@ const [irc, ircCleanup, ircContext] = createTwitchIRC({
 
 const [pubSub, eventSubCleanup, pubSubContext] = await twitchHelixBroadcasterApiManaged.getEventSub();
 
-// await twitchHelixBroadcasterApiManaged.postEventSubSubsctiption({
-//   type: "channel.channel_points_custom_reward_redemption.add",
-//   transport: {
-//     method: "websocket",
-//     session_id: session.payload.session.id,
-//   },
-//   condition: {
-//     broadcaster_user_id: twitchHelixBroadcasterApiManaged.userData.id,
-//   },
-//   version: "1"
-// });
-//
-
 const twitchPubSubManager = new TwitchPubSubManager(pubSub, pubSubContext, twitchHelixBroadcasterApiManaged);
 const twitchAdScheduleManager =
   (await TwitchAdScheduleTaskManager.fromTwitchHelixBroadcasterApi(twitchHelixBroadcasterApiManaged)).unwrap();
@@ -67,6 +55,7 @@ await registerSnoozeAdsRedeem(
 
 const baseTitle = "Your daily dose of smooth tech !bsr !wip";
 
+await registerFastfetchCommand(twitchPubSubManager, twitchHelixBroadcasterApiManaged, ircContext);
 await registerFirstOnStreamRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 await registerTechMultiReminderRedeem(twitchPubSubManager, ircContext, twitchHelixBroadcasterApiManaged);
 registerCommands(irc, twitchHelixBroadcasterApiManaged);
@@ -76,8 +65,8 @@ registerAppendRaiderName(twitchPubSubManager, ircContext, twitchHelixBroadcaster
 const updateChannelInfo = async () => {
   return await twitchHelixBroadcasterApiManaged.setChannelInfo({
     game_id: BeatSaberGameId,
-    tags: ["English", "Polski", "Linux", "ValveIndex", "VR", "tech", "sport", "AMA", "BackseatingAllowed"],
-    title: baseTitle // + " - raid me even if you aren't streaming - testing sth",
+    tags: ["linux", "sport", "goodvibes", "cozy", "pro", "music", "safespace", "chill", "english", "polski"],
+    title: baseTitle
   });
 };
 

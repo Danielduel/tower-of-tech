@@ -1,4 +1,4 @@
-import { Fetcher } from "zod-api";
+import type { Fetcher } from "https://raw.githubusercontent.com/oliver-oloughlin/zod_api/refs/tags/0.9.2/src/types.ts";
 import { retry } from "@/packages/utils/async.ts";
 
 export const fetcher: Fetcher = (input, init) => {
@@ -10,7 +10,13 @@ export const fetcher: Fetcher = (input, init) => {
         init.body = new URLSearchParams(strip["__STRIP_URL_STRING__"]);
       }
 
-      const response = await fetch(input, init);
+      const _init: RequestInit = {
+        ...init,
+        method: init?.method?.toUpperCase(),
+      };
+      
+
+      const response = await fetch(input, _init);
       if (response.status === 404) return response;
       if (!response.ok) {
         console.log(input, init);

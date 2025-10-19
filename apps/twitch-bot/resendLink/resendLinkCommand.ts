@@ -1,5 +1,5 @@
 import { TwitchIRCEmitter } from "@/apps/twitch-bot/types.ts";
-import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { DB } from "@/packages/database-editor/mod.ts";
 import { makeBroadcasterId } from "@/packages/api-twitch/helix/brand.ts";
 import { ChannelRole } from "https://deno.land/x/twitch_irc@0.11.2/lib/ratelimit.ts";
 import type { ResendLinkChannel } from "@/apps/twitch-bot/resendLink/ResendLinkChannel.ts";
@@ -14,13 +14,14 @@ export const resendLinkCommand = (
   log("register");
 
   irc.on("privmsg", async ({ event, context: { send } }) => {
+    const db = await DB.get();
     const [cmd, ...args] = event.message.split(" ");
     const isModeratorOrAbove = event.user.role === ChannelRole.Moderator || event.user.role === ChannelRole.Streamer;
     const shouldHandle = cmd.startsWith("!!") && isModeratorOrAbove;
 
     if (!shouldHandle) return;
 
-    const items = (await dbEditor.ResendLinkTwitchBeatSaverResolvableIdKind.findBySecondaryIndex(
+    const items = (await db.ResendLinkTwitchBeatSaverResolvableIdKind.findBySecondaryIndex(
       "targetId",
       makeBroadcasterId(event.roomId),
     ))

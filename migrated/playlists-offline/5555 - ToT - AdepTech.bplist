@@ -90,18 +90,6 @@
       ]
     },
     {
-      "hash": "BAAE6C7C0871E585ECE1888F78920157D54931F6",
-      "levelid": "custom_level_BAAE6C7C0871E585ECE1888F78920157D54931F6",
-      "songName": "Mannequin",
-      "levelAuthorName": "Danrabomb",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
-        }
-      ]
-    },
-    {
       "hash": "34512BC014259615B90DE08B7A97C4E53AD6BDEB",
       "levelid": "custom_level_34512BC014259615B90DE08B7A97C4E53AD6BDEB",
       "songName": "Wagamama Party Night",
@@ -346,18 +334,6 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
-        }
-      ]
-    },
-    {
-      "hash": "48C302770659065D1C6C91BD5DE0E25E50E18EF8",
-      "levelid": "custom_level_48C302770659065D1C6C91BD5DE0E25E50E18EF8",
-      "songName": "AIAIAI",
-      "levelAuthorName": "Jevk",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -978,8 +954,8 @@
       ]
     },
     {
-      "hash": "0493EB2CC5A4E789B6652C8B930A3A2375D50683",
-      "levelid": "custom_level_0493EB2CC5A4E789B6652C8B930A3A2375D50683",
+      "hash": "DEC7104CB9020FA396D4677B4810739874F41207",
+      "levelid": "custom_level_DEC7104CB9020FA396D4677B4810739874F41207",
       "songName": "Shin FAKE STYLE",
       "levelAuthorName": "symphonic",
       "difficulties": [
@@ -1214,18 +1190,6 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
-        }
-      ]
-    },
-    {
-      "hash": "D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
-      "levelid": "custom_level_D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
-      "songName": "SUN GOES DOWN",
-      "levelAuthorName": "Shappy",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Expert"
         }
       ]
     },
@@ -1638,8 +1602,8 @@
       ]
     },
     {
-      "hash": "42F6A0E99BBA59C40705EC6BB3EE1732AE70ED2B",
-      "levelid": "custom_level_42F6A0E99BBA59C40705EC6BB3EE1732AE70ED2B",
+      "hash": "AC846823DA3D7BFE4C897EDA967E27F2DC767721",
+      "levelid": "custom_level_AC846823DA3D7BFE4C897EDA967E27F2DC767721",
       "songName": "Follow You",
       "levelAuthorName": "Kassi, oegoe",
       "difficulties": [
@@ -1658,18 +1622,6 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
-        }
-      ]
-    },
-    {
-      "hash": "966C18F066A972A0C921E9F6453FF91C52B6A000",
-      "levelid": "custom_level_966C18F066A972A0C921E9F6453FF91C52B6A000",
-      "songName": "Lumière",
-      "levelAuthorName": "Rashed",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
         }
       ]
     },
@@ -1798,6 +1750,246 @@
       "levelid": "custom_level_454ABF2AC04C2A005B896930CA3FA19B9DBB000B",
       "songName": "Human Contact",
       "levelAuthorName": "Kassi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "CC9A0F6273C7FCB6D9BFA67326F26919015993D7",
+      "levelid": "custom_level_CC9A0F6273C7FCB6D9BFA67326F26919015993D7",
+      "songName": "Did I Forget Something",
+      "levelAuthorName": "Mozz_Zm",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "21B14CDB97ABDF9DEFE6F6979C6C94219EA6AC41",
+      "levelid": "custom_level_21B14CDB97ABDF9DEFE6F6979C6C94219EA6AC41",
+      "songName": "Free",
+      "levelAuthorName": "Tonkie, AgentHyped",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "A2475D517946A9E629DA4FAA511CEDA64BE7763B",
+      "levelid": "custom_level_A2475D517946A9E629DA4FAA511CEDA64BE7763B",
+      "songName": "Lush Life",
+      "levelAuthorName": "VoltageO",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "9810A07A46DEFF4BDE61937E613C0438F7CF361D",
+      "levelid": "custom_level_9810A07A46DEFF4BDE61937E613C0438F7CF361D",
+      "songName": "Love Me Like You Do",
+      "levelAuthorName": "wangyufy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "1F8A3AB2686F1EAC03AD67DB3A39BA12FE008733",
+      "levelid": "custom_level_1F8A3AB2686F1EAC03AD67DB3A39BA12FE008733",
+      "songName": "KICK BACK (TV Size)",
+      "levelAuthorName": "Joetastic",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "88CA8415F2C7AAEF21F13ED98909FA3A7C981A44",
+      "levelid": "custom_level_88CA8415F2C7AAEF21F13ED98909FA3A7C981A44",
+      "songName": "Calm Down",
+      "levelAuthorName": "Cartendo",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "3C1E6CA54B8E721C759529C7959DAA02EBBA2632",
+      "levelid": "custom_level_3C1E6CA54B8E721C759529C7959DAA02EBBA2632",
+      "songName": "4EVR (ft. Cade Clair)",
+      "levelAuthorName": "Avexus, Tsunami_Pro",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "8E8E9EB5C139BE0C3D8D1F3C355A9CC6CCCA910A",
+      "levelid": "custom_level_8E8E9EB5C139BE0C3D8D1F3C355A9CC6CCCA910A",
+      "songName": "Bury Me",
+      "levelAuthorName": "Kassi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4063E13724D4E6F62DC3F07973ABD6C4DCFBCD50",
+      "levelid": "custom_level_4063E13724D4E6F62DC3F07973ABD6C4DCFBCD50",
+      "songName": "Benson cut 今夜",
+      "levelAuthorName": "PogU",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "6C25A8E1ADE89669F9B62C8626505FBDD8044B02",
+      "levelid": "custom_level_6C25A8E1ADE89669F9B62C8626505FBDD8044B02",
+      "songName": "Falling in Love",
+      "levelAuthorName": "Danny",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "C5C56D9DBDEE63B94A1EA916C545899ADCE35BD4",
+      "levelid": "custom_level_C5C56D9DBDEE63B94A1EA916C545899ADCE35BD4",
+      "songName": "Running in The Dark",
+      "levelAuthorName": "Spectral",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "2CE64CBFA03EDEB00D1A753BFA6001FF540F6156",
+      "levelid": "custom_level_2CE64CBFA03EDEB00D1A753BFA6001FF540F6156",
+      "songName": "Body Language",
+      "levelAuthorName": "Taddus, Kibo, Eckimlon, Oegoe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "6D9721D3BE05CB424D43571C82C155060F090FEC",
+      "levelid": "custom_level_6D9721D3BE05CB424D43571C82C155060F090FEC",
+      "songName": "Killshot",
+      "levelAuthorName": "Tiku",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "B99822695E541DCD1C6FC0557540D4C00A35FB19",
+      "levelid": "custom_level_B99822695E541DCD1C6FC0557540D4C00A35FB19",
+      "songName": "Abracadabra",
+      "levelAuthorName": "ImChloe, The_Editor, Najoko",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "48C302770659065D1C6C91BD5DE0E25E50E18EF8",
+      "levelid": "custom_level_48C302770659065D1C6C91BD5DE0E25E50E18EF8",
+      "songName": "AIAIAI",
+      "levelAuthorName": "Jevk",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "02B85D98CF71AA913723503466FA3DEDABD15EF0",
+      "levelid": "custom_level_02B85D98CF71AA913723503466FA3DEDABD15EF0",
+      "songName": "Heartbreak",
+      "levelAuthorName": "Fvwrvrd, Timbo",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "3404EF32F74299192C49F298D231A2AA98628419",
+      "levelid": "custom_level_3404EF32F74299192C49F298D231A2AA98628419",
+      "songName": "Cupid",
+      "levelAuthorName": "MrStacker",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "8EEB2AAE0557D3ED3EA1590223DBC13E9B88AB64",
+      "levelid": "custom_level_8EEB2AAE0557D3ED3EA1590223DBC13E9B88AB64",
+      "songName": "Petals",
+      "levelAuthorName": "Chromia",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "04A563C2EC0B0609A52BD15E77FC11E14DE051F8",
+      "levelid": "custom_level_04A563C2EC0B0609A52BD15E77FC11E14DE051F8",
+      "songName": "Rave All Night",
+      "levelAuthorName": "Alice, SmokeyBacon",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "AE77C88803EE14E4654543B257C94D854A575EB5",
+      "levelid": "custom_level_AE77C88803EE14E4654543B257C94D854A575EB5",
+      "songName": "I'll Be Your Home",
+      "levelAuthorName": "azu",
       "difficulties": [
         {
           "characteristic": "Standard",

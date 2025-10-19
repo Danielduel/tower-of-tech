@@ -481,8 +481,8 @@
       ]
     },
     {
-      "hash": "A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
-      "levelid": "custom_level_A38785A9DB3D0CCEA0938DDBCCDA3D72A8DC98D2",
+      "hash": "A3292AA17B782EE2A229800186324947A4EC9FEE",
+      "levelid": "custom_level_A3292AA17B782EE2A229800186324947A4EC9FEE",
       "songName": "Show",
       "levelAuthorName": "Pleo",
       "difficulties": [
@@ -2129,8 +2129,8 @@
       ]
     },
     {
-      "hash": "3DEF814E633ADE909EBCA2F6DBF89B63D9DA2827",
-      "levelid": "custom_level_3DEF814E633ADE909EBCA2F6DBF89B63D9DA2827",
+      "hash": "3DE012D96964D0B3AA448B29BF1C2D834EB901A1",
+      "levelid": "custom_level_3DE012D96964D0B3AA448B29BF1C2D834EB901A1",
       "songName": "RIVERSIDE",
       "levelAuthorName": "unrealCoda",
       "difficulties": [
@@ -2573,8 +2573,8 @@
       ]
     },
     {
-      "hash": "13212AF1B9B2FF595538043FC6AD007234F6C195",
-      "levelid": "custom_level_13212AF1B9B2FF595538043FC6AD007234F6C195",
+      "hash": "1DEA7777801F76D0A5D0C73B24E83394C006F19F",
+      "levelid": "custom_level_1DEA7777801F76D0A5D0C73B24E83394C006F19F",
       "songName": "Tic! Tac! Toe!",
       "levelAuthorName": "GalaxyMaster",
       "difficulties": [
@@ -2749,6 +2749,162 @@
       "levelid": "custom_level_4A3AC93E2FC2F7DE309F7FD3113FE2F6A89EDFAE",
       "songName": "Shoninyokkyu",
       "levelAuthorName": "minsiii",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "3549BDCAA9C9B86E8512A07C897A667E349CDEDA",
+      "levelid": "custom_level_3549BDCAA9C9B86E8512A07C897A667E349CDEDA",
+      "songName": "Dernière danse",
+      "levelAuthorName": "Nebelmonster",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "87D1CDB15ED0294C796D6E3B06046B98A699D1BF",
+      "levelid": "custom_level_87D1CDB15ED0294C796D6E3B06046B98A699D1BF",
+      "songName": "Espresso",
+      "levelAuthorName": "popinpenguin123",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "44399594B8CB851223A4847D87CAF13FE5F68C02",
+      "levelid": "custom_level_44399594B8CB851223A4847D87CAF13FE5F68C02",
+      "songName": "dumb dumb",
+      "levelAuthorName": "floatyoats",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "B35516B4C6EA6AE2525770F90D1BDF85D7B9532B",
+      "levelid": "custom_level_B35516B4C6EA6AE2525770F90D1BDF85D7B9532B",
+      "songName": "No Talking",
+      "levelAuthorName": "oegoe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "D9198286DB9CC2F1FE46052EC1D8442353E11475",
+      "levelid": "custom_level_D9198286DB9CC2F1FE46052EC1D8442353E11475",
+      "songName": "OddEye Lily",
+      "levelAuthorName": "Vegetable Mapping Team",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "9845198A171E19118E590C7AB4841C85C5E794A1",
+      "levelid": "custom_level_9845198A171E19118E590C7AB4841C85C5E794A1",
+      "songName": "罪と蜜 / Tsumi to Mitsu",
+      "levelAuthorName": "kibo",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "8BA63AF85DA466AE79145D4C2AA2EF3CB106914D",
+      "levelid": "custom_level_8BA63AF85DA466AE79145D4C2AA2EF3CB106914D",
+      "songName": "On My Lips",
+      "levelAuthorName": "Jonas_0_0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "E5FC3D78DBF0B834B1B4B4F82B6AAD744A69A98A",
+      "levelid": "custom_level_E5FC3D78DBF0B834B1B4B4F82B6AAD744A69A98A",
+      "songName": "Joanne",
+      "levelAuthorName": "Dutch Mapping Team",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C460CB5C5587F5D5BC9503CBD80729CDE09D7074",
+      "levelid": "custom_level_C460CB5C5587F5D5BC9503CBD80729CDE09D7074",
+      "songName": "Monitoring (Best Friend Remix)",
+      "levelAuthorName": "Kanahebi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "CA226007EB78F318676E5CEC1552566DF9F129E8",
+      "levelid": "custom_level_CA226007EB78F318676E5CEC1552566DF9F129E8",
+      "songName": "Zebra",
+      "levelAuthorName": "Kanahebi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "F179698CD0E35806C8F07878E5A375E911C94FD5",
+      "levelid": "custom_level_F179698CD0E35806C8F07878E5A375E911C94FD5",
+      "songName": "LUNCH",
+      "levelAuthorName": "OlbmaPhlee",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C01A47D790FD85562C007829D70A8CAD241ED191",
+      "levelid": "custom_level_C01A47D790FD85562C007829D70A8CAD241ED191",
+      "songName": "Consumed",
+      "levelAuthorName": "nitronik.exe, OneSpookyBoi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "503F97DC30566EAA454A463132533D8463550A56",
+      "levelid": "custom_level_503F97DC30566EAA454A463132533D8463550A56",
+      "songName": "All Night Radio",
+      "levelAuthorName": "Ken_Monogatari, Fuyakeru",
       "difficulties": [
         {
           "characteristic": "Standard",

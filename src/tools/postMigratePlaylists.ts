@@ -23,5 +23,7 @@ await Promise.all(playlists.map(async ({
   const migrated = migrateBeatSaberPlaylistWithoutIdSchema(playlist);
 
   console.log(`Updating ${id}`);
-  await trpc.playlist.createOrUpdate.mutate([{ ...migrated, id }]);
+  const result = await trpc.playlist.createOrUpdate.mutate([{ ...migrated, id }]);
+
+  console.log(`Result ${id}`, result)
 }));

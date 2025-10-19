@@ -2,7 +2,7 @@ import { TwitchIRCEmitter } from "@/apps/twitch-bot/types.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { findBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 import { BeatSaverResolvable } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
-import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { DB } from "@/packages/db/mod.ts";
 import { ulid } from "@/packages/deps/ulid.ts";
 import { makeBroadcasterId } from "@/packages/api-twitch/helix/brand.ts";
 import { ResendLinkTwitchChannelSettingsFlatSchemaT } from "@/packages/types/resendLink.ts";
@@ -19,6 +19,7 @@ export const linkCommand = (
   log("register");
 
   irc.on("privmsg", async ({ event, context: { send, waitForMessage } }) => {
+    const db = await DB.get();
     const [cmd, ...args] = event.message.split(" ");
     const shouldHandle = cmd.toLowerCase() === "!link";
 
@@ -81,7 +82,7 @@ export const linkCommand = (
     const [resolvable] = resolvables as BeatSaverResolvable[];
 
     if (resolvable.kind === "id") {
-      await dbEditor.ResendLinkTwitchBeatSaverResolvableIdKind.add({
+      await db.ResendLinkTwitchBeatSaverResolvableIdKind.add({
         id: ulid(),
         deliveredAt: null,
         data: resolvable.data,

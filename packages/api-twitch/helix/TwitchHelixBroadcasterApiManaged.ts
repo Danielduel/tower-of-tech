@@ -58,23 +58,53 @@ export class TwitchHelixBroadcasterApiManaged extends TwitchHelixBroadcasterApi 
       .then((x) => x?.flat());
 
     if (mappingEntry) {
-      const redeemM = await super.getCustomPointReward(mappingEntry.twitchRedeemId);
-      if (redeemM.isErr()) {
+      console.log(`Using mapping entry for ${redeemName}`);
+      const redeemListM = await super.getAllCustomPointRewards();
+      if (redeemListM.isErr()) {
+        console.error(`Can't fetch custom point reward list while get/upsert ${redeemName}`);
+        return Err("Can't fetch custom point reward list");
+      }
+      const redeemList = redeemListM.unwrap();
+
+      const redeem = redeemList.find((x) => {
+        return (
+          x.id === mappingEntry.twitchRedeemId ||
+          x.title === set.title ||
+          x.title === update.title
+        );
+      });
+
+      if (!redeem) {
+        console.log(`Missing found redeem for ${redeemName}`);
         const createdRedeemM = await super.createCustomPointReward(set);
         if (createdRedeemM.isErr()) {
           return Err(createdRedeemM.unwrapErr());
         }
+        const createdRedeem = createdRedeemM.unwrap();
 
-        // TODO(@Danielduel) update mapping key and return
+        db.TwitchRedeemMapping.update(mappingEntry.id, {
+          twitchRedeemId: createdRedeem.id,
+          name: createdRedeem.title,
+        });
+        return Ok(createdRedeem);
       }
-      const redeem = redeemM.unwrap();
 
-      const updatedRedeemM = await super.updateCustomPointReward(mappingEntry.twitchRedeemId, update);
-      if (updatedRedeemM.isErr()) {
-        return Err(updatedRedeemM.unwrapErr());
+      const shouldUpdate = redeem.title !== update.title ||
+        redeem.cost !== update.cost ||
+        redeem.is_paused !== update.is_paused ||
+        redeem.prompt !== update.prompt ||
+        update.is_enabled !== redeem.is_enabled ||
+        update.background_color !== redeem.background_color ||
+        update.is_paused !== redeem.is_paused;
+      if (shouldUpdate) {
+        const updatedRedeemM = await super.updateCustomPointReward(mappingEntry.twitchRedeemId, update);
+        if (updatedRedeemM.isErr()) {
+          return Err(updatedRedeemM.unwrapErr());
+        }
+
+        return Ok(updatedRedeemM.unwrap());
       }
-
-      return Ok(updatedRedeemM.unwrap());
+      return Ok(redeem);
     }
 
     console.log("Creating new point reward");

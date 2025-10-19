@@ -1,13 +1,14 @@
-import { createTRPCProxyClient, httpBatchLink } from "@trpc/client";
+import { createTRPCProxyClient, httpBatchLink, loggerLink } from "@trpc/client";
 import { isLocal } from "@/packages/utils/envrionment.ts";
 import type { AppRouter } from "@/packages/trpc/router.ts";
 
 const getUrl = (internal: boolean) =>
-  internal ? "/api/trpc" : isLocal() ? "http://localhost:8081/api/trpc" : "https://towerofte.ch/api/trpc";
+  internal ? "/api/trpc" : isLocal() ? "http://localhost:8000/api/trpc" : "https://towerofte.ch/api/trpc";
 
 export const createTrpcClient = (internal: boolean) =>
   createTRPCProxyClient<AppRouter>({
     links: [
+      loggerLink(),
       httpBatchLink({
         url: getUrl(internal),
         // You can pass any HTTP headers you wish here
@@ -18,4 +19,5 @@ export const createTrpcClient = (internal: boolean) =>
         // },
       }),
     ],
+
   });

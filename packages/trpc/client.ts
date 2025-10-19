@@ -16,5 +16,5 @@ export const createTrpcClient = (internal: boolean) =>
   internal
     ? getTrpcClientFromUrl("/api/trpc")
     : isLocal()
-    ? getTrpcClientFromUrl("http://localhost:8081/api/trpc")
+    ? getTrpcClientFromUrl("http://localhost:8000/api/trpc")
     : getTrpcClientFromUrl("https://towerofte.ch/api/trpc");

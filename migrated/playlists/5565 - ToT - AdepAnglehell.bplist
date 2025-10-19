@@ -309,8 +309,8 @@
       ]
     },
     {
-      "hash": "BE099ADD471A111EFE8B5221877CF4CC464E0970",
-      "levelid": "custom_level_BE099ADD471A111EFE8B5221877CF4CC464E0970",
+      "hash": "A54AE7F7770C595B87E60C2151D319129F147C08",
+      "levelid": "custom_level_A54AE7F7770C595B87E60C2151D319129F147C08",
       "songName": "pinKing",
       "levelAuthorName": "Cush",
       "difficulties": [
@@ -325,6 +325,42 @@
       "levelid": "custom_level_DB37E83451CF991638BE96FB3059944D5230AFFA",
       "songName": "Electric Love",
       "levelAuthorName": "Tranch",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "6A03240B53FFC72DFC8A941D6C94D66D61424CC0",
+      "levelid": "custom_level_6A03240B53FFC72DFC8A941D6C94D66D61424CC0",
+      "songName": "Chase The Bunnies!",
+      "levelAuthorName": "Vainstains",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "45C677A124E8AC7F00E768888983E349CBFF9C69",
+      "levelid": "custom_level_45C677A124E8AC7F00E768888983E349CBFF9C69",
+      "songName": "Dirty Work",
+      "levelAuthorName": "Bellus",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "1F7C22D7CCA4629139CB09C829045CDFE3711BCF",
+      "levelid": "custom_level_1F7C22D7CCA4629139CB09C829045CDFE3711BCF",
+      "songName": "Lost Summer",
+      "levelAuthorName": "Miljon",
       "difficulties": [
         {
           "characteristic": "Standard",

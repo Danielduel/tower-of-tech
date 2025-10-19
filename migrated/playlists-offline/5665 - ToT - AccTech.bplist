@@ -246,8 +246,8 @@
       ]
     },
     {
-      "hash": "9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
-      "levelid": "custom_level_9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
+      "hash": "9B0DAC85A1C437F0BA431289A573AB679B24524B",
+      "levelid": "custom_level_9B0DAC85A1C437F0BA431289A573AB679B24524B",
       "songName": "dashstar*",
       "levelAuthorName": "Spinvertigoo",
       "difficulties": [
@@ -414,34 +414,10 @@
       ]
     },
     {
-      "hash": "619DBEECAFB979BFABAC0EFB9CA487BB07854776",
-      "levelid": "custom_level_619DBEECAFB979BFABAC0EFB9CA487BB07854776",
-      "songName": "Punta Cana",
-      "levelAuthorName": "Groovy",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "37BA5A71D7F039AD76A20A03CD3A4FD4B3D4B1D5",
       "levelid": "custom_level_37BA5A71D7F039AD76A20A03CD3A4FD4B3D4B1D5",
       "songName": "Darkmoon Dissolve",
       "levelAuthorName": "Shark & Irish",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "6B617200F8D4F547DCE57CF719F10A73D7BDC123",
-      "levelid": "custom_level_6B617200F8D4F547DCE57CF719F10A73D7BDC123",
-      "songName": "Be My Guest",
-      "levelAuthorName": "A-PlouVR",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1994,8 +1970,8 @@
       ]
     },
     {
-      "hash": "499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
-      "levelid": "custom_level_499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
+      "hash": "DDA13B4DC6BC34F777D38032061BC78A7A63414E",
+      "levelid": "custom_level_DDA13B4DC6BC34F777D38032061BC78A7A63414E",
       "songName": "DAICON V",
       "levelAuthorName": "VoltageO",
       "difficulties": [
@@ -2006,13 +1982,6 @@
       ]
     },
     {
-      "hash": "24051B9670BFA41E72C641D6F3940CADB99AC942",
-      "levelid": "custom_level_24051B9670BFA41E72C641D6F3940CADB99AC942",
-      "songName": "Nightcore - I Wanna Be You Slave",
-      "levelAuthorName": "Tizian",
-      "difficulties": []
-    },
-    {
       "hash": "E7F55FBBE6FBA0AAC4643ED436C6730507F032B1",
       "levelid": "custom_level_E7F55FBBE6FBA0AAC4643ED436C6730507F032B1",
       "songName": "DROPS",
@@ -2021,6 +1990,10 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -2061,8 +2034,8 @@
       ]
     },
     {
-      "hash": "CC40B2DA44C782E208D6C8DE704DA86927B5EE3A",
-      "levelid": "custom_level_CC40B2DA44C782E208D6C8DE704DA86927B5EE3A",
+      "hash": "43DE4909F9D96C8DC52A0E208553E82E17FB2ECA",
+      "levelid": "custom_level_43DE4909F9D96C8DC52A0E208553E82E17FB2ECA",
       "songName": "Triad of Dryad",
       "levelAuthorName": "Dr_Marc",
       "difficulties": [
@@ -2217,8 +2190,8 @@
       ]
     },
     {
-      "hash": "3A65DE6D4DB2763E092725FDF37F5AA824FF2BE8",
-      "levelid": "custom_level_3A65DE6D4DB2763E092725FDF37F5AA824FF2BE8",
+      "hash": "BEF8EE876B981A3D87201495EBEF5D98B44068EA",
+      "levelid": "custom_level_BEF8EE876B981A3D87201495EBEF5D98B44068EA",
       "songName": "Medicine",
       "levelAuthorName": "The Pharmacists",
       "difficulties": [
@@ -2793,6 +2766,138 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "B3C9D910B09C5636DCD9A703A0D02CF51D336770",
+      "levelid": "custom_level_B3C9D910B09C5636DCD9A703A0D02CF51D336770",
+      "songName": "Keves Battle",
+      "levelAuthorName": "Psychic Pineapple",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "F94FC50E885096AE12B963E43CE1A02B15E0A516",
+      "levelid": "custom_level_F94FC50E885096AE12B963E43CE1A02B15E0A516",
+      "songName": "Mirage",
+      "levelAuthorName": "LISA REBECCA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "E057C218AC4640D75BC5F23090A41755ADBD287A",
+      "levelid": "custom_level_E057C218AC4640D75BC5F23090A41755ADBD287A",
+      "songName": "Doomscroller",
+      "levelAuthorName": "HickeyChan",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "59CCC0BE441422993FEFDE3F2038806A0DA103B5",
+      "levelid": "custom_level_59CCC0BE441422993FEFDE3F2038806A0DA103B5",
+      "songName": "Busy Earnin",
+      "levelAuthorName": "Vaiseri, Tiku",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4899F4C74088AAD54B18543268A716E933438C05",
+      "levelid": "custom_level_4899F4C74088AAD54B18543268A716E933438C05",
+      "songName": "Daidaidaidaidaikirai",
+      "levelAuthorName": "Comyute",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "0DF92739502409BFA3A667203AD32EECFBDAEF15",
+      "levelid": "custom_level_0DF92739502409BFA3A667203AD32EECFBDAEF15",
+      "songName": "Sweet Mountain",
+      "levelAuthorName": "Tonkie",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "36514B96F2E08BAAC972A0492A215B1DC5BE08C0",
+      "levelid": "custom_level_36514B96F2E08BAAC972A0492A215B1DC5BE08C0",
+      "songName": "Hard Times",
+      "levelAuthorName": "VoltageO",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "71ED10216A08854E95CDE6853141F31C813150A7",
+      "levelid": "custom_level_71ED10216A08854E95CDE6853141F31C813150A7",
+      "songName": "I wish that i Could Fall",
+      "levelAuthorName": "Dr_Marc",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "02224FFCDC1FF7CEAB2830AACDED36F834B4B71D",
+      "levelid": "custom_level_02224FFCDC1FF7CEAB2830AACDED36F834B4B71D",
+      "songName": "Sprout",
+      "levelAuthorName": "Qiurou, Seasonsmouse",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "2E75051F3BDACAE25D630F2CE9CF4E8B185A8328",
+      "levelid": "custom_level_2E75051F3BDACAE25D630F2CE9CF4E8B185A8328",
+      "songName": "Sure Thing",
+      "levelAuthorName": "Danny",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "29D05694A3703ACC95E0B3C338CC9659B7FEA046",
+      "levelid": "custom_level_29D05694A3703ACC95E0B3C338CC9659B7FEA046",
+      "songName": "BAD X END",
+      "levelAuthorName": "VoltageO X Voidless",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
         }
       ]
     }

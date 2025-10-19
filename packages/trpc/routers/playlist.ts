@@ -1,23 +1,25 @@
 import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
 import { decode64 } from "https://deno.land/x/base64to@v0.0.2/mod.ts";
-import { buckets } from "@/packages/database-editor/buckets.ts";
+import { S3 } from "@/packages/s3/mod.ts";
+import { DB } from "@/packages/db/mod.ts";
 import { makeUppercaseMapHash } from "@/packages/types/brands.ts";
-import { dbEditor, s3clientEditor } from "@/packages/database-editor/mod.ts";
 import { BeatSaberPlaylistWithoutIdSchema } from "@/packages/types/beatsaber-playlist.ts";
-import { getBeatSaberPlaylistSongItemMetadataKey } from "@/packages/database-editor/keys.ts";
+import { getBeatSaberPlaylistSongItemMetadataKey } from "@/packages/db-schema/keys.ts";
 
 export const createOrUpdatePlaylist = async (
   input: typeof BeatSaberPlaylistWithoutIdSchema._type,
 ) => {
+  const db = await DB.get();
+  const s3 = await S3.get();
   const playlistId = input.id ?? input?.customData?.id ?? ulid();
 
   try {
     console.log(`Upload cover image for ${playlistId} (start)`);
-    await s3clientEditor.putObject(
+    await s3.putObject(
       playlistId,
       decode64(input.image.split(",")[1]),
       {
-        bucketName: buckets.playlist.coverImage,
+        bucketName: S3.buckets.playlist.coverImage,
         metadata: {
           "Content-Type": "image/png",
         },
@@ -31,7 +33,7 @@ export const createOrUpdatePlaylist = async (
     console.log(
       `Adding songs (${input.songs.length}) for ${playlistId} (start)`,
     );
-    await dbEditor.BeatSaberPlaylistSongItem.addMany(input.songs);
+    await db.BeatSaberPlaylistSongItem.addMany(input.songs);
     console.log(
       `Adding songs (${input.songs.length}) for ${playlistId} (finish)`,
     );
@@ -42,7 +44,7 @@ export const createOrUpdatePlaylist = async (
     console.log(
       `Adding song metadata (${input.songs.length}) for ${playlistId} (start)`,
     );
-    await dbEditor.BeatSaberPlaylistSongItemMetadata.addMany(input.songs.map((mapData) => ({
+    await db.BeatSaberPlaylistSongItemMetadata.addMany(input.songs.map((mapData) => ({
       id: getBeatSaberPlaylistSongItemMetadataKey(playlistId, mapData.hash),
       mapHash: mapData.hash,
       playlistId,
@@ -56,7 +58,7 @@ export const createOrUpdatePlaylist = async (
   }
   try {
     console.log(`Upsert playlist ${playlistId}`);
-    return await dbEditor.BeatSaberPlaylist.upsert({
+    return await db.BeatSaberPlaylist.upsert({
       id: playlistId,
       set: {
         ...input,

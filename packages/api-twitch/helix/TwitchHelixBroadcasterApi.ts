@@ -192,7 +192,7 @@ export class TwitchHelixBroadcasterApi {
       headers: this.createAuthHeaders(),
       body
     });
-    console.log(response); // todo(@Danielduel): add types for the response
+    // console.log(response); // todo(@Danielduel): add types for the response
     return null;
   }
   

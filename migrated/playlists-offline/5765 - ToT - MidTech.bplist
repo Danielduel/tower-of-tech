@@ -1746,8 +1746,8 @@
       ]
     },
     {
-      "hash": "CC40B2DA44C782E208D6C8DE704DA86927B5EE3A",
-      "levelid": "custom_level_CC40B2DA44C782E208D6C8DE704DA86927B5EE3A",
+      "hash": "43DE4909F9D96C8DC52A0E208553E82E17FB2ECA",
+      "levelid": "custom_level_43DE4909F9D96C8DC52A0E208553E82E17FB2ECA",
       "songName": "Triad of Dryad",
       "levelAuthorName": "Dr_Marc",
       "difficulties": [
@@ -1806,8 +1806,8 @@
       ]
     },
     {
-      "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
-      "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "hash": "B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
+      "levelid": "custom_level_B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
       "songName": "Destroy",
       "levelAuthorName": "Gabriel & okazu",
       "difficulties": [
@@ -2290,6 +2290,126 @@
       "levelid": "custom_level_E9D9066E5AA1EBFBE80378F447819DE75178F3B4",
       "songName": "115",
       "levelAuthorName": "",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "150CC93C05EAF9FE04A6172862AA9BBCB0CB5A8F",
+      "levelid": "custom_level_150CC93C05EAF9FE04A6172862AA9BBCB0CB5A8F",
+      "songName": "sweet & bitter",
+      "levelAuthorName": "RUI",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C0FC1D4033DDCB129FFF298779E45AE22CAE3463",
+      "levelid": "custom_level_C0FC1D4033DDCB129FFF298779E45AE22CAE3463",
+      "songName": "マジック・メイド",
+      "levelAuthorName": "Hanari",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "1B62EFC5FE84D637A953FED27F9F99F31CB8A72E",
+      "levelid": "custom_level_1B62EFC5FE84D637A953FED27F9F99F31CB8A72E",
+      "songName": "IRIS OUT",
+      "levelAuthorName": "Joetastic",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "18B64317546FDE215D2535A6678A8A8237B31317",
+      "levelid": "custom_level_18B64317546FDE215D2535A6678A8A8237B31317",
+      "songName": "Monitoring",
+      "levelAuthorName": "Emiru",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "73CBC176A3FB10A9D82CEB3F1EB1AEC15E533727",
+      "levelid": "custom_level_73CBC176A3FB10A9D82CEB3F1EB1AEC15E533727",
+      "songName": "Devil of Ecstacy",
+      "levelAuthorName": "AbeVsTheBeat",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "FF03186507FB3462DCA86F1F9EAAAAE98B8A9FCA",
+      "levelid": "custom_level_FF03186507FB3462DCA86F1F9EAAAAE98B8A9FCA",
+      "songName": "Ano Yume wo Nazotte",
+      "levelAuthorName": "chikinbiskit",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "F8B3D6AF007172597B98E8244BF089C4F0BA3EE1",
+      "levelid": "custom_level_F8B3D6AF007172597B98E8244BF089C4F0BA3EE1",
+      "songName": "Hot Mess",
+      "levelAuthorName": "Kassi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "8241B0B9819799A1268831201B36AE5159095A5A",
+      "levelid": "custom_level_8241B0B9819799A1268831201B36AE5159095A5A",
+      "songName": "SERPENT",
+      "levelAuthorName": "Zana, steeak",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "A4411C2F91C51027E1221A9C73437E9F4123CF15",
+      "levelid": "custom_level_A4411C2F91C51027E1221A9C73437E9F4123CF15",
+      "songName": "Leave It To Fate",
+      "levelAuthorName": "Chromia",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "53E6961C65BFFF1E24E54CFCAE21E43C36242824",
+      "levelid": "custom_level_53E6961C65BFFF1E24E54CFCAE21E43C36242824",
+      "songName": "G線上のアリア",
+      "levelAuthorName": "AMO",
       "difficulties": [
         {
           "characteristic": "Standard",

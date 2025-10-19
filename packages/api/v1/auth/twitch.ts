@@ -1,4 +1,3 @@
-import { HandlerForRoute } from "@/packages/api/v1/types.ts";
 import {
   apiV1HandlerAuthTwitchOauthCallbackRoute,
   apiV1HandlerAuthTwitchOauthSignInRoute,
@@ -17,9 +16,7 @@ import {
 } from "@/packages/api/v1/auth/common.ts";
 import { makeToTAccountSessionId } from "@/packages/types/auth.ts";
 
-export const apiV1HandlerAuthTwitchOauthSignIn: HandlerForRoute<
-  typeof apiV1HandlerAuthTwitchOauthSignInRoute
-> = async (req) => {
+export const apiV1HandlerAuthTwitchOauthSignIn = async (req) => {
   const currentSessionId = await getTwitchSessionId(req);
   if (currentSessionId) {
     await removeToTSession(currentSessionId);
@@ -27,9 +24,7 @@ export const apiV1HandlerAuthTwitchOauthSignIn: HandlerForRoute<
   return await handleTwitchSignIn(req);
 };
 
-export const apiV1HandlerAuthTwitchOauthSignOut: HandlerForRoute<
-  typeof apiV1HandlerAuthTwitchOauthSignOutRoute
-> = async (req) => {
+export const apiV1HandlerAuthTwitchOauthSignOut = async (req) => {
   const currentSessionId = await getTwitchSessionId(req);
   if (currentSessionId) {
     await removeToTSession(currentSessionId);
@@ -37,9 +32,7 @@ export const apiV1HandlerAuthTwitchOauthSignOut: HandlerForRoute<
   return await handleTwitchSignOut(req);
 };
 
-export const apiV1HandlerAuthTwitchOauthCallback: HandlerForRoute<
-  typeof apiV1HandlerAuthTwitchOauthCallbackRoute
-> = async (req) => {
+export const apiV1HandlerAuthTwitchOauthCallback = async (req) => {
   const { response, sessionId, tokens } = await handleTwitchCallback(req);
 
   const existingAccountM = await getExistingAccountM(req, { twitch: tokens });

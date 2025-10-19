@@ -1,4 +1,3 @@
-import { HandlerForRoute } from "@/packages/api/v1/types.ts";
 import {
   apiV1HandlerAuthBeatLeaderOauthCallbackRoute,
   apiV1HandlerAuthBeatLeaderOauthSignInRoute,
@@ -17,9 +16,7 @@ import {
 } from "@/packages/api/v1/auth/common.ts";
 import { makeToTAccountSessionId } from "@/packages/types/auth.ts";
 
-export const apiV1HandlerAuthBeatLeaderOauthSignIn: HandlerForRoute<
-  typeof apiV1HandlerAuthBeatLeaderOauthSignInRoute
-> = async (req) => {
+export const apiV1HandlerAuthBeatLeaderOauthSignIn = async (req) => {
   const currentSessionId = await getBeatLeaderSessionId(req);
   if (currentSessionId) {
     await removeToTSession(currentSessionId);
@@ -27,9 +24,7 @@ export const apiV1HandlerAuthBeatLeaderOauthSignIn: HandlerForRoute<
   return await handleBeatLeaderSignIn(req);
 };
 
-export const apiV1HandlerAuthBeatLeaderOauthSignOut: HandlerForRoute<
-  typeof apiV1HandlerAuthBeatLeaderOauthSignOutRoute
-> = async (req) => {
+export const apiV1HandlerAuthBeatLeaderOauthSignOut = async (req) => {
   const currentSessionId = await getBeatLeaderSessionId(req);
   if (currentSessionId) {
     await removeToTSession(currentSessionId);
@@ -37,9 +32,7 @@ export const apiV1HandlerAuthBeatLeaderOauthSignOut: HandlerForRoute<
   return await handleBeatLeaderSignOut(req);
 };
 
-export const apiV1HandlerAuthBeatLeaderOauthCallback: HandlerForRoute<
-  typeof apiV1HandlerAuthBeatLeaderOauthCallbackRoute
-> = async (req) => {
+export const apiV1HandlerAuthBeatLeaderOauthCallback = async (req) => {
   const { response, sessionId, tokens } = await handleBeatLeaderCallback(req);
 
   const existingAccountM = await getExistingAccountM(req, { beatLeader: tokens });

@@ -13,17 +13,17 @@ import { AppAccessToken, UserAccessToken } from "@/packages/api-twitch/helix/bra
 
 export const appAuthHeadersSchema = z.object({
   Authorization: appAccessTokenHeaderSchema,
-  "Client-Id": z.string(),
+  "client-Id": z.string(),
 });
 export type AppAuthHeadersSchemaT = typeof appAuthHeadersSchema._type;
 
 export const userAuthHeadersSchema = z.object({
   Authorization: userAccessTokenHeaderSchema,
-  "Client-Id": z.string(),
+  "client-Id": z.string(),
 });
 export type UserAuthHeadersSchemaT = typeof userAuthHeadersSchema._type;
 
-const createClientIdHeader = (clientId: string) => ({ "Client-Id": clientId });
+const createClientIdHeader = (clientId: string) => ({ "client-Id": clientId });
 const createAppAuthorization = (appAuthToken: AppAccessToken) => ({
   Authorization: makeAppAccessTokenHeader(`Bearer ${appAuthToken}`),
 });

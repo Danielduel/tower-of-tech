@@ -54,6 +54,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -990,6 +994,10 @@
         {
           "characteristic": "Standard",
           "name": "Easy"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -1176,8 +1184,8 @@
     {
       "songName": "Destroy",
       "levelAuthorName": "Gabriel & okazu",
-      "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
-      "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "hash": "B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
+      "levelid": "custom_level_B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1240,8 +1248,8 @@
     {
       "songName": "dashstar*",
       "levelAuthorName": "Spinvertigoo",
-      "hash": "9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
-      "levelid": "custom_level_9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
+      "hash": "9B0DAC85A1C437F0BA431289A573AB679B24524B",
+      "levelid": "custom_level_9B0DAC85A1C437F0BA431289A573AB679B24524B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1474,6 +1482,10 @@
         {
           "characteristic": "Standard",
           "name": "Expert"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     },
@@ -1508,24 +1520,12 @@
     {
       "songName": "アイ / AI",
       "levelAuthorName": "meplauir",
-      "hash": "4AEA162003D60203F16016C1298B1C61642307D5",
-      "levelid": "custom_level_4AEA162003D60203F16016C1298B1C61642307D5",
+      "hash": "5D9DBC031955A225A69AFF9BB7EA4634B158C1B8",
+      "levelid": "custom_level_5D9DBC031955A225A69AFF9BB7EA4634B158C1B8",
       "difficulties": [
         {
           "characteristic": "Standard",
           "name": "Hard"
-        }
-      ]
-    },
-    {
-      "songName": "Scare Me",
-      "levelAuthorName": "Fatalution",
-      "hash": "A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
-      "levelid": "custom_level_A3A9E7176D499415FB7452D9B05B4CB2E7663E9B",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Normal"
         }
       ]
     },
@@ -1910,6 +1910,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -2134,6 +2138,154 @@
       "levelAuthorName": "Nixie.Korten",
       "hash": "0711150BA717C5B139C3DDD0A9FC96EFA7E329B9",
       "levelid": "custom_level_0711150BA717C5B139C3DDD0A9FC96EFA7E329B9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Feel Alive",
+      "levelAuthorName": "Bitz, Frost",
+      "hash": "48464C8EAB7624752B51E9782D0BE4F3D5650C06",
+      "levelid": "custom_level_48464C8EAB7624752B51E9782D0BE4F3D5650C06",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "啊！美丽卡洛",
+      "levelAuthorName": "wangyufy",
+      "hash": "E8CF31C6A31943187AF04529CB678ADE77AD3222",
+      "levelid": "custom_level_E8CF31C6A31943187AF04529CB678ADE77AD3222",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Mimi's Delivery Service",
+      "levelAuthorName": "abbad",
+      "hash": "903CDD96F668B6B5C45BECE7F9A7852D9B74E64B",
+      "levelid": "custom_level_903CDD96F668B6B5C45BECE7F9A7852D9B74E64B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Fireside",
+      "levelAuthorName": "Serephor",
+      "hash": "BDBF898E75FDFF7E0C4BD17780A13FD8722BB6E1",
+      "levelid": "custom_level_BDBF898E75FDFF7E0C4BD17780A13FD8722BB6E1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "No Instructions",
+      "levelAuthorName": "Muz",
+      "hash": "30FCE9212F6C9921413C5258BAD32E33247DB5C6",
+      "levelid": "custom_level_30FCE9212F6C9921413C5258BAD32E33247DB5C6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "sweet & bitter",
+      "levelAuthorName": "RUI",
+      "hash": "150CC93C05EAF9FE04A6172862AA9BBCB0CB5A8F",
+      "levelid": "custom_level_150CC93C05EAF9FE04A6172862AA9BBCB0CB5A8F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "SUN GOES DOWN",
+      "levelAuthorName": "Shappy",
+      "hash": "D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
+      "levelid": "custom_level_D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Tattoo",
+      "levelAuthorName": "Slayx",
+      "hash": "F5F6B6612475BF519C37C48388A24BBB77175AB9",
+      "levelid": "custom_level_F5F6B6612475BF519C37C48388A24BBB77175AB9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "songName": "Extraterrestrial",
+      "levelAuthorName": "The Lunar Carver",
+      "hash": "9A9CDB599AEA698C3B6ECB1E09921060E7E71EEE",
+      "levelid": "custom_level_9A9CDB599AEA698C3B6ECB1E09921060E7E71EEE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "songName": "Sweet Mountain",
+      "levelAuthorName": "Tonkie",
+      "hash": "0DF92739502409BFA3A667203AD32EECFBDAEF15",
+      "levelid": "custom_level_0DF92739502409BFA3A667203AD32EECFBDAEF15",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Run to the Hills",
+      "levelAuthorName": "Dtribe",
+      "hash": "730156F07656A750B0204AC8606DC0452B14411A",
+      "levelid": "custom_level_730156F07656A750B0204AC8606DC0452B14411A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Remember Me",
+      "levelAuthorName": "Mirage",
+      "hash": "AC17DE9BACF27C1AB9FB1E118470347F698DA6F9",
+      "levelid": "custom_level_AC17DE9BACF27C1AB9FB1E118470347F698DA6F9",
       "difficulties": [
         {
           "characteristic": "Standard",

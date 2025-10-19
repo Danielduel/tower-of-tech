@@ -54,6 +54,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -1190,8 +1194,8 @@
       ]
     },
     {
-      "hash": "573BBBCA1BB934B00D9634A36C09947BED75FEE4",
-      "levelid": "custom_level_573BBBCA1BB934B00D9634A36C09947BED75FEE4",
+      "hash": "B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
+      "levelid": "custom_level_B77EA5FDC23B41C8FAF79D42834CF3F9A41FDFC2",
       "songName": "Destroy",
       "levelAuthorName": "Gabriel & okazu",
       "difficulties": [
@@ -1254,8 +1258,8 @@
       ]
     },
     {
-      "hash": "9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
-      "levelid": "custom_level_9FE020FB39E343691FA3244BDE9CEFB62BF04C1D",
+      "hash": "9B0DAC85A1C437F0BA431289A573AB679B24524B",
+      "levelid": "custom_level_9B0DAC85A1C437F0BA431289A573AB679B24524B",
       "songName": "dashstar*",
       "levelAuthorName": "Spinvertigoo",
       "difficulties": [
@@ -1526,8 +1530,8 @@
       ]
     },
     {
-      "hash": "4AEA162003D60203F16016C1298B1C61642307D5",
-      "levelid": "custom_level_4AEA162003D60203F16016C1298B1C61642307D5",
+      "hash": "5D9DBC031955A225A69AFF9BB7EA4634B158C1B8",
+      "levelid": "custom_level_5D9DBC031955A225A69AFF9BB7EA4634B158C1B8",
       "songName": "アイ / AI",
       "levelAuthorName": "meplauir",
       "difficulties": [
@@ -1882,6 +1886,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -2082,6 +2090,154 @@
       "levelid": "custom_level_0711150BA717C5B139C3DDD0A9FC96EFA7E329B9",
       "songName": "Shall We",
       "levelAuthorName": "Nixie.Korten",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "48464C8EAB7624752B51E9782D0BE4F3D5650C06",
+      "levelid": "custom_level_48464C8EAB7624752B51E9782D0BE4F3D5650C06",
+      "songName": "Feel Alive",
+      "levelAuthorName": "Bitz, Frost",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "E8CF31C6A31943187AF04529CB678ADE77AD3222",
+      "levelid": "custom_level_E8CF31C6A31943187AF04529CB678ADE77AD3222",
+      "songName": "啊！美丽卡洛",
+      "levelAuthorName": "wangyufy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "903CDD96F668B6B5C45BECE7F9A7852D9B74E64B",
+      "levelid": "custom_level_903CDD96F668B6B5C45BECE7F9A7852D9B74E64B",
+      "songName": "Mimi's Delivery Service",
+      "levelAuthorName": "abbad",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "BDBF898E75FDFF7E0C4BD17780A13FD8722BB6E1",
+      "levelid": "custom_level_BDBF898E75FDFF7E0C4BD17780A13FD8722BB6E1",
+      "songName": "Fireside",
+      "levelAuthorName": "Serephor",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "30FCE9212F6C9921413C5258BAD32E33247DB5C6",
+      "levelid": "custom_level_30FCE9212F6C9921413C5258BAD32E33247DB5C6",
+      "songName": "No Instructions",
+      "levelAuthorName": "Muz",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "150CC93C05EAF9FE04A6172862AA9BBCB0CB5A8F",
+      "levelid": "custom_level_150CC93C05EAF9FE04A6172862AA9BBCB0CB5A8F",
+      "songName": "sweet & bitter",
+      "levelAuthorName": "RUI",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
+      "levelid": "custom_level_D2F5EC696F6F893177F30E2EAB310931E5B14F1D",
+      "songName": "SUN GOES DOWN",
+      "levelAuthorName": "Shappy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "F5F6B6612475BF519C37C48388A24BBB77175AB9",
+      "levelid": "custom_level_F5F6B6612475BF519C37C48388A24BBB77175AB9",
+      "songName": "Tattoo",
+      "levelAuthorName": "Slayx",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "9A9CDB599AEA698C3B6ECB1E09921060E7E71EEE",
+      "levelid": "custom_level_9A9CDB599AEA698C3B6ECB1E09921060E7E71EEE",
+      "songName": "Extraterrestrial",
+      "levelAuthorName": "The Lunar Carver",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "hash": "0DF92739502409BFA3A667203AD32EECFBDAEF15",
+      "levelid": "custom_level_0DF92739502409BFA3A667203AD32EECFBDAEF15",
+      "songName": "Sweet Mountain",
+      "levelAuthorName": "Tonkie",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "730156F07656A750B0204AC8606DC0452B14411A",
+      "levelid": "custom_level_730156F07656A750B0204AC8606DC0452B14411A",
+      "songName": "Run to the Hills",
+      "levelAuthorName": "Dtribe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "AC17DE9BACF27C1AB9FB1E118470347F698DA6F9",
+      "levelid": "custom_level_AC17DE9BACF27C1AB9FB1E118470347F698DA6F9",
+      "songName": "Remember Me",
+      "levelAuthorName": "Mirage",
       "difficulties": [
         {
           "characteristic": "Standard",

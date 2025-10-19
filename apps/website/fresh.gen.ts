@@ -5,6 +5,7 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $_middleware from "./routes/_middleware.ts";
+import * as $api_trpc_trpc_ from "./routes/api/trpc/[trpc].ts";
 import * as $api_v1_discord_command_webhook from "./routes/api/v1/discord/command-webhook.tsx";
 import * as $api_v1_discord_playlist_get_guild_guildId_channel_channelId_ from "./routes/api/v1/discord/playlist/get/guild/[guildId]/channel/[channelId].tsx";
 import * as $api_v1_discord_playlist_get_guild_guildId_channel_channelId_download from "./routes/api/v1/discord/playlist/get/guild/[guildId]/channel/[channelId]/download.tsx";
@@ -21,8 +22,9 @@ import * as $home_playlist_playlistId_beatleader_player_playerId_ from "./routes
 import * as $home_playlist_playlistId_details from "./routes/home/playlist/[playlistId]/details.tsx";
 import * as $home_playlist_list from "./routes/home/playlist/list.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $Button from "./islands/Button.tsx";
 import * as $CopyButton from "./islands/CopyButton.tsx";
-import * as $Counter from "./islands/Counter.tsx";
+import * as $LinkButton from "./islands/LinkButton.tsx";
 import * as $playlist_PlaylistDetails from "./islands/playlist/PlaylistDetails.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -31,6 +33,7 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/_middleware.ts": $_middleware,
+    "./routes/api/trpc/[trpc].ts": $api_trpc_trpc_,
     "./routes/api/v1/discord/command-webhook.tsx": $api_v1_discord_command_webhook,
     "./routes/api/v1/discord/playlist/get/guild/[guildId]/channel/[channelId].tsx":
       $api_v1_discord_playlist_get_guild_guildId_channel_channelId_,
@@ -57,8 +60,9 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/Button.tsx": $Button,
     "./islands/CopyButton.tsx": $CopyButton,
-    "./islands/Counter.tsx": $Counter,
+    "./islands/LinkButton.tsx": $LinkButton,
     "./islands/playlist/PlaylistDetails.tsx": $playlist_PlaylistDetails,
   },
   baseUrl: import.meta.url,

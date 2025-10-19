@@ -1316,8 +1316,8 @@
     {
       "songName": "DAICON V",
       "levelAuthorName": "VoltageO",
-      "hash": "499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
-      "levelid": "custom_level_499D0907E9E5014415C0E29FEBBA0BA4CC2492A9",
+      "hash": "DDA13B4DC6BC34F777D38032061BC78A7A63414E",
+      "levelid": "custom_level_DDA13B4DC6BC34F777D38032061BC78A7A63414E",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -1774,6 +1774,126 @@
       "levelAuthorName": "CharlotteAulin",
       "hash": "30AA61C6239571188DF7CF7BFDCC3555D467D1FA",
       "levelid": "custom_level_30AA61C6239571188DF7CF7BFDCC3555D467D1FA",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Be My Guest",
+      "levelAuthorName": "A-PlouVR",
+      "hash": "6B617200F8D4F547DCE57CF719F10A73D7BDC123",
+      "levelid": "custom_level_6B617200F8D4F547DCE57CF719F10A73D7BDC123",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "HONK",
+      "levelAuthorName": "Chromia",
+      "hash": "CE4ED44D13FA3D88CA8524AA090132ED07B091D7",
+      "levelid": "custom_level_CE4ED44D13FA3D88CA8524AA090132ED07B091D7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Mesmerizer",
+      "levelAuthorName": "Poochy",
+      "hash": "CC296E41F99C0153AC3D2742E87347FA3521C9A9",
+      "levelid": "custom_level_CC296E41F99C0153AC3D2742E87347FA3521C9A9",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Whiplash",
+      "levelAuthorName": "dotGet",
+      "hash": "23047C808919A53F4D049C4E558CEC8A31F0695B",
+      "levelid": "custom_level_23047C808919A53F4D049C4E558CEC8A31F0695B",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Shy Toy Soldier",
+      "levelAuthorName": "Cush",
+      "hash": "6E0A8908EDB376F59211E1B5711AEA4C5A92E034",
+      "levelid": "custom_level_6E0A8908EDB376F59211E1B5711AEA4C5A92E034",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Watching you",
+      "levelAuthorName": "Dr_Marc",
+      "hash": "2781588C39A5F06FEF6B35F4BDF5160F537845E1",
+      "levelid": "custom_level_2781588C39A5F06FEF6B35F4BDF5160F537845E1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Good Vibes",
+      "levelAuthorName": "Tseska",
+      "hash": "E9E05DBEF4A6527C22186A433C1DB527BC475C98",
+      "levelid": "custom_level_E9E05DBEF4A6527C22186A433C1DB527BC475C98",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rise & Shine",
+      "levelAuthorName": "Vainstains",
+      "hash": "6E42DBE2D25A118E9A948C8516E8C9D94B96326B",
+      "levelid": "custom_level_6E42DBE2D25A118E9A948C8516E8C9D94B96326B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "BAD X END",
+      "levelAuthorName": "VoltageO X Voidless",
+      "hash": "29D05694A3703ACC95E0B3C338CC9659B7FEA046",
+      "levelid": "custom_level_29D05694A3703ACC95E0B3C338CC9659B7FEA046",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Khronostasis Katharsis - Halv -",
+      "levelAuthorName": "CharlotteAulin",
+      "hash": "BCF3D9A4D413EDE743197DD7707B80F8D1E0C4D1",
+      "levelid": "custom_level_BCF3D9A4D413EDE743197DD7707B80F8D1E0C4D1",
       "difficulties": [
         {
           "characteristic": "Standard",

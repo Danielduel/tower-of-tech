@@ -8,7 +8,7 @@ export const apiV1HandlerAuthDiscordOauthCallbackRoute = "/api/v1/auth/discord/o
 
 const oauthConfig = createDiscordOAuthConfig({
   redirectUri: isLocal()
-    ? `http://localhost:8081${apiV1HandlerAuthDiscordOauthCallbackRoute}`
+    ? `http://localhost:8000${apiV1HandlerAuthDiscordOauthCallbackRoute}`
     : `https://www.towerofte.ch${apiV1HandlerAuthDiscordOauthCallbackRoute}`,
   scope: ["identify"],
 });

@@ -1,8 +1,10 @@
-import { dbEditor } from "@/packages/database-editor/mod.ts";
+import { DB } from "@/packages/db/mod.ts";
 
 const record: Record<string, number> = {};
 
-await dbEditor.ResendLinkTwitchBeatSaverResolvableIdKind.forEach((x) => {
+const db = await DB.get();
+
+await db.ResendLinkTwitchBeatSaverResolvableIdKind.forEach((x) => {
   const item = x.value;
   const { targetLogin } = item;
   if (record[targetLogin]) {

@@ -52,7 +52,7 @@ export const apiV1HandlerAuthTwitchOauthSignOutRoute = "/api/v1/auth/twitch/oaut
 const clientId = Deno.env.get("TWITCH_API_CLIENT_ID")!;
 const clientSecret = Deno.env.get("TWITCH_API_CLIENT_SECRET")!;
 const redirectUri = isLocal()
-  ? `http://localhost:8081${apiV1HandlerAuthTwitchOauthCallbackRoute}`
+  ? `http://localhost:8000${apiV1HandlerAuthTwitchOauthCallbackRoute}`
   : `https://www.towerofte.ch${apiV1HandlerAuthTwitchOauthCallbackRoute}`;
 
 const scope = createScopes(
