@@ -55,7 +55,6 @@ export namespace SteamApi {
       playtime_forever: Brand.zodTimeInMinutes
     });
 
-
     export const Success = z.object({
       response: z.union([
         z.object({

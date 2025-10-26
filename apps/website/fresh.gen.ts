@@ -15,6 +15,7 @@ import * as $api_v1_playlist_get_playlistIdWithFileExtension_beatleader_player_p
 import * as $api_v1_playlist_get_playlistIdWithFileExtension_beatleader_player_playerId_unplayed from "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/beatleader/player/[playerId]/unplayed.ts";
 import * as $api_v1_playlist_get_playlistIdWithFileExtension_download from "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/download.tsx";
 import * as $api_v1_playlist_get_playlistIdWithFileExtension_oneclick_desiredFileName_ from "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/oneclick/[desiredFileName].tsx";
+import * as $editor_playlist_list from "./routes/editor/playlist/list.tsx";
 import * as $home_layout from "./routes/home/_layout.tsx";
 import * as $home_collection_list from "./routes/home/collection/list.tsx";
 import * as $home_index from "./routes/home/index.tsx";
@@ -50,6 +51,7 @@ const manifest = {
       $api_v1_playlist_get_playlistIdWithFileExtension_download,
     "./routes/api/v1/playlist/get/[playlistIdWithFileExtension]/oneclick/[desiredFileName].tsx":
       $api_v1_playlist_get_playlistIdWithFileExtension_oneclick_desiredFileName_,
+    "./routes/editor/playlist/list.tsx": $editor_playlist_list,
     "./routes/home/_layout.tsx": $home_layout,
     "./routes/home/collection/list.tsx": $home_collection_list,
     "./routes/home/index.tsx": $home_index,

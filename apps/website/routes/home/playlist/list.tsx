@@ -26,7 +26,7 @@ export const handler: Handlers<BeatSaberPlaylistFlatSchemaT[]> = {
 const PlaylistListPage = (props: PageProps<BeatSaberPlaylistFlatSchemaT[]>) => {
   return (
     <div class="mt-4">
-      {props.data.map((v) => {
+      {props.data.sort((a, b) => a.playlistTitle < b.playlistTitle ? -1 : 1).map((v) => {
         return (
           <a href={`/home/playlist/${v.id}/details`} class="hover:underline">
             <div class="flex flex-row m-4">
