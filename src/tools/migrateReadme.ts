@@ -10,7 +10,7 @@ import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 const markdown = new Markdown();
 const mdImg = (src: string) => `<img src="${src}" height="50px" width="50px" />`;
 const mkActions = (path: string, fileName: string) =>
-  `[Raw](https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists${path}${fileName})`.replaceAll(" ", "%20");
+  `[Raw](https://raw.githubusercontent.com/Danielduel/tower-of-tech/main${path}${fileName})`.replaceAll(" ", "%20");
 // `[Details](${links.home.playlist.details(playlistId, towerOfTechWebsiteOrigin)}) [Raw](${
 //   links.api.v1.playlist.download(playlistId, towerOfTechWebsiteOrigin)
 // })`;
@@ -18,7 +18,8 @@ const mkActions = (path: string, fileName: string) =>
 const _markdownContent = markdown
   .paragraph(`
 Support this project on Ko-fi
-  <a href="https://ko-fi.com/danielduel" target="_blank">
+
+<a href="https://ko-fi.com/danielduel" target="_blank">
   <img
     height="36"
     border="0"
