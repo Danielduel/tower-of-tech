@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RYZX1QKGFSX53GTJ1A",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HM4203RYZX1QKGFSX53GTJ1A/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5565 - ToT - AdepAnglehell.bplist"
   },
   "songs": [
     {
@@ -361,6 +361,42 @@
       "levelid": "custom_level_1F7C22D7CCA4629139CB09C829045CDFE3711BCF",
       "songName": "Lost Summer",
       "levelAuthorName": "Miljon",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "673391D8A2565826BBC7D0DF8AD0461D1307928B",
+      "levelid": "custom_level_673391D8A2565826BBC7D0DF8AD0461D1307928B",
+      "songName": "RUNAWAY",
+      "levelAuthorName": "VoltageO",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "77EFA6D1A8ADC9AED4C6FBC191DC2D0302D5FA82",
+      "levelid": "custom_level_77EFA6D1A8ADC9AED4C6FBC191DC2D0302D5FA82",
+      "songName": "Move",
+      "levelAuthorName": "lustgreed",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "2ED04F2B953FE9330DDF18BF5EBF15D8533607AA",
+      "levelid": "custom_level_2ED04F2B953FE9330DDF18BF5EBF15D8533607AA",
+      "songName": "Problems",
+      "levelAuthorName": "Dr_Marc, Danboru",
       "difficulties": [
         {
           "characteristic": "Standard",

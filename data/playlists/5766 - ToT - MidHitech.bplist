@@ -1890,10 +1890,226 @@
       ]
     },
     {
-      "songName": "Khronostasis Katharsis - Halv -",
-      "levelAuthorName": "CharlotteAulin",
-      "hash": "BCF3D9A4D413EDE743197DD7707B80F8D1E0C4D1",
-      "levelid": "custom_level_BCF3D9A4D413EDE743197DD7707B80F8D1E0C4D1",
+      "songName": "MOSHI",
+      "levelAuthorName": "Huh, GalaxyMaster",
+      "hash": "DAB0812DD05E8FB589E2D63C3A33703D7E5C7EC1",
+      "levelid": "custom_level_DAB0812DD05E8FB589E2D63C3A33703D7E5C7EC1",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Fuck That Bass",
+      "levelAuthorName": "Bitz, Frost",
+      "hash": "E0AAC14882001DD2B26F07540C758C9B88C61859",
+      "levelid": "custom_level_E0AAC14882001DD2B26F07540C758C9B88C61859",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Rainshower",
+      "levelAuthorName": "りこさま",
+      "hash": "415E241CE1893A98B02862EE61B7CA6FA7C96577",
+      "levelid": "custom_level_415E241CE1893A98B02862EE61B7CA6FA7C96577",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Seizure",
+      "levelAuthorName": "penguiin",
+      "hash": "0D687BBE8879892B05D624CDCDE7E40F158D471F",
+      "levelid": "custom_level_0D687BBE8879892B05D624CDCDE7E40F158D471F",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Drum Show",
+      "levelAuthorName": "Jabob",
+      "hash": "0D2D07EDB218828922F7E096EA98DB47EBC7D8D9",
+      "levelid": "custom_level_0D2D07EDB218828922F7E096EA98DB47EBC7D8D9",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Let's Party",
+      "levelAuthorName": "Vainstains",
+      "hash": "A295F492B941ED7F85837D5B41EA934618658BDE",
+      "levelid": "custom_level_A295F492B941ED7F85837D5B41EA934618658BDE",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Endgame",
+      "levelAuthorName": "shrado, Mayple",
+      "hash": "BF31A5A277245866DD2E4A5BA6D5D986955A58B7",
+      "levelid": "custom_level_BF31A5A277245866DD2E4A5BA6D5D986955A58B7",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Renegade (We Never Run)",
+      "levelAuthorName": "Pleo, MadChase",
+      "hash": "7582D2AD3D974C8815D8434C533E458D023B61A0",
+      "levelid": "custom_level_7582D2AD3D974C8815D8434C533E458D023B61A0",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "We're On Fire",
+      "levelAuthorName": "oegoe, Miljon, Taddus, realcoda",
+      "hash": "827DC48347DA1B56705E717FE627C722CAC36885",
+      "levelid": "custom_level_827DC48347DA1B56705E717FE627C722CAC36885",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "D/N/A",
+      "levelAuthorName": "Anammelech, Glasso050",
+      "hash": "89EB3A8A9EE5CD5E84CC361934EBE8F1C168110D",
+      "levelid": "custom_level_89EB3A8A9EE5CD5E84CC361934EBE8F1C168110D",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "､ﾅ─∧″ゑー⊂ぅ─すʚ♥ɞ",
+      "levelAuthorName": "ob1cb",
+      "hash": "000D5466ACEB3B28F393635FFEB45A09FF41A29B",
+      "levelid": "custom_level_000D5466ACEB3B28F393635FFEB45A09FF41A29B",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "エレクトリカル・サーフィン",
+      "levelAuthorName": "toro",
+      "hash": "B2A18135D030CA54688CC0C3D9AC978189D99358",
+      "levelid": "custom_level_B2A18135D030CA54688CC0C3D9AC978189D99358",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hatred",
+      "levelAuthorName": "riisi",
+      "hash": "10C73C84A7D16801D925C11DCACEEE9B3F6A4D0C",
+      "levelid": "custom_level_10C73C84A7D16801D925C11DCACEEE9B3F6A4D0C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hyperdimensional Venture",
+      "levelAuthorName": "ZeCube",
+      "hash": "2F9E60FD8FED0E079FD93FEE81094D66C427C1E3",
+      "levelid": "custom_level_2F9E60FD8FED0E079FD93FEE81094D66C427C1E3",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Fusion Machine (VIP)",
+      "levelAuthorName": "Vainstains",
+      "hash": "BAE048E621B7C66BDFA820A1AF67CB53AA589187",
+      "levelid": "custom_level_BAE048E621B7C66BDFA820A1AF67CB53AA589187",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "CALAMITY RHAPSODY",
+      "levelAuthorName": "Cratornugget",
+      "hash": "FAEC3B7EF37931477DD664FCA5E8EB1CC607CEB5",
+      "levelid": "custom_level_FAEC3B7EF37931477DD664FCA5E8EB1CC607CEB5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Paradox Rhapsody",
+      "levelAuthorName": "wangyufy",
+      "hash": "2F9AC65A22C32782EDC993B444807A706B647E25",
+      "levelid": "custom_level_2F9AC65A22C32782EDC993B444807A706B647E25",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "ATE THAT",
+      "levelAuthorName": "Jonas_0_0",
+      "hash": "9171FF739DD493250245DF54C0541E7B0CD385DB",
+      "levelid": "custom_level_9171FF739DD493250245DF54C0541E7B0CD385DB",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Darling Dance",
+      "levelAuthorName": "BigSlick",
+      "hash": "B42D47F506E27997C121A79DE17A95FD833E1475",
+      "levelid": "custom_level_B42D47F506E27997C121A79DE17A95FD833E1475",
       "difficulties": [
         {
           "characteristic": "Standard",

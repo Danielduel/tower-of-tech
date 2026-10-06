@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHRH8RDXEEP9F4211NVG",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HK8XCHRH8RDXEEP9F4211NVG/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5545 - ToT - AdepComfy.bplist"
   },
   "songs": [
     {
@@ -697,6 +697,10 @@
         {
           "characteristic": "Standard",
           "name": "Easy"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
         }
       ]
     },
@@ -1821,18 +1825,6 @@
       ]
     },
     {
-      "hash": "10ADB02F9AC04383D5540A543A919C69825662DB",
-      "levelid": "custom_level_10ADB02F9AC04383D5540A543A919C69825662DB",
-      "songName": "There Till The End",
-      "levelAuthorName": "JRE_McNuggies, winteredge, McMelon_XoXo, Nugget",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "hash": "4C0FA506FE189F4CAC1287FDA39A7B0FF3298AF4",
       "levelid": "custom_level_4C0FA506FE189F4CAC1287FDA39A7B0FF3298AF4",
       "songName": " Get Through",
@@ -2241,6 +2233,478 @@
       "levelid": "custom_level_AC17DE9BACF27C1AB9FB1E118470347F698DA6F9",
       "songName": "Remember Me",
       "levelAuthorName": "Mirage",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "AE77C88803EE14E4654543B257C94D854A575EB5",
+      "levelid": "custom_level_AE77C88803EE14E4654543B257C94D854A575EB5",
+      "songName": "I'll Be Your Home",
+      "levelAuthorName": "azu",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "984ECF3843D86D17A6B05DA8988090DB25933445",
+      "levelid": "custom_level_984ECF3843D86D17A6B05DA8988090DB25933445",
+      "songName": "The Lion Sleeps Tonight (Wimoweh)",
+      "levelAuthorName": "Cush",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "1A81DFFF6B7AB420AB103F87BF76E8A5927C6967",
+      "levelid": "custom_level_1A81DFFF6B7AB420AB103F87BF76E8A5927C6967",
+      "songName": "Wall",
+      "levelAuthorName": "VoltageO",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "B0257DA58E941EDADF8A807FAC6B4DC36E37E7BA",
+      "levelid": "custom_level_B0257DA58E941EDADF8A807FAC6B4DC36E37E7BA",
+      "songName": "Lanterns",
+      "levelAuthorName": "Ani",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "C4BD65955C69B06F52B14570D938EF37D97DB69B",
+      "levelid": "custom_level_C4BD65955C69B06F52B14570D938EF37D97DB69B",
+      "songName": "OH SHIT!",
+      "levelAuthorName": "Cyanite",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "6AFA09700E90EE0A4EF9EAA258791544060CB947",
+      "levelid": "custom_level_6AFA09700E90EE0A4EF9EAA258791544060CB947",
+      "songName": "Once a Day",
+      "levelAuthorName": "Danny",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "A5F410BB9C25EED750BD1CF84730DD68358FC19B",
+      "levelid": "custom_level_A5F410BB9C25EED750BD1CF84730DD68358FC19B",
+      "songName": "Ticking Away",
+      "levelAuthorName": "Nehete",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "C26EF93C2094FC3EFCCBC6B651FE77296A408B16",
+      "levelid": "custom_level_C26EF93C2094FC3EFCCBC6B651FE77296A408B16",
+      "songName": "Cool Me Down",
+      "levelAuthorName": "Ge2toro",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "EECEC43637799753345FF09C08B65C51C35C55B4",
+      "levelid": "custom_level_EECEC43637799753345FF09C08B65C51C35C55B4",
+      "songName": "Azure",
+      "levelAuthorName": "cat_using_a_toaster",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "44C67FA9EC214E3AB36E1304215D75ACCD36A3A8",
+      "levelid": "custom_level_44C67FA9EC214E3AB36E1304215D75ACCD36A3A8",
+      "songName": "Nightless City",
+      "levelAuthorName": "okazu",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "A09133282A30E0F74D9527DE92DA4D5F7778F68D",
+      "levelid": "custom_level_A09133282A30E0F74D9527DE92DA4D5F7778F68D",
+      "songName": "Lonely",
+      "levelAuthorName": "xScaramouche",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "9D1A5B08EDA550154489C6B7C652205A237F62EC",
+      "levelid": "custom_level_9D1A5B08EDA550154489C6B7C652205A237F62EC",
+      "songName": "Welcome to the Internet",
+      "levelAuthorName": "HypersonicSharkz, Bitz",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "EF8FF8FE4CC66420A5FBE15BDF4B614ADAED5B0A",
+      "levelid": "custom_level_EF8FF8FE4CC66420A5FBE15BDF4B614ADAED5B0A",
+      "songName": "Everything You Have Done",
+      "levelAuthorName": "Aquaflee, VoltageO",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "534060578B0D94F4AE2038155A2B74C81C09AEF4",
+      "levelid": "custom_level_534060578B0D94F4AE2038155A2B74C81C09AEF4",
+      "songName": "Gee",
+      "levelAuthorName": "Danny",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "C8A1C9AA14C8EA0F942C21C8AB2D2BCAA01B2792",
+      "levelid": "custom_level_C8A1C9AA14C8EA0F942C21C8AB2D2BCAA01B2792",
+      "songName": "Tip Toes",
+      "levelAuthorName": "Tiku",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "2070F28E7882241C5BDD65CF3A7C473C5F6EBFC3",
+      "levelid": "custom_level_2070F28E7882241C5BDD65CF3A7C473C5F6EBFC3",
+      "songName": "banana pie",
+      "levelAuthorName": "realtasty",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "36D7B89570556B647BE69BB5B520E7E77C7BC87E",
+      "levelid": "custom_level_36D7B89570556B647BE69BB5B520E7E77C7BC87E",
+      "songName": "Born This Way",
+      "levelAuthorName": "steeak",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "B6B1A55E4E51BA0AB416261DB75F982EFCC557FF",
+      "levelid": "custom_level_B6B1A55E4E51BA0AB416261DB75F982EFCC557FF",
+      "songName": "Specter",
+      "levelAuthorName": "Bytrius, FeudBoy_YT",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "B9636F8251FE97515C1154B076969264528B32A6",
+      "levelid": "custom_level_B9636F8251FE97515C1154B076969264528B32A6",
+      "songName": "MONEY ON THE DASH",
+      "levelAuthorName": "ImChloe, BanditByTheStreet, D7oomyAli, Tonkie",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "8F03E4EC6082ED3F200EB4DDB08C99EEBACA73AE",
+      "levelid": "custom_level_8F03E4EC6082ED3F200EB4DDB08C99EEBACA73AE",
+      "songName": "Catch Me If You Can",
+      "levelAuthorName": "Comyute",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "1FD2E5B76588CEA3C3EBB7A8F0602169ED5CCABF",
+      "levelid": "custom_level_1FD2E5B76588CEA3C3EBB7A8F0602169ED5CCABF",
+      "songName": "Halzion",
+      "levelAuthorName": "chikinbiskit",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "8C1D3F3354D5CBD61594C9BC362F90241DB4E8D7",
+      "levelid": "custom_level_8C1D3F3354D5CBD61594C9BC362F90241DB4E8D7",
+      "songName": "Strawberry Rush",
+      "levelAuthorName": "Lalahti, Danny",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "7628448D5753659D9AAB344BEB9B47DBA2AC4BE8",
+      "levelid": "custom_level_7628448D5753659D9AAB344BEB9B47DBA2AC4BE8",
+      "songName": "Catch Me If You Can",
+      "levelAuthorName": "Cush",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "1F72559437AA1601179D7E0C984C38A6443EE904",
+      "levelid": "custom_level_1F72559437AA1601179D7E0C984C38A6443EE904",
+      "songName": "UNDEAD",
+      "levelAuthorName": "Suiba, Cabbage",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "hash": "29D05694A3703ACC95E0B3C338CC9659B7FEA046",
+      "levelid": "custom_level_29D05694A3703ACC95E0B3C338CC9659B7FEA046",
+      "songName": "BAD X END",
+      "levelAuthorName": "VoltageO X Voidless",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "hash": "C2BBC2C09646AB51D62C8A36C9ED745399EDADA0",
+      "levelid": "custom_level_C2BBC2C09646AB51D62C8A36C9ED745399EDADA0",
+      "songName": "All Or Nothing",
+      "levelAuthorName": "Miljon, Tonkie",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "21A989606D52EDF96B2971DBEDE366B1D0523088",
+      "levelid": "custom_level_21A989606D52EDF96B2971DBEDE366B1D0523088",
+      "songName": "Felis",
+      "levelAuthorName": "ComplexFrequency, Checkthepan",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "hash": "7ECAF80A0BC0BD09CD96EB5CA54CA1D57C35B18E",
+      "levelid": "custom_level_7ECAF80A0BC0BD09CD96EB5CA54CA1D57C35B18E",
+      "songName": "Rhymes of Vales",
+      "levelAuthorName": "Cush",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "A4471701762B6E7BA69923D478F58B438A4E3C1C",
+      "levelid": "custom_level_A4471701762B6E7BA69923D478F58B438A4E3C1C",
+      "songName": "did i tell u that i miss u",
+      "levelAuthorName": "Rail Zen",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "DBBF28A2EE3893E14BE55483428BC965FD85E476",
+      "levelid": "custom_level_DBBF28A2EE3893E14BE55483428BC965FD85E476",
+      "songName": "Unshatter",
+      "levelAuthorName": "Loloppe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "2090C2B0A765E4AB63767F66E3B2F19953A23D14",
+      "levelid": "custom_level_2090C2B0A765E4AB63767F66E3B2F19953A23D14",
+      "songName": "Yearn to Bloom - Aeldra's Theme",
+      "levelAuthorName": "The Lunar Carver",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "C4153856DCBAFAF97231F37A4A548809CDE9A6D8",
+      "levelid": "custom_level_C4153856DCBAFAF97231F37A4A548809CDE9A6D8",
+      "songName": "Patchwork Staccato",
+      "levelAuthorName": "Fuyakeru",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "0A2FF26436D54299DD2BCDA4FD76F57F2FF05014",
+      "levelid": "custom_level_0A2FF26436D54299DD2BCDA4FD76F57F2FF05014",
+      "songName": "Drive",
+      "levelAuthorName": "DesperateWoman",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "5DC9666A0474B085FBDC257E395918DF75BD8AE6",
+      "levelid": "custom_level_5DC9666A0474B085FBDC257E395918DF75BD8AE6",
+      "songName": "Sad Songs",
+      "levelAuthorName": "JRE_McNuggies, ChlopherVR",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "9AAFA4DB2C46DC8B78C05D5F1493FC6C3E0DF213",
+      "levelid": "custom_level_9AAFA4DB2C46DC8B78C05D5F1493FC6C3E0DF213",
+      "songName": "Toxic Gossip Train",
+      "levelAuthorName": "RUI",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "189C352A44C1CB0412234269AE49427120829F08",
+      "levelid": "custom_level_189C352A44C1CB0412234269AE49427120829F08",
+      "songName": "..FEISTY (feat. Bia)",
+      "levelAuthorName": "a_tension_span",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "5B0AF1DE2D02A6ABB2D3C3ACC399E94466CC1615",
+      "levelid": "custom_level_5B0AF1DE2D02A6ABB2D3C3ACC399E94466CC1615",
+      "songName": "Gone For Good",
+      "levelAuthorName": "Tiku",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "120A9041131A639673D79F781A5041211277740F",
+      "levelid": "custom_level_120A9041131A639673D79F781A5041211277740F",
+      "songName": "Minor Piece",
+      "levelAuthorName": "Tiku",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "hash": "8B669F7589FD0226C06D66D36A21E1AC5269611B",
+      "levelid": "custom_level_8B669F7589FD0226C06D66D36A21E1AC5269611B",
+      "songName": "Delulu",
+      "levelAuthorName": "Tiku",
       "difficulties": [
         {
           "characteristic": "Standard",

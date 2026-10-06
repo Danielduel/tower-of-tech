@@ -5,19 +5,28 @@ import {
   getToTPlaylistTechCategory,
   playlistMapping,
 } from "@/packages/playlist/collections/tower-of-tech/mod.ts";
-import { PlaylistId } from "@/packages/types/brands.ts";
-import { links } from "@/apps/website-old/routing.config.ts";
-import { towerOfTechWebsiteOrigin } from "@/packages/utils/constants.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
 
 const markdown = new Markdown();
 const mdImg = (src: string) => `<img src="${src}" height="50px" width="50px" />`;
-const mkActions = (playlistId: PlaylistId) =>
-  `[Details](${links.home.playlist.details(playlistId, towerOfTechWebsiteOrigin)}) [Raw](${
-    links.api.v1.playlist.download(playlistId, towerOfTechWebsiteOrigin)
-  })`;
+const mkActions = (path: string, fileName: string) =>
+  `[Raw](https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists${path}${fileName})`;
+// `[Details](${links.home.playlist.details(playlistId, towerOfTechWebsiteOrigin)}) [Raw](${
+//   links.api.v1.playlist.download(playlistId, towerOfTechWebsiteOrigin)
+// })`;
 
 const _markdownContent = markdown
+  .paragraph(`
+    Support this project on Ko-fi
+      <a href="https://ko-fi.com/danielduel" target="_blank">
+      <img
+        height="36"
+        border="0"
+        src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
+        alt="Buy Me a Coffee at ko-fi.com"
+      />
+    </a>
+`)
   .header(`Tower of Tech`, 1)
   .paragraph(
     `This repository contains tech-related playlists and utilities used to manage them.`,
@@ -35,14 +44,14 @@ A playlist name should contain prefix and "tech" suffix.
     ListTypes.UnOrdered,
     "-",
   )
-  .paragraph(`There are and will be "guest" playlists - f.e. Morgolf's.`)
-  .header(`Installation and current state`, 3)
-  .paragraph(
-    `GitHub doesn't like the OneClick url, go to Details or [to this list](${towerOfTechWebsiteOrigin}${links.home.browse}) if you like this way more`,
-  )
-  .paragraph(
-    `If you need help with installing playlists, you can head to [installation guide](${towerOfTechWebsiteOrigin}${links.home.playlistInstallGuide.root})`,
-  )
+  // .paragraph(`There are and will be "guest" playlists - f.e. Morgolf's.`)
+  // .header(`Installation and current state`, 3)
+  // .paragraph(
+  //   `GitHub doesn't like the OneClick url, go to Details or [to this list](${towerOfTechWebsiteOrigin}${links.home.browse}) if you like this way more`,
+  // )
+  // .paragraph(
+  //   `If you need help with installing playlists, you can head to [installation guide](${towerOfTechWebsiteOrigin}${links.home.playlistInstallGuide.root})`,
+  // )
   .paragraph(
     `Zip containing all playlists can be found [here](${latestPlaylistReleaseUrl})`,
   )
@@ -60,7 +69,7 @@ A playlist name should contain prefix and "tech" suffix.
             getToTPlaylistSpeedCategory(mappingValue.speedCategory),
             getToTPlaylistTechCategory(mappingValue.techCategory),
             playlist.playlist.songs.length,
-            mkActions(mappingValue.playlistId),
+            mkActions(mappingValue.path, mappingValue.fileName),
           ];
         }),
     ],

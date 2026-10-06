@@ -1223,8 +1223,8 @@
       ]
     },
     {
-      "hash": "6C1BDA1188538D0E96196E5F4B338442FFC1E2CB",
-      "levelid": "custom_level_6C1BDA1188538D0E96196E5F4B338442FFC1E2CB",
+      "hash": "1606E02EECEE37E81365ECC142B233C8AB598F75",
+      "levelid": "custom_level_1606E02EECEE37E81365ECC142B233C8AB598F75",
       "songName": "SUNDA",
       "levelAuthorName": "BigOlDumplin",
       "difficulties": [
@@ -1602,6 +1602,174 @@
       "difficulties": [
         {
           "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "3207F5DCE81D26F064918AD1410C6032BBE4615E",
+      "levelid": "custom_level_3207F5DCE81D26F064918AD1410C6032BBE4615E",
+      "songName": "frog",
+      "levelAuthorName": "Mirage",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "6DAA7CD755586B3A937E77C773D66B7FC942ACE4",
+      "levelid": "custom_level_6DAA7CD755586B3A937E77C773D66B7FC942ACE4",
+      "songName": "MONTAGEM XONADA",
+      "levelAuthorName": "Simbo",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "BB20249EDB03A46D4DDA3253ABD149B725C8D85B",
+      "levelid": "custom_level_BB20249EDB03A46D4DDA3253ABD149B725C8D85B",
+      "songName": "Vexed",
+      "levelAuthorName": "Pleo",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "07AB0FBB3E76A2A8196197424E1D0D8D463011AC",
+      "levelid": "custom_level_07AB0FBB3E76A2A8196197424E1D0D8D463011AC",
+      "songName": "Dreams",
+      "levelAuthorName": "CharlotteAulin",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "3D37513E1CB19578C27DC350FE3EFC56211C25FE",
+      "levelid": "custom_level_3D37513E1CB19578C27DC350FE3EFC56211C25FE",
+      "songName": "Let Me Hear That",
+      "levelAuthorName": "Vainstains",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4A75CAA66F7913F27D3DA8DB61AFB6A9F8D1B7FF",
+      "levelid": "custom_level_4A75CAA66F7913F27D3DA8DB61AFB6A9F8D1B7FF",
+      "songName": "Vista",
+      "levelAuthorName": "Vainstains",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "203C0FC7BE99CF4CDF87959612B20FF1B37E8B6E",
+      "levelid": "custom_level_203C0FC7BE99CF4CDF87959612B20FF1B37E8B6E",
+      "songName": "Delusion Girl/Hatsune Miku",
+      "levelAuthorName": "kibo",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "BB6C3EF1BF08CC768C5B828604CE7EE5BE466D6A",
+      "levelid": "custom_level_BB6C3EF1BF08CC768C5B828604CE7EE5BE466D6A",
+      "songName": "ソテイラ",
+      "levelAuthorName": "kibo",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "7A34FF8EE79D386688D719DB5A98F9186D78870F",
+      "levelid": "custom_level_7A34FF8EE79D386688D719DB5A98F9186D78870F",
+      "songName": "Saloon (VIP)",
+      "levelAuthorName": "Vainstains",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4E0C05DEF0E477DE994807C2F6A080C8C7EEE2A7",
+      "levelid": "custom_level_4E0C05DEF0E477DE994807C2F6A080C8C7EEE2A7",
+      "songName": "Attracted To You",
+      "levelAuthorName": "voltage4536",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "8F4F6CAE2B04583E798614A2CFF0CFCFAADC82EB",
+      "levelid": "custom_level_8F4F6CAE2B04583E798614A2CFF0CFCFAADC82EB",
+      "songName": "Tally",
+      "levelAuthorName": "VoltageO",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "10C73C84A7D16801D925C11DCACEEE9B3F6A4D0C",
+      "levelid": "custom_level_10C73C84A7D16801D925C11DCACEEE9B3F6A4D0C",
+      "songName": "Hatred",
+      "levelAuthorName": "riisi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "2E9310B02D1655FFC74502CA75DF4C4AB3B7F956",
+      "levelid": "custom_level_2E9310B02D1655FFC74502CA75DF4C4AB3B7F956",
+      "songName": "Colorful Asterisk Remix",
+      "levelAuthorName": "Dark_Waffle",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "EC857225F966040F192AE91A9CC72CACCB103B9D",
+      "levelid": "custom_level_EC857225F966040F192AE91A9CC72CACCB103B9D",
+      "songName": "Suicidal Love",
+      "levelAuthorName": "Nugget, Pleo, hwowhu",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
           "name": "ExpertPlus"
         }
       ]

@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203SHXNGDMWZVY685MDVR",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HM4203SHXNGDMWZVY685MDVR/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5767 - ToT - MidAnglehell.bplist"
   },
   "songs": [
     {
@@ -760,6 +760,114 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C7834B36669251C1FCF6A40C9E496BC1693303A7",
+      "levelid": "custom_level_C7834B36669251C1FCF6A40C9E496BC1693303A7",
+      "songName": "Party Girl",
+      "levelAuthorName": "Aquaflee",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "BCF3D9A4D413EDE743197DD7707B80F8D1E0C4D1",
+      "levelid": "custom_level_BCF3D9A4D413EDE743197DD7707B80F8D1E0C4D1",
+      "songName": "Khronostasis Katharsis - Halv -",
+      "levelAuthorName": "CharlotteAulin",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "3BB137680CA0D30BA53334D7EB2A6B0930CA2E32",
+      "levelid": "custom_level_3BB137680CA0D30BA53334D7EB2A6B0930CA2E32",
+      "songName": "Anadrol",
+      "levelAuthorName": "Simbo, WhiteWolf",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "263846FE81D14BFEEAB4C27E5FB4E8CA2957E584",
+      "levelid": "custom_level_263846FE81D14BFEEAB4C27E5FB4E8CA2957E584",
+      "songName": "NO NAME",
+      "levelAuthorName": "GojiCrafter",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "1F72559437AA1601179D7E0C984C38A6443EE904",
+      "levelid": "custom_level_1F72559437AA1601179D7E0C984C38A6443EE904",
+      "songName": "UNDEAD",
+      "levelAuthorName": "Suiba, Cabbage",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "FC2676D790F8DF91DAF8BACF201790F482E04E05",
+      "levelid": "custom_level_FC2676D790F8DF91DAF8BACF201790F482E04E05",
+      "songName": "Frog",
+      "levelAuthorName": "B. Willow",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "353E7808BFB489F47B6519E643736191099ACF29",
+      "levelid": "custom_level_353E7808BFB489F47B6519E643736191099ACF29",
+      "songName": "ONI KYOKAN",
+      "levelAuthorName": "Comyute",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "E2735B706FD42CD8BA4D3B07C95B2096A91557EC",
+      "levelid": "custom_level_E2735B706FD42CD8BA4D3B07C95B2096A91557EC",
+      "songName": "The Disaster Sounds",
+      "levelAuthorName": "The Witch vs Poochy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C5E614433ADF96BFB2FFE12571587C7AF84A5FF6",
+      "levelid": "custom_level_C5E614433ADF96BFB2FFE12571587C7AF84A5FF6",
+      "songName": "Infinite Requiem (Deoksoon)",
+      "levelAuthorName": "winteredge",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]

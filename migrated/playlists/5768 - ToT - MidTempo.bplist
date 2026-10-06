@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM7KRRZ7H0XFCNX8D9WY5ATP",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HM7KRRZ7H0XFCNX8D9WY5ATP/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5768 - ToT - MidTempo.bplist"
   },
   "songs": [
     {
@@ -76,6 +76,42 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "ACBA7561D9CD972DD20EC914650CA1AE8DB112B3",
+      "levelid": "custom_level_ACBA7561D9CD972DD20EC914650CA1AE8DB112B3",
+      "songName": "TE RI",
+      "levelAuthorName": "Gzr",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "9558A74A381744522779FE5381ED9F202F7364C3",
+      "levelid": "custom_level_9558A74A381744522779FE5381ED9F202F7364C3",
+      "songName": "Atomic",
+      "levelAuthorName": "August, Vainstains",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "32CF37AC089588B4BF82CC533479998BDA89370B",
+      "levelid": "custom_level_32CF37AC089588B4BF82CC533479998BDA89370B",
+      "songName": "Sweet Bordeaux Nightmare",
+      "levelAuthorName": "Aimedhades16",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]

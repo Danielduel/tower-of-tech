@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RR9TZ2KAYG3BQ4ZJRV",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HM4203RR9TZ2KAYG3BQ4ZJRV/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5855 - ToT - FasTech.bplist"
   },
   "songs": [
     {
@@ -725,6 +725,54 @@
       "levelid": "custom_level_5BD5C2E08D58CDBA13BF0849F926847E47FBA8DD",
       "songName": "Eternity",
       "levelAuthorName": "ZenithGD, CallMeThunder",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "2A3024A6FB2882056BB4BDC46A51328A67B45D9E",
+      "levelid": "custom_level_2A3024A6FB2882056BB4BDC46A51328A67B45D9E",
+      "songName": "wan!",
+      "levelAuthorName": "Dr_Marc",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "108FE88BE02916706208D0E94357D2CAB9B6CD33",
+      "levelid": "custom_level_108FE88BE02916706208D0E94357D2CAB9B6CD33",
+      "songName": "Demarcation",
+      "levelAuthorName": "deadu",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "DF16F1B58450B3A88C25A83B94BC063E06F27489",
+      "levelid": "custom_level_DF16F1B58450B3A88C25A83B94BC063E06F27489",
+      "songName": "Radiant Spectrala",
+      "levelAuthorName": "deadu",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "EECB952A2E384C52DBFC031FA254DF5B87BDB055",
+      "levelid": "custom_level_EECB952A2E384C52DBFC031FA254DF5B87BDB055",
+      "songName": "Urami no Waltz",
+      "levelAuthorName": "harbgy",
       "difficulties": [
         {
           "characteristic": "Standard",

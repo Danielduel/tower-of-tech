@@ -212,8 +212,8 @@
     {
       "songName": "Kyuukou",
       "levelAuthorName": "zeon & Gabriel",
-      "hash": "779583B8BACED4EA2A847282F1E1E3E6830BD8D8",
-      "levelid": "custom_level_779583B8BACED4EA2A847282F1E1E3E6830BD8D8",
+      "hash": "867B621DB2C8D6EAE267B310E8DDA61107CCA6DA",
+      "levelid": "custom_level_867B621DB2C8D6EAE267B310E8DDA61107CCA6DA",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -370,6 +370,66 @@
       "levelAuthorName": "take_nyan",
       "hash": "AE6DAD44D6D5E6CEF9A431AACE7F4FA908DC7D6A",
       "levelid": "custom_level_AE6DAD44D6D5E6CEF9A431AACE7F4FA908DC7D6A",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "M◇◇nlit",
+      "levelAuthorName": "JBSL Team",
+      "hash": "C006EB4BAB756491A31793BAE04A5B6A677D0A23",
+      "levelid": "custom_level_C006EB4BAB756491A31793BAE04A5B6A677D0A23",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "JETLAGG!",
+      "levelAuthorName": "ob1cb, RetrX",
+      "hash": "281F7968C1186281DC3230187A706C9135307274",
+      "levelid": "custom_level_281F7968C1186281DC3230187A706C9135307274",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "ma[χ]zo",
+      "levelAuthorName": "Voidless",
+      "hash": "C7F2B094B3EE3BD22C095F0D01D7E7BB2A373D65",
+      "levelid": "custom_level_C7F2B094B3EE3BD22C095F0D01D7E7BB2A373D65",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "ma[χ]zo",
+      "levelAuthorName": "penguiin",
+      "hash": "3B6E4059D32E1F0AC89A3CACCAF4ECAA4FB14B86",
+      "levelid": "custom_level_3B6E4059D32E1F0AC89A3CACCAF4ECAA4FB14B86",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Ongyilkos Vasarnap",
+      "levelAuthorName": "MGKNominator",
+      "hash": "0AD1E5EF35C35CA9F962D8695E076D10D693949F",
+      "levelid": "custom_level_0AD1E5EF35C35CA9F962D8695E076D10D693949F",
       "difficulties": [
         {
           "characteristic": "Standard",

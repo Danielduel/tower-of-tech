@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203SPHDAP94MS02S49JC6",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HM4203SPHDAP94MS02S49JC6/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5755 - ToT - MidComfy.bplist"
   },
   "songs": [
     {
@@ -997,6 +997,126 @@
       "levelid": "custom_level_E8CF962EC0072ECBEEFC55F66CECFE7C804ACF49",
       "songName": "Ellise - 911\nEllise - 911 (Tom Wilson Remix)",
       "levelAuthorName": "Manxy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "0E61E9B896FC339C719E92E828C5F2257CA5E516",
+      "levelid": "custom_level_0E61E9B896FC339C719E92E828C5F2257CA5E516",
+      "songName": "Odo",
+      "levelAuthorName": "Loloppe",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "5B68EC0D7DE8DD2360AE049473F0A10102E5AE25",
+      "levelid": "custom_level_5B68EC0D7DE8DD2360AE049473F0A10102E5AE25",
+      "songName": "Signal",
+      "levelAuthorName": "yabje, Bitz",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Easy"
+        }
+      ]
+    },
+    {
+      "hash": "D09E0A4D4047E83B332F782A8D7B6D6C1761F7C2",
+      "levelid": "custom_level_D09E0A4D4047E83B332F782A8D7B6D6C1761F7C2",
+      "songName": "DDevil",
+      "levelAuthorName": "FeudBoy_YT",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "CFA37C98BD59469CA95D07527B226F3BA9E823E6",
+      "levelid": "custom_level_CFA37C98BD59469CA95D07527B226F3BA9E823E6",
+      "songName": "TOUCH OF AN ANGEL",
+      "levelAuthorName": "HypersonicSharkz",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "120A9041131A639673D79F781A5041211277740F",
+      "levelid": "custom_level_120A9041131A639673D79F781A5041211277740F",
+      "songName": "Minor Piece",
+      "levelAuthorName": "Tiku",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "84C71D1412AA6905A722618F0AEB7C2B9578042A",
+      "levelid": "custom_level_84C71D1412AA6905A722618F0AEB7C2B9578042A",
+      "songName": "Miss you not out of loneliness",
+      "levelAuthorName": "AWM Team",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "2AE773B1971EDDE7821EDB2A1BA67C2B618F4FC3",
+      "levelid": "custom_level_2AE773B1971EDDE7821EDB2A1BA67C2B618F4FC3",
+      "songName": "thank you i guess",
+      "levelAuthorName": "BigOlDumplin",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "6AB33F5DABCB60640C20DA6C8C840D8625466650",
+      "levelid": "custom_level_6AB33F5DABCB60640C20DA6C8C840D8625466650",
+      "songName": "timelapse",
+      "levelAuthorName": "",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "1F34F1C7BE2DF120E7D54DCC61B4C40722A44AAB",
+      "levelid": "custom_level_1F34F1C7BE2DF120E7D54DCC61B4C40722A44AAB",
+      "songName": "LIVHT MY WΔY",
+      "levelAuthorName": "oatmeal",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "FC87F54E58251EC595C6EC436168A9169DA3E725",
+      "levelid": "custom_level_FC87F54E58251EC595C6EC436168A9169DA3E725",
+      "songName": "Satellites",
+      "levelAuthorName": "Zana",
       "difficulties": [
         {
           "characteristic": "Standard",

@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203S9ZDF4C4SR1CF25JPN",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HM4203S9ZDF4C4SR1CF25JPN/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5566 - ToT - AdepTempo.bplist"
   },
   "songs": [
     {
@@ -232,6 +232,58 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "984ECF3843D86D17A6B05DA8988090DB25933445",
+      "levelid": "custom_level_984ECF3843D86D17A6B05DA8988090DB25933445",
+      "songName": "The Lion Sleeps Tonight (Wimoweh)",
+      "levelAuthorName": "Cush",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "B17CA202C85F0A653689C97B5F812D1676E73C08",
+      "levelid": "custom_level_B17CA202C85F0A653689C97B5F812D1676E73C08",
+      "songName": "春风吹",
+      "levelAuthorName": "Qiurou",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        },
+        {
+          "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "F9F6210772BDDB75961FD3DD53085ABA1E48A3E9",
+      "levelid": "custom_level_F9F6210772BDDB75961FD3DD53085ABA1E48A3E9",
+      "songName": "With a Billion Worldful of <3",
+      "levelAuthorName": "Acubens, A Jhintleman",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "754E8FF70FF342BCE374DB092DDF465A71DA5CA9",
+      "levelid": "custom_level_754E8FF70FF342BCE374DB092DDF465A71DA5CA9",
+      "songName": "Gunslinger",
+      "levelAuthorName": "Pleo",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]

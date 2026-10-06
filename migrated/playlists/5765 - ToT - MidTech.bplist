@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHRK0NSY3PNTPPBJ0X1F",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HK8XCHRK0NSY3PNTPPBJ0X1F/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5765 - ToT - MidTech.bplist"
   },
   "songs": [
     {
@@ -1041,18 +1041,6 @@
       ]
     },
     {
-      "hash": "276C0DFC3BF875B6593D0FFD819696C4AE928211",
-      "levelid": "custom_level_276C0DFC3BF875B6593D0FFD819696C4AE928211",
-      "songName": "DEVILGIRL",
-      "levelAuthorName": "Jabob",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "057FF06BE425C1E64ABF47BE5C5AA5E0FBB7838D",
       "levelid": "custom_level_057FF06BE425C1E64ABF47BE5C5AA5E0FBB7838D",
       "songName": "Necromantic",
@@ -1133,18 +1121,6 @@
         {
           "characteristic": "Standard",
           "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "5B68EC0D7DE8DD2360AE049473F0A10102E5AE25",
-      "levelid": "custom_level_5B68EC0D7DE8DD2360AE049473F0A10102E5AE25",
-      "songName": "Signal",
-      "levelAuthorName": "yabje & Bitz",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Easy"
         }
       ]
     },
@@ -1489,18 +1465,6 @@
       "levelid": "custom_level_1B3693B4AB1DA3EC36BE2D5ADA5BAC1D24CB4928",
       "songName": "Astrum",
       "levelAuthorName": "riisi",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "C97AEAAE45506C32A305929BD516239D2A2A5021",
-      "levelid": "custom_level_C97AEAAE45506C32A305929BD516239D2A2A5021",
-      "songName": "MOVE",
-      "levelAuthorName": "Dr_Marc",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -2413,6 +2377,246 @@
       "levelid": "custom_level_53E6961C65BFFF1E24E54CFCAE21E43C36242824",
       "songName": "G線上のアリア",
       "levelAuthorName": "AMO",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "77CA28BD44F04D2F2DB618FAA995BCD29ED4B480",
+      "levelid": "custom_level_77CA28BD44F04D2F2DB618FAA995BCD29ED4B480",
+      "songName": "Data Loss",
+      "levelAuthorName": "GalaxyMaster",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "DB4ECB4AF964FD887A34B9CA2FAF56BCFEAB0554",
+      "levelid": "custom_level_DB4ECB4AF964FD887A34B9CA2FAF56BCFEAB0554",
+      "songName": "Lock-on Rush",
+      "levelAuthorName": "Marsh",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "3341276C33A8A5E0E1ACFEF18306DCBE6E632BA1",
+      "levelid": "custom_level_3341276C33A8A5E0E1ACFEF18306DCBE6E632BA1",
+      "songName": "JUMP",
+      "levelAuthorName": "3ggcake, Jonas, Tonkie, Danny",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "7B80F971D3810AEA8B9D71ED0A53400C2E5A489F",
+      "levelid": "custom_level_7B80F971D3810AEA8B9D71ED0A53400C2E5A489F",
+      "songName": "Lilly",
+      "levelAuthorName": "Gabriel",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "C4BD65955C69B06F52B14570D938EF37D97DB69B",
+      "levelid": "custom_level_C4BD65955C69B06F52B14570D938EF37D97DB69B",
+      "songName": "OH SHIT!",
+      "levelAuthorName": "Cyanite",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "2A579BB1A3EFA58AF7640F9663C972EE84FEA44A",
+      "levelid": "custom_level_2A579BB1A3EFA58AF7640F9663C972EE84FEA44A",
+      "songName": "favorite",
+      "levelAuthorName": "Kassi",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C73D257F6D54D5396BAA84DACD3FA1980250B627",
+      "levelid": "custom_level_C73D257F6D54D5396BAA84DACD3FA1980250B627",
+      "songName": "Gravity Switcher",
+      "levelAuthorName": "Vainstains",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "5839F8C408034F4E3CFBF648931913A870C85E6F",
+      "levelid": "custom_level_5839F8C408034F4E3CFBF648931913A870C85E6F",
+      "songName": "Gold",
+      "levelAuthorName": "Vainstains",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "4C66620B46F996723963DA2938AE8FAFF79345FA",
+      "levelid": "custom_level_4C66620B46F996723963DA2938AE8FAFF79345FA",
+      "songName": "Warzone",
+      "levelAuthorName": "Jevk",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "8F4E5F35F1D494653CD755D9948C472A2BF1A35E",
+      "levelid": "custom_level_8F4E5F35F1D494653CD755D9948C472A2BF1A35E",
+      "songName": "Marble",
+      "levelAuthorName": "Marsh",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "674F0E2764B0433121371BC222021BB4EB014E3A",
+      "levelid": "custom_level_674F0E2764B0433121371BC222021BB4EB014E3A",
+      "songName": "DADDY",
+      "levelAuthorName": "Aquaflee",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "0A9CAADF4B9308BC37A4FAF247984315D586F3F7",
+      "levelid": "custom_level_0A9CAADF4B9308BC37A4FAF247984315D586F3F7",
+      "songName": "Sleeping Alone",
+      "levelAuthorName": "deadpacity",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "A4E5B19FC3ABC366CFCF106AEAE47A0CEAA08029",
+      "levelid": "custom_level_A4E5B19FC3ABC366CFCF106AEAE47A0CEAA08029",
+      "songName": "Index",
+      "levelAuthorName": "PogU",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "3A36C0591F419BEA7C98C3DFE21F4E5BBA570669",
+      "levelid": "custom_level_3A36C0591F419BEA7C98C3DFE21F4E5BBA570669",
+      "songName": "Victory Over Truth",
+      "levelAuthorName": "AWM Team",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "80A759F9FCDF9A7D76F1C2A167CFFF1B8066F592",
+      "levelid": "custom_level_80A759F9FCDF9A7D76F1C2A167CFFF1B8066F592",
+      "songName": "Caffeine",
+      "levelAuthorName": "Psychic Pineapple, Spartplat",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "D7FA9913290C38DA70311307B782DD3361E649CD",
+      "levelid": "custom_level_D7FA9913290C38DA70311307B782DD3361E649CD",
+      "songName": "In My System",
+      "levelAuthorName": "Vainstains",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "0328893A307145C837E3430786FDEDB1AEE9D0D4",
+      "levelid": "custom_level_0328893A307145C837E3430786FDEDB1AEE9D0D4",
+      "songName": "Itchy Scratchy",
+      "levelAuthorName": "hwowhu, Nugget",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "BBC75860C7D2C80E8498645069DEBFFF3DB837DB",
+      "levelid": "custom_level_BBC75860C7D2C80E8498645069DEBFFF3DB837DB",
+      "songName": "Cosmic Blaster",
+      "levelAuthorName": "Klondike",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "10BA635740E41525A76B31B99DB35E89BAF4173A",
+      "levelid": "custom_level_10BA635740E41525A76B31B99DB35E89BAF4173A",
+      "songName": "PRETTY4U",
+      "levelAuthorName": "gloopy",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "67ED4A435E15F5611B2FAEB5EFC8A00076E709AA",
+      "levelid": "custom_level_67ED4A435E15F5611B2FAEB5EFC8A00076E709AA",
+      "songName": "The Vampire",
+      "levelAuthorName": "Xarope93",
       "difficulties": [
         {
           "characteristic": "Standard",

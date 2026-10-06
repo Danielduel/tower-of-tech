@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HM4203RT18K3SZ4VEJ79E12G",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HM4203RT18K3SZ4VEJ79E12G/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5854 - ToT - FasComfy.bplist"
   },
   "songs": [
     {
@@ -324,6 +324,30 @@
       "hash": "E2A4D3400FC344C6F9B4DD48B30030679E1F1E6D",
       "levelid": "custom_level_E2A4D3400FC344C6F9B4DD48B30030679E1F1E6D",
       "songName": "My Mother Wants Me Dead",
+      "levelAuthorName": "PogU",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "E0E99B89CBA39EC2448A45375CDF2AB376276F0E",
+      "levelid": "custom_level_E0E99B89CBA39EC2448A45375CDF2AB376276F0E",
+      "songName": "ATTACK FROM MANDRAKE",
+      "levelAuthorName": "shrado, Voidless",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "6162748281687B89C49427482BAD2B1D057075D5",
+      "levelid": "custom_level_6162748281687B89C49427482BAD2B1D057075D5",
+      "songName": "Glaza",
       "levelAuthorName": "PogU",
       "difficulties": [
         {

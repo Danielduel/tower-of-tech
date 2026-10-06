@@ -5,7 +5,7 @@
     "AllowDuplicates": false,
     "id": "01HK8XCHRRG9MJ0QM2FT5ZP6SP",
     "owner": "Danielduel",
-    "syncURL": "https://towerofte.ch/api/v1/playlist/get/01HK8XCHRRG9MJ0QM2FT5ZP6SP/download"
+    "syncURL": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/main/migrated/playlists/5668 - ToT - AccTempo.bplist"
   },
   "songs": [
     {
@@ -436,6 +436,42 @@
       "difficulties": [
         {
           "characteristic": "Lawless",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "C3C997F0AF1183CC8D0508A3D6B8153FC936E959",
+      "levelid": "custom_level_C3C997F0AF1183CC8D0508A3D6B8153FC936E959",
+      "songName": "三萬天",
+      "levelAuthorName": "toro",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "hash": "7B2C96472F651FF88204006808AEE4101FE081A7",
+      "levelid": "custom_level_7B2C96472F651FF88204006808AEE4101FE081A7",
+      "songName": "CHAMPION GIRL",
+      "levelAuthorName": "winteredge",
+      "difficulties": [
+        {
+          "characteristic": "Lawless",
+          "name": "Expert"
+        }
+      ]
+    },
+    {
+      "hash": "133FCDCDE091041A5EEFA2E2753CFB6BEA25D82E",
+      "levelid": "custom_level_133FCDCDE091041A5EEFA2E2753CFB6BEA25D82E",
+      "songName": "Ravings",
+      "levelAuthorName": "Cush, Slayx",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
           "name": "ExpertPlus"
         }
       ]
