@@ -1,3 +1,14 @@
+Support this project on Ko-fi
+
+<a href="https://ko-fi.com/danielduel" target="_blank">
+  <img
+    height="36"
+    border="0"
+    src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
+    alt="Buy Me a Coffee at ko-fi.com"
+  />
+</a>
+
 # Tower of Tech
 
 This repository contains tech-related playlists and utilities used to manage them.
