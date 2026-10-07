@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/SonicHitech.png" height="200px" width="200px" /> | Complexity: Hard | Speed: Insane |
 | --------------------------------------------------------------------------- | ---------------- | ------------- |
 
-<img src="/migrated/covers/SonicHitech.png" height="200px" width="200px" />
-
-Complexity: Hard
-
-Speed: Insane
-
-Complexity: Hard
-Speed: Insane
+## Maps
 
 | Cover                                                                                                               | Song details                                                                | Suggested Difficulty                  | Request               |
 | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------- | --------------------- |

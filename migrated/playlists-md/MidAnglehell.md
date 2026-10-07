@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/MidAnglehell.png" height="200px" width="200px" /> | Complexity: Expert | Speed: Faster |
 | ---------------------------------------------------------------------------- | ------------------ | ------------- |
 
-<img src="/migrated/covers/MidAnglehell.png" height="200px" width="200px" />
-
-Complexity: Expert
-
-Speed: Faster
-
-Complexity: Expert
-Speed: Faster
+## Maps
 
 | Cover                                                                                                               | Song details                                                                             | Suggested Difficulty                  | Request                                 |
 | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------- |

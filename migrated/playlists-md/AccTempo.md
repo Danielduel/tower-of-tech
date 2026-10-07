@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/AccTempo.png" height="200px" width="200px" /> | Complexity: Insane | Speed: Average |
 | ------------------------------------------------------------------------ | ------------------ | -------------- |
 
-<img src="/migrated/covers/AccTempo.png" height="200px" width="200px" />
-
-Complexity: Insane
-
-Speed: Average
-
-Complexity: Insane
-Speed: Average
+## Maps
 
 | Cover                                                                                                               | Song details                                                                                                            | Suggested Difficulty                  | Request                                 |
 | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------- |

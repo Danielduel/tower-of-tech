@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/MidTempo.png" height="200px" width="200px" /> | Complexity: Insane | Speed: Faster |
 | ------------------------------------------------------------------------ | ------------------ | ------------- |
 
-<img src="/migrated/covers/MidTempo.png" height="200px" width="200px" />
-
-Complexity: Insane
-
-Speed: Faster
-
-Complexity: Insane
-Speed: Faster
+## Maps
 
 | Cover                                                                                                               | Song details                                                          | Suggested Difficulty                  | Request               |
 | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------- | --------------------- |

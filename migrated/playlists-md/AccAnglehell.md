@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/AccAnglehell.png" height="200px" width="200px" /> | Complexity: Expert | Speed: Average |
 | ---------------------------------------------------------------------------- | ------------------ | -------------- |
 
-<img src="/migrated/covers/AccAnglehell.png" height="200px" width="200px" />
-
-Complexity: Expert
-
-Speed: Average
-
-Complexity: Expert
-Speed: Average
+## Maps
 
 | Cover                                                                                                                   | Song details                                                                        | Suggested Difficulty                                                          | Request                                 |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------- |

@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/SonicComfy.png" height="200px" width="200px" /> | Complexity: Easy | Speed: Insane |
 | -------------------------------------------------------------------------- | ---------------- | ------------- |
 
-<img src="/migrated/covers/SonicComfy.png" height="200px" width="200px" />
-
-Complexity: Easy
-
-Speed: Insane
-
-Complexity: Easy
-Speed: Insane
+## Maps
 
 | Cover                                                                                                               | Song details                                                                    | Suggested Difficulty                  | Request                                 |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------- |

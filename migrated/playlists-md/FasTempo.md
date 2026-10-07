@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/FasTempo.png" height="200px" width="200px" /> | Complexity: Insane | Speed: Very fast |
 | ------------------------------------------------------------------------ | ------------------ | ---------------- |
 
-<img src="/migrated/covers/FasTempo.png" height="200px" width="200px" />
-
-Complexity: Insane
-
-Speed: Very fast
-
-Complexity: Insane
-Speed: Very fast
+## Maps
 
 | Cover                                                                                                               | Song details                                                  | Suggested Difficulty                  | Request               |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------- | --------------------- |

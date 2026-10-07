@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/MidHitech.png" height="200px" width="200px" /> | Complexity: Hard | Speed: Faster |
 | ------------------------------------------------------------------------- | ---------------- | ------------- |
 
-<img src="/migrated/covers/MidHitech.png" height="200px" width="200px" />
-
-Complexity: Hard
-
-Speed: Faster
-
-Complexity: Hard
-Speed: Faster
+## Maps
 
 | Cover                                                                                                               | Song details                                                                         | Suggested Difficulty                  | Request                                 |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------- | --------------------------------------- |

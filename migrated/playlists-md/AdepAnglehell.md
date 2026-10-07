@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/AdepAnglehell.png" height="200px" width="200px" /> | Complexity: Expert | Speed: Slower |
 | ----------------------------------------------------------------------------- | ------------------ | ------------- |
 
-<img src="/migrated/covers/AdepAnglehell.png" height="200px" width="200px" />
-
-Complexity: Expert
-
-Speed: Slower
-
-Complexity: Expert
-Speed: Slower
+## Maps
 
 | Cover                                                                                                               | Song details                                                                                       | Suggested Difficulty                  | Request                                 |
 | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------- |

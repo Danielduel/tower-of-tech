@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/FasAnglehell.png" height="200px" width="200px" /> | Complexity: Expert | Speed: Very fast |
 | ---------------------------------------------------------------------------- | ------------------ | ---------------- |
 
-<img src="/migrated/covers/FasAnglehell.png" height="200px" width="200px" />
-
-Complexity: Expert
-
-Speed: Very fast
-
-Complexity: Expert
-Speed: Very fast
+## Maps
 
 | Cover                                                                                                               | Song details                                                                           | Suggested Difficulty                  | Request               |
 | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------- | --------------------- |

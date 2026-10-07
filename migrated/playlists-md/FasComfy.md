@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/FasComfy.png" height="200px" width="200px" /> | Complexity: Easy | Speed: Very fast |
 | ------------------------------------------------------------------------ | ---------------- | ---------------- |
 
-<img src="/migrated/covers/FasComfy.png" height="200px" width="200px" />
-
-Complexity: Easy
-
-Speed: Very fast
-
-Complexity: Easy
-Speed: Very fast
+## Maps
 
 | Cover                                                                                                               | Song details                                                                            | Suggested Difficulty                  | Request                                 |
 | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------- |

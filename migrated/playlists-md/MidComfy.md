@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/MidComfy.png" height="200px" width="200px" /> | Complexity: Easy | Speed: Faster |
 | ------------------------------------------------------------------------ | ---------------- | ------------- |
 
-<img src="/migrated/covers/MidComfy.png" height="200px" width="200px" />
-
-Complexity: Easy
-
-Speed: Faster
-
-Complexity: Easy
-Speed: Faster
+## Maps
 
 | Cover                                                                                                               | Song details                                                                               | Suggested Difficulty                  | Request                                 |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------- | --------------------------------------- |

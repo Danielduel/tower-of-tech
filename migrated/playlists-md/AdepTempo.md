@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/AdepTempo.png" height="200px" width="200px" /> | Complexity: Insane | Speed: Slower |
 | ------------------------------------------------------------------------- | ------------------ | ------------- |
 
-<img src="/migrated/covers/AdepTempo.png" height="200px" width="200px" />
-
-Complexity: Insane
-
-Speed: Slower
-
-Complexity: Insane
-Speed: Slower
+## Maps
 
 | Cover                                                                                                               | Song details                                                                        | Suggested Difficulty                                                          | Request                                 |
 | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------- |

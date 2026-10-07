@@ -49,10 +49,7 @@ const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlis
   markdown
     .header(`${playlist.playlistTitle}`, 1)
     .table([[coverImg, complexity, speed]])
-    .paragraph(coverImg)
-    .paragraph(complexity)
-    .paragraph(speed)
-    .paragraph(`${complexity}\n${speed}`);
+    .header(`Maps`, 2)
 
 
   const tableHeader = [

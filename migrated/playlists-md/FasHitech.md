@@ -3,14 +3,7 @@
 | <img src="/migrated/covers/FasHitech.png" height="200px" width="200px" /> | Complexity: Hard | Speed: Very fast |
 | ------------------------------------------------------------------------- | ---------------- | ---------------- |
 
-<img src="/migrated/covers/FasHitech.png" height="200px" width="200px" />
-
-Complexity: Hard
-
-Speed: Very fast
-
-Complexity: Hard
-Speed: Very fast
+## Maps
 
 | Cover                                                                                                               | Song details                                                                          | Suggested Difficulty                  | Request                                 |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------- |
