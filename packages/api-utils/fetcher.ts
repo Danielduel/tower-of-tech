@@ -19,11 +19,11 @@ export const fetcher: Fetcher = (input, init) => {
       const response = await fetch(input, _init);
       if (response.status === 404) return response;
       if (!response.ok) {
-        console.log(input, init);
+        // console.log(input, init);
         try {
-          console.error("Fetch failed", response.status, response.statusText, await response.text());
+          // console.error("Fetch failed", response.status, response.statusText, await response.text());
         } catch (_) {
-          console.error("Fetch failed", response.status, response.statusText);
+          // console.error("Fetch failed", response.status, response.statusText);
         }
         throw "Retry";
       }

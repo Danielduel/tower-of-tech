@@ -25,7 +25,7 @@ A playlist name should contain prefix and "tech" suffix.
 - Speed prefix could be "Adep", "Acc", "Mid", "Fast" and "Sonic".
 - Tech suffix would be "Comfy", "Tech", "Hitech", "Anglehell" and "Tempo".
 
-Zip containing all playlists can be found [here](https://github.com/Danielduel/tower-of-tech/releases/download/0.0.29/ToT.zip)
+Zip containing all playlists can be found [here](https://github.com/Danielduel/tower-of-tech/releases/download/0.0.33/ToT.zip)
 
 |                                                                              | Name                | Pacing    | Complexity | Items |                                                                                                                                     |
 | ---------------------------------------------------------------------------- | ------------------- | --------- | ---------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------- |

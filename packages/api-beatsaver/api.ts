@@ -39,7 +39,7 @@ export const BeatSaverApi = client({
       }),
       actions: {
         get: {
-          dataSchema: BeatSaverMapResponseSuccessSchema,
+          dataSchema: BeatSaverMapResponseSuccessSchema.or(z.any()),
         },
       },
     }),

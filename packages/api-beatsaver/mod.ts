@@ -103,6 +103,22 @@ export const fetchHashes = async (hashArray: LowercaseMapHash[]) => {
   return response;
 };
 
+export const fetchScheduleHashes = async (hashArray: LowercaseMapHash[]) => {
+  let response = await fetchHashes(hashArray);
+  if ("id" in response) {
+    response = { [hashArray[0]]: response };
+  }
+
+  return {
+    ...response
+  };
+
+  try {
+    return { ...response } as const;
+  } catch (err) {
+    console.error(err);
+  }
+};
 export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
   const partiallyResolved = await Promise.all(
     fetchAndCacheHashesGetCache(hashArray),
@@ -248,3 +264,34 @@ export const fetchAndCacheFromResolvables = async (
     ...Object.values(resolved.fromIds ?? {}),
   ].filter(filterNulls);
 };
+
+export const fetchFromResolvablesRaw = async (
+  resolvables: BeatSaverResolvable[],
+) => {
+  const {
+    hashResolvables,
+  } = splitBeatSaverResolvables(resolvables);
+
+  const hashesArrayFromResolvables = hashResolvables.map((x) => x.data);
+
+  const hashesArray = [...hashesArrayFromResolvables];
+
+  const responseFromHashesP = fetchScheduleHashes(hashesArray);
+
+  return await responseFromHashesP as const;
+};
+
+export const fetchFromHashResolvables = async (
+  resolvables: BeatSaverResolvable[],
+): Promise<typeof BeatSaverMapResponseSuccessSchema._type[]> => {
+  const resolved = await fetchFromResolvablesRaw(resolvables);
+
+  console.log(resolved);
+
+  return [
+    ...Object.values<typeof BeatSaverMapResponseSuccessSchema._type>(resolved!),
+  ].filter(filterNulls);
+};
+
+
+
