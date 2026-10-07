@@ -12,193 +12,100 @@ Speed: Faster
 Complexity: Easy
 Speed: Faster
 
-| Cover                                                                                                               | Song details                                               | Suggested Difficulty  | Request                                 |
-| ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | --------------------- | --------------------------------------- |
-| <img src="https://cfcdn.beatsaver.com/bd7088546cae58a7fd7deb93962066f98fb04d66.jpg" height="100px" width="100px" /> | Electroheart
-mkWTF                                         | `Standard ExpertPlus` | `!bsr 2b229`                            |
-| <img src="https://cfcdn.beatsaver.com/181139bc3dc8bc6bfcfc2c7ce955b6af386d4234.jpg" height="100px" width="100px" /> | Savior
-Bytrius                                             | `Standard ExpertPlus` | `!bsr 1609e`                            |
-| <img src="https://cfcdn.beatsaver.com/06f78eceba759b2f3d7e639ad9406be0c4fc4488.jpg" height="100px" width="100px" /> | Kokou no Sousei
-EOP Glacier                                | `Standard ExpertPlus` | `!bsr 2c133`                            |
-| <img src="https://cfcdn.beatsaver.com/d476aa23ddb0e41cf5d0d0f6594a0cd6e4f54e79.jpg" height="100px" width="100px" /> | Chucky vs. The Giant Tortoise
-xSuicidalxPUPPY              | `Standard ExpertPlus` | `!bsr 28623`                            |
-| <img src="https://cfcdn.beatsaver.com/313eb30694c4cb33f764f2a1516224ddb62e50b3.jpg" height="100px" width="100px" /> | Kusaregedou to Chocolate
-Rigid                             | `Standard ExpertPlus` | `!bsr 2bd72`                            |
-| <img src="https://cfcdn.beatsaver.com/85d1885e8d0290965ac49fbe0ec1cd44ded758f5.jpg" height="100px" width="100px" /> | Labyrinth in Kowloon: Walled World
-Shark & ThySpoon        | `Standard Expert`     | `!bsr 1bf76`                            |
-| <img src="https://cfcdn.beatsaver.com/c19fd0820a1b2fa4cf167898b1878f085d7e2239.jpg" height="100px" width="100px" /> | Good L_ck (Yo_'re F_cked)
-Rexxz                            | `Standard ExpertPlus` | `!bsr 324af`                            |
-| <img src="https://cfcdn.beatsaver.com/6b5c9df083559c04c0bae7ce4ca87efa79cc7394.jpg" height="100px" width="100px" /> | Finorza
-Joshabi                                            | `Standard Expert`     | `!bsr 17fd4`                            |
-| <img src="https://cfcdn.beatsaver.com/9423d757aaf929556489ae7bf05e5649c7e8f05f.jpg" height="100px" width="100px" /> | Hot Right Now (Camo & Krooked Remix)
-Joetastic             | `Standard ExpertPlus` | `!bsr 29be9`                            |
-| <img src="https://cfcdn.beatsaver.com/b810280c7a6773c4c3fadc6616454c518eb0c91d.jpg" height="100px" width="100px" /> | Quaver♪
-alvecim                                            | `Standard ExpertPlus` | `!bsr 351cc`                            |
-| <img src="https://cfcdn.beatsaver.com/7a6359747f3ad8cfc1e7b65242356347e32e62d8.jpg" height="100px" width="100px" /> | World War Rave
-Avexus & Spinvvy                            | `Standard ExpertPlus` | `!bsr 34dc5`                            |
-| <img src="https://cfcdn.beatsaver.com/027afd26dc08fbc807627eb35ee644126a5b1ae7.jpg" height="100px" width="100px" /> | Seishun Complex
-Comyute                                    | `Standard ExpertPlus` | `!bsr 2d505`                            |
-| <img src="https://cfcdn.beatsaver.com/39cdf9a93bc50764183bd175190718c3a260bb00.jpg" height="100px" width="100px" /> | Space Invaders
-Dirty Alex                                  | `Standard ExpertPlus` | `!bsr 318da`                            |
-| <img src="https://cfcdn.beatsaver.com/4a2822a6be563e7e71f255a1c9d96230b4b8a8b6.jpg" height="100px" width="100px" /> | Luv U 4ll 0ver
-Spectral vs August                          | `Standard ExpertPlus` | `!bsr 34b0c`                            |
-| <img src="https://cfcdn.beatsaver.com/ac7054a2f0e419b45f202d5ffb497cb41ec2116c.jpg" height="100px" width="100px" /> | Sesh The Seven Seas VIP
-Bytrius & Phøenix                  | `Standard ExpertPlus` | `!bsr 376a6`                            |
-| <img src="https://cfcdn.beatsaver.com/19ac54a429c069fbe7175ae4737a6c48b303ac42.jpg" height="100px" width="100px" /> | Youkoso Japari Park E
-edgyguns                             | `Standard ExpertPlus` | `!bsr 335f8`                            |
-| <img src="https://cfcdn.beatsaver.com/5dc85185d1a5d867604d7ec6ef16410e9bff4fa4.jpg" height="100px" width="100px" /> | Spare your enamel, she needs it more than you.
-oermergeesh | `Standard ExpertPlus` | `!bsr 22303`                            |
-| <img src="https://cfcdn.beatsaver.com/fa41a12cfe48a86375dbb37b1e19ca0b35e6d3e7.jpg" height="100px" width="100px" /> | Dark Chest of Wonders
-Cyrix                                | `Standard ExpertPlus` | `!bsr 12ba7`                            |
-| <img src="https://cfcdn.beatsaver.com/ae40ff915dde0281b9165b6a1b33496a27a3762b.jpg" height="100px" width="100px" /> | Fur Elise
-Elecast                                          | `Standard ExpertPlus` | `!bsr 1da27`                            |
-| <img src="https://cfcdn.beatsaver.com/c6adddc6ea5af21e691d28a7d3abb6f825864116.jpg" height="100px" width="100px" /> | Arcana Eden
-yabje & Mr_bjo                                 | `Standard ExpertPlus` | `!bsr 34157`                            |
-| <img src="https://cfcdn.beatsaver.com/4a83ec2eaf1cec26ba816c48826b17aff1322045.jpg" height="100px" width="100px" /> | WONDER $LOT 777
-ThyYeet                                    | `Standard ExpertPlus` | `!bsr 1e2f9`                            |
-| <img src="https://cfcdn.beatsaver.com/4d8e8038a08c4099da912cb07a167482e05f217b.jpg" height="100px" width="100px" /> | Tenkaranbu
-himazinnnn                                      | `Standard ExpertPlus` | `!bsr 37b2d`                            |
-| <img src="https://cfcdn.beatsaver.com/282880fab621a513278a0380d17724e382d1373b.jpg" height="100px" width="100px" /> | Rise - Nightcore
-Monteblanco                               | `Standard ExpertPlus` | `!bsr 70bb`                             |
-| <img src="https://cfcdn.beatsaver.com/42316237f21f65b8569abba3289b320ad7c79e6e.jpg" height="100px" width="100px" /> | JACK PT BOSS
-yabje & wangyufy                              | `Standard ExpertPlus` | `!bsr 383e3`                            |
-| <img src="https://cfcdn.beatsaver.com/5d007603c96525106296319a903bfc24f5a4ffe9.jpg" height="100px" width="100px" /> | Unwelcome School
-Team KomeGumi                             | `Standard ExpertPlus` | `!bsr 38704`                            |
-| <img src="https://cfcdn.beatsaver.com/4e893525ad534b8308658589defbb4dce05548ed.jpg" height="100px" width="100px" /> | I Wanna Be A Girl
-Ken_Monogatari                           | `Standard ExpertPlus` | `!bsr 38708`                            |
-| <img src="https://cfcdn.beatsaver.com/3f9fc40da181ed1adbd7bff06e21d891d8a6bfb2.jpg" height="100px" width="100px" /> | Shelter
-muffn & SpiritusNoctis                             | `Standard ExpertPlus` | `!bsr bd1d`                             |
-| <img src="https://cfcdn.beatsaver.com/768fadbb23982e0ac4230a4b4c2b89d262027f68.jpg" height="100px" width="100px" /> | Oshama Scramble!
-Gabriel                                   | `Standard ExpertPlus` | `!bsr 2cc22`                            |
-| <img src="https://cfcdn.beatsaver.com/3dd911fbe1f36f349faf212464c63512065195b3.jpg" height="100px" width="100px" /> | Breathin'
-oegoe & Taddus                                   | `Standard ExpertPlus` | `!bsr 2e1d1`                            |
-| <img src="https://cfcdn.beatsaver.com/d89cb4b60bf3b5f846ac3e4cd1e68f151d04b5a5.jpg" height="100px" width="100px" /> | Watch The World Burn
-realCoda & JRE_McNuggies              | `Standard Expert`     | `!bsr 2f7cc`                            |
-| <img src="https://cfcdn.beatsaver.com/b297ee62f44512ee4740e451c988473f76e39fc2.jpg" height="100px" width="100px" /> | Immortal Flame
-Jevk                                        | `Standard ExpertPlus` | `!bsr 281c5`                            |
-| <img src="https://cfcdn.beatsaver.com/e9280d0247f396d851b15fb9d44e55041bf8911c.jpg" height="100px" width="100px" /> | Mama Said Knock You Out
-MidoTheGinger                      | `Standard ExpertPlus` | `!bsr 39309`                            |
-| <img src="https://cfcdn.beatsaver.com/51596291c7ab9d0eeaff3a69b2baa2e296e1685e.jpg" height="100px" width="100px" /> | Plain Jane
-Artjoms                                         | `Standard ExpertPlus` | `!bsr 1498e`                            |
-| <img src="https://cfcdn.beatsaver.com/65244acc2ed92f3fc4c4e360bce9f8497c78bfbb.jpg" height="100px" width="100px" /> | Again
-Danrabomb                                            | `Standard ExpertPlus` | `!bsr 25890`                            |
-| <img src="https://cfcdn.beatsaver.com/a949bb798e16a81092e54a38b78eb1375f06e49f.jpg" height="100px" width="100px" /> | Kingslayer
-muffn & altrewin                                | `Standard ExpertPlus` | `!bsr 14427`                            |
-| <img src="https://cfcdn.beatsaver.com/8635a2b132de8a92c76f385be4551a505ea0c6df.jpg" height="100px" width="100px" /> | Start Again
-Kassi                                          | `Standard ExpertPlus` | `!bsr 36a14`                            |
-| <img src="https://cfcdn.beatsaver.com/f9e9ff3dc9a28e7606af0c6747de6b6878f55618.jpg" height="100px" width="100px" /> | Drenched in Air
-Darkrealm7                                 | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
-| <img src="https://cfcdn.beatsaver.com/4e13a0a5d6e2356de78d2c002dcf55555e35e918.jpg" height="100px" width="100px" /> | Burn (Haocore Remix)
-AaltopahWi                            | `Lawless ExpertPlus`  | `!bsr 1d28b`                            |
-| <img src="https://cfcdn.beatsaver.com/60d99f4853aca0601b2ba44deda3a708fc313c64.jpg" height="100px" width="100px" /> | First Rate Town
-RFColaf                                    | `Standard ExpertPlus` | `!bsr 2eae9`                            |
-| <img src="https://cfcdn.beatsaver.com/7c6d1ded8ce277ad0bff7d2c841e7c3501c02407.jpg" height="100px" width="100px" /> | Birdsong
-1100ping_boi                                      | `Standard Expert`     | Song is missing/reuploaded on BeatSaver |
-| <img src="https://cfcdn.beatsaver.com/424a7c1f4034ad716d54acec2bb62de76c878831.jpg" height="100px" width="100px" /> | Hi-TECHOLIC
-Feco                                           | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
-| <img src="https://cfcdn.beatsaver.com/a5acb2d4b2e5ac355c2d04938dc53cad0a203cec.jpg" height="100px" width="100px" /> | Clattanoia
-Joshabi                                         | `Standard ExpertPlus` | `!bsr 2b21d`                            |
-| <img src="https://cfcdn.beatsaver.com/3692f278fda8ab37ba2bb3aea00bc187f0586a3c.jpg" height="100px" width="100px" /> | Full Moon Full Life
-eurnkung                               | `Standard ExpertPlus` | `!bsr 3b870`                            |
-| <img src="https://cfcdn.beatsaver.com/5b12dab5d3baae3a2be3732fa4fa7a48871f3a11.jpg" height="100px" width="100px" /> | Red Sun
-eurnkung                                           | `Standard ExpertPlus` | `!bsr 3b936`                            |
-| <img src="https://cfcdn.beatsaver.com/a082256704086cb85659afa869c2f991d101bc34.jpg" height="100px" width="100px" /> | Dancing on the Street
-StevenBTW                            | `Standard ExpertPlus` | `!bsr 39f38`                            |
-| <img src="https://cfcdn.beatsaver.com/01bfdccbcd2ad8b0091f7f7757857ebc120c4f4a.jpg" height="100px" width="100px" /> | The Witch Hunt
-Komeijisan051                               | `Standard Hard`       | `!bsr 36df4`                            |
-| <img src="https://cfcdn.beatsaver.com/9e87e9cc1ea37cfdc0a7afe0b4ddf9bec6798515.jpg" height="100px" width="100px" /> | The World Calling
-Jaack & RFCaps                           | `Standard Expert`     | `!bsr 1c6c1`                            |
-| <img src="https://cfcdn.beatsaver.com/48c302770659065d1c6c91bd5de0e25e50e18ef8.jpg" height="100px" width="100px" /> | AIAIAI
-Jevk                                                | `Standard ExpertPlus` | `!bsr 1a778`                            |
-| <img src="https://cfcdn.beatsaver.com/e6de7bf3b57865025027a05d43716e3237d074ef.jpg" height="100px" width="100px" /> | TAKE
-nitronik.exe                                          | `Standard ExpertPlus` | `!bsr 1a1da`                            |
-| <img src="https://cfcdn.beatsaver.com/057b0694f66a35a956c8c4106e99e2b8a148e74c.jpg" height="100px" width="100px" /> | Future Dash
-Petersome                                      | `Standard ExpertPlus` | `!bsr 379e9`                            |
-| <img src="https://cfcdn.beatsaver.com/acb8443a8cdb20b9f74cbcae977fbd3924737786.jpg" height="100px" width="100px" /> | Möbius
-Timbo, abcbadq, Narwhal                             | `Standard Normal`     | `!bsr 2a2ef`                            |
-| <img src="https://cfcdn.beatsaver.com/c40b741f0f9dd76a919f0dc128de41bfadd2495d.jpg" height="100px" width="100px" /> | Shiny Happy Days
-Bitz                                      | `Standard ExpertPlus` | `!bsr 1c414`                            |
-| <img src="https://cfcdn.beatsaver.com/94ed9a695b8efc06a6900310060df1fd86662362.jpg" height="100px" width="100px" /> | Bloodlust
-Cute_Ocelot                                      | `Standard ExpertPlus` | `!bsr 1895e`                            |
-| <img src="https://cfcdn.beatsaver.com/fd5a4b515c4664a9af6fbe07e3e351956a836335.jpg" height="100px" width="100px" /> | Evil People
-BanditByTheStreet                              | `Standard ExpertPlus` | `!bsr 36bd6`                            |
-| <img src="https://cfcdn.beatsaver.com/52570cf0e132c46ec33156507dd703a02b817510.jpg" height="100px" width="100px" /> | Fallen Symphony
-abcbadq & Alice                            | `Standard Expert`     | `!bsr 1a209`                            |
-| <img src="https://cfcdn.beatsaver.com/5d68c49fe9fe43a2b409144538621027b0d31a71.jpg" height="100px" width="100px" /> | Overkill
-phoenixtvspeedcuber                               | `Standard ExpertPlus` | `!bsr 3d282`                            |
-| <img src="https://cfcdn.beatsaver.com/b3574125c2c8d6e187d4b7c5d59b5bb625fd2217.jpg" height="100px" width="100px" /> | Myths You Forgot
-nolan121405                               | `Standard ExpertPlus` | `!bsr 1a322`                            |
-| <img src="https://cfcdn.beatsaver.com/4e1d9d01f61aab7be56a91830b018782a3d78944.jpg" height="100px" width="100px" /> | Alice Doll
-edgii                                           | `Standard ExpertPlus` | `!bsr 2401d`                            |
-| <img src="https://cfcdn.beatsaver.com/d5c239ec62143add0053857b78165fd6e4b387f3.jpg" height="100px" width="100px" /> | Chirality
-That_Narwhal                                     | `Standard Expert`     | `!bsr 12151`                            |
-| <img src="https://cfcdn.beatsaver.com/559838a24d38bcfef625b95aeb0ecf8b1dc8e888.jpg" height="100px" width="100px" /> | SHE IS HYPERACTIVE
-voltage4536                             | `Standard ExpertPlus` | `!bsr 2d72d`                            |
-| <img src="https://cfcdn.beatsaver.com/fecf9ee8b30c27454ddfe9c884b27156e06797c6.jpg" height="100px" width="100px" /> | My First Time Dying
-Checkthepan                            | `Standard ExpertPlus` | `!bsr 16ba4`                            |
-| <img src="https://cfcdn.beatsaver.com/9a1c81a3d319a75b98641baa08e5a98f6f916ab0.jpg" height="100px" width="100px" /> | Study X Study (2023 Remaster)
-Joetastic & AlphaMan         | `Standard Expert`     | `!bsr 33d88`                            |
-| <img src="https://cfcdn.beatsaver.com/9e2ad4f9eab8e28f17314b1b4c2c543a374de266.jpg" height="100px" width="100px" /> | malo tebya
-Tenshi                                          | `Standard ExpertPlus` | `!bsr 2ff4a`                            |
-| <img src="https://cfcdn.beatsaver.com/0158da11ca63c73a022eab8796b69471579ce4e6.jpg" height="100px" width="100px" /> | They Shall Not Pass
-Qwasyx                                 | `Standard ExpertPlus` | `!bsr c672`                             |
-| <img src="https://cfcdn.beatsaver.com/9fcee83fb7501bc72131674731b3fe6209da814e.jpg" height="100px" width="100px" /> | Drop That
-Elecast                                          | `Standard ExpertPlus` | `!bsr 1ff75`                            |
-| <img src="https://cfcdn.beatsaver.com/326d0cb6c3df3869099e867346120cbca5fad213.jpg" height="100px" width="100px" /> | reeeplaaaay
-oermergeesh                                    | `Standard ExpertPlus` | `!bsr 406db`                            |
-| <img src="https://cfcdn.beatsaver.com/79b9936995e4530ca22e3a53dc52daf69894fd65.jpg" height="100px" width="100px" /> | U.N. Owen Was Her?
-I Cant Jump Well                        | `Standard ExpertPlus` | `!bsr 2298e`                            |
-| <img src="https://cfcdn.beatsaver.com/2d8e5f1cd629b4afe52c592eb690dcd047299dac.jpg" height="100px" width="100px" /> | MONSTER
-nitronik.exe                                       | `Standard ExpertPlus` | `!bsr 3fb68`                            |
-| <img src="https://cfcdn.beatsaver.com/e282519f24bc47ea3bd292f17f3d3ad79153c4c6.jpg" height="100px" width="100px" /> | Black Rover
-JadenDaSweat2 & Glasso050                      | `Standard Expert`     | `!bsr 40c49`                            |
-| <img src="https://cfcdn.beatsaver.com/1b66d66585e5259db0cd8427ea044fc5191f1e7f.jpg" height="100px" width="100px" /> | Powersound
-Gibro                                           | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
-| <img src="https://cfcdn.beatsaver.com/3dbb6429a2573a15e278387638df6dffb2fdba8e.jpg" height="100px" width="100px" /> | Traxxendenza
-Komeijisan051                                 | `Standard Hard`       | `!bsr 41b39`                            |
-| <img src="https://cfcdn.beatsaver.com/40d45cabf6281004a071710239fd136491f5ecaa.jpg" height="100px" width="100px" /> | Nyan Nyan Dive
-Dr_Marc                                     | `Standard Expert`     | `!bsr 3aeb2`                            |
-| <img src="https://cfcdn.beatsaver.com/f03302a9a3a456cdd96ce5a0fb12cac9af3a8ca1.jpg" height="100px" width="100px" /> | Bismuth
-Azurii                                             | `Standard Normal`     | `!bsr 31e31`                            |
-| <img src="https://cfcdn.beatsaver.com/b336c062839e9be903a3fda771d6e6d30c0439d7.jpg" height="100px" width="100px" /> | Hyoufuu Issen
-ViSi                                         | `Standard Easy`       | Song is missing/reuploaded on BeatSaver |
-| <img src="https://cfcdn.beatsaver.com/2dac7da7a36da30ac1198ad640a36de7db589016.jpg" height="100px" width="100px" /> | I can't sing a love song
-Comyute                           | `Standard ExpertPlus` | `!bsr 2f48f`                            |
-| <img src="https://cfcdn.beatsaver.com/b5d77f9c6a95f998bf3d323f7f427411ac30aa02.jpg" height="100px" width="100px" /> | Profession
-Verlexin                                        | `Standard ExpertPlus` | `!bsr 43db8`                            |
-| <img src="https://cfcdn.beatsaver.com/2f10d53d0a96c57180db620e3ed248ba581a58ea.jpg" height="100px" width="100px" /> | BPM
-Yasu                                                   | `Standard Hard`       | `!bsr 2a419`                            |
-| <img src="https://cfcdn.beatsaver.com/af9fb77ea883342b3ff2a2827210e34bcf9a6f67.jpg" height="100px" width="100px" /> | Existentia
-General Dumbass                                 | `Standard ExpertPlus` | `!bsr 26503`                            |
-| <img src="https://cfcdn.beatsaver.com/017c1793a5ef0e075ca8808c3d5e01488c4cc65a.jpg" height="100px" width="100px" /> | ヘヴンリィ
-Hanari                                               | `Standard ExpertPlus` | `!bsr 49df4`                            |
-| <img src="https://cfcdn.beatsaver.com/7369a0c65edef33f7a5d4771f929c2681a58f657.jpg" height="100px" width="100px" /> | Lay Down
-Uncouth                                           | `Standard ExpertPlus` | `!bsr 46e4f`                            |
-| <img src="https://cfcdn.beatsaver.com/7c9e0a7c523395c7ef9d79006b9d42dc6ab8b44a.jpg" height="100px" width="100px" /> | Gleodream
-ViSi, SL4SH                                      | `Standard Normal`     | `!bsr 3aa79`                            |
-| <img src="https://cfcdn.beatsaver.com/ef37f44fa454eea4647c6e4ce5367c7da11946a2.jpg" height="100px" width="100px" /> | Always In A Nightmare
-BsNico                               | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
+| Cover                                                                                                               | Song details                                                | Suggested Difficulty  | Request                                 |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | --------------------- | --------------------------------------- |
+| <img src="https://cfcdn.beatsaver.com/bd7088546cae58a7fd7deb93962066f98fb04d66.jpg" height="100px" width="100px" /> | Electroheart\nmkWTF                                         | `Standard ExpertPlus` | `!bsr 2b229`                            |
+| <img src="https://cfcdn.beatsaver.com/181139bc3dc8bc6bfcfc2c7ce955b6af386d4234.jpg" height="100px" width="100px" /> | Savior\nBytrius                                             | `Standard ExpertPlus` | `!bsr 1609e`                            |
+| <img src="https://cfcdn.beatsaver.com/06f78eceba759b2f3d7e639ad9406be0c4fc4488.jpg" height="100px" width="100px" /> | Kokou no Sousei\nEOP Glacier                                | `Standard ExpertPlus` | `!bsr 2c133`                            |
+| <img src="https://cfcdn.beatsaver.com/d476aa23ddb0e41cf5d0d0f6594a0cd6e4f54e79.jpg" height="100px" width="100px" /> | Chucky vs. The Giant Tortoise\nxSuicidalxPUPPY              | `Standard ExpertPlus` | `!bsr 28623`                            |
+| <img src="https://cfcdn.beatsaver.com/313eb30694c4cb33f764f2a1516224ddb62e50b3.jpg" height="100px" width="100px" /> | Kusaregedou to Chocolate\nRigid                             | `Standard ExpertPlus` | `!bsr 2bd72`                            |
+| <img src="https://cfcdn.beatsaver.com/85d1885e8d0290965ac49fbe0ec1cd44ded758f5.jpg" height="100px" width="100px" /> | Labyrinth in Kowloon: Walled World\nShark & ThySpoon        | `Standard Expert`     | `!bsr 1bf76`                            |
+| <img src="https://cfcdn.beatsaver.com/c19fd0820a1b2fa4cf167898b1878f085d7e2239.jpg" height="100px" width="100px" /> | Good L_ck (Yo_'re F_cked)\nRexxz                            | `Standard ExpertPlus` | `!bsr 324af`                            |
+| <img src="https://cfcdn.beatsaver.com/6b5c9df083559c04c0bae7ce4ca87efa79cc7394.jpg" height="100px" width="100px" /> | Finorza\nJoshabi                                            | `Standard Expert`     | `!bsr 17fd4`                            |
+| <img src="https://cfcdn.beatsaver.com/9423d757aaf929556489ae7bf05e5649c7e8f05f.jpg" height="100px" width="100px" /> | Hot Right Now (Camo & Krooked Remix)\nJoetastic             | `Standard ExpertPlus` | `!bsr 29be9`                            |
+| <img src="https://cfcdn.beatsaver.com/b810280c7a6773c4c3fadc6616454c518eb0c91d.jpg" height="100px" width="100px" /> | Quaver♪\nalvecim                                            | `Standard ExpertPlus` | `!bsr 351cc`                            |
+| <img src="https://cfcdn.beatsaver.com/7a6359747f3ad8cfc1e7b65242356347e32e62d8.jpg" height="100px" width="100px" /> | World War Rave\nAvexus & Spinvvy                            | `Standard ExpertPlus` | `!bsr 34dc5`                            |
+| <img src="https://cfcdn.beatsaver.com/027afd26dc08fbc807627eb35ee644126a5b1ae7.jpg" height="100px" width="100px" /> | Seishun Complex\nComyute                                    | `Standard ExpertPlus` | `!bsr 2d505`                            |
+| <img src="https://cfcdn.beatsaver.com/39cdf9a93bc50764183bd175190718c3a260bb00.jpg" height="100px" width="100px" /> | Space Invaders\nDirty Alex                                  | `Standard ExpertPlus` | `!bsr 318da`                            |
+| <img src="https://cfcdn.beatsaver.com/4a2822a6be563e7e71f255a1c9d96230b4b8a8b6.jpg" height="100px" width="100px" /> | Luv U 4ll 0ver\nSpectral vs August                          | `Standard ExpertPlus` | `!bsr 34b0c`                            |
+| <img src="https://cfcdn.beatsaver.com/ac7054a2f0e419b45f202d5ffb497cb41ec2116c.jpg" height="100px" width="100px" /> | Sesh The Seven Seas VIP\nBytrius & Phøenix                  | `Standard ExpertPlus` | `!bsr 376a6`                            |
+| <img src="https://cfcdn.beatsaver.com/19ac54a429c069fbe7175ae4737a6c48b303ac42.jpg" height="100px" width="100px" /> | Youkoso Japari Park E\nedgyguns                             | `Standard ExpertPlus` | `!bsr 335f8`                            |
+| <img src="https://cfcdn.beatsaver.com/5dc85185d1a5d867604d7ec6ef16410e9bff4fa4.jpg" height="100px" width="100px" /> | Spare your enamel, she needs it more than you.\noermergeesh | `Standard ExpertPlus` | `!bsr 22303`                            |
+| <img src="https://cfcdn.beatsaver.com/fa41a12cfe48a86375dbb37b1e19ca0b35e6d3e7.jpg" height="100px" width="100px" /> | Dark Chest of Wonders\nCyrix                                | `Standard ExpertPlus` | `!bsr 12ba7`                            |
+| <img src="https://cfcdn.beatsaver.com/ae40ff915dde0281b9165b6a1b33496a27a3762b.jpg" height="100px" width="100px" /> | Fur Elise\nElecast                                          | `Standard ExpertPlus` | `!bsr 1da27`                            |
+| <img src="https://cfcdn.beatsaver.com/c6adddc6ea5af21e691d28a7d3abb6f825864116.jpg" height="100px" width="100px" /> | Arcana Eden\nyabje & Mr_bjo                                 | `Standard ExpertPlus` | `!bsr 34157`                            |
+| <img src="https://cfcdn.beatsaver.com/4a83ec2eaf1cec26ba816c48826b17aff1322045.jpg" height="100px" width="100px" /> | WONDER $LOT 777\nThyYeet                                    | `Standard ExpertPlus` | `!bsr 1e2f9`                            |
+| <img src="https://cfcdn.beatsaver.com/4d8e8038a08c4099da912cb07a167482e05f217b.jpg" height="100px" width="100px" /> | Tenkaranbu\nhimazinnnn                                      | `Standard ExpertPlus` | `!bsr 37b2d`                            |
+| <img src="https://cfcdn.beatsaver.com/282880fab621a513278a0380d17724e382d1373b.jpg" height="100px" width="100px" /> | Rise - Nightcore\nMonteblanco                               | `Standard ExpertPlus` | `!bsr 70bb`                             |
+| <img src="https://cfcdn.beatsaver.com/42316237f21f65b8569abba3289b320ad7c79e6e.jpg" height="100px" width="100px" /> | JACK PT BOSS\nyabje & wangyufy                              | `Standard ExpertPlus` | `!bsr 383e3`                            |
+| <img src="https://cfcdn.beatsaver.com/5d007603c96525106296319a903bfc24f5a4ffe9.jpg" height="100px" width="100px" /> | Unwelcome School\nTeam KomeGumi                             | `Standard ExpertPlus` | `!bsr 38704`                            |
+| <img src="https://cfcdn.beatsaver.com/4e893525ad534b8308658589defbb4dce05548ed.jpg" height="100px" width="100px" /> | I Wanna Be A Girl\nKen_Monogatari                           | `Standard ExpertPlus` | `!bsr 38708`                            |
+| <img src="https://cfcdn.beatsaver.com/3f9fc40da181ed1adbd7bff06e21d891d8a6bfb2.jpg" height="100px" width="100px" /> | Shelter\nmuffn & SpiritusNoctis                             | `Standard ExpertPlus` | `!bsr bd1d`                             |
+| <img src="https://cfcdn.beatsaver.com/768fadbb23982e0ac4230a4b4c2b89d262027f68.jpg" height="100px" width="100px" /> | Oshama Scramble!\nGabriel                                   | `Standard ExpertPlus` | `!bsr 2cc22`                            |
+| <img src="https://cfcdn.beatsaver.com/3dd911fbe1f36f349faf212464c63512065195b3.jpg" height="100px" width="100px" /> | Breathin'\noegoe & Taddus                                   | `Standard ExpertPlus` | `!bsr 2e1d1`                            |
+| <img src="https://cfcdn.beatsaver.com/d89cb4b60bf3b5f846ac3e4cd1e68f151d04b5a5.jpg" height="100px" width="100px" /> | Watch The World Burn\nrealCoda & JRE_McNuggies              | `Standard Expert`     | `!bsr 2f7cc`                            |
+| <img src="https://cfcdn.beatsaver.com/b297ee62f44512ee4740e451c988473f76e39fc2.jpg" height="100px" width="100px" /> | Immortal Flame\nJevk                                        | `Standard ExpertPlus` | `!bsr 281c5`                            |
+| <img src="https://cfcdn.beatsaver.com/e9280d0247f396d851b15fb9d44e55041bf8911c.jpg" height="100px" width="100px" /> | Mama Said Knock You Out\nMidoTheGinger                      | `Standard ExpertPlus` | `!bsr 39309`                            |
+| <img src="https://cfcdn.beatsaver.com/51596291c7ab9d0eeaff3a69b2baa2e296e1685e.jpg" height="100px" width="100px" /> | Plain Jane\nArtjoms                                         | `Standard ExpertPlus` | `!bsr 1498e`                            |
+| <img src="https://cfcdn.beatsaver.com/65244acc2ed92f3fc4c4e360bce9f8497c78bfbb.jpg" height="100px" width="100px" /> | Again\nDanrabomb                                            | `Standard ExpertPlus` | `!bsr 25890`                            |
+| <img src="https://cfcdn.beatsaver.com/a949bb798e16a81092e54a38b78eb1375f06e49f.jpg" height="100px" width="100px" /> | Kingslayer\nmuffn & altrewin                                | `Standard ExpertPlus` | `!bsr 14427`                            |
+| <img src="https://cfcdn.beatsaver.com/8635a2b132de8a92c76f385be4551a505ea0c6df.jpg" height="100px" width="100px" /> | Start Again\nKassi                                          | `Standard ExpertPlus` | `!bsr 36a14`                            |
+| <img src="https://cfcdn.beatsaver.com/f9e9ff3dc9a28e7606af0c6747de6b6878f55618.jpg" height="100px" width="100px" /> | Drenched in Air\nDarkrealm7                                 | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
+| <img src="https://cfcdn.beatsaver.com/4e13a0a5d6e2356de78d2c002dcf55555e35e918.jpg" height="100px" width="100px" /> | Burn (Haocore Remix)\nAaltopahWi                            | `Lawless ExpertPlus`  | `!bsr 1d28b`                            |
+| <img src="https://cfcdn.beatsaver.com/60d99f4853aca0601b2ba44deda3a708fc313c64.jpg" height="100px" width="100px" /> | First Rate Town\nRFColaf                                    | `Standard ExpertPlus` | `!bsr 2eae9`                            |
+| <img src="https://cfcdn.beatsaver.com/7c6d1ded8ce277ad0bff7d2c841e7c3501c02407.jpg" height="100px" width="100px" /> | Birdsong\n1100ping_boi                                      | `Standard Expert`     | Song is missing/reuploaded on BeatSaver |
+| <img src="https://cfcdn.beatsaver.com/424a7c1f4034ad716d54acec2bb62de76c878831.jpg" height="100px" width="100px" /> | Hi-TECHOLIC\nFeco                                           | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
+| <img src="https://cfcdn.beatsaver.com/a5acb2d4b2e5ac355c2d04938dc53cad0a203cec.jpg" height="100px" width="100px" /> | Clattanoia\nJoshabi                                         | `Standard ExpertPlus` | `!bsr 2b21d`                            |
+| <img src="https://cfcdn.beatsaver.com/3692f278fda8ab37ba2bb3aea00bc187f0586a3c.jpg" height="100px" width="100px" /> | Full Moon Full Life\neurnkung                               | `Standard ExpertPlus` | `!bsr 3b870`                            |
+| <img src="https://cfcdn.beatsaver.com/5b12dab5d3baae3a2be3732fa4fa7a48871f3a11.jpg" height="100px" width="100px" /> | Red Sun\neurnkung                                           | `Standard ExpertPlus` | `!bsr 3b936`                            |
+| <img src="https://cfcdn.beatsaver.com/a082256704086cb85659afa869c2f991d101bc34.jpg" height="100px" width="100px" /> | Dancing on the Street\nStevenBTW                            | `Standard ExpertPlus` | `!bsr 39f38`                            |
+| <img src="https://cfcdn.beatsaver.com/01bfdccbcd2ad8b0091f7f7757857ebc120c4f4a.jpg" height="100px" width="100px" /> | The Witch Hunt\nKomeijisan051                               | `Standard Hard`       | `!bsr 36df4`                            |
+| <img src="https://cfcdn.beatsaver.com/9e87e9cc1ea37cfdc0a7afe0b4ddf9bec6798515.jpg" height="100px" width="100px" /> | The World Calling\nJaack & RFCaps                           | `Standard Expert`     | `!bsr 1c6c1`                            |
+| <img src="https://cfcdn.beatsaver.com/48c302770659065d1c6c91bd5de0e25e50e18ef8.jpg" height="100px" width="100px" /> | AIAIAI\nJevk                                                | `Standard ExpertPlus` | `!bsr 1a778`                            |
+| <img src="https://cfcdn.beatsaver.com/e6de7bf3b57865025027a05d43716e3237d074ef.jpg" height="100px" width="100px" /> | TAKE\nnitronik.exe                                          | `Standard ExpertPlus` | `!bsr 1a1da`                            |
+| <img src="https://cfcdn.beatsaver.com/057b0694f66a35a956c8c4106e99e2b8a148e74c.jpg" height="100px" width="100px" /> | Future Dash\nPetersome                                      | `Standard ExpertPlus` | `!bsr 379e9`                            |
+| <img src="https://cfcdn.beatsaver.com/acb8443a8cdb20b9f74cbcae977fbd3924737786.jpg" height="100px" width="100px" /> | Möbius\nTimbo, abcbadq, Narwhal                             | `Standard Normal`     | `!bsr 2a2ef`                            |
+| <img src="https://cfcdn.beatsaver.com/c40b741f0f9dd76a919f0dc128de41bfadd2495d.jpg" height="100px" width="100px" /> | Shiny Happy Days\nBitz                                      | `Standard ExpertPlus` | `!bsr 1c414`                            |
+| <img src="https://cfcdn.beatsaver.com/94ed9a695b8efc06a6900310060df1fd86662362.jpg" height="100px" width="100px" /> | Bloodlust\nCute_Ocelot                                      | `Standard ExpertPlus` | `!bsr 1895e`                            |
+| <img src="https://cfcdn.beatsaver.com/fd5a4b515c4664a9af6fbe07e3e351956a836335.jpg" height="100px" width="100px" /> | Evil People\nBanditByTheStreet                              | `Standard ExpertPlus` | `!bsr 36bd6`                            |
+| <img src="https://cfcdn.beatsaver.com/52570cf0e132c46ec33156507dd703a02b817510.jpg" height="100px" width="100px" /> | Fallen Symphony\nabcbadq & Alice                            | `Standard Expert`     | `!bsr 1a209`                            |
+| <img src="https://cfcdn.beatsaver.com/5d68c49fe9fe43a2b409144538621027b0d31a71.jpg" height="100px" width="100px" /> | Overkill\nphoenixtvspeedcuber                               | `Standard ExpertPlus` | `!bsr 3d282`                            |
+| <img src="https://cfcdn.beatsaver.com/b3574125c2c8d6e187d4b7c5d59b5bb625fd2217.jpg" height="100px" width="100px" /> | Myths You Forgot\nnolan121405                               | `Standard ExpertPlus` | `!bsr 1a322`                            |
+| <img src="https://cfcdn.beatsaver.com/4e1d9d01f61aab7be56a91830b018782a3d78944.jpg" height="100px" width="100px" /> | Alice Doll\nedgii                                           | `Standard ExpertPlus` | `!bsr 2401d`                            |
+| <img src="https://cfcdn.beatsaver.com/d5c239ec62143add0053857b78165fd6e4b387f3.jpg" height="100px" width="100px" /> | Chirality\nThat_Narwhal                                     | `Standard Expert`     | `!bsr 12151`                            |
+| <img src="https://cfcdn.beatsaver.com/559838a24d38bcfef625b95aeb0ecf8b1dc8e888.jpg" height="100px" width="100px" /> | SHE IS HYPERACTIVE\nvoltage4536                             | `Standard ExpertPlus` | `!bsr 2d72d`                            |
+| <img src="https://cfcdn.beatsaver.com/fecf9ee8b30c27454ddfe9c884b27156e06797c6.jpg" height="100px" width="100px" /> | My First Time Dying\nCheckthepan                            | `Standard ExpertPlus` | `!bsr 16ba4`                            |
+| <img src="https://cfcdn.beatsaver.com/9a1c81a3d319a75b98641baa08e5a98f6f916ab0.jpg" height="100px" width="100px" /> | Study X Study (2023 Remaster)\nJoetastic & AlphaMan         | `Standard Expert`     | `!bsr 33d88`                            |
+| <img src="https://cfcdn.beatsaver.com/9e2ad4f9eab8e28f17314b1b4c2c543a374de266.jpg" height="100px" width="100px" /> | malo tebya\nTenshi                                          | `Standard ExpertPlus` | `!bsr 2ff4a`                            |
+| <img src="https://cfcdn.beatsaver.com/0158da11ca63c73a022eab8796b69471579ce4e6.jpg" height="100px" width="100px" /> | They Shall Not Pass\nQwasyx                                 | `Standard ExpertPlus` | `!bsr c672`                             |
+| <img src="https://cfcdn.beatsaver.com/9fcee83fb7501bc72131674731b3fe6209da814e.jpg" height="100px" width="100px" /> | Drop That\nElecast                                          | `Standard ExpertPlus` | `!bsr 1ff75`                            |
+| <img src="https://cfcdn.beatsaver.com/326d0cb6c3df3869099e867346120cbca5fad213.jpg" height="100px" width="100px" /> | reeeplaaaay\noermergeesh                                    | `Standard ExpertPlus` | `!bsr 406db`                            |
+| <img src="https://cfcdn.beatsaver.com/79b9936995e4530ca22e3a53dc52daf69894fd65.jpg" height="100px" width="100px" /> | U.N. Owen Was Her?\nI Cant Jump Well                        | `Standard ExpertPlus` | `!bsr 2298e`                            |
+| <img src="https://cfcdn.beatsaver.com/2d8e5f1cd629b4afe52c592eb690dcd047299dac.jpg" height="100px" width="100px" /> | MONSTER\nnitronik.exe                                       | `Standard ExpertPlus` | `!bsr 3fb68`                            |
+| <img src="https://cfcdn.beatsaver.com/e282519f24bc47ea3bd292f17f3d3ad79153c4c6.jpg" height="100px" width="100px" /> | Black Rover\nJadenDaSweat2 & Glasso050                      | `Standard Expert`     | `!bsr 40c49`                            |
+| <img src="https://cfcdn.beatsaver.com/1b66d66585e5259db0cd8427ea044fc5191f1e7f.jpg" height="100px" width="100px" /> | Powersound\nGibro                                           | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
+| <img src="https://cfcdn.beatsaver.com/3dbb6429a2573a15e278387638df6dffb2fdba8e.jpg" height="100px" width="100px" /> | Traxxendenza\nKomeijisan051                                 | `Standard Hard`       | `!bsr 41b39`                            |
+| <img src="https://cfcdn.beatsaver.com/40d45cabf6281004a071710239fd136491f5ecaa.jpg" height="100px" width="100px" /> | Nyan Nyan Dive\nDr_Marc                                     | `Standard Expert`     | `!bsr 3aeb2`                            |
+| <img src="https://cfcdn.beatsaver.com/f03302a9a3a456cdd96ce5a0fb12cac9af3a8ca1.jpg" height="100px" width="100px" /> | Bismuth\nAzurii                                             | `Standard Normal`     | `!bsr 31e31`                            |
+| <img src="https://cfcdn.beatsaver.com/b336c062839e9be903a3fda771d6e6d30c0439d7.jpg" height="100px" width="100px" /> | Hyoufuu Issen\nViSi                                         | `Standard Easy`       | Song is missing/reuploaded on BeatSaver |
+| <img src="https://cfcdn.beatsaver.com/2dac7da7a36da30ac1198ad640a36de7db589016.jpg" height="100px" width="100px" /> | I can't sing a love song\nComyute                           | `Standard ExpertPlus` | `!bsr 2f48f`                            |
+| <img src="https://cfcdn.beatsaver.com/b5d77f9c6a95f998bf3d323f7f427411ac30aa02.jpg" height="100px" width="100px" /> | Profession\nVerlexin                                        | `Standard ExpertPlus` | `!bsr 43db8`                            |
+| <img src="https://cfcdn.beatsaver.com/2f10d53d0a96c57180db620e3ed248ba581a58ea.jpg" height="100px" width="100px" /> | BPM\nYasu                                                   | `Standard Hard`       | `!bsr 2a419`                            |
+| <img src="https://cfcdn.beatsaver.com/af9fb77ea883342b3ff2a2827210e34bcf9a6f67.jpg" height="100px" width="100px" /> | Existentia\nGeneral Dumbass                                 | `Standard ExpertPlus` | `!bsr 26503`                            |
+| <img src="https://cfcdn.beatsaver.com/017c1793a5ef0e075ca8808c3d5e01488c4cc65a.jpg" height="100px" width="100px" /> | ヘヴンリィ\nHanari                                               | `Standard ExpertPlus` | `!bsr 49df4`                            |
+| <img src="https://cfcdn.beatsaver.com/7369a0c65edef33f7a5d4771f929c2681a58f657.jpg" height="100px" width="100px" /> | Lay Down\nUncouth                                           | `Standard ExpertPlus` | `!bsr 46e4f`                            |
+| <img src="https://cfcdn.beatsaver.com/7c9e0a7c523395c7ef9d79006b9d42dc6ab8b44a.jpg" height="100px" width="100px" /> | Gleodream\nViSi, SL4SH                                      | `Standard Normal`     | `!bsr 3aa79`                            |
+| <img src="https://cfcdn.beatsaver.com/ef37f44fa454eea4647c6e4ce5367c7da11946a2.jpg" height="100px" width="100px" /> | Always In A Nightmare\nBsNico                               | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
 | <img src="https://cfcdn.beatsaver.com/e8cf962ec0072ecbeefc55f66cecfe7c804acf49.jpg" height="100px" width="100px" /> | Ellise - 911
-Ellise - 911 (Tom Wilson Remix)
-Manxy         | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
-| <img src="https://cfcdn.beatsaver.com/0e61e9b896fc339c719e92e828c5f2257ca5e516.jpg" height="100px" width="100px" /> | Odo
-Loloppe                                                | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
-| <img src="https://cfcdn.beatsaver.com/5b68ec0d7de8dd2360ae049473f0a10102e5ae25.jpg" height="100px" width="100px" /> | Signal
-yabje, Bitz                                         | `Standard Easy`       | `!bsr 33b62`                            |
-| <img src="https://cfcdn.beatsaver.com/d09e0a4d4047e83b332f782a8d7b6d6c1761f7c2.jpg" height="100px" width="100px" /> | DDevil
-FeudBoy_YT                                          | `Standard ExpertPlus` | `!bsr 4b48f`                            |
-| <img src="https://cfcdn.beatsaver.com/cfa37c98bd59469ca95d07527b226f3ba9e823e6.jpg" height="100px" width="100px" /> | TOUCH OF AN ANGEL
-HypersonicSharkz                         | `Standard Expert`     | `!bsr 4e804`                            |
-| <img src="https://cfcdn.beatsaver.com/120a9041131a639673d79f781a5041211277740f.jpg" height="100px" width="100px" /> | Minor Piece
-Tiku                                           | `Standard ExpertPlus` | `!bsr 50519`                            |
-| <img src="https://cfcdn.beatsaver.com/84c71d1412aa6905a722618f0aeb7c2b9578042a.jpg" height="100px" width="100px" /> | Miss you not out of loneliness
-AWM Team                    | `Standard ExpertPlus` | `!bsr 50716`                            |
-| <img src="https://cfcdn.beatsaver.com/2ae773b1971edde7821edb2a1ba67c2b618f4fc3.jpg" height="100px" width="100px" /> | thank you i guess
-BigOlDumplin                             | `Standard ExpertPlus` | `!bsr 511f8`                            |
-| <img src="https://cfcdn.beatsaver.com/6ab33f5dabcb60640c20da6c8c840d8625466650.jpg" height="100px" width="100px" /> | timelapse
-                                                 | `Standard ExpertPlus` | `!bsr 353d9`                            |
-| <img src="https://cfcdn.beatsaver.com/1f34f1c7be2df120e7d54dcc61b4c40722a44aab.jpg" height="100px" width="100px" /> | LIVHT MY WΔY
-oatmeal                                       | `Standard ExpertPlus` | `!bsr 5372e`                            |
-| <img src="https://cfcdn.beatsaver.com/fc87f54e58251ec595c6ec436168a9169da3e725.jpg" height="100px" width="100px" /> | Satellites
-Zana                                            | `Standard ExpertPlus` | `!bsr 53cee`                            |
+Ellise - 911 (Tom Wilson Remix)\nManxy         | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
+| <img src="https://cfcdn.beatsaver.com/0e61e9b896fc339c719e92e828c5f2257ca5e516.jpg" height="100px" width="100px" /> | Odo\nLoloppe                                                | `Standard ExpertPlus` | Song is missing/reuploaded on BeatSaver |
+| <img src="https://cfcdn.beatsaver.com/5b68ec0d7de8dd2360ae049473f0a10102e5ae25.jpg" height="100px" width="100px" /> | Signal\nyabje, Bitz                                         | `Standard Easy`       | `!bsr 33b62`                            |
+| <img src="https://cfcdn.beatsaver.com/d09e0a4d4047e83b332f782a8d7b6d6c1761f7c2.jpg" height="100px" width="100px" /> | DDevil\nFeudBoy_YT                                          | `Standard ExpertPlus` | `!bsr 4b48f`                            |
+| <img src="https://cfcdn.beatsaver.com/cfa37c98bd59469ca95d07527b226f3ba9e823e6.jpg" height="100px" width="100px" /> | TOUCH OF AN ANGEL\nHypersonicSharkz                         | `Standard Expert`     | `!bsr 4e804`                            |
+| <img src="https://cfcdn.beatsaver.com/120a9041131a639673d79f781a5041211277740f.jpg" height="100px" width="100px" /> | Minor Piece\nTiku                                           | `Standard ExpertPlus` | `!bsr 50519`                            |
+| <img src="https://cfcdn.beatsaver.com/84c71d1412aa6905a722618f0aeb7c2b9578042a.jpg" height="100px" width="100px" /> | Miss you not out of loneliness\nAWM Team                    | `Standard ExpertPlus` | `!bsr 50716`                            |
+| <img src="https://cfcdn.beatsaver.com/2ae773b1971edde7821edb2a1ba67c2b618f4fc3.jpg" height="100px" width="100px" /> | thank you i guess\nBigOlDumplin                             | `Standard ExpertPlus` | `!bsr 511f8`                            |
+| <img src="https://cfcdn.beatsaver.com/6ab33f5dabcb60640c20da6c8c840d8625466650.jpg" height="100px" width="100px" /> | timelapse\n                                                 | `Standard ExpertPlus` | `!bsr 353d9`                            |
+| <img src="https://cfcdn.beatsaver.com/1f34f1c7be2df120e7d54dcc61b4c40722a44aab.jpg" height="100px" width="100px" /> | LIVHT MY WΔY\noatmeal                                       | `Standard ExpertPlus` | `!bsr 5372e`                            |
+| <img src="https://cfcdn.beatsaver.com/fc87f54e58251ec595c6ec436168a9169da3e725.jpg" height="100px" width="100px" /> | Satellites\nZana                                            | `Standard ExpertPlus` | `!bsr 53cee`                            |
 

@@ -20,8 +20,7 @@ type Song = Playlist["songs"][number];
 const renderSong = (parentMarkdown: Markdown, mapping: ToTPlaylistMappingItem, playlist: Playlist, song: Song) => {
   const img = mdImg(`https://cfcdn.beatsaver.com/${song.hash.toLowerCase()}.jpg`, 100);
 
-  const mapDetails = `${song.songName}\n` +
-    `${song.levelAuthorName}`;
+  const mapDetails = `${song.songName}\\n${song.levelAuthorName}`;
 
   const diffDetails = [
     ...(song.difficulties ?? []).map((diff) => `${diff.characteristic} ${diff.name}`),
