@@ -20,9 +20,24 @@ type Song = Playlist["songs"][number];
 const renderSong = (parentMarkdown: Markdown, mapping: ToTPlaylistMappingItem, playlist: Playlist, song: Song) => {
   const img = mdImg(`https://cfcdn.beatsaver.com/${song.hash.toLowerCase()}.jpg`, 100);
 
-  parentMarkdown
-    .table([[img, song.songName, song.levelAuthorName, `\`!bsr ${song.key}\``], [ "", ...(song.difficulties ?? []).map(diff => `${diff.characteristic} ${diff.name}`)]])
-}
+  const mapDetails = `${song.songName}\n` +
+    `${song.levelAuthorName}`;
+
+  const diffDetails = [
+    ...(song.difficulties ?? []).map((diff) => `${diff.characteristic} ${diff.name}`),
+  ]
+    .map((label) => `\`${label}\``)
+    .join("\n");
+
+  const requestLabel = song.key ? `\`!bsr ${song.key}\`` : `Song is missing/reuploaded on BeatSaver`;
+
+  return [
+    img,
+    mapDetails,
+    diffDetails,
+    requestLabel
+  ];
+};
 
 const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlist) => {
   const markdown = new Markdown();
@@ -37,35 +52,49 @@ const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlis
     .paragraph(coverImg)
     .paragraph(complexity)
     .paragraph(speed)
-    .paragraph(`${complexity}\n${speed}`)
+    .paragraph(`${complexity}\n${speed}`);
 
-  const hashes = playlist.songs.map(song => makeLowercaseMapHash(song.hash));
-  const resolvables = hashes.map(hash => ({
-    kind: "hash",
-    diffs: [],
-    data: hash
-  }) as BeatSaverResolvableHashKind)
+
+  const tableHeader = [
+    "Cover",
+    "Song details",
+    "Suggested Difficulty",
+    "Request"
+  ];
+
+  const table = [tableHeader];
+
+  const hashes = playlist.songs.map((song) => makeLowercaseMapHash(song.hash));
+  const resolvables = hashes.map((hash) =>
+    ({
+      kind: "hash",
+      diffs: [],
+      data: hash,
+    }) as BeatSaverResolvableHashKind
+  );
 
   const response = await fetchFromHashResolvables(resolvables);
   const responseItems = Object.values(response);
-  playlist.songs.forEach(song => {
-    const item = responseItems.find(x => x.versions.some(v => v.hash === makeLowercaseMapHash(song.hash)));
+  playlist.songs.forEach((song) => {
+    const item = responseItems.find((x) => x.versions.some((v) => v.hash === makeLowercaseMapHash(song.hash)));
     if (item) {
       console.log(item.id);
       song.key = item.id;
     }
-    renderSong(markdown, mapping, playlist, song)
+    table.push(renderSong(markdown, mapping, playlist, song));
   });
 
-  return markdown;
-}
+  markdown.table(table)
 
-const pathMd = `./migrated/playlists-md/` 
+  return markdown;
+};
+
+const pathMd = `./migrated/playlists-md/`;
 if (existsSync(pathMd)) {
   Deno.removeSync(pathMd, { recursive: true });
 }
 Deno.mkdirSync(pathMd, { recursive: true });
-const promises = Object.values(playlistMapping) 
+const promises = Object.values(playlistMapping)
   .map(async (mapping) => {
     const playlist = playlists.find((x) => x.playlist.customData!.id === mapping.playlistId);
     const markdown = await renderPlaylist(mapping, playlist!.playlist);

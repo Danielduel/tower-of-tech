@@ -12,7 +12,8 @@ Speed: Very fast
 Complexity: Insane
 Speed: Very fast
 
-| <img src="https://cfcdn.beatsaver.com/01c30bd1764a924a99a3ecf068109e83328c94dc.jpg" height="100px" width="100px" /> | Prestige And Vestige | staryouh | `!bsr 36793` |
-| ------------------------------------------------------------------------------------------------------------------- | -------------------- | -------- | ------------ |
-|                                                                                                                     | Standard ExpertPlus  |          |              |
+| Cover                                                                                                               | Song details                  | Suggested Difficulty  | Request      |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------- | --------------------- | ------------ |
+| <img src="https://cfcdn.beatsaver.com/01c30bd1764a924a99a3ecf068109e83328c94dc.jpg" height="100px" width="100px" /> | Prestige And Vestige
+staryouh | `Standard ExpertPlus` | `!bsr 36793` |
 
