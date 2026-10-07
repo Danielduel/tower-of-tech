@@ -26,8 +26,8 @@ const renderSong = (parentMarkdown: Markdown, mapping: ToTPlaylistMappingItem, p
   const diffDetails = [
     ...(song.difficulties ?? []).map((diff) => `${diff.characteristic} ${diff.name}`),
   ]
-    .map((label) => `\`${label}\``)
-    .join("\n");
+    .map((label) => `<b>${label}</b>`)
+    .join("<br>");
 
   const requestLabel = song.key ? `\`!bsr ${song.key}\`` : `Song is missing/reuploaded on BeatSaver`;
 
