@@ -28,7 +28,7 @@ const renderSong = (parentMarkdown: Markdown, mapping: ToTPlaylistMappingItem, p
 const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlist) => {
   const markdown = new Markdown();
 
-  const coverImg = mdImg(`./migrated/covers/${mapping.displayName}.png`, 200);
+  const coverImg = mdImg(`/migrated/covers/${mapping.displayName}.png`, 200);
   const complexity = `Complexity: ${getToTPlaylistTechCategory(mapping.techCategory)}`;
   const speed = `Speed: ${getToTPlaylistSpeedCategory(mapping.speedCategory)}`;
 
