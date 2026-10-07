@@ -11,7 +11,11 @@ import { kofi } from "@/src/tools/mdUtil.ts";
 const markdown = new Markdown();
 const mdImg = (src: string) => `<img src="${src}" height="50px" width="50px" />`;
 const mkActions = (path: string, fileName: string) =>
-  `[Raw](https://raw.githubusercontent.com/Danielduel/tower-of-tech/main${path}${fileName})`.replaceAll(" ", "%20");
+  [
+    `<a href="./migrated/playlists-md/${fileName}.md">Details (MD)</a>`,
+    `<a href="https://raw.githubusercontent.com/Danielduel/tower-of-tech/main${path}${fileName}" download>Download</a>`,
+    `[Raw](https://raw.githubusercontent.com/Danielduel/tower-of-tech/main${path}${fileName})`.replaceAll(" ", "%20"),
+  ].join("<br />")
 // `[Details](${links.home.playlist.details(playlistId, towerOfTechWebsiteOrigin)}) [Raw](${
 //   links.api.v1.playlist.download(playlistId, towerOfTechWebsiteOrigin)
 // })`;

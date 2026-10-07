@@ -43,12 +43,31 @@ const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlis
   const markdown = new Markdown();
 
   const coverImg = mdImg(`/migrated/covers/${mapping.displayName}.png`, 200);
+  const title = `Title: ${playlist.playlistTitle}`;
   const complexity = `Complexity: ${getToTPlaylistTechCategory(mapping.techCategory)}`;
   const speed = `Speed: ${getToTPlaylistSpeedCategory(mapping.speedCategory)}`;
+  const fileName = `File name: ${mapping.fileName}`;
+  const items = `Items: ${playlist.songs.length}`;
+  const download = `<a href="${mapping.path}${mapping.fileName}" download>Download</a>`
+  const preview = `<a href="${mapping.path}${mapping.fileName}">Preview raw</a>`
+
+  const details = [
+    title,
+    complexity,
+    speed,
+    fileName,
+    items,
+  ].join("<br>")
+
+  const actions = [
+    download,
+    preview
+  ].join("<br>");
+
 
   markdown
     .header(`${playlist.playlistTitle}`, 1)
-    .table([["", "Details", ""], [coverImg, `${complexity}<br>${speed}`, kofi]])
+    .table([["", "Details", "Actions", ""], [coverImg, details, actions, kofi]])
     .header(`Maps`, 2)
 
 
