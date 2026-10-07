@@ -1,7 +1,18 @@
 # ToT - FasAnglehell
 
-| <img src="/migrated/covers/FasAnglehell.png" height="200px" width="200px" /> | Complexity: Expert | Speed: Very fast |
-| ---------------------------------------------------------------------------- | ------------------ | ---------------- |
+| <img src="/migrated/covers/FasAnglehell.png" height="200px" width="200px" /> | Complexity: Expert<br>Speed: Very fast | 
+Support this project on Ko-fi
+
+<a href="https://ko-fi.com/danielduel" target="_blank">
+  <img
+    height="36"
+    border="0"
+    src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
+    alt="Buy Me a Coffee at ko-fi.com"
+  />
+</a>
+ |
+| ---------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Maps
 

@@ -1,7 +1,18 @@
 # ToT - MidTech
 
-| <img src="/migrated/covers/MidTech.png" height="200px" width="200px" /> | Complexity: Normal | Speed: Faster |
-| ----------------------------------------------------------------------- | ------------------ | ------------- |
+| <img src="/migrated/covers/MidTech.png" height="200px" width="200px" /> | Complexity: Normal<br>Speed: Faster | 
+Support this project on Ko-fi
+
+<a href="https://ko-fi.com/danielduel" target="_blank">
+  <img
+    height="36"
+    border="0"
+    src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
+    alt="Buy Me a Coffee at ko-fi.com"
+  />
+</a>
+ |
+| ----------------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Maps
 

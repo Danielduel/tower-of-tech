@@ -6,6 +6,7 @@ import {
   playlistMapping,
 } from "@/packages/playlist/collections/tower-of-tech/mod.ts";
 import { latestPlaylistReleaseUrl } from "@/packages/utils/constants.ts";
+import { kofi } from "@/src/tools/mdUtil.ts";
 
 const markdown = new Markdown();
 const mdImg = (src: string) => `<img src="${src}" height="50px" width="50px" />`;
@@ -16,18 +17,7 @@ const mkActions = (path: string, fileName: string) =>
 // })`;
 
 const _markdownContent = markdown
-  .paragraph(`
-Support this project on Ko-fi
-
-<a href="https://ko-fi.com/danielduel" target="_blank">
-  <img
-    height="36"
-    border="0"
-    src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
-    alt="Buy Me a Coffee at ko-fi.com"
-  />
-</a>
-`)
+  .paragraph(kofi)
   .header(`Tower of Tech`, 1)
   .paragraph(
     `This repository contains tech-related playlists and utilities used to manage them.`,

@@ -7,7 +7,7 @@ import {
   ToTPlaylistMappingItem,
 } from "@/packages/playlist/collections/tower-of-tech/mod.ts";
 import { existsSync } from "@std/fs";
-import { mdImg } from "@/src/tools/mdUtil.ts";
+import { kofi, mdImg } from "@/src/tools/mdUtil.ts";
 import { BeatSaverApi } from "@/packages/api-beatsaver/api.ts";
 import { makeLowercaseMapHash } from "@/packages/types/brands.ts";
 import { fetchFromHashResolvables, fetchHashes } from "@/packages/api-beatsaver/mod.ts";
@@ -48,7 +48,7 @@ const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlis
 
   markdown
     .header(`${playlist.playlistTitle}`, 1)
-    .table([[coverImg, complexity, speed]])
+    .table([[coverImg, `${complexity}<br>${speed}`, kofi]])
     .header(`Maps`, 2)
 
 
@@ -99,28 +99,3 @@ const promises = Object.values(playlistMapping)
   });
 await Promise.all(promises);
 
-//
-// const markdown = new Markdown()
-// markdown
-//   .header(``)
-//   .paragraph(
-//     `Zip containing all playlists can be found [here](${latestPlaylistReleaseUrl})`,
-//   )
-//   .table(
-//     [
-//       ["", "Name", "Pacing", "Complexity", "Items", ""],
-//       ...Object
-//         .entries(playlistMapping)
-//         .map(([mappingKey, mappingValue]) => {
-//           const playlist = playlists.find((x) => x.playlist.customData!.id === mappingValue.playlistId);
-//           if (!playlist) return ``;
-//           return [
-//             mdImg(`./migrated/covers/${mappingValue.displayName}.png`),
-//             playlist.playlist.playlistTitle,
-//             getToTPlaylistSpeedCategory(mappingValue.speedCategory),
-//             getToTPlaylistTechCategory(mappingValue.techCategory),
-//             playlist.playlist.songs.length,
-//             mkActions(mappingValue.path, mappingValue.fileName),
-//           ];
-//         }),
-//     ]
