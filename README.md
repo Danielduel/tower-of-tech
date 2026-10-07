@@ -1,7 +1,5 @@
 
-Support this project on Ko-fi
-
-<a href="https://ko-fi.com/danielduel" target="_blank">
+Support this project on Ko-fi<br><a href="https://ko-fi.com/danielduel" target="_blank">
   <img
     height="36"
     border="0"

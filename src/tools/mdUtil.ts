@@ -2,9 +2,7 @@ export const mdImg = (src: string, size: number = 50) => `<img src="${src}" heig
 
 export const kofi =
 `
-Support this project on Ko-fi
-
-<a href="https://ko-fi.com/danielduel" target="_blank">
+Support this project on Ko-fi<br><a href="https://ko-fi.com/danielduel" target="_blank">
   <img
     height="36"
     border="0"
@@ -13,5 +11,4 @@ Support this project on Ko-fi
   />
 </a>
 `;
-
 
