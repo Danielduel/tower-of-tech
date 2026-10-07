@@ -10,9 +10,9 @@ import { kofi } from "@/src/tools/mdUtil.ts";
 
 const markdown = new Markdown();
 const mdImg = (src: string) => `<img src="${src}" height="50px" width="50px" />`;
-const mkActions = (path: string, fileName: string) =>
+const mkActions = (path: string, fileName: string, displayName: string) =>
   [
-    `<a href="./migrated/playlists-md/${fileName}.md">Details (MD)</a>`,
+    `<a href="./migrated/playlists-md/${displayName}.md">Details (MD)</a>`,
     `<a href="https://raw.githubusercontent.com/Danielduel/tower-of-tech/main${path}${fileName}" download>Download</a>`,
     `[Raw](https://raw.githubusercontent.com/Danielduel/tower-of-tech/main${path}${fileName})`.replaceAll(" ", "%20"),
   ].join("<br />")
@@ -64,7 +64,7 @@ A playlist name should contain prefix and "tech" suffix.
             getToTPlaylistSpeedCategory(mappingValue.speedCategory),
             getToTPlaylistTechCategory(mappingValue.techCategory),
             playlist.playlist.songs.length,
-            mkActions(mappingValue.path, mappingValue.fileName),
+            mkActions(mappingValue.path, mappingValue.fileName, mappingValue.displayName),
           ];
         }),
     ],
