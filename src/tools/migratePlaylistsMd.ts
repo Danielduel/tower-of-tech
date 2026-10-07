@@ -24,12 +24,12 @@ const renderSong = (parentMarkdown: Markdown, mapping: ToTPlaylistMappingItem, p
                     `<b>Mapper:</b> ${song.levelAuthorName}`;
 
   const diffDetails = [
-    ...(song.difficulties ?? []).map((diff) => `${diff.characteristic}&nbsp${diff.name}`),
+    ...(song.difficulties ?? []).map((diff) => `<pre>${diff.characteristic} ${diff.name}</pre>`),
   ]
     .map((label) => `<b>${label}</b>`)
     .join("<br>");
 
-  const requestLabel = song.key ? `\`!bsr&nbsp${song.key}\`` : `Song is missing/reuploaded on BeatSaver`;
+  const requestLabel = song.key ? `<pre>!bsr ${song.key}</pre>` : `Song is missing/reuploaded on BeatSaver`;
 
   return [
     img,
