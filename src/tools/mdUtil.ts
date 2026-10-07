@@ -1,2 +1,2 @@
-export const mdImg = (src: string) => `<img src="${src}" height="50px" width="50px" />`;
+export const mdImg = (src: string, size: number = 50) => `<img src="${src}" height="${size}px" width="${size}px" />`;
 

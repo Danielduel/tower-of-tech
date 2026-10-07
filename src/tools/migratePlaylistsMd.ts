@@ -18,17 +18,17 @@ type Playlist = typeof playlists[number]["playlist"];
 type Song = Playlist["songs"][number];
 
 const renderSong = (parentMarkdown: Markdown, mapping: ToTPlaylistMappingItem, playlist: Playlist, song: Song) => {
-  const img = mdImg(`https://cfcdn.beatsaver.com/${song.hash.toLowerCase()}.jpg`)
+  const img = mdImg(`https://cfcdn.beatsaver.com/${song.hash.toLowerCase()}.jpg`, 100);
 
   parentMarkdown
     .horizontalRule("---")
-    .table([[img, song.songName, song.levelAuthorName, `\`!bsr ${song.key}\``], (song.difficulties ?? []).map(diff => `${diff.characteristic} ${diff.name}`)])
+    .table([[img, song.songName, song.levelAuthorName, `\`!bsr ${song.key}\``], [ "", ...(song.difficulties ?? []).map(diff => `${diff.characteristic} ${diff.name}`)]])
 }
 
 const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlist) => {
   const markdown = new Markdown();
 
-  const coverImg = mdImg(`./migrated/covers/${mapping.displayName}.png`);
+  const coverImg = mdImg(`./migrated/covers/${mapping.displayName}.png`, 200);
   const complexity = `Complexity: ${getToTPlaylistTechCategory(mapping.techCategory)}`;
   const speed = `Speed: ${getToTPlaylistSpeedCategory(mapping.speedCategory)}`;
 
