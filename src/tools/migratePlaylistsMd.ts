@@ -21,7 +21,6 @@ const renderSong = (parentMarkdown: Markdown, mapping: ToTPlaylistMappingItem, p
   const img = mdImg(`https://cfcdn.beatsaver.com/${song.hash.toLowerCase()}.jpg`, 100);
 
   parentMarkdown
-    .horizontalRule("---")
     .table([[img, song.songName, song.levelAuthorName, `\`!bsr ${song.key}\``], [ "", ...(song.difficulties ?? []).map(diff => `${diff.characteristic} ${diff.name}`)]])
 }
 
