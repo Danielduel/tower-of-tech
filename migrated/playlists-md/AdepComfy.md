@@ -1,14 +1,8 @@
 # ToT - AdepComfy
 
-| <img src="/migrated/covers/AdepComfy.png" height="200px" width="200px" /> | Complexity: Easy<br>Speed: Slower | Support this project on Ko-fi<br><br><a href="https://ko-fi.com/danielduel" target="_blank">
-  <img
-    height="36"
-    border="0"
-    src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
-    alt="Buy Me a Coffee at ko-fi.com"
-  />
-</a> |
-| ------------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                           | Details                           |                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="/migrated/covers/AdepComfy.png" height="200px" width="200px" /> | Complexity: Easy<br>Speed: Slower | Support this project on Ko-fi<br><br><a href="https://ko-fi.com/danielduel" target="_blank"><img height="36" border="0" src="https://storage.ko-fi.com/cdn/kofi3.png?v=6" alt="Buy Me a Coffee at ko-fi.com" /></a> |
 
 ## Maps
 

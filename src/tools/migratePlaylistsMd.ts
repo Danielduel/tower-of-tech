@@ -48,7 +48,7 @@ const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlis
 
   markdown
     .header(`${playlist.playlistTitle}`, 1)
-    .table([[coverImg, `${complexity}<br>${speed}`, kofi]])
+    .table([["", "Details", ""], [coverImg, `${complexity}<br>${speed}`, kofi]])
     .header(`Maps`, 2)
 
 
