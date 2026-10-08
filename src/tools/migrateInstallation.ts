@@ -54,10 +54,10 @@ BSManager will do this step for you, you can skip it.
 You need Playlist mod - PlaylistManger.
 You can get it via:
 
-*. [BSManager](https://www.bsmanager.io/)
-*. [ModAssistant](https://github.com/Assistant/ModAssistant/releases/tag/v1.1.32)
-*. [BeatMods](https://beatmods.com/mods/170)
-*. [GitHub](https://github.com/rithik-b/PlaylistManager#download)
+* [BSManager](https://www.bsmanager.io/)
+* [ModAssistant](https://github.com/Assistant/ModAssistant/releases/tag/v1.1.32)
+* [BeatMods](https://beatmods.com/mods/170)
+* [GitHub](https://github.com/rithik-b/PlaylistManager#download)
 `)
   .header("Get the zip {#installation-pcvr-bsmanager-get-the-zip}", 4)
   .paragraph(getTheZip)
