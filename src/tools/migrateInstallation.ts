@@ -26,7 +26,12 @@ const _markdownContent = markdown
 
 const _markdownContentArr = _markdownContent.split("\n");
 const _markdownContentArrFiltered = _markdownContentArr.filter((_, i) => i !== _markdownContentArr.length - 1);
-const markdownContent = _markdownContentArrFiltered.join("\n");
+const markdownContent = _markdownContentArrFiltered
+  .join("\n")
+  .split("{#")
+  .join("<a name=\"")
+  .split("}")
+  .join("\"></a>")
 
 await Deno.writeTextFile("./INSTALLATION.md", markdownContent);
 
