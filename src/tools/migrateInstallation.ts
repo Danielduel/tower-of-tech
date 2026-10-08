@@ -12,7 +12,6 @@ const markdown = new Markdown();
 const _markdownContent = markdown
   .paragraph(kofi)
   .header(`Tower of Tech`, 1)
-  .header("Installation", 1)
   .paragraph(`\
 Note:
 
@@ -28,6 +27,8 @@ Current help needed:
 * Standalone guide
 * How to locate beat saber folder in the meta store
 `)
+  
+  .header("Installation", 1)
   .list([
     "[PCVR](#installation-pcvr)",
     "Standalone" // "[Standalone](#Standalone)"

@@ -2,8 +2,6 @@ Support this project on Ko-fi<br><br><a href="https://ko-fi.com/danielduel" targ
 
 # Tower of Tech
 
-# Installation
-
 Note:
 
 This guide is in development and I want your feedback about it.
@@ -18,6 +16,8 @@ Current help needed:
 * Standalone guide
 * How to locate beat saber folder in the meta store
 
+
+# Installation
 
 - [PCVR](#installation-pcvr)
 - Standalone
