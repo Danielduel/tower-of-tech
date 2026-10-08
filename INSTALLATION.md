@@ -13,11 +13,18 @@ Support this project on Ko-fi<br><br><a href="https://ko-fi.com/danielduel" targ
 
 ### Manual <a name="installation-pcvr-manual"></a>
 
-1. Requirements
+1. [Requirements](#installation-pcvr-manual-requirements)
+2. [Get the zip](#installation-pcvr-manual-get-the-zip)
+3. [Locate Playlists folder](#installation-pcvr-manual-locate-playlists-folder)
+4. [Unpack the zip into the Playlists folder](#installation-pcvr-manual-unpack-the-zip-into-playlists-folder)
+5. [Run the game](#installation-pcvr-manual-run-the-game)
 
-Test the second line
+#### Requirements <a name="installation-pcvr-manual-requirements"></a>
 
-2. Get the zip
-3. Locate Playlists folder
-4. Unpack the zip into the Playlists folder
-5. Run the game
+You need Playlist mod - PlaylistManger.
+You can get it via:
+1. [BSManager]("https://www.bsmanager.io/")
+2. [ModAssistant]("https://github.com/Assistant/ModAssistant/releases/tag/v1.1.32")
+3. [BeatMods]("https://beatmods.com/#/mods")
+4. [GitHub]("https://github.com/rithik-b/PlaylistManager#download")
+

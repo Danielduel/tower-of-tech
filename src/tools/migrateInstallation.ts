@@ -16,15 +16,21 @@ const _markdownContent = markdown
   ], ListTypes.UnOrdered)
   .header("Manual {#installation-pcvr-manual}", 3)
   .list([
-    "Requirements" + `
-
-Test the second line
-`,
-    "Get the zip",
-    "Locate Playlists folder",
-    "Unpack the zip into the Playlists folder",
-    "Run the game"
+    "[Requirements](#installation-pcvr-manual-requirements)",
+    "[Get the zip](#installation-pcvr-manual-get-the-zip)",
+    "[Locate Playlists folder](#installation-pcvr-manual-locate-playlists-folder)",
+    "[Unpack the zip into the Playlists folder](#installation-pcvr-manual-unpack-the-zip-into-playlists-folder)",
+    "[Run the game](#installation-pcvr-manual-run-the-game)"
   ], ListTypes.Ordered)
+  .header("Requirements {#installation-pcvr-manual-requirements}", 4)
+  .paragraph(`\
+You need Playlist mod - PlaylistManger.
+You can get it via:
+1. [BSManager]("https://www.bsmanager.io/")
+2. [ModAssistant]("https://github.com/Assistant/ModAssistant/releases/tag/v1.1.32")
+3. [BeatMods]("https://beatmods.com/#/mods")
+4. [GitHub]("https://github.com/rithik-b/PlaylistManager#download")
+`)
   .content;
 
 const _markdownContentArr = _markdownContent
