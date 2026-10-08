@@ -24,14 +24,25 @@ const _markdownContent = markdown
   ], ListTypes.Ordered)
   .content;
 
-const _markdownContentArr = _markdownContent.split("\n");
+const _markdownContentArr = _markdownContent
+  .split("\n")
+  .map(line => {
+
+    // lines that start with # - assuming headers
+    // can have "{#id}" syntax which GH doesn't render, instead - it understands named empty links
+    // these following lines are transforming "{#id}" into '<a name="id"></a>'
+    if (line.startsWith("#")) {
+      return line
+        .split("{#")
+        .join("<a name=\"")
+        .split("}")
+        .join("\"></a>");
+    }
+
+    return line;
+  })
 const _markdownContentArrFiltered = _markdownContentArr.filter((_, i) => i !== _markdownContentArr.length - 1);
-const markdownContent = _markdownContentArrFiltered
-  .join("\n")
-  .split("{#")
-  .join("<a name=\"")
-  .split("}")
-  .join("\"></a>")
+const markdownContent = _markdownContentArrFiltered.join("\n")
 
 await Deno.writeTextFile("./INSTALLATION.md", markdownContent);
 
