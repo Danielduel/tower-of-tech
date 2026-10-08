@@ -64,7 +64,7 @@ You can get it via:
   .paragraph(getTheZip)
   .header("Import playlists into BSManager {#installation-pcvr-bsmanager-import-playlists-into-bsmanager}", 4)
   .paragraph(`\
-First - unpack the zip somewhere easy to access.
+First - unpack the "ToT.zip" somewhere easy to access.
 
 1. Choose your Beat Saber version on the left.
 2. Go to the "Maps" tab on the top.

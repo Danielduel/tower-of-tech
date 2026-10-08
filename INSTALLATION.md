@@ -56,7 +56,7 @@ You can get it via:
 
 #### Import playlists into BSManager <a name="installation-pcvr-bsmanager-import-playlists-into-bsmanager"></a>
 
-First - unpack the zip somewhere easy to access.
+First - unpack the "ToT.zip" somewhere easy to access.
 
 1. Choose your Beat Saber version on the left.
 2. Go to the "Maps" tab on the top.
