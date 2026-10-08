@@ -29,10 +29,10 @@ Current help needed:
 
 ### BSManager <a name="installation-pcvr-bsmanager"></a>
 
-- [Requirements](#installation-pcvr-bsmanager-requirements)
-- [Get the zip](#installation-pcvr-bsmanager-get-the-zip)
-- [Import playlists into BSManager](#installation-pcvr-bsmanager-import-playlists-into-bsmanager)
-- [Run the game](#installation-pcvr-bsmanager-run-the-game)
+1. [Requirements](#installation-pcvr-bsmanager-requirements)
+2. [Get the zip](#installation-pcvr-bsmanager-get-the-zip)
+3. [Import playlists into BSManager](#installation-pcvr-bsmanager-import-playlists-into-bsmanager)
+4. [Run the game](#installation-pcvr-bsmanager-run-the-game)
 
 #### Requirements <a name="installation-pcvr-bsmanager-requirements"></a>
 

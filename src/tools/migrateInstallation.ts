@@ -46,7 +46,7 @@ Current help needed:
     "[Get the zip](#installation-pcvr-bsmanager-get-the-zip)",
     "[Import playlists into BSManager](#installation-pcvr-bsmanager-import-playlists-into-bsmanager)",
     "[Run the game](#installation-pcvr-bsmanager-run-the-game)"
-  ])
+  ], ListTypes.Ordered)
   .header("Requirements {#installation-pcvr-bsmanager-requirements}", 4)
   .paragraph(`\
 BSManager will do this step for you, you can skip it.
