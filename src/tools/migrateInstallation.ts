@@ -16,7 +16,9 @@ const _markdownContent = markdown
   ], ListTypes.UnOrdered)
   .header("Manual {#installation-pcvr-manual}", 3)
   .list([
-    "Requirements",
+    "Requirements" + `
+Test the second line
+`,
     "Get the zip",
     "Locate Playlists folder",
     "Unpack the zip into the Playlists folder",
