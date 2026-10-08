@@ -7,14 +7,14 @@ const _markdownContent = markdown
   .header(`Tower of Tech`, 1)
   .header("Installation", 1)
   .list([
-    "[PCVR](#PCVR)",
+    "[PCVR](#installation-pcvr)",
     "Standalone" // "[Standalone](#Standalone)"
   ], ListTypes.UnOrdered)
-  .header("PCVR", 2)
+  .header("PCVR {#installation-pcvr}", 2)
   .list([
-    "[Manual](#Manual)"
+    "[Manual](#installation-pcvr-manual)"
   ], ListTypes.UnOrdered)
-  .header("Manual", 3)
+  .header("Manual {#installation-pcvr-manual}", 3)
   .list([
     "Requirements",
     "Get the zip",

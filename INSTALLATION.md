@@ -4,14 +4,14 @@ Support this project on Ko-fi<br><br><a href="https://ko-fi.com/danielduel" targ
 
 # Installation
 
-- [PCVR](#PCVR)
+- [PCVR](#installation-pcvr)
 - Standalone
 
-## PCVR
+## PCVR {#installation-pcvr}
 
-- [Manual](#Manual)
+- [Manual](#installation-pcvr-manual)
 
-### Manual
+### Manual {#installation-pcvr-manual}
 
 1. Requirements
 2. Get the zip
