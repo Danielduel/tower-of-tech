@@ -10,6 +10,7 @@
     "start": "TOT_ENVIRONMENT=local deno run -A ./src/main.ts",
     "migrate": "deno run -A ./src/tools/migrate.ts",
     "migrate:readme": "deno run -A ./src/tools/migrateReadme.ts",
+    "migrate:installation": "deno run -A ./src/tools/migrateInstallation.ts",
     "migrate:md": "deno run -A ./src/tools/migratePlaylistsMd.ts",
     "check": "deno task website:check",
     // "website:check": "deno check ./apps/website/App.tsx",
