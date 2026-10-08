@@ -23,8 +23,8 @@ Support this project on Ko-fi<br><br><a href="https://ko-fi.com/danielduel" targ
 
 You need Playlist mod - PlaylistManger.
 You can get it via:
-1. [BSManager]("https://www.bsmanager.io/")
-2. [ModAssistant]("https://github.com/Assistant/ModAssistant/releases/tag/v1.1.32")
-3. [BeatMods]("https://beatmods.com/#/mods")
-4. [GitHub]("https://github.com/rithik-b/PlaylistManager#download")
+1. [BSManager](https://www.bsmanager.io/)
+2. [ModAssistant](https://github.com/Assistant/ModAssistant/releases/tag/v1.1.32)
+3. [BeatMods](https://beatmods.com/#/mods)
+4. [GitHub](https://github.com/rithik-b/PlaylistManager#download)
 
