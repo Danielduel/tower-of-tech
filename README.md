@@ -14,7 +14,7 @@ A playlist name should contain prefix and "tech" suffix.
 - Speed prefix could be "Adep", "Acc", "Mid", "Fast" and "Sonic".
 - Tech suffix would be "Comfy", "Tech", "Hitech", "Anglehell" and "Tempo".
 
-Zip containing all playlists can be found [here](https://github.com/Danielduel/tower-of-tech/releases/download/0.0.33/ToT.zip)
+Zip containing all playlists can be found [here](https://github.com/Danielduel/tower-of-tech/releases/download/0.0.34/ToT.zip)
 
 |                                                                              | Name                | Pacing    | Complexity | Items |                                                                                                                                                                                                                                                                                                                                                                        |
 | ---------------------------------------------------------------------------- | ------------------- | --------- | ---------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -44,6 +44,6 @@ Zip containing all playlists can be found [here](https://github.com/Danielduel/t
 
 ## Installation
 
-Get the latest playlist archive from https://github.com/Danielduel/tower-of-tech/releases/download/0.0.33/ToT.zip and unpack it to your Playlists folder.
+Get the latest playlist archive from https://github.com/Danielduel/tower-of-tech/releases/download/0.0.34/ToT.zip and unpack it to your Playlists folder.
 
 You can get more detailed guide by going to [INSTALLATION.md](/INSTALLATION.md)
