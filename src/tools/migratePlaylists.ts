@@ -1,4 +1,3 @@
-// import { compress } from "../../../deno-zip/mod.ts";
 import { getCoverBase64 } from "@/src/utils/cover-image.ts";
 import { stringifyPlaylist } from "@/src/utils/json.ts";
 import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
@@ -9,7 +8,7 @@ import {
   BeatSaberPlaylistWithoutIdSchema,
   BeatSaberPlaylistWithoutIdSchemaT,
 } from "@/packages/types/beatsaber-playlist.ts";
-import { exists, existsSync } from "@std/fs";
+import { exists } from "@std/fs";
 
 const coverPath = new URL(import.meta.resolve("../../migrated/covers")).pathname;
 
@@ -19,8 +18,7 @@ const destinationPathOffline = new URL(import.meta.resolve("../../migrated/playl
 
 const sourcePathGuests = new URL(import.meta.resolve("../../data/playlists-guest")).pathname;
 const destinationPathGuests = new URL(import.meta.resolve("../../migrated/playlists-guest")).pathname;
-const destinationPathOfflineGuests = new URL(import.meta.resolve("../../migrated/playlists-guest-offline"))
-  .pathname;
+const destinationPathOfflineGuests = new URL(import.meta.resolve("../../migrated/playlists-guest-offline")).pathname;
 
 await Promise.all([
   Deno.mkdir(coverPath, { recursive: true }),
