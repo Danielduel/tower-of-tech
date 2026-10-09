@@ -5,6 +5,7 @@
     "migrate:readme": "deno run -A ./src/tools/migrateReadme.ts",
     "migrate:installation": "deno run -A ./src/tools/migrateInstallation.ts",
     "migrate:md": "deno run -A ./src/tools/migratePlaylistsMd.ts",
+    "migrate:ts": "deno run -A ./src/tools/migratePlaylistsTs.ts",
     "release": "deno run -A ./src/tools/releaseTagMessage.ts"
   },
   "importMap": "importMap.jsonc",

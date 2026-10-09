@@ -1,4 +1,4 @@
-import { ListTypes, Markdown } from "https://deno.land/x/deno_markdown@v0.2/mod.ts";
+import { Markdown } from "https://deno.land/x/deno_markdown@v0.2/mod.ts";
 import { playlists } from "@/src/tools/migratePlaylists.ts";
 import {
   getToTPlaylistSpeedCategory,
@@ -8,11 +8,9 @@ import {
 } from "@/packages/playlist/collections/tower-of-tech/mod.ts";
 import { existsSync } from "@std/fs";
 import { kofi, mdImg } from "@/src/tools/mdUtil.ts";
-import { BeatSaverApi } from "@/packages/api-beatsaver/api.ts";
 import { makeLowercaseMapHash } from "@/packages/types/brands.ts";
-import { fetchFromHashResolvables, fetchHashes } from "@/packages/api-beatsaver/mod.ts";
+import { fetchFromHashResolvables } from "@/packages/api-beatsaver/mod.ts";
 import { BeatSaverResolvableHashKind } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
-import { fetchAndCacheFromResolvablesRaw } from "@/packages/api-beatsaver/mod.ts";
 
 type Playlist = typeof playlists[number]["playlist"];
 type Song = Playlist["songs"][number];
