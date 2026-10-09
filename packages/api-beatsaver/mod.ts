@@ -1,83 +1,83 @@
 import {
-  BeatSaverIdToHashCacheSchema,
-  BeatSaverMapByHashResponseSchema,
+  // BeatSaverIdToHashCacheSchema,
+  // BeatSaverMapByHashResponseSchema,
   BeatSaverMapByIdResponseSchema,
   BeatSaverMapId,
-  makeBeatSaverMapId,
+  // makeBeatSaverMapId,
 } from "@/packages/types/beatsaver.ts";
-import { fetcher } from "@/packages/api-utils/fetcher.ts";
-import { fileExists } from "@/packages/utils/fileExists.ts";
+// import { fetcher } from "@/packages/api-utils/fetcher.ts";
+// import { fileExists } from "@/packages/utils/fileExists.ts";
 import { LowercaseMapHash } from "@/packages/types/brands.ts";
-import { S3 } from "@tot/s3";
-import { DB } from "@tot/db"
+// import { S3 } from "@tot/s3";
+// import { DB } from "@tot/db"
 import { BeatSaverApi } from "@/packages/api-beatsaver/api.ts";
 import { BeatSaverResolvable, splitBeatSaverResolvables } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
-import { scheduleCache } from "@/packages/api-beatsaver/cache.ts";
+// import { scheduleCache } from "@/packages/api-beatsaver/cache.ts";
 import { filterNulls } from "@/packages/utils/filter.ts";
 import { BeatSaverMapResponseSuccessSchema } from "@/packages/types/beatsaver.ts";
-import { ulid } from "@/packages/deps/ulid.ts";
+// import { ulid } from "@/packages/deps/ulid.ts";
 
 export { BeatSaverApi };
 
-const getMapHashResponseCacheKey = (
-  hash: LowercaseMapHash,
-) => ["API_BEATSAVER", "MAP_HASH", "RESPONSE", hash];
-export const cacheMapByHashIfNotExists = async (
-  hash: string,
-  downloadUrl: string,
-) => {
-  const mapPath = `./maps/${hash}.zip`;
-  if (!fileExists(mapPath)) {
-    const responseFile = await fetcher(downloadUrl);
-    await Deno.writeFile(
-      `./cache/${hash}.zip`,
-      new Uint8Array(await responseFile.arrayBuffer()),
-    );
-  }
-};
+// const getMapHashResponseCacheKey = (
+//   hash: LowercaseMapHash,
+// ) => ["API_BEATSAVER", "MAP_HASH", "RESPONSE", hash];
+// export const cacheMapByHashIfNotExists = async (
+//   hash: string,
+//   downloadUrl: string,
+// ) => {
+//   const mapPath = `./maps/${hash}.zip`;
+//   if (!fileExists(mapPath)) {
+//     const responseFile = await fetcher(downloadUrl);
+//     await Deno.writeFile(
+//       `./cache/${hash}.zip`,
+//       new Uint8Array(await responseFile.arrayBuffer()),
+//     );
+//   }
+// };
+//
+// type IdsToHashesCacheType = {
+//   id: BeatSaverMapId;
+//   status: "error" | "forgotten" | "old" | "ok" | "fetch" | "removed";
+//   data?: typeof BeatSaverIdToHashCacheSchema._type;
+// };
 
-type IdsToHashesCacheType = {
-  id: BeatSaverMapId;
-  status: "error" | "forgotten" | "old" | "ok" | "fetch" | "removed";
-  data?: typeof BeatSaverIdToHashCacheSchema._type;
-};
+// const idToHashCache = async (id: BeatSaverMapId): Promise<IdsToHashesCacheType> => {
+//   const db = await DB.get();
+//   const idToHashCacheItem = await db.BeatSaverIdToHashCache
+//     .find(id)
+//     .then((x) => x?.flat());
+//
+//   if (!idToHashCacheItem) return { id, status: "fetch" };
+//   if (idToHashCacheItem.removed) return { id, status: "removed" };
+//   if (!idToHashCacheItem.available) return { id, status: "error" };
+//   if (!idToHashCacheItem.hash) return { id, status: "error" };
+//   return { id, status: "ok", data: idToHashCacheItem };
+// };
 
-const idToHashCache = async (id: BeatSaverMapId): Promise<IdsToHashesCacheType> => {
-  const db = await DB.get();
-  const idToHashCacheItem = await db.BeatSaverIdToHashCache
-    .find(id)
-    .then((x) => x?.flat());
+// const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
+//   return await Promise.all(
+//     idArray.map(idToHashCache),
+//   );
+// };
 
-  if (!idToHashCacheItem) return { id, status: "fetch" };
-  if (idToHashCacheItem.removed) return { id, status: "removed" };
-  if (!idToHashCacheItem.available) return { id, status: "error" };
-  if (!idToHashCacheItem.hash) return { id, status: "error" };
-  return { id, status: "ok", data: idToHashCacheItem };
-};
-
-const idsToHashesCache = async (idArray: BeatSaverMapId[]) => {
-  return await Promise.all(
-    idArray.map(idToHashCache),
-  );
-};
-
-const fetchAndCacheHashesGetCache = (hashArray: LowercaseMapHash[]) => {
-  return hashArray.map(async (lowercaseHash) => {
-    const s3 = await S3.get();
-    const exists = await s3.exists(lowercaseHash, {
-      bucketName: S3.buckets.beatSaver.mapByHash,
-    });
-    if (exists) {
-      const response = await s3.getObject(lowercaseHash, {
-        bucketName: S3.buckets.beatSaver.mapByHash,
-      });
-      const data = await response.json();
-
-      return [lowercaseHash, data] as const;
-    }
-    return [lowercaseHash, undefined] as const;
-  });
-};
+// const fetchAndCacheHashesGetCache = (hashArray: LowercaseMapHash[]) => {
+//   return hashArray.map(async (lowercaseHash) => {
+//     const s3 = await S3.get();
+//     const exists = await s3.exists(lowercaseHash, {
+//       bucketName: S3.buckets.beatSaver.mapByHash,
+//     });
+//     if (exists) {
+//       const response = await s3.getObject(lowercaseHash, {
+//         bucketName: S3.buckets.beatSaver.mapByHash,
+//       });
+//       const data = await response.json();
+//
+//       return [lowercaseHash, data] as const;
+//     }
+//     return [lowercaseHash, undefined] as const;
+//   });
+// };
 
 export const fetchHashes = async (hashArray: LowercaseMapHash[]) => {
   const promises = [] as ReturnType<typeof BeatSaverApi.mapByHash.get>[];
@@ -119,35 +119,36 @@ export const fetchScheduleHashes = async (hashArray: LowercaseMapHash[]) => {
     console.error(err);
   }
 };
-export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
-  const partiallyResolved = await Promise.all(
-    fetchAndCacheHashesGetCache(hashArray),
-  );
-  const resolvedFromCache = BeatSaverMapByHashResponseSchema.parseAsync(
-    Object.fromEntries(
-      partiallyResolved.filter(([, data]) => !!data),
-    ),
-  );
-  const remainingHashArray = partiallyResolved
-    .filter(([, data]) => !data)
-    .map(([lowercaseHash]) => lowercaseHash);
 
-  let response = await fetchHashes(remainingHashArray);
-  if ("id" in response) {
-    response = { [remainingHashArray[0]]: response };
-  }
-
-  try {
-    await scheduleCache(remainingHashArray);
-  } catch (err) { /* expected */ }
-
-  try {
-    const awaitedCache = await resolvedFromCache;
-    return { ...response, ...awaitedCache } as const;
-  } catch (err) {
-    console.error(err);
-  }
-};
+// export const fetchAndCacheHashes = async (hashArray: LowercaseMapHash[]) => {
+//   const partiallyResolved = await Promise.all(
+//     fetchAndCacheHashesGetCache(hashArray),
+//   );
+//   const resolvedFromCache = BeatSaverMapByHashResponseSchema.parseAsync(
+//     Object.fromEntries(
+//       partiallyResolved.filter(([, data]) => !!data),
+//     ),
+//   );
+//   const remainingHashArray = partiallyResolved
+//     .filter(([, data]) => !data)
+//     .map(([lowercaseHash]) => lowercaseHash);
+//
+//   let response = await fetchHashes(remainingHashArray);
+//   if ("id" in response) {
+//     response = { [remainingHashArray[0]]: response };
+//   }
+//
+//   try {
+//     await scheduleCache(remainingHashArray);
+//   } catch (err) { /* expected */ }
+//
+//   try {
+//     const awaitedCache = await resolvedFromCache;
+//     return { ...response, ...awaitedCache } as const;
+//   } catch (err) {
+//     console.error(err);
+//   }
+// };
 
 export const batchFetchIds = async (idsArray: BeatSaverMapId[]) => {
   const promises = [] as ReturnType<typeof BeatSaverApi.mapsByIds.get>[];
@@ -180,91 +181,91 @@ export const batchFetchIds = async (idsArray: BeatSaverMapId[]) => {
   }
 };
 
-export const fetchAndCacheFromResolvablesRaw = async (
-  resolvables: BeatSaverResolvable[],
-) => {
-  const execUlid = ulid();
-  console.time(
-    `[${execUlid}] fetchAndCacheFromResolvablesRaw for ${resolvables.length}`,
-  );
-  const {
-    hashResolvables,
-    idResolvables,
-  } = splitBeatSaverResolvables(resolvables);
-
-  const hashesFromIdResolvables = await idsToHashesCache(idResolvables.map((x) => x.data));
-  const hashesArrayFromResolvables = hashResolvables.map((x) => x.data);
-
-  const hashesFromCacheOk = hashesFromIdResolvables
-    .filter((x) => x.status === "ok")
-    .map((x) => x.data!.hash!);
-
-  // const idsFromIdResolvablesRemoved = hashesFromIdResolvables
-  //   .filter((x) => x.status === "removed")
-  //   .map((x) => x.data?.id ?? null)
-  //   .filter(filterNulls);
-
-  const hashesArray = [...hashesFromCacheOk, ...hashesArrayFromResolvables];
-
-  console.time(
-    `[${execUlid}] fetchAndCacheFromResolvablesRaw fetchAndCacheHashes for ${hashesArray.length}`,
-  );
-  const responseFromHashesP = fetchAndCacheHashes(hashesArray);
-  console.timeEnd(
-    `[${execUlid}] fetchAndCacheFromResolvablesRaw fetchAndCacheHashes for ${hashesArray.length}`,
-  );
-
-  const idsArray = hashesFromIdResolvables
-    .filter((x) => x.status === "fetch")
-    .map((x) => x.id);
-  const responseFromIds = await batchFetchIds(idsArray);
-
-  if (responseFromIds) {
-    const responseFromIdsEntries = Object.entries(responseFromIds);
-    console.time(
-      `[${execUlid}] fetchAndCacheFromResolvablesRaw cache responseFromIds for ${responseFromIdsEntries.length}`,
-    );
-    const db = await DB.get();
-    await db.BeatSaverIdToHashCache.addMany(
-      responseFromIdsEntries.map(([id, x]) => {
-        return {
-          id: makeBeatSaverMapId(id),
-          hash: x?.versions[0].hash,
-          available: !!x,
-          removed: !x,
-          outdated: false,
-        };
-      }),
-    );
-    console.timeEnd(
-      `[${execUlid}] fetchAndCacheFromResolvablesRaw cache responseFromIds for ${responseFromIdsEntries.length}`,
-    );
-  }
-
-  const fromHashes: typeof responseFromIds = await responseFromHashesP;
-  const fromIds = responseFromIds;
-
-  console.timeEnd(
-    `[${execUlid}] fetchAndCacheFromResolvablesRaw for ${resolvables.length}`,
-  );
-
-  return {
-    fromHashes,
-    fromIds,
-  } as const;
-};
-
-export const fetchAndCacheFromResolvables = async (
-  resolvables: BeatSaverResolvable[],
-): Promise<typeof BeatSaverMapResponseSuccessSchema._type[]> => {
-  const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
-
-  return [
-    ...Object.values<typeof BeatSaverMapResponseSuccessSchema._type>(resolved.fromHashes ?? {}),
-    ...Object.values(resolved.fromIds ?? {}),
-  ].filter(filterNulls);
-};
-
+// export const fetchAndCacheFromResolvablesRaw = async (
+//   resolvables: BeatSaverResolvable[],
+// ) => {
+//   const execUlid = ulid();
+//   console.time(
+//     `[${execUlid}] fetchAndCacheFromResolvablesRaw for ${resolvables.length}`,
+//   );
+//   const {
+//     hashResolvables,
+//     idResolvables,
+//   } = splitBeatSaverResolvables(resolvables);
+//
+//   const hashesFromIdResolvables = await idsToHashesCache(idResolvables.map((x) => x.data));
+//   const hashesArrayFromResolvables = hashResolvables.map((x) => x.data);
+//
+//   const hashesFromCacheOk = hashesFromIdResolvables
+//     .filter((x) => x.status === "ok")
+//     .map((x) => x.data!.hash!);
+//
+//   // const idsFromIdResolvablesRemoved = hashesFromIdResolvables
+//   //   .filter((x) => x.status === "removed")
+//   //   .map((x) => x.data?.id ?? null)
+//   //   .filter(filterNulls);
+//
+//   const hashesArray = [...hashesFromCacheOk, ...hashesArrayFromResolvables];
+//
+//   console.time(
+//     `[${execUlid}] fetchAndCacheFromResolvablesRaw fetchAndCacheHashes for ${hashesArray.length}`,
+//   );
+//   const responseFromHashesP = fetchAndCacheHashes(hashesArray);
+//   console.timeEnd(
+//     `[${execUlid}] fetchAndCacheFromResolvablesRaw fetchAndCacheHashes for ${hashesArray.length}`,
+//   );
+//
+//   const idsArray = hashesFromIdResolvables
+//     .filter((x) => x.status === "fetch")
+//     .map((x) => x.id);
+//   const responseFromIds = await batchFetchIds(idsArray);
+//
+//   if (responseFromIds) {
+//     const responseFromIdsEntries = Object.entries(responseFromIds);
+//     console.time(
+//       `[${execUlid}] fetchAndCacheFromResolvablesRaw cache responseFromIds for ${responseFromIdsEntries.length}`,
+//     );
+//     const db = await DB.get();
+//     await db.BeatSaverIdToHashCache.addMany(
+//       responseFromIdsEntries.map(([id, x]) => {
+//         return {
+//           id: makeBeatSaverMapId(id),
+//           hash: x?.versions[0].hash,
+//           available: !!x,
+//           removed: !x,
+//           outdated: false,
+//         };
+//       }),
+//     );
+//     console.timeEnd(
+//       `[${execUlid}] fetchAndCacheFromResolvablesRaw cache responseFromIds for ${responseFromIdsEntries.length}`,
+//     );
+//   }
+//
+//   const fromHashes: typeof responseFromIds = await responseFromHashesP;
+//   const fromIds = responseFromIds;
+//
+//   console.timeEnd(
+//     `[${execUlid}] fetchAndCacheFromResolvablesRaw for ${resolvables.length}`,
+//   );
+//
+//   return {
+//     fromHashes,
+//     fromIds,
+//   } as const;
+// };
+//
+// export const fetchAndCacheFromResolvables = async (
+//   resolvables: BeatSaverResolvable[],
+// ): Promise<typeof BeatSaverMapResponseSuccessSchema._type[]> => {
+//   const resolved = await fetchAndCacheFromResolvablesRaw(resolvables);
+//
+//   return [
+//     ...Object.values<typeof BeatSaverMapResponseSuccessSchema._type>(resolved.fromHashes ?? {}),
+//     ...Object.values(resolved.fromIds ?? {}),
+//   ].filter(filterNulls);
+// };
+//
 export const fetchFromResolvablesRaw = async (
   resolvables: BeatSaverResolvable[],
 ) => {
