@@ -50,7 +50,7 @@ You can get it via:
 #### Get the zip <a name="installation-pcvr-bsmanager-get-the-zip"></a>
 
 1. Go to [the latest Releases page](https://github.com/Danielduel/tower-of-tech/releases/latest).
-2. In the dropdown called "Assets" find a file called "ToT.zip". (the url of it is https://github.com/Danielduel/tower-of-tech/releases/download/0.0.33/ToT.zip)
+2. In the dropdown called "Assets" find a file called "ToT.zip". (the url of it is https://github.com/Danielduel/tower-of-tech/releases/download/0.0.34/ToT.zip)
 3. Go to your Downloads folder and locate the "ToT.zip", cut it.
 
 
@@ -96,7 +96,7 @@ You can get it via:
 #### Get the zip <a name="installation-pcvr-manual-get-the-zip"></a>
 
 1. Go to [the latest Releases page](https://github.com/Danielduel/tower-of-tech/releases/latest).
-2. In the dropdown called "Assets" find a file called "ToT.zip". (the url of it is https://github.com/Danielduel/tower-of-tech/releases/download/0.0.33/ToT.zip)
+2. In the dropdown called "Assets" find a file called "ToT.zip". (the url of it is https://github.com/Danielduel/tower-of-tech/releases/download/0.0.34/ToT.zip)
 3. Go to your Downloads folder and locate the "ToT.zip", cut it.
 
 
