@@ -2646,9 +2646,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 241,
+          "upvotes": 242,
           "downvotes": 8,
-          "score": 0.9457,
+          "score": 0.9459,
           "reviews": 4
         },
         "uploaded": "2023-10-15T07:12:55.658782Z",
@@ -3353,9 +3353,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 386,
+          "upvotes": 387,
           "downvotes": 12,
-          "score": 0.9532,
+          "score": 0.9533,
           "reviews": 1
         },
         "uploaded": "2023-07-05T17:00:00.356908Z",
@@ -5621,9 +5621,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 333,
+          "upvotes": 334,
           "downvotes": 13,
-          "score": 0.9446
+          "score": 0.9447
         },
         "uploaded": "2023-08-26T19:51:16.746725Z",
         "automapper": false,
@@ -6577,9 +6577,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1309,
+          "upvotes": 1311,
           "downvotes": 115,
-          "score": 0.9126,
+          "score": 0.9127,
           "reviews": 1
         },
         "uploaded": "2022-04-09T22:34:42.414443Z",
@@ -13445,9 +13445,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 222,
+          "upvotes": 223,
           "downvotes": 57,
-          "score": 0.7826,
+          "score": 0.7834,
           "reviews": 2
         },
         "uploaded": "2025-01-04T00:22:29.352870Z",
@@ -15107,9 +15107,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 155,
+          "upvotes": 156,
           "downvotes": 3,
-          "score": 0.9507,
+          "score": 0.9509,
           "reviews": 1
         },
         "uploaded": "2025-11-02T16:01:13.567159Z",
@@ -15562,9 +15562,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 22,
+          "upvotes": 23,
           "downvotes": 2,
-          "score": 0.8341,
+          "score": 0.8387,
           "reviews": 1
         },
         "uploaded": "2025-12-13T05:30:43.085546Z",
@@ -15726,9 +15726,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 210,
-          "downvotes": 8,
-          "score": 0.9394,
+          "upvotes": 211,
+          "downvotes": 9,
+          "score": 0.9356,
           "reviews": 1
         },
         "uploaded": "2025-08-16T21:45:09.425221Z",
@@ -16415,9 +16415,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 57,
+          "upvotes": 58,
           "downvotes": 6,
-          "score": 0.8598,
+          "score": 0.8615,
           "reviews": 1
         },
         "uploaded": "2025-11-13T16:18:03.416071Z",
@@ -16516,9 +16516,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 42,
+          "upvotes": 43,
           "downvotes": 1,
-          "score": 0.9099
+          "score": 0.9113
         },
         "uploaded": "2026-02-27T19:47:30.157769Z",
         "automapper": false,
@@ -16629,9 +16629,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 212,
+          "upvotes": 213,
           "downvotes": 15,
-          "score": 0.9121,
+          "score": 0.9125,
           "reviews": 3
         },
         "uploaded": "2026-01-22T21:36:20.738648Z",
@@ -17406,9 +17406,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 99,
+          "upvotes": 100,
           "downvotes": 2,
-          "score": 0.9403,
+          "score": 0.9407,
           "reviews": 1
         },
         "uploaded": "2026-05-12T19:47:13.432354Z",
@@ -17585,9 +17585,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 47,
+          "upvotes": 48,
           "downvotes": 3,
-          "score": 0.8837,
+          "score": 0.8854,
           "reviews": 2
         },
         "uploaded": "2026-05-19T17:17:59.847596Z",
@@ -18311,9 +18311,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 92,
+          "upvotes": 96,
           "downvotes": 5,
-          "score": 0.9102,
+          "score": 0.913,
           "reviews": 1
         },
         "uploaded": "2026-09-24T14:35:02.737412Z",
@@ -18426,9 +18426,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 68,
+          "upvotes": 72,
           "downvotes": 4,
-          "score": 0.8989
+          "score": 0.903
         },
         "uploaded": "2026-09-24T22:11:30.010928Z",
         "automapper": false,

@@ -1532,9 +1532,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 824,
+          "upvotes": 825,
           "downvotes": 65,
-          "score": 0.9178,
+          "score": 0.9179,
           "reviews": 4
         },
         "uploaded": "2022-05-15T18:20:17.818864Z",
@@ -5441,9 +5441,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 58,
+          "upvotes": 59,
           "downvotes": 12,
-          "score": 0.7943
+          "score": 0.7968
         },
         "uploaded": "2022-08-11T02:34:09.030547Z",
         "automapper": false,
@@ -9730,9 +9730,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 21,
+          "upvotes": 22,
           "downvotes": 0,
-          "score": 0.8929
+          "score": 0.8957
         },
         "uploaded": "2026-06-18T01:37:50.096294Z",
         "automapper": false,

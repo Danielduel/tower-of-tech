@@ -7740,9 +7740,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 282,
+          "upvotes": 283,
           "downvotes": 61,
-          "score": 0.8097,
+          "score": 0.8102,
           "reviews": 10,
           "sentiment": "VERY_POSITIVE"
         },
@@ -9272,9 +9272,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 63,
+          "upvotes": 64,
           "downvotes": 17,
-          "score": 0.7599
+          "score": 0.7625
         },
         "uploaded": "2023-12-21T09:54:57.655359Z",
         "automapper": false,
@@ -10018,9 +10018,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 125,
+          "upvotes": 127,
           "downvotes": 10,
-          "score": 0.8963,
+          "score": 0.8976,
           "reviews": 2
         },
         "uploaded": "2024-01-26T15:00:00.312980Z",
@@ -10296,9 +10296,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 114,
+          "upvotes": 115,
           "downvotes": 11,
-          "score": 0.882
+          "score": 0.8828
         },
         "uploaded": "2024-01-26T23:46:02.395495Z",
         "automapper": false,
@@ -15175,9 +15175,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 157,
+          "upvotes": 158,
           "downvotes": 4,
-          "score": 0.9456
+          "score": 0.9458
         },
         "uploaded": "2024-09-12T18:15:35.417594Z",
         "automapper": false,
@@ -18170,7 +18170,7 @@ export default {
         "description": "this is challenge tech map ， no arc.",
         "uploader": {
           "id": 237087,
-          "name": "Hana-Team",
+          "name": "Hana2nd",
           "avatar": "https://cdn.beatsaver.com/avatar/237087.jpg",
           "type": "SIMPLE",
           "admin": false,
@@ -19908,9 +19908,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 163,
+          "upvotes": 164,
           "downvotes": 7,
-          "score": 0.9312,
+          "score": 0.9315,
           "reviews": 3
         },
         "uploaded": "2023-09-16T19:00:14.614145Z",

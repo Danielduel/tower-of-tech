@@ -3706,9 +3706,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 103,
+          "upvotes": 104,
           "downvotes": 3,
-          "score": 0.9336,
+          "score": 0.9341,
           "reviews": 3
         },
         "uploaded": "2026-01-21T00:09:39.824606Z",

@@ -4199,9 +4199,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 337,
+          "upvotes": 338,
           "downvotes": 9,
-          "score": 0.9557,
+          "score": 0.9558,
           "reviews": 1
         },
         "uploaded": "2025-01-08T20:48:00.301676Z",
