@@ -38169,9 +38169,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 87,
+          "upvotes": 88,
           "downvotes": 0,
-          "score": 0.9544,
+          "score": 0.9547,
           "reviews": 1
         },
         "uploaded": "2026-09-26T08:30:25.391668Z",

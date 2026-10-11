@@ -41452,9 +41452,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 61,
+          "upvotes": 62,
           "downvotes": 1,
-          "score": 0.9295
+          "score": 0.9303
         },
         "uploaded": "2026-09-17T08:00:00.706935Z",
         "automapper": false,
