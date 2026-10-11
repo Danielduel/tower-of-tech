@@ -3071,9 +3071,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 604,
+          "upvotes": 605,
           "downvotes": 63,
-          "score": 0.8952,
+          "score": 0.8953,
           "reviews": 1
         },
         "uploaded": "2024-02-29T03:15:56.390047Z",
@@ -5732,7 +5732,7 @@ export default {
           "avatar": "https://cdn.beatsaver.com/avatar/8fdd9e537f0b7aab3b3ad1141024490ca0648117.png",
           "type": "DISCORD",
           "admin": false,
-          "curator": true,
+          "curator": false,
           "seniorCurator": false,
           "curatorTab": true,
           "verifiedMapper": true,

@@ -5102,7 +5102,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 3619,
+          "upvotes": 3620,
           "downvotes": 140,
           "score": 0.9588,
           "reviews": 2
@@ -5585,9 +5585,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 136,
+          "upvotes": 137,
           "downvotes": 2,
-          "score": 0.9522
+          "score": 0.9525
         },
         "uploaded": "2023-04-16T23:00:00.425881Z",
         "automapper": false,
@@ -12024,7 +12024,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1716,
+          "upvotes": 1717,
           "downvotes": 49,
           "score": 0.9657
         },
@@ -12487,7 +12487,7 @@ export default {
           "avatar": "https://cdn.beatsaver.com/avatar/8fdd9e537f0b7aab3b3ad1141024490ca0648117.png",
           "type": "DISCORD",
           "admin": false,
-          "curator": true,
+          "curator": false,
           "seniorCurator": false,
           "curatorTab": true,
           "verifiedMapper": true,
@@ -15243,9 +15243,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 188,
+          "upvotes": 189,
           "downvotes": 3,
-          "score": 0.9572
+          "score": 0.9574
         },
         "uploaded": "2022-06-08T15:22:19.844257Z",
         "automapper": false,
@@ -20513,8 +20513,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 263,
-          "downvotes": 74,
-          "score": 0.7694,
+          "downvotes": 75,
+          "score": 0.7672,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },
@@ -21020,7 +21020,7 @@ export default {
           "avatar": "https://cdn.beatsaver.com/avatar/8fdd9e537f0b7aab3b3ad1141024490ca0648117.png",
           "type": "DISCORD",
           "admin": false,
-          "curator": true,
+          "curator": false,
           "seniorCurator": false,
           "curatorTab": true,
           "verifiedMapper": true,
@@ -21290,9 +21290,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1095,
+          "upvotes": 1096,
           "downvotes": 11,
-          "score": 0.9809
+          "score": 0.981
         },
         "uploaded": "2023-12-21T17:34:38.613961Z",
         "automapper": false,
@@ -22754,7 +22754,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 2233,
+          "upvotes": 2234,
           "downvotes": 46,
           "score": 0.9742,
           "reviews": 6,
@@ -32584,9 +32584,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 328,
+          "upvotes": 329,
           "downvotes": 6,
-          "score": 0.963,
+          "score": 0.9631,
           "reviews": 4
         },
         "uploaded": "2025-07-14T06:00:00.928078Z",
@@ -32887,7 +32887,7 @@ export default {
           "avatar": "https://cdn.beatsaver.com/avatar/8fdd9e537f0b7aab3b3ad1141024490ca0648117.png",
           "type": "DISCORD",
           "admin": false,
-          "curator": true,
+          "curator": false,
           "seniorCurator": false,
           "curatorTab": true,
           "verifiedMapper": true,
@@ -36647,7 +36647,7 @@ export default {
           "avatar": "https://cdn.beatsaver.com/avatar/8fdd9e537f0b7aab3b3ad1141024490ca0648117.png",
           "type": "DISCORD",
           "admin": false,
-          "curator": true,
+          "curator": false,
           "seniorCurator": false,
           "curatorTab": true,
           "verifiedMapper": true,
@@ -37232,9 +37232,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 403,
+          "upvotes": 404,
           "downvotes": 18,
-          "score": 0.9416,
+          "score": 0.9418,
           "reviews": 4
         },
         "uploaded": "2026-05-15T15:00:19.232100Z",
@@ -37422,7 +37422,7 @@ export default {
             "avatar": "https://cdn.beatsaver.com/avatar/8fdd9e537f0b7aab3b3ad1141024490ca0648117.png",
             "type": "DISCORD",
             "admin": false,
-            "curator": true,
+            "curator": false,
             "seniorCurator": false,
             "curatorTab": true,
             "verifiedMapper": true,
@@ -38528,9 +38528,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 31,
+          "upvotes": 33,
           "downvotes": 0,
-          "score": 0.9147
+          "score": 0.9178
         },
         "uploaded": "2026-10-04T19:12:51.398296Z",
         "automapper": false,

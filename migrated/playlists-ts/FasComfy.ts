@@ -1243,7 +1243,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1693,
+          "upvotes": 1694,
           "downvotes": 97,
           "score": 0.9397
         },
@@ -2269,9 +2269,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 659,
+          "upvotes": 661,
           "downvotes": 113,
-          "score": 0.8454,
+          "score": 0.8458,
           "reviews": 25,
           "sentiment": "MOSTLY_NEGATIVE"
         },

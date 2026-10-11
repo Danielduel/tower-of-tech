@@ -1214,9 +1214,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 242,
+          "upvotes": 243,
           "downvotes": 41,
-          "score": 0.8396,
+          "score": 0.8401,
           "reviews": 4
         },
         "uploaded": "2023-01-01T06:20:52.704750Z",
