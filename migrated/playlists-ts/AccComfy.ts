@@ -23550,9 +23550,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1414,
+          "upvotes": 1415,
           "downvotes": 109,
-          "score": 0.9219
+          "score": 0.922
         },
         "uploaded": "2022-02-19T21:44:41.688063Z",
         "automapper": false,
