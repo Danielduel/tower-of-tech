@@ -17,6 +17,7 @@ export type MigratePlaylistsTsType = {
   mapping: ToTPlaylistMappingItem;
   playlist: typeof playlists[number]["playlist"];
   coverUrl: string;
+  rawGithubCoverUrl: string;
   displayComplexity?: string;
   displaySpeed?: string;
   songsCount: number;

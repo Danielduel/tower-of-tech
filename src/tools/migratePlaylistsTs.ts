@@ -16,6 +16,7 @@ type Playlist = typeof playlists[number]["playlist"];
 
 const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlist) => {
   const coverUrl =  `${towerOfTechRepositoryUrl}/migrated/covers/${mapping.displayName}.png`;
+  const rawGithubCoverUrl = `https://raw.githubusercontent.com/Danielduel/tower-of-tech/refs/heads/main/migrated/covers/${mapping.displayName}.png`
   const displayComplexity = getToTPlaylistTechCategory(mapping.techCategory);
   const displaySpeed = getToTPlaylistSpeedCategory(mapping.speedCategory);
   const songsCount = playlist.songs.length;
@@ -48,6 +49,7 @@ const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlis
     mapping,
     playlist,
     coverUrl,
+    rawGithubCoverUrl,
     displayComplexity,
     displaySpeed,
     songsCount,
