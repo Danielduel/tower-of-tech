@@ -276,7 +276,8 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "36410"
       },
       {
         "hash": "E1CD5319D33C88D99975F2C14821AD813959F030",
@@ -301,7 +302,8 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "41a9c"
       },
       {
         "hash": "79AB94B312C47233C1A568E13DF65D844D657525",
@@ -3589,6 +3591,7 @@ export default {
       "hash": "01defe291db8e813245d41781acdee82ee7e028a"
     },
     {
+      "key": "36410",
       "song": {
         "hash": "A05F9A104E43AE7E747F1AF3EC251FB58FFD03A1",
         "levelid": "custom_level_A05F9A104E43AE7E747F1AF3EC251FB58FFD03A1",
@@ -3599,7 +3602,227 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "36410"
+      },
+      "beatsaver": {
+        "id": "36410",
+        "name": "DoctorNoSense - Feel Alive feat. Eleanor Forte",
+        "description": "Cute chill song that I really wanted to map so I forced Frost to make a techy ex+ for it :)\nAccuracy styled lowers by me, have fun.\n\nListen to the song on youtube here: https://www.youtube.com/watch?v=aDYlQVGzR3c\nFollow DoctorNoSense socials as well for more cute music\n https://www.instagram.com/doctornosense/\nhttps://soundcloud.com/doctornosense\nhttps://twitter.com/DoctorNoSense\nhttps://open.spotify.com/artist/0Jjn1fbwpJi8hm1egKYdQo?si=CKhuwAj9TNuoBRZl2ACEAQ&nd=1",
+        "uploader": {
+          "id": 4284297,
+          "name": "Bitz",
+          "hash": "5f6e6ffc530c8e00064207e4",
+          "avatar": "https://cdn.beatsaver.com/avatar/4284297.jpg",
+          "type": "SIMPLE",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4284297/playlist"
+        },
+        "metadata": {
+          "bpm": 190,
+          "duration": 215,
+          "songName": "Feel Alive",
+          "songSubName": "(feat. Eleanor Forte)",
+          "songAuthorName": "DoctorNoSense",
+          "levelAuthorName": "Bitz & Frost"
+        },
+        "stats": {
+          "plays": 0,
+          "downloads": 0,
+          "upvotes": 368,
+          "downvotes": 38,
+          "score": 0.8922,
+          "reviews": 1
+        },
+        "uploaded": "2023-10-07T19:52:48.975754Z",
+        "automapper": false,
+        "ranked": true,
+        "qualified": false,
+        "versions": [
+          {
+            "hash": "48464c8eab7624752b51e9782d0be4f3d5650c06",
+            "state": "Published",
+            "createdAt": "2024-10-24T22:18:03.222012Z",
+            "sageScore": 4,
+            "diffs": [
+              {
+                "njs": 10,
+                "offset": -0.3,
+                "notes": 237,
+                "bombs": 0,
+                "obstacles": 118,
+                "nps": 1.139,
+                "length": 659,
+                "characteristic": "Standard",
+                "difficulty": "Easy",
+                "events": 2607,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 208.105,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 3.4,
+                "maxScore": 210795,
+                "label": "Just",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 11,
+                "offset": -1,
+                "notes": 475,
+                "bombs": 0,
+                "obstacles": 111,
+                "nps": 2.253,
+                "length": 667.5,
+                "characteristic": "Standard",
+                "difficulty": "Normal",
+                "events": 2607,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 210.789,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 3.97,
+                "maxScore": 429755,
+                "label": "Want",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 12,
+                "offset": -1.5,
+                "notes": 641,
+                "bombs": 0,
+                "obstacles": 86,
+                "nps": 3.041,
+                "length": 667.5,
+                "characteristic": "Standard",
+                "difficulty": "Hard",
+                "events": 2607,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 210.789,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 4.14,
+                "maxScore": 582475,
+                "label": "To",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 13,
+                "offset": -2,
+                "notes": 698,
+                "bombs": 0,
+                "obstacles": 74,
+                "nps": 3.311,
+                "length": 667.5,
+                "characteristic": "Standard",
+                "difficulty": "Expert",
+                "events": 2608,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 210.789,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 4.76,
+                "maxScore": 634915,
+                "label": "Feel",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 16,
+                "offset": -0.516,
+                "notes": 791,
+                "bombs": 0,
+                "obstacles": 820,
+                "nps": 3.753,
+                "length": 667.5,
+                "characteristic": "Standard",
+                "difficulty": "ExpertPlus",
+                "events": 2608,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 210.789,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 30,
+                  "resets": 0
+                },
+                "stars": 7.39,
+                "maxScore": 720475,
+                "label": "Alive",
+                "environment": "DefaultEnvironment"
+              }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/48464c8eab7624752b51e9782d0be4f3d5650c06.zip",
+            "coverURL": "https://cfcdn.beatsaver.com/48464c8eab7624752b51e9782d0be4f3d5650c06.jpg",
+            "previewURL": "https://cfcdn.beatsaver.com/48464c8eab7624752b51e9782d0be4f3d5650c06.mp3"
+          }
+        ],
+        "curator": {
+          "id": 4254180,
+          "name": "Joshabi",
+          "hash": "5cff0b7398cc5a672c84ee93",
+          "avatar": "https://cdn.beatsaver.com/avatar/e47e632e881270b551390237a88b907953ff1031.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "curatorTab": true,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4254180/playlist"
+        },
+        "curatedAt": "2023-12-26T14:01:53.779823Z",
+        "createdAt": "2023-10-07T19:52:10.811248Z",
+        "updatedAt": "2024-10-24T22:18:09.831113Z",
+        "lastPublishedAt": "2024-10-24T22:18:09.831113Z",
+        "tags": [
+          "accuracy",
+          "tech",
+          "pop",
+          "electronic"
+        ],
+        "collaborators": [
+          {
+            "id": 4338323,
+            "name": "Frost",
+            "avatar": "https://cdn.beatsaver.com/avatar/3aa5be9be8f535bb01de753439f53ef2e491d955.png",
+            "type": "DISCORD",
+            "admin": false,
+            "curator": false,
+            "seniorCurator": false,
+            "verifiedMapper": true,
+            "playlistUrl": "https://api.beatsaver.com/users/id/4338323/playlist"
+          }
+        ],
+        "declaredAi": "None",
+        "blRanked": false,
+        "blQualified": false
       },
       "hash": "a05f9a104e43ae7e747f1af3ec251fb58ffd03a1"
     },
@@ -3859,6 +4082,7 @@ export default {
       "hash": "e1cd5319d33c88d99975f2c14821ad813959f030"
     },
     {
+      "key": "41a9c",
       "song": {
         "hash": "8798093448433FFB234E9CAB6B42D2ADB5958654",
         "levelid": "custom_level_8798093448433FFB234E9CAB6B42D2ADB5958654",
@@ -3869,7 +4093,91 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "41a9c"
+      },
+      "beatsaver": {
+        "id": "41a9c",
+        "name": "Adam Tell - Fallout",
+        "description": "Map #14\n\nAutolit\n\nCool song",
+        "uploader": {
+          "id": 4297195,
+          "name": "tainted_bread",
+          "avatar": "https://cdn.beatsaver.com/avatar/53036608e8ac9d4c4f29077b7c062976b0e9439a.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4297195/playlist"
+        },
+        "metadata": {
+          "bpm": 109,
+          "duration": 127,
+          "songName": "Fallout",
+          "songSubName": "",
+          "songAuthorName": "Adam Tell",
+          "levelAuthorName": "Baguette"
+        },
+        "stats": {
+          "plays": 0,
+          "downloads": 0,
+          "upvotes": 42,
+          "downvotes": 1,
+          "score": 0.9099
+        },
+        "uploaded": "2024-11-15T20:07:42.554598Z",
+        "automapper": false,
+        "ranked": false,
+        "qualified": false,
+        "versions": [
+          {
+            "hash": "79ab94b312c47233c1a568e13df65d844d657525",
+            "state": "Published",
+            "createdAt": "2024-11-15T21:23:03.949213Z",
+            "sageScore": 2,
+            "diffs": [
+              {
+                "njs": 18,
+                "offset": -0.125,
+                "notes": 480,
+                "bombs": 39,
+                "obstacles": 84,
+                "nps": 3.976,
+                "length": 219.333,
+                "characteristic": "Standard",
+                "difficulty": "ExpertPlus",
+                "events": 2068,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 120.734,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 434355,
+                "label": "Aftermath",
+                "environment": "DefaultEnvironment"
+              }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/79ab94b312c47233c1a568e13df65d844d657525.zip",
+            "coverURL": "https://cfcdn.beatsaver.com/79ab94b312c47233c1a568e13df65d844d657525.jpg",
+            "previewURL": "https://cfcdn.beatsaver.com/79ab94b312c47233c1a568e13df65d844d657525.mp3"
+          }
+        ],
+        "createdAt": "2024-11-15T20:07:36.413225Z",
+        "updatedAt": "2024-11-15T21:23:06.749080Z",
+        "lastPublishedAt": "2024-11-15T21:23:06.749080Z",
+        "tags": [
+          "tech",
+          "electronic"
+        ],
+        "declaredAi": "None",
+        "blRanked": false,
+        "blQualified": false
       },
       "hash": "8798093448433ffb234e9cab6b42d2adb5958654"
     },

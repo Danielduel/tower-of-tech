@@ -284,14 +284,10 @@ export const fetchFromResolvablesRaw = async (
 
 export const fetchFromHashResolvables = async (
   resolvables: BeatSaverResolvable[],
-): Promise<typeof BeatSaverMapResponseSuccessSchema._type[]> => {
+): Promise<Record<LowercaseMapHash, typeof BeatSaverMapResponseSuccessSchema._type | null>> => {
   const resolved = await fetchFromResolvablesRaw(resolvables);
 
-  console.log(resolved);
-
-  return [
-    ...Object.values<typeof BeatSaverMapResponseSuccessSchema._type>(resolved!),
-  ].filter(filterNulls);
+  return resolved;
 };
 
 

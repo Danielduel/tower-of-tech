@@ -1390,6 +1390,7 @@ export default {
       "hash": "f4a816746c82d16c523120ab26e7a3cc4d055aa5"
     },
     {
+      "key": "3712d",
       "song": {
         "hash": "DF656E2EB55F45FB30648A23315FFFF0392968A8",
         "levelid": "custom_level_DF656E2EB55F45FB30648A23315FFFF0392968A8",
@@ -1402,9 +1403,231 @@ export default {
           }
         ]
       },
+      "beatsaver": {
+        "id": "3712d",
+        "name": "[R] [Chroma] MYUKKE. - Friendly Gigant Fire",
+        "description": "yabje & oegoe collab 2 electric boogaloo\n\nsend me your hatemail to oegoe on Discord tyvm <3\n\nreup #1 changing stuff thanks to @gBitz' feedback\nreup #2 thank you @Elecast for the epic RT mod!\nreup #3 for azuri's mod and yabje's banger fucking lightshow!",
+        "uploader": {
+          "id": 4286383,
+          "name": "oegoe",
+          "hash": "5f974e573dd2f00006d6eac5",
+          "avatar": "https://cdn.beatsaver.com/avatar/c97b5c2169760e6136e8e11bed8668c1c879ec5c.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4286383/playlist"
+        },
+        "metadata": {
+          "bpm": 210,
+          "duration": 134,
+          "songName": "Friendly Gigant Fire",
+          "songSubName": "",
+          "songAuthorName": "MYUKKE.",
+          "levelAuthorName": "oegoe & yabje"
+        },
+        "stats": {
+          "plays": 0,
+          "downloads": 0,
+          "upvotes": 613,
+          "downvotes": 85,
+          "score": 0.8688,
+          "reviews": 2
+        },
+        "uploaded": "2023-11-10T18:16:48.263421Z",
+        "automapper": false,
+        "ranked": true,
+        "qualified": false,
+        "versions": [
+          {
+            "hash": "7c71478be50723a908aa46b8536f9d169ba6a75c",
+            "state": "Published",
+            "createdAt": "2024-05-14T07:38:31.166084Z",
+            "sageScore": 4,
+            "diffs": [
+              {
+                "njs": 15,
+                "offset": -1.4,
+                "notes": 483,
+                "bombs": 0,
+                "obstacles": 33,
+                "nps": 3.79,
+                "length": 446,
+                "characteristic": "Standard",
+                "difficulty": "Normal",
+                "events": 22919,
+                "chroma": true,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 127.429,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 3.4,
+                "maxScore": 437115,
+                "label": "Flame (h)",
+                "blStars": 3.13,
+                "environment": "TimbalandEnvironment"
+              },
+              {
+                "njs": 16,
+                "offset": 0.3,
+                "notes": 813,
+                "bombs": 0,
+                "obstacles": 148,
+                "nps": 6.38,
+                "length": 446,
+                "characteristic": "Standard",
+                "difficulty": "Hard",
+                "events": 22919,
+                "chroma": true,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 127.429,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 19,
+                  "resets": 0
+                },
+                "stars": 7.53,
+                "maxScore": 740715,
+                "label": "Fire (ex)",
+                "blStars": 7.3,
+                "environment": "TimbalandEnvironment"
+              },
+              {
+                "njs": 19,
+                "offset": -0.139,
+                "notes": 1334,
+                "bombs": 0,
+                "obstacles": 56,
+                "nps": 10.469,
+                "length": 446,
+                "characteristic": "Standard",
+                "difficulty": "Expert",
+                "events": 22919,
+                "chroma": true,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 127.429,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 94,
+                  "resets": 0
+                },
+                "stars": 10.65,
+                "maxScore": 1220035,
+                "label": "Ögö's Feuerball, Junge! (ex+)",
+                "blStars": 11.07,
+                "environment": "TimbalandEnvironment"
+              },
+              {
+                "njs": 19,
+                "offset": -0.25,
+                "notes": 1272,
+                "bombs": 0,
+                "obstacles": 457,
+                "nps": 9.982,
+                "length": 446,
+                "characteristic": "Standard",
+                "difficulty": "ExpertPlus",
+                "events": 22919,
+                "chroma": true,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 127.429,
+                "paritySummary": {
+                  "errors": 4,
+                  "warns": 49,
+                  "resets": 0
+                },
+                "stars": 10.93,
+                "maxScore": 1162995,
+                "label": "yabje's Humongous Blaze (ex+)",
+                "blStars": 11.57,
+                "environment": "TimbalandEnvironment"
+              },
+              {
+                "njs": 16,
+                "offset": 0,
+                "notes": 0,
+                "bombs": 0,
+                "obstacles": 0,
+                "nps": 0,
+                "length": 0,
+                "characteristic": "Lightshow",
+                "difficulty": "Easy",
+                "events": 22919,
+                "chroma": true,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 0,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 0,
+                "label": "Friendly Lights",
+                "environment": "TimbalandEnvironment"
+              }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/7c71478be50723a908aa46b8536f9d169ba6a75c.zip",
+            "coverURL": "https://cfcdn.beatsaver.com/7c71478be50723a908aa46b8536f9d169ba6a75c.jpg",
+            "previewURL": "https://cfcdn.beatsaver.com/7c71478be50723a908aa46b8536f9d169ba6a75c.mp3"
+          }
+        ],
+        "curator": {
+          "id": 4331555,
+          "name": "TheBlackParrot",
+          "avatar": "https://cdn.beatsaver.com/avatar/213097af5fb746f71825aad761723951ce4807ab.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "curatorTab": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4331555/playlist"
+        },
+        "curatedAt": "2023-11-13T20:28:50.911292Z",
+        "createdAt": "2023-11-10T18:16:43.287637Z",
+        "updatedAt": "2024-12-16T23:56:26.006018Z",
+        "lastPublishedAt": "2024-05-14T07:38:45.827025Z",
+        "tags": [
+          "balanced",
+          "tech",
+          "electronic"
+        ],
+        "collaborators": [
+          {
+            "id": 4286077,
+            "name": "yabje",
+            "hash": "6015c690cd73ba000608231c",
+            "avatar": "https://cdn.beatsaver.com/avatar/8a95d878734f8a36e4d9a5c8b04d5d54dc82fe1f.png",
+            "type": "DISCORD",
+            "admin": false,
+            "curator": false,
+            "seniorCurator": false,
+            "curatorTab": true,
+            "verifiedMapper": true,
+            "playlistUrl": "https://api.beatsaver.com/users/id/4286077/playlist"
+          }
+        ],
+        "declaredAi": "None",
+        "blRanked": true,
+        "blQualified": false
+      },
       "hash": "df656e2eb55f45fb30648a23315ffff0392968a8"
     },
     {
+      "key": "35639",
       "song": {
         "hash": "9F1B294D2AEB9181C7B92C3A1285A1A6593CCD97",
         "levelid": "custom_level_9F1B294D2AEB9181C7B92C3A1285A1A6593CCD97",
@@ -1416,6 +1639,158 @@ export default {
             "name": "ExpertPlus"
           }
         ]
+      },
+      "beatsaver": {
+        "id": "35639",
+        "name": "MYUKKE. - Kalis Mind",
+        "description": "HEY BEAT SABER!!!\n\nI redid a few sections of exp+ for the OG kalis players\nALSO now with downmaps for all to enjoy!!\n\ngonna start ranking stuff again \nstarting with this\n\nGLHF!!!\n\nhmu notvoidless \n\noh yeah and expect reups",
+        "uploader": {
+          "id": 4284372,
+          "name": "Voidless",
+          "hash": "602fa3d712772e0006e00fef",
+          "avatar": "https://cdn.beatsaver.com/avatar/dbfff91fe2f3ae47a812ffe5b0a3b05ca7fd198a.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4284372/playlist"
+        },
+        "metadata": {
+          "bpm": 190,
+          "duration": 121,
+          "songName": "Kalis Mind",
+          "songSubName": "",
+          "songAuthorName": "MYUKKE.",
+          "levelAuthorName": "Voidless"
+        },
+        "stats": {
+          "plays": 0,
+          "downloads": 0,
+          "upvotes": 237,
+          "downvotes": 25,
+          "score": 0.886,
+          "reviews": 1
+        },
+        "uploaded": "2023-09-03T02:41:54.537870Z",
+        "automapper": false,
+        "ranked": true,
+        "qualified": false,
+        "versions": [
+          {
+            "hash": "3530e617e68191e9ed4f15b6d56009975f58eff0",
+            "state": "Published",
+            "createdAt": "2024-07-07T10:20:53.365326Z",
+            "sageScore": 5,
+            "diffs": [
+              {
+                "njs": 14,
+                "offset": -1.625,
+                "notes": 361,
+                "bombs": 0,
+                "obstacles": 509,
+                "nps": 3.178,
+                "length": 360,
+                "characteristic": "Standard",
+                "difficulty": "Hard",
+                "events": 3241,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 113.684,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 4,
+                "maxScore": 324875,
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 16,
+                "offset": -0.1,
+                "notes": 600,
+                "bombs": 0,
+                "obstacles": 369,
+                "nps": 5.283,
+                "length": 360,
+                "characteristic": "Standard",
+                "difficulty": "Expert",
+                "events": 3241,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 113.684,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 7.86,
+                "maxScore": 544755,
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 18,
+                "offset": -0.48,
+                "notes": 969,
+                "bombs": 0,
+                "obstacles": 332,
+                "nps": 8.531,
+                "length": 360,
+                "characteristic": "Standard",
+                "difficulty": "ExpertPlus",
+                "events": 3251,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 113.684,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 9.35,
+                "maxScore": 884235,
+                "label": "Kalis (E+)",
+                "environment": "DefaultEnvironment"
+              }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/3530e617e68191e9ed4f15b6d56009975f58eff0.zip",
+            "coverURL": "https://cfcdn.beatsaver.com/3530e617e68191e9ed4f15b6d56009975f58eff0.jpg",
+            "previewURL": "https://cfcdn.beatsaver.com/3530e617e68191e9ed4f15b6d56009975f58eff0.mp3"
+          }
+        ],
+        "curator": {
+          "id": 4288866,
+          "name": "GeneralDum",
+          "hash": "5f47d17f530c8e00062903c9",
+          "avatar": "https://cdn.beatsaver.com/avatar/c7d25218cee2429fb3aae7180aa2f56744826dc6.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "curatorTab": true,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4288866/playlist"
+        },
+        "curatedAt": "2023-09-03T10:59:16.936872Z",
+        "createdAt": "2023-09-03T02:31:42.570723Z",
+        "updatedAt": "2024-11-06T20:17:42.344327Z",
+        "lastPublishedAt": "2024-07-07T10:21:47.441402Z",
+        "tags": [
+          "tech",
+          "speed",
+          "electronic",
+          "hardcore"
+        ],
+        "declaredAi": "None",
+        "blRanked": false,
+        "blQualified": false
       },
       "hash": "9f1b294d2aeb9181c7b92c3a1285a1a6593ccd97"
     },
@@ -2812,7 +3187,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1920,
+          "upvotes": 1921,
           "downvotes": 167,
           "score": 0.9148,
           "reviews": 1
@@ -3292,6 +3667,7 @@ export default {
       "hash": "a331bc74b6204fd577652db00950ba097e97bc3c"
     },
     {
+      "key": "45612",
       "song": {
         "hash": "95F2868DB6D7EE7D7C5253A7317802FF13281F1A",
         "levelid": "custom_level_95F2868DB6D7EE7D7C5253A7317802FF13281F1A",
@@ -3303,6 +3679,198 @@ export default {
             "name": "ExpertPlus"
           }
         ]
+      },
+      "beatsaver": {
+        "id": "45612",
+        "name": "Normal Complex",
+        "description": "gimme a bit your talent...\nheavy tech , going for rank",
+        "uploader": {
+          "id": 4285274,
+          "name": "wangyufy",
+          "hash": "60e2ab6b5ab13d00060d33d3",
+          "avatar": "https://cdn.beatsaver.com/avatar/66f964bbdaab736e8ebc070c9d304dc216dae124.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4285274/playlist"
+        },
+        "metadata": {
+          "bpm": 196,
+          "duration": 172,
+          "songName": "Normal Complex",
+          "songSubName": "Kasane Teto SV",
+          "songAuthorName": "eipu",
+          "levelAuthorName": "wangyufy"
+        },
+        "stats": {
+          "plays": 0,
+          "downloads": 0,
+          "upvotes": 74,
+          "downvotes": 5,
+          "score": 0.8944
+        },
+        "uploaded": "2025-03-21T05:13:08.450447Z",
+        "automapper": false,
+        "ranked": false,
+        "qualified": false,
+        "versions": [
+          {
+            "hash": "a1f381d5b8e4efd06dd95e58ca0ecb31e6d040a7",
+            "state": "Published",
+            "createdAt": "2025-07-01T14:51:46.778329Z",
+            "sageScore": 5,
+            "diffs": [
+              {
+                "njs": 13,
+                "offset": -1.487,
+                "notes": 558,
+                "bombs": 0,
+                "obstacles": 346,
+                "nps": 3.379,
+                "length": 539.5,
+                "characteristic": "Standard",
+                "difficulty": "Normal",
+                "events": 1759,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 165.153,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 506115,
+                "environment": "TimbalandEnvironment"
+              },
+              {
+                "njs": 15,
+                "offset": 0.069,
+                "notes": 853,
+                "bombs": 0,
+                "obstacles": 82,
+                "nps": 5.165,
+                "length": 539.542,
+                "characteristic": "Standard",
+                "difficulty": "Hard",
+                "events": 3149,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 165.166,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 777515,
+                "environment": "TimbalandEnvironment"
+              },
+              {
+                "njs": 16,
+                "offset": -0.265,
+                "notes": 1066,
+                "bombs": 52,
+                "obstacles": 141,
+                "nps": 6.454,
+                "length": 539.583,
+                "characteristic": "Standard",
+                "difficulty": "Expert",
+                "events": 5304,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 165.178,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 973475,
+                "environment": "TimbalandEnvironment"
+              },
+              {
+                "njs": 16,
+                "offset": -0.367,
+                "notes": 1490,
+                "bombs": 32,
+                "obstacles": 270,
+                "nps": 9.02,
+                "length": 539.625,
+                "characteristic": "Standard",
+                "difficulty": "ExpertPlus",
+                "events": 7211,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 165.191,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 1363555,
+                "environment": "TimbalandEnvironment"
+              },
+              {
+                "njs": 13,
+                "offset": -1.487,
+                "notes": 1,
+                "bombs": 0,
+                "obstacles": 0,
+                "nps": 0,
+                "length": 0,
+                "characteristic": "Lightshow",
+                "difficulty": "Easy",
+                "events": 14476,
+                "chroma": true,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 0,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 115,
+                "environment": "TimbalandEnvironment"
+              }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/a1f381d5b8e4efd06dd95e58ca0ecb31e6d040a7.zip",
+            "coverURL": "https://cfcdn.beatsaver.com/a1f381d5b8e4efd06dd95e58ca0ecb31e6d040a7.jpg",
+            "previewURL": "https://cfcdn.beatsaver.com/a1f381d5b8e4efd06dd95e58ca0ecb31e6d040a7.mp3"
+          }
+        ],
+        "curator": {
+          "id": 4284418,
+          "name": "SL4SH",
+          "hash": "5fdf49f51d475d00065baa43",
+          "avatar": "https://cdn.beatsaver.com/avatar/5c314fe80163e6c045deb6fd8cec29e2fff03781.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "curatorTab": true,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4284418/playlist"
+        },
+        "curatedAt": "2025-04-17T13:46:39.510964Z",
+        "createdAt": "2025-03-21T05:10:37.792688Z",
+        "updatedAt": "2025-07-01T14:53:08.692049Z",
+        "lastPublishedAt": "2025-07-01T14:53:08.692049Z",
+        "tags": [
+          "tech"
+        ],
+        "declaredAi": "None",
+        "blRanked": false,
+        "blQualified": false
       },
       "hash": "95f2868db6d7ee7d7c5253a7317802ff13281f1a"
     },

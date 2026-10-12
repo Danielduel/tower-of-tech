@@ -739,7 +739,8 @@ export default {
             "characteristic": "Standard",
             "name": "Expert"
           }
-        ]
+        ],
+        "key": "36410"
       },
       {
         "hash": "9C7693FD0731E63163DE5FD8BF6B305BC7946A39",
@@ -889,7 +890,8 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "3c48f"
       },
       {
         "hash": "A57F26985FE0BB67F571146705E929BCBF02EC02",
@@ -1614,7 +1616,8 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "45a21"
       },
       {
         "hash": "C2E6C5793C1C3D3D6304458C3D414B76CC37630B",
@@ -5548,9 +5551,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 161,
+          "upvotes": 162,
           "downvotes": 10,
-          "score": 0.915,
+          "score": 0.9155,
           "reviews": 1
         },
         "uploaded": "2023-10-08T13:30:50.579653Z",
@@ -13129,6 +13132,7 @@ export default {
       "hash": "0c613e9ee92bfab6d055594178cadb80fbc9a254"
     },
     {
+      "key": "36410",
       "song": {
         "hash": "237C8288CEF6AECE33C41A0DA9A99461083AB118",
         "levelid": "custom_level_237C8288CEF6AECE33C41A0DA9A99461083AB118",
@@ -13139,7 +13143,227 @@ export default {
             "characteristic": "Standard",
             "name": "Expert"
           }
-        ]
+        ],
+        "key": "36410"
+      },
+      "beatsaver": {
+        "id": "36410",
+        "name": "DoctorNoSense - Feel Alive feat. Eleanor Forte",
+        "description": "Cute chill song that I really wanted to map so I forced Frost to make a techy ex+ for it :)\nAccuracy styled lowers by me, have fun.\n\nListen to the song on youtube here: https://www.youtube.com/watch?v=aDYlQVGzR3c\nFollow DoctorNoSense socials as well for more cute music\n https://www.instagram.com/doctornosense/\nhttps://soundcloud.com/doctornosense\nhttps://twitter.com/DoctorNoSense\nhttps://open.spotify.com/artist/0Jjn1fbwpJi8hm1egKYdQo?si=CKhuwAj9TNuoBRZl2ACEAQ&nd=1",
+        "uploader": {
+          "id": 4284297,
+          "name": "Bitz",
+          "hash": "5f6e6ffc530c8e00064207e4",
+          "avatar": "https://cdn.beatsaver.com/avatar/4284297.jpg",
+          "type": "SIMPLE",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4284297/playlist"
+        },
+        "metadata": {
+          "bpm": 190,
+          "duration": 215,
+          "songName": "Feel Alive",
+          "songSubName": "(feat. Eleanor Forte)",
+          "songAuthorName": "DoctorNoSense",
+          "levelAuthorName": "Bitz & Frost"
+        },
+        "stats": {
+          "plays": 0,
+          "downloads": 0,
+          "upvotes": 368,
+          "downvotes": 38,
+          "score": 0.8922,
+          "reviews": 1
+        },
+        "uploaded": "2023-10-07T19:52:48.975754Z",
+        "automapper": false,
+        "ranked": true,
+        "qualified": false,
+        "versions": [
+          {
+            "hash": "48464c8eab7624752b51e9782d0be4f3d5650c06",
+            "state": "Published",
+            "createdAt": "2024-10-24T22:18:03.222012Z",
+            "sageScore": 4,
+            "diffs": [
+              {
+                "njs": 10,
+                "offset": -0.3,
+                "notes": 237,
+                "bombs": 0,
+                "obstacles": 118,
+                "nps": 1.139,
+                "length": 659,
+                "characteristic": "Standard",
+                "difficulty": "Easy",
+                "events": 2607,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 208.105,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 3.4,
+                "maxScore": 210795,
+                "label": "Just",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 11,
+                "offset": -1,
+                "notes": 475,
+                "bombs": 0,
+                "obstacles": 111,
+                "nps": 2.253,
+                "length": 667.5,
+                "characteristic": "Standard",
+                "difficulty": "Normal",
+                "events": 2607,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 210.789,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 3.97,
+                "maxScore": 429755,
+                "label": "Want",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 12,
+                "offset": -1.5,
+                "notes": 641,
+                "bombs": 0,
+                "obstacles": 86,
+                "nps": 3.041,
+                "length": 667.5,
+                "characteristic": "Standard",
+                "difficulty": "Hard",
+                "events": 2607,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 210.789,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 4.14,
+                "maxScore": 582475,
+                "label": "To",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 13,
+                "offset": -2,
+                "notes": 698,
+                "bombs": 0,
+                "obstacles": 74,
+                "nps": 3.311,
+                "length": 667.5,
+                "characteristic": "Standard",
+                "difficulty": "Expert",
+                "events": 2608,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 210.789,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 4.76,
+                "maxScore": 634915,
+                "label": "Feel",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 16,
+                "offset": -0.516,
+                "notes": 791,
+                "bombs": 0,
+                "obstacles": 820,
+                "nps": 3.753,
+                "length": 667.5,
+                "characteristic": "Standard",
+                "difficulty": "ExpertPlus",
+                "events": 2608,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 210.789,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 30,
+                  "resets": 0
+                },
+                "stars": 7.39,
+                "maxScore": 720475,
+                "label": "Alive",
+                "environment": "DefaultEnvironment"
+              }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/48464c8eab7624752b51e9782d0be4f3d5650c06.zip",
+            "coverURL": "https://cfcdn.beatsaver.com/48464c8eab7624752b51e9782d0be4f3d5650c06.jpg",
+            "previewURL": "https://cfcdn.beatsaver.com/48464c8eab7624752b51e9782d0be4f3d5650c06.mp3"
+          }
+        ],
+        "curator": {
+          "id": 4254180,
+          "name": "Joshabi",
+          "hash": "5cff0b7398cc5a672c84ee93",
+          "avatar": "https://cdn.beatsaver.com/avatar/e47e632e881270b551390237a88b907953ff1031.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "curatorTab": true,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4254180/playlist"
+        },
+        "curatedAt": "2023-12-26T14:01:53.779823Z",
+        "createdAt": "2023-10-07T19:52:10.811248Z",
+        "updatedAt": "2024-10-24T22:18:09.831113Z",
+        "lastPublishedAt": "2024-10-24T22:18:09.831113Z",
+        "tags": [
+          "accuracy",
+          "tech",
+          "pop",
+          "electronic"
+        ],
+        "collaborators": [
+          {
+            "id": 4338323,
+            "name": "Frost",
+            "avatar": "https://cdn.beatsaver.com/avatar/3aa5be9be8f535bb01de753439f53ef2e491d955.png",
+            "type": "DISCORD",
+            "admin": false,
+            "curator": false,
+            "seniorCurator": false,
+            "verifiedMapper": true,
+            "playlistUrl": "https://api.beatsaver.com/users/id/4338323/playlist"
+          }
+        ],
+        "declaredAi": "None",
+        "blRanked": false,
+        "blQualified": false
       },
       "hash": "237c8288cef6aece33c41a0da9a99461083ab118"
     },
@@ -14766,6 +14990,7 @@ export default {
       "hash": "095aafc77c02aa022df21ff5071d0328599d8756"
     },
     {
+      "key": "3c48f",
       "song": {
         "hash": "DD33967F67072FB74057DD0749F6A3423BDD867D",
         "levelid": "custom_level_DD33967F67072FB74057DD0749F6A3423BDD867D",
@@ -14776,7 +15001,157 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "3c48f"
+      },
+      "beatsaver": {
+        "id": "3c48f",
+        "name": "Half Measure - 1982 (Chroma)",
+        "description": "Good Morning Everyone, i hope you're all doing well, altough it may be afternoon or even evening for some of you, let's just suppose that it's the morning XD.\n\nThis song is a beautiful, chill masterpiece made by Half Measure, and requested to me by @kitkatgmr , who also gave me many other Amazing songs to enjoy and then map into the wide world of Beat Saber maps !\n\nIn it's lighting i used some new fade in/fade out tricks i just made/discovered, and mixed much of my older chroma knowledge into ensuring that this map can be the best it can be both lighting and gameplay-wise, so this is basically my best chroma map and lightshow yet XD.\n (Tho the lightshow is also one of my simplest ones yet).\n\nI hope you enjoy this one, and as i did before, i made a Chainless / Quest friendly version of the standard difficulty in Lawless.\n\nEnjoy :3\n\nStandard Map Preview: https://youtu.be/EzXSdVSJwr8\nLawless Map Preview: https://youtu.be/M7XjWiDnIlU\nLightshow Preview: https://youtu.be/fAl_iTcZ9tg\n",
+        "uploader": {
+          "id": 4333794,
+          "name": "Brakepie",
+          "avatar": "https://cdn.beatsaver.com/avatar/6b27d4f1845daca2204465de8cb760794b5a5562.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4333794/playlist"
+        },
+        "metadata": {
+          "bpm": 143,
+          "duration": 222,
+          "songName": "1982",
+          "songSubName": "",
+          "songAuthorName": "Half Measure",
+          "levelAuthorName": "Brakepie"
+        },
+        "stats": {
+          "plays": 0,
+          "downloads": 0,
+          "upvotes": 172,
+          "downvotes": 15,
+          "score": 0.896,
+          "reviews": 2
+        },
+        "uploaded": "2024-05-03T11:32:29.793432Z",
+        "automapper": false,
+        "ranked": false,
+        "qualified": false,
+        "versions": [
+          {
+            "hash": "8ddd394df8a8d20a9cb785b74872fcce99ac7f3b",
+            "state": "Published",
+            "createdAt": "2024-09-26T20:27:02.963651Z",
+            "sageScore": 2,
+            "diffs": [
+              {
+                "njs": 17,
+                "offset": -0.668,
+                "notes": 680,
+                "bombs": 0,
+                "obstacles": 201,
+                "nps": 3.321,
+                "length": 488.25,
+                "characteristic": "Standard",
+                "difficulty": "ExpertPlus",
+                "events": 1156,
+                "chroma": true,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 204.86,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 629555,
+                "label": "High School Dancefloor",
+                "blStars": 5.16,
+                "environment": "BTSEnvironment"
+              },
+              {
+                "njs": 17,
+                "offset": -0.668,
+                "notes": 0,
+                "bombs": 0,
+                "obstacles": 0,
+                "nps": 0,
+                "length": 0,
+                "characteristic": "Lightshow",
+                "difficulty": "ExpertPlus",
+                "events": 1156,
+                "chroma": true,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 0,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 0,
+                "label": "1982",
+                "environment": "BTSEnvironment"
+              },
+              {
+                "njs": 17,
+                "offset": -0.668,
+                "notes": 716,
+                "bombs": 0,
+                "obstacles": 194,
+                "nps": 3.497,
+                "length": 488.25,
+                "characteristic": "Lawless",
+                "difficulty": "ExpertPlus",
+                "events": 1156,
+                "chroma": true,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 204.86,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "maxScore": 651475,
+                "label": "High School Dancefloor (Quest Friendly)",
+                "environment": "BTSEnvironment"
+              }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/8ddd394df8a8d20a9cb785b74872fcce99ac7f3b.zip",
+            "coverURL": "https://cfcdn.beatsaver.com/8ddd394df8a8d20a9cb785b74872fcce99ac7f3b.jpg",
+            "previewURL": "https://cfcdn.beatsaver.com/8ddd394df8a8d20a9cb785b74872fcce99ac7f3b.mp3"
+          }
+        ],
+        "curator": {
+          "id": 169636,
+          "name": "Duffelsalat",
+          "avatar": "https://cdn.beatsaver.com/avatar/42f17c520f53b67cf400a66f65e49038263042de.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "curatorTab": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/169636/playlist"
+        },
+        "curatedAt": "2024-05-04T06:05:02.535777Z",
+        "createdAt": "2024-05-03T11:32:18.512154Z",
+        "updatedAt": "2024-09-26T20:27:17.210755Z",
+        "lastPublishedAt": "2024-09-26T20:27:17.210755Z",
+        "tags": [
+          "balanced",
+          "tech",
+          "pop",
+          "rock"
+        ],
+        "declaredAi": "None",
+        "blRanked": true,
+        "blQualified": false
       },
       "hash": "dd33967f67072fb74057dd0749f6a3423bdd867d"
     },
@@ -24420,6 +24795,7 @@ export default {
       "hash": "f517955de422ce948f2fbe298efedc3618b5b213"
     },
     {
+      "key": "45a21",
       "song": {
         "hash": "920994873EA3AA38738A5DDB95E9140BD4183A98",
         "levelid": "custom_level_920994873EA3AA38738A5DDB95E9140BD4183A98",
@@ -24430,7 +24806,185 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "45a21"
+      },
+      "beatsaver": {
+        "id": "45a21",
+        "name": "[RANKED] re6ce - can we change the subject",
+        "description": "i love this song bro\n\nmapped all diffs in around an hour pretty simple stuff\n\nreup for rank thanks zana :)\n\nthank you slayx and bjo for modding!\n\ndisc - voltage1",
+        "uploader": {
+          "id": 4330286,
+          "name": "VoltageO",
+          "avatar": "https://cdn.beatsaver.com/avatar/ec657384d657d6f9dc91cc4058f04dc0a93e6814.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4330286/playlist"
+        },
+        "metadata": {
+          "bpm": 152,
+          "duration": 162,
+          "songName": "can we change the subject",
+          "songSubName": "",
+          "songAuthorName": "re6ce",
+          "levelAuthorName": "VoltageO"
+        },
+        "stats": {
+          "plays": 0,
+          "downloads": 0,
+          "upvotes": 308,
+          "downvotes": 6,
+          "score": 0.9612,
+          "reviews": 2
+        },
+        "uploaded": "2025-03-28T13:00:52.998032Z",
+        "automapper": false,
+        "ranked": true,
+        "qualified": false,
+        "versions": [
+          {
+            "hash": "3900d5a6226321b41af1ec181b486cb40fdbc3d1",
+            "state": "Published",
+            "createdAt": "2025-05-28T22:39:58.024433Z",
+            "sageScore": 1,
+            "diffs": [
+              {
+                "njs": 12,
+                "offset": 0.006,
+                "notes": 161,
+                "bombs": 0,
+                "obstacles": 394,
+                "nps": 1.162,
+                "length": 352,
+                "characteristic": "Standard",
+                "difficulty": "Normal",
+                "events": 1693,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 138.947,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 2.98,
+                "maxScore": 140875,
+                "label": "Now I'm with a drunk bitch",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 13,
+                "offset": -0.246,
+                "notes": 326,
+                "bombs": 0,
+                "obstacles": 400,
+                "nps": 2.149,
+                "length": 385.531,
+                "characteristic": "Standard",
+                "difficulty": "Hard",
+                "events": 1693,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 152.183,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 3.67,
+                "maxScore": 292675,
+                "label": "Talking 'bout her husband",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 14,
+                "offset": -0.462,
+                "notes": 520,
+                "bombs": 0,
+                "obstacles": 327,
+                "nps": 3.427,
+                "length": 385.531,
+                "characteristic": "Standard",
+                "difficulty": "Expert",
+                "events": 1693,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 152.183,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 4.51,
+                "maxScore": 471155,
+                "label": "I don't wanna hear none",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 15,
+                "offset": -0.649,
+                "notes": 567,
+                "bombs": 0,
+                "obstacles": 367,
+                "nps": 3.737,
+                "length": 385.531,
+                "characteristic": "Standard",
+                "difficulty": "ExpertPlus",
+                "events": 1693,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 152.183,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 5.89,
+                "maxScore": 514395,
+                "label": "Can we change the subject?",
+                "environment": "DefaultEnvironment"
+              }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/3900d5a6226321b41af1ec181b486cb40fdbc3d1.zip",
+            "coverURL": "https://cfcdn.beatsaver.com/3900d5a6226321b41af1ec181b486cb40fdbc3d1.jpg",
+            "previewURL": "https://cfcdn.beatsaver.com/3900d5a6226321b41af1ec181b486cb40fdbc3d1.mp3"
+          }
+        ],
+        "curator": {
+          "id": 60601,
+          "name": "steeak",
+          "hash": "6016fea3b85f2d00062b0f95",
+          "avatar": "https://cdn.beatsaver.com/avatar/887ec5cd960471f08fdc1900d9810026aff6f4fe.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": true,
+          "seniorCurator": false,
+          "curatorTab": true,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/60601/playlist"
+        },
+        "curatedAt": "2025-04-03T23:17:43.992070Z",
+        "createdAt": "2025-03-28T12:59:38.306491Z",
+        "updatedAt": "2025-08-15T16:29:17.300774Z",
+        "lastPublishedAt": "2025-05-29T02:02:43.342521Z",
+        "tags": [
+          "alternative",
+          "indie"
+        ],
+        "declaredAi": "None",
+        "blRanked": false,
+        "blQualified": false
       },
       "hash": "920994873ea3aa38738a5ddb95e9140bd4183a98"
     },
@@ -29764,7 +30318,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1386,
+          "upvotes": 1387,
           "downvotes": 78,
           "score": 0.9398
         },
@@ -34294,9 +34848,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 183,
+          "upvotes": 184,
           "downvotes": 5,
-          "score": 0.9466,
+          "score": 0.9469,
           "reviews": 3
         },
         "uploaded": "2025-10-19T22:02:52.427622Z",
@@ -34476,9 +35030,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 722,
+          "upvotes": 723,
           "downvotes": 12,
-          "score": 0.972
+          "score": 0.9721
         },
         "uploaded": "2023-12-06T21:36:06.546159Z",
         "automapper": false,
@@ -35558,8 +36112,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 313,
-          "downvotes": 12,
-          "score": 0.9445,
+          "downvotes": 13,
+          "score": 0.9417,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },
@@ -37578,9 +38132,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 67,
+          "upvotes": 68,
           "downvotes": 2,
-          "score": 0.9215,
+          "score": 0.9223,
           "reviews": 1
         },
         "uploaded": "2026-09-20T16:19:00.563309Z",
@@ -37980,9 +38534,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 72,
+          "upvotes": 74,
           "downvotes": 4,
-          "score": 0.903
+          "score": 0.9049
         },
         "uploaded": "2026-09-24T22:11:30.010928Z",
         "automapper": false,
@@ -38170,9 +38724,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 89,
+          "upvotes": 91,
           "downvotes": 0,
-          "score": 0.955,
+          "score": 0.9556,
           "reviews": 1
         },
         "uploaded": "2026-09-26T08:30:25.391668Z",
@@ -38321,9 +38875,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 58,
+          "upvotes": 59,
           "downvotes": 0,
-          "score": 0.9415
+          "score": 0.9421
         },
         "uploaded": "2026-09-30T19:09:13.748181Z",
         "automapper": false,

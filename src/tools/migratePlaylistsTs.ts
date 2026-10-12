@@ -31,11 +31,15 @@ const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlis
     }) as BeatSaverResolvableHashKind
   );
 
-
   const response = await fetchFromHashResolvables(resolvables);
   const responseItems = Object.values(response);
   const resolvedSongs = playlist.songs.map((song): MigratePlaylistsTsTypeResolvedSong => {
-    const item = responseItems.find((x) => x.versions.some((v) => v.hash === makeLowercaseMapHash(song.hash)));
+    const lowercaseMapHash = makeLowercaseMapHash(song.hash);
+    let item = response[lowercaseMapHash];
+
+    if (!item) {
+      item = responseItems.find((x) => x?.versions.some((v) => v.hash === lowercaseMapHash));
+    }
 
     return {
       key: item?.id,

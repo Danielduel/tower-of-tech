@@ -8,7 +8,7 @@ import {
 } from "@/packages/playlist/collections/tower-of-tech/mod.ts";
 import { existsSync } from "@std/fs";
 import { kofi, mdImg } from "@/src/tools/mdUtil.ts";
-import { makeLowercaseMapHash } from "@/packages/types/brands.ts";
+import { LowercaseMapHash, makeLowercaseMapHash } from "@/packages/types/brands.ts";
 import { fetchFromHashResolvables } from "@/packages/api-beatsaver/mod.ts";
 import { BeatSaverResolvableHashKind } from "@/packages/api-beatsaver/BeatSaverResolvable.ts";
 
@@ -90,7 +90,13 @@ const renderPlaylist = async (mapping: ToTPlaylistMappingItem, playlist: Playlis
   const response = await fetchFromHashResolvables(resolvables);
   const responseItems = Object.values(response);
   playlist.songs.forEach((song) => {
-    const item = responseItems.find((x) => x.versions.some((v) => v.hash === makeLowercaseMapHash(song.hash)));
+    const lowercaseMapHash = makeLowercaseMapHash(song.hash);
+    let item = response[lowercaseMapHash];
+
+    if (!item) {
+      item = responseItems.find((x) => x?.versions.some((v) => v.hash === lowercaseMapHash));
+    }
+
     if (item) {
       console.log(item.id);
       song.key = item.id;

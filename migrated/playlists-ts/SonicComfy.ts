@@ -55,7 +55,8 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "3bba4"
       },
       {
         "hash": "C48A2E907543A1245BC670BD1D082FB555F129B0",
@@ -551,6 +552,7 @@ export default {
       "hash": "620cbed0b317879355e561b5c06ff356686c1706"
     },
     {
+      "key": "3bba4",
       "song": {
         "hash": "F3CAF0BB668CE7C5E243D18DFA20362E0B8D4C23",
         "levelid": "custom_level_F3CAF0BB668CE7C5E243D18DFA20362E0B8D4C23",
@@ -561,7 +563,149 @@ export default {
             "characteristic": "Standard",
             "name": "ExpertPlus"
           }
-        ]
+        ],
+        "key": "3bba4"
+      },
+      "beatsaver": {
+        "id": "3bba4",
+        "name": "[RANKED] Camellia - Poison Mushroom",
+        "description": "shrrado\nbizt\nBeat saber 🐅Tarzan challenge 🐅complete 🤘🔥\nthanks @Azurii and @Bizzy for test and bitz for\n\ndifficulty: 11.5 - 12\nalso used for oombr final\n\nfeedback: re1rx1\n\njungle mapping",
+        "uploader": {
+          "id": 4284387,
+          "name": "RetrX",
+          "hash": "5ef3d186f82f170006c0aad8",
+          "avatar": "https://cdn.beatsaver.com/avatar/1bcbc7c00baa71b839870eccf056549bea6dd147.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": false,
+          "seniorCurator": false,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4284387/playlist"
+        },
+        "metadata": {
+          "bpm": 300,
+          "duration": 280,
+          "songName": "Poison Mushroom",
+          "songSubName": "",
+          "songAuthorName": "Camellia",
+          "levelAuthorName": "RetrX"
+        },
+        "stats": {
+          "plays": 0,
+          "downloads": 0,
+          "upvotes": 160,
+          "downvotes": 24,
+          "score": 0.8484,
+          "reviews": 11,
+          "sentiment": "VERY_POSITIVE"
+        },
+        "uploaded": "2024-04-12T21:06:23.987855Z",
+        "automapper": false,
+        "ranked": true,
+        "qualified": false,
+        "versions": [
+          {
+            "hash": "7447e6f27c2d7ae0df43281e5533d17ec4a061c9",
+            "state": "Published",
+            "createdAt": "2025-01-15T06:03:02.502422Z",
+            "sageScore": 4,
+            "diffs": [
+              {
+                "njs": 18.75,
+                "offset": -1.45,
+                "notes": 1212,
+                "bombs": 30,
+                "obstacles": 1110,
+                "nps": 4.984,
+                "length": 1216,
+                "characteristic": "Standard",
+                "difficulty": "Expert",
+                "events": 7213,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 243.2,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 2
+                },
+                "stars": 7.76,
+                "maxScore": 1107795,
+                "label": "bug from da leaves.",
+                "environment": "DefaultEnvironment"
+              },
+              {
+                "njs": 20,
+                "offset": -1.8,
+                "notes": 1780,
+                "bombs": 28,
+                "obstacles": 1269,
+                "nps": 7.319,
+                "length": 1216,
+                "characteristic": "Standard",
+                "difficulty": "ExpertPlus",
+                "events": 7213,
+                "chroma": false,
+                "me": false,
+                "ne": false,
+                "cinema": false,
+                "seconds": 243.2,
+                "paritySummary": {
+                  "errors": 0,
+                  "warns": 0,
+                  "resets": 0
+                },
+                "stars": 12.15,
+                "maxScore": 1630355,
+                "label": "PREDETA FROM DA UNDAGROWTH",
+                "environment": "DefaultEnvironment"
+              }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/7447e6f27c2d7ae0df43281e5533d17ec4a061c9.zip",
+            "coverURL": "https://cfcdn.beatsaver.com/7447e6f27c2d7ae0df43281e5533d17ec4a061c9.jpg",
+            "previewURL": "https://cfcdn.beatsaver.com/7447e6f27c2d7ae0df43281e5533d17ec4a061c9.mp3"
+          }
+        ],
+        "curator": {
+          "id": 4285087,
+          "name": "marsh_era",
+          "hash": "5fe49aaa188c01000768cf07",
+          "avatar": "https://cdn.beatsaver.com/avatar/302e64b3a23d71233d15abf12042922bd7c40414.png",
+          "type": "DISCORD",
+          "admin": false,
+          "curator": true,
+          "seniorCurator": false,
+          "curatorTab": true,
+          "verifiedMapper": true,
+          "playlistUrl": "https://api.beatsaver.com/users/id/4285087/playlist"
+        },
+        "curatedAt": "2024-05-05T18:12:46.105225Z",
+        "createdAt": "2024-04-12T21:06:08.365114Z",
+        "updatedAt": "2025-02-09T20:22:31.321090Z",
+        "lastPublishedAt": "2025-01-15T06:03:12.728389Z",
+        "tags": [
+          "dubstep",
+          "electronic",
+          "tech",
+          "speed"
+        ],
+        "collaborators": [
+          {
+            "id": 192339,
+            "name": "OOMBRFinalMaps",
+            "avatar": "https://cdn.beatsaver.com/avatar/192339.jpg",
+            "type": "SIMPLE",
+            "admin": false,
+            "curator": false,
+            "seniorCurator": false,
+            "playlistUrl": "https://api.beatsaver.com/users/id/192339/playlist"
+          }
+        ],
+        "declaredAi": "None",
+        "blRanked": false,
+        "blQualified": false
       },
       "hash": "f3caf0bb668ce7c5e243d18dfa20362e0b8d4c23"
     },
