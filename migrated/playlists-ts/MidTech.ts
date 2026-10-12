@@ -1,5 +1,5 @@
 
-import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
+// import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
 export default {
   "mapping": {
     "displayName": "MidTech",
@@ -4640,9 +4640,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 68,
+          "upvotes": 69,
           "downvotes": 6,
-          "score": 0.8767,
+          "score": 0.878,
           "reviews": 1
         },
         "uploaded": "2023-06-20T01:06:06.741111Z",
@@ -22745,9 +22745,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 263,
+          "upvotes": 264,
           "downvotes": 75,
-          "score": 0.7672,
+          "score": 0.7679,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },
@@ -32039,9 +32039,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 31,
+          "upvotes": 32,
           "downvotes": 0,
-          "score": 0.9147
+          "score": 0.9163
         },
         "uploaded": "2026-09-26T14:21:49.844219Z",
         "automapper": false,
@@ -32356,4 +32356,4 @@ export default {
       "hash": "67ed4a435e15f5611b2faeb5efc8a00076e709aa"
     }
   ]
-} satisfies MigratePlaylistsTsType;
+} // satisfies MigratePlaylistsTsType;

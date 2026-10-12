@@ -1,5 +1,5 @@
 
-import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
+// import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
 export default {
   "mapping": {
     "displayName": "MidHitech",
@@ -10133,9 +10133,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 131,
+          "upvotes": 132,
           "downvotes": 2,
-          "score": 0.951,
+          "score": 0.9512,
           "reviews": 1
         },
         "uploaded": "2023-11-16T13:52:40.700243Z",
@@ -17585,9 +17585,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 517,
+          "upvotes": 519,
           "downvotes": 50,
-          "score": 0.9002,
+          "score": 0.9005,
           "reviews": 4
         },
         "uploaded": "2024-07-01T14:02:59.301125Z",
@@ -21274,9 +21274,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 282,
+          "upvotes": 283,
           "downvotes": 15,
-          "score": 0.9304,
+          "score": 0.9306,
           "reviews": 3
         },
         "uploaded": "2025-03-11T22:52:23.927374Z",
@@ -22993,9 +22993,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 368,
+          "upvotes": 370,
           "downvotes": 49,
-          "score": 0.8694,
+          "score": 0.8699,
           "reviews": 11,
           "sentiment": "VERY_POSITIVE"
         },
@@ -23227,9 +23227,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 213,
+          "upvotes": 214,
           "downvotes": 15,
-          "score": 0.9125,
+          "score": 0.9128,
           "reviews": 3
         },
         "uploaded": "2026-01-22T21:36:20.738648Z",
@@ -24899,4 +24899,4 @@ export default {
       "hash": "b42d47f506e27997c121a79de17a95fd833e1475"
     }
   ]
-} satisfies MigratePlaylistsTsType;
+} // satisfies MigratePlaylistsTsType;

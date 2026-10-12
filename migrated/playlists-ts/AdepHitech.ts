@@ -1,5 +1,5 @@
 
-import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
+// import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
 export default {
   "mapping": {
     "displayName": "AdepHitech",
@@ -16841,9 +16841,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 213,
+          "upvotes": 214,
           "downvotes": 15,
-          "score": 0.9125,
+          "score": 0.9128,
           "reviews": 3
         },
         "uploaded": "2026-01-22T21:36:20.738648Z",
@@ -18798,4 +18798,4 @@ export default {
       "hash": "63260184f1766e401547aa84500cdef1dc1211be"
     }
   ]
-} satisfies MigratePlaylistsTsType;
+} // satisfies MigratePlaylistsTsType;

@@ -68,8 +68,8 @@ const promises = Object.values(playlistMapping)
     const playlist = playlists.find((x) => x.playlist.customData!.id === mapping.playlistId);
     const content = await renderPlaylist(mapping, playlist!.playlist);
     Deno.writeTextFileSync(`${pathTs}${mapping.displayName}.ts`, `
-import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
-export default ${JSON.stringify(content, undefined, 2)} satisfies MigratePlaylistsTsType;
+// import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
+export default ${JSON.stringify(content, undefined, 2)} // satisfies MigratePlaylistsTsType;
 `);
   });
 await Promise.all(promises);

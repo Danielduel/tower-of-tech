@@ -1,5 +1,5 @@
 
-import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
+// import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
 export default {
   "mapping": {
     "displayName": "AccHitech",
@@ -14887,7 +14887,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 424,
+          "upvotes": 425,
           "downvotes": 9,
           "score": 0.9632,
           "reviews": 1
@@ -28335,9 +28335,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 203,
+          "upvotes": 204,
           "downvotes": 16,
-          "score": 0.905
+          "score": 0.9054
         },
         "uploaded": "2022-07-24T11:04:24.891286Z",
         "automapper": false,
@@ -29280,9 +29280,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 464,
+          "upvotes": 465,
           "downvotes": 81,
-          "score": 0.8412,
+          "score": 0.8415,
           "reviews": 10,
           "sentiment": "VERY_POSITIVE"
         },
@@ -37835,9 +37835,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 312,
+          "upvotes": 313,
           "downvotes": 12,
-          "score": 0.9444,
+          "score": 0.9445,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },
@@ -40423,9 +40423,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 510,
+          "upvotes": 511,
           "downvotes": 29,
-          "score": 0.9332,
+          "score": 0.9333,
           "reviews": 1
         },
         "uploaded": "2025-10-07T14:49:00.272645Z",
@@ -47323,9 +47323,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 77,
+          "upvotes": 79,
           "downvotes": 1,
-          "score": 0.9397,
+          "score": 0.9407,
           "reviews": 2
         },
         "uploaded": "2026-09-01T20:47:55.608540Z",
@@ -47671,9 +47671,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 354,
+          "upvotes": 355,
           "downvotes": 10,
-          "score": 0.9549
+          "score": 0.955
         },
         "uploaded": "2026-06-27T23:23:24.572978Z",
         "automapper": false,
@@ -48621,4 +48621,4 @@ export default {
       "hash": "1e342362345bbf5700d8841057a45926c9940ba2"
     }
   ]
-} satisfies MigratePlaylistsTsType;
+} // satisfies MigratePlaylistsTsType;

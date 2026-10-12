@@ -1,5 +1,5 @@
 
-import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
+// import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
 export default {
   "mapping": {
     "displayName": "AccTech",
@@ -8447,7 +8447,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1282,
+          "upvotes": 1283,
           "downvotes": 13,
           "score": 0.9817
         },
@@ -12246,9 +12246,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 343,
+          "upvotes": 344,
           "downvotes": 16,
-          "score": 0.9383
+          "score": 0.9384
         },
         "uploaded": "2022-05-10T09:06:11.483073Z",
         "automapper": false,
@@ -19305,7 +19305,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 2578,
+          "upvotes": 2579,
           "downvotes": 140,
           "score": 0.9438,
           "reviews": 3
@@ -33216,9 +33216,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 399,
+          "upvotes": 400,
           "downvotes": 23,
-          "score": 0.9303,
+          "score": 0.9305,
           "reviews": 1
         },
         "uploaded": "2025-01-11T05:44:45.264097Z",
@@ -38772,9 +38772,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 511,
+          "upvotes": 512,
           "downvotes": 15,
-          "score": 0.9575,
+          "score": 0.9576,
           "reviews": 2
         },
         "uploaded": "2025-03-22T01:20:13.350151Z",
@@ -44346,9 +44346,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 95,
+          "upvotes": 96,
           "downvotes": 3,
-          "score": 0.9296,
+          "score": 0.9301,
           "reviews": 1
         },
         "uploaded": "2025-12-15T09:51:57.226934Z",
@@ -46582,4 +46582,4 @@ export default {
       "hash": "2cbb933a93f30e9e247acc330165e3f50a1f7f39"
     }
   ]
-} satisfies MigratePlaylistsTsType;
+} // satisfies MigratePlaylistsTsType;

@@ -1,5 +1,5 @@
 
-import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
+// import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
 export default {
   "mapping": {
     "displayName": "AdepTech",
@@ -9626,9 +9626,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 9570,
-          "downvotes": 98,
-          "score": 0.9875,
+          "upvotes": 9572,
+          "downvotes": 99,
+          "score": 0.9874,
           "reviews": 3
         },
         "uploaded": "2020-08-12T18:17:44.285Z",
@@ -26435,9 +26435,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 300,
-          "downvotes": 65,
-          "score": 0.8099,
+          "upvotes": 301,
+          "downvotes": 64,
+          "score": 0.8125,
           "reviews": 7,
           "sentiment": "VERY_POSITIVE"
         },
@@ -35556,9 +35556,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 312,
+          "upvotes": 313,
           "downvotes": 12,
-          "score": 0.9444,
+          "score": 0.9445,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },
@@ -37764,9 +37764,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 95,
+          "upvotes": 96,
           "downvotes": 3,
-          "score": 0.9296,
+          "score": 0.9301,
           "reviews": 1
         },
         "uploaded": "2025-12-15T09:51:57.226934Z",
@@ -38381,4 +38381,4 @@ export default {
       "hash": "19fad90f33b3efa68c6a74799aa05b858ee6e4f7"
     }
   ]
-} satisfies MigratePlaylistsTsType;
+} // satisfies MigratePlaylistsTsType;

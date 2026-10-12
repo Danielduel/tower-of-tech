@@ -1,5 +1,5 @@
 
-import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
+// import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
 export default {
   "mapping": {
     "displayName": "AdepComfy",
@@ -9201,8 +9201,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 217,
-          "downvotes": 16,
-          "score": 0.91,
+          "downvotes": 17,
+          "score": 0.9063,
           "reviews": 1
         },
         "uploaded": "2020-06-12T13:14:10.147Z",
@@ -15476,7 +15476,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 3519,
+          "upvotes": 3520,
           "downvotes": 40,
           "score": 0.9844,
           "reviews": 1
@@ -20052,9 +20052,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 263,
+          "upvotes": 264,
           "downvotes": 75,
-          "score": 0.7672,
+          "score": 0.7679,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },
@@ -22475,9 +22475,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 48,
+          "upvotes": 49,
           "downvotes": 7,
-          "score": 0.8277,
+          "score": 0.8302,
           "reviews": 2
         },
         "uploaded": "2024-10-13T11:37:56.901120Z",
@@ -25559,7 +25559,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 3519,
+          "upvotes": 3520,
           "downvotes": 40,
           "score": 0.9844,
           "reviews": 1
@@ -34404,9 +34404,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 42,
+          "upvotes": 43,
           "downvotes": 4,
-          "score": 0.8574
+          "score": 0.8598
         },
         "uploaded": "2025-09-11T17:47:47.843169Z",
         "automapper": false,
@@ -41452,9 +41452,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 63,
+          "upvotes": 64,
           "downvotes": 1,
-          "score": 0.931
+          "score": 0.9317
         },
         "uploaded": "2026-09-17T08:00:00.706935Z",
         "automapper": false,
@@ -42504,4 +42504,4 @@ export default {
       "hash": "8b669f7589fd0226c06d66d36a21e1ac5269611b"
     }
   ]
-} satisfies MigratePlaylistsTsType;
+} // satisfies MigratePlaylistsTsType;

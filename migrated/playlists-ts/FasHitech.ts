@@ -1,5 +1,5 @@
 
-import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
+// import { MigratePlaylistsTsType } from "@/src/tools/migratePlaylistsTs.d.ts";
 export default {
   "mapping": {
     "displayName": "FasHitech",
@@ -1762,9 +1762,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 625,
+          "upvotes": 626,
           "downvotes": 79,
-          "score": 0.8782,
+          "score": 0.8784,
           "reviews": 6,
           "sentiment": "VERY_POSITIVE"
         },
@@ -3261,9 +3261,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 263,
+          "upvotes": 264,
           "downvotes": 75,
-          "score": 0.7672,
+          "score": 0.7679,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },
@@ -4987,8 +4987,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 258,
-          "downvotes": 31,
-          "score": 0.8758,
+          "downvotes": 32,
+          "score": 0.8729,
           "reviews": 10,
           "sentiment": "VERY_POSITIVE"
         },
@@ -5496,4 +5496,4 @@ export default {
       "hash": "0ad1e5ef35c35ca9f962d8695e076d10d693949f"
     }
   ]
-} satisfies MigratePlaylistsTsType;
+} // satisfies MigratePlaylistsTsType;
