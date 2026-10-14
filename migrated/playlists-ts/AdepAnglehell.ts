@@ -4323,9 +4323,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 25,
+          "upvotes": 26,
           "downvotes": 5,
-          "score": 0.7754
+          "score": 0.7809
         },
         "uploaded": "2024-11-13T22:18:52.784798Z",
         "automapper": false,
@@ -5213,9 +5213,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 96,
+          "upvotes": 97,
           "downvotes": 11,
-          "score": 0.8653,
+          "score": 0.8664,
           "reviews": 2
         },
         "uploaded": "2025-10-02T22:46:30.904917Z",

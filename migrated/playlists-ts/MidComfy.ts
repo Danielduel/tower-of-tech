@@ -2781,9 +2781,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 592,
+          "upvotes": 594,
           "downvotes": 14,
-          "score": 0.964
+          "score": 0.9641
         },
         "uploaded": "2021-05-16T19:26:29.222Z",
         "automapper": false,
@@ -8004,7 +8004,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 871,
+          "upvotes": 872,
           "downvotes": 7,
           "score": 0.9815
         },
@@ -9574,8 +9574,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 1370,
-          "downvotes": 167,
-          "score": 0.8854,
+          "downvotes": 168,
+          "score": 0.8849,
           "reviews": 9,
           "sentiment": "VERY_POSITIVE"
         },
@@ -9828,7 +9828,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 4003,
+          "upvotes": 4004,
           "downvotes": 89,
           "score": 0.9744,
           "reviews": 2
@@ -13392,8 +13392,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 510,
-          "downvotes": 62,
-          "score": 0.8806,
+          "downvotes": 63,
+          "score": 0.8791,
           "reviews": 12,
           "sentiment": "VERY_POSITIVE"
         },
@@ -13613,9 +13613,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 288,
+          "upvotes": 289,
           "downvotes": 15,
-          "score": 0.9316,
+          "score": 0.9318,
           "reviews": 7,
           "sentiment": "VERY_POSITIVE"
         },
@@ -15156,9 +15156,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 53,
+          "upvotes": 54,
           "downvotes": 0,
-          "score": 0.9382,
+          "score": 0.9389,
           "reviews": 1
         },
         "uploaded": "2026-08-07T16:00:00.880077Z",
@@ -15318,9 +15318,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 14,
+          "upvotes": 15,
           "downvotes": 2,
-          "score": 0.7813,
+          "score": 0.79,
           "reviews": 2
         },
         "uploaded": "2026-08-23T05:49:43.543418Z",
