@@ -1969,9 +1969,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 72,
+          "upvotes": 73,
           "downvotes": 4,
-          "score": 0.903
+          "score": 0.904
         },
         "uploaded": "2023-09-17T18:37:45.685569Z",
         "automapper": false,
@@ -2197,7 +2197,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 2519,
+          "upvotes": 2520,
           "downvotes": 105,
           "score": 0.955
         },
@@ -2610,9 +2610,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 661,
+          "upvotes": 662,
           "downvotes": 113,
-          "score": 0.8458,
+          "score": 0.846,
           "reviews": 25,
           "sentiment": "MOSTLY_NEGATIVE"
         },
@@ -2820,9 +2820,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 642,
+          "upvotes": 643,
           "downvotes": 32,
-          "score": 0.941
+          "score": 0.9411
         },
         "uploaded": "2022-04-12T22:26:11.457312Z",
         "automapper": false,
@@ -3187,7 +3187,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1921,
+          "upvotes": 1922,
           "downvotes": 167,
           "score": 0.9148,
           "reviews": 1
@@ -3422,9 +3422,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 287,
+          "upvotes": 288,
           "downvotes": 44,
-          "score": 0.8525
+          "score": 0.8529
         },
         "uploaded": "2023-12-23T16:10:33.154125Z",
         "automapper": false,
@@ -4400,9 +4400,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 133,
+          "upvotes": 134,
           "downvotes": 81,
-          "score": 0.6152,
+          "score": 0.6168,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },

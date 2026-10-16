@@ -3060,8 +3060,8 @@
     {
       "songName": "Delulu",
       "levelAuthorName": "Tiku",
-      "hash": "DE514200D45CE99E1A498554127F319C884EC701",
-      "levelid": "custom_level_DE514200D45CE99E1A498554127F319C884EC701",
+      "hash": "8B669F7589FD0226C06D66D36A21E1AC5269611B",
+      "levelid": "custom_level_8B669F7589FD0226C06D66D36A21E1AC5269611B",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -3228,8 +3228,8 @@
     {
       "songName": "Ga Dan!",
       "levelAuthorName": "yabje, Lekrkoekj",
-      "hash": "FB4A2848FB05CB9859BC1BD9D84BB34EF0FDD964",
-      "levelid": "custom_level_FB4A2848FB05CB9859BC1BD9D84BB34EF0FDD964",
+      "hash": "7F572237F592BE0A07D24216083B730B53F3635E",
+      "levelid": "custom_level_7F572237F592BE0A07D24216083B730B53F3635E",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -3242,18 +3242,6 @@
       "levelAuthorName": "floatyoats, harbgy",
       "hash": "4AC95C0DA68759F6595AF3F67B24E35C05929EFE",
       "levelid": "custom_level_4AC95C0DA68759F6595AF3F67B24E35C05929EFE",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "songName": "Killa",
-      "levelAuthorName": "Kazekiri",
-      "hash": "B308A5CA1A24DF94957E98C9189AAAE24B43837F",
-      "levelid": "custom_level_B308A5CA1A24DF94957E98C9189AAAE24B43837F",
       "difficulties": [
         {
           "characteristic": "Standard",
@@ -3386,6 +3374,30 @@
       "levelAuthorName": "okazu",
       "hash": "2CBB933A93F30E9E247ACC330165E3F50A1F7F39",
       "levelid": "custom_level_2CBB933A93F30E9E247ACC330165E3F50A1F7F39",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
+        }
+      ]
+    },
+    {
+      "songName": "Hatsukoisou",
+      "levelAuthorName": "Matgenius04",
+      "hash": "4CF612587ACDCD3C829F5A5E7D4D64B6C214CB8C",
+      "levelid": "custom_level_4CF612587ACDCD3C829F5A5E7D4D64B6C214CB8C",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "Wolf In Sheeps Clothing",
+      "levelAuthorName": "BanditByTheStreet",
+      "hash": "3836E5CC8E74F68A24DD8B2DA87623C06C9F45F7",
+      "levelid": "custom_level_3836E5CC8E74F68A24DD8B2DA87623C06C9F45F7",
       "difficulties": [
         {
           "characteristic": "Standard",

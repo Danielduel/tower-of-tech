@@ -2759,9 +2759,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1148,
+          "upvotes": 1149,
           "downvotes": 40,
-          "score": 0.958,
+          "score": 0.9581,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },
@@ -5214,9 +5214,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 218,
+          "upvotes": 219,
           "downvotes": 30,
-          "score": 0.861,
+          "score": 0.8615,
           "reviews": 2
         },
         "uploaded": "2022-07-31T00:00:00.680Z",
@@ -6629,9 +6629,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 510,
+          "upvotes": 512,
           "downvotes": 63,
-          "score": 0.8791,
+          "score": 0.8795,
           "reviews": 12,
           "sentiment": "VERY_POSITIVE"
         },
@@ -8072,9 +8072,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 205,
+          "upvotes": 206,
           "downvotes": 47,
-          "score": 0.7987,
+          "score": 0.7995,
           "reviews": 11,
           "sentiment": "VERY_POSITIVE"
         },

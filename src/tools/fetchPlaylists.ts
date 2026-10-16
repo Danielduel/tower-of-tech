@@ -7,7 +7,7 @@ const envSubDir = Deno.env.get("BEATSABER_FOLDER_SUBDIR");
 if (!envSubDir) throw "No BEATSABER_FOLDER_SUBDIR";
 
 const sourceDir = `${envDir}${envSubDir}`
-const targetDir = `./migrated/dirty`;
+const targetDir = `./data/playlists/`;
 
 const sourceExists = await exists(sourceDir);
 const targetExists = await exists(targetDir);
@@ -17,7 +17,7 @@ if (!sourceExists) {
 }
 
 if (!targetExists) {
-  await ensureDir("./migrated/playlists/");
+  await ensureDir(targetDir);
 }
 
-await copy(sourceDir, "./migrated/playlists/", { overwrite: true })
+await copy(sourceDir, targetDir, { overwrite: true })

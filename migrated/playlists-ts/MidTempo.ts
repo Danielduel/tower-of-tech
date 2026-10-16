@@ -412,8 +412,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 43,
-          "downvotes": 13,
-          "score": 0.7359,
+          "downvotes": 14,
+          "score": 0.7243,
           "reviews": 2
         },
         "uploaded": "2023-09-11T16:26:52.229474Z",
@@ -650,8 +650,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 61,
-          "downvotes": 4,
-          "score": 0.8906,
+          "downvotes": 5,
+          "score": 0.8784,
           "reviews": 1
         },
         "uploaded": "2024-08-14T12:59:03.776672Z",
