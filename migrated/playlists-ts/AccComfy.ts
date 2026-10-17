@@ -2892,32 +2892,6 @@ export default {
         "key": "52558"
       },
       {
-        "hash": "48BA19E1468383E15A157A72ED88F28979200AE0",
-        "levelid": "custom_level_48BA19E1468383E15A157A72ED88F28979200AE0",
-        "songName": "Beat It",
-        "levelAuthorName": "Tonkie",
-        "difficulties": [
-          {
-            "characteristic": "Standard",
-            "name": "ExpertPlus"
-          }
-        ],
-        "key": "541d6"
-      },
-      {
-        "hash": "74FDFB0CB3CBF0C0B6D6EF137F39348950C96B9D",
-        "levelid": "custom_level_74FDFB0CB3CBF0C0B6D6EF137F39348950C96B9D",
-        "songName": "popstar",
-        "levelAuthorName": "blinxap (with GenericJohn)",
-        "difficulties": [
-          {
-            "characteristic": "Standard",
-            "name": "ExpertPlus"
-          }
-        ],
-        "key": "541b7"
-      },
-      {
         "hash": "3825FF532F5AD49C8A50610673A972DD8D4353CF",
         "levelid": "custom_level_3825FF532F5AD49C8A50610673A972DD8D4353CF",
         "songName": "K.O.",
@@ -2976,7 +2950,7 @@ export default {
   "rawGithubCoverUrl": "https://raw.githubusercontent.com/Danielduel/tower-of-tech/refs/heads/main/migrated/covers/AccComfy.png",
   "displayComplexity": "Easy",
   "displaySpeed": "Average",
-  "songsCount": 226,
+  "songsCount": 224,
   "repositoryUrl": "https://github.com/Danielduel/tower-of-tech/migrated/playlists/5655 - ToT - AccComfy.bplist",
   "hashes": [
     "75cadac9031fef0f41f1579ba31f03ea34770b52",
@@ -3199,8 +3173,6 @@ export default {
     "eab8a06b8a85d74823d8c6d2cbe389b62381e9b3",
     "784937f16da83c258a0ab12299031cd4b8bb5941",
     "d68df0032015336c3b0bd64b2b09b986180d6590",
-    "48ba19e1468383e15a157a72ed88f28979200ae0",
-    "74fdfb0cb3cbf0c0b6d6ef137f39348950c96b9d",
     "3825ff532f5ad49c8a50610673a972dd8d4353cf",
     "152c0da80130e6f061f8602fea9f54cec5d91681",
     "b4b79daee82ae1c75bfe64572ab9fa9d442dba2f",
@@ -4310,16 +4282,6 @@ export default {
     {
       "kind": "hash",
       "diffs": [],
-      "data": "48ba19e1468383e15a157a72ed88f28979200ae0"
-    },
-    {
-      "kind": "hash",
-      "diffs": [],
-      "data": "74fdfb0cb3cbf0c0b6d6ef137f39348950c96b9d"
-    },
-    {
-      "kind": "hash",
-      "diffs": [],
       "data": "3825ff532f5ad49c8a50610673a972dd8d4353cf"
     },
     {
@@ -4612,9 +4574,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 190,
+          "upvotes": 191,
           "downvotes": 8,
-          "score": 0.9344
+          "score": 0.9347
         },
         "uploaded": "2023-04-01T19:29:42.478421Z",
         "automapper": false,
@@ -8292,7 +8254,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 878,
+          "upvotes": 879,
           "downvotes": 20,
           "score": 0.9676,
           "reviews": 1
@@ -8434,9 +8396,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1670,
+          "upvotes": 1671,
           "downvotes": 87,
-          "score": 0.9442,
+          "score": 0.9443,
           "reviews": 1
         },
         "uploaded": "2022-04-09T23:30:26.268994Z",
@@ -9386,9 +9348,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1263,
+          "upvotes": 1264,
           "downvotes": 81,
-          "score": 0.9325,
+          "score": 0.9326,
           "reviews": 1
         },
         "uploaded": "2019-12-01T01:44:37.615Z",
@@ -9653,7 +9615,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1497,
+          "upvotes": 1498,
           "downvotes": 24,
           "score": 0.9769
         },
@@ -10069,7 +10031,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1824,
+          "upvotes": 1825,
           "downvotes": 55,
           "score": 0.9645,
           "reviews": 1
@@ -10554,7 +10516,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1821,
+          "upvotes": 1822,
           "downvotes": 220,
           "score": 0.8873,
           "reviews": 2
@@ -12158,7 +12120,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1717,
+          "upvotes": 1718,
           "downvotes": 49,
           "score": 0.9657
         },
@@ -13467,9 +13429,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 3177,
-          "downvotes": 106,
-          "score": 0.9633
+          "upvotes": 3178,
+          "downvotes": 107,
+          "score": 0.9631
         },
         "uploaded": "2021-07-30T10:49:01.704Z",
         "automapper": false,
@@ -16617,9 +16579,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 391,
+          "upvotes": 392,
           "downvotes": 13,
-          "score": 0.9514
+          "score": 0.9515
         },
         "uploaded": "2021-05-15T13:52:42.974Z",
         "automapper": false,
@@ -17534,9 +17496,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 247,
+          "upvotes": 248,
           "downvotes": 7,
-          "score": 0.9503
+          "score": 0.9505
         },
         "uploaded": "2022-02-17T00:53:09.798137Z",
         "automapper": false,
@@ -17780,8 +17742,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 1360,
-          "downvotes": 29,
-          "score": 0.9714,
+          "downvotes": 30,
+          "score": 0.9707,
           "reviews": 3
         },
         "uploaded": "2022-06-18T05:52:00.009355Z",
@@ -18146,9 +18108,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1835,
+          "upvotes": 1838,
           "downvotes": 37,
-          "score": 0.9738,
+          "score": 0.9739,
           "reviews": 2
         },
         "uploaded": "2024-06-19T22:00:00.982109Z",
@@ -20213,9 +20175,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 268,
+          "upvotes": 269,
           "downvotes": 10,
-          "score": 0.9435,
+          "score": 0.9437,
           "reviews": 2
         },
         "uploaded": "2024-07-27T15:31:38.177236Z",
@@ -21424,7 +21386,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1100,
+          "upvotes": 1101,
           "downvotes": 11,
           "score": 0.981
         },
@@ -21753,9 +21715,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 189,
+          "upvotes": 191,
           "downvotes": 9,
-          "score": 0.9297,
+          "score": 0.9303,
           "reviews": 1
         },
         "uploaded": "2024-09-24T13:40:15.451294Z",
@@ -21939,9 +21901,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 544,
+          "upvotes": 545,
           "downvotes": 11,
-          "score": 0.9664,
+          "score": 0.9665,
           "reviews": 1
         },
         "uploaded": "2023-07-08T16:00:00.001Z",
@@ -22658,9 +22620,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 216,
+          "upvotes": 217,
           "downvotes": 3,
-          "score": 0.9613
+          "score": 0.9614
         },
         "uploaded": "2023-01-05T18:06:16.727755Z",
         "automapper": false,
@@ -23684,7 +23646,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1415,
+          "upvotes": 1416,
           "downvotes": 109,
           "score": 0.922
         },
@@ -28391,7 +28353,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 3522,
+          "upvotes": 3524,
           "downvotes": 40,
           "score": 0.9844,
           "reviews": 1
@@ -28878,9 +28840,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 114,
+          "upvotes": 115,
           "downvotes": 3,
-          "score": 0.9383
+          "score": 0.9387
         },
         "uploaded": "2023-03-14T06:59:48.388624Z",
         "automapper": false,
@@ -29354,9 +29316,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 628,
+          "upvotes": 629,
           "downvotes": 41,
-          "score": 0.9275,
+          "score": 0.9276,
           "reviews": 2
         },
         "uploaded": "2024-11-15T07:24:27.447655Z",
@@ -31939,7 +31901,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 1409,
+          "upvotes": 1410,
           "downvotes": 26,
           "score": 0.9743
         },
@@ -35612,9 +35574,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 251,
+          "upvotes": 253,
           "downvotes": 31,
-          "score": 0.873,
+          "score": 0.8738,
           "reviews": 5,
           "sentiment": "VERY_POSITIVE"
         },
@@ -37958,9 +37920,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 414,
+          "upvotes": 415,
           "downvotes": 38,
-          "score": 0.9024,
+          "score": 0.9026,
           "reviews": 3
         },
         "uploaded": "2025-01-07T03:40:37.445893Z",
@@ -38182,9 +38144,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 408,
+          "upvotes": 410,
           "downvotes": 18,
-          "score": 0.9422,
+          "score": 0.9425,
           "reviews": 4
         },
         "uploaded": "2026-05-15T15:00:19.232100Z",
@@ -38886,232 +38848,6 @@ export default {
       "hash": "d68df0032015336c3b0bd64b2b09b986180d6590"
     },
     {
-      "key": "541d6",
-      "song": {
-        "hash": "48BA19E1468383E15A157A72ED88F28979200AE0",
-        "levelid": "custom_level_48BA19E1468383E15A157A72ED88F28979200AE0",
-        "songName": "Beat It",
-        "levelAuthorName": "Tonkie",
-        "difficulties": [
-          {
-            "characteristic": "Standard",
-            "name": "ExpertPlus"
-          }
-        ],
-        "key": "541d6"
-      },
-      "beatsaver": {
-        "id": "541d6",
-        "name": "Michael Jackson - Beat It",
-        "description": "thank you Wongy1971 for the special request! \n\nking of pop, hope i did him justice :D\n\nsuper cozy flowy map per suggestion :)\n\nhad to reupload as i forgot to put cinema in (also fixed arc vbs)",
-        "uploader": {
-          "id": 4332614,
-          "name": "Tonkie",
-          "avatar": "https://cdn.beatsaver.com/avatar/4332614.jpg",
-          "type": "SIMPLE",
-          "admin": false,
-          "curator": true,
-          "seniorCurator": false,
-          "curatorTab": true,
-          "verifiedMapper": true,
-          "playlistUrl": "https://api.beatsaver.com/users/id/4332614/playlist"
-        },
-        "metadata": {
-          "bpm": 138.7,
-          "duration": 260,
-          "songName": "Beat It",
-          "songSubName": "",
-          "songAuthorName": "Michael Jackson",
-          "levelAuthorName": "Tonkie"
-        },
-        "stats": {
-          "plays": 0,
-          "downloads": 0,
-          "upvotes": 128,
-          "downvotes": 8,
-          "score": 0.9107,
-          "reviews": 5,
-          "sentiment": "VERY_POSITIVE"
-        },
-        "uploaded": "2026-09-05T17:29:57.481438Z",
-        "automapper": false,
-        "ranked": false,
-        "qualified": false,
-        "versions": [
-          {
-            "hash": "09aa3fc0da80b852dbbb3d8e6e9c5bb383c10008",
-            "state": "Published",
-            "createdAt": "2026-09-05T21:08:59.553625Z",
-            "sageScore": 2,
-            "diffs": [
-              {
-                "njs": 16,
-                "offset": -0.75,
-                "notes": 1067,
-                "bombs": 0,
-                "obstacles": 485,
-                "nps": 4.221,
-                "length": 584.375,
-                "characteristic": "Standard",
-                "difficulty": "ExpertPlus",
-                "events": 2961,
-                "chroma": false,
-                "me": false,
-                "ne": false,
-                "cinema": true,
-                "seconds": 252.794,
-                "paritySummary": {
-                  "errors": 0,
-                  "warns": 0,
-                  "resets": 0
-                },
-                "maxScore": 974395,
-                "environment": "PanicEnvironment"
-              }
-            ],
-            "downloadURL": "https://r2cdn.beatsaver.com/09aa3fc0da80b852dbbb3d8e6e9c5bb383c10008.zip",
-            "coverURL": "https://cfcdn.beatsaver.com/09aa3fc0da80b852dbbb3d8e6e9c5bb383c10008.jpg",
-            "previewURL": "https://cfcdn.beatsaver.com/09aa3fc0da80b852dbbb3d8e6e9c5bb383c10008.mp3"
-          }
-        ],
-        "curator": {
-          "id": 4290858,
-          "name": "Noveliniel",
-          "avatar": "https://cdn.beatsaver.com/avatar/0e4dbb75f8e70ef4cdf92d2cf3205bd4f9fbc947.png",
-          "type": "DISCORD",
-          "admin": false,
-          "curator": true,
-          "seniorCurator": false,
-          "curatorTab": true,
-          "verifiedMapper": true,
-          "playlistUrl": "https://api.beatsaver.com/users/id/4290858/playlist"
-        },
-        "curatedAt": "2026-09-05T20:56:22.942308Z",
-        "createdAt": "2026-09-05T17:29:51.704301Z",
-        "updatedAt": "2026-09-05T21:09:01.573768Z",
-        "lastPublishedAt": "2026-09-05T21:09:01.573768Z",
-        "tags": [
-          "dance-style",
-          "pop"
-        ],
-        "declaredAi": "None",
-        "blRanked": false,
-        "blQualified": false
-      },
-      "hash": "48ba19e1468383e15a157a72ed88f28979200ae0"
-    },
-    {
-      "key": "541b7",
-      "song": {
-        "hash": "74FDFB0CB3CBF0C0B6D6EF137F39348950C96B9D",
-        "levelid": "custom_level_74FDFB0CB3CBF0C0B6D6EF137F39348950C96B9D",
-        "songName": "popstar",
-        "levelAuthorName": "blinxap (with GenericJohn)",
-        "difficulties": [
-          {
-            "characteristic": "Standard",
-            "name": "ExpertPlus"
-          }
-        ],
-        "key": "541b7"
-      },
-      "beatsaver": {
-        "id": "541b7",
-        "name": "Internet Girl, Angelus - popstar",
-        "description": "map 4 (featuring @GenericJohn) :D\n\ndecided to map a chill midspeed map with slightly difficult tech patterns\n\n0:00-0:56 me\n0:57-1:28 john\n1:30-end me\n\nblinxap_ on discord for feedback mhm mhm\n\nlisten here: https://www.youtube.com/watch?v=5wsNJ5nGraI\n\nthank you snowwisslow for playtest \n\n",
-        "uploader": {
-          "id": 223316,
-          "name": "blinxap",
-          "avatar": "https://cdn.beatsaver.com/avatar/6fb91e3a83318f388997102a971d727e3225c872.png",
-          "type": "DISCORD",
-          "admin": false,
-          "curator": false,
-          "seniorCurator": false,
-          "playlistUrl": "https://api.beatsaver.com/users/id/223316/playlist"
-        },
-        "metadata": {
-          "bpm": 180,
-          "duration": 134,
-          "songName": "popstar",
-          "songSubName": "(with angelus)",
-          "songAuthorName": "Internet Girl, angelus",
-          "levelAuthorName": "blinxap (with GenericJohn)"
-        },
-        "stats": {
-          "plays": 0,
-          "downloads": 0,
-          "upvotes": 3,
-          "downvotes": 1,
-          "score": 0.625
-        },
-        "uploaded": "2026-09-05T07:46:07.460427Z",
-        "automapper": false,
-        "ranked": false,
-        "qualified": false,
-        "versions": [
-          {
-            "hash": "74fdfb0cb3cbf0c0b6d6ef137f39348950c96b9d",
-            "state": "Published",
-            "createdAt": "2026-09-05T07:37:44.160230Z",
-            "sageScore": 3,
-            "diffs": [
-              {
-                "njs": 18,
-                "offset": -0.8,
-                "notes": 642,
-                "bombs": 8,
-                "obstacles": 179,
-                "nps": 5.062,
-                "length": 380.5,
-                "characteristic": "Standard",
-                "difficulty": "ExpertPlus",
-                "events": 1979,
-                "chroma": false,
-                "me": false,
-                "ne": false,
-                "cinema": false,
-                "seconds": 126.833,
-                "paritySummary": {
-                  "errors": 0,
-                  "warns": 0,
-                  "resets": 0
-                },
-                "maxScore": 583395,
-                "label": "they gon pray on my downfall.",
-                "environment": "DefaultEnvironment"
-              }
-            ],
-            "downloadURL": "https://r2cdn.beatsaver.com/74fdfb0cb3cbf0c0b6d6ef137f39348950c96b9d.zip",
-            "coverURL": "https://cfcdn.beatsaver.com/74fdfb0cb3cbf0c0b6d6ef137f39348950c96b9d.jpg",
-            "previewURL": "https://cfcdn.beatsaver.com/74fdfb0cb3cbf0c0b6d6ef137f39348950c96b9d.mp3"
-          }
-        ],
-        "createdAt": "2026-09-05T07:37:44.160230Z",
-        "updatedAt": "2026-10-12T18:18:52.039475Z",
-        "lastPublishedAt": "2026-09-05T07:46:07.460427Z",
-        "tags": [
-          "balanced",
-          "pop"
-        ],
-        "collaborators": [
-          {
-            "id": 169083,
-            "name": "GenericJohn",
-            "avatar": "https://cdn.beatsaver.com/avatar/8c9e45f24cd9f5c2132f1460ae1af0c85660234e.png",
-            "type": "DISCORD",
-            "admin": false,
-            "curator": false,
-            "seniorCurator": false,
-            "playlistUrl": "https://api.beatsaver.com/users/id/169083/playlist"
-          }
-        ],
-        "declaredAi": "None",
-        "blRanked": false,
-        "blQualified": false
-      },
-      "hash": "74fdfb0cb3cbf0c0b6d6ef137f39348950c96b9d"
-    },
-    {
       "key": "53918",
       "song": {
         "hash": "3825FF532F5AD49C8A50610673A972DD8D4353CF",
@@ -39578,9 +39314,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 36,
+          "upvotes": 37,
           "downvotes": 0,
-          "score": 0.922
+          "score": 0.9233
         },
         "uploaded": "2026-10-04T19:12:51.398296Z",
         "automapper": false,

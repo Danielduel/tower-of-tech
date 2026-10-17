@@ -4603,9 +4603,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 228,
+          "upvotes": 229,
           "downvotes": 42,
-          "score": 0.8289,
+          "score": 0.8295,
           "reviews": 7,
           "sentiment": "VERY_POSITIVE"
         },
@@ -6805,9 +6805,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 270,
+          "upvotes": 271,
           "downvotes": 11,
-          "score": 0.9406,
+          "score": 0.9408,
           "reviews": 1
         },
         "uploaded": "2026-03-29T04:39:54.505409Z",

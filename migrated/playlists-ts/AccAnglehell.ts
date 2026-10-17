@@ -14887,7 +14887,7 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 267,
+          "upvotes": 268,
           "downvotes": 3,
           "score": 0.9669,
           "reviews": 2
@@ -15110,9 +15110,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 226,
+          "upvotes": 228,
           "downvotes": 118,
-          "score": 0.6509,
+          "score": 0.6528,
           "reviews": 7,
           "sentiment": "MOSTLY_POSITIVE"
         },
@@ -18331,9 +18331,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 275,
+          "upvotes": 276,
           "downvotes": 46,
-          "score": 0.8423,
+          "score": 0.8427,
           "reviews": 1
         },
         "uploaded": "2025-04-12T01:57:29.741785Z",

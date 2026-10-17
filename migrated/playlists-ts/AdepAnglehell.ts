@@ -1234,8 +1234,8 @@ export default {
           "plays": 0,
           "downloads": 0,
           "upvotes": 243,
-          "downvotes": 41,
-          "score": 0.8401,
+          "downvotes": 42,
+          "score": 0.8373,
           "reviews": 4
         },
         "uploaded": "2023-01-01T06:20:52.704750Z",
@@ -4522,9 +4522,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 338,
+          "upvotes": 339,
           "downvotes": 9,
-          "score": 0.9558,
+          "score": 0.9559,
           "reviews": 1
         },
         "uploaded": "2025-01-08T20:48:00.301676Z",

@@ -2638,30 +2638,6 @@
       ]
     },
     {
-      "hash": "48BA19E1468383E15A157A72ED88F28979200AE0",
-      "levelid": "custom_level_48BA19E1468383E15A157A72ED88F28979200AE0",
-      "songName": "Beat It",
-      "levelAuthorName": "Tonkie",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
-      "hash": "74FDFB0CB3CBF0C0B6D6EF137F39348950C96B9D",
-      "levelid": "custom_level_74FDFB0CB3CBF0C0B6D6EF137F39348950C96B9D",
-      "songName": "popstar",
-      "levelAuthorName": "blinxap (with GenericJohn)",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "hash": "3825FF532F5AD49C8A50610673A972DD8D4353CF",
       "levelid": "custom_level_3825FF532F5AD49C8A50610673A972DD8D4353CF",
       "songName": "K.O.",

@@ -649,9 +649,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 61,
+          "upvotes": 62,
           "downvotes": 5,
-          "score": 0.8784,
+          "score": 0.8798,
           "reviews": 1
         },
         "uploaded": "2024-08-14T12:59:03.776672Z",
