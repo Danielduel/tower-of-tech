@@ -5445,9 +5445,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 67,
+          "upvotes": 68,
           "downvotes": 4,
-          "score": 0.8978,
+          "score": 0.8989,
           "reviews": 3
         },
         "uploaded": "2025-04-05T14:24:22.106100Z",
@@ -6516,9 +6516,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 217,
+          "upvotes": 218,
           "downvotes": 12,
-          "score": 0.9252,
+          "score": 0.9255,
           "reviews": 4
         },
         "uploaded": "2025-11-21T14:28:18.620738Z",

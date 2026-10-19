@@ -4522,9 +4522,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 339,
+          "upvotes": 340,
           "downvotes": 9,
-          "score": 0.9559,
+          "score": 0.956,
           "reviews": 1
         },
         "uploaded": "2025-01-08T20:48:00.301676Z",

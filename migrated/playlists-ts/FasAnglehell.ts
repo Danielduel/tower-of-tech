@@ -1306,9 +1306,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 880,
+          "upvotes": 881,
           "downvotes": 19,
-          "score": 0.9687,
+          "score": 0.9688,
           "reviews": 3
         },
         "uploaded": "2024-08-15T03:23:02.701597Z",
