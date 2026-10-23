@@ -17,11 +17,9 @@ git commit -m "update pool: <new latest tag>"
 git tag <new latest tag>
 git push --tags
 
-git checkout -
-
 # create a release out of a tag
 
-git checkout main
+git checkout -
 git merge next
 git push
 
