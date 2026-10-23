@@ -3386,18 +3386,6 @@
       ]
     },
     {
-      "hash": "117FE773C1A503FB47CB634442A27CB74F11F2BE",
-      "levelid": "custom_level_117FE773C1A503FB47CB634442A27CB74F11F2BE",
-      "songName": "Freefall",
-      "levelAuthorName": "dibl, ItsVasili",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "Hard"
-        }
-      ]
-    },
-    {
       "hash": "74FDFB0CB3CBF0C0B6D6EF137F39348950C96B9D",
       "levelid": "custom_level_74FDFB0CB3CBF0C0B6D6EF137F39348950C96B9D",
       "songName": "popstar",
