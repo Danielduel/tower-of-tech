@@ -6,18 +6,6 @@
   },
   "songs": [
     {
-      "songName": "Melancholy",
-      "levelAuthorName": "exhaustedallthetime",
-      "hash": "F694742CCB25F2FD35262DD4663024B141BD0C24",
-      "levelid": "custom_level_F694742CCB25F2FD35262DD4663024B141BD0C24",
-      "difficulties": [
-        {
-          "characteristic": "Standard",
-          "name": "ExpertPlus"
-        }
-      ]
-    },
-    {
       "songName": "Yowanehaki",
       "levelAuthorName": "Gabriel x Marsh",
       "hash": "13A1B008E40284318053124031D54548A20D992A",
@@ -3730,6 +3718,18 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        }
+      ]
+    },
+    {
+      "songName": "no more regrets",
+      "levelAuthorName": "dexter, viking",
+      "hash": "FEE6DFCD2F8A56B5025C5811F5E2789C2394C3F6",
+      "levelid": "custom_level_FEE6DFCD2F8A56B5025C5811F5E2789C2394C3F6",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "ExpertPlus"
         }
       ]
     }
