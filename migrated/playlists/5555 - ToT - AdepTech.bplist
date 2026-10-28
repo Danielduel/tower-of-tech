@@ -2485,6 +2485,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -2613,6 +2617,18 @@
       "levelid": "custom_level_39B4968A2FA4BA5E24E195F39C06F7439F2ED6D5",
       "songName": "Blue Hour",
       "levelAuthorName": "Danny",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "hash": "827DC48347DA1B56705E717FE627C722CAC36885",
+      "levelid": "custom_level_827DC48347DA1B56705E717FE627C722CAC36885",
+      "songName": "We're On Fire",
+      "levelAuthorName": "oegoe, Miljon, Taddus, realcoda",
       "difficulties": [
         {
           "characteristic": "Standard",

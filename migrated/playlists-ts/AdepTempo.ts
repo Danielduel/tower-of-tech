@@ -535,9 +535,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 229,
+          "upvotes": 230,
           "downvotes": 9,
-          "score": 0.9396
+          "score": 0.9399
         },
         "uploaded": "2023-08-18T09:20:07.156939Z",
         "automapper": false,
@@ -2697,9 +2697,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 110,
+          "upvotes": 111,
           "downvotes": 7,
-          "score": 0.9067
+          "score": 0.9074
         },
         "uploaded": "2024-10-07T15:26:12.154861Z",
         "automapper": false,
@@ -3303,9 +3303,9 @@ export default {
         "stats": {
           "plays": 0,
           "downloads": 0,
-          "upvotes": 170,
+          "upvotes": 172,
           "downvotes": 7,
-          "score": 0.9334,
+          "score": 0.934,
           "reviews": 3
         },
         "uploaded": "2025-10-23T13:00:01.061235Z",

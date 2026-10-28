@@ -2506,6 +2506,10 @@
         {
           "characteristic": "Standard",
           "name": "Hard"
+        },
+        {
+          "characteristic": "Standard",
+          "name": "Expert"
         }
       ]
     },
@@ -2634,6 +2638,18 @@
       "levelAuthorName": "Danny",
       "hash": "39B4968A2FA4BA5E24E195F39C06F7439F2ED6D5",
       "levelid": "custom_level_39B4968A2FA4BA5E24E195F39C06F7439F2ED6D5",
+      "difficulties": [
+        {
+          "characteristic": "Standard",
+          "name": "Normal"
+        }
+      ]
+    },
+    {
+      "songName": "We're On Fire",
+      "levelAuthorName": "oegoe, Miljon, Taddus, realcoda",
+      "hash": "827DC48347DA1B56705E717FE627C722CAC36885",
+      "levelid": "custom_level_827DC48347DA1B56705E717FE627C722CAC36885",
       "difficulties": [
         {
           "characteristic": "Standard",

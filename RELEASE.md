@@ -10,7 +10,7 @@ git checkout next
 
 # update latest tag version in `./packages/utils/constants.ts`
 
-deno migrate
+deno task migrate
 
 git stage --all
 git commit -m "update pool: <new latest tag>"
