@@ -10,16 +10,18 @@ git checkout next
 
 # update latest tag version in `./packages/utils/constants.ts`
 
-deno migrate
+deno task migrate
 
 git stage --all
 git commit -m "update pool: <new latest tag>"
 git tag <new latest tag>
 git push --tags
 
+git checkout -
+
+cat ./TAG.md | wl-copy
 # create a release out of a tag
 
-git checkout -
 git merge next
 git push
 
